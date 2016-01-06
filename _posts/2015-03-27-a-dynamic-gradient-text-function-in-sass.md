@@ -3,5 +3,8 @@ title: A Dynamic Gradient Text Function in Sass
 author: Cathy Dutton
 layout: post
 ---
+A Sass function using gradient and text animation.
 
-http://www.sitepoint.com/dynamic-gradient-text-function-sass/
+Article originally posted <a href="http://www.sitepoint.com/dynamic-gradient-text-function-sass/">here</a>.
+
+An example of the code used can be found <a href="http://codepen.io/cathydutton/pen/vEeORQ">here</a>.
