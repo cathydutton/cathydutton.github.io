@@ -1,0 +1,22 @@
+url: "http://localhost:3000"
+baseurl: ""
+
+# Site settings
+title: Warrington based UX developer specialising in CSS and responsive development
+email: info@cathydutton.co.uk
+description: I am a UX Developer and Designer based in Warrington. I specialise in Sass, CSS, performance and responsive development.
+
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/cathy_dutton
+
+
+# Build settings
+markdown: kramdown
+#markdown: redcarpet
+permalink: :title.html
+highlighter: rouge
+
+exclude: ["node_modules", "default.yml", "gulpfile.js", "LICENSE.txt", "package.json", "README.md", "scssReport.json", "stats", "tasks", "assets/scss"]

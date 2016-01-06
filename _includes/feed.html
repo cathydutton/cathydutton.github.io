@@ -1,0 +1,10 @@
+<section class="news-feed">
+	{% for post in site.posts limit:3 %}
+		<article class="news-feed__post">
+				<a href="{{site.baseurl}}{{post.url}}" title="{{ post.title }}" class="news-feed__anchor">
+						<h3 class="heading news-feed__title">{{ post.title }}</h3>
+						<p class="news-feed__date">{{ post.date | date: '%B %d, %Y' }}</p>
+				</a>
+		 </article>
+	{% endfor %}
+</section>

@@ -1,0 +1,34 @@
+/*
+    Footer
+    ----------------------------------- */
+
+.footer {
+  text-align: center;
+
+  .find-me__anchor {
+    color: map-get($colours, 'grey-dark');
+    fill: map-get($colours, 'grey-dark');
+
+    &:hover,
+    &:focus {
+      background: map-get($colours, 'grey-dark');
+      color: map-get($colours, 'white');
+      fill: map-get($colours, 'white');
+    }
+
+  }
+
+}
+
+
+.footer-links {
+  list-style: none;
+  margin: .8em 0;
+  padding: 0;
+}
+
+.footer-links__item {
+  display: inline-block;
+  margin: .4em;
+  text-transform: uppercase;
+}

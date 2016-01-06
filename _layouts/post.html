@@ -1,0 +1,49 @@
+---
+disqus: true
+comments: true
+archive: false
+---
+
+{% include head.html %}
+{% include sidebar.html %}
+{% include post-header.html %}
+
+<section>
+  {{content}}
+</section>
+
+<section>
+  {% if post.comments %}
+  
+
+  {% endif %}
+</section>
+
+<section>
+  <ul class="page-navigation">
+    {% if page.previous.url %}
+    <li class="button--page-navigation__prev">
+      <a class="button--page-navigation__anchor" href="{{page.previous.url}}">
+        <svg class="button--page-navigation__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="title desc">
+          <title>chevron-right</title>
+          <desc id="desc">chevron-right</desc>
+          <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
+        </svg>
+      </a>
+    </li>
+    {% endif %}
+    {% if page.next.url %}
+    <li class="button--page-navigation__next">
+      <a class="button--page-navigation__anchor" href="{{page.next.url}}">
+        <svg class="button--page-navigation__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  aria-labelledby="title desc">
+        <title>chevron-left</title>
+          <desc id="desc">chevron-left</desc>
+          <path d="M11.611,10.049l-4.76-4.873c-0.303-0.31-0.297-0.804,0.012-1.105c0.309-0.304,0.803-0.293,1.105,0.012l5.306,5.433c0.304,0.31,0.296,0.805-0.012,1.105L7.83,15.928c-0.152,0.148-0.35,0.223-0.547,0.223c-0.203,0-0.406-0.08-0.559-0.236c-0.303-0.309-0.295-0.803,0.012-1.104L11.611,10.049z"></path>
+        </svg>
+      </a>
+    </li>
+    {% endif %}
+  </ul>
+</section>
+
+{% include footer.html %}

@@ -1,0 +1,188 @@
+/*
+Image gallery
+----------------------------------- */
+
+// move to relavent artial
+.logo-gallery {
+  @include grid(break-mobile, 1, 2, $grid-margin: 0);
+  @include grid(break-tablet, 1, 3, $grid-margin: 0);
+}
+
+// move to relavent artial
+.portfolio-gallery {
+  @include grid(break-mobile, 1, 2);
+  @include grid(break-tablet, 1, 3);
+  margin-bottom: 10px;
+}
+
+// COMMON
+.image-wrapper {
+  background: url('/assets/img/placeholder.png') center center no-repeat lighten(map-get($colours, 'grey-light'), 20%);
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 63%;
+  position: relative;
+  width: 100%;
+}
+
+.image-wrapper__image {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+}
+
+
+// LOOP
+
+$logos: (barclays, ao, getthelabel, sainsburys, ee, o2, thehutgroup, nintendo, nectar, 3, zavvi, myprotein, tropicskincare, brightstar, creare, elizabetharden);
+
+@each $logo in $logos {
+
+  .image-wrapper--#{$logo} {
+    animation: fadeIn 2s forwards;
+    background: url("/assets/img/about/#{$logo}-logo.jpg") center center;
+}
+
+  .image-wrapper__image {
+
+    &:hover,
+    &:focus {
+      animation: fadeOut 2s forwards;
+      opacity: 0;
+    }
+
+  }
+
+}
+
+
+
+// GALLETY
+
+
+
+
+#wrapper.lightbox {
+
+  &:before {
+    background: map-get($colours, 'black');
+    content: '';
+    height: 100%;
+    opacity: .6;
+    overflow: auto;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+
+}
+
+.image-wrapper--portfolio {
+  animation: fadeIn 2s forwards;
+  border: solid 1px map-get($colours, 'grey-light');
+
+  &:hover,
+  &:focus {
+    border-color: map-get($colours, 'accent');
+    box-shadow: 3px;
+  }
+
+}
+
+.pop {
+  background: map-get($colours, 'white');
+  display: none;
+  left: 15%;
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  width: 70%;
+  z-index: 1002;
+}
+
+#pop-image {
+  height: 500px;
+  overflow: auto;
+}
+
+#pop-image-img {
+  background: map-get($colours, 'white');
+  margin-top: 10px;
+  overflow: auto;
+  padding: 10px;
+  width: 100%;
+}
+
+#pop-text {
+  background: map-get($colours, 'white');
+  margin: 0 auto;
+  padding: 20px 10px;
+  width: 100%;
+}
+
+
+#prev,
+#next {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  height: 100%;
+  position: absolute;
+  width: 50%;
+
+  &:hover {
+    background: map-get($colours, 'white');
+    opacity: .60;
+    transition: all .3s ease-in-out;
+
+    &::after {
+      color: map-get($colours, 'black');
+      font-size: 6em;
+      position: absolute;
+      top: 30%;
+    }
+
+  }
+
+}
+
+#prev {
+  left: 0;
+}
+
+#next {
+  right: 0;
+}
+
+#close {
+  background: map-get($colours, 'grey-dark');
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  z-index: 999;
+
+  &:hover {
+    background: map-get($colours, 'accent');
+    transition: all .3s ease-in-out;
+  }
+
+}
+
+#black_overlay {
+  background-color: map-get($colours, 'black');
+  cursor: pointer;
+  display: none;
+  height: 100%;
+  left: 0%;
+  opacity: .80;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  z-index: 1001;
+}

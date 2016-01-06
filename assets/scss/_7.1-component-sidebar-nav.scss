@@ -1,0 +1,104 @@
+/*
+Navigation
+----------------------------------- */
+
+.sidebar__list {
+  margin: 20px 0 0;
+  overflow: hidden;
+  padding: 0 23px;
+  position: relative;
+}
+
+.sidebar__anchor {
+  border: solid 1px lighten(map-get($colours, 'grey-dark'), 5%);
+  border-left: solid 1px map-get($colours, 'accent');
+  color: map-get($colours, 'grey-light');
+  display: block;
+  margin-bottom: 5px;
+  padding: 10px 0 10px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    padding-left: 16px;
+  }
+
+}
+
+
+// BUTTON
+
+.button--menu {
+  background: map-get($colours, 'grey-dark');
+  border: solid 2px map-get($colours, 'accent');
+  border-radius: 50%;
+  color: map-get($colours, 'grey-light');
+  fill: map-get($colours, 'grey-light');
+  height: 55px;
+  padding: 0;
+  position: fixed;
+  top: 184px;
+  width: 55px;
+  z-index: 2;
+
+  svg {
+    height: 46%;
+    width: 51%;
+  }
+
+  &:hover {
+    background: map-get($colours, 'accent');
+    border-radius: 100%;
+    color: map-get($colours, 'grey-dark');
+    fill: map-get($colours, 'grey-dark');
+    transform: scale(1.25);
+    transition: background-color .5s, transform .5s ease-out;
+  }
+
+  &:focus {
+    background: map-get($colours, 'grey-dark');
+    color: map-get($colours, 'grey-light');
+    fill: map-get($colours, 'grey-light');
+  }
+
+}
+
+.button--menu--closed {
+  left: -14px;
+}
+
+
+// Icon
+
+.button--menu--icon {
+  opacity: 1;
+  transform: rotate(0) translateY(0) translateX(0);
+  transform-origin: 20px 10px;
+  transition: transform .4s ease-in-out, opacity .2s ease-in-out;
+}
+
+.button--menu--icon:nth-of-type(1) {
+  transform-origin: 20px 10px;
+}
+
+.button--menu--icon:nth-of-type(3) {
+  transform-origin: 20px 20px;
+}
+
+.button--menu--open {
+  left: 228px;
+
+  .button--menu--icon:nth-of-type(1) {
+    transform: rotate(-45deg) translateY(0) translateX(0);
+  }
+
+  .button--menu--icon:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .button--menu--icon:nth-of-type(3) {
+    transform: rotate(45deg) translateY(0) translateX(0);
+  }
+
+}

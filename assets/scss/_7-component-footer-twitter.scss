@@ -1,0 +1,45 @@
+/*
+    Footer Twitter
+    ----------------------------------- */
+
+#latest-tweets li {
+  @include grid(break-mobile, 1, 1);
+  @include grid(break-tablet, 1, 2);
+  background: map-get($colours, 'accent');
+  color: map-get($colours, 'grey-dark');
+  list-style: none;
+  margin-top: 1.8em;
+  min-height: 1px;
+  padding: .2em .6em;
+  position: relative;
+  text-align: left;
+
+  &:after {
+    border-color: map-get($colours, 'accent') transparent transparent;
+    border-style: solid;
+    border-width: 10px;
+    bottom: -19px;
+    content: '';
+    display: block;
+    height: 0;
+    left: 1em;
+    position: absolute;
+    width: 0;
+  }
+
+  a:hover,
+  a:focus {
+    color: map-get($colours, 'white');
+  }
+
+}
+
+
+.latest-tweet__title {
+  font-size: .95em;
+  font-weight: 400;
+}
+
+.latest-tweet__timestamp {
+  font-style: italic;
+}

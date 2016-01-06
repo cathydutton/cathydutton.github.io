@@ -1,0 +1,44 @@
+/*
+    Button
+    ----------------------------------- */
+
+%button {
+  border: 0;
+  border-radius: .2em;
+  box-shadow: 0;
+  color: map-get($colours, 'white');
+  cursor: pointer;
+  font-size: 125%;
+  line-height: 1.8;
+  padding: .7em .8em .5em;
+}
+
+@mixin  button($button-background) {
+  @extend %button;
+  background-color: $button-background;
+
+  &:hover,
+  &:focus {
+    background-color: darken($button-background, 20%);
+    transition: all .3s ease-in-out;
+  }
+
+  // &:active:before {
+  //   content: '\2713';
+  // }
+
+}
+
+button,
+.button {
+  @include button (map-get($colours, 'accent'));
+}
+
+.button--example {
+  @include button (map-get($colours, 'grey-dark'));
+}
+
+.button--page-navigation__prev,
+.button--page-navigation__next {
+  @include button (map-get($colours, 'accent'));
+}
