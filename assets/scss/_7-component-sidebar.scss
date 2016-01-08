@@ -53,13 +53,21 @@ Sidebar
 }
 
 .profile-image {
+  width: 120px;
+  height: 120px;
+  border: solid 4px red;
+  border-radius: 100%;
+  margin: 20px;
 
   img {
-    clip-path: circle(90px at center);
-    width: 100%;
+    width: 120px;
+    height: 120px;
+    clip-path: circle(60px at center);
   }
 
 }
+
+
 
 .profile-desc {
   border-bottom: solid 1px lighten(map-get($colours, 'grey-dark'), 5%);
