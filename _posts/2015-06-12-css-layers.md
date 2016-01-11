@@ -22,27 +22,27 @@ The proper implementation of any convention will also play a key part in reducin
 
 One of the most popular Naming Conventions around is BEM (Block, Element, Modifier). By prefixing each element with it’s parent block modules become much easier to target safely. BEM can also help remove the reliance on nesting or attaching styles to page and body classes.
 
-{% highlight CSS %}
+```
 .block {}
 .block__element {}
 .block--modifier {}
-{% endhighlight %}
+```
 
 The example above shows the class structure of a BEM project, underscores are used to separate elements, with hyphens for modifiers. Below is a real world example…
 
-{% highlight CSS %}
+```
 .product-details {}
 .product-details__price {}
 .product-details__price--sale {}
-{% endhighlight %}
+```
 
 One pitfall of BEM is the temptation to add utility style classes into the modifier section. Modifier selectors such as, large, small, green or bold introduce opinions into the markup which could be subject to change at a later date.
 
-{% highlight CSS %}
+```
 .product-details {}
 .product-details__title {}
 .product-details__title--small {}
-{% endhighlight %}
+```
 
 As with most utility classes the intentions are clear at the beginning of a project, but often lead to contradicting CSS if a design changes.
 
@@ -50,41 +50,41 @@ As with most utility classes the intentions are clear at the beginning of a proj
 
 Suit takes it’s roots from BEM, but uses camel case for component names and hyphens to separate components from their modifiers and descendants.
 
-{% highlight CSS %}
+```
 .u-utility {}
 .ComponentName {}
 .ComponentName--modifierName {}
 .ComponentName-descendantName {}
 .ComponentName.is-someState {}
-{% endhighlight %}
+```
 
 This makes selectors a little more readable by removing potentially confusing hyphenated element names.
 
-{% highlight CSS %}
+```
 .ProductDetails {}
 .ProductDetails-price {}
 .ProductDetails-title--sale {}
-{% endhighlight %}
+```
 
 <i>Prefixing</i>
 
 If you don’t want to use such a strict or complicated naming convention prefixing each selector can work just as well.
 
-{% highlight CSS %}
+```
 .s-product-details {}
 .t-product-details {}
 .js-product-details {}
-{% endhighlight %}
+```
 
 This method makes it easy to identify a structural class from a presentational class but is simpler to write and to understand. In the above example the structural properties would be applies to the s-product-details selector. The theming properties would be applied to the t-product-details selector.
 
 Elements can be be defined in a similar way or by using base and modifier classes…
 
-{% highlight HTML %}
+```
 <button class="button">Button</button>
 <button class="button button-checkout">Checkout Button</button>
 <button class="button button-search">Search Button</button>
-{% endhighlight %}
+```
 
 <i>On a side note prefixing Sass partials is also a huge help when locating files in a larger project as it removes the need to store partials in folders. This method is used in ITCSS.</i>
 
@@ -96,7 +96,7 @@ With the addition of a naming convention the CSS is now much safer and more perf
 
 Despite these improvements you can still end up with duplicate CSS like the example below.
 
-{% highlight CSS %}
+```
 .product-details__title {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
@@ -108,7 +108,7 @@ Despite these improvements you can still end up with duplicate CSS like the exam
    text-transform: uppercase;
    color: #FF0000;
 }
-{% endhighlight %}
+```
 
 This is where Front End Methodologies come in, splitting your CSS into layers will help prevent both duplicate styles and large grouped selectors. Common or base styles are defined separately, with the more specific or modifier styles added on top of the inherited styling.
 
@@ -118,12 +118,12 @@ Object Orientated CSS has two main principles the first is separating structure 
 
 <i>Separating Structure from Skin</i>
 
-{% highlight HTML %}
+```
 <div class="box-padded product-image"></div>
 <div class="box-padded product-description"></div>
-{% endhighlight %}
+```
 
-{% highlight CSS %}
+```
 .product-image {
 	   width: 400px;
    	overflow: hidden;
@@ -139,16 +139,16 @@ Object Orientated CSS has two main principles the first is separating structure 
    	background: #FFF;
    padding: 10px;
 }
-{% endhighlight %}
+```
 
 <i>Separating Containers from Content</i>
 
-{% highlight HTML %}
+```
 <div class="wrapper recently-viewed"></div>
 <div class="wrapper suggested-products"></div>
-{% endhighlight %}
+```
 
-{% highlight CSS %}
+```
 .wrapper {
 	   width: 400px;
    margin: 0 auto;   	
@@ -166,17 +166,17 @@ Object Orientated CSS has two main principles the first is separating structure 
 	   background: #FFF;
    color: £666;
 }
-{% endhighlight %}
+```
 
 This Object Orientated way of working creates a series of utility classes which can be used to access sets of CSS properties. This way of working can improve site performance and maintenance as well as keeping CSS files DRY.
 
 If however the markup is consistent across multiple themes an Object Orientated approach can result in the addition of correctional CSS used to override or remove unwanted inherited styles.
 
-{% highlight CSS %}
+```
 product-delivry.padded-box {
 	   padding:0
 }
-{% endhighlight %}
+```
 
 As a result of this a white label approach with purely Semantic markup may be a wiser choice for projects with multiple skins and one code base.
 
@@ -184,13 +184,13 @@ As a result of this a white label approach with purely Semantic markup may be a 
 
 Scalable and Modular Architecture for CSS, like OOCSS is based around the reduction of repetitive styling. SMACSS however uses a set of 5 layers to separate the CSS and to bring a more structured approach to projects.
 
-{% highlight CSS %}
+```
 Base - HTML elements & defaults
 Layout -Page structure
 Module - Re-usable code bloks
 State - Active/Inactive etc
 Theme - Typography and colour schemes etc
-{% endhighlight %}
+```
 
 This added organisation and structure improve the efficiency of the output CSS. The methodology can alos be adapted where needed by adding or removing layers.
 
@@ -212,7 +212,7 @@ The specificity increases with each layer, allowing for only the additional requ
 
 Taking the same example as above, the CSS would be split into the base and component layers.
 
-{% highlight CSS %}
+```
 p {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -225,8 +225,7 @@ p {
 .latest-news__title {
     color: #FF0000;
 }
-{% endhighlight %}
-
+```
 <h3 class="heading">Think before you use </h3>
 
 Just because you decide to implement one of the above strategies you are not tied to it in it’s entirety. If a certain layer doesn't work for your project then don’t use it. You can also adapt or add things to fit the needs of your project and team. No naming conventions or methodologies will work 100% for all projects all of the time.
