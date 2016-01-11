@@ -4,7 +4,7 @@ author: Cathy Dutton
 layout: post
 ---
 
-Article originally posted <a href="https://medium.com/@cathy_dutton/surviving-css-be306ef3de6d#.k8czem45b">here</a>.
+[Article originally posted]: https://medium.com/@cathy_dutton/surviving-css-be306ef3de6d#.k8czem45b
 
 <h4 class="heading">A few simple techniques to keep your CSS in check...</h4>
 
@@ -204,7 +204,7 @@ A much cleaner method is to separate the markup from the styling. Any grid width
 }
 ```
 
-The key benefit of this is keeping specificity low and the number of selectors down. More information on this approach to grid layouts can be found <a href="http://www.cathydutton.co.uk/maze-re-factored" target="_blank">here</a>.
+The key benefit of this is keeping specificity low and the number of selectors down. More information on this approach to grid layouts can be found [here]: http://www.cathydutton.co.uk/maze-re-factored. 
 
 
 <h3 class="heading">Use structural classes</h3>
