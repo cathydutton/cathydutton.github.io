@@ -7,7 +7,7 @@ layout: post
 
 <h2 class="heading">Intro</h2>
 
-PostCSS allows makes it possible to transform or extend syntaxes and features of CSS.
+PostCSS makes it possible to transform or extend syntaxes and features of CSS.
 Nothing groundbreaking there then, but unlike existing pre-processors PostCSS is not an all or nothing
 tool. Plugins can be added to what is an otherwise clean slate allowing developers to
 take much greater control over the features used and resulting CSS.
@@ -35,7 +35,7 @@ Compile tools like Prepros also offer support for some of PostCSS's most popular
 GUI's like this will not be suitable for custom plugins however.
 
 Further reading on installation can be found on the PostCSS
-Github page https://github.com/postcss/postcss.
+[Github page] (https://github.com/postcss/postcss)
 
 
 <h4 class="heading">2) Works along side current pre-processors</h4>
@@ -51,7 +51,7 @@ This allows for a much simpler transition without the need to make wholesale cha
 Existing functionality can be migrated to PostCSS over time, if at all.
 
 
-<h4 class="heading">3)Take what you need</h4>
+<h4 class="heading">3) Take only what you need</h4>
 
 As most developers have now found out some of the functions available in pre-processors
 can have a negative impact on CSS performance.
@@ -81,8 +81,8 @@ outdated CSS.
 
 This will help keep code fresh and remove the need to make wholesale changes as browser support changes.
 
+[cssnext] (http://cssnext.io/)
 
-http://cssnext.io/
 
 
 <h4 class="heading">6) Accessibility</h4>
@@ -90,8 +90,8 @@ http://cssnext.io/
 We are all guilty of missing the occasional :focus selectors here and there,
 fortunately there are plugins that can take care of the repetitive tasks like this for us.
 
-postcss-colorblind - https://github.com/btholt/postcss-colorblind
-postcss-focus - https://github.com/postcss/postcss-focus
+[postcss-colorblind] (https://github.com/btholt/postcss-colorblind)
+[postcss-focus] (https://github.com/postcss/postcss-focus)
 
 
 <h4 class="heading">7) Feedback list-selectors, stylelint</h4>
@@ -104,7 +104,10 @@ postcss-focus - https://github.com/postcss/postcss-focus
 
 Built in JavaScript PostCSS its much simpler to contribute to and create plugins
 to suit you're project or workflow. There is plenty of helpful documentation to get you
-started - Boilerplate - API...
+started with this...
+
+[API] (https://github.com/postcss/postcss/blob/master/docs/api.md)
+[Plugin boilerplate] (https://github.com/postcss/postcss-plugin-boilerplate)
 
 This means whatever functionality you require is achievable.
 
@@ -121,7 +124,7 @@ Faster then libsass, Less and Stylus
 
 <h4 class="heading">Conclusion</h4>
 
-In summery PostCSS is more performant, less risky and easier to develop / custamise/ extend
+In summery PostCSS is more performant, less risky and easier to develop, customise and extend.
 
 
 
