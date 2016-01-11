@@ -17,27 +17,28 @@ Philip Walton, Engineer at Google </blockquote>
 We have all at some point been forced to write the kind of CSS that would drive any good developer crazy.
 
 Specific CSS like this…
-{% highlight CSS %}
+
+```
 #mediaGalleryHolder #mediaGallery .mediaGalleryImage {               
    border: 1px solid #e3e3e3;
    width: 100%;
 }
-{% endhighlight %}
+```
 
 Contradictory CSS like this…
-{% highlight CSS %}
+```
 .fl {
    float: none;
 }
-{% endhighlight %}
+```
 
 or unnecessary correctional CSS like this..
-{% highlight CSS %}
+```
 .sidebar {
    border: 0;
    background: transparent;
 }
-{% endhighlight %}
+```
 
 <i>Specific selectors</i>
 
@@ -65,43 +66,43 @@ Keeping style related classes out of the markup will also help to keep the CSS r
 
 <i>HTML</i>
 
-{% highlight HTML %}
+```
 <button class="button-primary">Checkout</button>
 <button class="button-secondary">More Information</button>
 <button class="button-primary">Log In</button>
-{% endhighlight %}
+```
 
 <i>CSS</i>
 
-{% highlight CSS %}
+```
 .button-primary {
    @extend %button-primary;
 }
 .button-secondary {
    @extend %button-secondary;
 }
-{% endhighlight %}
+```
 
 In this example there are two button styles each with a different background colour. If, at a later date it is decided that the Log In Button should be the primary colour instead of the secondary colour, a new selector would need to be added that has more specificity than the button-primary selector.
 
-{% highlight CSS %}
+```
 .account-drop-down .button-primary {
    @extend %button-secondary;
 }
-{% endhighlight %}
+```
 
 By using content classes for the markup and style selectors in the CSS, updates like this can be carried out in a more logical manor.
 
 <i>HTML</i>
 
-{% highlight HTML %}
+```
 <button class="button-checkout">Checkout</button>
 <button class="button-information">More Information</button> <button class="button-log-in">Log In</button>
-{% endhighlight %}
+```
 
 <i>CSS</i>
 
-{% highlight CSS %}
+```
 .button-checkout {
    @extend %button-primary;
 }
@@ -111,32 +112,32 @@ By using content classes for the markup and style selectors in the CSS, updates 
 .button-log-in {
    @extend %button-secondary;
 }
-{% endhighlight %}
+```
 
 <h2 class="heading">Be wary of helper (Utility) classes</h2>
 
 A utility class applies a single rule or a universal pattern to a web element. Utility classes are intended to be as reusable as possible, and should therefore be used throughout a sites markup. Below are a few examples of Utility Classes…
 
-{% highlight CSS %}
+```
 .float-left,
 .align-center
 .font-large
 .list-unstyled
 .clearfix
-{% endhighlight %}
+```
 
 These classes can be useful when used with projects that have fresh independent markup. They provide a way for a site to quickly take on a structure without the need to write any new CSS. On larger projects however the markup often stays in tact and/or is used across multiple site views. In these cases utility classes become more of a hinderance then a help.
 
 For example a website that uses a common code base may be tied to certain markup. If utility classes have been used within this markup they can create issues as the site evolves. Layout or design changes may force us to override these utility classes in theme specific CSS, resulting in code like the examples below…
 
-{% highlight CSS %}
+```
 .text-left {
    text-align: center;
 }
 .float-left {
    float: none;
 }
-{% endhighlight %}
+```
 
 <h3 class="heading">3 Avoid grid related markup</h3>
 
@@ -144,7 +145,7 @@ Grid based markup should be avoided at all costs, a common pitfall of responsive
 
 Class names like .column-span-4 refer to the desktop version of a site, this often leads to some questionable CSS appearing within media queries…
 
-{% highlight CSS %}
+```
 .column-span-4 {
    width: 23%;
    float: left;
@@ -155,11 +156,11 @@ Class names like .column-span-4 refer to the desktop version of a site, this oft
       width: 98%;
    }
 }
-{% endhighlight %}
+```
 
 CSS like this does not just fail to make sense, it also groups numerous sections of content together and forces them to respond in the same manor. This can lead to the use of very specific selectors in order to allow different sections of content to respond differently.
 
-{% highlight CSS %}
+```
 .column-span-4 {
    width: 23%;
    float: left;
@@ -174,19 +175,19 @@ CSS like this does not just fail to make sense, it also groups numerous sections
       width: 100%;
    }
 }
-{% endhighlight %}
+```
 
 These extra selectors prevent code from being re-used and reduce efficiency. Some frameworks including Bootstrap attempt to resolve this issue by adding more classes to each element to determine it’s size at each breakpoint.
 
-{% highlight HTML %}
+```
 <div class="col-sm-4 col-md-4 col-lg-4">
-{% endhighlight %}
+```
 
 The above approach will improve the site’s CSS but leaves the HTML looking messy, particularly if you go on to add more classes for JavaScript use.
 
 A much cleaner method is to separate the markup from the styling. Any grid widths can then be applied using a mixin keeping each element unique allowing for individual styling and individual targeting via media queries.
 
-{% highlight CSS %}
+```
 .news-feed,
 .latest-testimonials {
    @include grid(span-4);
@@ -201,7 +202,7 @@ A much cleaner method is to separate the markup from the styling. Any grid width
    }
 
 }
-{% endhighlight %}
+```
 
 The key benefit of this is keeping specificity low and the number of selectors down. More information on this approach to grid layouts can be found <a href="http://www.cathydutton.co.uk/maze-re-factored" target="_blank">here</a>.
 
@@ -214,7 +215,7 @@ Keeping structural classes free of presentational properties such as borders, ba
 
 <i>Example</i>
 
-{% highlight CSS %}
+```
 .sidebar {
    width: 23%;
    float: left;
@@ -223,16 +224,16 @@ Keeping structural classes free of presentational properties such as borders, ba
    border: #e3e3e3;
    padding: 10px;
 }
-{% endhighlight %}
+```
 
 By applying these presentational styles to the sidebar we restrict the design of future pages. Any additions to the project that wish to include a sidebar without a border or background would have to override the existing CSS.
 
-{% highlight CSS %}
+```
 .account-section .sidebar {
    background: transparent;
    border: 0; padding: 0;
 }
-{% endhighlight %}
+```
 
 Creating page specific CSS like this is not maintainable, particularly on large projects. Any presentational properties should be applied to the elements inside the sidebar, creating modular blocks that can be included on any page.
 
@@ -245,27 +246,27 @@ When a team of developers are working on one project it can be difficult to have
 
 <i>Bad Example</i>
 
-{% highlight CSS %}
+```
 #mediaGalleryHolder #mediaGallery .mediaGalleryImageHolder img {           
    border: 1px solid #e3e3e3;
    width: 100%;
 }
-{% endhighlight %}
+```
 
 <i>Good Example</i>
 
-{% highlight CSS %}
+```
 .media-gallery__image {
    width: 100%;
    border: 1px solid #e3e3e3;
 }
-{% endhighlight %}
+```
 
 Working in this way will help keep the CSS output modular and lightweight. By targeting elements individually the styling will also be applied correctly regardless of page positioning, body classes or parent selectors.
 
 <i>Nested navigation example</i>
 
-{% highlight CSS %}
+```
 .main-nav {
    background: #0060C1;
    li {
@@ -276,11 +277,11 @@ Working in this way will help keep the CSS output modular and lightweight. By ta
          }
    }
 }
-{% endhighlight %}
+```
 
 <i>Individually targeted navigation</i>
 
-{% highlight CSS %}
+```
 .main-nav {
    background: #0060C1;
 }
@@ -291,7 +292,7 @@ Working in this way will help keep the CSS output modular and lightweight. By ta
    padding: 10px;
    display: block;
 }
-{% endhighlight %}
+```
 
 
 <h4 class="heading">Avoid DOM specific styling</h4>
@@ -300,18 +301,18 @@ Any styling relating to an elements positioning is risky, particularly in respon
 
 <i>HTML</i>
 
-{% highlight HTML %}
+```
 <div class="content-wrapper">
    <div class="content-block"></div>
    <div class="content-block"></div>
    <div class="content-block"></div>
    <div class="content-block last-column"></div>
 </div>
-{% endhighlight %}
+```
 
 <i>CSS</i>
 
-{% highlight CSS %}
+```
 .content-block {
    @include grid(span-3);
 }
@@ -323,7 +324,7 @@ Any styling relating to an elements positioning is risky, particularly in respon
       @include grid(span-6);
    }
 }
-{% endhighlight %}
+```
 
 This technique will create problems at the breakpoint as the content blocks stack into two rows of two. At this point the 4th block will behave differently to the 2nd block despite both being the last column in their respective rows.
 
