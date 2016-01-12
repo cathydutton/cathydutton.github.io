@@ -1,18 +1,20 @@
 ---
+title: 8 reasons to start using PostCSS today
+author: Cathy Dutton
 layout: post
-title: Why you should separate structure and content
-description: "Desc"
-page-name: "post"
 ---
+
+
 PostCSS Maze as demo 
 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, blanditiis aut numquam magnam explicabo, nostrum distinctio! Quibusdam molestias et ut dignissimos animi, nesciunt voluptas accusamus, quam, possimus pariatur ullam autem.
+Why you should separate layout and content,
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, blanditiis aut numquam magnam explicabo, nostrum distinctio! Quibusdam molestias et ut dignissimos animi, nesciunt voluptas accusamus, quam, possimus pariatur ullam autem.
+1)	width structure etc should not effect the modules which can grow to fit any container they may be in.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, blanditiis aut numquam magnam explicabo, nostrum distinctio! Quibusdam molestias et ut dignissimos animi, nesciunt voluptas accusamus, quam, possimus pariatur ullam autem.
+2)	Loads of images to support this
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, blanditiis aut numquam magnam explicabo, nostrum distinctio! Quibusdam molestias et ut dignissimos animi, nesciunt voluptas accusamus, quam, possimus pariatur ullam autem.
+3)	Post css maze with one layout sheet as example.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, blanditiis aut numquam magnam explicabo, nostrum distinctio! Quibusdam molestias et ut dignissimos animi, nesciunt voluptas accusamus, quam, possimus pariatur ullam autem.
+4)	Completely separate wireframe or structure partial
+
