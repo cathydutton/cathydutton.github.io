@@ -44,7 +44,6 @@
 	gulp.task('critical-css', plugins.getModule('css/critical'));
 	gulp.task('main-css', plugins.getModule('css/main'));
 	gulp.task('scripts', plugins.getModule('javascript/scripts'));
-	// gulp.task('inject', plugins.getModule('html/html'));
 	gulp.task('inject', plugins.getModule('html/inject'));
 	gulp.task('image-optimise', plugins.getModule('images/optimise'));
 	gulp.task('watch', plugins.getModule('watch'));
