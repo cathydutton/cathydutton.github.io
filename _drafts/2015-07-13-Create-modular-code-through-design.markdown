@@ -1,16 +1,18 @@
 ---
 layout: post
-title: Create modular code through design
+title: Create modular code with an Agile workflow
 Author: Cathy Dutton
 ---
 Pulling down the fence
-Create a structured code base by synchronising the design and development process. 
+Create a structured code base by synchronising the design and development process.
 
-MENTION SQUADS
+Taking an Agile aproach to produce better code.
+
+MENTION SQUADS - teams working together design dev test etc. not in teams of each discipline
 
 Intro
 
-It’s been 10 years since I built my first website, (and it was awful). Back then my frst task with any web project was to layout all the necessary pages in Photoshop, creating page specific designs with set dimensions.  This ‘page by page’ approach then transferred to the development phase. 
+It’s been 10 years since I built my first website, (and it was awful). Back then my frst task with any web project was to layout all the necessary pages in Photoshop, creating page specific designs with set dimensions.  This ‘page by page’ approach then transferred to the development phase.
 
 This process was very linear.
 
@@ -21,7 +23,7 @@ Development process
 
 The way websites are built has changed over the years, projects are no longer viewed as a series of pages, but a series of modules, or features. These features become the building blocks of websites and applications.
 
-The development process has moved on from simply recreating the Photo-shopped images in HTML and CSS. The code has to be both flexible scalable and maintainable. 
+The development process has moved on from simply recreating the Photo-shopped images in HTML and CSS. The code has to be both flexible scalable and maintainable.
 
 Planning for future development or design changes mean the code has to be easy to adapt and to add to.  If the CSS is aligned to pages, moving small blocks can be difficult, leading to bloated code bases that are messy and difficult to work with.
 
@@ -62,7 +64,7 @@ Components or modules can then be created individually without the restraints of
 
 Style Guide
 
-Before we begin to think about layouts or the structure of site components we first need a fully thought out and coded style guide. The design of fonts and headings, calls to action and links etc should be built at the very beginning of the process. 
+Before we begin to think about layouts or the structure of site components we first need a fully thought out and coded style guide. The design of fonts and headings, calls to action and links etc should be built at the very beginning of the process.
 
 By providing a style guide right at the start of the project the base layer of the CSS methodology can be constructed. Having access to all the potential color variants, fonts, headings and spacing right at the start will enable a developer to structure the CSS much more effectively, organising default styles on a base level.
 
@@ -72,7 +74,7 @@ With all a designs repeated patterns defined, mixins, functions and variables ca
 $line-height: 1.5;
 
 .heading {
-      line-height: $line-height;	
+      line-height: $line-height;
 }
 
 . review--heading {
@@ -83,11 +85,11 @@ $line-height: 1.5;
 
 Component library
 
-Once the coded style guide is in place each module or component should be designed as an individual block, which is able to be used anywhere in the site. By designing this way the resulting code will also be re-usable. 
+Once the coded style guide is in place each module or component should be designed as an individual block, which is able to be used anywhere in the site. By designing this way the resulting code will also be re-usable.
 
 With a set of repeated patterns already defined, components can be built up quickly as visuals and more importantly built out of existing CSS.
 
-Creating these components will help to keep the code base tidy. Code blocks will loose their attachments to pages and become re-usable building blocks that can be applied anywhere. Similarly the elements that make up the components will also be 
+Creating these components will help to keep the code base tidy. Code blocks will loose their attachments to pages and become re-usable building blocks that can be applied anywhere. Similarly the elements that make up the components will also be
 
 Creating a component library instead of just handing over page designs will also help with creating meaningful class names.
 
@@ -98,14 +100,14 @@ For example a heading above a section of reviews on a product page may be labele
       font-family: 'Roboto', sans-serif;
    font-weight: 200;
    font-size: 2em;
-     color: $base-color;	
+     color: $base-color;
 }
 
 . up-sell--heading {
    font-family: 'Roboto', sans-serif;
    font-weight: 200;
    font-size: 2em;
-     color: $accent-color;	
+     color: $accent-color;
 }
 ```
 
@@ -116,15 +118,15 @@ If both of these heading are the same we end up with duplicated CSS. With the st
       font-family: 'Roboto', sans-serif;
    font-weight: 200;
    font-size: 2em;
-     color: $base-color;	
+     color: $base-color;
 }
 
 . up-sell--heading {
-     color: $accent-color;	
+     color: $accent-color;
 }
 ```
 
-The end of Photoshop? 
+The end of Photoshop?
 Prototyping and in Browser design
 
 With ever changing device sizes and resolutions designing with set width image tools becomes less and less effective, in order to accurately prototype a fluid site designs must be tested at every size, quickly and reliably. This is simply not possible in Photoshop.
