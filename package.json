@@ -5,10 +5,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/colinrotherham/core.git"
+    "url": "https://github.com/cathydutton/my-site.git"
   },
   "author": "Cathy Dutton",
-  "homepage": "https://github.com/cathydutton/static",
+  "homepage": "https://github.com/cathydutton/my-site",
   "devDependencies": {
     "amd-optimize": "^0.4.4",
     "assemble": "assemble/assemble#v0.6.0",
