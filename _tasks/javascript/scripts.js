@@ -23,15 +23,13 @@
 
 				// Process Sass
 				return function() {
-					return gulp.src('assets/js/*.js')
-					//return gulp.src(plugins.path.join(paths.assets.js, '/**')
+					return gulp.src(plugins.path.join(paths.src.js, '*.js'))
 					.pipe(plumber())
 			    .pipe(concat('main.js'))
-					.pipe(gulp.dest('dist/assets/js'))
+					.pipe(gulp.dest(plugins.path.join(paths.build.js, '')))
 			    .pipe(rename({ suffix: '-' + getStamp() + '.min' }))
 			    .pipe(uglify())
-			    .pipe(gulp.dest('dist/assets/js'))
-					//.pipe(gulp.dest(plugins.path.join(paths.build, '/assets/js')
+			    .pipe(gulp.dest(plugins.path.join(paths.build.js)))
 					.pipe(plugins.browserSync.reload({ stream: true }));
 				};
 

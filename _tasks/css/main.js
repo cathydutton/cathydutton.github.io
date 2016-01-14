@@ -40,15 +40,13 @@
 						}),
 					];
 
-					return gulp.src('assets/scss/main.scss')
-					//return gulp.src(plugins.path.join(paths.assets.css, '/main.scss'))
+					return gulp.src(plugins.path.join(paths.src.scss, '/main.scss'))
 					.pipe(plumber())
 					.pipe(plugins.sass({ style: 'expanded', }))
 					.pipe(postcss(processors))
 					.pipe(minifycss())
 					.pipe(rename({ suffix: '-' + getStamp() + '.min'}))
-					.pipe(gulp.dest('dist/assets/css'))
-					//.pipe(gulp.dest(plugins.path.join(paths.build, '/assets/css'))
+				  .pipe(gulp.dest(plugins.path.join(paths.build.css)))
 					.pipe(plugins.filter('**/*.css'))
 					.pipe(plugins.browserSync.reload({ stream: true }));
 				};

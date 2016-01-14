@@ -17,15 +17,22 @@
 
 		// Build paths
 		base: __dirname,
-		build: plugins.path.join(__dirname, 'dist'),
-		src: plugins.path.join(__dirname, ''),
+		dist: plugins.path.join(__dirname, 'dist'),
+		source: plugins.path.join(__dirname, ''),
 		tasks: plugins.path.join(__dirname, '_tasks'),
 
-		// Public assets
-		assets: {
-			css: plugins.path.join(__dirname, 'assets/scss'),
+		// Src assets
+		src: {
+			scss: plugins.path.join(__dirname, 'assets/scss'),
 			js: plugins.path.join(__dirname, 'assets/js'),
 			images: plugins.path.join(__dirname, 'assets/img')
+		},
+
+		// Build assets
+		build: {
+			css: plugins.path.join(__dirname, 'dist/assets/css'),
+			js: plugins.path.join(__dirname, 'dist/assets/js'),
+			images: plugins.path.join(__dirname, 'dist/assets/img')
 		},
 
 		// Node modules
@@ -58,18 +65,9 @@
 	var clean = require('gulp-clean');
 
 	gulp.task('clean', function() {
-		return gulp.src(plugins.path.join(paths.build))
-	  //return gulp.src('dist/')
+		return gulp.src(plugins.path.join(paths.dist))
 	    .pipe(clean());
 	});
-
-	//Copy into build directory
-	// gulp.task('copy', function() {
-	// 	return gulp.src(plugins.path.join(paths.src, '/**'), { dot: true })
-	// 		.pipe(plugins.newer(paths.build))
-	// 		.pipe(gulp.dest(paths.build))
-	// 		.pipe(plugins.browserSync.reload({ stream: true }));
-	// });
 
 
 	// Sass Lint
@@ -77,7 +75,7 @@
   plumber = require('gulp-plumber');
 
   gulp.task('scss-lint', function() {
-		return gulp.src(plugins.path.join(paths.assets.css, '/**/*.scss'))
+		return gulp.src(plugins.path.join(paths.src.scss, '*.scss'))
     .pipe(plumber())
     .pipe(scsslint({
       'config': 'default.yml',
@@ -96,7 +94,7 @@
 	var csslint = require('gulp-csslint')
 
   gulp.task('css-lint', function() {
-    return gulp.src(plugins.path.join(paths.build, '/assets/css/*.css'))
+    return gulp.src(plugins.path.join(paths.build.css, '*.css'))
       .pipe(csslint({
         'config': '.csslintrc',
         'shorthand': false
@@ -108,7 +106,7 @@
 	var stylestats = require('gulp-stylestats');
 
 	gulp.task('stylestats', function () {
-	  return gulp.src(plugins.path.join(paths.build, '/assets/css/*.css'))
+	  return gulp.src(plugins.path.join(paths.build.css, '*.css'))
 	    .pipe(stylestats({
 	      type: 'json',
 	      outfile: true

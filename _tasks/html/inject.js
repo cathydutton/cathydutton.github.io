@@ -27,8 +27,7 @@
 
 
 			// Inline CSS
-			//.pipe(inject(gulp.src(plugins.path.join(paths.build, '/assets/css/critical.min.css'))), {
-			.pipe(inject(gulp.src(['dist/assets/css/critical.min.css']), {
+			.pipe(inject(gulp.src(plugins.path.join(paths.build.css, 'critical.min.css')), {
 			starttag: '<!-- inject:{{ext}} -->',
 			 transform: function (filePath, file) {
 					return '<style>' + file.contents.toString('utf8') + '</style>'
@@ -37,9 +36,8 @@
 
 			// Cache Bust
 			.pipe(replace('@@cacheBust', getStamp()))
-			.pipe(htmlmin({collapseWhitespace: true}))
-			.pipe(gulp.dest('dist'))
-			//.pipe(gulp.dest(plugins.path.join(paths.build)
+			//.pipe(htmlmin({collapseWhitespace: true}))
+			.pipe(gulp.dest(plugins.path.join(paths.dist)))
 			.pipe(plugins.browserSync.reload({ stream: true }));
 		};
 	};

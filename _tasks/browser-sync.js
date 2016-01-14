@@ -10,7 +10,7 @@
 			var options = {
 				browser: 'google chrome',
 				notify: false,
-				server: { baseDir: paths.build }
+				server: { baseDir: paths.dist }
 			};
 
 			return plugins.browserSync(options);

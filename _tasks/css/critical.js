@@ -29,16 +29,14 @@
 						}),
 					];
 
-					return gulp.src('assets/scss/critical.scss')
-					//return gulp.src(plugins.path.join(paths.assets.css, '/critical.scss'))
+					return gulp.src(plugins.path.join(paths.src.scss, '/critical.scss'))
 					.pipe(plumber())
 					.pipe(plugins.sass({ style: 'expanded', }))
-					.pipe(gulp.dest('dist/assets/css'))
+					.pipe(gulp.dest(plugins.path.join(paths.build.css)))
 					.pipe(postcss(processors))
 					.pipe(rename({ suffix: '.min' }))
 					.pipe(minifycss())
-					.pipe(gulp.dest('dist/assets/css'))
-					//.pipe(gulp.dest(plugins.path.join(paths.build, '/assets/css'))
+				  .pipe(gulp.dest(plugins.path.join(paths.build.css)))
 					.pipe(plugins.filter('**/*.css'))
 					.pipe(plugins.browserSync.reload({ stream: true }));
 				};

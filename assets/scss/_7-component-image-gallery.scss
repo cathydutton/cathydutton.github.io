@@ -60,9 +60,6 @@ $logos: (barclays, ao, getthelabel, sainsburys, ee, o2, thehutgroup, nintendo, n
 
 // GALLETY
 
-
-
-
 #wrapper.lightbox {
 
   &:before {
@@ -134,7 +131,7 @@ $logos: (barclays, ao, getthelabel, sainsburys, ee, o2, thehutgroup, nintendo, n
   &:hover {
     background: map-get($colours, 'white');
     opacity: .60;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 
     &::after {
       color: map-get($colours, 'black');

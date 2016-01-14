@@ -27,6 +27,6 @@ header,
 footer,
 section {
   @include clearfix;
-  padding: 2% 5%;
+  padding: 2% 5% 0;
   width: 100%;
 }
