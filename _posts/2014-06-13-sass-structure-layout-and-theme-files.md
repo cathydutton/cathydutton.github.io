@@ -11,7 +11,8 @@ Following on from this post <a href="http://www.cathydutton.co.uk/css/separate-y
 
 Style.scss is used to pull in all the usual folders for base styles, framework mixins, modules and vendor includes. There is also a folder for each page or section of the website which is broken down into 3 sections, layout, theme and responsive.
 
-<pre class="wp-code-highlight prettyprint">/* DEMO STYLESHEET
+```
+/* DEMO STYLESHEET
 ==========================================================================
 
 
@@ -60,13 +61,14 @@ Style.scss is used to pull in all the usual folders for base styles, framework m
 	@import &#039;category-page/_responsive.scss&#039;;
 
 
-</pre>
+```
 
 <h2 class="heading">Layout stylesheet &#8211; layout.scss </h2>
 
 This stylesheet holds all of the structural css for a specific page or section of a website. separating the wireframe from the styling css keeps it clean and easy to edit/maintain.
 
-<pre class="wp-code-highlight prettyprint">/* LAYOUT STYLES
+```
+/* LAYOUT STYLES
 ==========================================================================
 
 // Seperated layout styles to create the page framework.
@@ -161,13 +163,13 @@ This stylesheet holds all of the structural css for a specific page or section o
 	@include grid(4);
 }
 
-</pre>
+```
 
 <h3 class="heading">Skin stylesheet &#8211; theme.scss </h3>
 
 The theme sass file contains all of the styling or theme css for a specific page or section of a website.
 
-<pre class="wp-code-highlight prettyprint">
+```
 /* THEME STYLES
 ==========================================================================
 
@@ -276,13 +278,14 @@ p {
 	height: 100px;
 	background:#fff;
 }
-</pre>
+```
 
 <h3 class="heading">Media query stylesheet &#8211; respond.scss </h3>
 
 The media query sass file holds all the device dependant css. Keeping this in a separate file to the skin and layout css allows for specific device styles to be located and edited easily.
 
-<pre class="wp-code-highlight prettyprint">/* RESPONSIVE STYLES
+```
+/* RESPONSIVE STYLES
 ==========================================================================
 
 // Media queries arranged in size order largest to smallest.
@@ -343,4 +346,4 @@ The media query sass file holds all the device dependant css. Keeping this in a 
 		padding-bottom: 0;
 	}
 }
-</pre>
+```

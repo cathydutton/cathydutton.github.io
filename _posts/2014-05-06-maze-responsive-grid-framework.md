@@ -33,15 +33,16 @@ My goal was to create a more adaptable grid, using Sass variables and formulae t
 
 The number of grid columns, push value and gutter width can be easily changed by editing the variables shown below. The percentage width of a single column span is created using the $grid-columns value and assigned to the variable $unit.
 
-<pre class="wp-code-highlight prettyprint">$grid-columns: 12;
+```
+$grid-columns: 12;
 $unit: (100%  / $grid-columns);
 $gutter: 2% !default;
 $push: 0 !default;
-</pre>
+```
 
 A Sass mixin is used to output the grid CSS. Each elements width is calculated using the values passed from the variables described above and user inputted values for the required column span ($col) and float direction ($fold). the $fold variable determines whether the columns will collapse from the right or the left as the grid is re-sized. By default the right column will move to a new row, setting a value of $fold:right will move the left column.
 
-<pre class="wp-code-highlight prettyprint">
+```
 @mixin grid($col, $fold:"left", $push:$push, $margin:$gutter) {
   @include transition;
   float:#{$fold};
@@ -76,48 +77,51 @@ A Sass mixin is used to output the grid CSS. Each elements width is calculated 
     background: $brown;
     color: $white;
   }
-  
+
 }
-</pre>
+```
 
 <h3 class="heading">How</h3>
 
 Firstly a single span column width is calculated and stored in a new variable $unit&#8230;
 
-<pre class="wp-code-highlight prettyprint">$unit: (100%  / $grid-columns);  
-</pre>
+```
+$unit: (100%  / $grid-columns);  
+```
 
 If we have a 12 column grid then a single span column will be (100% / 12) which is equal to 8.333%. This value is used to generate the percentage widths of any column span&#8230;
 
-<pre class="wp-code-highlight prettyprint">width: (($unit * $col) - $gutter ) + ( $gutter / ( $grid-columns / $col) );
-</pre>
+```
+width: (($unit * $col) - $gutter ) + ( $gutter / ( $grid-columns / $col) );
+```
 
 In our example $unit is equal to 8.333%, $grid-columns is equal to 12 and $gutter is equal to 2%. To find the width for an element spanning 5 columns the formulae would be&#8230;
 
-<pre class="wp-code-highlight prettyprint">width: ((8.333 * 5) - 2 ) + ( 2 / ( 12 / 5) );  //  which equals  40.5%
-</pre>
+```
+width: ((8.333 * 5) - 2 ) + ( 2 / ( 12 / 5) );  //  which equals  40.5%
+```
 
 The width for a 5 column span would therefore be 40.5%. The first part of the formulae calculates the width by multiplying the value for one span by the desired span and removing the gutter value. The second part of the formulae adds to the width to compensate for the missing gutter value which is not applied to the last child in each row. (see below code)
 
-<pre class="wp-code-highlight prettyprint">
+```
 &:last-child {
   margin-right: 0;
 }
-</pre>
+```
 
 The gutter percentage is set using the variable $gutter. This value is used throughout the site build for all column margins. If a layout uses multiple margin values the $gutter variable can be over-ridden using the mixin.
 
-<pre class="wp-code-highlight prettyprint">
+```
 .logo {
   @include grid(3); // Default, uses the variable $gutter value
   @include grid(3, $margin:0);  // Sets margin to 0
   @include grid(3, $margin:4%);  // Sets margin to 4%
 }   
-</pre>
+```
 
 The mixin adds the gutter value to a margin property dependant on the value of the $fold variable. If $fold is set to left, (the default option) then a margin-right is applied to all elements except the last child, the right column will be moved to the row below as the grid is re-sized. If $fold is set to right, a margin-left is applied to all elements except the last child, the left column will then be moved to the row below as the grid is re-sized.
 
-<pre class="wp-code-highlight prettyprint">
+```
 @if $fold == left {
   margin-right: $gutter;
 
@@ -135,19 +139,19 @@ The mixin adds the gutter value to a margin property dependant on the value of t
   }
 
 }
-</pre>
+```
 
 If a push value is set a margin-left is added to that element using this part of the formulae&#8230;
 
-<pre class="wp-code-highlight prettyprint">
+```
 @if $push &gt; 1 {
   margin-left: (($unit * $push) ) + ( $gutter / ( $grid-columns / $push) );
 }
-</pre>
+```
 
 The mixin in full is written below, the full grid set up can be viewed here <a href="http://www.get-maze.co.uk/maze/" target="_blank"> Maze demo</a>
 
-<pre class="wp-code-highlight prettyprint">
+```
 @mixin grid($col, $fold:"left", $push:$push, $margin:$gutter) {
   @include transition;
   float:#{$fold};
@@ -184,7 +188,7 @@ The mixin in full is written below, the full grid set up can be viewed here <a h
     }
 
 }
-</pre>
+```
 
 <h3 class="heading">Responsive</h3>
 
@@ -192,15 +196,17 @@ The media queries used in maze are also added to each selector using @include. T
 
 Firstly the break points are stored as variables&#8230;
 
-<pre class="wp-code-highlight prettyprint">$break-wide: 1240px;
+```
+$break-wide: 1240px;
 $break-desktop: 990px;
 $break-tablet: 767px;
 $break-mobile: 480px;
-</pre>
+```
 
 The media query mixin has two arguments $media and $width, allowing the column span to be edited at the desired points.
 
-<pre class="wp-code-highlight prettyprint">@mixin break($media, $col) {
+```
+@mixin break($media, $col) {
 	@if $media == tablet {
 		@media only screen and (max-width:$break-tablet) {
 			width: (($unit * $col) - $gutter ) + ( $gutter / ( $grid-columns / $col) );
@@ -215,16 +221,17 @@ The media query mixin has two arguments $media and $width, allowing the column s
 		}
 	}
 }
-</pre>
+```
 
 Finally by using @include the selectors are free from presentational classes and can adopt any naming convention.
 
-<pre class="wp-code-highlight prettyprint">.logo {
+```
+.logo {
   @include grid(3);
   @include break(tablet, 6);
   @include break(mobile, 12);
 }
-</pre>
+```
 
 <h3 class="heading">Benefits</h3>
 

@@ -20,19 +20,21 @@ For this reason I decided to refactor Maze to allow for a configurable $grid-col
 
 The default variables set at the top of the grid partial create the base settings for Maze. These values are used whenever the grid mixin is called, but importantly they can all be overridden for any part of the layout.
 
-<pre class="wp-code-highlight prettyprint">/* Grid Defaults */
+```
+/* Grid Defaults */
 
 $total-grid-columns: 12!default;
 $gutter: 2% !default;
 $fold: left !default;
 $push: 0 !default;
-</pre>
+```
 
 #### The grid mixin
 
 The mixin calculates the width of any column span we assign, and then uses our default values for $gutter, $fold and $push&#8230;
 
-<pre class="wp-code-highlight prettyprint">@mixin grid($col-span, $fold:$fold, $push:$push, $grid-size:$total-grid-columns, $margin:$gutter) {
+```
+@mixin grid($col-span, $fold:$fold, $push:$push, $grid-size:$total-grid-columns, $margin:$gutter) {
 
         float:#{$fold};
         width: (100% / ($grid-size / $col-span)) - $margin ;
@@ -46,7 +48,7 @@ The mixin calculates the width of any column span we assign, and then uses our d
             margin-#{$fold}: (((100%  / $grid-size) * $push) ) + ( $margin / ( $grid-size / $push) );
         }
 }
-</pre>
+```
 
 The $col-span variable is the value we will pass in when including the mixin, the rest or the arguments are being passed our default values from above and do not need to be added to the @include unless we are changing a value.
 
@@ -54,7 +56,8 @@ The $col-span variable is the value we will pass in when including the mixin, th
 
 Because most of our settings have already been set including Maze is very simple, all we have to do is add in the value for how many columns our element should span.
 
-<pre class="wp-code-highlight prettyprint">.span-three {
+```
+.span-three {
 	@include grid(3);
 }
 
@@ -66,7 +69,7 @@ Because most of our settings have already been set including Maze is very simple
 	@include grid(3);
 }
 
-</pre>
+```
 
 The values above are set based on the $total-grid-columns variable which we have set to 12.
 
@@ -76,22 +79,24 @@ So what happens if we want one or our rows to have five elements of equal width?
 
 In the grid mixin we use and argument $grid-size which is set to $total-grid-columns, we can pass in a new value when we call the mixin to prevent the default use of a 12 column grid.
 
-<pre class="wp-code-highlight prettyprint">.equal-one-five {
+```
+.equal-one-five {
       @include grid(1, $grid-size:5); /* Size One of Five   */
 }
 
-</pre>
+```
 
 This concept can be used to create any ratio required&#8230;
 
-<pre class="wp-code-highlight prettyprint">.equal-two-five {
+```
+.equal-two-five {
       @include grid(2, $grid-size:5); /* Size Two of Five */
 }
 
 .equal-three-five {
       @include grid(3, $grid-size:5); /* Size Three of Five */
 }
-</pre>
+```
 
 Adding this option means that any column layout or ratio can now be achieved with the Maze mixin.
 
@@ -101,7 +106,8 @@ The $gutter variable is used to add margin to both left and right side of each e
 
 As we now have a margin on both sides of each element, the site will no longer fill the containing div and so the max-width will be slightly narrower then the design. To resolve this the max-width needs to be larger then the desired width by the same value as the gutter percentage. As we can not add a percentage value to a px value we need to do some quick maths with th break point variables.
 
-<pre class="wp-code-highlight prettyprint">$gutter-unit:  $gutter / 1%;   /* Strips the percentage from the gutter value*/
+```
+$gutter-unit:  $gutter / 1%;   /* Strips the percentage from the gutter value*/
 
 $wrapper-gutter-percentage: ($break-wide / 100)  * $gutter-unit;   /* Work out 1% of the largest breakpoint */
 
@@ -122,11 +128,12 @@ $break-wide: 1180px;
 $break-desktop: 990px;
 $break-tablet: 767px;
 $break-mobile: 320px;
-</pre>
+```
 
 These can be edited, added too or taken away and are used in the break mixin&#8230;
 
-<pre class="wp-code-highlight prettyprint">@mixin break($media, $col-span, $grid-size:$total-grid-columns) {
+```
+@mixin break($media, $col-span, $grid-size:$total-grid-columns) {
 
 	@if $media == desktop {
 
@@ -153,11 +160,12 @@ These can be edited, added too or taken away and are used in the break mixin&#82
 	}
 
 }
-</pre>
+```
 
 This mixin is called in the same way as the grid mixin to set the column spans as the site responds&#8230;
 
-<pre class="wp-code-highlight prettyprint">.span-three {
+```
+.span-three {
 	@include grid(3);
         @include break(tablet, 12);
 }
@@ -172,27 +180,30 @@ This mixin is called in the same way as the grid mixin to set the column spans a
         @include break(tablet, 6);
 }
 
-</pre>
+```
 
 #### Gutter percentages
 
-<pre class="wp-code-highlight prettyprint">.margin-four {
+```
+.margin-four {
        @include grid(4, $margin:5%) - Override margin value
 }
-</pre>
+```
 
 #### Push values
 
-<pre class="wp-code-highlight prettyprint">.push-two {
+```
+.push-two {
        @include grid(2, $push:2); - - Add two column spans to the margin
 }
-</pre>
+```
 
 #### Fold direction
 
-<pre class="wp-code-highlight prettyprint">right-fold {
+```
+right-fold {
         @include grid(3, $fold:"right"); - Columns will collapse from the left
 }
-</pre>
+```
 
 <a href="http://get-maze.co.uk/" target="_blank" class="button">View demo</a>

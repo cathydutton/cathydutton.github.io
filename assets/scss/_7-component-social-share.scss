@@ -1,0 +1,23 @@
+/*
+Social Share
+----------------------------------- */
+
+.share-page a {
+
+  &:hover {
+    color: map-get($colours, 'white');
+  }
+
+}
+
+.share-page__twitter {
+  @include button (#4099FF);
+}
+
+.share-page__facebook {
+  @include button (#3B5998);
+}
+
+.share-page__google {
+  @include button (	#008744);
+}

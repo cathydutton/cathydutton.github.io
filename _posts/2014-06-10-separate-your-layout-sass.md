@@ -31,7 +31,7 @@ The example code below uses the Maze grid system to demonstrate. The example sho
   Social
 </div></header>
 
-<pre class="wp-code-highlight prettyprint">
+```
 &lt;!-- Header --&gt;
 &lt;header class="container"&gt;
     &lt;div class="logo"&gt;Logo&lt;/div&gt;
@@ -39,9 +39,9 @@ The example code below uses the Maze grid system to demonstrate. The example sho
      &lt;div class="social-share"&gt;Social&lt;/div&gt;
   &lt;/header&gt;
 &lt;!--End  Header --&gt;
-</pre>
+```
 
-<pre class="wp-code-highlight prettyprint">
+```
 .container {
 	@include clearfix;
 	width: 100%;
@@ -59,7 +59,7 @@ The example code below uses the Maze grid system to demonstrate. The example sho
 .social-share {
    @include grid(3);
 }
-</pre>
+```
 
 The css above is easy to read as each selector has only the layout includes assigned to it. As pages get bigger and more elements are added keeping the grid includes clear and easy to find becomes essential. Making changes to the widths or even adding in a new column can be easily done by adjusting the values passed to the grid mixin.
 
@@ -82,7 +82,7 @@ The css above is easy to read as each selector has only the layout includes assi
   Call Us
 </div></header>
 
-<pre class="wp-code-highlight prettyprint">
+```
 .logo {
    @include grid(3);
 }
@@ -95,22 +95,23 @@ The css above is easy to read as each selector has only the layout includes assi
 .call-us {
    @include grid(3);
 }
-</pre>
+```
 
 <h3 class="heading">Taking things a step further </h3>
 
 The break point mixin can also be added to the layout file helping to keep all the layout properties together. For responsive sites I also recommend creating a third style sheet to deal solely with the media queries.
 
-<pre class="wp-code-highlight prettyprint">
+```
 .logo {
   @include grid(3);
   @include breakpoint(tablet, 6);
 }
-</pre>
+```
 
 The separate Sass files can be compiled using a base style.scss file. Below is an example of how that stylesheet would look using folders for the three separated sass files on each page.
 
-<pre class="wp-code-highlight prettyprint">/* PRODUCT PAGE - Unique product page styles
+```
+/* PRODUCT PAGE - Unique product page styles
 ========================================================================== */
 
 	@import &#039;product-page/_layout.scss&#039;;
@@ -125,4 +126,4 @@ The separate Sass files can be compiled using a base style.scss file. Below is a
 	@import &#039;category-page/_theme.scss&#039;;
 	@import &#039;category-page/_responsive.scss&#039;;
 
-</pre>
+```

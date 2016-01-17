@@ -15,7 +15,8 @@ The example below demonstrates the effect of nesting selectors on a simple navig
 
 **HTML**
 
-<pre class="wp-code-highlight prettyprint">&lt;nav class="primary-navigation"&gt;
+```
+&lt;nav class="primary-navigation"&gt;
 &lt;ul&gt;
 &lt;li&gt;Home&lt;/li&gt;
 &lt;li&gt;About us&lt;/li&gt;
@@ -23,11 +24,12 @@ The example below demonstrates the effect of nesting selectors on a simple navig
 &lt;li&gt;Contact&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-</pre>
+```
 
 **Sass**
 
-<pre class="wp-code-highlight prettyprint">.primary-navigation {
+```
+.primary-navigation {
 
   ul {
     margin: 0;
@@ -52,11 +54,12 @@ The example below demonstrates the effect of nesting selectors on a simple navig
   }
 
 }
-</pre>
+```
 
 **CSS**
 
-<pre class="wp-code-highlight prettyprint">.primary-navigation ul {
+```
+.primary-navigation ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -77,26 +80,28 @@ The example below demonstrates the effect of nesting selectors on a simple navig
 .primary-navigation a:hover {
   text-decoration: underline;
 }
-</pre>
+```
 
 The nested Sass creates the very specific css selectors above, this css output is difficult to re-use and relies completely on the HTML structure. The problem with this becomes apparent when a secondary navigation is added&#8230;.
 
 **HTML**
 
-<pre class="wp-code-highlight prettyprint">&lt;nav class="secondary-navigation"&gt;
+```
+&lt;nav class="secondary-navigation"&gt;
 &lt;ul&gt;
 &lt;li&gt;Terms and conditions&lt;/li&gt;
 &lt;li&gt;Privacy Policy&lt;/li&gt;
 &lt;li&gt;Sitemap&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
-</pre>
+```
 
 None of the css already written can be used on this secondary navigation as the selectors are too specific due to the nested Sass approach. To style this navigation we would need to add the below Sass creating another chunk of css which is mostly duplicated code&#8230;
 
 **Sass**
 
-<pre class="wp-code-highlight prettyprint">.secondary-navigation {
+```
+.secondary-navigation {
 
   ul {
     margin: 0;
@@ -121,11 +126,12 @@ None of the css already written can be used on this secondary navigation as the 
   }
 
 }
-</pre>
+```
 
 **CSS**
 
-<pre class="wp-code-highlight prettyprint">.secondary-navigation ul {
+```
+.secondary-navigation ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -147,7 +153,7 @@ None of the css already written can be used on this secondary navigation as the 
   text-decoration: underline;
 }
 
-</pre>
+```
 
 <h2 class="heading"> A better way </h2>
 
@@ -155,7 +161,8 @@ A much cleaner approach would be to add a class to each HTML element creating se
 
 **HTML**
 
-<pre class="wp-code-highlight prettyprint">&lt;nav class="primary-navigation"&gt;
+```
+&lt;nav class="primary-navigation"&gt;
 &lt;ul&gt;
 &lt;li class="navigation-item"&gt;Home&lt;/li&gt;
 &lt;li class="navigation-item"&gt;About us&lt;/li&gt;
@@ -172,11 +179,12 @@ A much cleaner approach would be to add a class to each HTML element creating se
 &lt;/ul&gt;
 &lt;/nav&gt;
 
-</pre>
+```
 
 **CSS**
 
-<pre class="wp-code-highlight prettyprint">/* Styling for both navigation areas */
+```
+/* Styling for both navigation areas */
 nav ul  {
     margin: 0;
     padding: 0;
@@ -208,7 +216,7 @@ nav ul  {
   color:white;
   background:black;
 }
-</pre>
+```
 
 <h3 class="heading"> Not all bad </h3>
 
@@ -216,7 +224,8 @@ Nesting however is not all bad, if used correctly. Sticking with the example fro
 
 **Sass**
 
-<pre class="wp-code-highlight prettyprint">.navigation-item{
+```
+.navigation-item{
     float:left;
 
     a{
@@ -230,7 +239,7 @@ Nesting however is not all bad, if used correctly. Sticking with the example fro
   }
 
 }
-</pre>
+```
 
 <h3 class="heading"> Keep it simple </h3>
 

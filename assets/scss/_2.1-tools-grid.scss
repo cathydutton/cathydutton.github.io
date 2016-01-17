@@ -37,7 +37,7 @@
 
   } @else {
       float: left;
-      width: (100 - (($unit - 1) * $grid-margin)) / $unit;
+      width: (100% - (($unit - 1) * $grid-margin)) / $unit;
 
       &:nth-child(n) {
         margin-right: $grid-margin;

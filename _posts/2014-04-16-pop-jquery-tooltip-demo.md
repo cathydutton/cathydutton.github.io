@@ -7,7 +7,8 @@ Pop is a simple to use, responsive jQuery tooltip with css animations. The jQuer
 
 <a href="http://www.cathydutton.co.uk/pop/" target="_blank" class="button">View demo</a>
 
-<pre class="wp-code-highlight prettyprint">$(document).ready(function () {
+```
+$(document).ready(function () {
 
   $(".button").mouseenter(function () {
   $(this).prev("div").fadeIn("slow");
@@ -26,11 +27,12 @@ Pop is a simple to use, responsive jQuery tooltip with css animations. The jQuer
   });
 
 });
-</pre>
+```
 
 The HTML used in the example is also pasted below
 
-<pre class="wp-code-highlight prettyprint">&lt;div class="wrapper"&gt;
+```
+&lt;div class="wrapper"&gt;
   &lt;h1&gt;Pop&lt;/h1&gt;
   &lt;h2&gt;A simple jQuery and css3 tooltip example&lt;/h2&gt;
   &lt;p&gt;Hover over one of the 3 boxes below to view the tooltip.&lt;/p&gt;
@@ -50,13 +52,14 @@ The HTML used in the example is also pasted below
   &lt;/div&gt;
 &lt;/div&gt;
 
-</pre>
+```
 
 A <a href="http://www.cathydutton.co.uk/pop/" target="_blank">Demo</a> of the tooltip is available <a href="http://www.cathydutton.co.uk/pop/" target="_blank">here</a> and can be downloaded from <a href="https://github.com/cathydutton/Pop" target="_blank">GitHub</a> or viewed on <a href="http://codepen.io/cathydutton/pen/yctrI" target="_blank">CodPen</a>.
 
 The sass used in the example is written below&#8230;
 
-<pre class="wp-code-highlight prettyprint">/* Variabes */  
+```
+/* Variabes */  
 $orange: #ffa600;
 $grey:#f3f3f3;
 $white: #fff;
@@ -257,4 +260,4 @@ background:$white;
 color:$orange;
 border: solid 1px $orange;
 }
-</pre>
+```

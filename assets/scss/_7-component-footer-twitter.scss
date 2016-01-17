@@ -2,6 +2,10 @@
     Footer Twitter
     ----------------------------------- */
 
+#latest-tweets ul {
+  margin-left: 0;
+}
+
 #latest-tweets li {
   @include grid(break-mobile, 1, 1);
   @include grid(break-tablet, 1, 2);
@@ -13,6 +17,11 @@
   padding: .2em .6em;
   position: relative;
   text-align: left;
+
+  p,
+  a span {
+    word-wrap: break-word;
+  }
 
   &:after {
     border-color: map-get($colours, 'accent') transparent transparent;

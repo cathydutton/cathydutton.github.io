@@ -28,18 +28,16 @@ body {
 
 blockquote {
   background: map-get($colours, 'off-white');
-  border: 1px solid darken(map-get($colours, 'off-white'), 20%);
+  border: 1px solid darken(map-get($colours, 'off-white'), 10%);
   font-size: 1em;
-  padding: 10px 7px;
-  width: 98%;
   margin: 0;
+  padding: 10px 15px;
+  text-align: center;
 }
 
-
 pre {
-  background: #f3f3f3;
-  border: 1px solid #e3e3e3;
+  background: map-get($colours, 'off-white');
+  border: 1px solid lighten(map-get($colours, 'accent'), 20%);
   font-size: 1em;
   padding: 10px 7px;
-  width: 98%;
 }

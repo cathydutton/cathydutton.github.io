@@ -11,18 +11,20 @@ Going back to basics and creating meaningful class names could dramatically impr
 
 The best way to reduce selectors is to target tags individually rather then using the DOM structure as a guide. Take the following navigation example&#8230;
 
-<pre class="wp-code-highlight prettyprint">&lt;nav class="navigation-main"&gt;
+```
+&lt;nav class="navigation-main"&gt;
   &lt;ul&gt;
     &lt;li class="navigation-main-list"&gt;&lt;a href="" class="navigation-main-link"&gt;Home&lt;/a&gt;&lt;/li&gt;
     &lt;li class="navigation-main-list"&gt;&lt;a href="" class="navigation-main-link"&gt;About&lt;/a&gt;&lt;/li&gt;
     &lt;li class="navigation-main-list"&gt;&lt;a href="" class="navigation-main-link"&gt;Contact&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
-</pre>
+```
 
 **Bad example&#8230;**
 
-<pre class="wp-code-highlight prettyprint">nav {
+```
+nav {
 	width: 100%;
 }
 
@@ -47,11 +49,12 @@ nav ul li a:hover {
 	text-decoration: underline;
 }
 
-</pre>
+```
 
 **Good example&#8230;**
 
-<pre class="wp-code-highlight prettyprint">.navigation-main {
+```
+.navigation-main {
 	width: 100%;
 }
 
@@ -75,7 +78,7 @@ nav ul li a:hover {
 	text-decoration: underline;
 }
 
-</pre>
+```
 
 In the second example the styles are not effected by the HTML structure making the code a little more future proof. We have also avoided using generic element selectors like nav, ul or li reducing the risk of effecting other areas of the website unintentionally. Most importantly though the second example uses significantly less selectors and will load faster as a result.
 
@@ -83,12 +86,13 @@ In the second example the styles are not effected by the HTML structure making t
 
 Markup should also be free of specific style or grid related class names such as .eight-columns or .grid-6, classes like these have become commonplace in responsive grids and frameworks but become meaningless at smaller breakpoints&#8230;.
 
-<pre class="wp-code-highlight prettyprint">@media (max-width: 480px) {
+```
+@media (max-width: 480px) {
   .eight-columns {
      width: 100%;
   }
 }
-</pre>
+```
 
 A major issue with this markup is that it restricts how a layout adapts to different screen sizes. Any element with the class .eight-columns will be forced to take on the same styles as the site responds. For example in the layout below there are two rows each with three blocks. As the class names will all be .four-columns there is no way to differ the behaviour of each row at tablet or mobile size.
 
@@ -126,12 +130,13 @@ In the demo both rows will adapt from thirds to full width at mobile size&#8230;
 
 Lets say we wanted to change how the two rows above respond at the mobile breakpoint we would need to target them separately using parent selectors&#8230;
 
-<pre class="wp-code-highlight prettyprint">@media (max-width: 480px) {
+```
+@media (max-width: 480px) {
   .header .eight-columns {
      width: 100%;
   }
 }
-</pre>
+```
 
 This introduces extra selectors and also creates DOM reliant styling making it difficult to re-use across the site.
 
@@ -155,7 +160,8 @@ A better solution would be to use class names relevant to the content for exampl
   </li>
 </ul>
 
-<pre class="wp-code-highlight prettyprint">.logo,
+```
+.logo,
 .search,
 .social  {
   @include grid(span-3);
@@ -168,7 +174,7 @@ A better solution would be to use class names relevant to the content for exampl
     @include grid(span-12);
   }
 }
-</pre>
+```
 
 The example below uses the CSS above to allow the two rows to respond differently at the mobile breakpoint.
 
@@ -206,7 +212,8 @@ Being too content unique with your class names can however be equally damaging. 
 
 Naming every element uniquely will create repetitive CSS&#8230;
 
-<pre class="wp-code-highlight prettyprint">.primary-button {
+```
+.primary-button {
  display:block;
  color:$white;
  background: $orange;
@@ -225,11 +232,12 @@ Naming every element uniquely will create repetitive CSS&#8230;
  padding: 10px;
  width:120px;  
 }
-</pre>
+```
 
 One solution to this is would be to use @extend to copy styles, however if overused @extend can create long, messy selectors creating more issues then it solves&#8230;
 
-<pre class="wp-code-highlight prettyprint">%btn {
+```
+%btn {
  display:block;
  color:$white;
  font-size:14px;
@@ -248,11 +256,12 @@ One solution to this is would be to use @extend to copy styles, however if overu
  background: $blue;
  width:120px;  
 }
-</pre>
+```
 
 The CSS output here will be&#8230;
 
-<pre class="wp-code-highlight prettyprint">.primary-button,
+```
+.primary-button,
 .secondary-button  {
  display:block;
  color:$white;
@@ -270,7 +279,7 @@ The CSS output here will be&#8230;
  background: $blue;
  width:120px;  
 }
-</pre>
+```
 
 <h3 class="heading"> A better way </h3>
 
@@ -280,7 +289,8 @@ Using a Base Class and a Modifier Class in your markup is a much cleaner way to 
 &lt;a class="button secondary-button"&gt;&lt;/a&gt;
 </pre>
 
-<pre class="wp-code-highlight prettyprint">.button {
+```
+.button {
  display:block;
  color:$white;
  font-size:14px;
@@ -297,6 +307,6 @@ Using a Base Class and a Modifier Class in your markup is a much cleaner way to 
  background: $blue;
  width:120px;  
 }
-</pre>
+```
 
 In this example styles from the base class are re-used without creating long selectors. Styles can also be easily adapted using the modifier class without the need to use !important or to add specificity with a parent selector.

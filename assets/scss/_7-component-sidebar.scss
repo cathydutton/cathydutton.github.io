@@ -55,14 +55,14 @@ Sidebar
 .profile-image {
   width: 180px;
   height: 180px;
-  border: dashed 1px map-get($colours, 'grey-light');
+  border: solid 1px lighten(map-get($colours, 'grey-dark'), 15%);
   border-radius: 100%;
   margin: 20px;
 
   img {
     width: 180px;
     height: 180px;
-    clip-path: circle(81px at 88px 88px);
+    clip-path: circle(81px at 89px 89px);
   }
 
 }

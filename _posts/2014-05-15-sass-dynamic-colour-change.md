@@ -7,44 +7,45 @@ When building the website for <a href="http://get-maze.co.uk/" target="_blank">M
 
 To achieve this I took advantage of some of the new features in Sass. Firstly using variables I was able to store my colour values&#8230;
 
-<pre class="wp-code-highlight prettyprint">
+```
 $orange: #ffa600;
 $blue: #82d2e5;
 $green:#c1d72e;
 $light-grey: #b2b2b2 ;
 $dark-grey: #5e5e5e ;
-</pre>
+```
 
 I then used a list to assign a colour variable to each slide in the site&#8230;
 
-<pre class="wp-code-highlight prettyprint">
+```
 $color :
 (1, $orange),
 (2, $blue),
 (3, $green),
 (4, $light-grey),
 (5, $dark-grey);
-</pre>
+```
 
 An @each loop is then used to run through the list and generate the css for each slide.
 
-<pre class="wp-code-highlight prettyprint">
+```
 @each $number, $bg in $color {
 
   .slide-#{$number} {
     background:$bg;
   }
-    
+
 }
-</pre>
+```
 
 The loop generates the css code for each slide takeing the relavant value for $bg from the $color list.
 
-<pre class="wp-code-highlight prettyprint">.slide-1 {background: #ffa600;}
+```
+.slide-1 {background: #ffa600;}
 .slide-2 {background: #82d2e5;}
 .slide-3 {background: #c1d72e;}
 .slide-4 {background: #b2b2b2;}
 .slide-5 {background: #5e5e5e;}
-</pre>
+```
 
 A working example can be found on <a href="http://codepen.io/cathydutton/pen/ndfHh" target="_blank">Codepen </a>

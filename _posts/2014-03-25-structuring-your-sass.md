@@ -35,7 +35,8 @@ When setting up a new web project getting things right from the beginning is hug
 
 Below is the start up style.scss file used to pull in each sub file&#8230;
 
-<pre class="wp-code-highlight prettyprint">/* ==========================================================================
+```
+/* ==========================================================================
 
   	Bear Scss Structure
  	  Author: Cathy Dutton - http://www.cathydutton.co.uk
@@ -87,9 +88,9 @@ Below is the start up style.scss file used to pull in each sub file&#8230;
 
 	@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,900italic,900,500italic,700,700italic);
 
-</pre>
+```
 
-<h2 class="heading">Expansion</h2> 
+<h2 class="heading">Expansion</h2>
 
 The structured folders make future development much easier, allowing anybody to quickly find the files they wish to edit or to add new mixins and placeholders.
 

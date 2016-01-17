@@ -26,6 +26,7 @@ Specific CSS like this…
 ```
 
 Contradictory CSS like this…
+
 ```
 .fl {
    float: none;
@@ -33,6 +34,7 @@ Contradictory CSS like this…
 ```
 
 or unnecessary correctional CSS like this..
+
 ```
 .sidebar {
    border: 0;

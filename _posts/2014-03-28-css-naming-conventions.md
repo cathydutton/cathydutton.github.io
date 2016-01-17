@@ -17,7 +17,8 @@ Now thanks to Sass and in particular placeholders and mixins, class names can re
 
 The code example below shows more readable code which is much simpler to maintain and grow.
 
-<pre class="wp-code-highlight prettyprint">.logo {
+```
+.logo {
 @include grid(3,  0);
 @include break(tablet, 50%);
 @include break(mobile, 100%);
@@ -30,7 +31,7 @@ The code example below shows more readable code which is much simpler to maintai
 @include grid(3,  0);
 @include break(tablet, 100%);
 }
-</pre>
+```
 
 <h2 class="heading"> Colours</h2>
 
@@ -38,14 +39,16 @@ If we have a heading which needed to be displayed in red, a descriptive selector
 
 Example selectors include&#8230;
 
-<pre class="wp-code-highlight prettyprint">.emphasis
+```
+.emphasis
 .link-colour
 .brand-colour
-</pre>
+```
 
 Using a base.scss file colours can be set up and stored in varaibles, these variables are then assigned to more semantic selectors used throughout the site. The code below allows for any colour to be changed by editing just one file&#8230;
 
-<pre class="wp-code-highlight prettyprint">/* COLOUR DEFAULTS
+```
+/* COLOUR DEFAULTS
 ========================================================================== */
 
 /* Colours -  Defined only once */
@@ -64,6 +67,6 @@ $secondary-color: $green;
 $tertiary-color: $grey;
 $accent-color: $blue;
 $error-color: $blue;
-</pre>
+```
 
 An example of the code used above can be found on <a href="https://github.com/cathydutton/bear/blob/master/src/sass/base/_base.scss" target="_blank">GitHub</a>.

@@ -15,8 +15,11 @@ social:
 
 # Build settings
 markdown: kramdown
-#markdown: redcarpet
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 permalink: :title.html
-highlighter: rouge
+
 
 exclude: ["node_modules", "default.yml", "gulpfile.js", "LICENSE.txt", "package.json", "README.md", "scssReport.json", "stats", "tasks", "assets/scss"]

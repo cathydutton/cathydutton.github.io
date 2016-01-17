@@ -23,10 +23,6 @@
     transition: all .3s ease-in-out;
   }
 
-  // &:active:before {
-  //   content: '\2713';
-  // }
-
 }
 
 button,
@@ -34,11 +30,15 @@ button,
   @include button (map-get($colours, 'accent'));
 }
 
-.button--example {
-  @include button (map-get($colours, 'grey-dark'));
+.page-navigation {
+  margin: 10px 0 0;
 }
 
 .button--page-navigation__prev,
 .button--page-navigation__next {
   @include button (map-get($colours, 'accent'));
+}
+
+.button--page-navigation__next {
+  margin-left: 10px;
 }
