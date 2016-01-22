@@ -63,7 +63,7 @@ textarea {
 body {
   color: #2a2a2a;
   margin: 0;
-  max-width: 1280px;
+  max-width: 1180px;
   min-width: 280px;
   padding: 0; }
 
@@ -179,19 +179,12 @@ h4 {
 /*
   Layout
   ----------------------------------- */
-#wrapper {
+.wrapper {
+  animation: fadeIn 2s forwards;
   background: #fff;
-  border-left: solid 3px #ffa600;
-  bottom: 100%;
-  left: 15px;
   min-height: 100%;
   position: relative;
-  top: 0;
-  width: 95%;
-  z-index: 1; }
-  @media screen and (min-width: 1020px) {
-    #wrapper {
-      animation: 0; } }
+  width: 95%; }
 
 header,
 footer,
@@ -235,6 +228,7 @@ Sidebar
 ----------------------------------- */
 .sidebar {
   background: #2a2a2a;
+  border-right: solid 3px #ffa600;
   bottom: 0;
   height: 100%;
   left: 0;
@@ -242,32 +236,20 @@ Sidebar
   overflow: scroll;
   padding: 20px 15px;
   position: fixed;
-  right: 0;
-  top: 0;
+  left: -250px;
   width: 260px;
-  z-index: 0; }
-
-.sidebar--open ~ #wrapper {
-  left: 260px;
-  overflow-x: hidden;
-  position: fixed; }
-  @media screen and (min-width: 1020px) {
-    .sidebar--open ~ #wrapper {
-      position: relative;
-      width: 80%; } }
-
-.wrapper--deactive:before {
-  background: #2a2a2a;
-  content: '';
-  height: 100%;
-  opacity: .6;
-  overflow: auto;
-  position: absolute;
-  width: 100%;
   z-index: 1; }
-  @media screen and (min-width: 1020px) {
-    .wrapper--deactive:before {
-      opacity: 0; } }
+
+.sidebar--open {
+  left: 0;
+  transition: all .3s ease-in-out; }
+
+.sidebar--open ~ .wrapper {
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px); }
 
 .profile-image {
   width: 180px;
@@ -293,7 +275,7 @@ Sidebar
   display: table;
   clear: both;
   list-style: none;
-  margin-top: 30px;
+  margin: 30px 0 0;
   padding: 0;
   text-align: center;
   width: 100%; }
@@ -369,6 +351,9 @@ Navigation
 
 .button--menu--closed {
   left: -14px; }
+
+.button--menu--open {
+  transition: all .3s ease-in-out; }
 
 .button--menu--icon {
   opacity: 1;

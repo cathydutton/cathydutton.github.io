@@ -60,7 +60,7 @@ $logos: (barclays, ao, getthelabel, sainsburys, ee, o2, thehutgroup, nintendo, n
 
 // GALLETY
 
-#wrapper.lightbox {
+.wrapper.lightbox {
 
   &:before {
     background: map-get($colours, 'black');

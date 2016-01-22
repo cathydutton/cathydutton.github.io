@@ -37,7 +37,6 @@ Feed
 
 
 // COMMENTS
-
 .news-feed__comments{
   background: map-get($colours, 'accent');
   border-radius: 100%;
@@ -50,4 +49,9 @@ Feed
   text-align: center;
   top: 25%;
   width: 50px;
+
+  &:hover {
+    color: map-get($colours, 'white');
+  }
+
 }
