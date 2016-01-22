@@ -29,16 +29,3 @@ button,
 .button {
   @include button (map-get($colours, 'accent'));
 }
-
-.page-navigation {
-  margin: 10px 0 0;
-}
-
-.button--page-navigation__prev,
-.button--page-navigation__next {
-  @include button (map-get($colours, 'accent'));
-}
-
-.button--page-navigation__next {
-  margin-left: 10px;
-}

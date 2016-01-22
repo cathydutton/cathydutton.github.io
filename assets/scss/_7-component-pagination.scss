@@ -3,7 +3,7 @@ Pagination
 ----------------------------------- */
 
 .page-navigation {
-  margin: 10px 0 0;
+  margin: -11px 0 0;
 }
 
 .button--page-navigation__prev,
@@ -11,6 +11,31 @@ Pagination
   @include button (map-get($colours, 'accent'));
 }
 
+.page-navigation {
+  float: right;
+  list-style: none;
+  padding: 0;
+}
+
+.button--page-navigation__prev {
+  float: left;
+  padding: 0;
+}
+
 .button--page-navigation__next {
+  float: right;
+  padding: 0;
   margin-left: 10px;
+}
+
+.button--page-navigation__anchor {
+  border-bottom: 0;
+  display: block;
+  padding: 10px 20px 7px;
+}
+
+.button--page-navigation__svg {
+  fill: map-get($colours, 'white');
+  height: 16px;
+  width: 20px;
 }

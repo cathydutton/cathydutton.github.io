@@ -1,5 +1,6 @@
 <div class="share-page">
     <h3>Share this on...</h3>
+    {% include pagination.html %}
     <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=cathy_dutton&related=cathy_dutton" rel="nofollow" target="_blank" class="share-page__twitter" title="Share on Twitter">Twitter</a>
     <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" class="share-page__facebook" target="_blank" title="Share on Facebook">Facebook</a>
     <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" class="share-page__google" target="_blank" title="Share on Google+">Google+</a>

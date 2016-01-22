@@ -207,8 +207,7 @@ section {
     Button
     ----------------------------------- */
 button,
-.button, .button--page-navigation__prev,
-.button--page-navigation__next {
+.button {
   border: 0;
   border-radius: .2em;
   box-shadow: 0;
@@ -226,21 +225,6 @@ button,
   .button:focus {
     background-color: #996400;
     transition: all .3s ease-in-out; }
-
-.page-navigation {
-  margin: 10px 0 0; }
-
-.button--page-navigation__prev,
-.button--page-navigation__next {
-  background-color: #ffa600; }
-  .button--page-navigation__prev:hover, .button--page-navigation__prev:focus,
-  .button--page-navigation__next:hover,
-  .button--page-navigation__next:focus {
-    background-color: #996400;
-    transition: all .3s ease-in-out; }
-
-.button--page-navigation__next {
-  margin-left: 10px; }
 
 /* Modules */
 /*

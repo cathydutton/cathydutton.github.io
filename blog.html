@@ -4,13 +4,14 @@ title: "Online portfolio - Cathy Dutton"
 description: "The online website design and development portfolio of Cathy Dutton"
 page-name: "portfolio"
 intro: "Blog"
-heading: "Header 1"
+heading: "Latest posts and tutorials"
 ---
 
 	<section class="news-feed">
 		{% for post in site.posts %}
 		  <article class="news-feed__post">
-		   		<a href="{{site.baseurl}}{{post.url}}" title="{{ post.title }}" class="news-feed__anchor">
+						<a href="{{site.baseurl}}{{post.url}}#disqus_thread" class="news-feed__comments">Link</a>
+		   			<a href="{{site.baseurl}}{{post.url}}" title="{{ post.title }}" class="news-feed__anchor">
 		        	<h3 class="heading news-feed__title">{{ post.title }}</h3>
 		        	<p class="news-feed__date">{{ post.date | date: '%B %d, %Y' }}</p>
 		  	 	</a>
