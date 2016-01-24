@@ -29,35 +29,29 @@ Navigation
 
 
 // BUTTON
-
 .button--menu {
   background: map-get($colours, 'grey-dark');
   border: solid 2px map-get($colours, 'accent');
-  border-radius: 50%;
-  color: map-get($colours, 'grey-light');
-  fill: map-get($colours, 'grey-light');
+  border-radius: 0 20px 20px 0;
+  border-left: 0;
+  color: map-get($colours, 'accent');
+  fill: map-get($colours, 'accent');
   height: 55px;
+  left: 2px;
   padding: 0;
   position: fixed;
   top: 184px;
-  width: 55px;
+  width: 40px;
+  transition: all .3s ease-in-out;
   z-index: 2;
 
   svg {
     height: 46%;
-    width: 51%;
+    width: 85%;
   }
 
-  &:hover {
-    background: map-get($colours, 'accent');
-    border-radius: 100%;
-    color: map-get($colours, 'grey-dark');
-    fill: map-get($colours, 'grey-dark');
-    transform: scale(1.25);
-    transition: background-color .5s, transform .5s ease-out;
-  }
-
-  &:focus {
+  &:hover,
+  &:focus  {
     background: map-get($colours, 'grey-dark');
     color: map-get($colours, 'grey-light');
     fill: map-get($colours, 'grey-light');
@@ -65,19 +59,8 @@ Navigation
 
 }
 
-.button--menu--closed {
-  left: -14px;
-}
-
-.button--menu--open {
-  transition: all .3s ease-in-out;
-}
-
-
-
 
 // Icon
-
 .button--menu--icon {
   opacity: 1;
   transform: rotate(0) translateY(0) translateX(0);
@@ -94,7 +77,7 @@ Navigation
 }
 
 .button--menu--open {
-  left: 228px;
+  left: 252px;
 
   .button--menu--icon:nth-of-type(1) {
     transform: rotate(-45deg) translateY(0) translateX(0);

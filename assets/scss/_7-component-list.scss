@@ -4,6 +4,7 @@
 .content-list {
   @include clearfix;
   padding: 0;
+  width: 100%;
 }
 
 .content-list__item {

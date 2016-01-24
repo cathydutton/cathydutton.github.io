@@ -2,7 +2,14 @@
 Social Share
 ----------------------------------- */
 
-.share-page a {
+.share-page__anchor {
+  display: block;
+  margin: 5px 0;
+
+  @include mq(break-phablet) {
+    float: left;
+    margin-right: 10px;
+  }
 
   &:hover {
     color: map-get($colours, 'white');

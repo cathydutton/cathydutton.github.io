@@ -43,7 +43,6 @@
 }
 
  /* MEDIA QUERIES */
-
 @mixin mq($mq-breakpoint, $mq-breakpoints: $breakpoints) {
   // If $mq-breakpoint is a key that exists in
   // $mq-breakpoints, get and use the value

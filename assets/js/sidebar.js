@@ -7,57 +7,42 @@ window.onload = function() {
 
 	// SIDEBAR
 	var toggleNav = document.getElementById('js-header__icon');
-	var sidebar = document.querySelector('.sidebar');
-	// var wrapper = document.getElementById('wrapper');
-	var sidebarLink = document.querySelectorAll('.sidebar__anchor, .find-me__anchor'), i;
-	//var width = window.innerWidth;
+	var sidebar = document.querySelector('.sidebar, a');
+	var wrapper = document.querySelector('.wrapper');
+	var tweets = document.querySelector('timePosted a');
+	var wrapperLink = document.querySelectorAll('.wrapper a'), i;
+	var sidebarLink = document.querySelectorAll('.sidebar a'), i;
 
-
-	// set menu to open on desktop
-	// if (width > 1020) {
-	// 	sidebar.className = sidebar.className.replace( /(?:^|\s)sidebar--closed(?!\S)/g , ' sidebar--open' );
-	// 	wrapper.className = wrapper.className.replace( /(?:^|\s)wrapper--deactive(?!\S)/g , ' wrapper--active' );
-	// 	toggleNav.className = toggleNav.className.replace( /(?:^|\s)button--menu--closed(?!\S)/g , ' button--menu--open' );
-	// }
-
-	// set focus based on menu class
-	if (sidebar.className.match(/(?:^|\s)sidebar--closed(?!\S)/) ) {
-		// Allow focus of Sidebar Elements
-		for (i = 0; i < sidebarLink		.length; ++i) {
-			sidebarLink[i].setAttribute('tabindex', '-1	');
-		}
-
-	}
-
-	if ( sidebar.className.match(/(?:^|\s)sidebar--open(?!\S)/) ) {
-		// Remove focus of Sidebar Elements
-		for (i = 0; i < sidebarLink.length; ++i) {
-			sidebarLink[i].setAttribute('tabindex', '0');
-		}
-
+	for (i = 0; i < sidebarLink.length; ++i) {
+		sidebarLink[i].setAttribute('tabindex', '-1');
 	}
 
 	// On Click function
-
 	function changeClass() {
 		if ( sidebar.className.match(/(?:^|\s)sidebar--closed(?!\S)/) ) {
 		      sidebar.className = sidebar.className.replace( /(?:^|\s)sidebar--closed(?!\S)/g , ' sidebar--open' );
-					// wrapper.className = wrapper.className.replace( /(?:^|\s)wrapper--active(?!\S)/g , ' wrapper--deactive' );
 					toggleNav.className = toggleNav.className.replace( /(?:^|\s)button--menu--closed(?!\S)/g , ' button--menu--open' );
 		      // Allow focus of Sidebar Elements
 					for (i = 0; i < sidebarLink		.length; ++i) {
   					sidebarLink[i].setAttribute('tabindex', '0');
 					}
+					for (i = 0; i < wrapperLink.length; ++i) {
+						wrapperLink[i].setAttribute('tabindex', '-1');
+					}
+					tweets.setAttribute('tabindex', '-1');
 
 		  }
 		  else if ( sidebar.className.match(/(?:^|\s)sidebar--open(?!\S)/) ) {
 		      sidebar.className = sidebar.className.replace( /(?:^|\s)sidebar--open(?!\S)/g , ' sidebar--closed' );
-					// wrapper.className = wrapper.className.replace( /(?:^|\s)wrapper--deactive(?!\S)/g , ' wrapper--active' );
 					toggleNav.className = toggleNav.className.replace( /(?:^|\s)button--menu--open(?!\S)/g , ' button--menu--closed' );
 					// Remove focus of Sidebar Elements
 					for (i = 0; i < sidebarLink.length; ++i) {
 						sidebarLink[i].setAttribute('tabindex', '-1');
 					}
+					for (i = 0; i < wrapperLink.length; ++i) {
+						wrapperLink[i].setAttribute('tabindex', '0');
+					}
+					tweets.setAttribute('tabindex', '0');
 
 		  }
 	}

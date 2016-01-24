@@ -14,24 +14,26 @@ Sidebar
   position: fixed;
   left: -250px;
   width: 260px;
+  transition: all .3s ease-in-out;
   z-index: 1;
 }
 
 .sidebar--open  {
   left: 0;
-  transition: all .3s ease-in-out;
 }
 
 .sidebar--open ~ .wrapper {
 
-  // blur content and remove cover
-
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
-  -o-filter: blur(10px);
-  -ms-filter: blur(10px);
-
+  &:before {
+    background: map-get($colours, 'black');
+    content: '';
+    height: 100%;
+    opacity: .6;
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
 
 }
 

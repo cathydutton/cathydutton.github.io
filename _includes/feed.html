@@ -1,11 +1,13 @@
 <section class="news-feed">
 	{% for post in site.posts limit:3 %}
 		<article class="news-feed__post">
-				<a href="{{site.baseurl}}{{post.url}}#disqus_thread" class="news-feed__comments" tabindex="-1">Link</a>
 				<a href="{{site.baseurl}}{{post.url}}" title="{{ post.title }}" class="news-feed__anchor">
 						<h3 class="heading news-feed__title">{{ post.title }}</h3>
 						<p class="news-feed__date">{{ post.date | date: '%B %d, %Y' }}</p>
 				</a>
+				<div class="news-feed__comments">
+					<a href="{{site.baseurl}}{{post.url}}#disqus_thread" class="news-feed__comments__number" tabindex="-1">Link</a>
+				</div>
 		 </article>
 	{% endfor %}
 </section>

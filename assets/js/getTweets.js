@@ -302,10 +302,9 @@
             op += '<p class="tweet">' + strip(tweets[n].innerHTML) + '</p>';
             if (printTime) {
               if (permalinks) {
-                op += '<p class="timePosted"><a href="' + permalinksURL[n] +
-                   '">' + times[n].getAttribute('aria-label') + '</a></p>';
+                op += '<p class="tweet__time">' + times[n].getAttribute('aria-label') + '</p>';
               } else {
-                op += '<p class="timePosted">' +
+                op += '<p class="tweet__time">' +
                     times[n].getAttribute('aria-label') + '</p>';
               }
             }
@@ -316,7 +315,7 @@
               }
               op += '<p class="tweet">' +  tweets[n].innerText + '</p>';
               if (printTime) {
-                op += '<p class="timePosted">' + times[n].innerText + '</p>';
+                op += '<p class="tweet__time">' + times[n].innerText + '</p>';
               }
 
             } else {
@@ -325,7 +324,7 @@
               }
               op += '<p class="tweet">' +  tweets[n].textContent + '</p>';
               if (printTime) {
-                op += '<p class="timePosted">' + times[n].textContent + '</p>';
+                op += '<p class="tweet__time">' + times[n].textContent + '</p>';
               }
             }
           }
@@ -337,7 +336,7 @@
                 'Reply</a><a href="https://twitter.com/intent/retweet?' +
                 'tweet_id=' + tids[n] + '" class="twitter_retweet_icon"' +
                 (targetBlank ? ' target="_blank">' : '>') + 'Retweet</a>' +
-                '<a href="https://twitter.com/intent/favorite?tweet_id=' +
+                'href="https://twitter.com/intent/favorite?tweet_id=' +
                 tids[n] + '" class="twitter_fav_icon"' +
                 (targetBlank ? ' target="_blank">' : '>') + 'Favorite</a></p>';
           }
