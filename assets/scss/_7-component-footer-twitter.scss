@@ -2,7 +2,7 @@
     Footer Twitter
     ----------------------------------- */
 
-#latest-tweets ul {
+.latest-tweets {
   margin-left: 0;
 
   @include mq(break-tablet) {
@@ -11,7 +11,7 @@
 
 }
 
-#latest-tweets li {
+.latest-tweets__tweet {
   @include grid(break-mobile, 1, 1);
   @include grid(break-tablet, 1, 2);
   background: map-get($colours, 'accent');
@@ -19,14 +19,9 @@
   list-style: none;
   margin-top: 1.8em;
   min-height: 100px;
-  padding: .2em .6em;
+  padding: .2em .6em 4em;
   position: relative;
   text-align: left;
-
-  p,
-  a span {
-    word-wrap: break-word;
-  }
 
   &:after {
     border-color: map-get($colours, 'accent') transparent transparent;
@@ -48,12 +43,12 @@
 
 }
 
-
-.latest-tweet__title {
-  font-size: .95em;
-  font-weight: 400;
+.latest-tweets__text {
+  word-wrap: break-word;
 }
 
-.timePosted {
+.latest-tweets__time {
+  bottom: 10px;
   font-style: italic;
+  position: absolute;
 }

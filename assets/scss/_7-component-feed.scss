@@ -5,9 +5,9 @@ Feed
 .news-feed__post {
   border: solid 1px map-get($colours, 'grey-light');
   border-left: solid 4px map-get($colours, 'accent');
-  margin-top: 1.4em;
   cursor: pointer;
   display: table;
+  margin-top: 1.4em;
   transition: all .3s ease-in-out;
   width: 100%;
 
@@ -35,7 +35,7 @@ Feed
 
 .news-feed__title {
   margin-bottom: 0;
-  width: 80%
+  width: 80%;
 }
 
 .news-feed__date {
@@ -65,9 +65,5 @@ Feed
   &:hover {
     color: map-get($colours, 'white');
   }
-
-}
-
-.tweet__time {
 
 }

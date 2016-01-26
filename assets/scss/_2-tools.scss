@@ -44,8 +44,7 @@
 
  /* MEDIA QUERIES */
 @mixin mq($mq-breakpoint, $mq-breakpoints: $breakpoints) {
-  // If $mq-breakpoint is a key that exists in
-  // $mq-breakpoints, get and use the value
+
   @if map-has-key($mq-breakpoints, $mq-breakpoint) {
     $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
   }
@@ -56,7 +55,6 @@
 }
 
 /* TYPOGRAPHY */
-
 @mixin typography($size) {
   font-size: $size;
 

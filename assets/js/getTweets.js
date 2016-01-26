@@ -52,9 +52,9 @@
       var x = tweets.length;
       var n = 0;
       var element = document.getElementById(domNode);
-      var html = '<ul>';
+      var html = '<ul class="latest-tweets">';
       while(n < x) {
-        html += '<li>' + tweets[n] + '</li>';
+        html += '<li class="latest-tweets__tweet">' + tweets[n] + '</li>';
         n++;
       }
       html += '</ul>';
@@ -299,12 +299,12 @@
               op += '<div class="user">' + strip(authors[n].innerHTML) +
                   '</div>';
             }
-            op += '<p class="tweet">' + strip(tweets[n].innerHTML) + '</p>';
+            op += '<p class="latest-tweets__text">' + strip(tweets[n].innerHTML) + '</p>';
             if (printTime) {
               if (permalinks) {
-                op += '<p class="tweet__time">' + times[n].getAttribute('aria-label') + '</p>';
+                op += '<p class="latest-tweets__time">' + times[n].getAttribute('aria-label') + '</p>';
               } else {
-                op += '<p class="tweet__time">' +
+                op += '<p class="latest-tweets__time">' +
                     times[n].getAttribute('aria-label') + '</p>';
               }
             }
@@ -313,18 +313,18 @@
               if (printUser) {
                 op += '<p class="user">' + authors[n].innerText + '</p>';
               }
-              op += '<p class="tweet">' +  tweets[n].innerText + '</p>';
+              op += '<p class="latest-tweets__text">' +  tweets[n].innerText + '</p>';
               if (printTime) {
-                op += '<p class="tweet__time">' + times[n].innerText + '</p>';
+                op += '<p class="latest-tweets__time">' + times[n].innerText + '</p>';
               }
 
             } else {
               if (printUser) {
                 op += '<p class="user">' + authors[n].textContent + '</p>';
               }
-              op += '<p class="tweet">' +  tweets[n].textContent + '</p>';
+              op += '<p class="latest-tweets__text">' +  tweets[n].textContent + '</p>';
               if (printTime) {
-                op += '<p class="tweet__time">' + times[n].textContent + '</p>';
+                op += '<p class="latest-tweets__time">' + times[n].textContent + '</p>';
               }
             }
           }

@@ -108,8 +108,8 @@ ul {
   content: '';
   display: table;
   clear: both;
-  padding: 0;
-  margin: 0 0 0 12px; }
+  margin: 0 0 0 12px;
+  padding: 0; }
 
 /*
     Base Typography
@@ -221,14 +221,13 @@ Sidebar
   border-right: solid 3px #ffa600;
   bottom: 0;
   height: 100%;
-  left: 0;
+  left: -250px;
   outline: none;
   overflow: scroll;
   padding: 20px 15px;
   position: fixed;
-  left: -250px;
-  width: 260px;
   transition: all .3s ease-in-out;
+  width: 260px;
   z-index: 1; }
 
 .sidebar--open {
@@ -245,15 +244,15 @@ Sidebar
   z-index: 1; }
 
 .profile-image {
-  width: 180px;
-  height: 180px;
   border: solid 1px #505050;
   border-radius: 100%;
-  margin: 20px; }
+  height: 180px;
+  margin: 20px;
+  width: 180px; }
   .profile-image img {
-    width: 180px;
+    clip-path: circle(81px at 89px 89px);
     height: 180px;
-    clip-path: circle(81px at 89px 89px); }
+    width: 180px; }
 
 .profile-desc {
   border-bottom: solid 1px #373737;
@@ -318,8 +317,8 @@ Navigation
 .button--menu {
   background: #2a2a2a;
   border: solid 2px #ffa600;
-  border-radius: 0 20px 20px 0;
   border-left: 0;
+  border-radius: 0 20px 20px 0;
   color: #ffa600;
   fill: #ffa600;
   height: 55px;
@@ -327,8 +326,8 @@ Navigation
   padding: 0;
   position: fixed;
   top: 184px;
-  width: 40px;
   transition: all .3s ease-in-out;
+  width: 40px;
   z-index: 2; }
   .button--menu svg {
     height: 46%;
