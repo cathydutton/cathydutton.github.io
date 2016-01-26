@@ -1,0 +1,26 @@
+/*
+Sidebar profile
+----------------------------------- */
+
+.profile-image {
+  border: solid 1px lighten(map-get($colours, 'grey-dark'), 15%);
+  border-radius: 100%;
+  height: 180px;
+  margin: 20px;
+  width: 180px;
+}
+
+.profile-image__img {
+  clip-path: circle(81px at 89px 89px);
+  height: 180px;
+  width: 180px;
+}
+
+.profile-description {
+  border-bottom: solid 1px lighten(map-get($colours, 'grey-dark'), 5%);
+  border-top: solid 1px lighten(map-get($colours, 'grey-dark'), 5%);
+  color: map-get($colours, 'grey-light');
+  margin-top: 0;
+  padding: 10px 0;
+  text-align: center;
+}

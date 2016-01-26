@@ -1,0 +1,19 @@
+/*
+Images
+----------------------------------- */
+
+.image-wrapper {
+  background: url('/assets/img/placeholder.png') center center no-repeat lighten(map-get($colours, 'grey-light'), 20%);
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 63%;
+  position: relative;
+  width: 100%;
+}
+
+.image-wrapper__image {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+}

@@ -18,3 +18,37 @@ section {
   padding: 2% 5% 0;
   width: 100%;
 }
+
+.sidebar {
+  background: map-get($colours, 'grey-dark');
+  border-right: solid 3px map-get($colours, 'accent');
+  bottom: 0;
+  height: 100%;
+  left: -250px;
+  outline: none;
+  overflow: scroll;
+  padding: 20px 15px;
+  position: fixed;
+  transition: all .3s ease-in-out;
+  width: 260px;
+  z-index: 1;
+}
+
+.sidebar--open {
+  left: 0;
+}
+
+.sidebar--open ~ .wrapper {
+
+  &:before {
+    background: map-get($colours, 'black');
+    content: '';
+    height: 100%;
+    opacity: .6;
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+
+}

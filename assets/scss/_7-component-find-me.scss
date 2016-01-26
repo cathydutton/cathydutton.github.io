@@ -1,0 +1,56 @@
+/*
+Find me
+----------------------------------- */
+
+.find-me {
+  @include clearfix;
+  list-style: none;
+  margin: 30px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.find-me__item {
+  display: inline-block;
+}
+
+.find-me__anchor {
+  border: 0;
+  color: map-get($colours, 'accent');
+  display: block;
+  fill: map-get($colours, 'accent');
+  height: 46px;
+  margin: 0 5px;
+  position: relative;
+  width: 46px;
+
+  &:hover,
+  &:focus {
+    background: map-get($colours, 'accent');
+    border-radius: 100%;
+    color: map-get($colours, 'grey-dark');
+    fill: map-get($colours, 'grey-dark');
+    transform: scale(1.25);
+    transition: background-color .5s, transform .5s ease-out;
+  }
+
+}
+
+// FOOTER COLOR OVERIDES
+footer {
+
+  .find-me__anchor {
+    color: map-get($colours, 'grey-dark');
+    fill: map-get($colours, 'grey-dark');
+
+    &:hover,
+    &:focus {
+      background: map-get($colours, 'grey-dark');
+      color: map-get($colours, 'white');
+      fill: map-get($colours, 'white');
+    }
+
+  }
+
+}

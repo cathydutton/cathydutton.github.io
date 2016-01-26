@@ -1,0 +1,28 @@
+/*
+Navigation
+----------------------------------- */
+
+.sidebar__list {
+  margin: 20px 0 0;
+  overflow: hidden;
+  padding: 0 23px;
+  position: relative;
+  width: 100%;
+}
+
+.sidebar__anchor {
+  border: solid 1px lighten(map-get($colours, 'grey-dark'), 5%);
+  border-left: solid 1px map-get($colours, 'accent');
+  color: map-get($colours, 'grey-light');
+  display: block;
+  margin-bottom: 5px;
+  padding: 10px 0 10px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    padding-left: 16px;
+  }
+
+}

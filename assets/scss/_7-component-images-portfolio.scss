@@ -2,64 +2,14 @@
 Image gallery
 ----------------------------------- */
 
-// move to relavent artial
-.logo-gallery {
-  @include grid(break-mobile, 1, 2, $grid-margin: 0);
-  @include grid(break-tablet, 1, 3, $grid-margin: 0);
-}
-
-// move to relavent artial
 .portfolio-gallery {
   @include grid(break-mobile, 1, 2);
   @include grid(break-tablet, 1, 3);
   margin-bottom: 10px;
 }
 
-// COMMON
-.image-wrapper {
-  background: url('/assets/img/placeholder.png') center center no-repeat lighten(map-get($colours, 'grey-light'), 20%);
-  display: block;
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 63%;
-  position: relative;
-  width: 100%;
-}
-
-.image-wrapper__image {
-  cursor: pointer;
-  position: absolute;
-  width: 100%;
-}
-
-
-// LOOP
-
-$logos: (barclays, ao, getthelabel, sainsburys, ee, o2, thehutgroup, nintendo, nectar, 3, zavvi, myprotein, tropicskincare, brightstar, creare, elizabetharden);
-
-@each $logo in $logos {
-
-  .image-wrapper--#{$logo} {
-    animation: fadeIn 2s forwards;
-    background: url("/assets/img/about/#{$logo}-logo.jpg") center center;
-}
-
-  .image-wrapper__image {
-
-    &:hover,
-    &:focus {
-      animation: fadeOut 2s forwards;
-      opacity: 0;
-    }
-
-  }
-
-}
-
-
 
 // GALLETY
-
 .wrapper.lightbox {
 
   &:before {

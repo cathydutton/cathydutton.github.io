@@ -4,20 +4,6 @@
 
 .footer {
   text-align: center;
-
-  .find-me__anchor {
-    color: map-get($colours, 'grey-dark');
-    fill: map-get($colours, 'grey-dark');
-
-    &:hover,
-    &:focus {
-      background: map-get($colours, 'grey-dark');
-      color: map-get($colours, 'white');
-      fill: map-get($colours, 'white');
-    }
-
-  }
-
 }
 
 .footer-links {
