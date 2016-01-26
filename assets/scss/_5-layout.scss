@@ -24,14 +24,13 @@ section {
   border-right: solid 3px map-get($colours, 'accent');
   bottom: 0;
   height: 100%;
-  left: -250px;
+  left: -280px;
   outline: none;
-  overflow: scroll;
+  overflow: auto;
   padding: 20px 15px;
-  position: fixed;
   transition: all .3s ease-in-out;
-  width: 260px;
-  z-index: 1;
+  width: 290px;
+  z-index: 2;
 }
 
 .sidebar--open {

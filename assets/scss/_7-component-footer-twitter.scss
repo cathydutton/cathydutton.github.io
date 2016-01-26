@@ -6,7 +6,9 @@
   margin-left: 0;
 
   @include mq(break-tablet) {
-    display: flex;
+      @supports (display: flex) {
+        display: flex;
+      }
   }
 
 }
