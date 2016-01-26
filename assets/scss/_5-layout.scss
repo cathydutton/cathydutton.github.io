@@ -5,10 +5,10 @@
 .wrapper {
   animation: fadeIn 2s forwards;
   background: map-get($colours, 'white');
+  margin-left: 28px;
   min-height: 100%;
   position: relative;
   width: 95%;
-
 }
 
 header,
@@ -28,6 +28,7 @@ section {
   outline: none;
   overflow: auto;
   padding: 20px 15px;
+  position: fixed;
   transition: all .3s ease-in-out;
   width: 290px;
   z-index: 2;

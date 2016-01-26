@@ -13,7 +13,7 @@ Menu button
   left: 2px;
   padding: 0;
   position: fixed;
-  top: 184px;
+  top: 80px;
   transition: all .3s ease-in-out;
   width: 40px;
   z-index: 3;
@@ -53,12 +53,14 @@ Menu button
 .button--menu--open {
   left: 287px;
 
-  .button--menu--icon:nth-of-type(1) {
-    transform: rotate(-45deg) translateY(0) translateX(0);
+  .button--menu--icon:nth-of-type(2) {
+    @supports (-webkit-appearance:none) {
+      opacity: 0;
+    }
   }
 
-  .button--menu--icon:nth-of-type(2) {
-    opacity: 0;
+  .button--menu--icon:nth-of-type(1) {
+    transform: rotate(-45deg) translateY(0) translateX(0);
   }
 
   .button--menu--icon:nth-of-type(3) {
