@@ -31,9 +31,18 @@ svg {
   width: 100%;
 }
 
+.svg__text {
+  display: none;
+}
+
 // LISTS
 ul {
   @include clearfix;
   margin: 0 0 0 12px;
   padding: 0;
+}
+
+// TYPOGRAPHY
+em {
+  font-style: italic;
 }

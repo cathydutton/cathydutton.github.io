@@ -52,12 +52,12 @@
       var x = tweets.length;
       var n = 0;
       var element = document.getElementById(domNode);
-      var html = '<ul class="latest-tweets">';
+      var html = '<div class="latest-tweets">';
       while(n < x) {
-        html += '<li class="latest-tweets__tweet">' + tweets[n] + '</li>';
+        html += '<div class="latest-tweets__tweet">' + tweets[n] + '</div>';
         n++;
       }
-      html += '</ul>';
+      html += '</div>';
       element.innerHTML = html;
     } else {
       customCallbackFunction(tweets);
