@@ -18,9 +18,11 @@ h4,
 }
 
 .intro-heading {
-  @include typography(62px);
+  @include typography(64px);
   color: map-get($colours, 'accent');
   font-family: map-get($font-stack, 'decorative');
+  font-weight: bold;
+  letter-spacing: 0;
   line-height: 1;
   margin: 0 0 10px;
 }

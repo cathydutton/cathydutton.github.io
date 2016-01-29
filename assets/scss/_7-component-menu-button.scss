@@ -51,20 +51,22 @@ Menu button
 
 
 .button--menu--open {
-  left: 287px;
+  left: 267px;
 
-  .button--menu--icon:nth-of-type(2) {
-    @supports (-webkit-appearance:none) {
+  @supports (transform: rotate(-45deg) translateY(0) translateX(0)) {
+
+    .button--menu--icon:nth-of-type(2) {
       opacity: 0;
     }
-  }
 
-  .button--menu--icon:nth-of-type(1) {
-    transform: rotate(-45deg) translateY(0) translateX(0);
-  }
+    .button--menu--icon:nth-of-type(1) {
+      transform: rotate(-45deg) translateY(0) translateX(0);
+    }
 
-  .button--menu--icon:nth-of-type(3) {
-    transform: rotate(45deg) translateY(0) translateX(0);
+    .button--menu--icon:nth-of-type(3) {
+      transform: rotate(45deg) translateY(0) translateX(0);
+    }
+
   }
 
 }

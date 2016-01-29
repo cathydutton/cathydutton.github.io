@@ -24,13 +24,13 @@ section {
   border-right: solid 3px map-get($colours, 'accent');
   bottom: 0;
   height: 100%;
-  left: -280px;
+  left: -260px;
   outline: none;
   overflow: auto;
   padding: 20px 15px;
   position: fixed;
   transition: all .3s ease-in-out;
-  width: 290px;
+  width: 270px;
   z-index: 2;
 }
 
