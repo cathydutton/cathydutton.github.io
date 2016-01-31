@@ -36,7 +36,7 @@
 
 			// Cache Bust
 			.pipe(replace('@@cacheBust', getStamp()))
-			//.pipe(htmlmin({collapseWhitespace: true}))
+			.pipe(htmlmin({collapseWhitespace: true}))
 			.pipe(gulp.dest(plugins.path.join(paths.dist)))
 			.pipe(plugins.browserSync.reload({ stream: true }));
 		};
