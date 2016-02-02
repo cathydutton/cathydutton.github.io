@@ -148,7 +148,7 @@
 
 	// Jekyll Rebuild
 	gulp.task('jekyll-rebuild', function() {
-		plugins.runSequence('default')
+		plugins.runSequence('default');
 	});
 
 
