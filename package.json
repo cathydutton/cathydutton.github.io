@@ -9,7 +9,9 @@
   },
   "author": "Cathy Dutton",
   "homepage": "https://github.com/cathydutton/my-site",
-  "precommit": ["live"],
+  "precommit": [
+    "live"
+  ],
   "devDependencies": {
     "amd-optimize": "^0.4.4",
     "assemble": "assemble/assemble#v0.6.0",
@@ -27,6 +29,7 @@
     "gulp-csslint": "^0.1.5",
     "gulp-debug": "^2.1.2",
     "gulp-filter": "^2.0.2",
+    "gulp-html-minifier": "^0.1.8",
     "gulp-imagemin": "^2.3.0",
     "gulp-inject": "^1.5.0",
     "gulp-jekyll": "0.0.0",
@@ -48,9 +51,15 @@
     "gulp-watch": "~4.2.4",
     "gulp-wrap-amd": "^0.5.0",
     "imagemin-pngquant": "^4.1.0",
-    "gulp-html-minifier": "^0.1.8",
-     "precommit-hook": "^1.0.7",
+    "precommit-hook": "^3.0.0",
     "run-sequence": "^1.1.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "lint": "jshint .",
+    "validate": "npm ls"
+  },
+  "pre-commit": [
+    "live"
+  ]
 }
