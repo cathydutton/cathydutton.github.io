@@ -9,6 +9,7 @@
   },
   "author": "Cathy Dutton",
   "homepage": "https://github.com/cathydutton/my-site",
+  "precommit": ["live"],
   "devDependencies": {
     "amd-optimize": "^0.4.4",
     "assemble": "assemble/assemble#v0.6.0",
