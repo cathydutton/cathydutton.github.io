@@ -73,27 +73,46 @@ more creative ones. Fortunately there are PostCSS plugins that can take care of 
 [postcss-focus] (https://github.com/postcss/postcss-focus) checks the CSS for instances of :hover and automatically adds the :focus selector
 alongside.
 
-[postcss-colorblind] (https://github.com/btholt/postcss-colorblind) .......
+[postcss-colorblind] (https://github.com/btholt/postcss-colorblind) will check all instances of colour in your stylesheet and then 
+highlight potential issues for users with any of the following conditions...
 
-Add more....
+*   protanomaly
+*   protanopia
+*   deuteranomaly
+*   deuteranopia
+*   tritanomaly
+*   tritanopia
+*   achromatomaly
+*   achromatopsia
 
 
 ### 5) Future Proof
 
 PostCSS is a forward thinking tool. Plugins like [cssnext] (http://cssnext.io/) allow developers to use the latest CSS syntax
-and features straight away without the fear of backwards compatibility. Fallbacks for older browsers are added automatically
+and features straight away without compatibility issues. Fallbacks for older browsers are added automatically
 by the plugin.
 
-Aside from just adding browser prefixes and poly-fils PostCSS also provides opportunités to improve the future of CSS.
-Plugins like.....
+Aside from just adding browser prefixes and poly-fils PostCSS also provides opportunities to improve the way we use CSS 
+and attempt to fix long standing issues with CSS as a language.
 
-PostCSS-modules
+[PostCSS-modules] (https://github.com/css-modules/postcss-modules-scope) is a plugin which addresses the issue of scope in CSS.
+
+
+
+
 Element Queries
 etc
 
+
+
+
+
+
+
+
 ### 6) Get creative
 
-Built in JavaScript PostCSS is an accessible tool for Front end Developers and easy to contribute to in the form
+Cant find what you need? Build your own plugin! Built in JavaScript PostCSS is an accessible tool for Front end Developers and easy to contribute to in the form
 of new plugins. Any longstanding issues you may have had with a previous pre-proceser can be resolved with your
 own custom plugin.
 
@@ -110,6 +129,11 @@ Because PostCSS is built in Javascript CSS is compiled much faster then by tools
 
 PostCSS also requires less installation steps and time.
 Show graphs etc......
+
+Performance optimaisation...
+
+cssnano
+
 
 
 
@@ -129,11 +153,9 @@ or two plugins to an existing site will still have measurable benefits. PostCSS 
 and variables already in place and open up new possibilities.
 
 
-
 ###Further reading
 
-[PostCSS] ()
-[Post 1] ()
-[Post 2] ()
-[Post 3] ()
-[Post 4] ()
+*   [PostCSS] (https://github.com/postcss/postcss)
+*   [It's Time for Everyone to Learn About PostCSS] (http://davidtheclark.com/its-time-for-everyone-to-learn-about-postcss/)
+*   [How to Build Your Own CSS Preprocessor With PostCSS] (http://www.sitepoint.com/build-css-preprocessor-postcss/)
+*   [Breaking up with Sass] (https://benfrain.com/breaking-up-with-sass-postcss/)
