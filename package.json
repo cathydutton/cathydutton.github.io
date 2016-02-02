@@ -48,6 +48,7 @@
     "gulp-wrap-amd": "^0.5.0",
     "imagemin-pngquant": "^4.1.0",
     "gulp-html-minifier": "^0.1.8",
+     "precommit-hook": "^1.0.7",
     "run-sequence": "^1.1.1"
   },
   "dependencies": {}
