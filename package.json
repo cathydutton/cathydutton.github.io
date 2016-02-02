@@ -56,7 +56,7 @@
   },
   "dependencies": {},
   "scripts": {
-  "build": "gulp live"
+  "build": "gulp liveaaa"
   },
   "precommit": [
     "build"
