@@ -56,10 +56,9 @@
   },
   "dependencies": {},
   "scripts": {
-    "lint": "jshint .",
-    "validate": "npm ls"
+  "build": "gulp live"
   },
-  "pre-commit": [
-    "gulp live"
+  "precommit": [
+    "build"
   ]
 }
