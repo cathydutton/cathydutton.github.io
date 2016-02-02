@@ -1,4 +1,6 @@
 node_modules/
 .sass-cache
 dist/
+dist
+/dist
 *.log
