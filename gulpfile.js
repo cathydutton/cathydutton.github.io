@@ -152,10 +152,10 @@
 	});
 
 
-	// Push
+	// Deploy
 	var ghPages = require('gulp-gh-pages');
 
-	gulp.task('push', function() {
+	gulp.task('deploy', function() {
 	  return gulp.src('./dist/**/*')
 	    .pipe(ghPages());
 	});
@@ -185,13 +185,10 @@
 		plugins.runSequence('build', 'inject', ['watch', 'browser-sync'], callback);
 	});
 
-	// Deploy tasks
-	gulp.task('deploy', function(callback) {
-		plugins.runSequence('inject', 'build-live', 'image-optimise', 'push', callback);
-	});
-
 	// Live tasks
-	gulp.task('test', function(callback) {
+	gulp.task('live', function(callback) {
+		plugins.runSequence('build-live', 'inject', callback);
 		gulp.start('css-lint', callback);
 		gulp.start('stylestats', callback);
+		gulp.start('image-optimise', callback);
 	});
