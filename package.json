@@ -26,6 +26,7 @@
     "gulp-csslint": "^0.1.5",
     "gulp-debug": "^2.1.2",
     "gulp-filter": "^2.0.2",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-html-minifier": "^0.1.8",
     "gulp-imagemin": "^2.3.0",
     "gulp-inject": "^1.5.0",
