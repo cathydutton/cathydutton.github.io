@@ -152,6 +152,15 @@
 	});
 
 
+	// Deploy
+	var ghPages = require('gulp-gh-pages');
+
+	gulp.task('deploy', function() {
+	  return gulp.src('./dist/**/*')
+	    .pipe(ghPages());
+	});
+
+
 /*
 	Main tasks
 	----------------------------------i- */
@@ -179,6 +188,7 @@
 	// Live tasks
 	gulp.task('live', function(callback) {
 		plugins.runSequence('build-live', 'inject', callback);
+		gulp.start('deploy', callback);
 		gulp.start('css-lint', callback);
 		gulp.start('stylestats', callback);
 		gulp.start('image-optimise', callback);
