@@ -97,7 +97,15 @@ and attempt to fix long standing issues with CSS as a language.
 
 [PostCSS-modules] (https://github.com/css-modules/postcss-modules-scope) is a plugin which addresses the issue of scope in CSS.
 
+autoprefixer adds vendor prefixes, using data from Can I Use.
+cssnext allows you to use future CSS features today.
 
+End of Global CSS
+postcss-use to explicitly set PostCSS plugins in CSS and execute them only for the current file.
+postcss-modules or react-css-modules automatically isolates selectors in components.
+postcss-autoreset uses local reset in component, instead of global one.
+postcss-initial adds all: initial support to reset all inherit styles.
+cq-prolyfill adds media queries for component size or parent background.
 
 
 Element Queries
