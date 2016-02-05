@@ -1,3 +1,0 @@
-user-agent: *
-allow: /
-sitemap: http://www.cathydutton.co.uk/sitemap.xml

@@ -1,23 +1,23 @@
 {
-  "published": "2016-02-03T18:43:57.269Z",
+  "published": "2016-02-03T18:43:57.222Z",
   "paths": [
-    "/Users/cathy/Documents/Sites/my-site/dist/assets/css/critical.min.css"
+    "/Users/cathy/Documents/Sites/my-site/dist/assets/css/critical.css"
   ],
   "stylesheets": 1,
   "styleElements": 0,
-  "size": 5243,
+  "size": 5524,
   "dataUriSize": 0,
   "ratioOfDataUriSize": 0,
-  "gzippedSize": 1420,
-  "rules": 47,
-  "selectors": 85,
-  "declarations": 135,
-  "simplicity": 0.5529411764705883,
-  "averageOfIdentifier": 1.411764705882353,
+  "gzippedSize": 1637,
+  "rules": 43,
+  "selectors": 71,
+  "declarations": 129,
+  "simplicity": 0.6056338028169014,
+  "averageOfIdentifier": 1.295774647887324,
   "mostIdentifier": 3,
-  "mostIdentifierSelector": "::selection",
-  "averageOfCohesion": 2.872340425531915,
-  "lowestCohesion": 15,
+  "mostIdentifierSelector": ".sidebar--open ~ .wrapper:before",
+  "averageOfCohesion": 3,
+  "lowestCohesion": 14,
   "lowestCohesionSelector": [
     ".button--menu"
   ],
@@ -36,8 +36,8 @@
   ],
   "totalUniqueFontFamilies": 2,
   "uniqueFontFamilies": [
-    "Helvetica Neue,Helvetica,Arial,sans-serif",
-    "oswald,Helvetica,sans-serif"
+    "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "oswald, Helvetica, sans-serif"
   ],
   "totalUniqueColors": 3,
   "uniqueColors": [
@@ -46,7 +46,7 @@
     "#FFFFFF"
   ],
   "idSelectors": 0,
-  "universalSelectors": 1,
+  "universalSelectors": 3,
   "unqualifiedAttributeSelectors": 0,
   "javascriptSpecificSelectors": 0,
   "importantKeywords": 0,
@@ -54,19 +54,19 @@
   "propertiesCount": [
     {
       "property": "font-size",
-      "count": 10
+      "count": 12
     },
     {
-      "property": "color",
+      "property": "padding",
       "count": 8
     },
     {
       "property": "background",
-      "count": 7
+      "count": 8
     },
     {
-      "property": "padding",
-      "count": 7
+      "property": "color",
+      "count": 8
     },
     {
       "property": "width",
@@ -77,7 +77,7 @@
       "count": 6
     },
     {
-      "property": "-webkit-transition",
+      "property": "height",
       "count": 5
     },
     {
@@ -89,9 +89,9 @@
       "count": 4
     },
     {
-      "property": "display",
+      "property": "line-height",
       "count": 4
     }
   ],
-  "mediaQueries": 1
+  "mediaQueries": 4
 }
