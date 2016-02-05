@@ -5,7 +5,7 @@ Image gallery
 // move to relavent artial
 .logo-gallery {
   @include grid(break-mobile, 1, 2, $grid-margin: 0);
-  @include grid(break-tablet, 1, 3, $grid-margin: 0);
+  @include grid(break-tab, 1, 3, $grid-margin: 0);
 }
 
 // LOOP
@@ -18,7 +18,7 @@ $logos: (barclays, ao, getthelabel, sainsburys, ee, o2, thehutgroup, nintendo, n
     background: url("/assets/img/about/#{$logo}-logo.jpg") center center;
 }
 
-  .image-wrapper__image {
+  .image-wrapper__image--#{$logo} {
 
     &:hover,
     &:focus {
