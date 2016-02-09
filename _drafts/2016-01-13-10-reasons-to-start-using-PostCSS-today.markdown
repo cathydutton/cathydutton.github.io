@@ -1,11 +1,8 @@
 ---
-title: 8 reasons to start using PostCSS today
+title: 7 reasons to start using PostCSS today
 author: Cathy Dutton
 layout: post
 ---
-
-
-<h2 class="heading">Intro</h2>
 
 PostCSS makes it possible to transform or extend syntaxes and features of CSS.
 Nothing groundbreaking there then, but unlike existing pre-processors PostCSS aims to improve
@@ -36,11 +33,17 @@ gulp.task('css', function () {
 });
 ```
 
+There is also a CLI version of PostCSS for those who don't wish to use a task runner. By installing postcss-cli
+CSS can be compiled with the following command...
+
+```
+postcss -c test.json -o result.css test.css
+```
+
 Compile tools like Prepros also offer support for some of PostCSS's most popular plugins.
 Interfaces like this however would not be suitable for custom plugins.
 
 Further reading on installation can be found on the PostCSS [Github page] (https://github.com/postcss/postcss)
-
 
 ### 2) Integration with current pre-processors
 
@@ -53,7 +56,6 @@ pre-prosesor not just instead of one.
 
 This allows for a much simpler transition without the need to make wholesale changes to a codebase.
 Existing functionality can be migrated to PostCSS over time, if at all.
-
 
 ### 3) Take only what you need
 
@@ -85,73 +87,51 @@ highlight potential issues for users with any of the following conditions...
 *   achromatomaly
 *   achromatopsia
 
-
-### 5) Future Proof
+### 5) The Future, today
 
 PostCSS is a forward thinking tool. Plugins like [cssnext] (http://cssnext.io/) allow developers to use the latest CSS syntax
 and features straight away without compatibility issues. Fallbacks for older browsers are added automatically
 by the plugin.
 
 Aside from just adding browser prefixes and poly-fils PostCSS also provides opportunities to improve the way we use CSS 
-and attempt to fix long standing issues with CSS as a language.
+and attempt to fix some fundamental flaws in the CSS language. A few popular plugins are listed below...
 
-[PostCSS-modules] (https://github.com/css-modules/postcss-modules-scope) is a plugin which addresses the issue of scope in CSS.
+*   [postcss-modules] (https://github.com/css-modules/postcss-modules-scope) - Isolates selectors in components, creating local scope in CSS.
 
-autoprefixer adds vendor prefixes, using data from Can I Use.
-cssnext allows you to use future CSS features today.
+*   [cq-prolyfill] (https://github.com/ausi/cq-prolyfill) - Adds component queries to allow elements to be styled based on their dimensions instead of the viewport dimensions.
 
-End of Global CSS
-postcss-use to explicitly set PostCSS plugins in CSS and execute them only for the current file.
-postcss-modules or react-css-modules automatically isolates selectors in components.
-postcss-autoreset uses local reset in component, instead of global one.
-postcss-initial adds all: initial support to reset all inherit styles.
-cq-prolyfill adds media queries for component size or parent background.
-
-
-Element Queries
-etc
-
-
-
-
-
-
-
+*   [postcss-autoreset] (https://www.npmjs.com/package/postcss-autoreset) - Uses local resets instead of global one.
 
 ### 6) Get creative
 
-Cant find what you need? Build your own plugin! Built in JavaScript PostCSS is an accessible tool for Front end Developers and easy to contribute to in the form
-of new plugins. Any longstanding issues you may have had with a previous pre-proceser can be resolved with your
-own custom plugin.
+If you have a specific need or requirement that is not currently being catered for you can always 
+build your own PostCSS plugin. Built in JavaScript PostCSS is an accessible tool for Front end Developers
+and easy to contribute to in the form
+of custom plugins. 
 
-Each project can be custolmised to create the optimum workflow with no limitations or bouderies set by language choices.
+Each project can be custolmised to create the optimum workflow with no limitations or boundaries set 
+by language choices.
+
 There is plenty of helpful documentation to get you started with this...
 
 [API] (https://github.com/postcss/postcss/blob/master/docs/api.md)
 [Plugin boilerplate] (https://github.com/postcss/postcss-plugin-boilerplate)
 
-
 ### 7) Performance
 
-Because PostCSS is built in Javascript CSS is compiled much faster then by tools built with Ruby or C#
+Because PostCSS is built in Javascript it runs much faster then Sass and less, especially if you're yet to
+upgrade to libsass. As well as improvements in compile times PostCSS also has plugins to help you write more performant CSS.
 
-PostCSS also requires less installation steps and time.
-Show graphs etc......
+[CSS MQPacker] (https://github.com/hail2u/node-css-mqpacker) combines CSS media queries to reduce code and optimise the CSS.
 
-Performance optimaisation...
+[postcss-zindex] (https://github.com/ben-eb/postcss-zindex) reduces z-index values throughout a stylesheet without effecting the layouts intended order.
 
-cssnano
+[cssnano] (https://github.com/ben-eb/cssnano) is more like an umbrella plugin and includes a selection of optimisation tools including... 
 
-
-
-
-### 8) Feedback
-
-list-selectors, stylelint
-
- etc review the output! – linters – codeing guidelines can be implemented automatically. –
- Is there an indentation one? Bem one!
-
+*   Comment removal
+*   Stripping whitespace
+*   Minify selectors
+*   Remove duplicate rules
 
 ### Summing up
 
@@ -160,10 +140,11 @@ PostCSS today you do not need to abandon your current code base or pre-processor
 or two plugins to an existing site will still have measurable benefits. PostCSS will work alongside any mixins, functions
 and variables already in place and open up new possibilities.
 
-
-###Further reading
+### Further reading
 
 *   [PostCSS] (https://github.com/postcss/postcss)
 *   [It's Time for Everyone to Learn About PostCSS] (http://davidtheclark.com/its-time-for-everyone-to-learn-about-postcss/)
 *   [How to Build Your Own CSS Preprocessor With PostCSS] (http://www.sitepoint.com/build-css-preprocessor-postcss/)
 *   [Breaking up with Sass] (https://benfrain.com/breaking-up-with-sass-postcss/)
+*   [PostCSS CLI] (https://www.npmjs.com/package/postcss-cli)
+
