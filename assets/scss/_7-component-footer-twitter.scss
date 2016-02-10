@@ -5,7 +5,7 @@
 .latest-tweets {
   margin-left: 0;
 
-  @include mq(break-tab) {
+  @include mq(break-tablet) {
     @supports (display: flex) {
       display: flex;
     }
@@ -15,9 +15,10 @@
 
 .latest-tweets__tweet {
   @include grid(break-mobile, 1, 1);
-  @include grid(break-tab, 1, 2);
+  @include grid(break-tablet, 1, 2);
   background: map-get($colours, 'accent');
   color: map-get($colours, 'grey-dark');
+  float: none;
   list-style: none;
   margin-top: 1.8em;
   min-height: 100px;
