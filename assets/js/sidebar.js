@@ -6,12 +6,12 @@
 window.onload = function() {
 
 	// SIDEBAR
-	var toggleNav = document.getElementById('js-header__icon');
-	var sidebar = document.querySelector('.sidebar, a');
-	var wrapper = document.querySelector('.wrapper');
-	var tweets = document.querySelectorAll('latest-tweets__tweet a'), i;
-	var wrapperLink = document.querySelectorAll('.wrapper a'), i;
-	var sidebarLink = document.querySelectorAll('.sidebar a'), i;
+	var toggleNav = document.getElementById('js-header__icon'),
+	sidebar = document.querySelector('.sidebar, a'),
+	wrapper = document.querySelector('.wrapper'),
+	tweets = document.querySelectorAll('latest-tweets__tweet a'), i,
+	wrapperLink = document.querySelectorAll('.wrapper a'), i,
+	sidebarLink = document.querySelectorAll('.sidebar a'), i;
 
 	for (i = 0; i < sidebarLink.length; ++i) {
 		sidebarLink[i].setAttribute('tabindex', '-1');
