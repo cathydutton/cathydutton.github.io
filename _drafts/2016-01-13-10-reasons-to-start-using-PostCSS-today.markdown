@@ -37,7 +37,7 @@ There is also a CLI version of PostCSS for those who don't wish to use a task ru
 CSS can be compiled with the following command...
 
 ```
-postcss -c test.json -o result.css test.css
+postcss -c config.json -o result.css input.css
 ```
 
 Compile tools like Prepros also offer support for some of PostCSS's most popular plugins.
@@ -101,6 +101,10 @@ and attempt to fix some fundamental flaws in the CSS language. A few popular plu
 *   [cq-prolyfill] (https://github.com/ausi/cq-prolyfill) - Adds component queries to allow elements to be styled based on their dimensions instead of the viewport dimensions.
 
 *   [postcss-autoreset] (https://www.npmjs.com/package/postcss-autoreset) - Uses local resets instead of global one.
+
+With plugins like these concepts like element queries and localised CSS become a reality. This opens up the 
+possibility to create stand alone web components in line with design components. Each component can be added without the 
+need for complex naming conventions to prevent unwanted inheritance. 
 
 ### 6) Get creative
 
