@@ -152,6 +152,15 @@
 	});
 
 
+	// Deploy
+	var ghPages = require('gulp-gh-pages');
+
+	gulp.task('deploy', function() {
+	  return gulp.src('./dist/**/*')
+	    .pipe(ghPages());
+	});
+
+
 /*
 	Main tasks
 	----------------------------------i- */
@@ -163,7 +172,7 @@
 
 	// Shared live tasks
 	gulp.task('build-live', function(callback) {
-		plugins.runSequence('jekyll-live', ['critical-css', 'main-css', 'scripts'], callback);
+		plugins.runSequence('jekyll-live', 'scss-lint', ['critical-css', 'main-css', 'scripts'], callback);
 	});
 
 	// Default tasks
@@ -179,7 +188,4 @@
 	// Live tasks
 	gulp.task('live', function(callback) {
 		plugins.runSequence('build-live', 'inject', callback);
-		gulp.start('css-lint', callback);
-		gulp.start('stylestats', callback);
-		gulp.start('image-optimise', callback);
 	});
