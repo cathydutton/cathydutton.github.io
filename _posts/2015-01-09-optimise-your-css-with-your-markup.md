@@ -12,13 +12,14 @@ Going back to basics and creating meaningful class names could dramatically impr
 The best way to reduce selectors is to target tags individually rather then using the DOM structure as a guide. Take the following navigation example&#8230;
 
 ```
-&lt;nav class="navigation-main"&gt;
-  &lt;ul&gt;
-    &lt;li class="navigation-main-list"&gt;&lt;a href="" class="navigation-main-link"&gt;Home&lt;/a&gt;&lt;/li&gt;
-    &lt;li class="navigation-main-list"&gt;&lt;a href="" class="navigation-main-link"&gt;About&lt;/a&gt;&lt;/li&gt;
-    &lt;li class="navigation-main-list"&gt;&lt;a href="" class="navigation-main-link"&gt;Contact&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
+<nav class="navigation-main">;
+  <ul>  
+    <li class="navigation-main-list"><a href="" class="navigation-main-link">Home</a></li>
+    <li class="navigation-main-list"><a href="" class="navigation-main-link">About</a></li>
+    <li class="navigation-main-list"><a href="" class="navigation-main-link">Blog</a></li>
+    <li class="navigation-main-list"><a href="" class="navigation-main-link">Contact</a></li>
+  </ul>
+</nav>
 ```
 
 **Bad example&#8230;**

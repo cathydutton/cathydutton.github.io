@@ -39,5 +39,6 @@ pre {
   background: map-get($colours, 'off-white');
   border: 1px solid lighten(map-get($colours, 'accent'), 20%);
   font-size: 1em;
+  overflow: scroll;
   padding: 10px 7px;
 }
