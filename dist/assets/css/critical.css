@@ -79,6 +79,7 @@ pre {
   background: #f3f3f3;
   border: 1px solid #ffca66;
   font-size: 1em;
+  overflow: scroll;
   padding: 10px 7px; }
 
 /*
@@ -244,17 +245,27 @@ button,
   box-shadow: 0;
   color: #fff;
   cursor: pointer;
+  display: block;
   font-size: 125%;
-  line-height: 1.8;
-  padding: .7em .8em .5em; }
+  line-height: 2.2;
+  margin: 5px 0;
+  padding: .8em .8em .5em;
+  text-transform: uppercase; }
+  @media screen and (min-width: 480px) {
+    button,
+    .button {
+      float: left;
+      margin-right: 10px; } }
 
 button,
 .button {
-  background-color: #ffa600; }
+  background-color: #ffa600;
+  border: solid 1px #ffa600; }
   button:hover, button:focus,
   .button:hover,
   .button:focus {
-    background-color: #996400;
+    background-color: #fff;
+    color: #ffa600;
     transition: all .3s ease-in-out; }
 
 /* Modules */
