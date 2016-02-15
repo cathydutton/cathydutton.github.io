@@ -11,20 +11,40 @@ Social Share
     margin-right: 10px;
   }
 
-  &:hover {
+}
+
+.share-page__twitter {
+  @include button (#4099ff);
+  border: 0;
+
+  &:hover,
+  &:focus {
+    background-color: lighten(#4099ff, 20%);
     color: map-get($colours, 'white');
   }
 
 }
 
-.share-page__twitter {
-  @include button (#4099ff);
-}
-
 .share-page__facebook {
   @include button (#3b5998);
+  border: 0;
+
+  &:hover,
+  &:focus {
+    background-color: lighten(#3b5998, 20%);
+    color: map-get($colours, 'white');
+  }
+
 }
 
 .share-page__google {
   @include button (#008744);
+  border: 0;
+
+  &:hover,
+  &:focus {
+    background-color: lighten(#008744, 20%);
+    color: map-get($colours, 'white');
+  }
+
 }
