@@ -7,14 +7,13 @@ heading: "A fully flexible mobile first grid to suit any design pattern."
 ---
 
 	<section class="content">
-		<p>Maze is a flexible and semantic mobile first responsive grid built with PostCSS. Maze is fully customisable
-		and removes the reliance on .last-column classes by instead applying the margin to both sides of the element and adjusting the wrapper with accordingly. </p>
-	</section>
-	<section class="content">
+	Maze is a flexible and semantic mobile first responsive grid built with PostCSS. Maze is fully customisable and removes the reliance on .last-column classes by instead applying the margin to both sides of each element and adjusting the wrapper with accordingly. 
+
+
 		<a href="http://cathydutton.github.io/postcss-maze/" title="Demo Maze Grid" class="button" target="_blank">View demo</a>
 		<a href="https://github.com/cathydutton/postcss-maze" title="Maze on Github" class="button" target="_blank">View on Github</a>
-	</section>
-	<section class="content">
+
+
 		<h2>Creating a grid</h2>
 
 		<p>Firstly the wrapper is given a property of grid-container with a value of true...</p>
@@ -78,21 +77,21 @@ heading: "A fully flexible mobile first grid to suit any design pattern."
 }
 		</pre>
 
-		<p>The above element will display one per row at mobile, two per row at landscape and 4 per row at tablet.</p>
+		<p>The above element will display one per row at mobile, two per row at landscape and 4 per row at tablet. The Mobile declaration is the default value and therefore is not rendered inside a media query.</p>
 
 		<h2>Settings</h2>
 
-		<p>By default Maze works with 5 media queries and has a margin of 1%. These settings can be overiden with custom config...</p>
+		<p>By default Maze works with 5 media queries and has a margin of 1%. These settings can be overridden with custom config...</p>
 
 	<pre>
 var processors = [
  postcssMaze({
   media: {
-   mobile:    20em,
-   phablet:   30em,
-   tablet:    48em,
-   desktop:   63.750em,
-   wide:      80em
+   mobile:    20 +'em',
+   phablet:   30 +'em',,
+   tablet:    48 +'em',
+   desktop:   63.750 +'em',
+   wide:      80 +'em'
   },
   settings: {
    margin: 10
@@ -114,11 +113,11 @@ gulp.task('css', function () {
  var processors = [
   postcssMaze({
    media: {
-   mobile:    20em,
-   phablet:   30em,
-   tablet:    48em,
-   desktop:   63.750em,
-   wide:      80em
+   mobile:    20 +'em',
+   phablet:   30 +'em',
+   tablet:    48 +'em',
+   desktop:   63.750 +'em',
+   wide:      80 +'em'
   },
   settings: {
    margin: 10
@@ -133,14 +132,13 @@ gulp.task('css', function () {
  })
 ];
 
- return gulp.src([
-  'demo/layout.css',
-  'demo/theme.css'
- ])
+ return gulp.src('dist/layout.css')
  .pipe(postcss(processors))
- .pipe(concat('demo/output.css'))
+ .pipe(concat('dist/output.css'))
  .pipe(gulp.dest('.'));
 });
 
 		</pre>
 	</section>
+
+
