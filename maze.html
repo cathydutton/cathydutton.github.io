@@ -132,7 +132,7 @@ gulp.task('css', function () {
  })
 ];
 
- return gulp.src('dist/layout.css')
+ return gulp.src('src/layout.css')
  .pipe(postcss(processors))
  .pipe(concat('dist/output.css'))
  .pipe(gulp.dest('.'));
