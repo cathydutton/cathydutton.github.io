@@ -1,0 +1,10 @@
+
+Each element should not respond to ‘global’ media queries - sometimes content just doesn’t fit.
+
+Every element should be able to have its own medial element query. This will create completely independent code blocks just like the design process.
+
+
+Then - how do we load the CSS - Ea h page bundles its own component file to go along with the global file.
+
+
+Then clever load - Critically inline - non render blocking include (Ascnc - <preload> tag etc)
