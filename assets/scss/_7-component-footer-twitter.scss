@@ -3,6 +3,7 @@
     ----------------------------------- */
 
 .latest-tweets {
+  @include clearfix;
   margin-left: 0;
 
   @include mq(break-tablet) {
