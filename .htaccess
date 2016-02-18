@@ -21,3 +21,4 @@ Header unset ETag
 FileETag None
 
 ErrorDocument 404 /404.html
+Redirect http://cathydutton.co.uk/defaultsite http://cathydutton.co.uk/index.html
