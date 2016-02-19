@@ -46,8 +46,13 @@ Feed
 
 // COMMENTS
 .news-feed__comments {
-  display: table-cell;
+  display: none;
   vertical-align: middle;
+
+  @include mq(break-tablet) {
+    display: table-cell;
+  }
+
 }
 
 .news-feed__comments__number {

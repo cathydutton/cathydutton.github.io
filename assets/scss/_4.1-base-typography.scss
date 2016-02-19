@@ -18,7 +18,7 @@ h4,
 }
 
 .heading__intro {
-  @include typography(64px);
+  @include typography(2.4em);
   color: map-get($colours, 'accent');
   display: block;
   font-family: map-get($font-stack, 'decorative');
@@ -26,13 +26,23 @@ h4,
   letter-spacing: 0;
   line-height: 1;
   margin: 0 0 10px;
+
+  @include mq(break-tablet) {
+    @include typography(2.8em);
+  }
+
 }
 
 h1,
 .heading--primary {
-  @include typography(2em);
+  @include typography(1.6em);
   line-height: 1;
   margin: 0;
+
+  @include mq(break-tablet) {
+    @include typography(2em);
+  }
+
 }
 
 h2,
