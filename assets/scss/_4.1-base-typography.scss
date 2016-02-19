@@ -27,9 +27,7 @@ h4,
   line-height: 1;
   margin: 0 0 10px;
 
-  @include mq(break-tablet) {
-    @include typography(2.8em);
-  }
+  
 
 }
 
@@ -40,7 +38,6 @@ h1,
   margin: 0;
 
   @include mq(break-tablet) {
-    @include typography(2em);
   }
 
 }
