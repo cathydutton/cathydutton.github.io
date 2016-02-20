@@ -4,11 +4,11 @@ Find me
 
 .find-me {
   @include clearfix;
-  list-style: none;
+  width: 100%;
   margin: 30px 0 0;
   padding: 0;
+  list-style: none;
   text-align: center;
-  width: 100%;
 }
 
 .find-me__item {
@@ -16,21 +16,21 @@ Find me
 }
 
 .find-me__anchor {
-  border: 0;
-  color: map-get($colours, 'accent');
+  position: relative;
   display: block;
-  fill: map-get($colours, 'accent');
+  width: 44px;
   height: 44px;
   margin: 0 5px;
-  position: relative;
-  width: 44px;
+  border: 0;
+  color: map-get($colours, 'accent');
+  fill: map-get($colours, 'accent');
 
   &:hover,
   &:focus {
-    background: map-get($colours, 'accent');
     border-radius: 100%;
     color: map-get($colours, 'grey-dark');
     fill: map-get($colours, 'grey-dark');
+    background: map-get($colours, 'accent');
     transform: scale(1.25);
     transition: background-color .5s, transform .5s ease-out;
   }
@@ -46,9 +46,9 @@ footer {
 
     &:hover,
     &:focus {
-      background: map-get($colours, 'grey-dark');
       color: map-get($colours, 'white');
       fill: map-get($colours, 'white');
+      background: map-get($colours, 'grey-dark');
     }
 
   }

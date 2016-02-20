@@ -3,27 +3,26 @@ Sidebar profile
 ----------------------------------- */
 
 .profile-image {
-  border: solid 1px lighten(map-get($colours, 'grey-dark'), 15%);
-  border-radius: 50%;
+  width: 180px;
   height: 180px;
   margin: 20px auto;
+  border: solid 1px lighten(map-get($colours, 'grey-dark'), 15%);
+  border-radius: 50%;
   text-align: center;
-  width: 180px;
 }
 
 .profile-image__img {
-  //clip-path: circle(81px at 89px 89px);
-  border-radius: 50%;
+  width: 160px;
   height: 160px;
   margin-top: 9px;
-  width: 160px;
+  border-radius: 50%;
 }
 
 .profile-description {
-  border-bottom: solid 1px lighten(map-get($colours, 'grey-dark'), 5%);
-  border-top: solid 1px lighten(map-get($colours, 'grey-dark'), 5%);
-  color: map-get($colours, 'grey-light');
   margin-top: 0;
   padding: 10px 0;
+  border-top: solid 1px lighten(map-get($colours, 'grey-dark'), 5%);
+  border-bottom: solid 1px lighten(map-get($colours, 'grey-dark'), 5%);
+  color: map-get($colours, 'grey-light');
   text-align: center;
 }

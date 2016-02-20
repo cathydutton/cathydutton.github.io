@@ -19,8 +19,8 @@ Social Share
 
   &:hover,
   &:focus {
-    background-color: lighten(#4099ff, 20%);
     color: map-get($colours, 'white');
+    background-color: lighten(#4099ff, 20%);
   }
 
 }
@@ -31,8 +31,8 @@ Social Share
 
   &:hover,
   &:focus {
-    background-color: lighten(#3b5998, 20%);
     color: map-get($colours, 'white');
+    background-color: lighten(#3b5998, 20%);
   }
 
 }
@@ -43,8 +43,8 @@ Social Share
 
   &:hover,
   &:focus {
-    background-color: lighten(#008744, 20%);
     color: map-get($colours, 'white');
+    background-color: lighten(#008744, 20%);
   }
 
 }

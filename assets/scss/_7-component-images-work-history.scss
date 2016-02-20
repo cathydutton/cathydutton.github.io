@@ -15,16 +15,16 @@ $logos: (barclays, ao, getthelabel, sainsburys, ee, o2, thehutgroup, nintendo, n
 @each $logo in $logos {
 
   .image-wrapper--#{$logo} {
-    animation: fadeIn 2s forwards;
     background: url("/assets/img/about/#{$logo}-logo.jpg") center center;
+    animation: fadeIn 2s forwards;
 }
 
   .image-wrapper__image {
 
     &:hover,
     &:focus {
-      animation: fadeOut 2s forwards;
       opacity: 0;
+      animation: fadeOut 2s forwards;
     }
 
   }

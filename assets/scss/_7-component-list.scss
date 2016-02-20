@@ -3,8 +3,8 @@
     ----------------------------------- */
 .content-list {
   @include clearfix;
-  padding: 0;
   width: 100%;
+  padding: 0;
 }
 
 .content-list__item {
@@ -14,9 +14,9 @@
   list-style: none;
 
   &:before {
-    color: map-get($colours, 'accent');
-    content: '•';
     padding-right: .6em;
+    content: '•';
+    color: map-get($colours, 'accent');
   }
 
 }

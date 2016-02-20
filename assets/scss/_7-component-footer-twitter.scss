@@ -17,27 +17,27 @@
 .latest-tweets__tweet {
   @include grid(break-mobile, 1, 1);
   @include grid(break-tablet, 1, 2);
-  background: map-get($colours, 'accent');
-  color: map-get($colours, 'grey-dark');
-  float: none;
-  list-style: none;
-  margin-top: 1.8em;
-  min-height: 100px;
-  padding: .2em .6em 4em;
   position: relative;
+  float: none;
+  min-height: 100px;
+  margin-top: 1.8em;
+  padding: .2em .6em 4em;
+  color: map-get($colours, 'grey-dark');
+  background: map-get($colours, 'accent');
+  list-style: none;
   text-align: left;
 
   &:after {
-    border-color: map-get($colours, 'accent') transparent transparent;
-    border-style: solid;
-    border-width: 10px;
-    bottom: -19px;
-    content: '';
-    display: block;
-    height: 0;
-    left: 1em;
     position: absolute;
+    bottom: -19px;
+    left: 1em;
+    display: block;
     width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: map-get($colours, 'accent') transparent transparent;
+    content: '';
   }
 
   a:hover,
@@ -52,7 +52,7 @@
 }
 
 .latest-tweets__time {
+  position: absolute;
   bottom: 10px;
   font-style: italic;
-  position: absolute;
 }

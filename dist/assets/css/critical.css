@@ -61,26 +61,26 @@ textarea {
   box-sizing: border-box; }
 
 body {
-  color: #2a2a2a;
-  margin: 0;
-  max-width: 1180px;
   min-width: 280px;
-  padding: 0; }
+  max-width: 1180px;
+  margin: 0;
+  padding: 0;
+  color: #2a2a2a; }
 
 blockquote {
-  background: #f3f3f3;
-  border: 1px solid #dadada;
-  font-size: 1em;
   margin: 0;
   padding: 10px 15px;
+  border: 1px solid #dadada;
+  background: #f3f3f3;
+  font-size: 1em;
   text-align: center; }
 
 pre {
-  background: #f3f3f3;
-  border: 1px solid #ffca66;
-  font-size: 1em;
   overflow: scroll;
-  padding: 10px 7px; }
+  padding: 10px 7px;
+  border: 1px solid #ffca66;
+  background: #f3f3f3;
+  font-size: 1em; }
 
 /*
     Base
@@ -102,8 +102,8 @@ img {
   image-rendering: auto; }
 
 svg {
-  height: 100%;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 .svg__text {
   display: none; }
@@ -112,9 +112,9 @@ ul {
   margin: 0 0 0 12px;
   padding: 0; }
   ul:after {
+    display: table;
     clear: both;
-    content: '';
-    display: table; }
+    content: ''; }
 
 em {
   font-style: italic; }
@@ -123,8 +123,8 @@ em {
     Base Typography
     ----------------------------------- */
 html {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 300;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.5; }
 
 h1,
@@ -137,13 +137,13 @@ h4,
 
 .heading__intro {
   font-size: 2.4em;
-  color: #ffa600;
   display: block;
-  font-family: oswald, Helvetica, sans-serif;
+  margin: 0 0 10px;
+  color: #ffa600;
   font-weight: bold;
+  font-family: oswald, Helvetica, sans-serif;
   letter-spacing: 0;
-  line-height: 1;
-  margin: 0 0 10px; }
+  line-height: 1; }
   @media screen and (min-width: 1020px) {
     .heading__intro {
       font-size: 2.88em; } }
@@ -151,8 +151,8 @@ h4,
 h1,
 .heading--primary {
   font-size: 1.6em;
-  line-height: 1;
-  margin: 0; }
+  margin: 0;
+  line-height: 1; }
   @media screen and (min-width: 1020px) {
     h1,
     .heading--primary {
@@ -184,51 +184,51 @@ h4 {
   Layout
   ----------------------------------- */
 .wrapper {
-  animation: fadeIn 2s forwards;
-  background: #fff;
-  margin-left: 28px;
-  min-height: 100%;
   position: relative;
-  width: 95%; }
+  width: 95%;
+  min-height: 100%;
+  margin-left: 28px;
+  background: #fff;
+  animation: fadeIn 2s forwards; }
 
 header,
 footer,
 section {
-  padding: 2% 5% 0;
-  width: 90%; }
+  width: 90%;
+  padding: 2% 5% 0; }
   header:after,
   footer:after,
   section:after {
+    display: table;
     clear: both;
-    content: '';
-    display: table; }
+    content: ''; }
 
 .sidebar {
-  background: #2a2a2a;
-  border-right: solid 3px #ffa600;
-  bottom: 0;
-  height: 100%;
-  left: -260px;
-  outline: none;
-  overflow: auto;
-  padding: 20px 15px;
   position: fixed;
-  transition: all .3s ease-in-out;
+  bottom: 0;
+  left: -260px;
+  z-index: 2;
+  overflow: auto;
   width: 270px;
-  z-index: 2; }
+  height: 100%;
+  padding: 20px 15px;
+  border-right: solid 3px #ffa600;
+  background: #2a2a2a;
+  outline: none;
+  transition: all .3s ease-in-out; }
 
 .sidebar--open {
   left: 0; }
 
 .sidebar--open ~ .wrapper:before {
-  background: #2a2a2a;
-  content: '';
-  height: 100%;
-  opacity: .6;
-  overflow: auto;
   position: fixed;
+  z-index: 1;
+  overflow: auto;
   width: 100%;
-  z-index: 1; }
+  height: 100%;
+  content: '';
+  background: #2a2a2a;
+  opacity: .6; }
 
 .adsbygoogle {
   max-width: 900px;
@@ -240,17 +240,17 @@ section {
     ----------------------------------- */
 button,
 .button {
-  border: 0;
-  border-radius: .2em;
-  box-shadow: 0;
-  color: #fff;
-  cursor: pointer;
   display: block;
-  font-size: 125%;
-  line-height: 2.2;
   margin: 5px 0;
   padding: .5em .8em .3em;
-  text-transform: uppercase; }
+  border: 0;
+  border-radius: .2em;
+  color: #fff;
+  font-size: 125%;
+  line-height: 2.2;
+  text-transform: uppercase;
+  box-shadow: 0;
+  cursor: pointer; }
   @media screen and (min-width: 480px) {
     button,
     .button {
@@ -264,8 +264,8 @@ button,
   button:hover, button:focus,
   .button:hover,
   .button:focus {
-    background-color: #fff;
     color: #ffa600;
+    background-color: #fff;
     transition: all .3s ease-in-out; }
 
 /* Modules */
@@ -273,27 +273,27 @@ button,
 Menu button
 ----------------------------------- */
 .button--menu {
-  background: #2a2a2a;
-  border: solid 2px #ffa600;
-  border-left: 0;
-  border-radius: 0 20px 20px 0;
-  color: #ffa600;
-  fill: #ffa600;
-  height: 55px;
-  left: 2px;
-  padding: 0;
   position: fixed;
   top: 80px;
-  transition: all .3s ease-in-out;
+  left: 2px;
+  z-index: 3;
   width: 40px;
-  z-index: 3; }
+  height: 55px;
+  padding: 0;
+  border: solid 2px #ffa600;
+  border-radius: 0 20px 20px 0;
+  border-left: 0;
+  color: #ffa600;
+  fill: #ffa600;
+  background: #2a2a2a;
+  transition: all .3s ease-in-out; }
   .button--menu svg {
-    height: 46%;
-    width: 85%; }
+    width: 85%;
+    height: 46%; }
   .button--menu:hover, .button--menu:focus {
-    background: #2a2a2a;
     color: #fff;
-    fill: #fff; }
+    fill: #fff;
+    background: #2a2a2a; }
 
 .button--menu--icon {
   opacity: 1;

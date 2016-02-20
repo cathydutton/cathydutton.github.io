@@ -19,26 +19,26 @@ textarea {
 }
 
 body {
-  color: map-get($colours, 'black');
-  margin: 0;
-  max-width: map-get($breakpoints, 'break-wide');
   min-width: map-get($breakpoints, 'break-mobile');
+  max-width: map-get($breakpoints, 'break-wide');
+  margin: 0;
   padding: 0;
+  color: map-get($colours, 'black');
 }
 
 blockquote {
-  background: map-get($colours, 'off-white');
-  border: 1px solid darken(map-get($colours, 'off-white'), 10%);
-  font-size: 1em;
   margin: 0;
   padding: 10px 15px;
+  border: 1px solid darken(map-get($colours, 'off-white'), 10%);
+  background: map-get($colours, 'off-white');
+  font-size: 1em;
   text-align: center;
 }
 
 pre {
-  background: map-get($colours, 'off-white');
-  border: 1px solid lighten(map-get($colours, 'accent'), 20%);
-  font-size: 1em;
   overflow: scroll;
   padding: 10px 7px;
+  border: 1px solid lighten(map-get($colours, 'accent'), 20%);
+  background: map-get($colours, 'off-white');
+  font-size: 1em;
 }

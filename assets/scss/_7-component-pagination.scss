@@ -3,9 +3,9 @@ Pagination
 ----------------------------------- */
 
 .page-navigation {
-  list-style: none;
   margin: 10px 0;
   padding: 0;
+  list-style: none;
 }
 
 .button--page-navigation__prev,
@@ -25,13 +25,13 @@ Pagination
 }
 
 .button--page-navigation__anchor {
-  border-bottom: 0;
   display: block;
   padding: 10px 20px 7px;
+  border-bottom: 0;
 }
 
 .button--page-navigation__svg {
-  fill: map-get($colours, 'white');
-  height: 16px;
   width: 20px;
+  height: 16px;
+  fill: map-get($colours, 'white');
 }
