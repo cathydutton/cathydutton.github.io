@@ -1,3 +1,8 @@
+---
+title: Title
+author: Cathy Dutton
+layout: post
+---
 
 Each element should not respond to ‘global’ media queries - sometimes content just doesn’t fit.
 
