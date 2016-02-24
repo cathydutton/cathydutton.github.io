@@ -13,9 +13,9 @@ heading: "Latest posts and tutorials"
 							<h3 class="heading news-feed__title">{{ post.title }}</h3>
 							<p class="news-feed__date">{{ post.date | date: '%B %d, %Y' }}</p>
 					</a>
-					<div class="news-feed__comments">
+					<!-- <div class="news-feed__comments">
 						<a href="{{ post.url | remove_first:'/'}}#disqus_thread" class="news-feed__comments__number" tabindex="-1">Link</a>
-					</div>
+					</div> -->
 			 </article>
 		{% endfor %}
 	</section>
