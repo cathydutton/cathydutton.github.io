@@ -9,13 +9,13 @@ window.onload = function() {
 	var toggleNav = document.getElementById('js-header__icon'),
 	sidebar = document.querySelector('.sidebar, a'),
 	wrapper = document.querySelector('.wrapper'),
-	tweets = document.querySelector('timePosted a'),
-  wrapperLink = document.querySelectorAll('.wrapper a'), i,
+	tweets = document.querySelectorAll('latest-tweets__tweet a'), i,
+	wrapperLink = document.querySelectorAll('.wrapper a'), i,
 	sidebarLink = document.querySelectorAll('.sidebar a'), i;
 
 	for (i = 0; i < sidebarLink.length; ++i) {
 		sidebarLink[i].setAttribute('tabindex', '-1');
-	}
+	};
 
 	// On Click function
 	function changeClass() {
@@ -29,7 +29,9 @@ window.onload = function() {
 					for (i = 0; i < wrapperLink.length; ++i) {
 						wrapperLink[i].setAttribute('tabindex', '-1');
 					}
-					tweets.setAttribute('tabindex', '-1');
+					for (i = 0; i < tweets.length; ++i) {
+						tweets[i].setAttribute('tabindex', '-1');
+					}
 
 		  }
 		  else if ( sidebar.className.match(/(?:^|\s)sidebar--open(?!\S)/) ) {
@@ -42,7 +44,9 @@ window.onload = function() {
 					for (i = 0; i < wrapperLink.length; ++i) {
 						wrapperLink[i].setAttribute('tabindex', '0');
 					}
-					tweets.setAttribute('tabindex', '0');
+					for (i = 0; i < tweets.length; ++i) {
+						tweets[i].setAttribute('tabindex', '-0');
+					}
 
 		  }
 	}

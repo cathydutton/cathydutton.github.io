@@ -7,9 +7,10 @@
 }
 
 .footer-links {
-  list-style: none;
+  @include clearfix;
   margin: 1.5em auto;
   padding: 0;
+  list-style: none;
 }
 
 .footer-links__item {

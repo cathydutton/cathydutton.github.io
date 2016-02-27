@@ -3,19 +3,20 @@
     ----------------------------------- */
 .content-list {
   @include clearfix;
-  padding: 0;
   width: 100%;
+  padding: 0;
 }
 
 .content-list__item {
-  @include grid(break-mobile, 1, 2);
+  @include grid(break-mobile, 1, 1);
+  @include grid(break-phablet, 1, 2);
   @include grid(break-tablet, 1, 3);
   list-style: none;
 
   &:before {
-    color: map-get($colours, 'accent');
-    content: '•';
     padding-right: .6em;
+    content: '•';
+    color: map-get($colours, 'accent');
   }
 
 }

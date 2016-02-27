@@ -3,20 +3,20 @@ Navigation
 ----------------------------------- */
 
 .sidebar__list {
-  margin: 20px 0 0;
-  overflow: hidden;
-  padding: 0 23px 50px;
   position: relative;
+  overflow: hidden;
   width: 100%;
+  margin: 20px 0 0;
+  padding: 0 23px 50px;
 }
 
 .sidebar__anchor {
-  border: solid 1px lighten(map-get($colours, 'grey-dark'), 5%);
-  border-left: solid 1px map-get($colours, 'accent');
-  color: map-get($colours, 'grey-light');
   display: block;
   margin-bottom: 5px;
   padding: 10px 0 10px 10px;
+  border: solid 1px lighten(map-get($colours, 'grey-dark'), 5%);
+  border-left: solid 1px map-get($colours, 'accent');
+  color: map-get($colours, 'grey-light');
   text-decoration: none;
   text-transform: uppercase;
 
