@@ -3,7 +3,7 @@ title: Getting started with PostCSS
 author: Cathy Dutton
 layout: external-post
 category: external
-link:
+link: http://blog.mrfrontend.nl/2016/03/an-introduction-to-postcss/
 site: Mr Frontend
 ---
 
