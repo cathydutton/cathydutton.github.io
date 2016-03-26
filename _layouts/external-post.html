@@ -1,0 +1,36 @@
+---
+disqus: true
+comments: true
+archive: false
+---
+
+{% include head.html %}
+{% include sidebar.html %}
+<header class="header">
+  <h1 class="heading heading__intro">{{page.site}}</h1>
+  <p class="heading heading--primary">{{ page.date | date_to_string }}</p>
+</header>
+
+<section>
+{% include pagination.html %}
+</section>
+
+<section>
+  <article class="news-feed__post">
+      <a href="{{page.link}}" title="{{ post.title }}" target="_blank" class="news-feed__anchor">
+          <h3 class="heading news-feed__title">{{ page.title }}</h3>
+          <p class="news-feed__date">Visit site</p>
+      </a>
+  </article>
+</section>
+
+ <section>
+ {% include pagination.html %}
+ </section>
+
+ <section>
+ {% include comments.html %}
+ </section>
+
+
+{% include footer.html %}

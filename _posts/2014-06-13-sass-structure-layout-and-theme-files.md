@@ -2,6 +2,7 @@
 title: 'Sass structure &#8211; layout and theme files'
 author: Cathy Dutton
 layout: post
+category: post
 ---
 Following on from this post <a href="http://www.cathydutton.co.uk/css/separate-your-layout-sass" target="_blank" title="Layout Sass file" >&#8216;Separate Your Layout and skin Sass files&#8217;</a> I put together a larger working example to further demonstrate the theory.
 

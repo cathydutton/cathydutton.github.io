@@ -2,6 +2,7 @@
 title: Separate Your Layout and skin Sass files
 author: Cathy Dutton
 layout: post
+category: post
 ---
 One of the greatest things about Sass is the ability it provides to separate large files in to more manageable chunks of code. When working on large or complex sites and future proofing code this becomes even more significant.
 
