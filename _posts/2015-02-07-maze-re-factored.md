@@ -2,6 +2,7 @@
 title: Maze Re-factored
 author: Cathy Dutton
 layout: post
+category: post
 ---
 The original Maze framework was written in 2013 with the aim of removing column markup and creating a more semantic system. The grid was also developed with flexibility in mind aiming to create a basic starting point for any responsive layout. Maze was able to support any grid column size, with configurable margins and push values that could be updated from row to row. The direction in which elements stacked was also configurable. Documentation on how Maze worked can be found
 <a href="/maze-responsive-grid-framework">here</a>.

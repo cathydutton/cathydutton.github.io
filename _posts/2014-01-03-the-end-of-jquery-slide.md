@@ -2,6 +2,7 @@
 title: The end of jQuery sliders
 author: Cathy Dutton
 layout: post
+category: post
 ---
 With the current focus on conversion rate optimisation, load time and page speed it may finally be time to move away from the currently over used jQuery sliding banners.
 

@@ -2,6 +2,7 @@
 title: Structuring your Sass
 author: Cathy Dutton
 layout: post
+category: post
 ---
 When setting up a new web project getting things right from the beginning is hugely important. Using Sass, style sheets can now be split into more manageable chunks without adding extra http requests. The Bear boilerplate (created following <a href="http://www.cathydutton.co.uk/css/the-dreaded-front-end-framework" >this</a> earlier post) splits CSS into the following 5 sections&#8230;
 

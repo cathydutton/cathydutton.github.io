@@ -2,6 +2,7 @@
 title: Pop jQuery tooltip demo
 author: Cathy Dutton
 layout: post
+category: post
 ---
 Pop is a simple to use, responsive jQuery tooltip with css animations. The jQuery is written below and includes a click function as well a hover to support desktop and touch screen devices.
 

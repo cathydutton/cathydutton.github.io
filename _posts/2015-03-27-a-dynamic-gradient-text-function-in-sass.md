@@ -1,7 +1,10 @@
 ---
 title: A Dynamic Gradient Text Function in Sass
 author: Cathy Dutton
-layout: post
+layout: external-post
+category: external
+link: http://www.sitepoint.com/dynamic-gradient-text-function-sass/
+site: Sitepoint
 ---
 A Sass function using gradient and text animation.
 

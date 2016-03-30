@@ -1,7 +1,8 @@
 ---
 title: Sass dynamic colour change
 author: Cathy Dutton
-layout: post
+layout: external-post
+category: post
 ---
 When building the website for <a href="http://get-maze.co.uk/" target="_blank">Maze</a> I wanted to display the content on one page with a downward scroll. Each section or slide would therefore need to have a different background colour to emphasise the content change.
 

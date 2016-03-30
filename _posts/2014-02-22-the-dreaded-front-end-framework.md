@@ -2,6 +2,7 @@
 title: The dreaded front end framework
 author: Cathy Dutton
 layout: post
+category: post
 ---
 As a Front End Developer I am reluctant to use a framework on any of my web projects. I have spent a lot of time looking at the various options including things like Bootstrap and Foundation.
 

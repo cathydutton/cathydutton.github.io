@@ -2,6 +2,7 @@
 title: Sidebar navigation
 author: Cathy Dutton
 layout: post
+category: post
 ---
 Over the last few months I have found myself reading more on more about conversion rate optimisation and thinking much more about how a websites layout can help improve a users journey and encourage them to either make a purchase or an enquiry.
 
