@@ -2,7 +2,7 @@
 /*
 	TWEET
 	------------------------------- */
-	// 
+	//
 	// var seleccionado = '';
 	// var horiz, vert, referencia;
 	// function carga() {
