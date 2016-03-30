@@ -19,7 +19,7 @@ $logos: (barclays, ao, getthelabel, sainsburys, ee, o2, thehutgroup, nintendo, n
     animation: fadeIn 2s forwards;
 }
 
-  .image-wrapper__image {
+  .image-wrapper__image--#{$logo} {
 
     &:hover,
     &:focus {

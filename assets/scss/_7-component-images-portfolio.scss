@@ -2,32 +2,15 @@
 Image gallery
 ----------------------------------- */
 
-.portfolio-gallery {
-  @include grid(break-mobile, 1, 2);
+.portfolio-gallery--thumbnail {
+  @include grid(break-mobile, 1, 1);
+  @include grid(break-phablet, 1, 2);
   @include grid(break-tablet, 1, 3);
+  @include grid(break-desktop, 1, 4);
+  background: lighten(map-get($colours, 'grey-light'), 30%);
+  border: solid 1px lighten(map-get($colours, 'grey-light'), 20%);
   margin-bottom: 10px;
-}
-
-
-// GALLETY
-.wrapper.lightbox {
-
-  &:before {
-    position: absolute;
-    z-index: 1;
-    overflow: auto;
-    width: 100%;
-    height: 100%;
-    content: '';
-    background: map-get($colours, 'black');
-    opacity: .6;
-  }
-
-}
-
-.image-wrapper--portfolio {
-  border: solid 1px map-get($colours, 'grey-light');
-  animation: fadeIn 2s forwards;
+  padding: 5px;
 
   &:hover,
   &:focus {
@@ -37,99 +20,286 @@ Image gallery
 
 }
 
-.pop {
-  position: absolute;
-  top: 10%;
-  left: 15%;
-  z-index: 1002;
-  display: none;
-  width: 70%;
-  background: map-get($colours, 'white');
-  text-align: center;
-}
+.lightbox--open {
 
-#pop-image {
-  overflow: auto;
-  height: 500px;
-}
-
-#pop-image-img {
-  overflow: auto;
-  width: 100%;
-  margin-top: 10px;
-  padding: 10px;
-  background: map-get($colours, 'white');
-}
-
-#pop-text {
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px 10px;
-  background: map-get($colours, 'white');
-}
-
-
-#prev,
-#next {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-
-  &:hover {
-    background: map-get($colours, 'white');
-    opacity: .60;
-    transition: all .2s ease-in-out;
-
-    &::after {
-      position: absolute;
-      top: 30%;
-      color: map-get($colours, 'black');
-      font-size: 6em;
-    }
-
+  &:before {
+    background: map-get($colours, 'black');
+    content: '';
+    height: 100%;
+    margin-left: -20px;
+    opacity: .6;
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
   }
 
 }
 
-#prev {
+.image-wrapper--portfolio {
+  animation: fadeIn 2s forwards;
+  border: solid 1px lighten(map-get($colours, 'grey-light'), 30%);
+}
+
+
+// POP UP
+.portfolio-gallery-wrapper {
+  width: 990px;
+}
+
+.portfolio-gallery {
+  background: map-get($colours, 'white');
+  display: none;
   left: 0;
-}
-
-#next {
-  right: 0;
-}
-
-#close {
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: map-get($breakpoints, 'break-mobile');
+  padding: 10px;
   position: absolute;
-  top: 0;
   right: 0;
-  z-index: 999;
+  text-align: center;
+  width: 90%;
+  z-index: 3;
+}
+
+.portfolio-gallery__image {
+  border: solid 1px  lighten(map-get($colours, 'grey-light'), 20%);
+  height: 500px;
+  overflow: auto;
+}
+
+.portfolio-gallery__img {
+  width: 100%;
+}
+
+.portfolio-gallery__information {
+  border-top: solid 1px  lighten(map-get($colours, 'grey-light'), 20%);
+  margin-top: 10px;
+  padding: 0 10px 10px 20px;
+  position: relative;
+}
+
+.portfolio-gallery__title {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.portfolio-gallery__description {
+  margin-top: 0;
+  text-align: left;
+  width: 60%;
+}
+
+.portfolio-gallery__button {
+  border-radius: 0;
+  padding: 15px 12px 0 15px;
+
+  svg {
+    color: map-get($colours, 'white');
+    fill: map-get($colours, 'white');
+    height: 32px;
+    width: 32px;
+  }
+
+}
+
+.portfolio-gallery__pagination {
+
+  @include mq(break-tablet) {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+  }
+
+}
+
+.portfolio-gallery__button--next {
+  float: right;
+}
+
+.portfolio-gallery__button--prev {
+  border-right: solid 1px map-get($colours, 'white');
+  float: right;
+}
+
+.portfolio-gallery__button--close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+
+
+/*!
+ * baguetteBox.js
+ * @author  feimosi
+ * @version 1.5.0
+ * @url https://github.com/feimosi/baguetteBox.js
+ */
+#baguetteBox-overlay {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000;
+  background-color: #222;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease; }
+  #baguetteBox-overlay.visible {
+    opacity: 1; }
+  #baguetteBox-overlay .full-image {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center; }
+    #baguetteBox-overlay .full-image figure {
+      display: inline;
+      margin: 0;
+      height: 100%; }
+    #baguetteBox-overlay .full-image img {
+      display: inline-block;
+      width: auto;
+      height: auto;
+      max-height: 100%;
+      max-width: 100%;
+      vertical-align: middle;
+      -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+           box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); }
+    #baguetteBox-overlay .full-image figcaption {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      line-height: 1.8;
+      white-space: normal;
+      color: #ccc;
+      background-color: #000;
+      background-color: rgba(0, 0, 0, 0.6);
+      font-family: sans-serif; }
+    #baguetteBox-overlay .full-image:before {
+      content: "";
+      display: inline-block;
+      height: 50%;
+      width: 1px;
+      margin-right: -1px; }
+
+#baguetteBox-slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  -webkit-transition: left 0.4s ease, -webkit-transform 0.4s ease;
+          transition: left 0.4s ease, -moz-transform 0.4s ease;
+          transition: left 0.4s ease, transform 0.4s ease; }
+  #baguetteBox-slider.bounce-from-right {
+    -webkit-animation: bounceFromRight 0.4s ease-out;
+            animation: bounceFromRight 0.4s ease-out; }
+  #baguetteBox-slider.bounce-from-left {
+    -webkit-animation: bounceFromLeft 0.4s ease-out;
+            animation: bounceFromLeft 0.4s ease-out; }
+
+@-webkit-keyframes bounceFromRight {
+  0% {
+    margin-left: 0; }
+  50% {
+    margin-left: -30px; }
+  100% {
+    margin-left: 0; } }
+
+@keyframes bounceFromRight {
+  0% {
+    margin-left: 0; }
+  50% {
+    margin-left: -30px; }
+  100% {
+    margin-left: 0; } }
+
+@-webkit-keyframes bounceFromLeft {
+  0% {
+    margin-left: 0; }
+  50% {
+    margin-left: 30px; }
+  100% {
+    margin-left: 0; } }
+
+@keyframes bounceFromLeft {
+  0% {
+    margin-left: 0; }
+  50% {
+    margin-left: 30px; }
+  100% {
+    margin-left: 0; } }
+
+.baguetteBox-button#next-button, .baguetteBox-button#previous-button {
+  top: 50%;
+  top: calc(50% - 30px);
+  width: 44px;
+  height: 60px; }
+
+.baguetteBox-button {
+  position: absolute;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -moz-border-radius: 15%;
+       border-radius: 15%;
+  background-color: #323232;
+  background-color: rgba(50, 50, 50, 0.5);
+  color: #ddd;
+  font: 1.6em sans-serif;
+  -webkit-transition: background-color 0.4s ease;
+          transition: background-color 0.4s ease; }
+  .baguetteBox-button:hover {
+    background-color: rgba(50, 50, 50, 0.9); }
+  .baguetteBox-button#next-button {
+    right: 2%; }
+  .baguetteBox-button#previous-button {
+    left: 2%; }
+  .baguetteBox-button#close-button {
+    top: 20px;
+    right: 2%;
+    right: calc(2% + 6px);
+    width: 30px;
+    height: 30px; }
+  .baguetteBox-button svg {
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+/*
+    Preloader
+    Borrowed from http://tobiasahlin.com/spinkit/
+*/
+.spinner {
   width: 40px;
   height: 40px;
-  border: 0;
-  border-radius: 0;
-  background: map-get($colours, 'grey-dark');
-  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px; }
 
-  &:hover {
-    background: map-get($colours, 'accent');
-    transition: all .3s ease-in-out;
-  }
-
-}
-
-#black_overlay {
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  -moz-border-radius: 50%;
+       border-radius: 50%;
+  background-color: #fff;
+  opacity: .6;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1001;
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: map-get($colours, 'black');
-  opacity: .80;
-  cursor: pointer;
-}
+  -webkit-animation: bounce 2s infinite ease-in-out;
+          animation: bounce 2s infinite ease-in-out; }
