@@ -2,7 +2,6 @@
 Image gallery
 ----------------------------------- */
 
-// move to relavent artial
 .logo-gallery {
   @include grid(break-mobile, 1, 1, $grid-margin: 0);
   @include grid(break-phablet, 1, 2, $grid-margin: 0);
@@ -17,6 +16,7 @@ $logos: (barclays, ao, getthelabel, sainsburys, ee, o2, thehutgroup, nintendo, n
   .image-wrapper--#{$logo} {
     background: url("/assets/img/about/#{$logo}-logo.jpg") center center;
     animation: fadeIn 2s forwards;
+    cursor: pointer;
 }
 
   .image-wrapper__image--#{$logo} {
