@@ -1,0 +1,173 @@
+---
+title: Creating readable CSS partials with PostCSS
+author: Cathy Dutton
+layout: post
+category: post
+---
+
+FOCUS ON HOW SASS CAN BECOME UNREADABLE WITH CRAZY FUNCTIONS AND MIXINS - POST CSS LETS
+YOU MAKE THINGS EASY TO UNDERSTAND.
+
+MAXE
+CLEARFIX
+MORE PLUGINS
+
+EXAMPLES OF MY FAILINGS...
+MAZE
+COLOR FUNCTIONS
+
+
+Keeping layout or structural CSS separate from theming CSS is by no means a new concept. There are numerous
+benefits to doing so including...
+
+*   Improved usability of design patterns.
+*   Reduced and cleaner code.
+*   Easier to maintain.
+*   One
+
+
+PostCSS can be utalised to create clear and consise partils that anybody can pick up and understand!
+
+MAZE!!!!!!
+
+
+
+
+Keeping layout or structural CSS separate from theming CSS is by no means a new concept. There are numerous benefits to doing so including...
+
+*   Improved usability of design patterns.
+*   Reduced and cleaner code.
+*   Easier to maintain.
+*   One
+
+Popular CSS methodologies such as SMACCS and OOCSS have been built around this principle. ........
+
+
+
+
+## Modular design
+
+As design has shifted from a page by page process to a more modular component based approach, the need to create elements completely free of layout and sizing restrictions has gained even more importance.
+
+Modular design focuses on the creation of features or components, which can then be combined like jigsaw pieces to create layouts and pages. These building blocks need to be coded in a fluid way without the limitations enforced by page positioning and should adjust to suit any location.
+
+IMAGES TO ILLUSTRATE
+
+
+## Building these components
+
+Individual components of code that are built to be flexible and fluid, with no structural classes.
+
+Web components
+HTML partials
+Even include localised CSS via React etc.
+
+
+## Where does the structural CSS live?
+
+So where does this leave the structural CSS? As each component has local CSS inside component folders the structure must be defined by the page an element sits on.
+
+This does not mean we should go back to old habbits and create page by page stylesheets for layouts. Instead a global CSS aproach should be used.
+
+A global layout partial needs to be readable, and easy to understand as its classes will be referenced throughout a project.
+
+With PostCSS we can use customised CSS properties and values to make sure the content is self explanetary.
+
+```css
+.twelve-elements {
+  col-span: mobile(1,1);
+  col-span: phablet(1,2);
+  col-span: tablet(1,4);
+  col-span: desktop(1,6);
+  col-span: wide(1,12);
+}
+```
+
+```css
+.six-elements {
+  col-span: mobile(1,2);
+  col-span: tablet(1,3);
+  col-span: desktop(1,6);
+}
+```
+
+
+## Folder structure - Fitting things together
+
+global styles for layout, as well as colors font stack base styles etc
+Localised component styles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Modular design
+
+As design has shifted from a page by page process to a more modular component based approach, the need to create elements completely free of layout and sizing restrictions has gained even more importance.
+
+Modular design focuses on the creation of features or components, which can then be combined like jigsaw pieces to create layouts and pages. These building blocks need to be coded in a fluid way without the limitations enforced by page positioning and should adjust to suit any location.
+
+IMAGES TO ILLUSTRATE
+
+
+## Building these components
+
+Individual components of code that are built to be flexible and fluid, with no structural classes.
+
+Web components
+HTML partials
+Even include localised CSS via React etc.
+
+
+## Where does the structural CSS live?
+
+So where does this leave the structural CSS? As each component has local CSS inside component folders the structure must be defined by the page an element sits on.
+
+This does not mean we should go back to old habbits and create page by page stylesheets for layouts. Instead a global CSS aproach should be used.
+
+A global layout partial needs to be readable, and easy to understand as its classes will be referenced throughout a project.
+
+With PostCSS we can use customised CSS properties and values to make sure the content is self explanetary.
+
+```css
+.twelve-elements {
+  col-span: mobile(1,1);
+  col-span: phablet(1,2);
+  col-span: tablet(1,4);
+  col-span: desktop(1,6);
+  col-span: wide(1,12);
+}
+```
+
+```css
+.six-elements {
+  col-span: mobile(1,2);
+  col-span: tablet(1,3);
+  col-span: desktop(1,6);
+}
+```
+
+
+## Folder structure - Fitting things together
+
+global styles for layout, as well as colors font stack base styles etc
+Localised component styles
+
+
+
+### Page scaffolding
+
+Each page would then pull in components inside of the structural classes
+
+Pages pull in global layout classes with web includes or components inside
+
