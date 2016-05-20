@@ -5,6 +5,9 @@ description: "Desc"
 page-name: "post"
 ---
 
+
+OVERLY COMPLEX MIXINS ARE WORSE THEN REPEATING SOMETHING 2 OR 3 TIMES - THERE HARDER TO MAINTAIN - SILLY VARIABLE NAMES
+
 Sass can be a great tool if used effectively, Variables, Mixins and Functions 
 create a great base for re-usable components and modular codeing. Sass can also speed up development times and make it easier to update a large code base.
 
