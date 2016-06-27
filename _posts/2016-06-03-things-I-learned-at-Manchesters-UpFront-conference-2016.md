@@ -7,8 +7,6 @@ category: post
 
 # Things I learned Manchester's UpFront conference 2016.
 
-After a Euro 2016 related delay I finally got around to writing up the notes I took at UpFront Conf...
-
 On Friday the 27th of May I attended the front end developers conference UpFront in Manchester. There were 7
 speakers along with 3 flash talks on a range of subjects including Accessibility, Design patterns,
 legacy JavaScript and component systems.
@@ -48,11 +46,9 @@ the columns are not visible.
 
 Examples of accessible table solutions can be found [here](examples.simplyaccesable.com/cell-headers).
 
-The most important message I took from this talk is that accessibility can not simply be added in at
+The most important message I took from this talk is that accessibility can not simply be added in at the
 development phase of a project. It has to be considered every step of the way and be a key part of the
 design process.
-
----------------------------------------------------------------------------------------------------------
 
 ## The web is not dead
 
@@ -75,7 +71,8 @@ downloads and a loss of sales.
 
 > "The best way to reach new customers is through the open web" - Jason Karaian.
 
-Emerging technologies and browser enhancements will also help to keep the web alive...
+There are numerous emerging technologies and browser enhancements that can help to keep the web alive and
+thriving...
 
 * _Offline capabilities_ - HTML5 introduced a number of features to make the offline web a reality including
 application cache, localStorage and web SQL & indexed database.
@@ -96,17 +93,17 @@ be used without writing code, simply by adding an import statement to an HTML pa
 
 #### Progressive web apps
 
-Progressive web apps look and behave exactly like a native app with all the features we have come to expect
-but without the need to deploy through an app store. There are some key advantages for using Progressive
-web apps in place of native apps...
+Progressive web apps are key to the survival of the web, they provide a viable alternative to native apps and
+have some key benefits. Progressive web apps look and behave exactly like native apps with all the features
+we have come to expect but without the need to deploy through an app store.
+
+Advantages of Progressive web apps include...
 
 * No installation required
 * Quicker/easier to deploy updates and fixes
 * No manual user updating
 * One code base across all devices and operating systems
 * Less space taken up on the users device
-
----------------------------------------------------------------------------------------------------------
 
 ## Pages are dead.
 
@@ -162,8 +159,6 @@ one place and allowing the module to adapt its styling in a way that suits the c
 the page constraints or pre-set media queries.
 
 
----------------------------------------------------------------------------------------------------------
-
 ## 	Leave it better than you found it
 
 Rebecca Murphey's talk centered around the common problem of working with legacy code and platforms. "Making
@@ -178,7 +173,7 @@ are in place to ensure nothing you commit can break the live app or website.
 #### Plan for the future
 
 One the guardrails are in place you can work towards improving the quality of any new features or code. By
-adding a task runner for example all future commits can be monitored and ran through any number of checks
+adding a task runner for example, all future commits can be monitored and ran through any number of checks
 from code linting to standardising commit messages. Processes like this allow for the code base to be
 gradually improved without the need for wholesale changes.
 
