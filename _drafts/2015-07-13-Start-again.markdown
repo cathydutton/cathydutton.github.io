@@ -5,6 +5,8 @@ description: "Desc"
 page-name: "post"
 ---
 
+Start again vs make it better - upfront conf talk
+
 http://alistapart.com/column/no-good-can-come-of-bad-code GREAT POST
 
 “pretty design but bad code”
