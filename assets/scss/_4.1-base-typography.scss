@@ -38,6 +38,7 @@ h1,
 h2,
 .heading--secondary {
   @include typography(1.5em);
+  color: map-get($colours, 'accent');
 }
 
 h3,
