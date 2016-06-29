@@ -1,47 +1,12 @@
 ---
 layout: post
 title: CSS for the unexpected
-description: "Desc"
+description: "CSS for the unexpected"
 page-name: "post"
 ---
 
-Variables - but done properly - custom properties - colour functions in CSS and processors
 
-CSS Custom properties introducing scope, planning for change - high contrast etc.
-
-Don't think in PX's
-
-Using inherit, current color etc
-
-Modules not pages
-
-Content can change
-
-Devices can change
-
-Flexible CSS
-
-Layouts should not be defined by content
-
-Line height -1.5 to centre images!
-
-Font size — 1
-
-display table — Chris coyer vid
-
-flex box Chris coyer vid
-
-Zooming and the different rounding of pixels in browsers ------ Barclays
-
-Accessibility - site should be able to adapt quickly - high contrast - larger font sizing
-
-Don't use line height to vertivally centre or horizontaly centre.
-
-
-
-PostCSS - If all else fails you can go back and amend entire stylesheets wiTh PostCSS phrasing CSS
-
-
+## Intro
 
 Develop every application without assumptions, plan for changes in content, language, device and even direction.
 Do not solve the problems that are right in front of you, solve the problems that are yet to exist.
@@ -63,8 +28,54 @@ Do not target elements directly, table, input etc with specific themeing propert
 It is also unsafe to target them with a pre-fixed wrapper (.wrapper table). This makes assumptions and will
 break future layouts or lead to  CSS fixes like this…
 
-.wrapper table.new-table-class { float: none;} Instead target classes to ad anything other then base styles.
+```css
+wrapper table.new-table-class {
+float: none;
+}
+```
+
+Instead target classes to ad anything other then base styles.
 
 Open ended slash wide reaching mixins (not two colour arguments) they are restrictive. Give more mixin
 examples. transitions etc.
 
+
+## Text changes
+
+General cms change - translations
+titles/ buttons vertical and horizontal centering - not line hight
+Content can change in all areas of the page
+Don't use line height to vertivally centre or horizontaly centre.
+
+
+## Branding changes
+
+Color variables named properly
+primary color not blue etc
+CSS Custom properties introducing scope, planning for change - high contrast etc.
+Using inherit, current color etc
+
+
+## layout changes
+Patterns not pages related stuff
+Modules not pages
+
+## Screen size changes
+Element queries
+content first etc
+Don't think in PX's??????
+Devices can change
+
+
+## User behaviour
+Zooming and the different rounding of pixels in browsers ------ Barclays
+
+
+## Summery - Flexible CSS
+PostCSS - If all else fails you can go back and amend entire stylesheets wiTh PostCSS phrasing CSS
+Accessibility - site should be able to adapt quickly - high contrast - larger font sizing
+Layouts should not be defined by content
+Line height -1.5 to centre images!
+Font size — 1
+display table — Chris coyer vid
+flex box Chris coyer vid
