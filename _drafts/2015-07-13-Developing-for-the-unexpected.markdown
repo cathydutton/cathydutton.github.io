@@ -1,51 +1,56 @@
 ---
 layout: post
-title: CSS for the unexpected
+title: CSS without assumption
 description: "CSS for the unexpected"
 page-name: "post"
 ---
 
-
-## Intro
-
-Develop every application without assumptions, plan for changes in content, language, device and even direction.
-Do not solve the problems that are right in front of you, solve the problems that are yet to exist.
+### Develop every application without assumption
 
 When building a new application it is easy to be blinded by the visuals or prototypes that are right in front of
-you. creating a layout that fits perfectly for the content provided however this will almost always turn out to
-be a costly mistake.
+you, creating a layout that fits perfectly for the content provided. This approach however will almost always
+turn out to be a costly mistake.
 
-Working with a closed minded approach leads to rigid applications, applications which break the minute the content is
-updated or an image changes size. Problems will also occur should the application be internationalised, a
+### Stop thinking in PX's
+
+Working with a pixel perfect approach leads to rigid applications, which can break the minute the content
+is updated or an image changes size. Problems will also occur should the application be translated, a
 new device is released or the copy is updated.
 
-Talk about looking at your feet/ fire fighting, things will never get easier this way, look up and prevent
-issues rather then resolving issues.
-
-Planning for the bigger picture, no fixed widths or heights, line heights etc. STOP THINKING IN PX's
-
-Do not target elements directly, table, input etc with specific themeing properties (float’s, width’s etc)
-It is also unsafe to target them with a pre-fixed wrapper (.wrapper table). This makes assumptions and will
-break future layouts or lead to  CSS fixes like this…
-
-```css
-wrapper table.new-table-class {
-float: none;
-}
-```
-
-Instead target classes to ad anything other then base styles.
-
-Open ended slash wide reaching mixins (not two colour arguments) they are restrictive. Give more mixin
-examples. transitions etc.
+Instead we should try to plan for the unknown from the outset, each new project should be approached from
+the most unlikely situation and worked backwards to create an UI that works in all situations. Working in
+this way may be more time consuming in the beginning, but will prevent the need for endless firefighting in
+the future.
 
 
 ## Text changes
 
-General cms change - translations
+When building any website or application we should expect and plan for the copy to change. This can be
+the main body or content or even just the text on a button.
+
+General cms changes to copy
 titles/ buttons vertical and horizontal centering - not line hight
-Content can change in all areas of the page
 Don't use line height to vertivally centre or horizontaly centre.
+
+
+
+
+
+
+
+
+
+## Language changes
+
+Language changes can effect more then just a page layout, right to left languages can require a full layout
+re-think
+
+translations
+left to write speaking countries.
+If this hasnt been planned for you can use PostCSS to go back to edit it.
+large button with chinese symbol in it - remove foxxe width just have em padding left and right.
+
+
 
 
 ## Branding changes
@@ -56,9 +61,14 @@ CSS Custom properties introducing scope, planning for change - high contrast etc
 Using inherit, current color etc
 
 
+
+
 ## layout changes
 Patterns not pages related stuff
 Modules not pages
+
+
+
 
 ## Screen size changes
 Element queries
@@ -67,8 +77,17 @@ Don't think in PX's??????
 Devices can change
 
 
+
+
 ## User behaviour
+
+It should never be assumed that a users behaviour will mirror that of the developer or designer on a
+project.
+
+
 Zooming and the different rounding of pixels in browsers ------ Barclays
+
+
 
 
 ## Summery - Flexible CSS
@@ -79,3 +98,5 @@ Line height -1.5 to centre images!
 Font size — 1
 display table — Chris coyer vid
 flex box Chris coyer vid
+
+Do not solve the problems that are right in front of you, solve the problems that are yet to exist.
