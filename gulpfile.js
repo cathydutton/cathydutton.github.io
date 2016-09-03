@@ -119,7 +119,7 @@
 
 		// Child modules
 		var spawn = require('child_process').spawn;
-		var jekyll = spawn('jekyll', ['build', '--config', '_config.yml', '_config_dev.yml', '--trace', '-d', '_site', 'dist'], {stdio: 'inherit'});
+		var jekyll = spawn('jekyll', ['build', '--config', '_config.yml', '_config_dev.yml', '--trace', '-d', 'dist'], {stdio: 'inherit'});
 
 		// Return module
 		return function() {
@@ -135,7 +135,7 @@
 
 		// Child modules
 		var spawn = require('child_process').spawn;
-		var jekyll = spawn('jekyll', ['build', '--config', '_config.yml', '--trace', '-d', '_site', 'dist'], {stdio: 'inherit'});
+		var jekyll = spawn('jekyll', ['build', '--config', '_config.yml', '--trace', '-d', 'dist'], {stdio: 'inherit'});
 
 		// Return module
 		return function() {
@@ -167,12 +167,12 @@
 
 	// Shared build tasks
 	gulp.task('build', function(callback) {
-		plugins.runSequence('jekyll-dev', 'scss-lint', ['critical-css', 'main-css', 'scripts'], callback);
+		plugins.runSequence('jekyll-dev', ['critical-css', 'main-css', 'scripts'], callback);
 	});
 
 	// Shared live tasks
 	gulp.task('build-live', function(callback) {
-		plugins.runSequence('jekyll-live', 'scss-lint', ['critical-css', 'main-css', 'scripts'], callback);
+		plugins.runSequence('jekyll-live', ['critical-css', 'main-css', 'scripts'], callback);
 	});
 
 	// Default tasks
