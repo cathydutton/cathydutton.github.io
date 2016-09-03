@@ -119,7 +119,7 @@
 
 		// Child modules
 		var spawn = require('child_process').spawn;
-		var jekyll = spawn('jekyll', ['build', '--config', '_config.yml', '_config_dev.yml', '--trace', '-d', '--destination', 'dist'], {stdio: 'inherit'});
+		var jekyll = spawn('jekyll', ['build', '--config', '_config.yml', '_config_dev.yml', '--trace', '-d', '_site', 'dist'], {stdio: 'inherit'});
 
 		// Return module
 		return function() {
@@ -135,7 +135,7 @@
 
 		// Child modules
 		var spawn = require('child_process').spawn;
-		var jekyll = spawn('jekyll', ['build', '--config', '_config.yml', '--trace', '-d', '--destination', 'dist'], {stdio: 'inherit'});
+		var jekyll = spawn('jekyll', ['build', '--config', '_config.yml', '--trace', '-d', '_site', 'dist'], {stdio: 'inherit'});
 
 		// Return module
 		return function() {
