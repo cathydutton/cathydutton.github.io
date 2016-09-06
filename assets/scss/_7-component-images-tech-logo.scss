@@ -9,7 +9,47 @@ Image gallery
 }
 
 // LOOP
-$techlogos: (css3, #264de4) (postcss, #e42829) (sass, #cd669a) (less, #1d365d) (itcss, #3d889e) (html5, #f16528) (javascript, #f8dc3d) (angular, #141414) (jquery, #101a26) (gulp, #e84c50) (grunt, #fba919) (npm, #333) (git, #f05033) (svn, #486ba3) (invision, #eb3b69) (photoshop, #08004e) (jekyll, #333) (magento, #ee5a27) (wordpress, #21759b) (vagrant, #e7e9e8) (firebase, #ffc208) (sketch, #242833) (balsamiq, #232323) (illustrator, #df6e08);
+$techlogos:
+(css3, #264de4)
+(barclays, #00adef)
+(ao, #7fbb41)
+(getthelabel, #d21346)
+(elizabetharden, #c81626)
+(sainsburys, #FFF)
+(ee, #019c9e)
+(o2, #1d2673)
+(nintendo, #1dafd6)
+(thehutgroup, #444)
+(nectar, #722180)
+(3, #7767a8)
+(zavvi, #000)
+(myprotein, #FFF)
+(tropicskincare, #FFF)
+(brightstar, #FFF)
+(creare, #21aeb8)
+(postcss, #e42829)
+(sass, #cd669a)
+(less, #1d365d)
+(itcss, #3d889e)
+(html5, #f16528)
+(javascript, #f8dc3d)
+(angular, #141414)
+(jquery, #101a26)
+(gulp, #e84c50)
+(grunt, #fba919)
+(npm, #333)
+(git, #f05033)
+(svn, #486ba3)
+(invision, #eb3b69)
+(photoshop, #08004e)
+(jekyll, #333)
+(magento, #ee5a27)
+(wordpress, #21759b)
+(vagrant, #e7e9e8)
+(firebase, #ffc208)
+(sketch, #242833)
+(balsamiq, #232323)
+(illustrator, #df6e08);
 
 @each $techlogo, $color in $techlogos {
 

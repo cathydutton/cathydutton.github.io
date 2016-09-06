@@ -167,12 +167,12 @@
 
 	// Shared build tasks
 	gulp.task('build', function(callback) {
-		plugins.runSequence('jekyll-dev', ['critical-css', 'main-css', 'scripts'], callback);
+		plugins.runSequence('jekyll-dev', 'scss-lint', ['critical-css', 'main-css', 'scripts'], callback);
 	});
 
 	// Shared live tasks
 	gulp.task('build-live', function(callback) {
-		plugins.runSequence('jekyll-live', ['critical-css', 'main-css', 'scripts'], callback);
+		plugins.runSequence('jekyll-live', 'scss-lint', ['critical-css', 'main-css', 'scripts'], callback);
 	});
 
 	// Default tasks
