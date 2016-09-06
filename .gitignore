@@ -3,5 +3,4 @@ node_modules/
 .publish/
 dist/
 dist
-dist/maze.html
 *.log
