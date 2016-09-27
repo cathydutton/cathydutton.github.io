@@ -1,9 +1,24 @@
 ---
-title: Ful circle - Back to design
-author: Cathy Dutton
 layout: post
+title: full circle - Why I fell back in love with design
+description:
+page-name: "post"
 ---
 
-Moving from asthetics only design to problem solving with code.
+Both - back in the web designer days - design and dev
+Carosel story - style over function
+Dev - Sass, Grunt, Gulp, Git - problem solving, best practices
+Modular code - not helped by page design
 
-Back to design for greater UX and ACCesibility influence, problem solbing and creating user inclusive user experiences.
+Being passed full page ui designs and having to fudge in accesabiity concerns.
+
+UX - form follows function - old product design phrase
+Accesability baked in
+Button journey
+form journey
+desicion making
+
+
+## The web designer
+
+My first two jobs in the world of websites were in house design agancies
