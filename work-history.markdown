@@ -1,0 +1,111 @@
+---
+layout: default
+title: "Web development and design work history"
+description: "A brief work history of design, project management, UX and Front End Development jobs"
+intro: "About me"
+heading: "Work history and background"
+---
+
+
+
+<section class="content">
+
+		<p>Over the years I have had the pleasure of working for some awesome companies on a range of projects. below are a few highlights...</p>
+
+		<p><i class="accent">Barclays - </i>I am currently employed by Barclays working with a global team on both internal and external projects. Working a part of an agile team I am responsible for creating innovative user experiences and developing user journeys and profiles. I am also responsible for producing performant and accessible solutions to tight deadlines.</p>
+
+	 	<p><i class="accent">The Hut Group - </i>During my time at the Hut I worked on a range of sites both internally and customer facing. Projects ranged from full site builds, to creating new features and site enhancements.
+I was able to expand my JavaScript skills as well gaining more experience in an Agile work environment. </p>
+
+		<p><i class="accent">ao.com - </i>At ao.com I was responsible for building a responsive framework to use across the company’s main website. I also developed responsive templates to aid the future development of key pages including the top level category pages, top 5 pages and brand pages.
+Part of my role was also to create Sass best practice guidelines and to ensure the site’s css was scalable, maintainable and as streamlined as possible.</p>
+
+		<p><i class="accent">Brightstar 20:20 - </i>At Brightstar 20:20 I produced wire frames and full design concepts for a range of eCommerce projects for brands such as EE, Three mobile and O2.
+I was also responsible for producing build estimates and standards documents for a range of front end web projects both internal and external. I also worked on large scale front end development projects for both Sainsbury’s and EE, working closely with the back end Magento development team.</p>
+
+		<p><i class="accent">Creare - </i>As a team leader at Creare I was responsible for managing projects, scheduling, planning, training and financial targets. Whilst managing a team of 2 to 3 designers/developers I also undertook 2 to 3 web projects per month taking sites from concept generation through to development and on site optimisation.
+Whilst at Creare I was able to develop my project management skills whilst also improving my knowledge of both Magento and WordPress.</p>
+
+		<p><i class="accent">GetTheLabel.com - </i>At GetTheLabel I was responsible for the design and development of the marketing emails, sent on a weekly basis. I was also responsible for designing and updating the banners across the site and maintaining the home and landing pages.</p>
+
+		<div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--barclays">
+      	<img src="assets/img/about/barclays-logo.jpg" alt="Barclays" title="Barclays" class="image-wrapper__image">
+			</div>
+		</div>
+		<div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--ao">
+		    <img src="assets/img/about/ao-logo.jpg" alt="ao.com" title="ao.com" class="image-wrapper__image">
+			</div>
+		</div>
+		<div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--getthelabel">
+		    <img src="assets/img/about/getthelabel-logo.jpg" alt="Get The Label" title="Get The Label" class="image-wrapper__image">
+			</div>
+		</div>
+		<div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--myprotein">
+				<img src="assets/img/about/myprotein-logo.jpg" alt="My Protein" title="My Protein" class="image-wrapper__image">
+			</div>
+		</div>
+		<div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--elizabetharden">
+		    <img src="assets/img/about/elizabetharden-logo.jpg" alt="Elizabeth Arden" title="Elizabeth Arden" class="image-wrapper__image">
+			</div>
+		</div>
+		<div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--sainsburys">
+		    <img src="assets/img/about/sainsburys-logo.jpg" alt="Sainsburys" title="Sainsburys" class="image-wrapper__image">
+			</div>
+		</div>
+		<div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--ee">
+		    <img src="assets/img/about/ee-logo.jpg" alt="EE" title="EE" class="image-wrapper__image">
+			</div>
+		</div>
+		<div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--tropicskincare">
+				<img src="assets/img/about/tropicskincare-logo.jpg" alt="Tropic Skincare" title="Tropic Skincare" class="image-wrapper__image">
+			</div>
+		</div>
+		<div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--o2">
+		  	<img src="assets/img/about/o2-logo.jpg" alt="o2" title="o2" class="image-wrapper__image">
+			</div>
+		</div>
+		<div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--nintendo">
+		  	<img src="assets/img/about/nintendo-logo.jpg" alt="Nintendo" title="Nintendo" class="image-wrapper__image">
+			</div>
+		</div>
+		<div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--brightstar">
+				<img src="assets/img/about/brightstar-logo.jpg" alt="Brightstar" title="Brightstar" class="image-wrapper__image">
+			</div>
+		</div>
+		<div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--thehutgroup">
+		    <img src="assets/img/about/thehutgroup-logo.jpg" alt="The Hut Group" title="The Hut Group" class="image-wrapper__image">
+			</div>
+		</div>
+		<div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--nectar">
+		    <img src="assets/img/about/nectar-logo.jpg" alt="Nectar" title="Nectar" class="image-wrapper__image">
+			</div>
+		</div>
+		<div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--3">
+		    <img src="assets/img/about/3-logo.jpg" alt="3" title="3" class="image-wrapper__image">
+			</div>
+		</div>
+		<div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--creare">
+				<img src="assets/img/about/creare-logo.jpg" alt="Creare" title="Creare" class="image-wrapper__image">
+			</div>
+		</div>
+		<div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--zavvi">
+		    <img src="assets/img/about/zavvi-logo.jpg" alt="Zavvi" title="Zavvi" class="image-wrapper__image">
+			</div>
+		</div>
+		</section>

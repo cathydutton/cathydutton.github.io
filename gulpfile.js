@@ -17,22 +17,22 @@
 
 		// Build paths
 		base: __dirname,
-		dist: plugins.path.join(__dirname, 'dist'),
+		dist: plugins.path.join(__dirname, '_site'),
 		source: plugins.path.join(__dirname, ''),
 		tasks: plugins.path.join(__dirname, '_tasks'),
 
 		// Src assets
 		src: {
-			scss: plugins.path.join(__dirname, 'assets/scss'),
-			js: plugins.path.join(__dirname, 'assets/js'),
-			images: plugins.path.join(__dirname, 'assets/img')
+			scss: plugins.path.join(__dirname, '_assets/scss'),
+			js: plugins.path.join(__dirname, '_assets/js'),
+			images: plugins.path.join(__dirname, '_assets/img')
 		},
 
 		// Build assets
 		build: {
-			css: plugins.path.join(__dirname, 'dist/assets/css'),
-			js: plugins.path.join(__dirname, 'dist/assets/js'),
-			images: plugins.path.join(__dirname, 'dist/assets/img')
+			css: plugins.path.join(__dirname, 'assets/css'),
+			js: plugins.path.join(__dirname, 'assets/js'),
+			images: plugins.path.join(__dirname, 'assets/img')
 		},
 
 		// Node modules
@@ -115,40 +115,92 @@
 	});
 
 	// Jekyll Dev
-	gulp.task('jekyll-dev', function() {
-
-		// Child modules
-		var spawn = require('child_process').spawn;
-		var jekyll = spawn('jekyll', ['build', '--config', '_config.yml', '_config_dev.yml', '--trace', '-d', 'dist'], {stdio: 'inherit'});
-
-		// Return module
-		return function() {
-			jekyll.on('exit', function(code) {
-				gulpCallBack(code === 0 ? null : 'ERROR: Jekyll process exited with code: '+code);
-			})
-			.pipe(plugins.browserSync.reload({ stream: true }));
-		};
-	});
+	// gulp.task('jekyll-dev', function() {
+	//
+	// 	// Child modules
+	// 	var spawn = require('child_process').spawn;
+	// 	var jekyll = spawn('jekyll', ['build', '--config', '_config.yml', '_config_dev.yml', '--trace'], {stdio: 'inherit'});
+	//
+	// 	// Return module
+	// 	return function() {
+	// 		jekyll.on('exit', function(code) {
+	// 			gulpCallBack(code === 0 ? null : 'ERROR: Jekyll process exited with code: '+code);
+	// 		})
+	// 		.pipe(plugins.browserSync.reload({ stream: true }));
+	// 	};
+	// });
 
 	// Jekyll Live
-	gulp.task('jekyll-live', function() {
-
-		// Child modules
-		var spawn = require('child_process').spawn;
-		var jekyll = spawn('jekyll', ['build', '--config', '_config.yml', '--trace', '-d', 'dist'], {stdio: 'inherit'});
-
-		// Return module
-		return function() {
-			jekyll.on('exit', function(code) {
-				gulpCallBack(code === 0 ? null : 'ERROR: Jekyll process exited with code: '+code);
-			})
-			.pipe(plugins.browserSync.reload({ stream: true }));
-		};
-	});
+	// gulp.task('jekyll-live', function() {
+	//
+	// 	// Child modules
+	// 	var spawn = require('child_process').spawn;
+	// 	var jekyll = spawn('jekyll', ['build', '--config', '_config.yml', '--trace'], {stdio: 'inherit'});
+	//
+	// 	// Return module
+	// 	return function() {
+	// 		jekyll.on('exit', function(code) {
+	// 			gulpCallBack(code === 0 ? null : 'ERROR: Jekyll process exited with code: '+code);
+	// 		})
+	// 		.pipe(plugins.browserSync.reload({ stream: true }));
+	// 	};
+	// });
 
 	// Jekyll Rebuild
-	gulp.task('jekyll-rebuild', function() {
-		plugins.runSequence('default');
+	// gulp.task('jekyll-rebuild', function() {
+	// 	plugins.runSequence('default');
+	// });
+
+
+	const child = require('child_process');
+	const gutil = require('gulp-util');
+
+	gulp.task('jekyll-dev', () => {
+	  const jekyll = child.spawn('jekyll', ['serve',
+	    '--watch',
+	    '--incremental'
+	    // '--drafts'
+	  ]);
+
+	  const jekyllLogger = (buffer) => {
+	    buffer.toString()
+	      .split(/\n/)
+	      .forEach((message) => gutil.log('Jekyll: ' + message));
+	  };
+
+	  jekyll.stdout.on('data', jekyllLogger);
+	  jekyll.stderr.on('data', jekyllLogger);
+	});
+
+
+	// gulp.task('jekyll-live', () => {
+	// 	const jekyll = child.spawn('jekyll', ['serve',
+	// 		'--watch',
+	// 		'--incremental'
+	// 	]);
+	//
+	// 	const jekyllLogger = (buffer) => {
+	// 		buffer.toString()
+	// 			.split(/\n/)
+	// 			.forEach((message) => gutil.log('Jekyll: ' + message));
+	// 	};
+	//
+	// 	jekyll.stdout.on('data', jekyllLogger);
+	// 	jekyll.stderr.on('data', jekyllLogger);
+	// });
+
+
+	const browserSync = require('browser-sync').create();
+	const siteRoot = '_site';
+
+	gulp.task('serve', () => {
+	  browserSync.init({
+	    files: [siteRoot + '/**'],
+	    port: 4000,
+	    server: {
+	      baseDir: siteRoot
+	    }
+	  });
 	});
 
 
@@ -156,36 +208,40 @@
 	var ghPages = require('gulp-gh-pages');
 
 	gulp.task('deploy', function() {
-	  return gulp.src('./dist/**/*')
+	  return gulp.src('./_site/**/*')
 	    .pipe(ghPages());
 	});
 
 
 /*
 	Main tasks
-	----------------------------------i- */
+	----------------------------------- */
 
 	// Shared build tasks
 	gulp.task('build', function(callback) {
-		plugins.runSequence('jekyll-dev', 'scss-lint', ['critical-css', 'main-css', 'scripts'], callback);
+		//plugins.runSequence('scss-lint', ['critical-css', 'main-css', 'scripts'], callback);
+		plugins.runSequence(['critical-css', 'main-css', 'scripts'], callback);
 	});
 
 	// Shared live tasks
-	gulp.task('build-live', function(callback) {
-		plugins.runSequence('jekyll-live', 'scss-lint', ['critical-css', 'main-css', 'scripts'], callback);
-	});
+	// gulp.task('build-live', function(callback) {
+	// 	plugins.runSequence('scss-lint', ['critical-css', 'main-css', 'scripts'], callback);
+	// });
 
 	// Default tasks
 	gulp.task('default', function(callback) {
-		plugins.runSequence('build', 'inject', callback);
+		plugins.runSequence('build', callback);
 	});
 
 	// Development tasks
 	gulp.task('dev', function(callback) {
-		plugins.runSequence('build', 'inject', ['watch', 'browser-sync'], callback);
+		plugins.runSequence('build', ['watch', 'jekyll-dev',  'inject', 'serve'],  callback);
 	});
+
+
+
 
 	// Live tasks
 	gulp.task('live', function(callback) {
-		plugins.runSequence('build-live', 'inject', callback);
+		plugins.runSequence('inject', 'deploy', callback);
 	});

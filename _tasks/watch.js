@@ -30,15 +30,22 @@
 				gulp.start('scripts');
 			});
 
+
+
+
 			// Watch for JEKYLL changes
-			plugins.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*', '_config.yml'], function() {
-				gulp.start('jekyll-rebuild');
-			});
+			// plugins.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*', '_config.yml', '_config_dev.yml'], function() {
+			// 	gulp.start('jekyll-rebuild');
+			// });
+
+			// plugins.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*', '_config.yml', '_config_dev.yml', 'assets'], function() {
+			// 	gulp.start('jekyll-dev');
+			// });
 
 			// Watch for IMAGE changes
-			plugins.watch(pathImages, function() {
-				gulp.start('jekyll-rebuild');
-			});
+			// plugins.watch(pathImages, function() {
+			// 	gulp.start('jekyll-rebuild');
+			// });
 
 		};
 	};

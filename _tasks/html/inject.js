@@ -23,7 +23,9 @@
 		// Return module
 		return function() {
 
-		  return gulp.src('dist/*.html')
+		  return gulp.src('_site/**.html')
+			//return gulp.src('_includes/head.html')
+
 
 
 			// Inline CSS

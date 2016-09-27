@@ -1,0 +1,14 @@
+---
+layout: blank
+title: "404 page not found"
+description: "The page you were trying to view does not exist"
+---
+
+<header class="header">
+			<h1 class="heading"><span class="heading__intro">oops</span>
+	Nothing to see here</h1>
+	</header>
+
+<section class="content">
+		<p class="heading-two">Sorry, but the page you were trying to view does not exist. Click <a href="/" title="take me home">here</a> to go back to the home page</p>
+	</section>
