@@ -243,5 +243,5 @@
 
 	// Live tasks
 	gulp.task('live', function(callback) {
-		plugins.runSequence('inject', 'deploy', callback);
+		plugins.runSequence('deploy', callback);
 	});
