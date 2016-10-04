@@ -28,7 +28,7 @@
 			    .pipe(concat('main.js'))
 					.pipe(gulp.dest(plugins.path.join(paths.build.js, '')))
 			    .pipe(rename({ suffix: '-' + getStamp() + '.min' }))
-			    //.pipe(uglify())
+			    .pipe(uglify())
 			    .pipe(gulp.dest(plugins.path.join(paths.build.js)))
 					.pipe(plugins.browserSync.reload({ stream: true }));
 				};
