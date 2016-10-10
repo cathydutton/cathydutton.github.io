@@ -39,4 +39,9 @@ Pagination
   width: 20px;
   height: 16px;
   fill: map-get($colours, 'white');
+  
+  &:hover {
+    fill: map-get($colours, 'accent');
+  }
+  
 }
