@@ -30,6 +30,10 @@ Menu button
     background: map-get($colours, 'grey-dark');
   }
 
+  @include mq(break-tablet) {
+    left: 267px;
+  }
+
 }
 
 
@@ -51,7 +55,6 @@ Menu button
 
 
 .button--menu--open {
-  left: 267px;
 
   @supports (transform: rotate(-45deg) translateY(0) translateX(0)) {
 

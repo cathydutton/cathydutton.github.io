@@ -184,18 +184,23 @@ h4 {
 /*
   Layout
   ----------------------------------- */
-.wrapper {
-  position: relative;
-  width: 95%;
-  min-height: 100%;
-  margin-left: 28px;
-  background: #fff;
+.content-wrapper {
   animation: fadeIn 2s forwards; }
+  @media screen and (min-width: 768px) {
+    .content-wrapper {
+      margin-left: 270px; } }
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 270px; } }
 
 header,
 footer,
 section {
-  width: 90%;
+  width: 100%;
   padding: 2% 5% 0; }
   header:after,
   footer:after,
@@ -203,37 +208,6 @@ section {
     display: table;
     clear: both;
     content: ''; }
-
-.sidebar {
-  position: fixed;
-  bottom: 0;
-  left: -260px;
-  z-index: 2;
-  overflow: auto;
-  width: 270px;
-  height: 100%;
-  padding: 20px 15px;
-  border-right: solid 3px #ffa600;
-  background: #2a2a2a;
-  outline: none;
-  transition: all .3s ease-in-out; }
-
-.sidebar--open {
-  left: 0; }
-
-.sidebar--open ~ .wrapper:before {
-  position: fixed;
-  z-index: 1;
-  overflow: auto;
-  width: 100%;
-  height: 100%;
-  content: '';
-  background: #2a2a2a;
-  opacity: .6; }
-
-.adsbygoogle {
-  max-width: 900px;
-  margin: 0 auto; }
 
 /* Objects */
 /*
@@ -270,50 +244,3 @@ button,
     transition: all .3s ease-in-out; }
 
 /* Modules */
-/*
-Menu button
------------------------------------ */
-.button--menu {
-  position: fixed;
-  top: 80px;
-  left: 2px;
-  z-index: 3;
-  width: 40px;
-  height: 55px;
-  padding: 0;
-  border: solid 2px #ffa600;
-  border-radius: 0 20px 20px 0;
-  border-left: 0;
-  color: #ffa600;
-  fill: #ffa600;
-  background: #2a2a2a;
-  transition: all .3s ease-in-out; }
-  .button--menu svg {
-    width: 85%;
-    height: 46%; }
-  .button--menu:hover, .button--menu:focus {
-    color: #fff;
-    fill: #fff;
-    background: #2a2a2a; }
-
-.button--menu--icon {
-  opacity: 1;
-  transform: rotate(0) translateY(0) translateX(0);
-  transform-origin: 20px 10px;
-  transition: transform .4s ease-in-out, opacity .2s ease-in-out; }
-
-.button--menu--icon:nth-of-type(1) {
-  transform-origin: 20px 10px; }
-
-.button--menu--icon:nth-of-type(3) {
-  transform-origin: 20px 20px; }
-
-.button--menu--open {
-  left: 267px; }
-  @supports (transform: rotate(-45deg) translateY(0) translateX(0)) {
-    .button--menu--open .button--menu--icon:nth-of-type(2) {
-      opacity: 0; }
-    .button--menu--open .button--menu--icon:nth-of-type(1) {
-      transform: rotate(-45deg) translateY(0) translateX(0); }
-    .button--menu--open .button--menu--icon:nth-of-type(3) {
-      transform: rotate(45deg) translateY(0) translateX(0); } }

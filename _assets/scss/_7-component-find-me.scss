@@ -5,10 +5,15 @@ Find me
 .find-me {
   @include clearfix;
   width: 100%;
-  margin: 30px 0 0;
   padding: 0;
   list-style: none;
   text-align: center;
+  margin: 10px 0 0;
+
+  @include mq(break-tablet) {
+    margin: 30px 0 0;
+  }
+
 }
 
 .find-me__item {

@@ -2,27 +2,54 @@
 Navigation
 ----------------------------------- */
 
+.sidebar {
+  padding: 20px 15px;
+  border-right: solid 3px map-get($colours, 'accent');
+  background: map-get($colours, 'grey-dark');
+}
+
 .sidebar__list {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  margin: 20px 0 0;
-  padding: 0 23px 50px;
+  margin: 5px auto;
+  text-align: center;
+
+  @include mq(break-tablet) {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 20px 0 0;
+    padding: 0 23px 50px;
+  }
+
+}
+
+.sidebar__item {
+  display: inline-block;
+  margin: .4em;
+
+  @include mq(break-tablet) {
+    margin: 0;
+    display: block;
+  }
+
 }
 
 .sidebar__anchor {
-  display: block;
-  margin-bottom: 5px;
-  padding: 10px 0 10px 10px;
-  border: solid 1px lighten(map-get($colours, 'grey-dark'), 5%);
-  border-left: solid 1px map-get($colours, 'accent');
+  display: inline;
   color: map-get($colours, 'grey-light');
-  text-decoration: none;
-  text-transform: uppercase;
 
-  &:hover,
-  &:focus {
-    padding-left: 16px;
+  @include mq(break-tablet) {
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px 0 10px 10px;
+    border: solid 1px lighten(map-get($colours, 'grey-dark'), 5%);
+    border-left: solid 1px map-get($colours, 'accent');
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      padding-left: 16px;
+    }
   }
 
 }
