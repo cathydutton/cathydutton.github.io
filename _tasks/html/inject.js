@@ -27,7 +27,6 @@
 			//return gulp.src('_includes/head.html')
 
 
-
 			// Inline CSS
 			.pipe(inject(gulp.src(plugins.path.join(paths.build.css, 'critical.min.css')), {
 			starttag: '<!-- inject:{{ext}} -->',

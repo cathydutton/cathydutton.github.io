@@ -3,6 +3,7 @@ Sidebar profile
 ----------------------------------- */
 
 .profile-image {
+  animation: fadeIn 2s forwards;
   width: 180px;
   height: 180px;
   margin: 20px auto;
@@ -19,6 +20,7 @@ Sidebar profile
 }
 
 .profile-description {
+  animation: fadeIn 2s forwards;
   margin-top: 0;
   padding: 10px 0;
   border-top: solid 1px lighten(map-get($colours, 'grey-dark'), 5%);

@@ -152,7 +152,7 @@ h1,
 .heading--primary {
   font-size: 1.6em;
   margin: 0;
-  line-height: 1; }
+  line-height: 1.2; }
   @media screen and (min-width: 1020px) {
     h1,
     .heading--primary {
@@ -251,7 +251,6 @@ Navigation
   padding: 20px 15px;
   background: #2a2a2a;
   border-bottom: solid 3px #ffa600;
-  border-right: 0 !important;
   margin-bottom: 10px; }
   @media screen and (min-width: 768px) {
     .sidebar {
@@ -259,6 +258,7 @@ Navigation
       border-bottom: 0; } }
 
 .sidebar__list {
+  animation: fadeIn 2s forwards;
   margin: 5px auto;
   text-align: center; }
   @media screen and (min-width: 768px) {
@@ -296,6 +296,7 @@ Navigation
 Find me
 ----------------------------------- */
 .find-me {
+  animation: fadeIn 2s forwards;
   width: 100%;
   padding: 0;
   list-style: none;
@@ -341,6 +342,7 @@ footer .find-me__anchor {
 Sidebar profile
 ----------------------------------- */
 .profile-image {
+  animation: fadeIn 2s forwards;
   width: 180px;
   height: 180px;
   margin: 20px auto;
@@ -355,6 +357,7 @@ Sidebar profile
   border-radius: 50%; }
 
 .profile-description {
+  animation: fadeIn 2s forwards;
   margin-top: 0;
   padding: 10px 0;
   border-top: solid 1px #373737;
