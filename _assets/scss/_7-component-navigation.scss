@@ -4,8 +4,16 @@ Navigation
 
 .sidebar {
   padding: 20px 15px;
-  border-right: solid 3px map-get($colours, 'accent');
   background: map-get($colours, 'grey-dark');
+  border-bottom: solid 3px map-get($colours, 'accent');
+  border-right: 0!important;
+  margin-bottom: 10px;
+
+  @include mq(break-tablet) {
+    border-right: solid 3px map-get($colours, 'accent');
+    border-bottom: 0;
+  }
+
 }
 
 .sidebar__list {

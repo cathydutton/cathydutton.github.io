@@ -143,7 +143,7 @@ h4,
   font-weight: bold;
   font-family: oswald, Helvetica, sans-serif;
   letter-spacing: 0;
-  line-height: 1; }
+  line-height: 1.2; }
   @media screen and (min-width: 1020px) {
     .heading__intro {
       font-size: 2.88em; } }
@@ -249,8 +249,14 @@ Navigation
 ----------------------------------- */
 .sidebar {
   padding: 20px 15px;
-  border-right: solid 3px #ffa600;
-  background: #2a2a2a; }
+  background: #2a2a2a;
+  border-bottom: solid 3px #ffa600;
+  border-right: 0 !important;
+  margin-bottom: 10px; }
+  @media screen and (min-width: 768px) {
+    .sidebar {
+      border-right: solid 3px #ffa600;
+      border-bottom: 0; } }
 
 .sidebar__list {
   margin: 5px auto;
@@ -285,3 +291,78 @@ Navigation
       text-transform: uppercase; }
       .sidebar__anchor:hover, .sidebar__anchor:focus {
         padding-left: 16px; } }
+
+/*
+Find me
+----------------------------------- */
+.find-me {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin: 10px 0 0; }
+  .find-me:after {
+    display: table;
+    clear: both;
+    content: ''; }
+  @media screen and (min-width: 768px) {
+    .find-me {
+      margin: 30px 0 0; } }
+
+.find-me__item {
+  display: inline-block; }
+
+.find-me__anchor {
+  position: relative;
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin: 0 5px;
+  border: 0;
+  color: #ffa600;
+  fill: #ffa600; }
+  .find-me__anchor:hover, .find-me__anchor:focus {
+    border-radius: 100%;
+    color: #2a2a2a;
+    fill: #2a2a2a;
+    background: #ffa600;
+    transform: scale(1.25);
+    transition: background-color .5s, transform .5s ease-out; }
+
+footer .find-me__anchor {
+  color: #2a2a2a;
+  fill: #2a2a2a; }
+  footer .find-me__anchor:hover, footer .find-me__anchor:focus {
+    color: #fff;
+    fill: #fff;
+    background: #2a2a2a; }
+
+/*
+Sidebar profile
+----------------------------------- */
+.profile-image {
+  width: 180px;
+  height: 180px;
+  margin: 20px auto;
+  border: solid 1px #505050;
+  border-radius: 50%;
+  text-align: center; }
+
+.profile-image__img {
+  width: 160px;
+  height: 160px;
+  margin-top: 9px;
+  border-radius: 50%; }
+
+.profile-description {
+  margin-top: 0;
+  padding: 10px 0;
+  border-top: solid 1px #373737;
+  border-bottom: solid 1px #373737;
+  color: #aaa19a;
+  text-align: center;
+  width: 400px;
+  margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .profile-description {
+      width: 80%; } }
