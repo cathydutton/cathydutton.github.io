@@ -10,7 +10,7 @@ heading: "Work history and background"
 
 <section class="content">
 
-		<p>Over the years I have had the pleasure of working for some awesome companies on a range of projects. below are a few highlights...</p>
+		<p class="highlight-quote">Over the years I have had the pleasure of working for some awesome companies on a range of projects. below are a few highlights...</p>
 
 		<p><i class="accent">Barclays - </i>I am currently employed by Barclays working with a global team on both internal and external projects. Working a part of an agile team I am responsible for creating innovative user experiences and developing user journeys and profiles. I am also responsible for producing performant and accessible solutions to tight deadlines.</p>
 
