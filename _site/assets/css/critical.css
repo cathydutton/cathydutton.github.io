@@ -190,6 +190,10 @@ h4 {
 /*
   Layout
   ----------------------------------- */
+.wrapper {
+  height: 100%;
+  position: relative; }
+
 .content-wrapper {
   animation: fadeIn 2s forwards; }
   @media screen and (min-width: 768px) {
@@ -198,7 +202,7 @@ h4 {
 
 @media screen and (min-width: 768px) {
   .sidebar {
-    position: fixed;
+    position: absolute;
     top: 0;
     bottom: 0;
     width: 270px; } }
@@ -370,8 +374,5 @@ Sidebar profile
   border-bottom: solid 1px #373737;
   color: #aaa19a;
   text-align: center;
-  width: 400px;
+  width: 80%;
   margin: 0 auto; }
-  @media screen and (min-width: 768px) {
-    .profile-description {
-      width: 80%; } }

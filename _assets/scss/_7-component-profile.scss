@@ -27,11 +27,6 @@ Sidebar profile
   border-bottom: solid 1px lighten(map-get($colours, 'grey-dark'), 5%);
   color: map-get($colours, 'grey-light');
   text-align: center;
-  width: 400px;
+  width: 80%;
   margin: 0 auto;
-
-  @include mq(break-tablet) {
-    width: 80%;
-  }
-
 }

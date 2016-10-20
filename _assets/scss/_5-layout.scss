@@ -2,6 +2,11 @@
   Layout
   ----------------------------------- */
 
+.wrapper {
+  height: 100%;
+  position: relative;
+}
+
 .content-wrapper {
   animation: fadeIn 2s forwards;
 
@@ -14,7 +19,7 @@
 .sidebar {
 
   @include mq(break-tablet) {
-    position: fixed;
+    position: absolute;
     top: 0;
     bottom: 0;
     width: 270px;
