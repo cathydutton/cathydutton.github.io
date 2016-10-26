@@ -26,7 +26,7 @@ permalink: :title.html
 
 # Plugins
 gems:
-  # - jekyll-sitemap
+  - jekyll-sitemap
   # - jekyll-admin
 
 
