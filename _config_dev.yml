@@ -26,7 +26,9 @@ permalink: :title.html
 
 # Plugins
 gems:
-  #  - jekyll-admin
+  # - jekyll-sitemap
+  # - jekyll-admin
+
 
 
 exclude: ["node_modules", "default.yml", "gulpfile.js", "LICENSE.txt", "package.json", "README.md", "scssReport.json", "stats", "tasks"]

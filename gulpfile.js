@@ -220,7 +220,7 @@
 	// Shared build tasks
 	gulp.task('build', function(callback) {
 		//plugins.runSequence('scss-lint', ['critical-css', 'main-css', 'scripts'], callback);
-		plugins.runSequence(['critical-css', 'main-css', 'scripts'], callback);
+		plugins.runSequence(['critical-css', 'main-css', 'scripts', 'image-optimise'], callback);
 	});
 
 	// Shared live tasks

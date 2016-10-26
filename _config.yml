@@ -23,8 +23,8 @@ permalink: :title.html
 
 # Plugins
 gems:
-  - jekyll-sitemap
-  #  - jekyll-admin
+  # - jekyll-sitemap
+  # - jekyll-admin
 
 
 
