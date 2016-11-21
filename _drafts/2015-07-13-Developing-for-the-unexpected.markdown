@@ -5,15 +5,47 @@ description: "CSS for the unexpected"
 page-name: "post"
 ---
 
+
+When starting work on a new digital project it is easy to be blinded by the visuals or prototypes that are right in front of
+you, creating a codebase that fits perfectly for the content provided. This approach however will almost always
+turn out to be a costly mistake.
+
+
+On large scale digital projects work often begins before all the details have been fully ironed out. Projects are also prone to
+changing goals or revised features not to mention changes in technology, languages or device sizes. Keeping a project fun 
+and enjoyable to work with can be difficult 
+
+
+
+
+perfect world situations with all the project details and completed designs are rare, we often 
+need to start building with changing goalposts. How can we make this as stress free as posible?
+
+
+
+
+
+
+
+
+
+Branding - Keep colors, fonts, spacing etc in a variables or settings partial that can be quicly and easily updated. CSS variables, Sass, Less.
+
+Buttons - Use transparent for the button without a background, not white. The white background may change
+
+Utalise the inherit property.
+
+Forget about Pixels
+
+
+
 ### Develop every application without assumption
 
-When building a new application it is easy to be blinded by the visuals or prototypes that are right in front of
-you, creating a layout that fits perfectly for the content provided. This approach however will almost always
-turn out to be a costly mistake.
+
 
 ### Stop thinking in PX's
 
-Working with a pixel perfect approach leads to rigid applications, which can break the minute the content
+Working with a pixel perfect approach is a fairly old request  blah blah leads to rigid applications, which can break the minute the content
 is updated or an image changes size. Problems will also occur should the application be translated, a
 new device is released or the copy is updated.
 
