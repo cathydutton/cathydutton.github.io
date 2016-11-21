@@ -12,22 +12,34 @@ heading: "Work history and background"
 
 		<p class="highlight-quote">Over the years I have had the pleasure of working for some awesome companies on a range of projects. below are a few highlights...</p>
 
-		<p><i class="accent">Barclays - </i>I am currently employed by Barclays working with a global team on both internal and external projects. Working a part of an agile team I am responsible for creating innovative user experiences and developing user journeys and profiles. I am also responsible for producing performant and accessible solutions to tight deadlines.</p>
+		<p><i class="accent">Environment Agency - </i> I am currently a UX Designer and Front End Developer for the Environment Agency working as part of the Digital Defra team. I am responsible for defining and designing the interface and structure for digital services.</p>
 
-	 	<p><i class="accent">The Hut Group - </i>During my time at the Hut I worked on a range of sites both internally and customer facing. Projects ranged from full site builds, to creating new features and site enhancements.
-I was able to expand my JavaScript skills as well gaining more experience in an Agile work environment. </p>
+		<p>I produce user interfaces that are engaging, accessible and easy to navigate for a range of government services, producing prototype sketches, wireframes and working code examples. </p>
 
-		<p><i class="accent">ao.com - </i>At ao.com I was responsible for building a responsive framework to use across the company’s main website. I also developed responsive templates to aid the future development of key pages including the top level category pages, top 5 pages and brand pages.
-Part of my role was also to create Sass best practice guidelines and to ensure the site’s css was scalable, maintainable and as streamlined as possible.</p>
+		<p><i class="accent">Barclays - </i>During my time at Barclays I was a part of an interdisciplinary team of designers including Interaction, User Interface, User Experience and Service, working collaboratively alongside Developers and Product Owners to create and deliver live releases as part of the Barclays API store team.</p>
 
-		<p><i class="accent">Brightstar 20:20 - </i>At Brightstar 20:20 I produced wire frames and full design concepts for a range of eCommerce projects for brands such as EE, Three mobile and O2.
-I was also responsible for producing build estimates and standards documents for a range of front end web projects both internal and external. I also worked on large scale front end development projects for both Sainsbury’s and EE, working closely with the back end Magento development team.</p>
+		<p> I was responsible for creating innovative user experiences as well as developing user journeys and profiles. I was also responsible for producing performant and accessible solutions to tight deadlines.</p>
 
-		<p><i class="accent">Creare - </i>As a team leader at Creare I was responsible for managing projects, scheduling, planning, training and financial targets. Whilst managing a team of 2 to 3 designers/developers I also undertook 2 to 3 web projects per month taking sites from concept generation through to development and on site optimisation.
-Whilst at Creare I was able to develop my project management skills whilst also improving my knowledge of both Magento and WordPress.</p>
+	 	<p><i class="accent">The Hut Group - </i>The Hut Group is the UK’s leading multi-website retailer, with over 28 websites covering fashion, beauty, health and lifestyle. As part of the UX team I was responsible for delivering best in class eCommerce experiences across a portfolio of sites and services. </p>
 
-		<p><i class="accent">GetTheLabel.com - </i>At GetTheLabel I was responsible for the design and development of the marketing emails, sent on a weekly basis. I was also responsible for designing and updating the banners across the site and maintaining the home and landing pages.</p>
+		<p>	I worked within a team of User Interface and User Experience Designers as well as Front End Developers and Data Scientists. Projects ranged from full site builds, too creating new features and performance enhancements. </p>
 
+		<p><i class="accent">ao.com - </i>At ao.com I was responsible for building a responsive framework to be used across the company’s main website and on the new TV & Audio pages. Part of my role was also to create best practice guidelines for Sass and to ensure the site’s CSS was scalable, maintainable and as streamlined as possible.</p>
+
+		<p><i class="accent">Brightstar 20:20 - </i>At Brightstar 20:20 I produced wire frames and full design concepts for a range of eCommerce projects for brands such as EE, Three mobile and O2. I was also responsible for producing build estimates and standards documents for a range of Front End projects for both internal and external clients. I also worked on large scale Front End Development projects for companies such as Sainsbury’s and EE, working closely with the Magento development team.</p>
+
+		<p><i class="accent">Creare - </i>As a team leader at Creare I was responsible for a team of 2 to 3 junior Designers and Developers. This enabled me to develop my project management, organisational and mentoring skills. I also undertook 2 to 3 web projects per month taking sites from concept generation through to development and on site optimisation.</p>
+
+		<!-- <div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--defra">
+				<img src="assets/img/about/defra-logo.jpg" alt="Defra" title="Defra" class="image-wrapper__image">
+			</div>
+		</div> -->
+		<div class="tech-logo-gallery">
+			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--environment-agency">
+      	<img src="assets/img/about/environment-agency-logo.jpg" alt="environment Agency" title="Environment Agency" class="image-wrapper__image">
+			</div>
+		</div>
 		<div class="tech-logo-gallery">
 			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--barclays">
       	<img src="assets/img/about/barclays-logo.jpg" alt="Barclays" title="Barclays" class="image-wrapper__image">
