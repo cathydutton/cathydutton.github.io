@@ -54,7 +54,9 @@ $techlogos:
 (express, #fff)
 (heroku, #29264d)
 (hapi, #fff)
-(illustrator, #df6e08);
+(illustrator, #df6e08)
+(handlebars, #f8931f);
+
 
 @each $techlogo, $color in $techlogos {
 
