@@ -30,11 +30,11 @@ heading: "Work history and background"
 
 		<p><i class="accent">Creare - </i>As a team leader at Creare I was responsible for a team of 2 to 3 junior Designers and Developers. This enabled me to develop my project management, organisational and mentoring skills. I also undertook 2 to 3 web projects per month taking sites from concept generation through to development and on site optimisation.</p>
 
-		<!-- <div class="tech-logo-gallery">
+		<<div class="tech-logo-gallery">
 			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--defra">
 				<img src="assets/img/about/defra-logo.jpg" alt="Defra" title="Defra" class="image-wrapper__image">
 			</div>
-		</div> -->
+		</div>
 		<div class="tech-logo-gallery">
 			<div class="image-wrapper image-wrapper--tech-logo  image-wrapper--tech-logo--environment-agency">
       	<img src="assets/img/about/environment-agency-logo.jpg" alt="environment Agency" title="Environment Agency" class="image-wrapper__image">
