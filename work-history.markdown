@@ -12,7 +12,7 @@ heading: "Work history and background"
 
 		<p class="highlight-quote">Over the years I have had the pleasure of working for some awesome companies on a range of projects. below are a few highlights...</p>
 
-		<p><i class="accent">Environment Agency - </i> I am currently a UX Designer and Front End Developer for the Environment Agency working as part of the Digital Defra team. I am responsible for defining and designing the interface and structure for digital services.</p>
+		<p><i class="accent">Environment Agency - </i> I am currently a Senior UX Designer for the Environment Agency working as part of the Digital Defra team. I am responsible for defining and designing the interface and structure for digital services.</p>
 
 		<p>I produce user interfaces that are engaging, accessible and easy to navigate for a range of government services, producing prototype sketches, wireframes and working code examples. </p>
 
