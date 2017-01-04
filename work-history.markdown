@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Web development and design work history"
+title: "Web development and UX work history - Cathy Dutton"
 description: "A brief work history of design, project management, UX and Front End Development jobs"
 intro: "About me"
 heading: "Work history and background"
