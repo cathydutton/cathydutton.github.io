@@ -5,24 +5,26 @@ description: "CSS for the unexpected"
 page-name: "post"
 ---
 
+Turn into 10 steps/ advice and tips for developing for the unexpected
+
+When prototyping for digital projects we often work with sample data which fits perfectly with the UI. Projects are also prone to changing goal posts or revised features not to mention changes in technology, languages or device sizes. Keeping a project simple and enjoyable to work with can be difficult 
 
 When starting work on a new digital project it is easy to be blinded by the visuals or prototypes that are right in front of
 you, creating a codebase that fits perfectly for the content provided. This approach however will almost always
 turn out to be a costly mistake.
 
 
-On large scale digital projects work often begins before all the details have been fully ironed out. Projects are also prone to
-changing goals or revised features not to mention changes in technology, languages or device sizes. Keeping a project fun 
-and enjoyable to work with can be difficult 
 
-
-
-
-perfect world situations with all the project details and completed designs are rare, we often 
-need to start building with changing goalposts. How can we make this as stress free as posible?
-
-
-
+1)
+2)
+3)
+4)
+5)
+6)
+7)
+8)
+9)
+10) Resources - https://github.com/Heydon/forceFeed
 
 
 
