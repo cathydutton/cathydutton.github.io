@@ -9,7 +9,6 @@ heading: "A collection of both design and development work"
 
 
 
-<section class="content">
 	<p>Over the last 10 years I have worked on a wide range of projects, taking on many roles. Starting out as a UI/UX designer I now specialise in Front End Development.</p>
 	<p>Below are just a few examples of my design and development work...</p>
 </section>
@@ -186,4 +185,3 @@ heading: "A collection of both design and development work"
 			</a>
 		</div>
 	</div>
-</section>

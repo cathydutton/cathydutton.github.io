@@ -1,13 +1,14 @@
 {% include head.html %}
 {% include sidebar.html %}
+<main id="main">
 <header class="header">
   <h1 class="heading"><span class="heading__intro">{{ page.intro }}</span>{{ page.heading }}</h1>
 </header>
-
-{{ content }}
-
-<section>
-<div id="disqus_thread"></div>
-</section>
-
+  {{ content }}
+</main>
+<div class="content-wrapper">
+  <section>
+    <div id="disqus_thread"></div>
+  </section>
+</div>
 {% include footer-maze.html %}

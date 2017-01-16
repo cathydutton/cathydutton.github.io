@@ -1,4 +1,4 @@
-<section class="news-feed">
+<div class="news-feed feed-snipit">
 	{% for post in site.posts limit:3 %}
 		{% if post.categories contains 'post' %}
 			<article class="news-feed__post">
@@ -6,7 +6,7 @@
 							<h3 class="heading news-feed__title">{{ post.title }}</h3>
 							<p class="news-feed__date">{{ post.date | date: '%B %d, %Y' }}</p>
 					</a>
-			 </article>
+				</article>
 		{% endif %}
 		{% if post.categories contains 'external' %}
 			<article class="news-feed__post">
@@ -17,4 +17,4 @@
 			 </article>
 		{% endif %}
 	{% endfor %}
-</section>
+</div>

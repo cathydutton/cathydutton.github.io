@@ -8,7 +8,6 @@ heading: "Work history and background"
 
 
 
-<section class="content">
 
 		<p class="highlight-quote">Over the years I have had the pleasure of working for some awesome companies on a range of projects. below are a few highlights...</p>
 
@@ -120,4 +119,3 @@ heading: "Work history and background"
 		    <img src="assets/img/about/zavvi-logo.jpg" alt="Zavvi" title="Zavvi" class="image-wrapper__image">
 			</div>
 		</div>
-		</section>

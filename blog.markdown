@@ -6,7 +6,7 @@ intro: "Blog"
 heading: "Latest posts and tutorials"
 ---
 
-<section class="news-feed">
+<div class="news-feed">
 	{% for post in site.posts %}
 		{% if post.categories contains 'post' %}
 			<article class="news-feed__post">
@@ -25,4 +25,4 @@ heading: "Latest posts and tutorials"
 			 </article>
 		{% endif %}
 	{% endfor %}
-</section>
+</div>

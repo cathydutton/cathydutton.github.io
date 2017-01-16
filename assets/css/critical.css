@@ -194,12 +194,6 @@ h4 {
   height: 100%;
   position: relative; }
 
-.content-wrapper {
-  animation: fadeIn 2s forwards; }
-  @media screen and (min-width: 768px) {
-    .content-wrapper {
-      margin-left: 270px; } }
-
 @media screen and (min-width: 768px) {
   .sidebar {
     position: absolute;
@@ -207,17 +201,22 @@ h4 {
     bottom: 0;
     width: 270px; } }
 
-header,
 footer,
-section {
-  width: 100%;
-  padding: 2% 5% 0; }
-  header:after,
+main,
+.feed-snipit {
+  padding: 2% 5% 0;
+  animation: fadeIn 2s forwards; }
   footer:after,
-  section:after {
+  main:after,
+  .feed-snipit:after {
     display: table;
     clear: both;
     content: ''; }
+  @media screen and (min-width: 768px) {
+    footer,
+    main,
+    .feed-snipit {
+      margin-left: 270px; } }
 
 /* Objects */
 /*

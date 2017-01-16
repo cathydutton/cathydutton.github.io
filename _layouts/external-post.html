@@ -6,11 +6,11 @@ archive: false
 
 {% include head.html %}
 {% include sidebar.html %}
+<main id="main">
 <header class="header">
   <h1 class="heading heading__intro">{{page.site}}</h1>
   <p class="heading heading--primary">{{ page.date | date_to_string }}</p>
 </header>
-
 <section>
 {% include pagination.html %}
 </section>
@@ -28,9 +28,11 @@ archive: false
  {% include pagination.html %}
  </section>
 
- <section>
+ </main>
+
+ <!-- <section>
    <div id="disqus_thread"></div>
- </section>
+ </section> -->
 
 
 {% include footer.html %}

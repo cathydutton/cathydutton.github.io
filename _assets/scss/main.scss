@@ -3,6 +3,7 @@
     ----------------------------------- */
 
 @import '1-settings';
+@import '1-print';
 @import '2-tools';
 @import '2.1-tools-grid';
 @import '3-generic';
@@ -20,7 +21,7 @@
 @import '7-component-images';
 /* @import '7-component-images-work-history'; */
 @import '7-component-images-tech-logo';
-@import '7-component-images-portfolio';
+// @import '7-component-images-portfolio';
 @import '7-component-find-me';
 @import '7-component-feed';
 @import '7-component-footer';
@@ -29,3 +30,4 @@
 @import '7-component-social-share';
 @import '7-component-pagination';
 @import '7-component-code-highlight';
+@import '7-component-skip-links';
