@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "Online portfolio - Cathy Dutton"
+title: "UX and Front End Development blog - Cathy Dutton"
 description: "The online website design and development portfolio of Cathy Dutton"
 intro: "Blog"
 heading: "Latest posts and tutorials"

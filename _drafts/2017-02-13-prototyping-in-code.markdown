@@ -24,6 +24,6 @@ Keeps me working with CSS :) and semantic markup
 
 Greater control over the final output
 
-Problems - Can be time consuming - but only build after testing sketches
+Problems - Can be time consuming - but only build after testing sketches - patten library is essential - let go of clean code!!!!!
 
 Takes investment upfront to build a design language in code, longrt term bennefitd make this woth while
