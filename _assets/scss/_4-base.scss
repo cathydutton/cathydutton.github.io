@@ -7,13 +7,33 @@ a {
   border-bottom: 1px solid currentColor;
   color: inherit;
   text-decoration: none;
+  padding: .2em;
 }
 
-a:hover,
-a:focus {
-  color: map-get($colours, 'accent');
+a:hover {
+  //color: map-get($colours, 'accent');
+  background-color: map-get($colours, 'sky-blue');
+  outline: 3px solid map-get($colours, 'sky-blue');
   transition: all .3s ease-in-out;
 }
+
+a:focus {
+  background-color: #ccf2ff;
+  outline: 3px solid #ccf2ff;
+  transition: all .3s ease-in-out;
+}
+
+[href^="http"]:not([href*="cathydutton.co.uk"])::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    /* alternative text rules */
+    content: '(external link)';
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 1em; /* the width of the icon */
+}
+
 
 // SELECT
 ::selection {
@@ -31,10 +51,6 @@ svg {
   height: 100%;
 }
 
-.svg__text {
-  display: none;
-}
-
 // LISTS
 ul {
   @include clearfix;
@@ -45,4 +61,13 @@ ul {
 // TYPOGRAPHY
 em {
   font-style: italic;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
 }

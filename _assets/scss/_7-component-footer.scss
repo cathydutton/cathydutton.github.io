@@ -16,5 +16,13 @@
 .footer-links__item {
   display: inline-block;
   margin: .4em;
-  text-transform: uppercase;
+  // text-transform: uppercase;
+}
+
+.footer-links__anchor {
+  padding: .4em;
+}
+
+.footer-links__item .active {
+  border-bottom: 4px solid map-get($colours, 'accent');
 }

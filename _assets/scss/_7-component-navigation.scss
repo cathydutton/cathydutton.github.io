@@ -19,12 +19,14 @@ Navigation
   animation: fadeIn 2s forwards;
   margin: 5px auto;
   text-align: center;
+  margin: .4em;
+
 
   @include mq(break-tablet) {
     position: relative;
     overflow: hidden;
     width: 100%;
-    margin: 20px 0 0;
+    margin: 10px 0 0;
     padding: 0 23px 50px;
   }
 
@@ -44,6 +46,16 @@ Navigation
 .sidebar__anchor {
   display: inline;
   color: map-get($colours, 'grey-light');
+  // border-bottom: 1px solid map-get($colours, 'grey-light');
+
+  &.active {
+    border-bottom: 4px solid map-get($colours, 'accent');
+  }
+
+  &:hover,
+  &:focus {
+    color: map-get($colours, 'grey-dark');
+  }
 
   @include mq(break-tablet) {
     display: block;
@@ -52,12 +64,30 @@ Navigation
     border: solid 1px lighten(map-get($colours, 'grey-dark'), 5%);
     border-left: solid 1px map-get($colours, 'accent');
     text-decoration: none;
-    text-transform: uppercase;
+
+    .navagation-text {
+      border-bottom: solid 1px map-get($colours, 'grey-light');
+    }
+
+    &.active {
+      border: solid 1px lighten(map-get($colours, 'grey-dark'), 5%);
+      border-left: 1px solid map-get($colours, 'accent');
+      color: map-get($colours, 'accent');
+      // background: lighten(map-get($colours, 'grey-dark'), 15%);
+
+      .navagation-text {
+        border-bottom: solid 1px map-get($colours, 'accent');
+      }
+
+    }
 
     &:hover,
     &:focus {
-      padding-left: 16px;
+      color: map-get($colours, 'grey-dark');
+      outline: none;
+        border-bottom: solid 1px map-get($colours, 'grey-dark');
     }
+
   }
 
 }

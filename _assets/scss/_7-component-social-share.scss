@@ -16,11 +16,12 @@ Social Share
 .share-page__twitter {
   @include button (#4099ff);
   border: 0;
+  border-bottom: solid 2px darken(#4099ff, 50%);
 
   &:hover,
   &:focus {
     color: map-get($colours, 'white');
-    background-color: lighten(#4099ff, 20%);
+    background-color: darken(#4099ff, 20%);
   }
 
 }
@@ -28,11 +29,12 @@ Social Share
 .share-page__facebook {
   @include button (#3b5998);
   border: 0;
+  border-bottom: solid 2px darken(#3b5998, 50%);
 
   &:hover,
   &:focus {
     color: map-get($colours, 'white');
-    background-color: lighten(#3b5998, 20%);
+    background-color: darken(#3b5998, 20%);
   }
 
 }
@@ -40,11 +42,12 @@ Social Share
 .share-page__google {
   @include button (#008744);
   border: 0;
+  border-bottom: solid 2px darken(#008744, 50%);
 
   &:hover,
   &:focus {
     color: map-get($colours, 'white');
-    background-color: lighten(#008744, 20%);
+    background-color: darken(#008744, 10%);
   }
 
 }

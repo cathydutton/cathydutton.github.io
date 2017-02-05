@@ -6,6 +6,7 @@ html {
   font-weight: 300;
   font-family: map-get($font-stack, 'general');
   line-height: $line-height;
+  font-size: 100%;
 }
 
 h1,
@@ -14,7 +15,11 @@ h3,
 h4,
 .heading {
   font-weight: 300;
-  text-transform: uppercase;
+  // text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
 }
 
 .heading__intro {
@@ -26,6 +31,7 @@ h4,
   font-family: map-get($font-stack, 'decorative');
   letter-spacing: 0;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .highlight-quote {
@@ -44,17 +50,17 @@ h1,
 
 h2,
 .heading--secondary {
-  @include typography(1.5em);
-  color: map-get($colours, 'accent');
+  @include typography(1.4em);
+  //color: map-get($colours, 'accent');
 }
 
 h3,
 .heading--tertiary {
-  @include typography(1.17em);
+  @include typography(1.25em);
 }
 
 h4 {
-  font-size: 1.17em;
+  font-size: 1.25em;
 }
 
 .accent {

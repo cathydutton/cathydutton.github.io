@@ -55,13 +55,22 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
 
+html,
+body {
+  height: 100%; }
+  html:after,
+  body:after {
+    display: table;
+    clear: both;
+    content: ''; }
+
 *,
 *:before,
 *:after {
   box-sizing: border-box; }
 
 body {
-  min-width: 280px;
+  min-width: 360px;
   max-width: 1180px;
   margin: 0;
   padding: 0;
@@ -88,12 +97,29 @@ pre {
 a {
   border-bottom: 1px solid currentColor;
   color: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+  padding: .2em; }
 
-a:hover,
-a:focus {
-  color: #ffa600;
+a:hover {
+  background-color: #ccf2ff;
+  outline: 3px solid #ccf2ff;
   transition: all .3s ease-in-out; }
+
+a:focus {
+  background-color: #ccf2ff;
+  outline: 3px solid #ccf2ff;
+  transition: all .3s ease-in-out; }
+
+[href^="http"]:not([href*="cathydutton.co.uk"])::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  /* alternative text rules */
+  content: '(external link)';
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 1em;
+  /* the width of the icon */ }
 
 ::selection {
   background: #ffd380; }
@@ -104,9 +130,6 @@ img {
 svg {
   width: 100%;
   height: 100%; }
-
-.svg__text {
-  display: none; }
 
 ul {
   margin: 0 0 0 12px;
@@ -119,21 +142,31 @@ ul {
 em {
   font-style: italic; }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
 /*
     Base Typography
     ----------------------------------- */
 html {
   font-weight: 300;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-size: 100%; }
 
 h1,
 h2,
 h3,
 h4,
 .heading {
-  font-weight: 300;
-  text-transform: uppercase; }
+  font-weight: 300; }
+
+p {
+  font-size: 1rem; }
 
 .heading__intro {
   font-size: 2.4em;
@@ -143,7 +176,8 @@ h4,
   font-weight: bold;
   font-family: oswald, Helvetica, sans-serif;
   letter-spacing: 0;
-  line-height: 1.2; }
+  line-height: 1.2;
+  text-transform: uppercase; }
   @media screen and (min-width: 1020px) {
     .heading__intro {
       font-size: 2.88em; } }
@@ -166,23 +200,22 @@ h1,
 
 h2,
 .heading--secondary {
-  font-size: 1.5em;
-  color: #ffa600; }
+  font-size: 1.4em; }
   @media screen and (min-width: 1020px) {
     h2,
     .heading--secondary {
-      font-size: 1.8em; } }
+      font-size: 1.68em; } }
 
 h3,
 .heading--tertiary {
-  font-size: 1.17em; }
+  font-size: 1.25em; }
   @media screen and (min-width: 1020px) {
     h3,
     .heading--tertiary {
-      font-size: 1.404em; } }
+      font-size: 1.5em; } }
 
 h4 {
-  font-size: 1.17em; }
+  font-size: 1.25em; }
 
 .accent {
   color: #ffa600; }
@@ -191,32 +224,44 @@ h4 {
   Layout
   ----------------------------------- */
 .wrapper {
-  height: 100%;
-  position: relative; }
+  width: 100%;
+  max-width: 1180px;
+  min-width: 260px; }
+  .wrapper:after {
+    display: table;
+    clear: both;
+    content: ''; }
 
 @media screen and (min-width: 768px) {
   .sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
-    width: 270px; } }
+    width: 270px;
+    margin-bottom: -4000px;
+    padding-bottom: 4000px; } }
 
-footer,
-main,
-.feed-snipit {
-  padding: 2% 5% 0;
-  animation: fadeIn 2s forwards; }
-  footer:after,
-  main:after,
-  .feed-snipit:after {
+.content {
+  animation: fadeIn 2s forwards;
+  padding: 2%; }
+  .content:after {
     display: table;
     clear: both;
     content: ''; }
   @media screen and (min-width: 768px) {
-    footer,
-    main,
-    .feed-snipit {
-      margin-left: 270px; } }
+    .content {
+      margin-left: 300px;
+      float: left;
+      height: 100%; } }
+
+section,
+footer {
+  padding: 2% 0; }
+  section:after,
+  footer:after {
+    display: table;
+    clear: both;
+    content: ''; }
 
 /* Objects */
 /*
@@ -228,11 +273,9 @@ button,
   margin: 5px 0;
   padding: .5em .8em .3em;
   border: 0;
-  border-radius: .2em;
   color: #fff;
-  font-size: 125%;
+  font-size: 100%;
   line-height: 2.2;
-  text-transform: uppercase;
   box-shadow: 0;
   cursor: pointer; }
   @media screen and (min-width: 480px) {
@@ -269,13 +312,14 @@ Navigation
 .sidebar__list {
   animation: fadeIn 2s forwards;
   margin: 5px auto;
-  text-align: center; }
+  text-align: center;
+  margin: .4em; }
   @media screen and (min-width: 768px) {
     .sidebar__list {
       position: relative;
       overflow: hidden;
       width: 100%;
-      margin: 20px 0 0;
+      margin: 10px 0 0;
       padding: 0 23px 50px; } }
 
 .sidebar__item {
@@ -288,7 +332,11 @@ Navigation
 
 .sidebar__anchor {
   display: inline;
-  color: #aaa19a; }
+  color: #ccc7c3; }
+  .sidebar__anchor.active {
+    border-bottom: 4px solid #ffa600; }
+  .sidebar__anchor:hover, .sidebar__anchor:focus {
+    color: #2a2a2a; }
   @media screen and (min-width: 768px) {
     .sidebar__anchor {
       display: block;
@@ -296,10 +344,19 @@ Navigation
       padding: 10px 0 10px 10px;
       border: solid 1px #373737;
       border-left: solid 1px #ffa600;
-      text-decoration: none;
-      text-transform: uppercase; }
+      text-decoration: none; }
+      .sidebar__anchor .navagation-text {
+        border-bottom: solid 1px #ccc7c3; }
+      .sidebar__anchor.active {
+        border: solid 1px #373737;
+        border-left: 1px solid #ffa600;
+        color: #ffa600; }
+        .sidebar__anchor.active .navagation-text {
+          border-bottom: solid 1px #ffa600; }
       .sidebar__anchor:hover, .sidebar__anchor:focus {
-        padding-left: 16px; } }
+        color: #2a2a2a;
+        outline: none;
+        border-bottom: solid 1px #2a2a2a; } }
 
 /*
 Find me
@@ -310,7 +367,7 @@ Find me
   padding: 0;
   list-style: none;
   text-align: center;
-  margin: 10px 0 0; }
+  margin: 20px 0 0; }
   .find-me:after {
     display: table;
     clear: both;
@@ -337,7 +394,8 @@ Find me
     fill: #2a2a2a;
     background: #ffa600;
     transform: scale(1.25);
-    transition: background-color .5s, transform .5s ease-out; }
+    transition: background-color .5s, transform .5s ease-out;
+    outline: none; }
 
 footer .find-me__anchor {
   color: #2a2a2a;
@@ -369,9 +427,9 @@ Sidebar profile
   animation: fadeIn 2s forwards;
   margin-top: 0;
   padding: 10px 0;
-  border-top: solid 1px #373737;
-  border-bottom: solid 1px #373737;
-  color: #aaa19a;
+  border-top: solid 1px #505050;
+  border-bottom: solid 1px #505050;
+  color: #ccc7c3;
   text-align: center;
   width: 80%;
   margin: 0 auto; }

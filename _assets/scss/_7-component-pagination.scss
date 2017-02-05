@@ -4,39 +4,62 @@ Pagination
 
 .page-navigation {
   margin: 10px 0;
-  padding: 0;
   list-style: none;
+  border-top: 1px solid darken(map-get($colours, 'off-white'), 10%);
+  border-bottom: 1px solid darken(map-get($colours, 'off-white'), 10%);
 }
 
-// .button--page-navigation__prev,
-// .button--page-navigation__next {
-//   @include button (map-get($colours, 'accent'));
-// }
+.button--page-navigation__prev,
+.button--page-navigation__next {
+    width: 100%;
+    text-align: center;
 
-.button--page-navigation__prev {
-  float: left;
-  padding: 0;
+  @include mq(break-phablet) {
+    float: left;
+    padding: 0;
+    width: 50%;
+  }
+
 }
 
 .button--page-navigation__next {
-  float: right;
-  margin-left: 10px;
-  padding: 0;
+
+  @include mq(break-phablet) {
+  text-align: right;
+  }
+
+}
+
+.button--page-navigation__prev {
+
+  @include mq(break-phablet) {
+  text-align: left;
+  }
+
 }
 
 .button--page-navigation__anchor {
-  @include button (map-get($colours, 'accent'));
-  // display: block;
-  // padding: 10px 20px 7px;
-  // border-bottom: 0;
+  display: block;
+  padding: 15px 0;
+  border-bottom: 0;
+
+  &:focus {
+    outline: none;
+  }
+
 }
 
 .button--page-navigation__svg {
   width: 20px;
   height: 16px;
-  fill: map-get($colours, 'white');
+  fill: map-get($colours, 'grey-dark');
 }
 
-.button--page-navigation__anchor:hover .button--page-navigation__svg {
-  fill: map-get($colours, 'accent');
+.page-navigation-label {
+  // display: block;
+  border-bottom: solid 1px map-get($colours, 'grey-dark');
+}
+
+.page-navigation-title {
+  border-bottom: solid 1px map-get($colours, 'grey-dark');
 }

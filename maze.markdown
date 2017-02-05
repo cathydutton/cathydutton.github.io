@@ -4,20 +4,23 @@ title: "Maze - PostCSS responsive grid"
 description: "A Simple mobile first responsive Grid built with PostCSS"
 intro: "Maze"
 heading: "A fully flexible mobile first grid to suit any design pattern."
+group: "navigation"
+page: "PostCSS maze"
+active: "PostCSS maze"
 ---
 
 
-<section class="content">
+<section>
 		Maze is a flexible and semantic mobile first responsive grid built with PostCSS. Maze is fully customisable and removes the reliance on .last-column classes by instead applying the margin to both sides of each element and adjusting the wrapper width accordingly.
 	</section>
 
-<section class="content">
-		<a href="http://cathydutton.github.io/postcss-maze/" title="Demo Maze Grid" class="button">View demo</a>
-		<a href="https://github.com/cathydutton/postcss-maze" title="Maze on Github" class="button">View on Github</a>
+<section>
+	<p><a href="http://cathydutton.github.io/postcss-maze/" title="Demo of Maze PostCSS grid">View a demo of Maze</a></p>
+	<p><a href="https://github.com/cathydutton/postcss-maze" title="Maze source code on Github">View the source code for maze on Github</a></p>
 	</section>
 
 
-<section class="content">
+<section>
 		<h2>Installation</h2>
 <pre>
 npm install postcss-maze
@@ -111,7 +114,7 @@ npm install postcss-maze
 </pre>
 
 
-		<h2>Settings</h2>
+		<h3>Settings</h3>
 
 		<p>By default Maze works with 5 media queries and has a margin of 1%. These settings can be overridden with custom config. All media query dimensions should be written in EM's, and margins as a percentage...</p>
 

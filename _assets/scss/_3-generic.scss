@@ -12,6 +12,12 @@ textarea {
   -webkit-font-smoothing: antialiased;
 }
 
+html,
+body {
+    @include clearfix;
+    height: 100%;
+}
+
 *,
 *:before,
 *:after {

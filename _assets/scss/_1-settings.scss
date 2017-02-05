@@ -6,15 +6,16 @@
 $colours: (
   "black": #2a2a2a,
   "white": #fff,
-  "grey-light": #aaa19a,
+  "grey-light": #ccc7c3,
   "grey-dark": #2a2a2a,
   "accent": #ffa600,
   "off-white": #f3f3f3,
+  "sky-blue": #ccf2ff
  );
 
  /* BREAKPOINTS */
 $breakpoints: (
-  "break-mobile": 280px,
+  "break-mobile": 360px,
   "break-phablet": 480px,
   "break-tablet": 768px,
   "break-desktop": 1020px,

@@ -6,14 +6,13 @@ archive: false
 
 {% include head.html %}
 {% include sidebar.html %}
+<div class="content">
 <main id="main">
-<header class="header">
+<header role="banner" class="header">
   <h1 class="heading heading__intro">{{page.site}}</h1>
   <p class="heading heading--primary">{{ page.date | date_to_string }}</p>
 </header>
-<section>
-{% include pagination.html %}
-</section>
+
 
 <section>
   <article class="news-feed__post">
@@ -36,3 +35,4 @@ archive: false
 
 
 {% include footer.html %}
+</div>

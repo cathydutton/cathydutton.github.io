@@ -6,36 +6,43 @@ Feed
   display: table;
   width: 100%;
   margin-top: 1.4em;
-  border: solid 1px map-get($colours, 'grey-light');
-  border-left: solid 4px map-get($colours, 'accent');
   transition: all .3s ease-in-out;
   cursor: pointer;
+  padding: .8em;
+  border: solid 1px map-get($colours, 'grey-light');
+  border-left: solid 4px map-get($colours, 'accent');
 
-  &:hover,
-  &:focus {
-    padding-left: 16px;
-    border-left: solid 8px map-get($colours, 'accent');
-    color: inherit;
-  }
+  // &:hover,
+  // &:focus {
+  //   // border: solid 1px map-get($colours, 'accent');
+  //   // border-left: solid 8px map-get($colours, 'accent');
+  //   // color: inherit;
+  // }
 
 }
 
 .news-feed__anchor {
   display: table-cell;
   width: 90%;
-  padding: 0 .8em;
-  border: 0;
+  border-bottom: 0;
 
   &:hover,
   &:focus {
-    color: inherit;
+    background-color: map-get($colours, 'sky-blue');
+    outline: 3px solid map-get($colours, 'sky-blue');
+    transition: all .3s ease-in-out;
+  }
+
+  &[href^="http"]:not([href*="cathydutton.co.uk"])::after {
+      content: 'External post';
+      display: block;
   }
 
 }
 
 .news-feed__title {
   width: 100%;
-  margin-bottom: 0;
+  margin: 0;
 
   // @include mq(break-tablet) {
   //   width: 80%;
@@ -45,7 +52,7 @@ Feed
 
 .news-feed__date {
   margin-top: 0;
-  color: map-get($colours, 'accent');
+  // color: map-get($colours, 'accent');
 }
 
 

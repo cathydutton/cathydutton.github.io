@@ -1,13 +1,13 @@
 ---
-title: UpFront conference 2016.
+title: UpFront conference 2016
 author: Cathy Dutton
 layout: post
 category: post
 ---
 
-On Friday the 27th of May I attended the front end developers conference UpFront in Manchester. There were 7 speakers along with 3 flash talks on a range of subjects including Accessibility, Design patterns, legacy JavaScript and component systems.
+<div class="highlight-quote"><p>On Friday the 27th of May I attended the front end developers conference UpFront in Manchester. There were 7 speakers along with 3 flash talks on a range of subjects including Accessibility, Design patterns, legacy JavaScript and component systems.</p>
 
-Below are just a few of the key points I took away from these talks...
+<p>Below are just a few of the key points I took away from these talks...</p></div>
 
 ## Accessibility starts with design
 
