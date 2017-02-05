@@ -5,8 +5,8 @@ description: "A Simple mobile first responsive Grid built with PostCSS"
 intro: "Maze"
 heading: "A fully flexible mobile first grid to suit any design pattern."
 group: "navigation"
-page: "PostCSS maze"
-active: "PostCSS maze"
+page: "PostCSS Maze"
+active: "PostCSS Maze"
 ---
 
 

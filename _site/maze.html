@@ -41,7 +41,7 @@ https://github.com/cathydutton
 
 		<!-- inject:css -->
 		<!-- endinject -->
-		<!-- <script>
+		<script>
 		    /*!
 		    loadCSS: load a CSS file asynchronously.
 		    [c]2014 @scottjehl, Filament Group, Inc.
@@ -77,9 +77,9 @@ https://github.com/cathydutton
 
 		<script>
     		loadCSS( "assets/css/main-@@cacheBust.min.css" );
-		</script> -->
+		</script>
 
-		<link rel="stylesheet" href="assets/css/main-20170205.min.css">
+		<!-- <link rel="stylesheet" href="assets/css/main-20170201.min.css"> -->
 
 
 
@@ -162,7 +162,7 @@ https://github.com/cathydutton
           
           
           <li class="sidebar__item">
-           <a href="maze.html" title="Maze - PostCSS responsive grid" class="sidebar__anchor"><span class="navagation-text">PostCSS Maze</span></a>
+           <a href="maze.html" aria-describedby="current" title="Maze - PostCSS responsive grid" class="sidebar__anchor active"><span class="navagation-text">PostCSS Maze</span></a>
          </li>
           
       </ul>
@@ -344,15 +344,29 @@ gulp.task('css', function () {
     <div id="disqus_thread"></div>
   </section>
 </div>
-<div class="content-wrapper">
 <footer class="footer">
-   <div id="latest-tweets"></div>
   	<ul class="footer-links">
-  		<li class="footer-links__item"><a href="index.html" class="footer-links__anchor" title="Back to the home page" >Home</a></li>
-  		<li class="footer-links__item"><a href="work-history.html" class="footer-links__anchor" title="View work history page" >Work history</a></li>
-  		<li class="footer-links__item"><a href="blog.html" class="footer-links__anchor" title="View blog page" >Blog</a></li>
-      <li class="footer-links__item"><a href="portfolio.html" class="footer-links__anchor" title="View portfolio site">Portfolio</a></li>
-  		<li class="footer-links__item"><a href="maze.html" class="footer-links__anchor" title="Maze - responsive grid" >Maze</a></li>
+  		<li class="footer-links__item">
+        
+          <a href="index.html" class="footer-links__anchor" title="Back to the home page" >Home</a>
+          
+      </li>
+  		<li class="footer-links__item">
+        
+          <a href="work-history.html" class="footer-links__anchor" title="View work history page" >Work history</a>
+          
+      </li>
+  		<li class="footer-links__item">
+          
+          <a href="blog.html" class="footer-links__anchor" title="View blog page" >Blog</a>
+          
+      </li>
+  		<!-- <li class="footer-links__item"><a href="portfolio.html" class="footer-links__anchor" title="View portfolio page">Portfolio</a></li> -->
+  		<li class="footer-links__item">
+        
+        <a href="maze.html" aria-describedby="current" class="footer-links__anchor active" title="Maze - PostCSS responsive grid">PostCSS Maze</a>
+          
+      </li>
   	</ul>
   	<ul class="find-me">
 	<li class="find-me__item">
@@ -389,9 +403,9 @@ gulp.task('css', function () {
 	</li>
 </ul>
 
-    <p class="footer__copyright">Copyright 2016 Cathy Dutton - All Rights Reserved. Powered by <a href="https://github.com/cathydutton/postcss-maze" title="Maze - responsive grid" target="_blank">Maze</a></p>
+  	<p class="footer__copyright">Copyright 2017 Cathy Dutton - All Rights Reserved. <a href="https://github.com/cathydutton/postcss-maze" title="Maze - responsive grid" target="_blank">Powered by PostCSS Maze</a></p>
   </footer>
-</div>
+<!-- End Wrapper -->
 </div>
 <!-- Script includes -->
 <script src="assets/js/main-@@cacheBust.min.js"></script>
