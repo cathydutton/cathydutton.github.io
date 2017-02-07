@@ -3,6 +3,7 @@ Navigation
 ----------------------------------- */
 
 .sidebar {
+  padding: .8em .4em;
   background: map-get($colours, 'grey-dark');
   border-bottom: solid 3px map-get($colours, 'accent');
   margin-bottom: 10px;

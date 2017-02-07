@@ -58,11 +58,14 @@ textarea {
 html,
 body {
   height: 100%; }
+  html:before, html:after,
+  body:before,
+  body:after {
+    content: "";
+    display: table; }
   html:after,
   body:after {
-    display: table;
-    clear: both;
-    content: ''; }
+    clear: both; }
 
 *,
 *:before,
@@ -71,7 +74,7 @@ body {
 
 body {
   min-width: 360px;
-  max-width: 1180px;
+  max-width: 1280px;
   margin: 0;
   padding: 0;
   color: #2a2a2a; }
@@ -134,10 +137,11 @@ svg {
 ul {
   margin: 0 0 0 12px;
   padding: 0; }
+  ul:before, ul:after {
+    content: "";
+    display: table; }
   ul:after {
-    display: table;
-    clear: both;
-    content: ''; }
+    clear: both; }
 
 em {
   font-style: italic; }
@@ -223,44 +227,51 @@ h4 {
 /*
   Layout
   ----------------------------------- */
-.wrapper {
-  width: 100%;
-  max-width: 1180px;
-  min-width: 260px; }
-  .wrapper:after {
-    display: table;
-    clear: both;
-    content: ''; }
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    box-orient: horizontal;
+    min-height: 100vh; } }
 
 @media screen and (min-width: 768px) {
   .sidebar {
-    top: 0;
-    bottom: 0;
-    float: left;
     width: 270px;
-    margin-bottom: -6500px;
-    padding-bottom: 6500px; } }
+    -ms-flex: 0 100px;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    -ms-box-flex: 0;
+    box-flex: 0; } }
 
 .content {
   animation: fadeIn 2s forwards;
   padding: 2%; }
-  .content:after {
-    display: table;
-    clear: both;
-    content: ''; }
   @media screen and (min-width: 768px) {
     .content {
-      margin-left: 300px;
-      height: 100%; } }
+      -ms-flex: 1;
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -ms-box-flex: 1;
+      box-flex: 1; } }
 
 section,
 footer {
   padding: 2% 0; }
+  section:before, section:after,
+  footer:before,
+  footer:after {
+    content: "";
+    display: table; }
   section:after,
   footer:after {
-    display: table;
-    clear: both;
-    content: ''; }
+    clear: both; }
 
 /* Objects */
 /*
@@ -299,6 +310,7 @@ button,
 Navigation
 ----------------------------------- */
 .sidebar {
+  padding: .8em .4em;
   background: #2a2a2a;
   border-bottom: solid 3px #ffa600;
   margin-bottom: 10px; }
@@ -366,10 +378,11 @@ Find me
   list-style: none;
   text-align: center;
   margin: 20px 0 0; }
+  .find-me:before, .find-me:after {
+    content: "";
+    display: table; }
   .find-me:after {
-    display: table;
-    clear: both;
-    content: ''; }
+    clear: both; }
   @media screen and (min-width: 768px) {
     .find-me {
       margin: 30px 0 0; } }

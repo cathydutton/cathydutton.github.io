@@ -12,12 +12,9 @@ active: "PostCSS Maze"
 
 <section>
 		<p>Maze is a flexible and semantic mobile first responsive grid built with PostCSS. Maze is fully customisable and removes the reliance on .last-column classes by instead applying the margin to both sides of each element and adjusting the wrapper width accordingly.</p>
-	</section>
-
-<section>
-	<p><a href="http://cathydutton.github.io/postcss-maze/" title="Demo of Maze PostCSS grid">View a demo of Maze</a></p>
-	<p><a href="https://github.com/cathydutton/postcss-maze" title="Maze source code on Github">View the source code for maze on Github</a></p>
-	</section>
+		<p><a href="http://cathydutton.github.io/postcss-maze/" title="Demo of Maze PostCSS grid">View a demo of Maze</a></p>
+		<p><a href="https://github.com/cathydutton/postcss-maze" title="Maze source code on Github">View the source code for maze on Github</a></p>
+</section>
 
 
 <section>

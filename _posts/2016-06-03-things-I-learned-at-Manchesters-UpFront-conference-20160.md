@@ -24,10 +24,10 @@ We often produce designs that are intended to drive the desired response from a 
 An inclusive design should strive to create clearer distinctions between these calls to action. Using the same button example as above, layout, size or text could also be used to guide the user.
 
 _Good_
-![Button example good](assets/img/buttons-two.png "Button example good")
+![Button example good](../assets/img/buttons-two.png "Button example good")
 
 _Bad_
-![Button example bad](assets/img/buttons-one.png "Button example bad")
+![Button example bad](../assets/img/buttons-one.png "Button example bad")
 
 #### Tables
 

@@ -76,11 +76,10 @@ https://github.com/cathydutton
 		</script>
 
 		<script>
-    		loadCSS( "assets/css/main-@@cacheBust.min.css" );
+    		loadCSS( "/assets/css/main-@@cacheBust.min.css" );
 		</script>
 
-		<!-- <link rel="stylesheet" href="../assets/css/main-20170207.min.css"> -->
-
+		<!-- <link rel="stylesheet" href="/assets/css/main-20170207.min.css"> -->
 
 
 		<script type="text/javascript">
@@ -160,11 +159,11 @@ https://github.com/cathydutton
            <a href="../blog.html" title="View blog page" class="sidebar__anchor"><span class="navagation-text">Blog</span></a>
          </li>
           
-          
+          <!-- 
           <li class="sidebar__item">
            <a href="../portfolio.html" title="View blog page" class="sidebar__anchor"><span class="navagation-text">Portfolio</span></a>
          </li>
-          
+           -->
           
           <li class="sidebar__item">
            <a href="../maze.html" aria-describedby="current" title="Maze - PostCSS responsive grid" class="sidebar__anchor active"><span class="navagation-text">PostCSS Maze</span></a>
@@ -180,12 +179,9 @@ https://github.com/cathydutton
 </header>
   <section>
 		<p>Maze is a flexible and semantic mobile first responsive grid built with PostCSS. Maze is fully customisable and removes the reliance on .last-column classes by instead applying the margin to both sides of each element and adjusting the wrapper width accordingly.</p>
-	</section>
-
-<section>
-	<p><a href="http://cathydutton.github.io/postcss-maze/" title="Demo of Maze PostCSS grid">View a demo of Maze</a></p>
-	<p><a href="https://github.com/cathydutton/postcss-maze" title="Maze source code on Github">View the source code for maze on Github</a></p>
-	</section>
+		<p><a href="http://cathydutton.github.io/postcss-maze/" title="Demo of Maze PostCSS grid">View a demo of Maze</a></p>
+		<p><a href="https://github.com/cathydutton/postcss-maze" title="Maze source code on Github">View the source code for maze on Github</a></p>
+</section>
 
 <section>
 		<h2>Installation</h2>
@@ -366,11 +362,11 @@ gulp.task('css', function () {
           <a href="../blog.html" class="footer-links__anchor" title="View blog page" >Blog</a>
           
       </li>
-      <li class="footer-links__item">
+      <!-- <li class="footer-links__item">
         
           <a href="../portfolio.html" title="View blog page" class="footer-links__anchor"><span class="navagation-text">Portfolio</span></a>
           
-      </li>
+      </li> -->
       <li class="footer-links__item">
         
         <a href="../maze.html" aria-describedby="current" class="footer-links__anchor active" title="Maze - PostCSS responsive grid">PostCSS Maze</a>
@@ -417,7 +413,7 @@ gulp.task('css', function () {
 <!-- End Wrapper -->
 </div>
 <!-- Script includes -->
-<script src="assets/js/main-@@cacheBust.min.js"></script>
+<!-- <script src="../assets/js/main-@@cacheBust.min.js"></script> -->
 
 <script>
 (function() { // DON'T EDIT BELOW THIS LINE
