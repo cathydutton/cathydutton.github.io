@@ -12,9 +12,9 @@
 .sidebar {
 
   @include mq(break-tablet) {
-    position: fixed;
     top: 0;
     bottom: 0;
+    float: left;
     width: 270px;
     margin-bottom: -4000px;
     padding-bottom: 4000px;
@@ -28,7 +28,6 @@
   padding: 2%;
   @include mq(break-tablet) {
     margin-left: 300px;
-    float: left;
     height: 100%;
   }
 

@@ -20,7 +20,7 @@ https://github.com/cathydutton
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>A Dynamic Gradient Text Function in Sass</title>
+		<title>Pop jQuery tooltip demo</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="Front End Developer, UX, CSS, Sass, PostCSS, JavaScript">
 		<meta name="author" content="Cathy Dutton - www.cathydutton.co.uk" />
@@ -37,11 +37,11 @@ https://github.com/cathydutton
 
 		<!-- Prerender work page -->
 		<link rel="prerender" href="http://cathydutton.co.uk/portfolio.html">
-		<link rel="canonical" href="http://cathydutton.co.uk/a-dynamic-gradient-text-function-in-sass.html">
+		<link rel="canonical" href="http://cathydutton.co.uk/posts/pop-jquery-tooltip-demo.html">
 
 		<!-- inject:css -->
 		<!-- endinject -->
-		<script>
+		<!-- <script>
 		    /*!
 		    loadCSS: load a CSS file asynchronously.
 		    [c]2014 @scottjehl, Filament Group, Inc.
@@ -77,9 +77,9 @@ https://github.com/cathydutton
 
 		<script>
     		loadCSS( "assets/css/main-@@cacheBust.min.css" );
-		</script>
+		</script> -->
 
-		<!-- <link rel="stylesheet" href="assets/css/main-20170201.min.css"> -->
+		<link rel="stylesheet" href="../assets/css/main-20170207.min.css">
 
 
 
@@ -100,13 +100,13 @@ https://github.com/cathydutton
 
 	</head>
 	<body>
-		<div class="wrapper">
+		<div class="wrapper" id="current">
 
 		<a href="#main">skip to main content</a>
 
   <aside class="sidebar">
     <div class="profile-image">
-      <img src="assets/img/profile-image.jpg" class="profile-image__img" width="160" height="160" alt="Profile picture - Cathy Dutton" />
+      <img src="../assets/img/profile-image.jpg" class="profile-image__img" width="160" height="160" alt="Profile picture - Cathy Dutton" />
     </div>
     <p class="profile-description">Front end developer &amp; UX designer, CSS enthusiast, avid list writer and PostCSS fan.</p>
     <ul class="find-me">
@@ -147,22 +147,27 @@ https://github.com/cathydutton
     <ul class="sidebar__list">
           
           <li class="sidebar__item">
-            <a href="index.html"  title="Go home" class="sidebar__anchor"><span class="navagation-text">Home</span></a>
+            <a href="../index.html"  title="Go home" class="sidebar__anchor"><span class="navagation-text">Home</span></a>
           </li>
           
           
           <li class="sidebar__item">
-           <a href="work-history.html" title="View work history page" class="sidebar__anchor"><span class="navagation-text">Work history</span></a>
+           <a href="../work-history.html" title="View work history page" class="sidebar__anchor"><span class="navagation-text">Work history</span></a>
          </li>
           
           
           <li class="sidebar__item">
-           <a href="blog.html" title="View blog page" class="sidebar__anchor"><span class="navagation-text">Blog</span></a>
+           <a href="../blog.html" title="View blog page" class="sidebar__anchor"><span class="navagation-text">Blog</span></a>
          </li>
           
           
           <li class="sidebar__item">
-           <a href="maze.html" title="Maze - PostCSS responsive grid" class="sidebar__anchor"><span class="navagation-text">PostCSS Maze</span></a>
+           <a href="../portfolio.html" title="View blog page" class="sidebar__anchor"><span class="navagation-text">Portfolio</span></a>
+         </li>
+          
+          
+          <li class="sidebar__item">
+           <a href="../maze.html" title="Maze - PostCSS responsive grid" class="sidebar__anchor"><span class="navagation-text">PostCSS Maze</span></a>
          </li>
           
       </ul>
@@ -171,25 +176,287 @@ https://github.com/cathydutton
 <div class="content">
 <main id="main">
 <header role="banner" class="header">
-  <h1 class="heading heading__intro">Sitepoint</h1>
-  <p class="heading heading--primary">27 Mar 2015</p>
+  <h1 class="heading heading__intro">Pop jQuery tooltip demo</h1>
+  <p class="heading heading--primary">16 Apr 2014</p>
 </header>
 
 
+  <p>Pop is a simple to use, responsive jQuery tooltip with css animations. The jQuery is written below and includes a click function as well a hover to support desktop and touch screen devices.</p>
+
+<p><a href="http://www.cathydutton.co.uk/pop/" target="_blank" class="button">View demo</a></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$(document).ready(function () {
+
+  $(".button").mouseenter(function () {
+  $(this).prev("div").fadeIn("slow");
+  })
+
+  .click(function () {                 // tablet friendly
+  $(this).prev("div").fadeIn("slow");
+  })
+
+  .mouseout(function () {
+  $(this).prev("div").fadeOut("slow");
+  });
+
+  $(".tooltip").click(function () {    // tablet friendly
+  $(this).fadeOut("slow");
+  });
+
+});
+</code></pre>
+</div>
+
+<p>The HTML used in the example is also pasted below</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&amp;lt;div class="wrapper"&amp;gt;
+  &amp;lt;h1&amp;gt;Pop&amp;lt;/h1&amp;gt;
+  &amp;lt;h2&amp;gt;A simple jQuery and css3 tooltip example&amp;lt;/h2&amp;gt;
+  &amp;lt;p&amp;gt;Hover over one of the 3 boxes below to view the tooltip.&amp;lt;/p&amp;gt;
+  &amp;lt;div class="container"&amp;gt;
+    &amp;lt;div class="inner-wrap"&amp;gt;
+      &amp;lt;div class="tooltip"&amp;gt;Pop Out Text One&amp;lt;/div&amp;gt;
+      &amp;lt;div class="button"&amp;gt;One&amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class="inner-wrap"&amp;gt;
+      &amp;lt;div class="tooltip"&amp;gt;Pop Out Text Two&amp;lt;/div&amp;gt;
+      &amp;lt;div class="button"&amp;gt;Two&amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class="inner-wrap"&amp;gt;
+      &amp;lt;div class="tooltip"&amp;gt;Pop Out Text Three&amp;lt;/div&amp;gt;
+      &amp;lt;div class="button"&amp;gt;Three&amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+</code></pre>
+</div>
+
+<p>A <a href="http://www.cathydutton.co.uk/pop/" target="_blank">Demo</a> of the tooltip is available <a href="http://www.cathydutton.co.uk/pop/" target="_blank">here</a> and can be downloaded from <a href="https://github.com/cathydutton/Pop" target="_blank">GitHub</a> or viewed on <a href="http://codepen.io/cathydutton/pen/yctrI" target="_blank">CodPen</a>.</p>
+
+<p>The sass used in the example is written below…</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>/* Variabes */  
+$orange: #ffa600;
+$grey:#f3f3f3;
+$white: #fff;
+$base-color:$orange ;
+
+
+/* Mixin */
+@mixin clear {
+overflow: hidden;
+position: relative;
+}
+ @mixin box-size {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+*behavior: url(boxsizing.htc);
+}
+ @mixin transition {
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+@mixin fade {
+-moz-transition: all 1s ease-in;
+-moz-transition:all 0.3s ease-in-out;
+-webkit-transition:all 0.3s ease-in-out;
+}
+@mixin opacity {
+opacity:0.4;
+filter:alpha(opacity=40);
+include: fade;
+}
+@mixin corners ($radius) {
+-moz-border-radius: $radius;
+-webkit-border-radius: $radius;
+border-radius: $radius;
+-khtml-border-radius: $radius;
+}
+
+/* Grid  */
+
+/* Media Queries    */
+$break-large: 767px;
+$break-small: 480px;
+
+
+@mixin break($media, $width) {
+	@if $media == tablet {
+	@media only screen and (max-width: $break-large) {
+	width:$width - $gutter;
+	margin-left:0;
+	margin: $gutter / 2;
+	}
+}
+	@else if $media == mobile {
+	@media only screen and (max-width: $break-small) {
+	width:$width - $gutter;
+	margin: $gutter / 2;
+	}
+}
+
+}
+
+
+$grid-columns: 12;
+$unit: (100%  / $grid-columns) ;
+$gutter: 2%;
+$push: 0 !default;
+$gutter2: 0;
+
+@mixin grid($col, $push) {
+float: left;
+width: (($unit * $col) - $gutter ) + ( $gutter / ( $grid-columns / $col) ) ;
+padding:20px;
+@include box-size;
+@include transition;
+margin-right: $gutter;
+	@if $push &amp;gt; 1 {
+	margin-left:(($unit * $push) ) + ( $gutter / ( $grid-columns / $push) );
+	}
+	&amp;:last-child {
+	margin-right:0;
+
+	}
+}
+
+
+/* Main Layout Blocks */
+.wrapper {
+@include clear;
+max-width: 1000px;
+margin: 30px auto;
+}
+.container {
+@include clear;
+width: 100%;
+margin: 10px 0;
+}
+.inner-wrap {
+	@include clear;
+@include grid(4,  0);
+@include break(mobile, 100%);
+}
+
+.link{
+@include grid(6,  0);
+@include break(mobile, 100%);
+}
+
+
+
+body {
+background:$base-color;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+text-align:center;
+color:$white;
+height:100%;
+@include transition;
+}
+
+%headers {
+font-family: &amp;#039;Roboto&amp;#039;, sans-serif;
+font-weight: 100;
+text-transform: uppercase;
+padding:0;
+margin:0;
+}
+
+
+
+h2 {
+@extend %headers;
+font-size: 1.2em;
+margin-bottom:10px
+}
+
+.inner-wrap{
+position:relative;
+}
+
+.tooltip{
+display:none;
+position:absolute;
+top: 0;
+width:90%;
+background:$white;
+border: solid 1px $white;
+color:$orange;
+padding:20px 10px;
+@include corners(5px);
+@include box-size;
+
+
+}
+
+.tooltip:after
+{
+content: &amp;#039;&amp;#039;;
+position: absolute;
+border-style: solid;
+border-width: 15px 15px 0;
+border-color: #FFFFFF transparent;
+display: block;
+width: 0;
+z-index: 1;
+bottom: -15px;
+left: 45%;
+}
+
+%buttons{
+@include corners(5px);
+position:relative;
+bottom:0;
+text-decoration:none;
+cursor:pointer;
+font-size:1.2em;
+margin-top:100px;
+padding:20px 10px;
+&amp;:hover{
+	@include fade;
+	background:$orange;
+	border: solid 1px $white;
+	color:$white;
+	}
+}
+
+
+.button{
+@extend %buttons;
+background:$orange;
+color:$white;
+border: solid 1px $white;
+}
+
+.link{
+@extend %buttons;
+background:$white;
+color:$orange;
+border: solid 1px $orange;
+}
+</code></pre>
+</div>
+
+
 <section>
-  <article class="news-feed__post">
-      <a href="http://www.sitepoint.com/dynamic-gradient-text-function-sass/" title="" target="_blank" class="news-feed__anchor">
-          <h3 class="heading news-feed__title">A Dynamic Gradient Text Function in Sass</h3>
-          <p class="news-feed__date">Visit site</p>
-      </a>
-  </article>
+  <div class="share-page">
+    <h3>Share this post</h3>
+    <p>Share this on this post on Twitter, Facebook or Google</p>
+    <a href="https://twitter.com/intent/tweet?text=Pop jQuery tooltip demo&url=http://cathydutton.co.uk/posts/pop-jquery-tooltip-demo.html&via=cathy_dutton&related=cathy_dutton" rel="external" role="button" target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=http://cathydutton.co.uk/posts/pop-jquery-tooltip-demo.html" class="share-page__anchor share-page__facebook" rel="external" role="button" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
+    <a href="https://plus.google.com/share?url=http://cathydutton.co.uk/posts/pop-jquery-tooltip-demo.html" class="share-page__anchor share-page__google" rel="external" role="button" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
+</div>
+
 </section>
 
- <section>
- <ul class="page-navigation">
+<section>
+  <ul class="page-navigation">
   
   <li class="button--page-navigation__prev">
-    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="8-tips-to-get-the-best-out-of-sass.html">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="posts/css-naming-conventions.html">
       <!-- <span class="visually-hidden">Go to the previous post</span> -->
       <svg class="button--page-navigation__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
@@ -200,7 +467,7 @@ https://github.com/cathydutton
   
   
   <li class="button--page-navigation__next">
-    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="surviving-css.html">
+    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="posts/maze-responsive-grid-framework.html">
       <!-- <span class="visually-hidden">Go to the next post</span> -->
       <span class="page-navigation-title">Go to the next post</span>
       <svg class="button--page-navigation__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
@@ -211,36 +478,38 @@ https://github.com/cathydutton
   
 </ul>
 
- </section>
+</section>
 
- </main>
-
- <!-- <section>
-   <div id="disqus_thread"></div>
- </section> -->
-
+<section>
+  <div id="disqus_thread"></div>
+</section>
+</main>
 
 <footer class="footer">
   	<ul class="footer-links">
   		<li class="footer-links__item">
         
-          <a href="index.html" class="footer-links__anchor" title="Back to the home page" >Home</a>
+          <a href="../index.html" class="footer-links__anchor" title="Back to the home page" >Home</a>
           
       </li>
   		<li class="footer-links__item">
         
-          <a href="work-history.html" class="footer-links__anchor" title="View work history page" >Work history</a>
+          <a href="../work-history.html" class="footer-links__anchor" title="View work history page" >Work history</a>
           
       </li>
   		<li class="footer-links__item">
           
-          <a href="blog.html" class="footer-links__anchor" title="View blog page" >Blog</a>
+          <a href="../blog.html" class="footer-links__anchor" title="View blog page" >Blog</a>
           
       </li>
-  		<!-- <li class="footer-links__item"><a href="portfolio.html" class="footer-links__anchor" title="View portfolio page">Portfolio</a></li> -->
-  		<li class="footer-links__item">
+      <li class="footer-links__item">
         
-          <a href="maze.html" class="footer-links__anchor" title="Maze - PostCSS responsive grid">PostCSS Maze</a>
+          <a href="../portfolio.html" title="View blog page" class="footer-links__anchor"><span class="navagation-text">Portfolio</span></a>
+          
+      </li>
+      <li class="footer-links__item">
+        
+          <a href="../maze.html" class="footer-links__anchor" title="Maze - PostCSS responsive grid">PostCSS Maze</a>
           
       </li>
   	</ul>

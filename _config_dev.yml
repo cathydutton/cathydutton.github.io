@@ -22,12 +22,16 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-permalink: :title.html
+permalink: permalink: /posts/:title.html
 
 # Plugins
 gems:
   - jekyll-sitemap
 
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:title.html
 
 
 

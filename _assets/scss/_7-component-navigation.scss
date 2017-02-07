@@ -3,7 +3,6 @@ Navigation
 ----------------------------------- */
 
 .sidebar {
-  padding: 20px 15px;
   background: map-get($colours, 'grey-dark');
   border-bottom: solid 3px map-get($colours, 'accent');
   margin-bottom: 10px;
@@ -76,7 +75,7 @@ Navigation
       // background: lighten(map-get($colours, 'grey-dark'), 15%);
 
       .navagation-text {
-        border-bottom: solid 1px map-get($colours, 'accent');
+        border-bottom: solid 4px map-get($colours, 'accent');
       }
 
     }

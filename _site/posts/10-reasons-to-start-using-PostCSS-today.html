@@ -20,7 +20,7 @@ https://github.com/cathydutton
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Pop jQuery tooltip demo</title>
+		<title>7 reasons to start using PostCSS today</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="Front End Developer, UX, CSS, Sass, PostCSS, JavaScript">
 		<meta name="author" content="Cathy Dutton - www.cathydutton.co.uk" />
@@ -37,11 +37,11 @@ https://github.com/cathydutton
 
 		<!-- Prerender work page -->
 		<link rel="prerender" href="http://cathydutton.co.uk/portfolio.html">
-		<link rel="canonical" href="http://cathydutton.co.uk/pop-jquery-tooltip-demo.html">
+		<link rel="canonical" href="http://cathydutton.co.uk/posts/10-reasons-to-start-using-PostCSS-today.html">
 
 		<!-- inject:css -->
 		<!-- endinject -->
-		<script>
+		<!-- <script>
 		    /*!
 		    loadCSS: load a CSS file asynchronously.
 		    [c]2014 @scottjehl, Filament Group, Inc.
@@ -77,9 +77,9 @@ https://github.com/cathydutton
 
 		<script>
     		loadCSS( "assets/css/main-@@cacheBust.min.css" );
-		</script>
+		</script> -->
 
-		<!-- <link rel="stylesheet" href="assets/css/main-20170201.min.css"> -->
+		<link rel="stylesheet" href="../assets/css/main-20170207.min.css">
 
 
 
@@ -100,13 +100,13 @@ https://github.com/cathydutton
 
 	</head>
 	<body>
-		<div class="wrapper">
+		<div class="wrapper" id="current">
 
 		<a href="#main">skip to main content</a>
 
   <aside class="sidebar">
     <div class="profile-image">
-      <img src="assets/img/profile-image.jpg" class="profile-image__img" width="160" height="160" alt="Profile picture - Cathy Dutton" />
+      <img src="../assets/img/profile-image.jpg" class="profile-image__img" width="160" height="160" alt="Profile picture - Cathy Dutton" />
     </div>
     <p class="profile-description">Front end developer &amp; UX designer, CSS enthusiast, avid list writer and PostCSS fan.</p>
     <ul class="find-me">
@@ -147,22 +147,27 @@ https://github.com/cathydutton
     <ul class="sidebar__list">
           
           <li class="sidebar__item">
-            <a href="index.html"  title="Go home" class="sidebar__anchor"><span class="navagation-text">Home</span></a>
+            <a href="../index.html"  title="Go home" class="sidebar__anchor"><span class="navagation-text">Home</span></a>
           </li>
           
           
           <li class="sidebar__item">
-           <a href="work-history.html" title="View work history page" class="sidebar__anchor"><span class="navagation-text">Work history</span></a>
+           <a href="../work-history.html" title="View work history page" class="sidebar__anchor"><span class="navagation-text">Work history</span></a>
          </li>
           
           
           <li class="sidebar__item">
-           <a href="blog.html" title="View blog page" class="sidebar__anchor"><span class="navagation-text">Blog</span></a>
+           <a href="../blog.html" title="View blog page" class="sidebar__anchor"><span class="navagation-text">Blog</span></a>
          </li>
           
           
           <li class="sidebar__item">
-           <a href="maze.html" title="Maze - PostCSS responsive grid" class="sidebar__anchor"><span class="navagation-text">PostCSS Maze</span></a>
+           <a href="../portfolio.html" title="View blog page" class="sidebar__anchor"><span class="navagation-text">Portfolio</span></a>
+         </li>
+          
+          
+          <li class="sidebar__item">
+           <a href="../maze.html" title="Maze - PostCSS responsive grid" class="sidebar__anchor"><span class="navagation-text">PostCSS Maze</span></a>
          </li>
           
       </ul>
@@ -171,278 +176,151 @@ https://github.com/cathydutton
 <div class="content">
 <main id="main">
 <header role="banner" class="header">
-  <h1 class="heading heading__intro">Pop jQuery tooltip demo</h1>
-  <p class="heading heading--primary">16 Apr 2014</p>
+  <h1 class="heading heading__intro">7 reasons to start using PostCSS today</h1>
+  <p class="heading heading--primary">23 Feb 2016</p>
 </header>
 
 
-  <p>Pop is a simple to use, responsive jQuery tooltip with css animations. The jQuery is written below and includes a click function as well a hover to support desktop and touch screen devices.</p>
+  <p>PostCSS makes it possible to transform or extend syntaxes and features of CSS. Nothing groundbreaking there then, but unlike existing pre-processors PostCSS aims to improve the usability of CSS by solving long standing issues with CSS at scale such as global scope and inheritance.</p>
 
-<p><a href="http://www.cathydutton.co.uk/pop/" target="_blank" class="button">View demo</a></p>
+<p>PostCSS is not an all or nothing tool, plugins can be added to what is an otherwise clean slate allowing developers to take much greater control over the features used and the resulting CSS.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>$(document).ready(function () {
+<p>Below are just a few of the reasons to start using PostCSS today…</p>
 
-  $(".button").mouseenter(function () {
-  $(this).prev("div").fadeIn("slow");
-  })
+<h3 id="simple-set-up">1) Simple set up</h3>
 
-  .click(function () {                 // tablet friendly
-  $(this).prev("div").fadeIn("slow");
-  })
+<p>Adding PostCSS to your workflow is probably a lot easier then you think, particularly if you are already using a task runner and/or pre-processor. PostCSS is written in JavaScript and integrates seamlessly with task runners like Gulp and Grunt.</p>
 
-  .mouseout(function () {
-  $(this).prev("div").fadeOut("slow");
-  });
+<div class="highlighter-rouge"><pre class="highlight"><code>var gulp = require('gulp');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
 
-  $(".tooltip").click(function () {    // tablet friendly
-  $(this).fadeOut("slow");
-  });
-
+gulp.task('css', function () {
+	var processors = [
+  autoprefixer,
+];
+  return gulp.src('./src/*.css')
+    .pipe(postcss(processors))
+    .pipe(gulp.dest('./dest'));
 });
 </code></pre>
 </div>
 
-<p>The HTML used in the example is also pasted below</p>
+<p>There is also a CLI version of PostCSS for those who don’t wish to use a task runner. By installing postcss-cli CSS can be compiled with the following command…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&amp;lt;div class="wrapper"&amp;gt;
-  &amp;lt;h1&amp;gt;Pop&amp;lt;/h1&amp;gt;
-  &amp;lt;h2&amp;gt;A simple jQuery and css3 tooltip example&amp;lt;/h2&amp;gt;
-  &amp;lt;p&amp;gt;Hover over one of the 3 boxes below to view the tooltip.&amp;lt;/p&amp;gt;
-  &amp;lt;div class="container"&amp;gt;
-    &amp;lt;div class="inner-wrap"&amp;gt;
-      &amp;lt;div class="tooltip"&amp;gt;Pop Out Text One&amp;lt;/div&amp;gt;
-      &amp;lt;div class="button"&amp;gt;One&amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-    &amp;lt;div class="inner-wrap"&amp;gt;
-      &amp;lt;div class="tooltip"&amp;gt;Pop Out Text Two&amp;lt;/div&amp;gt;
-      &amp;lt;div class="button"&amp;gt;Two&amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-    &amp;lt;div class="inner-wrap"&amp;gt;
-      &amp;lt;div class="tooltip"&amp;gt;Pop Out Text Three&amp;lt;/div&amp;gt;
-      &amp;lt;div class="button"&amp;gt;Three&amp;lt;/div&amp;gt;
-    &amp;lt;/div&amp;gt;
-  &amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-
+<div class="highlighter-rouge"><pre class="highlight"><code>postcss -c config.json -o result.css input.css
 </code></pre>
 </div>
 
-<p>A <a href="http://www.cathydutton.co.uk/pop/" target="_blank">Demo</a> of the tooltip is available <a href="http://www.cathydutton.co.uk/pop/" target="_blank">here</a> and can be downloaded from <a href="https://github.com/cathydutton/Pop" target="_blank">GitHub</a> or viewed on <a href="http://codepen.io/cathydutton/pen/yctrI" target="_blank">CodPen</a>.</p>
+<p>Compile tools like Prepros also offer support for some of PostCSS’s most popular plugins. Interfaces like this however would not be suitable for custom plugins.</p>
 
-<p>The sass used in the example is written below…</p>
+<p>Further reading on installation can be found on the PostCSS <a href="https://github.com/postcss/postcss">Github page</a></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>/* Variabes */  
-$orange: #ffa600;
-$grey:#f3f3f3;
-$white: #fff;
-$base-color:$orange ;
+<h3 id="integration-with-current-pre-processors">2) Integration with current pre-processors</h3>
 
+<p>You probably already have a workflow set up that you’re happy with, whether your using Sass, Less or any other CSS tool, to stop and migrate to a new processor would be time consuming.</p>
 
-/* Mixin */
-@mixin clear {
-overflow: hidden;
-position: relative;
-}
- @mixin box-size {
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-*behavior: url(boxsizing.htc);
-}
- @mixin transition {
--webkit-transition: all 0.3s ease-in-out;
--moz-transition: all 0.3s ease-in-out;
-transition: all 0.3s ease-in-out;
-}
-@mixin fade {
--moz-transition: all 1s ease-in;
--moz-transition:all 0.3s ease-in-out;
--webkit-transition:all 0.3s ease-in-out;
-}
-@mixin opacity {
-opacity:0.4;
-filter:alpha(opacity=40);
-include: fade;
-}
-@mixin corners ($radius) {
--moz-border-radius: $radius;
--webkit-border-radius: $radius;
-border-radius: $radius;
--khtml-border-radius: $radius;
-}
+<p>The good news is you don’t have to abandon you’re current set up, or all the functions and Mixins you have already written. PostCSS can be added to your build process alongside a pre-prosesor not just instead of one.</p>
 
-/* Grid  */
+<p>This allows for a much simpler transition without the need to make wholesale changes to a codebase. Existing functionality can be migrated to PostCSS over time, if at all.</p>
 
-/* Media Queries    */
-$break-large: 767px;
-$break-small: 480px;
+<h3 id="take-only-what-you-need">3) Take only what you need</h3>
 
+<p>As most developers have now found out some of the functions available in pre-processors can have a negative impact on CSS performance.</p>
 
-@mixin break($media, $width) {
-	@if $media == tablet {
-	@media only screen and (max-width: $break-large) {
-	width:$width - $gutter;
-	margin-left:0;
-	margin: $gutter / 2;
-	}
-}
-	@else if $media == mobile {
-	@media only screen and (max-width: $break-small) {
-	width:$width - $gutter;
-	margin: $gutter / 2;
-	}
-}
+<p>Unlike existing pre processors such as Sass, Less and Stylus with PostCSS you have full control over which features are enabled. This unique approach gives developers full control over the codebase and limits the potential for creating bloated or badly written CSS.</p>
 
-}
+<p>This is hugely beneficial when it comes to maintaining large projects and safeguarding the output CSS code.</p>
 
+<h3 id="accessibility-helpers">4) Accessibility helpers</h3>
 
-$grid-columns: 12;
-$unit: (100%  / $grid-columns) ;
-$gutter: 2%;
-$push: 0 !default;
-$gutter2: 0;
+<p>We are all guilty of missing the occasional focus selector here and there, or of putting of repetitive CSS tasks in favor of the more creative ones. Fortunately there are PostCSS plugins that can take care of repetitive tasks and accessibility checks like this for us.</p>
 
-@mixin grid($col, $push) {
-float: left;
-width: (($unit * $col) - $gutter ) + ( $gutter / ( $grid-columns / $col) ) ;
-padding:20px;
-@include box-size;
-@include transition;
-margin-right: $gutter;
-	@if $push &amp;gt; 1 {
-	margin-left:(($unit * $push) ) + ( $gutter / ( $grid-columns / $push) );
-	}
-	&amp;:last-child {
-	margin-right:0;
+<p><a href="https://github.com/postcss/postcss-focus">postcss-focus</a> checks the CSS for instances of :hover and automatically adds the :focus selector alongside.</p>
 
-	}
-}
+<p><a href="https://github.com/btholt/postcss-colorblind">postcss-colorblind</a> will check all instances of colour in your stylesheet and then highlight potential issues for users with any of the following conditions…</p>
 
+<ul>
+  <li>protanomaly</li>
+  <li>protanopia</li>
+  <li>deuteranomaly</li>
+  <li>deuteranopia</li>
+  <li>tritanomaly</li>
+  <li>tritanopia</li>
+  <li>achromatomaly</li>
+  <li>achromatopsia</li>
+</ul>
 
-/* Main Layout Blocks */
-.wrapper {
-@include clear;
-max-width: 1000px;
-margin: 30px auto;
-}
-.container {
-@include clear;
-width: 100%;
-margin: 10px 0;
-}
-.inner-wrap {
-	@include clear;
-@include grid(4,  0);
-@include break(mobile, 100%);
-}
+<h3 id="the-future-today">5) The Future, today</h3>
 
-.link{
-@include grid(6,  0);
-@include break(mobile, 100%);
-}
+<p>PostCSS is a forward thinking tool. Plugins like <a href="http://cssnext.io/">cssnext</a> allow developers to use the latest CSS syntax and features straight away without compatibility issues. Fallbacks for older browsers are added automatically by the plugin.</p>
 
+<p>Aside from the syntax plugins, browser prefixes and polyfills PostCSS also provides opportunities to improve the way we use CSS and attempt to fix some fundamental flaws in the CSS language. A few popular plugins are listed below…</p>
 
+<ul>
+  <li>
+    <p><a href="https://github.com/css-modules/postcss-modules-scope">postcss-modules</a> - Isolates selectors in components, creating local scope in CSS.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/ausi/cq-prolyfill">cq-prolyfill</a> - Adds component queries to allow elements to be styled based on their dimensions instead of the viewport dimensions.</p>
+  </li>
+  <li>
+    <p><a href="https://www.npmjs.com/package/postcss-autoreset">postcss-autoreset</a> - Uses local resets instead of global one.</p>
+  </li>
+</ul>
 
-body {
-background:$base-color;
-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-text-align:center;
-color:$white;
-height:100%;
-@include transition;
-}
+<p>With plugins like these concepts like element queries and localised CSS become a reality. This opens up the  possibility to create stand alone web components in line with design components. Each component can be added without the need for complex naming conventions to prevent unwanted inheritance.</p>
 
-%headers {
-font-family: &amp;#039;Roboto&amp;#039;, sans-serif;
-font-weight: 100;
-text-transform: uppercase;
-padding:0;
-margin:0;
-}
+<h3 id="get-creative">6) Get creative</h3>
 
+<p>If you have a specific need or requirement that is not currently being catered for you can always build your own PostCSS plugin. Built in JavaScript PostCSS is an accessible tool for Front End Developers easy to contribute to in the form of custom plugins.</p>
 
+<p>Each project can be custolmised to create the optimum workflow with no limitations or boundaries set by language choices. There is plenty of helpful documentation to get you started with this…</p>
 
-h2 {
-@extend %headers;
-font-size: 1.2em;
-margin-bottom:10px
-}
+<ul>
+  <li><a href="https://github.com/postcss/postcss/blob/master/docs/api.md">PostCSS API</a></li>
+  <li><a href="https://github.com/postcss/postcss-plugin-boilerplate">PostCSS plugin boilerplate</a></li>
+</ul>
 
-.inner-wrap{
-position:relative;
-}
+<h3 id="performance">7) Performance</h3>
 
-.tooltip{
-display:none;
-position:absolute;
-top: 0;
-width:90%;
-background:$white;
-border: solid 1px $white;
-color:$orange;
-padding:20px 10px;
-@include corners(5px);
-@include box-size;
+<p>Because PostCSS is built in Javascript it runs much faster then Sass and less, especially if you’re yet to upgrade to libsass. As well as improvements in compile times PostCSS also has plugins to help you write more performant CSS.</p>
 
+<p><a href="https://github.com/hail2u/node-css-mqpacker">CSS MQPacker</a> combines CSS media queries to reduce code and optimise the CSS.</p>
 
-}
+<p><a href="https://github.com/ben-eb/postcss-zindex">postcss-zindex</a> reduces z-index values throughout a stylesheet without effecting the layouts intended order.</p>
 
-.tooltip:after
-{
-content: &amp;#039;&amp;#039;;
-position: absolute;
-border-style: solid;
-border-width: 15px 15px 0;
-border-color: #FFFFFF transparent;
-display: block;
-width: 0;
-z-index: 1;
-bottom: -15px;
-left: 45%;
-}
+<p><a href="https://github.com/ben-eb/cssnano">cssnano</a> is more like an umbrella plugin and includes a selection of optimisation tools including…</p>
 
-%buttons{
-@include corners(5px);
-position:relative;
-bottom:0;
-text-decoration:none;
-cursor:pointer;
-font-size:1.2em;
-margin-top:100px;
-padding:20px 10px;
-&amp;:hover{
-	@include fade;
-	background:$orange;
-	border: solid 1px $white;
-	color:$white;
-	}
-}
+<ul>
+  <li>Comment removal</li>
+  <li>Stripping whitespace</li>
+  <li>Minify selectors</li>
+  <li>Remove duplicate rules</li>
+</ul>
 
+<h3 id="summing-up">Summing up</h3>
 
-.button{
-@extend %buttons;
-background:$orange;
-color:$white;
-border: solid 1px $white;
-}
+<p>In summery PostCSS is more performant, less risky and easier to develop, customise and extend. Above all to start using PostCSS today you do not need to abandon your current code base or pre-processor. Starting small and adding just one or two plugins to an existing site will still have measurable benefits. PostCSS will work alongside any mixins, functions and variables already in place and open up new possibilities.</p>
 
-.link{
-@extend %buttons;
-background:$white;
-color:$orange;
-border: solid 1px $orange;
-}
-</code></pre>
-</div>
+<h3 id="further-reading">Further reading</h3>
+
+<ul>
+  <li><a href="https://github.com/postcss/postcss">PostCSS</a></li>
+  <li><a href="http://davidtheclark.com/its-time-for-everyone-to-learn-about-postcss/">It’s Time for Everyone to Learn About PostCSS</a></li>
+  <li><a href="http://www.sitepoint.com/build-css-preprocessor-postcss/">How to Build Your Own CSS Preprocessor With PostCSS</a></li>
+  <li><a href="https://benfrain.com/breaking-up-with-sass-postcss/">Breaking up with Sass</a></li>
+  <li><a href="https://www.npmjs.com/package/postcss-cli">PostCSS CLI</a></li>
+</ul>
 
 
 <section>
   <div class="share-page">
     <h3>Share this post</h3>
     <p>Share this on this post on Twitter, Facebook or Google</p>
-    <a href="https://twitter.com/intent/tweet?text=Pop jQuery tooltip demo&url=http://cathydutton.co.uk/pop-jquery-tooltip-demo.html&via=cathy_dutton&related=cathy_dutton" rel="external" target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=http://cathydutton.co.uk/pop-jquery-tooltip-demo.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
-    <a href="https://plus.google.com/share?url=http://cathydutton.co.uk/pop-jquery-tooltip-demo.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
+    <a href="https://twitter.com/intent/tweet?text=7 reasons to start using PostCSS today&url=http://cathydutton.co.uk/posts/10-reasons-to-start-using-PostCSS-today.html&via=cathy_dutton&related=cathy_dutton" rel="external" role="button" target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=http://cathydutton.co.uk/posts/10-reasons-to-start-using-PostCSS-today.html" class="share-page__anchor share-page__facebook" rel="external" role="button" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
+    <a href="https://plus.google.com/share?url=http://cathydutton.co.uk/posts/10-reasons-to-start-using-PostCSS-today.html" class="share-page__anchor share-page__google" rel="external" role="button" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
 </div>
 
 </section>
@@ -451,7 +329,7 @@ border: solid 1px $orange;
   <ul class="page-navigation">
   
   <li class="button--page-navigation__prev">
-    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="css-naming-conventions.html">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="posts/css-layers.html">
       <!-- <span class="visually-hidden">Go to the previous post</span> -->
       <svg class="button--page-navigation__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
@@ -462,7 +340,7 @@ border: solid 1px $orange;
   
   
   <li class="button--page-navigation__next">
-    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="maze-responsive-grid-framework.html">
+    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="posts/an-introduction-to-postcss.html">
       <!-- <span class="visually-hidden">Go to the next post</span> -->
       <span class="page-navigation-title">Go to the next post</span>
       <svg class="button--page-navigation__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
@@ -484,23 +362,27 @@ border: solid 1px $orange;
   	<ul class="footer-links">
   		<li class="footer-links__item">
         
-          <a href="index.html" class="footer-links__anchor" title="Back to the home page" >Home</a>
+          <a href="../index.html" class="footer-links__anchor" title="Back to the home page" >Home</a>
           
       </li>
   		<li class="footer-links__item">
         
-          <a href="work-history.html" class="footer-links__anchor" title="View work history page" >Work history</a>
+          <a href="../work-history.html" class="footer-links__anchor" title="View work history page" >Work history</a>
           
       </li>
   		<li class="footer-links__item">
           
-          <a href="blog.html" class="footer-links__anchor" title="View blog page" >Blog</a>
+          <a href="../blog.html" class="footer-links__anchor" title="View blog page" >Blog</a>
           
       </li>
-  		<!-- <li class="footer-links__item"><a href="portfolio.html" class="footer-links__anchor" title="View portfolio page">Portfolio</a></li> -->
-  		<li class="footer-links__item">
+      <li class="footer-links__item">
         
-          <a href="maze.html" class="footer-links__anchor" title="Maze - PostCSS responsive grid">PostCSS Maze</a>
+          <a href="../portfolio.html" title="View blog page" class="footer-links__anchor"><span class="navagation-text">Portfolio</span></a>
+          
+      </li>
+      <li class="footer-links__item">
+        
+          <a href="../maze.html" class="footer-links__anchor" title="Maze - PostCSS responsive grid">PostCSS Maze</a>
           
       </li>
   	</ul>

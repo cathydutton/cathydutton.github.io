@@ -20,7 +20,7 @@ https://github.com/cathydutton
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Say no to nesting</title>
+		<title>Maze Re-factored</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="Front End Developer, UX, CSS, Sass, PostCSS, JavaScript">
 		<meta name="author" content="Cathy Dutton - www.cathydutton.co.uk" />
@@ -37,11 +37,11 @@ https://github.com/cathydutton
 
 		<!-- Prerender work page -->
 		<link rel="prerender" href="http://cathydutton.co.uk/portfolio.html">
-		<link rel="canonical" href="http://cathydutton.co.uk/nesting-in-sass.html">
+		<link rel="canonical" href="http://cathydutton.co.uk/posts/maze-re-factored.html">
 
 		<!-- inject:css -->
 		<!-- endinject -->
-		<script>
+		<!-- <script>
 		    /*!
 		    loadCSS: load a CSS file asynchronously.
 		    [c]2014 @scottjehl, Filament Group, Inc.
@@ -77,9 +77,9 @@ https://github.com/cathydutton
 
 		<script>
     		loadCSS( "assets/css/main-@@cacheBust.min.css" );
-		</script>
+		</script> -->
 
-		<!-- <link rel="stylesheet" href="assets/css/main-20170201.min.css"> -->
+		<link rel="stylesheet" href="../assets/css/main-20170207.min.css">
 
 
 
@@ -100,13 +100,13 @@ https://github.com/cathydutton
 
 	</head>
 	<body>
-		<div class="wrapper">
+		<div class="wrapper" id="current">
 
 		<a href="#main">skip to main content</a>
 
   <aside class="sidebar">
     <div class="profile-image">
-      <img src="assets/img/profile-image.jpg" class="profile-image__img" width="160" height="160" alt="Profile picture - Cathy Dutton" />
+      <img src="../assets/img/profile-image.jpg" class="profile-image__img" width="160" height="160" alt="Profile picture - Cathy Dutton" />
     </div>
     <p class="profile-description">Front end developer &amp; UX designer, CSS enthusiast, avid list writer and PostCSS fan.</p>
     <ul class="find-me">
@@ -147,22 +147,27 @@ https://github.com/cathydutton
     <ul class="sidebar__list">
           
           <li class="sidebar__item">
-            <a href="index.html"  title="Go home" class="sidebar__anchor"><span class="navagation-text">Home</span></a>
+            <a href="../index.html"  title="Go home" class="sidebar__anchor"><span class="navagation-text">Home</span></a>
           </li>
           
           
           <li class="sidebar__item">
-           <a href="work-history.html" title="View work history page" class="sidebar__anchor"><span class="navagation-text">Work history</span></a>
+           <a href="../work-history.html" title="View work history page" class="sidebar__anchor"><span class="navagation-text">Work history</span></a>
          </li>
           
           
           <li class="sidebar__item">
-           <a href="blog.html" title="View blog page" class="sidebar__anchor"><span class="navagation-text">Blog</span></a>
+           <a href="../blog.html" title="View blog page" class="sidebar__anchor"><span class="navagation-text">Blog</span></a>
          </li>
           
           
           <li class="sidebar__item">
-           <a href="maze.html" title="Maze - PostCSS responsive grid" class="sidebar__anchor"><span class="navagation-text">PostCSS Maze</span></a>
+           <a href="../portfolio.html" title="View blog page" class="sidebar__anchor"><span class="navagation-text">Portfolio</span></a>
+         </li>
+          
+          
+          <li class="sidebar__item">
+           <a href="../maze.html" title="Maze - PostCSS responsive grid" class="sidebar__anchor"><span class="navagation-text">PostCSS Maze</span></a>
          </li>
           
       </ul>
@@ -171,261 +176,224 @@ https://github.com/cathydutton
 <div class="content">
 <main id="main">
 <header role="banner" class="header">
-  <h1 class="heading heading__intro">Say no to nesting</h1>
-  <p class="heading heading--primary">04 Jul 2014</p>
+  <h1 class="heading heading__intro">Maze Re-factored</h1>
+  <p class="heading heading--primary">07 Feb 2015</p>
 </header>
 
 
-  <p>Sass, as well as making style sheets awesome, was created to take some of the pain out of writing css. It’s main purpose is to make code easier and quicker to write, modify and build upon. There are a lot of features within Sass which help achieve this, Variables, Lists, Mixins and loops to name a few.</p>
+  <p>The original Maze framework was written in 2013 with the aim of removing column markup and creating a more semantic system. The grid was also developed with flexibility in mind aiming to create a basic starting point for any responsive layout. Maze was able to support any grid column size, with configurable margins and push values that could be updated from row to row. The direction in which elements stacked was also configurable. Documentation on how Maze worked can be found
+<a href="/maze-responsive-grid-framework">here</a>.</p>
 
-<p>Nesting however does none of the above and has to be my least favourite and least used feature of Sass. Nesting delivers the complete opposite of the desired Sass effect, adding confusion to stylesheets and increasing code repetition.</p>
+<p>Over the past year I have used Maze on numerous front end projects and have been pleased with the results. There has however been a couple of sticking points. Firstly in order for the grid mixin to work all designs/layouts must conform to the layout specified in the $grid-columns variable. Secondly the margin is applied only to the left of each element with the last child having no margin. This is fine for the desktop view but as the site responds the margins have to be reset for consistency.</p>
 
-<p>Scrolling through a stylesheet full of nested selectors is every bit as painful as the old fashioned 1000 plus lined css file. The Sass used is no more usable then vanilla css, is difficult to expand upon and creates selectors which are over reliant on HTML.</p>
+<p><a href="http://get-maze.co.uk/" class="button">View demo</a></p>
 
-<h2 class="heading">Nested example </h2>
+<h2 class="heading"> Configurable layouts </h2>
 
-<p>The example below demonstrates the effect of nesting selectors on a simple navigation…</p>
+<p>Weather a 12, 16 or 24 column grid is used all aspects of the design need to fit. Unfortunately I have often come across designs for projects which although mostly conform to a set grid pattern have at least one element that does not.</p>
 
-<p><strong>HTML</strong></p>
+<p>For this reason I decided to refactor Maze to allow for a configurable $grid-columns variable that, like the margin and push values can be overridden where needed.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&amp;lt;nav class="primary-navigation"&amp;gt;
-&amp;lt;ul&amp;gt;
-&amp;lt;li&amp;gt;Home&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;About us&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;Services&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;Contact&amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
-&amp;lt;/nav&amp;gt;
+<h4 id="default-variables">Default variables</h4>
+
+<p>The default variables set at the top of the grid partial create the base settings for Maze. These values are used whenever the grid mixin is called, but importantly they can all be overridden for any part of the layout.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>/* Grid Defaults */
+
+$total-grid-columns: 12!default;
+$gutter: 2% !default;
+$fold: left !default;
+$push: 0 !default;
 </code></pre>
 </div>
 
-<p><strong>Sass</strong></p>
+<h4 id="the-grid-mixin">The grid mixin</h4>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.primary-navigation {
+<p>The mixin calculates the width of any column span we assign, and then uses our default values for $gutter, $fold and $push…</p>
 
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+<div class="highlighter-rouge"><pre class="highlight"><code>@mixin grid($col-span, $fold:$fold, $push:$push, $grid-size:$total-grid-columns, $margin:$gutter) {
 
-  li {
-  	float:left;
-  }
+        float:#{$fold};
+        width: (100% / ($grid-size / $col-span)) - $margin ;
 
-  a {
-    display: block;
-    padding: 6px 12px;
-    text-decoration: none;
-    color:grey;
-    background:white;
-  }
+        @if $push &amp;lt; 1 {
+            margin-left: ($margin/2);
+            margin-right: ($margin/2);
+        }
 
-    a:hover {
-    text-decoration: undeline;
-  }
-
+        @if $push &amp;gt; 1 {
+            margin-#{$fold}: (((100%  / $grid-size) * $push) ) + ( $margin / ( $grid-size / $push) );
+        }
 }
 </code></pre>
 </div>
 
-<p><strong>CSS</strong></p>
+<p>The $col-span variable is the value we will pass in when including the mixin, the rest or the arguments are being passed our default values from above and do not need to be added to the @include unless we are changing a value.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.primary-navigation ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+<h4 id="default-usage">Default usage</h4>
+
+<p>Because most of our settings have already been set including Maze is very simple, all we have to do is add in the value for how many columns our element should span.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>.span-three {
+	@include grid(3);
 }
 
-.primary-navigation li {
-  float:left;
+.span-six {
+	@include grid(6);
 }
 
-.primary-navigation a {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none;
-  color:grey;
-  background:white;
-}
-
-.primary-navigation a:hover {
-  text-decoration: underline;
-}
-</code></pre>
-</div>
-
-<p>The nested Sass creates the very specific css selectors above, this css output is difficult to re-use and relies completely on the HTML structure. The problem with this becomes apparent when a secondary navigation is added….</p>
-
-<p><strong>HTML</strong></p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>&amp;lt;nav class="secondary-navigation"&amp;gt;
-&amp;lt;ul&amp;gt;
-&amp;lt;li&amp;gt;Terms and conditions&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;Privacy Policy&amp;lt;/li&amp;gt;
-&amp;lt;li&amp;gt;Sitemap&amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
-&amp;lt;/nav&amp;gt;
-</code></pre>
-</div>
-
-<p>None of the css already written can be used on this secondary navigation as the selectors are too specific due to the nested Sass approach. To style this navigation we would need to add the below Sass creating another chunk of css which is mostly duplicated code…</p>
-
-<p><strong>Sass</strong></p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.secondary-navigation {
-
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  li {
-  	float:left;
-  }
-
-  a {
-    display: block;
-    padding: 6px 12px;
-    text-decoration: none;
-    color:white;
-    background:black;
-  }
-
-    a:hover {
-    text-decoration: undeline;
-  }
-
-}
-</code></pre>
-</div>
-
-<p><strong>CSS</strong></p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.secondary-navigation ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.secondary-navigation li {
-  float:left;
-}
-
-.secondary-navigation a {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none;
-  color:white;
-  background:black;
-}
-
-.secondary-navigation a:hover {
-  text-decoration: underline;
+.span-three {
+	@include grid(3);
 }
 
 </code></pre>
 </div>
 
-<h2 class="heading"> A better way </h2>
+<p>The values above are set based on the $total-grid-columns variable which we have set to 12.</p>
 
-<p>A much cleaner approach would be to add a class to each HTML element creating selectors with no reliance or hierarchy…</p>
+<h4 id="setting-a-new-layout">Setting a new layout</h4>
 
-<p><strong>HTML</strong></p>
+<p>So what happens if we want one or our rows to have five elements of equal width? This type of layout does not conform to traditional grid layouts so we will need to override the $total-grid-columns variable for this row.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&amp;lt;nav class="primary-navigation"&amp;gt;
-&amp;lt;ul&amp;gt;
-&amp;lt;li class="navigation-item"&amp;gt;Home&amp;lt;/li&amp;gt;
-&amp;lt;li class="navigation-item"&amp;gt;About us&amp;lt;/li&amp;gt;
-&amp;lt;li class="navigation-item"&amp;gt;Services&amp;lt;/li&amp;gt;
-&amp;lt;li class="navigation-item"&amp;gt;Contact&amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
-&amp;lt;/nav&amp;gt;
+<p>In the grid mixin we use and argument $grid-size which is set to $total-grid-columns, we can pass in a new value when we call the mixin to prevent the default use of a 12 column grid.</p>
 
-&amp;lt;nav class="secondary-navigation"&amp;gt;
-&amp;lt;ul&amp;gt;
-&amp;lt;li class="navigation-item"&amp;gt;Terms and conditions&amp;lt;/li&amp;gt;
-&amp;lt;li class="navigation-item"&amp;gt;Privacy Policy&amp;lt;/li&amp;gt;
-&amp;lt;li class="navigation-item"&amp;gt;Sitemap&amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
-&amp;lt;/nav&amp;gt;
+<div class="highlighter-rouge"><pre class="highlight"><code>.equal-one-five {
+      @include grid(1, $grid-size:5); /* Size One of Five   */
+}
 
 </code></pre>
 </div>
 
-<p><strong>CSS</strong></p>
+<p>This concept can be used to create any ratio required…</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>/* Styling for both navigation areas */
-nav ul  {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .navigation-item{
-    float:left;
-  }
-
-  .navigation-item a{
-     display: block;
-     padding: 6px 12px;
-     text-decoration: none;
-  }
-
-  .navigation-item a:hover{
-       text-decoration: undeline;
-  }
-
-/* Styling for primary navigation */
-.primary-navigation {
-  color:grey;
-  background:white;
+<div class="highlighter-rouge"><pre class="highlight"><code>.equal-two-five {
+      @include grid(2, $grid-size:5); /* Size Two of Five */
 }
 
-/* Styling for secondary navigation */
-.secondary-navigation {
-  color:white;
-  background:black;
+.equal-three-five {
+      @include grid(3, $grid-size:5); /* Size Three of Five */
 }
 </code></pre>
 </div>
 
-<h3 class="heading"> Not all bad </h3>
+<p>Adding this option means that any column layout or ratio can now be achieved with the Maze mixin.</p>
 
-<p>Nesting however is not all bad, if used correctly. Sticking with the example from above we can use nesting to style the <strong>a</strong> and <strong>a:hover</strong> selectors. These selectors will always be associated with the <strong>.navigation-item</strong> class and by using nesting are easier to maintain should that class change in the future</p>
+<h2 class="heading"> The Margin, removing last:child </h2>
 
-<p><strong>Sass</strong></p>
+<p>The $gutter variable is used to add margin to both left and right side of each element, this removes the need to have a last:child element which differs from the rest of it’s containing row. This becomes beneficial when the design responds for keeping margins consistent.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.navigation-item{
-    float:left;
+<p>As we now have a margin on both sides of each element, the site will no longer fill the containing div and so the max-width will be slightly narrower then the design. To resolve this the max-width needs to be larger then the desired width by the same value as the gutter percentage. As we can not add a percentage value to a px value we need to do some quick maths with th break point variables.</p>
 
-    a{
-     display: block;
-     padding: 6px 12px;
-     text-decoration: none;
-  }
+<div class="highlighter-rouge"><pre class="highlight"><code>$gutter-unit:  $gutter / 1%;   /* Strips the percentage from the gutter value*/
 
-    a:hover{
-       text-decoration: undeline;
-  }
+$wrapper-gutter-percentage: ($break-wide / 100)  * $gutter-unit;   /* Work out 1% of the largest breakpoint */
+
+$max-width: $break-wide + $wrapper-gutter-percentage; /* Add gutter value to $max-width so that each row is equal to $break-wide */
+
+$min-width: $break-mobile - 20px; /* Set min width with scroll bar */
+&lt;/pre&gt;
+
+This ensures that whatever value is assigned to $break-wide will be the max width of the website, regardless of the margins set on the inner elements.
+
+#### Breakpoints
+
+The variables for each breakpoint are also set at the beginning of the grid partial&amp;#8230;
+
+&lt;pre class="wp-code-highlight prettyprint"&gt;/* Breakpoints */
+
+$break-wide: 1180px;
+$break-desktop: 990px;
+$break-tablet: 767px;
+$break-mobile: 320px;
+</code></pre>
+</div>
+
+<p>These can be edited, added too or taken away and are used in the break mixin…</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>@mixin break($media, $col-span, $grid-size:$total-grid-columns) {
+
+	@if $media == desktop {
+
+		@media only screen and (max-width:$break-tablet) {
+			width: (((100%  / $grid-size) * $col-span) - $gutter ) ;
+			margin: $gutter / 2;
+		}
+	}
+
+	@else if $media == tablet {
+
+		@media only screen and (max-width:$break-tablet) {
+			width: (((100%  / $grid-size) * $col-span) - $gutter ) ;
+			margin: $gutter / 2;
+		}
+	}
+
+	@else if $media == mobile {
+
+		@media only screen and (max-width:$break-mobile) {
+			width: (((100%  / $grid-size) * $col-span) - $gutter ) ;
+			margin: $gutter / 2;
+		}
+	}
 
 }
 </code></pre>
 </div>
 
-<h3 class="heading"> Keep it simple </h3>
+<p>This mixin is called in the same way as the grid mixin to set the column spans as the site responds…</p>
 
-<p>In summary becoming to reliant on nesting can create over specific css selectors making it almost impossible to re-use code. It can also create large un manageable chunks of css that other developers will find difficult to work with (particularly if the code doesn’t fit neatly into a coding window). Nesting however does have a place if kept to a minimum (2 or 3 layers deep) and used only where necessary.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>.span-three {
+	@include grid(3);
+        @include break(tablet, 12);
+}
+
+.span-six {
+	@include grid(6);
+        @include break(tablet, 6);
+}
+
+.span-three {
+	@include grid(3);
+        @include break(tablet, 6);
+}
+
+</code></pre>
+</div>
+
+<h4 id="gutter-percentages">Gutter percentages</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>.margin-four {
+       @include grid(4, $margin:5%) - Override margin value
+}
+</code></pre>
+</div>
+
+<h4 id="push-values">Push values</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>.push-two {
+       @include grid(2, $push:2); - - Add two column spans to the margin
+}
+</code></pre>
+</div>
+
+<h4 id="fold-direction">Fold direction</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>right-fold {
+        @include grid(3, $fold:"right"); - Columns will collapse from the left
+}
+</code></pre>
+</div>
+
+<p><a href="http://get-maze.co.uk/" target="_blank" class="button">View demo</a></p>
 
 
 <section>
   <div class="share-page">
     <h3>Share this post</h3>
     <p>Share this on this post on Twitter, Facebook or Google</p>
-    <a href="https://twitter.com/intent/tweet?text=Say no to nesting&url=http://cathydutton.co.uk/nesting-in-sass.html&via=cathy_dutton&related=cathy_dutton" rel="external" target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=http://cathydutton.co.uk/nesting-in-sass.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
-    <a href="https://plus.google.com/share?url=http://cathydutton.co.uk/nesting-in-sass.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
+    <a href="https://twitter.com/intent/tweet?text=Maze Re-factored&url=http://cathydutton.co.uk/posts/maze-re-factored.html&via=cathy_dutton&related=cathy_dutton" rel="external" role="button" target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=http://cathydutton.co.uk/posts/maze-re-factored.html" class="share-page__anchor share-page__facebook" rel="external" role="button" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
+    <a href="https://plus.google.com/share?url=http://cathydutton.co.uk/posts/maze-re-factored.html" class="share-page__anchor share-page__google" rel="external" role="button" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
 </div>
 
 </section>
@@ -434,7 +402,7 @@ nav ul  {
   <ul class="page-navigation">
   
   <li class="button--page-navigation__prev">
-    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="sass-variables-and-how-to-use-them.html">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="posts/optimise-your-css-with-your-markup.html">
       <!-- <span class="visually-hidden">Go to the previous post</span> -->
       <svg class="button--page-navigation__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
@@ -445,7 +413,7 @@ nav ul  {
   
   
   <li class="button--page-navigation__next">
-    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="optimise-your-css-with-your-markup.html">
+    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="posts/8-tips-to-get-the-best-out-of-sass.html">
       <!-- <span class="visually-hidden">Go to the next post</span> -->
       <span class="page-navigation-title">Go to the next post</span>
       <svg class="button--page-navigation__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
@@ -467,23 +435,27 @@ nav ul  {
   	<ul class="footer-links">
   		<li class="footer-links__item">
         
-          <a href="index.html" class="footer-links__anchor" title="Back to the home page" >Home</a>
+          <a href="../index.html" class="footer-links__anchor" title="Back to the home page" >Home</a>
           
       </li>
   		<li class="footer-links__item">
         
-          <a href="work-history.html" class="footer-links__anchor" title="View work history page" >Work history</a>
+          <a href="../work-history.html" class="footer-links__anchor" title="View work history page" >Work history</a>
           
       </li>
   		<li class="footer-links__item">
           
-          <a href="blog.html" class="footer-links__anchor" title="View blog page" >Blog</a>
+          <a href="../blog.html" class="footer-links__anchor" title="View blog page" >Blog</a>
           
       </li>
-  		<!-- <li class="footer-links__item"><a href="portfolio.html" class="footer-links__anchor" title="View portfolio page">Portfolio</a></li> -->
-  		<li class="footer-links__item">
+      <li class="footer-links__item">
         
-          <a href="maze.html" class="footer-links__anchor" title="Maze - PostCSS responsive grid">PostCSS Maze</a>
+          <a href="../portfolio.html" title="View blog page" class="footer-links__anchor"><span class="navagation-text">Portfolio</span></a>
+          
+      </li>
+      <li class="footer-links__item">
+        
+          <a href="../maze.html" class="footer-links__anchor" title="Maze - PostCSS responsive grid">PostCSS Maze</a>
           
       </li>
   	</ul>

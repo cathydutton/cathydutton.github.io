@@ -1,0 +1,39 @@
+---
+layout: portfolio
+title: "UX Design and Development portfolio - Cathy Dutton"
+description: "The website design and development portfolio of Cathy Dutton"
+intro: "Portfolio"
+heading: "A collection of both design and development work"
+page: "Portfolio"
+active: "Portfolio"
+---
+
+
+
+<div class="highlight-quote">
+	<p>Over the last 10 years I have worked on a wide range of digital projects, taking on many roles. After graduating with a degree in Product Design I started out as a Front End Developer before Specialising in UI/UX design.</p>
+	<p>Below are just a few examples of my design and development work...</p>
+</div>
+
+<ul>
+{% for portfolio in site.portfolio %}
+
+
+		<li>
+		  <a href="{{portfolio.url}}" title="{{ portfolio.title }}">
+			  <h3><span class="visually-hidden">Portfolio title</span> {{ portfolio.title }}</h3>
+			  <img src="/images/naked-forecourt-man.jpg" alt="high contrast black and white image of a naked man nonchalantly leaning against a petrol pump." />
+			  <dl>
+			  <dt>Size:</dt>
+			  <dd>90cm × 30cm</dd>
+			  <dt>Price:</dt>
+			  <dd>€35.95</dd>
+			  <dt>Rating:</dt>
+			  <dd><img src="/images/rating_4_5.svg" alt="">4 out of 5 stars</dd>
+			  </dl>
+		  </a>
+		</li>
+
+
+{% endfor %}
+</ul>

@@ -1,0 +1,30 @@
+---
+disqus: false
+comments: false
+archive: false
+---
+
+
+{% include head.html %}
+{% include sidebar.html %}
+<div class="content">
+<main id="main">
+<header role="banner" class="header">
+  <h1 class="heading heading__intro">{{page.title}}</h1>
+</header>
+
+
+  {{ content }}
+
+<!-- <section>
+  {% include share-page.html %}
+</section> -->
+
+ <section>
+  {% include pagination.html %}
+</section>
+
+</main>
+
+{% include footer.html %}
+</div>

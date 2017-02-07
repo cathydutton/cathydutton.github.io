@@ -1,0 +1,11 @@
+{% include head.html %}
+{% include sidebar.html %}
+<div class="content">
+<main id="main">
+<header role="banner" class="header">
+  <h1 class="heading"><span class="heading__intro">{{ page.intro }}</span>{{ page.heading }}</h1>
+</header>
+  {{ content }}
+</main>
+{% include footer.html %}
+</div>
