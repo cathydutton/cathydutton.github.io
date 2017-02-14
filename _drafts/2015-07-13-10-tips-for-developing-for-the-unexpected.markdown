@@ -5,6 +5,8 @@ description: "CSS for the unexpected"
 page-name: "post"
 ---
 
+“Build your website to work in situations you haven’t imagined, and on devices that don’t yet exist” — Jeffrey Zeldman
+
 Turn into 10 steps/ advice and tips for developing for the unexpected
 
 When prototyping for digital projects we often work with sample data which fits perfectly with the UI. Projects are also prone to changing goal posts or revised features not to mention changes in technology, languages or device sizes. Keeping a project simple and enjoyable to work with can be difficult 
