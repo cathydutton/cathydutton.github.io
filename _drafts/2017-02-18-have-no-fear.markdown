@@ -23,7 +23,7 @@ Failure is not a bad thing, and in design it should be expected. Every design wi
 
 Expecting these failures can remove the fear factor and allow for more creativity in the design process. If nothing you create ever fails could you really say that you have pushed yourself to think beyond what is currently available?
 
-During the Alpha phase of a project there is no shame in admitting a prototype or theory just didn't work out. This approach should be actively encouraged to ensure we get the most out of this phase in a project. Try the previously untried, it's the only way to improve upon existing solutions.
+During the Alpha phase of a project there is no shame in admitting a prototype or theory just didn't work out. This approach should be actively encouraged to ensure we get the most out of this phase. Try the previously untried, it's the only way to improve upon existing solutions.
 
 <blockquote>
 “Failure is simply the opportunity to begin again, this time more intelligently”
