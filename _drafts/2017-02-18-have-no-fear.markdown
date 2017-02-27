@@ -5,6 +5,10 @@ layout: post
 category: post
 ---
 
+I came away from that study thinking, why are we testing with anyone with high literacy? Designing for people with low literacy would make it easier for people who are distressed, distracted, sleep-deprived, on medication, whatever. If I could build this into everything, I would.
+
+stress first
+
 Designing new products or services can be a daunting or even intimidating process at times. How do you create an experience that works well for everybody? How do you design for edge cases you don't yet know exist? What if people don't like, or worse cant use the service? 
 
 There are many fears a designer will need to overcome in order to create successful user experiences including...
