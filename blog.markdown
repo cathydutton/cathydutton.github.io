@@ -1,7 +1,7 @@
 ---
 layout: blog
-title: "UX and Front End Development blog - Cathy Dutton"
-description: "The online website design and development portfolio of Cathy Dutton"
+title: "Interaction Design, UX and Front End Development blog - Cathy Dutton"
+description: "A collection of my articles and tutorials on Interaction Design, User Experience, CSS, PostCSS, Sass and Front End Development"
 intro: "Blog"
 heading: "Latest posts and tutorials"
 group: "navigation"

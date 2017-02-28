@@ -26,6 +26,7 @@ Pagination
 
   @include mq(break-phablet) {
   text-align: right;
+  float: right;
   }
 
 }

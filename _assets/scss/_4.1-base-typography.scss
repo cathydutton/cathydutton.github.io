@@ -66,3 +66,8 @@ h4 {
 .accent {
   color: map-get($colours, 'accent');
 }
+
+.quote-name {
+  margin: 10px 0 0;
+  font-style: italic;
+}

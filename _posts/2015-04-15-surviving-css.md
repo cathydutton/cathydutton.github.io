@@ -5,7 +5,7 @@ layout: post
 category: post
 ---
 
-Article originally posted [here](https://medium.com/@cathy_dutton/surviving-css-be306ef3de6d#.k8czem45b).
+[Article originally posted on medium.](https://medium.com/@cathy_dutton/surviving-css-be306ef3de6d#.k8czem45b)
 
 <h4 class="heading">A few simple techniques to keep your CSS in check...</h4>
 

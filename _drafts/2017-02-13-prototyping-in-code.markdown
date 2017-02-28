@@ -1,9 +1,10 @@
 ---
-title: Saying goodbye to Photoshop (&amp; Sketch &amp; Illustrator)
+title: Saying goodbye to Photoshop
 author: Cathy Dutton
 layout: post
 category: post
 ---
+
 
 Wether it’s Sketch, Illustrator, Photoshop or Affinity the process of creating detailed screens as static images has always been slow, and has never been overly useful when describing how elements should react to varying screen sizes or changes in user input.
 
