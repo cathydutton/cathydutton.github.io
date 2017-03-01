@@ -5,29 +5,25 @@ layout: post
 category: post
 ---
 
-I came away from that study thinking, why are we testing with anyone with high literacy? Designing for people with low literacy would make it easier for people who are distressed, distracted, sleep-deprived, on medication, whatever. If I could build this into everything, I would.
-
-stress first
-
-Designing new products or services can be a daunting or even intimidating process at times. How do you create an experience that works well for everybody? How do you design for edge cases you don't yet know exist? What if people don't like, or worse cant use the service? 
+Designing new products or services can be a daunting or even intimidating process at times. How do you create an experience that works well for everybody? How do you design for edge or stress cases you don't yet know exist? What if people don't like, or worse cant use the service?
 
 There are many fears a designer will need to overcome in order to create successful user experiences including...
 
-- <b>A fear of failure</b> - ????
+- <b>The fear of failure</b> - ????
 
-- <b>A fear of negative feedback</b> - It can be difficult to get past the fear of a negative response, or to not take the feedback as a direct or personal criticism.
+- <b>The fear of negative feedback</b> - It can be difficult to get past the fear of a negative response, or to not take the feedback as a direct or personal criticism.
 
-- <b>A fear of imperfection</b> - It's tempting to keep your designs close, showing nothing until your completely satisfied with your work.
+- <b>The fear of imperfection</b> - It's tempting to keep your designs close, showing nothing until your completely satisfied with your work.
 
-To create successful user focused designs it is essential to move past these fears, and to except and embrace all forms of feedback as soon as possible.
+To create successful user focused designs it is essential to move past these fears, to except failures and to embrace all forms of feedback as soon as possible in the design process.
 
 ## Expect to fail
 
-Failure is not a bad thing, and in design it should be expected. Every design will fail for some people, some of the time. Its important to remember that these failures are not permanent, just steps on the path towards a more inclusive solution. 
+If nothing you create ever fails can you really claim to have pushed yourself creatively? Or to have to experimented with concepts and theories that go beyond what is currently available?
 
-Expecting these failures can remove the fear factor and allow for more creativity in the design process. If nothing you create ever fails could you really say that you have pushed yourself to think beyond what is currently available?
+Failure is not a bad thing, and in design it should be expected. Every design will fail for some users, some of the time. Its important to remember that these failures are not permanent, just steps on the path towards a more inclusive solution.
 
-During the Alpha phase of a project there is no shame in admitting a prototype or theory just didn't work out. This approach should be actively encouraged to ensure we get the most out of this phase. Try the previously untried, it's the only way to improve upon existing solutions.
+Accepting these failures can remove the fear factor and allow for a more creative design process where boundaries are pushed. During the Alpha phase of a project there is no shame in admitting that a prototype or user journey just didn't work. This approach should be encouraged to ensure the team gets the most out of this phase. Trying the previously untried is the only way to improve existing services.
 
 <blockquote>
 “Failure is simply the opportunity to begin again, this time more intelligently”
@@ -37,7 +33,7 @@ During the Alpha phase of a project there is no shame in admitting a prototype o
 
 ## Embrace user feedback
 
-Put your design and content choices to the test of real life. In order to get the user feedback we crave, we need to show real users something. This something will almost certainly have its problems, but it gives us a starting point which can be used to get us closer to a useable product.
+Put your design and content choices to the test in real life with real users. In order to get the user feedback we need, we first need to show something. This something will almost certainly have its flaws, but it gives us a starting point which can be used to get closer to a useable service.
 
 <blockquote>
 “The only thing that makes your designs better is understanding your users, measuring things in the real world”.
@@ -45,12 +41,19 @@ Put your design and content choices to the test of real life. In order to get th
  <p class="quote-name">Joel Marsh: Experience Architect</p>
 </blockquote>
 
-Bad or negative user feedback is a good thing, we can learn much more from this then from success stories. Each edge case we discover will help us to create a better more inclusive design.
-
+Bad or negative user feedback is a good thing, providing it is used constructively to improve the service. Nobody can be expected to design an experience that works seamlessly in all situations but the more feedback we receive the closer we can get to this. Each stress case we discover will help us to create a better more inclusive design.
 
 ### Let go of perfection
 
-You don’t know what your users want and most of the time neither do they, you will never achieve perfection for every user in every situation and in all circumstances, but you can get closer through a series of failed attempts. 
+Design is never perfect, no matter how much we want it to be, there is little point wasting time trying to perfect a concept that is yet to be seen by any real users.
+
+<!-- We can't be expected to know what our users will want or even who our users could be -->
+
+We will never achieve perfection for every use case in all situation and circumstances, but we can get closer to perfection through a series of failed attempts.
+
+
+
+
 
 Sometimes the best way to work out what users want is to show them something they don't. You have to start somewhere, with something in order to get the feedback you need to make designs work.
 
@@ -62,4 +65,6 @@ Design sprints can help to get you into this working pattern, plan a testing ses
 
 https://developers.google.com/design-sprint/downloads/DesignSprintMethods.pdf
 
-There is no point wasting time perfecting a concept if nobody has used it yet
+
+
+### In summary
