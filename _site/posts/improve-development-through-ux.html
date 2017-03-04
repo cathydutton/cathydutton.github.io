@@ -20,7 +20,7 @@ https://github.com/cathydutton
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Have no fear</title>
+		<title>Improve development through UX</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="Front End Developer, UX, CSS, Sass, PostCSS, JavaScript">
 		<meta name="author" content="Cathy Dutton - www.cathydutton.co.uk" />
@@ -37,7 +37,7 @@ https://github.com/cathydutton
 
 		<!-- Prerender work page -->
 		<link rel="prerender" href="http://cathydutton.co.uk/portfolio.html">
-		<link rel="canonical" href="http://cathydutton.co.uk/posts/have-no-fear.html">
+		<link rel="canonical" href="http://cathydutton.co.uk/posts/improve-development-through-ux.html">
 
 
 		
@@ -141,77 +141,209 @@ https://github.com/cathydutton
 <div class="content">
 <main id="main">
 <header role="banner" class="header">
-  <h1 class="heading heading__intro">Have no fear</h1>
-  <p class="heading heading--primary">18 Feb 2017</p>
+  <h1 class="heading heading__intro">Improve development through UX</h1>
+  <p class="heading heading--primary">13 Jul 2015</p>
 </header>
 
 
-  <p>Designing new products or services can be a daunting or even intimidating process at times. How do you create an experience that works well for everybody? How do you design for edge or stress cases you don’t yet know exist? What if people don’t like, or worse cant use the service?</p>
+  <p>The way web applications are designed has changed a lot in recent years, from the tools used to the processes and the people involved.
+These changes are not only improving user experience, but also help to create a modular and ultimately more maintainable code base.
+Synchronising the design and development process results in a structured, organised and more performant application.</p>
 
-<p>There are many fears that need to be overcome in order to create successful user experiences including…</p>
+<h2 id="in-the-beginning">In the beginning</h2>
 
-<ul>
-  <li>
-    <p><b>The fear of failure</b> - It’s human nature to fear failure but in creative industries this mindset can be a hinderance.</p>
-  </li>
-  <li>
-    <p><b>The fear of negative feedback</b> - It can be difficult not take bad feedback as a direct or personal criticism.</p>
-  </li>
-  <li>
-    <p><b>The fear of imperfection</b> - It’s tempting to keep your designs close, showing nothing until your completely satisfied with your work.</p>
-  </li>
-</ul>
+<p>It’s been almost 10 years since I built my first website, back then I was responsable for both the design and development of a project.</p>
 
-<p>To create successful user focused designs it is essential to move past these fears, to except failures and to embrace all forms of feedback as soon as possible in the design process.</p>
+<p>my first task with any web project was to
+layout all the necessary pages in Photoshop, creating page specific designs with set dimensions.  This ‘page by page’
+approach then transferred to the development phase.</p>
 
-<h2 id="expect-to-fail">Expect to fail</h2>
+<p>This process was very linear.</p>
 
-<p>If nothing you create ever fails can you really claim to have pushed yourself creatively? Or to have to experimented with concepts and theories that go beyond what is currently available?</p>
+<p>As I then approach the developer phase…</p>
 
-<p>Failure is not a bad thing, and in design it should be expected. Failure should be seen not as a negative outcome but as part of the design process. Every design will fail, for all users, a few users, all of the time or some of the time. Its important to remember that these failures are not permanent they are just steps on the path towards a more inclusive service.</p>
+<p>working in this way will create page specific styling and repetitive CSS.  By integrating the design and
+development process the code output can be structured, better organised and re-usable.</p>
 
-<p>Accepting failures as part of the process will remove the fear factor and allow us to work with new approaches, ideas and techniques more freely. During the Alpha phase of projects this approach should be encouraged providing a more creative environment where boundaries can be pushed.  Trying the previously untried is the only way to improve existing solutions.</p>
+<p>Development process</p>
 
-<blockquote>
-“Failure is simply the opportunity to begin again, this time more intelligently”
+<p>The way websites are built has changed over the years, projects are no longer viewed as a series of pages, but a series of
+modules, or features. These features become the building blocks of websites and applications.</p>
 
- <p class="quote-name">Henry ford</p>
-</blockquote>
+<p>The development process has moved on from simply recreating the Photo-shopped images in HTML and CSS. The code has to be
+both flexible scalable and maintainable.</p>
 
-<h2 id="embrace-user-feedback">Embrace user feedback</h2>
+<p>Planning for future development or design changes mean the code has to be easy to adapt and to add to.  If the CSS is
+aligned to pages, moving small blocks can be difficult, leading to bloated code bases that are messy and difficult to work with.</p>
 
-<p>The only way to create a usable service is to put your design and content choices to the test in real life with real people.</p>
+<p>CSS methodologies such as SMACCS and ITCSS tackle these problems by creating layers of CSS. The base layers are generic
+styles and repeated patterns for things like typography, color schemes and spacing. The bottom layers are for more specific styling.</p>
 
-<blockquote>
-“The only thing that makes your designs better is understanding your users, measuring things in the real world”.
+<p>Prototypes of elements (Style Guides not pages) — pattern libraries and toolkits should be the first layer — fitting in
+with popular coding architectures (base, etc)</p>
 
- <p class="quote-name">Joel Marsh: Experience Architect</p>
-</blockquote>
+<p>An example of the CSS structure using ITCSS</p>
 
-<p>Any bad or negative feedback we receive should be viewed positively. This feedback provides valuable insights into real problems that can be used to improve the service.</p>
+<p>Settings — Global variables &amp; config
+Tools — Default mixins &amp; functions
+Generic — Normalize, resets, box-sizing
+Base — HTML elements
+Objects — Design patterns
+Components — Modules &amp; blocks of code
+Trumps — Helpers &amp; overrides</p>
 
-<p>Nobody has the ability to design an experience that works seamlessly in all situations but the more feedback we receive the more edge cases we will uncover. With each testing session the design will edge closer and closer to the unachievable aim of perfection.</p>
+<p>Methodologies like this rely on access to designs for the entire application; decisions cannot be made when designs
+are delivered page by page. More information on the layers and there usage can be found here , SMACCS, ITCSS.</p>
 
-<h3 id="let-go-of-perfection">Let go of perfection</h3>
+<p>Working together</p>
 
-<p>Design can never be perfect, no matter how much we want it to be. To move closer to the perfection we crave we need to first show our work. The first thing we show will be far from perfect, but it will provide a starting point that can be improved over time.</p>
+<p>Modular design aides modular coding , forcing developers and designers to think about scalability, fluidity and
+changeability (using blocks on different pages seamlessly)</p>
 
-<p>Its tempting not to show a concept or idea until you are completely satisfied with it, this however can lead to lot of wasted time. As tempting as it may be to show only our best work, it is important to get real user feedback as soon as possible.</p>
+<p>To build modular, re-usable code in the ways outlined above, the design process should follow a similar pattern.</p>
 
-<p>You can test anything from paper prototypes to rough wireframes or post-it note flow charts. Getting these things out in the open will help ensure our more polished efforts are usable.</p>
+<p>Development and design are not two stand alone tasks, the two processes should work side by side, first creating
+style guides and then component libraries.</p>
 
-<h3 id="in-summary">In summary</h3>
+<p>The end of pages</p>
 
-<p>We will never achieve perfection but we can get closer to it through a series of failed attempts. Every failure or pice of negative feedback is a stepping stone to creating a more inclusive design and can therefore only be a good thing.</p>
+<p>So simply designing page after page and then ‘throwing them over the fence to the development team no longer works.
+As with the development process the design needs to first create the base layers and repeated patterns in the form of a style guide.</p>
+
+<p>Components or modules can then be created individually without the restraints of pages and containers.</p>
+
+<p>Style Guide</p>
+
+<p>Before we begin to think about layouts or the structure of site components we first need a fully thought out and
+coded style guide. The design of fonts and headings, calls to action and links etc should be built at the very beginning of the process.</p>
+
+<p>By providing a style guide right at the start of the project the base layer of the CSS methodology can be constructed.
+Having access to all the potential color variants, fonts, headings and spacing right at the start will enable a developer
+to structure the CSS much more effectively, organising default styles on a base level.</p>
+
+<p>With all a designs repeated patterns defined, mixins, functions and variables can be set up. If done effectively all of
+the Sass (or Less) work should be completed at this stage. All components and modules should be built up from this base
+level CSS, with any unique styling written at component level in CSS. Working in this way also allows for site wide design
+changes to be implemented by altering only the effected variable or function.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$line-height: 1.5;
+
+.heading {
+      line-height: $line-height;
+}
+
+. review--heading {
+      line-height: ($line-height /3);
+}
+</code></pre>
+</div>
+
+<p>Component library</p>
+
+<p>Once the coded style guide is in place each module or component should be designed as an individual block, which is able
+to be used anywhere in the site. By designing this way the resulting code will also be re-usable.</p>
+
+<p>With a set of repeated patterns already defined, components can be built up quickly as visuals and more importantly built
+out of existing CSS.</p>
+
+<p>Creating these components will help to keep the code base tidy. Code blocks will loose their attachments to pages and
+become re-usable building blocks that can be applied anywhere. Similarly the elements that make up the components will also be</p>
+
+<p>Creating a component library instead of just handing over page designs will also help with creating meaningful class names.</p>
+
+<p>For example a heading above a section of reviews on a product page may be labeled .review-heading. The very same heading
+could then be used on the basket page above up-sells for example…</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>. review--heading {
+      font-family: 'Roboto', sans-serif;
+   font-weight: 200;
+   font-size: 2em;
+     color: $base-color;
+}
+
+. up-sell--heading {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 200;
+   font-size: 2em;
+     color: $accent-color;
+}
+</code></pre>
+</div>
+
+<p>If both of these heading are the same we end up with duplicated CSS. With the style guide and component library already
+set up we can include the defined header styling and add a new class for any unique propertie</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>. heading {
+      font-family: 'Roboto', sans-serif;
+   font-weight: 200;
+   font-size: 2em;
+     color: $base-color;
+}
+
+. up-sell--heading {
+     color: $accent-color;
+}
+</code></pre>
+</div>
+
+<p>The end of Photoshop?
+Prototyping and in Browser design</p>
+
+<p>With ever changing device sizes and resolutions designing with set width image tools becomes less and less effective,
+in order to accurately prototype a fluid site designs must be tested at every size, quickly and reliably. This is simply
+not possible in Photoshop.</p>
+
+<p>A fluid prototype will highlight potential layout failings early on, forcing designers to focus on ‘in between states’
+and not just pre defined existing device sizes.</p>
+
+<p>Image prototypes lead to badly structured web objects, (building pages not modules) base set up not treated properly.
+And snap points for layouts, mobile, tablet, desktop, flow is not considered.</p>
+
+<p>A fluid prototype will highlight potential layout failings early on, forcing designers to focus on ‘in between states’
+and not just pre defined existing device sizes.</p>
+
+<p>Performance, a flat image gives the designer no concept of code size, potential performance issues.</p>
+
+<p>As well as moving away from concept pages it is also beneficial to move entirely away from layout programs such as Photoshop as
+early as possible in the process.</p>
+
+<p>With the CSS for individual element such as buttons, images and headings in place, new features can be quickly mocked up in code.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;div class=”news-feed”&gt;
+&lt;h1 class=”heading news-feed__heading”&gt;Feed Heading&lt;/h1&gt;
+&lt;p class=“news-feed__date”&gt;10th Jan 15&lt;/p&gt;
+&lt;p class=“news-feed__intro”&gt;10th Jan 15&lt;/p&gt;
+&lt;button class=”button news-feed__button”&gt;Read More&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+</div>
+
+<p>By adding the base classes the module automatically picks up the sites default styles, colors and spacing. All that is left to
+do is add any unique styles to the secondary classes.</p>
+
+<p>In browser designing like this allows site wide adjustments to be made much quicker. For example simply changing one variable
+in a prototype can provide a demo for adjusting line height or spacing across all modules. Tweaking CSS in a prototype also
+speeds up adjustments on fluid applications quickly providing visuals across all resolutions.</p>
+
+<p>Summery</p>
+
+<p>In summery by aligning the two processes and having Designers and Developers work together, both processes can become more
+efficient. Design changes are much easier to implement and test in code.  CSS can be much more efficient when approached
+as a series of repeated patterns and stand alone components.</p>
+
+<p>Built by developers at the same time
+Fits in with the coding process – base, objects, modules
+Design approach now matches dev approach</p>
+
 
 
 <section>
   <div class="share-page">
     <h3>Share this post</h3>
     <p>Share this on this post on Twitter, Facebook or Google</p>
-    <a href="https://twitter.com/intent/tweet?text=Have no fear&url=http://cathydutton.co.uk/posts/have-no-fear.html&via=cathy_dutton&related=cathy_dutton" rel="external" role="button" target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=http://cathydutton.co.uk/posts/have-no-fear.html" class="share-page__anchor share-page__facebook" rel="external" role="button" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
-    <a href="https://plus.google.com/share?url=http://cathydutton.co.uk/posts/have-no-fear.html" class="share-page__anchor share-page__google" rel="external" role="button" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
+    <a href="https://twitter.com/intent/tweet?text=Improve development through UX&url=http://cathydutton.co.uk/posts/improve-development-through-ux.html&via=cathy_dutton&related=cathy_dutton" rel="external" role="button" target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=http://cathydutton.co.uk/posts/improve-development-through-ux.html" class="share-page__anchor share-page__facebook" rel="external" role="button" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
+    <a href="https://plus.google.com/share?url=http://cathydutton.co.uk/posts/improve-development-through-ux.html" class="share-page__anchor share-page__google" rel="external" role="button" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
 </div>
 
 </section>
@@ -220,7 +352,7 @@ https://github.com/cathydutton
   <ul class="page-navigation">
   
   <li class="button--page-navigation__prev">
-    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/prototyping-in-code.html">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/The-Repeated-Problems-of-Repeated-Patterns.html">
       <!-- <span class="visually-hidden">Go to the previous post</span> -->
       <svg class="button--page-navigation__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
@@ -231,7 +363,7 @@ https://github.com/cathydutton
   
   
   <li class="button--page-navigation__next">
-    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/what-came-first.html">
+    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/manging-front-end-developers.html">
       <!-- <span class="visually-hidden">Go to the next post</span> -->
       <span class="page-navigation-title">Go to the next post</span>
       <svg class="button--page-navigation__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >

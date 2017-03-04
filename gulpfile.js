@@ -156,9 +156,30 @@
 	const gutil = require('gulp-util');
 
 	gulp.task('jekyll-dev', () => {
+		var productionEnv = process.env;
+		productionEnv.JEKYLL_ENV = 'development';
 	  const jekyll = child.spawn('jekyll', ['serve',
 	    '--watch',
-	    '--incremental'
+	    '--incremental',
+	    '--drafts'
+	  ]);
+
+	  const jekyllLogger = (buffer) => {
+	    buffer.toString()
+	      .split(/\n/)
+	      .forEach((message) => gutil.log('Jekyll: ' + message));
+	  };
+
+	  jekyll.stdout.on('data', jekyllLogger);
+	  jekyll.stderr.on('data', jekyllLogger);
+	});
+
+	gulp.task('jekyll-live', () => {
+		var liveEnv = process.env;
+		liveEnv.JEKYLL_ENV = 'live';
+	  const jekyll = child.spawn('jekyll', ['serve',
+	    // '--watch',
+	    // '--incremental'
 	    // '--drafts'
 	  ]);
 
@@ -241,5 +262,5 @@
 
 	// Live tasks
 	gulp.task('live', function(callback) {
-		plugins.runSequence('deploy', callback);
+		plugins.runSequence('jekyll-live', 'deploy', callback);
 	});

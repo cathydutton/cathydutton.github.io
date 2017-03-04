@@ -20,8 +20,8 @@ https://github.com/cathydutton
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Have no fear</title>
-		<meta name="description" content="">
+		<title>It’s not Sass’s fault your CSS is sh*t</title>
+		<meta name="description" content="Desc">
 		<meta name="keywords" content="Front End Developer, UX, CSS, Sass, PostCSS, JavaScript">
 		<meta name="author" content="Cathy Dutton - www.cathydutton.co.uk" />
 		<link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
@@ -37,7 +37,7 @@ https://github.com/cathydutton
 
 		<!-- Prerender work page -->
 		<link rel="prerender" href="http://cathydutton.co.uk/portfolio.html">
-		<link rel="canonical" href="http://cathydutton.co.uk/posts/have-no-fear.html">
+		<link rel="canonical" href="http://cathydutton.co.uk/posts/It-s-not-Sass-s-fault-your-CSS-is-sh-t.html">
 
 
 		
@@ -141,77 +141,370 @@ https://github.com/cathydutton
 <div class="content">
 <main id="main">
 <header role="banner" class="header">
-  <h1 class="heading heading__intro">Have no fear</h1>
-  <p class="heading heading--primary">18 Feb 2017</p>
+  <h1 class="heading heading__intro">It’s not Sass’s fault your CSS is sh*t</h1>
+  <p class="heading heading--primary">13 Jul 2015</p>
 </header>
 
 
-  <p>Designing new products or services can be a daunting or even intimidating process at times. How do you create an experience that works well for everybody? How do you design for edge or stress cases you don’t yet know exist? What if people don’t like, or worse cant use the service?</p>
+  <p>OVERLY COMPLEX MIXINS ARE WORSE THEN REPEATING SOMETHING 2 OR 3 TIMES - THERE HARDER TO MAINTAIN - SILLY VARIABLE NAMES</p>
 
-<p>There are many fears that need to be overcome in order to create successful user experiences including…</p>
+<p>Sass can be a great tool if used effectively, Variables, Mixins and Functions 
+create a great base for re-usable components and modular codeing. Sass can also speed up development times and make it easier to update a large code base.</p>
 
-<ul>
-  <li>
-    <p><b>The fear of failure</b> - It’s human nature to fear failure but in creative industries this mindset can be a hinderance.</p>
-  </li>
-  <li>
-    <p><b>The fear of negative feedback</b> - It can be difficult not take bad feedback as a direct or personal criticism.</p>
-  </li>
-  <li>
-    <p><b>The fear of imperfection</b> - It’s tempting to keep your designs close, showing nothing until your completely satisfied with your work.</p>
-  </li>
-</ul>
+<p>Sass however is a tool not a language, if used incorrectly the end result will be bad CSS. As with all tools and frameworks you get out what you put in, this is why it is essentialy to have a strong CSS skill set before moving to Sass.</p>
 
-<p>To create successful user focused designs it is essential to move past these fears, to except failures and to embrace all forms of feedback as soon as possible in the design process.</p>
+<p>Sass doesn’t create bad CSS, bad developers do.</p>
 
-<h2 id="expect-to-fail">Expect to fail</h2>
+<p>Sass backlash</p>
 
-<p>If nothing you create ever fails can you really claim to have pushed yourself creatively? Or to have to experimented with concepts and theories that go beyond what is currently available?</p>
+<p>Despite this Sass has received bad press for creating ridiculously long selectors…..</p>
 
-<p>Failure is not a bad thing, and in design it should be expected. Failure should be seen not as a negative outcome but as part of the design process. Every design will fail, for all users, a few users, all of the time or some of the time. Its important to remember that these failures are not permanent they are just steps on the path towards a more inclusive service.</p>
+<p>Nesting — nest pseudo elements and states not everything! use BEM, bad coders not sass. &amp; selector to help nest safely.</p>
 
-<p>Accepting failures as part of the process will remove the fear factor and allow us to work with new approaches, ideas and techniques more freely. During the Alpha phase of projects this approach should be encouraged providing a more creative environment where boundaries can be pushed.  Trying the previously untried is the only way to improve existing solutions.</p>
+<p>Variables — Use a style guide to define all colours and fonts etc, a good site has max of 2 fonts and 6 colours. Creatins confusing partials, hard to edit with confidance</p>
 
-<blockquote>
-“Failure is simply the opportunity to begin again, this time more intelligently”
+<p>too many variables become confusing and are never edited or re-used if people have no confidence in where they are being used.</p>
 
- <p class="quote-name">Henry ford</p>
-</blockquote>
+<p>body.editorial h1.tl-title {
+ margin-left: $doc-line-height<em>6;
+ margin-right: $doc-line-height</em>6;
+}</p>
 
-<h2 id="embrace-user-feedback">Embrace user feedback</h2>
+<p>A variable for every element?</p>
 
-<p>The only way to create a usable service is to put your design and content choices to the test in real life with real people.</p>
+<p>$infoText: #3a87ad !default;
+$infoBackground: #fff !default;
+$infoBorder: #bce8f1 !default;</p>
 
-<blockquote>
-“The only thing that makes your designs better is understanding your users, measuring things in the real world”.
+<p>$highlightText: #32bfed !default;
+$defaultText: #8f8f8f !default;
+$darkerText: #8B8B8B !default;
+$pageHeaderBg: #f9fafc !default;</p>
 
- <p class="quote-name">Joel Marsh: Experience Architect</p>
-</blockquote>
+<p>For variations Sass colour functions could be used.</p>
 
-<p>Any bad or negative feedback we receive should be viewed positively. This feedback provides valuable insights into real problems that can be used to improve the service.</p>
+<p>$blue-primary : #0060C1;
+$blue-secondary : #218afb;
+$blue-tertiary : #b7d9fe;
+$blue-quaternary : #004f93;</p>
 
-<p>Nobody has the ability to design an experience that works seamlessly in all situations but the more feedback we receive the more edge cases we will uncover. With each testing session the design will edge closer and closer to the unachievable aim of perfection.</p>
+<p>Mixins — Overly specific short sighted solutions, cant grow with a site or company.</p>
 
-<h3 id="let-go-of-perfection">Let go of perfection</h3>
+<p>Creates bloated code base</p>
 
-<p>Design can never be perfect, no matter how much we want it to be. To move closer to the perfection we crave we need to first show our work. The first thing we show will be far from perfect, but it will provide a starting point that can be improved over time.</p>
+<p>@mixin gradient($from, $to) {
+ background: background: linear-gradient($from, $to);
+}</p>
 
-<p>Its tempting not to show a concept or idea until you are completely satisfied with it, this however can lead to lot of wasted time. As tempting as it may be to show only our best work, it is important to get real user feedback as soon as possible.</p>
+<p>Args list, open ended future proof, re usable</p>
 
-<p>You can test anything from paper prototypes to rough wireframes or post-it note flow charts. Getting these things out in the open will help ensure our more polished efforts are usable.</p>
+<p>@mixin linear-gradient($direction, $gradients…) {
+  background: linear-gradient($direction, $gradients…);
+}</p>
 
-<h3 id="in-summary">In summary</h3>
+<p>Firstly lets look at some key factors behind the Sass backlash…</p>
 
-<p>We will never achieve perfection but we can get closer to it through a series of failed attempts. Every failure or pice of negative feedback is a stepping stone to creating a more inclusive design and can therefore only be a good thing.</p>
+<p>Nesting* — Probably the most attacked of all the Sass features, over nesting can result in some pretty horrible selectors. In my experience nesting is one of the most commonly used features amongst developers new to Sass, perhaps because it’s easy to implement and can speed up development time.</p>
+
+<p>LAZY DEVELOPERS NEST show old nav example with classes and show nested usage ( before etc)</p>
+
+<p>In the long run nesting can make a mess of your stylesheet, selectors become unnecessarily long and issues with specificity are created. Over nesting can also lead to increasing reliance on !important and complex partials that are difficult to edit.</p>
+
+<p><strong>There are so many reasons why this is just plain wrong, from rendering performance to file-size performance. Just think about how many bytes this will add to your CSS. But, the odds are you may say:</strong></p>
+
+<p>But that’s not the only problem! Since your styles are so specific to the DOM, maintainability is now a problem.&lt;/strong&gt;</p>
+
+<p>nav {</p>
+
+<p>ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;</p>
+
+<p>li { display: inline-block;</p>
+
+<p>a {
+ display: block;
+ padding: 6px 12px;
+ text-decoration: none;
+ }
+ }
+ }
+}</p>
+
+<p>Output</p>
+
+<p>nav ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+nav ul li {
+ display: inline-block;
+}
+nav ul li a {
+ display: block;
+ padding: 6px 12px;
+ text-decoration: none;
+}</p>
+
+<p><em>Mixins</em> — Mixins are a great time saver, which is perhaps the reason for there frequent use. A mixing is a handy way of re-using blocks of code without the hassle of re-writing everything. The issue however is that the CSS is output regardless of whether or not the Mixin is used. This makes the practice of creating mixn partials for every eventualty quite a dangerous one.</p>
+
+<p>The Mixins code is also duplicated for each use adding bloat to the CS file.</p>
+
+<p>@mixin error-message {
+ color: #f00;
+ border: 2px solid #fc0;
+}</p>
+
+<p>.error-default {
+ @include error-message;
+}</p>
+
+<p>.error-special {
+ @include error-message;
+ background-color: #fcc;
+}</p>
+
+<p>output</p>
+
+<p>.error-default {
+ color: #f00;
+ border: 2px solid #fc0;
+}</p>
+
+<p>.error-special {
+ color: #f00;
+ border: 2px solid #fc0;
+ background-color: #fcc;
+}</p>
+
+<p><em>@extends</em> — The miss use of @extend can cause a lot of problems with selectors….</p>
+
+<p>As you may know, Sass is unable to extend an outer selector from within a media query. When doing so, the compiler simple crashes, telling you that you cannot do such a thing. Not great. Especially since media queries is almost all we do know.</p>
+
+<p>To make this real, let’s look at an actual CSS styling rule from the WordPress plugin WooCommerce:
+.product .single_add_to_cart_button, .cart .button, input.checkout-button.alt.button, .shipping-calculator-form .button, .multistep_step .button, #place_order.button, .single-product .single_add_to_cart_button.button.alt, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit, .woocommerce #content input.button, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button, .woocommerce-page #respond input#submit, .woocommerce-page #content input.button {
+ background-color: #605f5e;
+}</p>
+
+<p>.message {
+ border: 1px solid #ccc;
+ padding: 10px;
+ color: #333;
+}</p>
+
+<p>.success {
+ @extend .message;
+ border-color: green;
+}</p>
+
+<p>.error {
+ @extend .message;
+ border-color: red;
+}</p>
+
+<p>.warning {
+ @extend .message;
+ border-color: yellow;
+}</p>
+
+<p>output</p>
+
+<p>.message, .success, .error, .warning {
+ border: 1px solid #ccc;
+ padding: 10px;
+ color: #333;
+}</p>
+
+<p>.success {
+ border-color: green;
+}</p>
+
+<p>.error {
+ border-color: red;
+}</p>
+
+<p>.warning {
+ border-color: yellow;
+}</p>
+
+<p>Nested extend</p>
+
+<p>a{
+ padding: 10px;
+ color: #333;
+}</p>
+
+<p>nav {</p>
+
+<p>ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;</p>
+
+<p>li { display: inline-block;</p>
+
+<p>a {
+ @extend a;
+ text-decoration: none;
+ }
+ }
+ }
+}</p>
+
+<p>Output</p>
+
+<p>a, nav ul li a {
+ padding: 10px;
+ color: #333;
+}</p>
+
+<p>Reasons to love Sass</p>
+
+<p>Functions</p>
+
+<p>Grids</p>
+
+<p>Speed</p>
+
+<p>A bad workman blames his tools</p>
+
+<p>Most of the issues mentioned above are not new, and were were not brought about solely by Sass. Issues with CSS bloat, bad selectors and repetitive code are commonly found in projects using vanilla CSS only.</p>
+
+<p>Examples of Bad CSS….</p>
+
+<p>Selectors such as First of Type equally dangerous if used incorrectly/ inaproprietly</p>
+
+<p>overly repetitive css — Redundancy</p>
+
+<p>Bad selectors — too specific etc — overspecificity</p>
+
+<p>Dangerous selectors header div etc</p>
+
+<p>Better html classes would prevent this</p>
+
+<p>A bad workman blames his tools</p>
+
+<p>You know your Sass is good when you spend most of the project writing CSS</p>
+
+<p>An even worse workman expects an out of the box open source system to fix all there problems.</p>
+
+<p>There is a tool for pretty much everything these days, from drag and drop web builders to automated task runners and pre processors. A lot of these tools are great time savers and can enhance a project or at the very least speed up/eliminate mundane processes.</p>
+
+<p>The problem with these tools is that developers can become reliant on them, or worst still not fully understand what the tool is doing.</p>
+
+<p>It is important to remember that each tool, framework or methodology have been developed to solve specific problems, sometime on specific projects. They may not therefore be the right solution for your project.</p>
+
+<p>Each project should have it’s own naming convention, grid system, methodology etc. That are tailored for that specific project and fulfil a very unique set of problems.</p>
+
+<p>Why we use open source — documentation, easy to hire new developers etc.</p>
+
+<p>How to fix — chose the closet mach for you and evolve/edit where nesacary.</p>
+
+<p>Your using Sass wrong</p>
+
+<p>Mixins</p>
+
+<p>Mixins are one of many Sass features to come under fire for outputting un savoury CSS. Thos isn’t always the case though. A good mixin is open ended and offers a wide coverage of use cases. A lot of mixins out there seem to do very specific things, with one or two arguments and code that could be written out just as quickly. A good mixin should be a time saver, outputting vendor prefixes for example, but that can be used in numerous instances not just once or twice within a project.</p>
+
+<p>@mixin gradient($direction, $list) { 
+ background: $orange;
+ background: -webkit-linear-gradient($direction, $list);
+ background: -moz-linear-gradient($direction, $list);
+ background: -o-linear-gradient($direction, $list);
+ background: -ms-linear-gradient($direction, $list);
+ background: linear-gradient($direction, $list);
+ 
+}</p>
+
+<p>@include gradient(left, $lista);</p>
+
+<h1 id="its-not-sasss-fault-your-code-sucks">It’s not Sass’s fault your code sucks!</h1>
+<p>#Dont blame Sass</p>
+
+<p>Sass usage</p>
+
+<p>The most commonly used Sass in day to day tasks are things like nesting, variables and extends, all the stuff that gets the bad press. If we eliminate those things most developers would probably find they tend to write very little Sass and a lot of original CSS.</p>
+
+<p>This does not mean Sass is not useful, more that it’s use is in the architecture of a project. The part where patterns and layouts are defined to be used throughout the remainder of a project with little or no fuss.</p>
+
+<p>Increased use of the term Vanilla CSS</p>
+
+<p>I’ve read a lot lately about the negative impact Sass can have on style sheets. There have been a lot of features discussed as things Front end developers should stay away from to keep their CSS clean.</p>
+
+<p>In part I agree with this view, Sass used badly can certainly have a destructive impact. However the benefits of properly integrating Sass into your workflow far out way the drawbacks.</p>
+
+<p>nav {</p>
+
+<p>ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;</p>
+
+<p>li { display: inline-block;</p>
+
+<p>a {
+ display: block;
+ padding: 6px 12px;
+ text-decoration: none;
+ }
+ }
+ }
+}</p>
+
+<p>nav ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+nav ul li {
+ display: inline-block;
+}
+nav ul li a {
+ display: block;
+ padding: 6px 12px;
+ text-decoration: none;
+}</p>
+
+<h3 id="sass-love">Sass love</h3>
+
+<p>Despite all of the issues discussed above, Sass is still a powerful and incredibly useful tool. The ability to calculate widths or text spacing from a set value allows wholesale changes to implemented with one variable change. Scaling a website built with Sass is much simpler and quicker to achieve.</p>
+
+<p>Percentages, ( wouldn’t want to manually calculate grids) maths (vertical rhythm) variables if used properly</p>
+
+<h3 id="benefits-of-sass">Benefits of Sass…</h3>
+
+<p>even Vanilla CSS can create issues in the wrong hands (last child, first child, first of type etc, ) not scalable!</p>
+
+<p>Aids scaleability</p>
+
+<p>variables</p>
+
+<p>functions</p>
+
+<p>maths</p>
+
+<p>Use case…</p>
+
+<p>Grid</p>
+
+<h3 id="summery">Summery</h3>
+
+<p>In summery Sass does not create bad code, bad developers do.</p>
+
+<p>It’s not only Sass that gets the blame for out of control CSS, people even on occasion blame css and it’s lack of scope.</p>
+
+<p>Cascade</p>
 
 
 <section>
   <div class="share-page">
     <h3>Share this post</h3>
     <p>Share this on this post on Twitter, Facebook or Google</p>
-    <a href="https://twitter.com/intent/tweet?text=Have no fear&url=http://cathydutton.co.uk/posts/have-no-fear.html&via=cathy_dutton&related=cathy_dutton" rel="external" role="button" target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=http://cathydutton.co.uk/posts/have-no-fear.html" class="share-page__anchor share-page__facebook" rel="external" role="button" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
-    <a href="https://plus.google.com/share?url=http://cathydutton.co.uk/posts/have-no-fear.html" class="share-page__anchor share-page__google" rel="external" role="button" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
+    <a href="https://twitter.com/intent/tweet?text=It’s not Sass’s fault your CSS is sh*t&url=http://cathydutton.co.uk/posts/It-s-not-Sass-s-fault-your-CSS-is-sh-t.html&via=cathy_dutton&related=cathy_dutton" rel="external" role="button" target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=http://cathydutton.co.uk/posts/It-s-not-Sass-s-fault-your-CSS-is-sh-t.html" class="share-page__anchor share-page__facebook" rel="external" role="button" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
+    <a href="https://plus.google.com/share?url=http://cathydutton.co.uk/posts/It-s-not-Sass-s-fault-your-CSS-is-sh-t.html" class="share-page__anchor share-page__google" rel="external" role="button" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
 </div>
 
 </section>
@@ -220,7 +513,7 @@ https://github.com/cathydutton
   <ul class="page-navigation">
   
   <li class="button--page-navigation__prev">
-    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/prototyping-in-code.html">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/Cheating-on-Sass-with-Less.html">
       <!-- <span class="visually-hidden">Go to the previous post</span> -->
       <svg class="button--page-navigation__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
@@ -231,7 +524,7 @@ https://github.com/cathydutton
   
   
   <li class="button--page-navigation__next">
-    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/what-came-first.html">
+    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/Leaving-E-Commerce.html">
       <!-- <span class="visually-hidden">Go to the next post</span> -->
       <span class="page-navigation-title">Go to the next post</span>
       <svg class="button--page-navigation__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
