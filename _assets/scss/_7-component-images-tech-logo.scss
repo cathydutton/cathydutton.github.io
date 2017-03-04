@@ -60,7 +60,9 @@ $techlogos:
 (heroku, #29264d)
 (hapi, #fff)
 (illustrator, #df6e08)
-(handlebars, #f8931f);
+(handlebars, #f8931f)
+(bit-bucket, #1f5182)
+(slack, #38ba91);
 
 
 @each $techlogo, $color in $techlogos {

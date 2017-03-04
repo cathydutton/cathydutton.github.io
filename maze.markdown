@@ -34,7 +34,7 @@ npm install postcss-maze
 
 		<p>This calculates the wrapper width based on the values assigned to the largest and smallest media queries, and adds a clearfix.</p>
 
-		<p></p>The max width is calculated accounting for the element margins...</p>
+		<p>The max width is calculated accounting for the element margins...</p>
 
 <pre>
 .wrapper {

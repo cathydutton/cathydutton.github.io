@@ -39,47 +39,54 @@ https://github.com/cathydutton
 		<link rel="prerender" href="http://cathydutton.co.uk/portfolio.html">
 		<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+
+		{% if jekyll.environment == 'development' %}
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main-20170304.min.css">
+		<link rel="stylesheet" href="https://rawgit.com/ffoodd/a11y.css/master/css/a11y-en.css">
+		{% else %}
 		<!-- inject:css -->
 		<!-- endinject -->
 		<script>
-		    /*!
-		    loadCSS: load a CSS file asynchronously.
-		    [c]2014 @scottjehl, Filament Group, Inc.
-		    Licensed MIT
-		    */
-		    function loadCSS( href, before, media ){
-		        "use strict";
-		        var ss = window.document.createElement( "link" );
-		        var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
-		        var sheets = window.document.styleSheets;
-		        ss.rel = "stylesheet";
-		        ss.href = href;
-		        ss.media = "only x";
-		        ref.parentNode.insertBefore( ss, ref );
-		        function toggleMedia(){
-		            var defined;
-		            for( var i = 0; i < sheets.length; i++ ){
-		                if( sheets[ i ].href && sheets[ i ].href.indexOf( href ) > -1 ){
-		                    defined = true;
-		                }
-		            }
-		            if( defined ){
-		                ss.media = media || "all";
-		            }
-		            else {
-		                setTimeout( toggleMedia );
-		            }
-		        }
-		        toggleMedia();
-		        return ss;
-		    }
+				/*!
+				loadCSS: load a CSS file asynchronously.
+				[c]2014 @scottjehl, Filament Group, Inc.
+				Licensed MIT
+				*/
+				function loadCSS( href, before, media ){
+						"use strict";
+						var ss = window.document.createElement( "link" );
+						var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+						var sheets = window.document.styleSheets;
+						ss.rel = "stylesheet";
+						ss.href = href;
+						ss.media = "only x";
+						ref.parentNode.insertBefore( ss, ref );
+						function toggleMedia(){
+								var defined;
+								for( var i = 0; i < sheets.length; i++ ){
+										if( sheets[ i ].href && sheets[ i ].href.indexOf( href ) > -1 ){
+												defined = true;
+										}
+								}
+								if( defined ){
+										ss.media = media || "all";
+								}
+								else {
+										setTimeout( toggleMedia );
+								}
+						}
+						toggleMedia();
+						return ss;
+				}
 		</script>
 
 		<script>
-    		loadCSS( "{{ site.baseurl }}/assets/css/main-@@cacheBust.min.css" );
+				loadCSS( "{{ site.baseurl }}/assets/css/main-@@cacheBust.min.css" );
 		</script>
 
-		<!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main-20170207.min.css"> -->
+		{% endif %}
+
+
 
 
 		<script type="text/javascript">
