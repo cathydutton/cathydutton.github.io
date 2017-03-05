@@ -174,7 +174,7 @@
 	  jekyll.stderr.on('data', jekyllLogger);
 	});
 
-	gulp.task(' ', () => {
+	gulp.task('jekyll-live', () => {
 		var liveEnv = process.env;
 		liveEnv.JEKYLL_ENV = 'live';
 	  const jekyll = child.spawn('jekyll', ['serve',
