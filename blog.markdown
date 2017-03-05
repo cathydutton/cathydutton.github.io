@@ -15,7 +15,7 @@ active: "Blog"
 			<article class="news-feed__post">
 					<a href="{{post.url}}" title="{{ post.title }}" class="news-feed__anchor">
 							<h3 class="heading news-feed__title">{{ post.title }}</h3>
-							<p class="news-feed__date">{{ post.date | date: '%B %d, %Y' }}</p>
+							<p class="news-feed__date">{{ post.date | date_to_string }}</p>
 					</a>
 			 </article>
 		{% endif %}
@@ -23,7 +23,7 @@ active: "Blog"
 			<article class="news-feed__post">
 					<a href="{{post.link}}" title="{{ post.title }}" target="_blank" class="news-feed__anchor">
 							<h3 class="heading news-feed__title">{{ post.title }}</h3>
-							<p class="news-feed__date">{{ post.date | date: '%B %d, %Y' }}</p>
+							<p class="news-feed__date">{{ post.date | date_to_string }}</p>
 					</a>
 			 </article>
 		{% endif %}
