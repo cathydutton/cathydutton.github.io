@@ -41,46 +41,8 @@ https://github.com/cathydutton
 
 
 		
-		<!-- inject:css -->
-		<!-- endinject -->
-		<script>
-				/*!
-				loadCSS: load a CSS file asynchronously.
-				[c]2014 @scottjehl, Filament Group, Inc.
-				Licensed MIT
-				*/
-				function loadCSS( href, before, media ){
-						"use strict";
-						var ss = window.document.createElement( "link" );
-						var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
-						var sheets = window.document.styleSheets;
-						ss.rel = "stylesheet";
-						ss.href = href;
-						ss.media = "only x";
-						ref.parentNode.insertBefore( ss, ref );
-						function toggleMedia(){
-								var defined;
-								for( var i = 0; i < sheets.length; i++ ){
-										if( sheets[ i ].href && sheets[ i ].href.indexOf( href ) > -1 ){
-												defined = true;
-										}
-								}
-								if( defined ){
-										ss.media = media || "all";
-								}
-								else {
-										setTimeout( toggleMedia );
-								}
-						}
-						toggleMedia();
-						return ss;
-				}
-		</script>
-
-		<script>
-				loadCSS( "/assets/css/main-@@cacheBust.min.css" );
-		</script>
-
+		<link rel="stylesheet" href="/assets/css/main-20170304.min.css">
+		<link rel="stylesheet" href="https://rawgit.com/ffoodd/a11y.css/master/css/a11y-en.css">
 		
 
 
@@ -184,9 +146,9 @@ https://github.com/cathydutton
 </header>
 
 
-  <p>Designing new products or services can be a daunting or even intimidating process at times. How do you create an experience that works well for everybody? How do you design for edge or stress cases you don’t yet know exist? What if people don’t like, or worse cant use the service?</p>
+  <p>Designing new products or services can be a daunting or even intimidating process at times. How do you create an experience that works well for everybody? How do you design for edge and stress cases you don’t yet know exist? What if people don’t like, or worse cant use the service?</p>
 
-<p>There are many fears that need to be overcome in order to create successful user experiences including…</p>
+<p>There are many fears that need to be overcome in order to create a successful user experience including…</p>
 
 <ul>
   <li>
@@ -196,7 +158,7 @@ https://github.com/cathydutton
     <p><b>The fear of negative feedback</b> - It can be difficult not take bad feedback as a direct or personal criticism.</p>
   </li>
   <li>
-    <p><b>The fear of imperfection</b> - It’s tempting to keep your designs close, showing nothing until your completely satisfied with your work.</p>
+    <p><b>The fear of imperfection</b> - It’s tempting to keep your designs close, showing nothing until you are completely satisfied with your work.</p>
   </li>
 </ul>
 
@@ -208,7 +170,7 @@ https://github.com/cathydutton
 
 <p>Failure is not a bad thing, and in design it should be expected. Failure should be seen not as a negative outcome but as part of the design process. Every design will fail, for all users, a few users, all of the time or some of the time. Its important to remember that these failures are not permanent they are just steps on the path towards a more inclusive service.</p>
 
-<p>Accepting failures as part of the process will remove the fear factor and allow us to work with new approaches, ideas and techniques more freely. During the Alpha phase of projects this approach should be encouraged providing a more creative environment where boundaries can be pushed.  Trying the previously untried is the only way to improve existing solutions.</p>
+<p>Accepting failures as part of the process will remove the fear factor and allow you to work with new approaches, ideas and techniques more freely. During the Alpha phase of projects this approach should be encouraged providing a more creative environment where boundaries can be pushed. Trying the previously untried is the only way to improve upon existing solutions.</p>
 
 <blockquote>
 “Failure is simply the opportunity to begin again, this time more intelligently”
@@ -232,15 +194,15 @@ https://github.com/cathydutton
 
 <h3 id="let-go-of-perfection">Let go of perfection</h3>
 
-<p>Design can never be perfect, no matter how much we want it to be. To move closer to the perfection we crave we need to first show our work. The first thing we show will be far from perfect, but it will provide a starting point that can be improved over time.</p>
+<p>Design can never be perfect, no matter how much we want it to be. To move closer to the perfection we crave we need to first show our work. The first thing we show will be far from the finished product, but it will provide a starting point that can be improved over time.</p>
 
 <p>Its tempting not to show a concept or idea until you are completely satisfied with it, this however can lead to lot of wasted time. As tempting as it may be to show only our best work, it is important to get real user feedback as soon as possible.</p>
 
-<p>You can test anything from paper prototypes to rough wireframes or post-it note flow charts. Getting these things out in the open will help ensure our more polished efforts are usable.</p>
+<p>You can test anything from paper prototypes to rough wireframes or post-it note flow charts. Getting these things out in the open will help ensure your more polished efforts are usable.</p>
 
 <h3 id="in-summary">In summary</h3>
 
-<p>We will never achieve perfection but we can get closer to it through a series of failed attempts. Every failure or pice of negative feedback is a stepping stone to creating a more inclusive design and can therefore only be a good thing.</p>
+<p>To create a usable service we should first plan to fail. Every failure or pice of negative feedback should be used as stepping stone to creating a more inclusive design. Although will never achieve perfection we can get closer to it through a series of failed attempts.</p>
 
 
 <section>
@@ -258,7 +220,7 @@ https://github.com/cathydutton
   <ul class="page-navigation">
   
   <li class="button--page-navigation__prev">
-    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/things-I-learned-at-Manchesters-UpFront-conference-20160.html">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/what-came-first.html">
       <!-- <span class="visually-hidden">Go to the previous post</span> -->
       <svg class="button--page-navigation__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>

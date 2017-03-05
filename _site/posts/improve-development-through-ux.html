@@ -20,7 +20,7 @@ https://github.com/cathydutton
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Maze Re-factored</title>
+		<title>Improve development through UX</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="Front End Developer, UX, CSS, Sass, PostCSS, JavaScript">
 		<meta name="author" content="Cathy Dutton - www.cathydutton.co.uk" />
@@ -37,7 +37,7 @@ https://github.com/cathydutton
 
 		<!-- Prerender work page -->
 		<link rel="prerender" href="http://cathydutton.co.uk/portfolio.html">
-		<link rel="canonical" href="http://cathydutton.co.uk/posts/maze-re-factored.html">
+		<link rel="canonical" href="http://cathydutton.co.uk/posts/improve-development-through-ux.html">
 
 
 		
@@ -141,224 +141,209 @@ https://github.com/cathydutton
 <div class="content">
 <main id="main">
 <header role="banner" class="header">
-  <h1 class="heading heading__intro">Maze Re-factored</h1>
-  <p class="heading heading--primary">07 Feb 2015</p>
+  <h1 class="heading heading__intro">Improve development through UX</h1>
+  <p class="heading heading--primary">13 Jul 2015</p>
 </header>
 
 
-  <p>The original Maze framework was written in 2013 with the aim of removing column markup and creating a more semantic system. The grid was also developed with flexibility in mind aiming to create a basic starting point for any responsive layout. Maze was able to support any grid column size, with configurable margins and push values that could be updated from row to row. The direction in which elements stacked was also configurable. Documentation on how Maze worked can be found
-<a href="/maze-responsive-grid-framework">here</a>.</p>
+  <p>The way web applications are designed has changed a lot in recent years, from the tools used to the processes and the people involved.
+These changes are not only improving user experience, but also help to create a modular and ultimately more maintainable code base.
+Synchronising the design and development process results in a structured, organised and more performant application.</p>
 
-<p>Over the past year I have used Maze on numerous front end projects and have been pleased with the results. There has however been a couple of sticking points. Firstly in order for the grid mixin to work all designs/layouts must conform to the layout specified in the $grid-columns variable. Secondly the margin is applied only to the left of each element with the last child having no margin. This is fine for the desktop view but as the site responds the margins have to be reset for consistency.</p>
+<h2 id="in-the-beginning">In the beginning</h2>
 
-<p><a href="http://cathydutton.github.io/postcss-maze/" target="_blank" title="Maze demo">View Maze demo</a></p>
+<p>It’s been almost 10 years since I built my first website, back then I was responsable for both the design and development of a project.</p>
 
-<h2 class="heading"> Configurable layouts </h2>
+<p>my first task with any web project was to
+layout all the necessary pages in Photoshop, creating page specific designs with set dimensions.  This ‘page by page’
+approach then transferred to the development phase.</p>
 
-<p>Weather a 12, 16 or 24 column grid is used all aspects of the design need to fit. Unfortunately I have often come across designs for projects which although mostly conform to a set grid pattern have at least one element that does not.</p>
+<p>This process was very linear.</p>
 
-<p>For this reason I decided to refactor Maze to allow for a configurable $grid-columns variable that, like the margin and push values can be overridden where needed.</p>
+<p>As I then approach the developer phase…</p>
 
-<h4 id="default-variables">Default variables</h4>
+<p>working in this way will create page specific styling and repetitive CSS.  By integrating the design and
+development process the code output can be structured, better organised and re-usable.</p>
 
-<p>The default variables set at the top of the grid partial create the base settings for Maze. These values are used whenever the grid mixin is called, but importantly they can all be overridden for any part of the layout.</p>
+<p>Development process</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>/* Grid Defaults */
+<p>The way websites are built has changed over the years, projects are no longer viewed as a series of pages, but a series of
+modules, or features. These features become the building blocks of websites and applications.</p>
 
-$total-grid-columns: 12!default;
-$gutter: 2% !default;
-$fold: left !default;
-$push: 0 !default;
-</code></pre>
-</div>
+<p>The development process has moved on from simply recreating the Photo-shopped images in HTML and CSS. The code has to be
+both flexible scalable and maintainable.</p>
 
-<h4 id="the-grid-mixin">The grid mixin</h4>
+<p>Planning for future development or design changes mean the code has to be easy to adapt and to add to.  If the CSS is
+aligned to pages, moving small blocks can be difficult, leading to bloated code bases that are messy and difficult to work with.</p>
 
-<p>The mixin calculates the width of any column span we assign, and then uses our default values for $gutter, $fold and $push…</p>
+<p>CSS methodologies such as SMACCS and ITCSS tackle these problems by creating layers of CSS. The base layers are generic
+styles and repeated patterns for things like typography, color schemes and spacing. The bottom layers are for more specific styling.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>@mixin grid($col-span, $fold:$fold, $push:$push, $grid-size:$total-grid-columns, $margin:$gutter) {
+<p>Prototypes of elements (Style Guides not pages) — pattern libraries and toolkits should be the first layer — fitting in
+with popular coding architectures (base, etc)</p>
 
-        float:#{$fold};
-        width: (100% / ($grid-size / $col-span)) - $margin ;
+<p>An example of the CSS structure using ITCSS</p>
 
-        @if $push &amp;lt; 1 {
-            margin-left: ($margin/2);
-            margin-right: ($margin/2);
-        }
+<p>Settings — Global variables &amp; config
+Tools — Default mixins &amp; functions
+Generic — Normalize, resets, box-sizing
+Base — HTML elements
+Objects — Design patterns
+Components — Modules &amp; blocks of code
+Trumps — Helpers &amp; overrides</p>
 
-        @if $push &amp;gt; 1 {
-            margin-#{$fold}: (((100%  / $grid-size) * $push) ) + ( $margin / ( $grid-size / $push) );
-        }
+<p>Methodologies like this rely on access to designs for the entire application; decisions cannot be made when designs
+are delivered page by page. More information on the layers and there usage can be found here , SMACCS, ITCSS.</p>
+
+<p>Working together</p>
+
+<p>Modular design aides modular coding , forcing developers and designers to think about scalability, fluidity and
+changeability (using blocks on different pages seamlessly)</p>
+
+<p>To build modular, re-usable code in the ways outlined above, the design process should follow a similar pattern.</p>
+
+<p>Development and design are not two stand alone tasks, the two processes should work side by side, first creating
+style guides and then component libraries.</p>
+
+<p>The end of pages</p>
+
+<p>So simply designing page after page and then ‘throwing them over the fence to the development team no longer works.
+As with the development process the design needs to first create the base layers and repeated patterns in the form of a style guide.</p>
+
+<p>Components or modules can then be created individually without the restraints of pages and containers.</p>
+
+<p>Style Guide</p>
+
+<p>Before we begin to think about layouts or the structure of site components we first need a fully thought out and
+coded style guide. The design of fonts and headings, calls to action and links etc should be built at the very beginning of the process.</p>
+
+<p>By providing a style guide right at the start of the project the base layer of the CSS methodology can be constructed.
+Having access to all the potential color variants, fonts, headings and spacing right at the start will enable a developer
+to structure the CSS much more effectively, organising default styles on a base level.</p>
+
+<p>With all a designs repeated patterns defined, mixins, functions and variables can be set up. If done effectively all of
+the Sass (or Less) work should be completed at this stage. All components and modules should be built up from this base
+level CSS, with any unique styling written at component level in CSS. Working in this way also allows for site wide design
+changes to be implemented by altering only the effected variable or function.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$line-height: 1.5;
+
+.heading {
+      line-height: $line-height;
+}
+
+. review--heading {
+      line-height: ($line-height /3);
 }
 </code></pre>
 </div>
 
-<p>The $col-span variable is the value we will pass in when including the mixin, the rest or the arguments are being passed our default values from above and do not need to be added to the @include unless we are changing a value.</p>
+<p>Component library</p>
 
-<h4 id="default-usage">Default usage</h4>
+<p>Once the coded style guide is in place each module or component should be designed as an individual block, which is able
+to be used anywhere in the site. By designing this way the resulting code will also be re-usable.</p>
 
-<p>Because most of our settings have already been set including Maze is very simple, all we have to do is add in the value for how many columns our element should span.</p>
+<p>With a set of repeated patterns already defined, components can be built up quickly as visuals and more importantly built
+out of existing CSS.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.span-three {
-	@include grid(3);
+<p>Creating these components will help to keep the code base tidy. Code blocks will loose their attachments to pages and
+become re-usable building blocks that can be applied anywhere. Similarly the elements that make up the components will also be</p>
+
+<p>Creating a component library instead of just handing over page designs will also help with creating meaningful class names.</p>
+
+<p>For example a heading above a section of reviews on a product page may be labeled .review-heading. The very same heading
+could then be used on the basket page above up-sells for example…</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>. review--heading {
+      font-family: 'Roboto', sans-serif;
+   font-weight: 200;
+   font-size: 2em;
+     color: $base-color;
 }
 
-.span-six {
-	@include grid(6);
-}
-
-.span-three {
-	@include grid(3);
-}
-
-</code></pre>
-</div>
-
-<p>The values above are set based on the $total-grid-columns variable which we have set to 12.</p>
-
-<h4 id="setting-a-new-layout">Setting a new layout</h4>
-
-<p>So what happens if we want one or our rows to have five elements of equal width? This type of layout does not conform to traditional grid layouts so we will need to override the $total-grid-columns variable for this row.</p>
-
-<p>In the grid mixin we use and argument $grid-size which is set to $total-grid-columns, we can pass in a new value when we call the mixin to prevent the default use of a 12 column grid.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.equal-one-five {
-      @include grid(1, $grid-size:5); /* Size One of Five   */
-}
-
-</code></pre>
-</div>
-
-<p>This concept can be used to create any ratio required…</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.equal-two-five {
-      @include grid(2, $grid-size:5); /* Size Two of Five */
-}
-
-.equal-three-five {
-      @include grid(3, $grid-size:5); /* Size Three of Five */
+. up-sell--heading {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 200;
+   font-size: 2em;
+     color: $accent-color;
 }
 </code></pre>
 </div>
 
-<p>Adding this option means that any column layout or ratio can now be achieved with the Maze mixin.</p>
+<p>If both of these heading are the same we end up with duplicated CSS. With the style guide and component library already
+set up we can include the defined header styling and add a new class for any unique propertie</p>
 
-<h2 class="heading"> The Margin, removing last:child </h2>
+<div class="highlighter-rouge"><pre class="highlight"><code>. heading {
+      font-family: 'Roboto', sans-serif;
+   font-weight: 200;
+   font-size: 2em;
+     color: $base-color;
+}
 
-<p>The $gutter variable is used to add margin to both left and right side of each element, this removes the need to have a last:child element which differs from the rest of it’s containing row. This becomes beneficial when the design responds for keeping margins consistent.</p>
-
-<p>As we now have a margin on both sides of each element, the site will no longer fill the containing div and so the max-width will be slightly narrower then the design. To resolve this the max-width needs to be larger then the desired width by the same value as the gutter percentage. As we can not add a percentage value to a px value we need to do some quick maths with th break point variables.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>$gutter-unit:  $gutter / 1%;   /* Strips the percentage from the gutter value*/
-
-$wrapper-gutter-percentage: ($break-wide / 100)  * $gutter-unit;   /* Work out 1% of the largest breakpoint */
-
-$max-width: $break-wide + $wrapper-gutter-percentage; /* Add gutter value to $max-width so that each row is equal to $break-wide */
-
-$min-width: $break-mobile - 20px; /* Set min width with scroll bar */
-&lt;/pre&gt;
-
-This ensures that whatever value is assigned to $break-wide will be the max width of the website, regardless of the margins set on the inner elements.
-
-#### Breakpoints
-
-The variables for each breakpoint are also set at the beginning of the grid partial&amp;#8230;
-
-&lt;pre class="wp-code-highlight prettyprint"&gt;/* Breakpoints */
-
-$break-wide: 1180px;
-$break-desktop: 990px;
-$break-tablet: 767px;
-$break-mobile: 320px;
-</code></pre>
-</div>
-
-<p>These can be edited, added too or taken away and are used in the break mixin…</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>@mixin break($media, $col-span, $grid-size:$total-grid-columns) {
-
-	@if $media == desktop {
-
-		@media only screen and (max-width:$break-tablet) {
-			width: (((100%  / $grid-size) * $col-span) - $gutter ) ;
-			margin: $gutter / 2;
-		}
-	}
-
-	@else if $media == tablet {
-
-		@media only screen and (max-width:$break-tablet) {
-			width: (((100%  / $grid-size) * $col-span) - $gutter ) ;
-			margin: $gutter / 2;
-		}
-	}
-
-	@else if $media == mobile {
-
-		@media only screen and (max-width:$break-mobile) {
-			width: (((100%  / $grid-size) * $col-span) - $gutter ) ;
-			margin: $gutter / 2;
-		}
-	}
-
+. up-sell--heading {
+     color: $accent-color;
 }
 </code></pre>
 </div>
 
-<p>This mixin is called in the same way as the grid mixin to set the column spans as the site responds…</p>
+<p>The end of Photoshop?
+Prototyping and in Browser design</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.span-three {
-	@include grid(3);
-        @include break(tablet, 12);
-}
+<p>With ever changing device sizes and resolutions designing with set width image tools becomes less and less effective,
+in order to accurately prototype a fluid site designs must be tested at every size, quickly and reliably. This is simply
+not possible in Photoshop.</p>
 
-.span-six {
-	@include grid(6);
-        @include break(tablet, 6);
-}
+<p>A fluid prototype will highlight potential layout failings early on, forcing designers to focus on ‘in between states’
+and not just pre defined existing device sizes.</p>
 
-.span-three {
-	@include grid(3);
-        @include break(tablet, 6);
-}
+<p>Image prototypes lead to badly structured web objects, (building pages not modules) base set up not treated properly.
+And snap points for layouts, mobile, tablet, desktop, flow is not considered.</p>
 
+<p>A fluid prototype will highlight potential layout failings early on, forcing designers to focus on ‘in between states’
+and not just pre defined existing device sizes.</p>
+
+<p>Performance, a flat image gives the designer no concept of code size, potential performance issues.</p>
+
+<p>As well as moving away from concept pages it is also beneficial to move entirely away from layout programs such as Photoshop as
+early as possible in the process.</p>
+
+<p>With the CSS for individual element such as buttons, images and headings in place, new features can be quickly mocked up in code.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;div class=”news-feed”&gt;
+&lt;h1 class=”heading news-feed__heading”&gt;Feed Heading&lt;/h1&gt;
+&lt;p class=“news-feed__date”&gt;10th Jan 15&lt;/p&gt;
+&lt;p class=“news-feed__intro”&gt;10th Jan 15&lt;/p&gt;
+&lt;button class=”button news-feed__button”&gt;Read More&lt;/button&gt;
+&lt;/div&gt;
 </code></pre>
 </div>
 
-<h4 id="gutter-percentages">Gutter percentages</h4>
+<p>By adding the base classes the module automatically picks up the sites default styles, colors and spacing. All that is left to
+do is add any unique styles to the secondary classes.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.margin-four {
-       @include grid(4, $margin:5%) - Override margin value
-}
-</code></pre>
-</div>
+<p>In browser designing like this allows site wide adjustments to be made much quicker. For example simply changing one variable
+in a prototype can provide a demo for adjusting line height or spacing across all modules. Tweaking CSS in a prototype also
+speeds up adjustments on fluid applications quickly providing visuals across all resolutions.</p>
 
-<h4 id="push-values">Push values</h4>
+<p>Summery</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.push-two {
-       @include grid(2, $push:2); - - Add two column spans to the margin
-}
-</code></pre>
-</div>
+<p>In summery by aligning the two processes and having Designers and Developers work together, both processes can become more
+efficient. Design changes are much easier to implement and test in code.  CSS can be much more efficient when approached
+as a series of repeated patterns and stand alone components.</p>
 
-<h4 id="fold-direction">Fold direction</h4>
+<p>Built by developers at the same time
+Fits in with the coding process – base, objects, modules
+Design approach now matches dev approach</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>right-fold {
-        @include grid(3, $fold:"right"); - Columns will collapse from the left
-}
-</code></pre>
-</div>
-
-<p><a href="http://cathydutton.github.io/postcss-maze/" target="_blank" title="Maze demo">View Maze demo</a></p>
 
 
 <section>
   <div class="share-page">
     <h3>Share this post</h3>
     <p>Share this on this post on Twitter, Facebook or Google</p>
-    <a href="https://twitter.com/intent/tweet?text=Maze Re-factored&url=http://cathydutton.co.uk/posts/maze-re-factored.html&via=cathy_dutton&related=cathy_dutton" rel="external" role="button" target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=http://cathydutton.co.uk/posts/maze-re-factored.html" class="share-page__anchor share-page__facebook" rel="external" role="button" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
-    <a href="https://plus.google.com/share?url=http://cathydutton.co.uk/posts/maze-re-factored.html" class="share-page__anchor share-page__google" rel="external" role="button" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
+    <a href="https://twitter.com/intent/tweet?text=Improve development through UX&url=http://cathydutton.co.uk/posts/improve-development-through-ux.html&via=cathy_dutton&related=cathy_dutton" rel="external" role="button" target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=http://cathydutton.co.uk/posts/improve-development-through-ux.html" class="share-page__anchor share-page__facebook" rel="external" role="button" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
+    <a href="https://plus.google.com/share?url=http://cathydutton.co.uk/posts/improve-development-through-ux.html" class="share-page__anchor share-page__google" rel="external" role="button" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
 </div>
 
 </section>
@@ -367,7 +352,7 @@ $break-mobile: 320px;
   <ul class="page-navigation">
   
   <li class="button--page-navigation__prev">
-    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/optimise-your-css-with-your-markup.html">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/The-Repeated-Problems-of-Repeated-Patterns.html">
       <!-- <span class="visually-hidden">Go to the previous post</span> -->
       <svg class="button--page-navigation__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
@@ -378,7 +363,7 @@ $break-mobile: 320px;
   
   
   <li class="button--page-navigation__next">
-    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/8-tips-to-get-the-best-out-of-sass.html">
+    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/manging-front-end-developers.html">
       <!-- <span class="visually-hidden">Go to the next post</span> -->
       <span class="page-navigation-title">Go to the next post</span>
       <svg class="button--page-navigation__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >

@@ -6,15 +6,15 @@ date:   2017-03-05
 category: post
 ---
 
-Designing new products or services can be a daunting or even intimidating process at times. How do you create an experience that works well for everybody? How do you design for edge or stress cases you don't yet know exist? What if people don't like, or worse cant use the service?
+Designing new products or services can be a daunting or even intimidating process at times. How do you create an experience that works well for everybody? How do you design for edge and stress cases you don't yet know exist? What if people don't like, or worse cant use the service?
 
-There are many fears that need to be overcome in order to create successful user experiences including...
+There are many fears that need to be overcome in order to create a successful user experience including...
 
 - <b>The fear of failure</b> - It’s human nature to fear failure but in creative industries this mindset can be a hinderance.
 
 - <b>The fear of negative feedback</b> - It can be difficult not take bad feedback as a direct or personal criticism.
 
-- <b>The fear of imperfection</b> - It's tempting to keep your designs close, showing nothing until your completely satisfied with your work.
+- <b>The fear of imperfection</b> - It's tempting to keep your designs close, showing nothing until you are completely satisfied with your work.
 
 To create successful user focused designs it is essential to move past these fears, to except failures and to embrace all forms of feedback as soon as possible in the design process.
 
@@ -24,7 +24,7 @@ If nothing you create ever fails can you really claim to have pushed yourself cr
 
 Failure is not a bad thing, and in design it should be expected. Failure should be seen not as a negative outcome but as part of the design process. Every design will fail, for all users, a few users, all of the time or some of the time. Its important to remember that these failures are not permanent they are just steps on the path towards a more inclusive service.
 
-Accepting failures as part of the process will remove the fear factor and allow us to work with new approaches, ideas and techniques more freely. During the Alpha phase of projects this approach should be encouraged providing a more creative environment where boundaries can be pushed.  Trying the previously untried is the only way to improve existing solutions.
+Accepting failures as part of the process will remove the fear factor and allow you to work with new approaches, ideas and techniques more freely. During the Alpha phase of projects this approach should be encouraged providing a more creative environment where boundaries can be pushed. Trying the previously untried is the only way to improve upon existing solutions.
 
 <blockquote>
 “Failure is simply the opportunity to begin again, this time more intelligently”
@@ -49,12 +49,12 @@ Nobody has the ability to design an experience that works seamlessly in all situ
 
 ### Let go of perfection
 
-Design can never be perfect, no matter how much we want it to be. To move closer to the perfection we crave we need to first show our work. The first thing we show will be far from perfect, but it will provide a starting point that can be improved over time.
+Design can never be perfect, no matter how much we want it to be. To move closer to the perfection we crave we need to first show our work. The first thing we show will be far from the finished product, but it will provide a starting point that can be improved over time.
 
 Its tempting not to show a concept or idea until you are completely satisfied with it, this however can lead to lot of wasted time. As tempting as it may be to show only our best work, it is important to get real user feedback as soon as possible.
 
-You can test anything from paper prototypes to rough wireframes or post-it note flow charts. Getting these things out in the open will help ensure our more polished efforts are usable.
+You can test anything from paper prototypes to rough wireframes or post-it note flow charts. Getting these things out in the open will help ensure your more polished efforts are usable.
 
 ### In summary
 
-We will never achieve perfection but we can get closer to it through a series of failed attempts. Every failure or pice of negative feedback is a stepping stone to creating a more inclusive design and can therefore only be a good thing.
+To create a usable service we should first plan to fail. Every failure or pice of negative feedback should be used as stepping stone to creating a more inclusive design. Although will never achieve perfection we can get closer to it through a series of failed attempts.

@@ -41,46 +41,8 @@ https://github.com/cathydutton
 
 
 		
-		<!-- inject:css -->
-		<!-- endinject -->
-		<script>
-				/*!
-				loadCSS: load a CSS file asynchronously.
-				[c]2014 @scottjehl, Filament Group, Inc.
-				Licensed MIT
-				*/
-				function loadCSS( href, before, media ){
-						"use strict";
-						var ss = window.document.createElement( "link" );
-						var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
-						var sheets = window.document.styleSheets;
-						ss.rel = "stylesheet";
-						ss.href = href;
-						ss.media = "only x";
-						ref.parentNode.insertBefore( ss, ref );
-						function toggleMedia(){
-								var defined;
-								for( var i = 0; i < sheets.length; i++ ){
-										if( sheets[ i ].href && sheets[ i ].href.indexOf( href ) > -1 ){
-												defined = true;
-										}
-								}
-								if( defined ){
-										ss.media = media || "all";
-								}
-								else {
-										setTimeout( toggleMedia );
-								}
-						}
-						toggleMedia();
-						return ss;
-				}
-		</script>
-
-		<script>
-				loadCSS( "/assets/css/main-@@cacheBust.min.css" );
-		</script>
-
+		<link rel="stylesheet" href="/assets/css/main-20170304.min.css">
+		<link rel="stylesheet" href="https://rawgit.com/ffoodd/a11y.css/master/css/a11y-en.css">
 		
 
 
@@ -318,23 +280,16 @@ https://github.com/cathydutton
 		
 	
 		
-			<article class="news-feed__post">
-					<a href="/posts/things-I-learned-at-Manchesters-UpFront-conference-20160.html" title="UpFront conference 2016" class="news-feed__anchor">
-							<h3 class="heading news-feed__title"><span class="visually-hidden">Article title</span> UpFront conference 2016</h3>
-							<p class="news-feed__date"><span class="visually-hidden">Published on</span> 03 Jun 2016</p>
-					</a>
-				</article>
-		
 		
 	
 		
-		
 			<article class="news-feed__post">
-					<a href="http://blog.mrfrontend.org/2016/03/an-introduction-to-postcss/" title="Getting started with PostCSS" target="_blank" class="news-feed__anchor">
-							<h3 class="heading news-feed__title"><span class="visually-hidden">Article title</span> Getting started with PostCSS</h3>
-							<p class="news-feed__date"><span class="visually-hidden">Published on</span> 26 Mar 2016</p>
+					<a href="/posts/prototyping-in-code.html" title="Saying goodbye to Photoshop" class="news-feed__anchor">
+							<h3 class="heading news-feed__title"><span class="visually-hidden">Article title</span> Saying goodbye to Photoshop</h3>
+							<p class="news-feed__date"><span class="visually-hidden">Published on</span> 13 Feb 2017</p>
 					</a>
-			 </article>
+				</article>
+		
 		
 	
 </div>

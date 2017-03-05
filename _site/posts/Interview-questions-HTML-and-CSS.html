@@ -20,7 +20,7 @@ https://github.com/cathydutton
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Maze Re-factored</title>
+		<title>Title</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="Front End Developer, UX, CSS, Sass, PostCSS, JavaScript">
 		<meta name="author" content="Cathy Dutton - www.cathydutton.co.uk" />
@@ -37,7 +37,7 @@ https://github.com/cathydutton
 
 		<!-- Prerender work page -->
 		<link rel="prerender" href="http://cathydutton.co.uk/portfolio.html">
-		<link rel="canonical" href="http://cathydutton.co.uk/posts/maze-re-factored.html">
+		<link rel="canonical" href="http://cathydutton.co.uk/posts/Interview-questions-HTML-and-CSS.html">
 
 
 		
@@ -141,224 +141,21 @@ https://github.com/cathydutton
 <div class="content">
 <main id="main">
 <header role="banner" class="header">
-  <h1 class="heading heading__intro">Maze Re-factored</h1>
-  <p class="heading heading--primary">07 Feb 2015</p>
+  <h1 class="heading heading__intro">Title</h1>
+  <p class="heading heading--primary">03 Sep 2016</p>
 </header>
 
 
-  <p>The original Maze framework was written in 2013 with the aim of removing column markup and creating a more semantic system. The grid was also developed with flexibility in mind aiming to create a basic starting point for any responsive layout. Maze was able to support any grid column size, with configurable margins and push values that could be updated from row to row. The direction in which elements stacked was also configurable. Documentation on how Maze worked can be found
-<a href="/maze-responsive-grid-framework">here</a>.</p>
-
-<p>Over the past year I have used Maze on numerous front end projects and have been pleased with the results. There has however been a couple of sticking points. Firstly in order for the grid mixin to work all designs/layouts must conform to the layout specified in the $grid-columns variable. Secondly the margin is applied only to the left of each element with the last child having no margin. This is fine for the desktop view but as the site responds the margins have to be reset for consistency.</p>
-
-<p><a href="http://cathydutton.github.io/postcss-maze/" target="_blank" title="Maze demo">View Maze demo</a></p>
-
-<h2 class="heading"> Configurable layouts </h2>
-
-<p>Weather a 12, 16 or 24 column grid is used all aspects of the design need to fit. Unfortunately I have often come across designs for projects which although mostly conform to a set grid pattern have at least one element that does not.</p>
-
-<p>For this reason I decided to refactor Maze to allow for a configurable $grid-columns variable that, like the margin and push values can be overridden where needed.</p>
-
-<h4 id="default-variables">Default variables</h4>
-
-<p>The default variables set at the top of the grid partial create the base settings for Maze. These values are used whenever the grid mixin is called, but importantly they can all be overridden for any part of the layout.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>/* Grid Defaults */
-
-$total-grid-columns: 12!default;
-$gutter: 2% !default;
-$fold: left !default;
-$push: 0 !default;
-</code></pre>
-</div>
-
-<h4 id="the-grid-mixin">The grid mixin</h4>
-
-<p>The mixin calculates the width of any column span we assign, and then uses our default values for $gutter, $fold and $push…</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>@mixin grid($col-span, $fold:$fold, $push:$push, $grid-size:$total-grid-columns, $margin:$gutter) {
-
-        float:#{$fold};
-        width: (100% / ($grid-size / $col-span)) - $margin ;
-
-        @if $push &amp;lt; 1 {
-            margin-left: ($margin/2);
-            margin-right: ($margin/2);
-        }
-
-        @if $push &amp;gt; 1 {
-            margin-#{$fold}: (((100%  / $grid-size) * $push) ) + ( $margin / ( $grid-size / $push) );
-        }
-}
-</code></pre>
-</div>
-
-<p>The $col-span variable is the value we will pass in when including the mixin, the rest or the arguments are being passed our default values from above and do not need to be added to the @include unless we are changing a value.</p>
-
-<h4 id="default-usage">Default usage</h4>
-
-<p>Because most of our settings have already been set including Maze is very simple, all we have to do is add in the value for how many columns our element should span.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.span-three {
-	@include grid(3);
-}
-
-.span-six {
-	@include grid(6);
-}
-
-.span-three {
-	@include grid(3);
-}
-
-</code></pre>
-</div>
-
-<p>The values above are set based on the $total-grid-columns variable which we have set to 12.</p>
-
-<h4 id="setting-a-new-layout">Setting a new layout</h4>
-
-<p>So what happens if we want one or our rows to have five elements of equal width? This type of layout does not conform to traditional grid layouts so we will need to override the $total-grid-columns variable for this row.</p>
-
-<p>In the grid mixin we use and argument $grid-size which is set to $total-grid-columns, we can pass in a new value when we call the mixin to prevent the default use of a 12 column grid.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.equal-one-five {
-      @include grid(1, $grid-size:5); /* Size One of Five   */
-}
-
-</code></pre>
-</div>
-
-<p>This concept can be used to create any ratio required…</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.equal-two-five {
-      @include grid(2, $grid-size:5); /* Size Two of Five */
-}
-
-.equal-three-five {
-      @include grid(3, $grid-size:5); /* Size Three of Five */
-}
-</code></pre>
-</div>
-
-<p>Adding this option means that any column layout or ratio can now be achieved with the Maze mixin.</p>
-
-<h2 class="heading"> The Margin, removing last:child </h2>
-
-<p>The $gutter variable is used to add margin to both left and right side of each element, this removes the need to have a last:child element which differs from the rest of it’s containing row. This becomes beneficial when the design responds for keeping margins consistent.</p>
-
-<p>As we now have a margin on both sides of each element, the site will no longer fill the containing div and so the max-width will be slightly narrower then the design. To resolve this the max-width needs to be larger then the desired width by the same value as the gutter percentage. As we can not add a percentage value to a px value we need to do some quick maths with th break point variables.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>$gutter-unit:  $gutter / 1%;   /* Strips the percentage from the gutter value*/
-
-$wrapper-gutter-percentage: ($break-wide / 100)  * $gutter-unit;   /* Work out 1% of the largest breakpoint */
-
-$max-width: $break-wide + $wrapper-gutter-percentage; /* Add gutter value to $max-width so that each row is equal to $break-wide */
-
-$min-width: $break-mobile - 20px; /* Set min width with scroll bar */
-&lt;/pre&gt;
-
-This ensures that whatever value is assigned to $break-wide will be the max width of the website, regardless of the margins set on the inner elements.
-
-#### Breakpoints
-
-The variables for each breakpoint are also set at the beginning of the grid partial&amp;#8230;
-
-&lt;pre class="wp-code-highlight prettyprint"&gt;/* Breakpoints */
-
-$break-wide: 1180px;
-$break-desktop: 990px;
-$break-tablet: 767px;
-$break-mobile: 320px;
-</code></pre>
-</div>
-
-<p>These can be edited, added too or taken away and are used in the break mixin…</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>@mixin break($media, $col-span, $grid-size:$total-grid-columns) {
-
-	@if $media == desktop {
-
-		@media only screen and (max-width:$break-tablet) {
-			width: (((100%  / $grid-size) * $col-span) - $gutter ) ;
-			margin: $gutter / 2;
-		}
-	}
-
-	@else if $media == tablet {
-
-		@media only screen and (max-width:$break-tablet) {
-			width: (((100%  / $grid-size) * $col-span) - $gutter ) ;
-			margin: $gutter / 2;
-		}
-	}
-
-	@else if $media == mobile {
-
-		@media only screen and (max-width:$break-mobile) {
-			width: (((100%  / $grid-size) * $col-span) - $gutter ) ;
-			margin: $gutter / 2;
-		}
-	}
-
-}
-</code></pre>
-</div>
-
-<p>This mixin is called in the same way as the grid mixin to set the column spans as the site responds…</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.span-three {
-	@include grid(3);
-        @include break(tablet, 12);
-}
-
-.span-six {
-	@include grid(6);
-        @include break(tablet, 6);
-}
-
-.span-three {
-	@include grid(3);
-        @include break(tablet, 6);
-}
-
-</code></pre>
-</div>
-
-<h4 id="gutter-percentages">Gutter percentages</h4>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.margin-four {
-       @include grid(4, $margin:5%) - Override margin value
-}
-</code></pre>
-</div>
-
-<h4 id="push-values">Push values</h4>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.push-two {
-       @include grid(2, $push:2); - - Add two column spans to the margin
-}
-</code></pre>
-</div>
-
-<h4 id="fold-direction">Fold direction</h4>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>right-fold {
-        @include grid(3, $fold:"right"); - Columns will collapse from the left
-}
-</code></pre>
-</div>
-
-<p><a href="http://cathydutton.github.io/postcss-maze/" target="_blank" title="Maze demo">View Maze demo</a></p>
+  
 
 
 <section>
   <div class="share-page">
     <h3>Share this post</h3>
     <p>Share this on this post on Twitter, Facebook or Google</p>
-    <a href="https://twitter.com/intent/tweet?text=Maze Re-factored&url=http://cathydutton.co.uk/posts/maze-re-factored.html&via=cathy_dutton&related=cathy_dutton" rel="external" role="button" target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=http://cathydutton.co.uk/posts/maze-re-factored.html" class="share-page__anchor share-page__facebook" rel="external" role="button" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
-    <a href="https://plus.google.com/share?url=http://cathydutton.co.uk/posts/maze-re-factored.html" class="share-page__anchor share-page__google" rel="external" role="button" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
+    <a href="https://twitter.com/intent/tweet?text=Title&url=http://cathydutton.co.uk/posts/Interview-questions-HTML-and-CSS.html&via=cathy_dutton&related=cathy_dutton" rel="external" role="button" target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=http://cathydutton.co.uk/posts/Interview-questions-HTML-and-CSS.html" class="share-page__anchor share-page__facebook" rel="external" role="button" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
+    <a href="https://plus.google.com/share?url=http://cathydutton.co.uk/posts/Interview-questions-HTML-and-CSS.html" class="share-page__anchor share-page__google" rel="external" role="button" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
 </div>
 
 </section>
@@ -367,7 +164,7 @@ $break-mobile: 320px;
   <ul class="page-navigation">
   
   <li class="button--page-navigation__prev">
-    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/optimise-your-css-with-your-markup.html">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/going-back-to-design.html">
       <!-- <span class="visually-hidden">Go to the previous post</span> -->
       <svg class="button--page-navigation__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
@@ -378,7 +175,7 @@ $break-mobile: 320px;
   
   
   <li class="button--page-navigation__next">
-    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/8-tips-to-get-the-best-out-of-sass.html">
+    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/Writing-a-simple-postCSS-plugin.html">
       <!-- <span class="visually-hidden">Go to the next post</span> -->
       <span class="page-navigation-title">Go to the next post</span>
       <svg class="button--page-navigation__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
