@@ -25,13 +25,14 @@ a:focus {
 
 [href^="http"]:not([href*="cathydutton.co.uk"])::after {
     display: inline-block;
-    width: 0;
-    height: 0;
+/*     width: 0;
+    height: 0; */
     /* alternative text rules */
     content: '(external link)';
-    overflow: hidden;
+/*     overflow: hidden; */
     white-space: nowrap;
-    text-indent: 1em; /* the width of the icon */
+/*     text-indent: 1em; the width of the icon */
+    margin-left: 6px;
 }
 
 
