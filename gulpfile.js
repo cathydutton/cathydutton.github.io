@@ -262,5 +262,5 @@
 
 	// Live tasks
 	gulp.task('live', function(callback) {
-		plugins.runSequence('jekyll-live', 'deploy', callback);
+		plugins.runSequence('jekyll-live', 'gulp-inject', 'deploy', callback);
 	});

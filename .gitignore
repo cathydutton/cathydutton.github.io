@@ -1,6 +1,6 @@
 node_modules/
 .sass-cache
 .publish/
-dist/
-dist
+_site/
+_site
 *.log
