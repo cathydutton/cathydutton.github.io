@@ -112,16 +112,15 @@ a:focus {
   outline: 3px solid #ccf2ff;
   transition: all .3s ease-in-out; }
 
-[href^="http"]:not([href*="cathydutton.co.uk"])::after {
+a[target=_blank]::after {
   display: inline-block;
   width: 0;
   height: 0;
-  /* alternative text rules */
   content: '(external link)';
   overflow: hidden;
   white-space: nowrap;
   text-indent: 1em;
-  /* the width of the icon */ }
+  margin-left: 6px; }
 
 ::selection {
   background: #ffd380; }
