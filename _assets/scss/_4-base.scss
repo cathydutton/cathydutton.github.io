@@ -23,17 +23,25 @@ a:focus {
   transition: all .3s ease-in-out;
 }
 
-[href^="http"]:not([href*="cathydutton.co.uk"])::after {
+/* [href^="http"]:not([href*="cathydutton.co.uk"])::after {
     display: inline-block;
-/*     width: 0;
-    height: 0; */
-    /* alternative text rules */
+    width: 0;
+    height: 0; 
+    alternative text rules
     content: '(external link)';
-/*     overflow: hidden; */
+    overflow: hidden;
     white-space: nowrap;
-/*     text-indent: 1em; the width of the icon */
+    text-indent: 1em; the width of the icon
     margin-left: 6px;
+} */
+
+a[target=_blank] {
+     display: inline-block;
+    content: '(external link)';
+    white-space: nowrap;
+    margin-left: 6px; 
 }
+
 
 
 // SELECT
