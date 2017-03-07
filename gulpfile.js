@@ -50,6 +50,7 @@
 
 	gulp.task('critical-css', plugins.getModule('css/critical'));
 	gulp.task('main-css', plugins.getModule('css/main'));
+	gulp.task('dev-css', plugins.getModule('css/dev'));
 	gulp.task('scripts', plugins.getModule('javascript/scripts'));
 	gulp.task('inject', plugins.getModule('html/inject'));
 	gulp.task('image-optimise', plugins.getModule('images/optimise'));
@@ -102,56 +103,7 @@
       .pipe(csslint.reporter());
   });
 
-	// Style stats
-	var stylestats = require('gulp-stylestats');
-
-	gulp.task('stylestats', function () {
-	  return gulp.src(plugins.path.join(paths.build.css, '*.css'))
-	    .pipe(stylestats({
-	      type: 'json',
-	      outfile: true
-	    }))
-	    .pipe(gulp.dest('./stats/'));
-	});
-
-	// Jekyll Dev
-	// gulp.task('jekyll-dev', function() {
-	//
-	// 	// Child modules
-	// 	var spawn = require('child_process').spawn;
-	// 	var jekyll = spawn('jekyll', ['build', '--config', '_config.yml', '_config_dev.yml', '--trace'], {stdio: 'inherit'});
-	//
-	// 	// Return module
-	// 	return function() {
-	// 		jekyll.on('exit', function(code) {
-	// 			gulpCallBack(code === 0 ? null : 'ERROR: Jekyll process exited with code: '+code);
-	// 		})
-	// 		.pipe(plugins.browserSync.reload({ stream: true }));
-	// 	};
-	// });
-
-	// Jekyll Live
-	// gulp.task('jekyll-live', function() {
-	//
-	// 	// Child modules
-	// 	var spawn = require('child_process').spawn;
-	// 	var jekyll = spawn('jekyll', ['build', '--config', '_config.yml', '--trace'], {stdio: 'inherit'});
-	//
-	// 	// Return module
-	// 	return function() {
-	// 		jekyll.on('exit', function(code) {
-	// 			gulpCallBack(code === 0 ? null : 'ERROR: Jekyll process exited with code: '+code);
-	// 		})
-	// 		.pipe(plugins.browserSync.reload({ stream: true }));
-	// 	};
-	// });
-
-	// Jekyll Rebuild
-	// gulp.task('jekyll-rebuild', function() {
-	// 	plugins.runSequence('default');
-	// });
-
-
+	// JEKYLL DEV
 	const child = require('child_process');
 	const gutil = require('gulp-util');
 
@@ -174,6 +126,8 @@
 	  jekyll.stderr.on('data', jekyllLogger);
 	});
 
+
+	// JEKYLL LIVE
 	gulp.task('jekyll-live', () => {
 		var liveEnv = process.env;
 		liveEnv.JEKYLL_ENV = 'live';
@@ -194,23 +148,8 @@
 	});
 
 
-	// gulp.task('jekyll-live', () => {
-	// 	const jekyll = child.spawn('jekyll', ['serve',
-	// 		'--watch',
-	// 		'--incremental'
-	// 	]);
-	//
-	// 	const jekyllLogger = (buffer) => {
-	// 		buffer.toString()
-	// 			.split(/\n/)
-	// 			.forEach((message) => gutil.log('Jekyll: ' + message));
-	// 	};
-	//
-	// 	jekyll.stdout.on('data', jekyllLogger);
-	// 	jekyll.stderr.on('data', jekyllLogger);
-	// });
 
-
+	// JEKYL SERVE
 	const browserSync = require('browser-sync').create();
 	const siteRoot = '_site';
 
@@ -238,29 +177,26 @@
 	Main tasks
 	----------------------------------- */
 
-	// Shared build tasks
-	gulp.task('build', function(callback) {
+	//  build dev
+	gulp.task('build-dev', function(callback) {
+		//plugins.runSequence('scss-lint', ['critical-css', 'main-css', 'scripts'], callback);
+		plugins.runSequence(['dev-css', 'scripts', 'image-optimise'], callback);
+	});
+
+	//  build live
+	gulp.task('build-live', function(callback) {
 		//plugins.runSequence('scss-lint', ['critical-css', 'main-css', 'scripts'], callback);
 		plugins.runSequence(['critical-css', 'main-css', 'scripts', 'image-optimise'], callback);
 	});
 
-	// Shared live tasks
-	// gulp.task('build-live', function(callback) {
-	// 	plugins.runSequence('scss-lint', ['critical-css', 'main-css', 'scripts'], callback);
-	// });
-
-	// Default tasks
-	gulp.task('default', function(callback) {
-		plugins.runSequence('build', callback);
-	});
 
 	// Development tasks
 	gulp.task('dev', function(callback) {
-		plugins.runSequence('build', ['watch', 'jekyll-dev',  'inject', 'serve'],  callback);
+		plugins.runSequence('build-dev', ['watch', 'jekyll-dev', 'serve'],  callback);
 	});
 
 
 	// Live tasks
 	gulp.task('live', function(callback) {
-		plugins.runSequence('jekyll-live', 'gulp-inject', 'deploy', callback);
+		plugins.runSequence('build-live', ['jekyll-live' , 'serve', 'inject'], callback);
 	});
