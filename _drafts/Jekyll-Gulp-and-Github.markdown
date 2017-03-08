@@ -18,6 +18,8 @@ I spend a ridiculous amount of time updating my personal website and blog....
 
  Clean site folder on live build
 
+  Exclude jekyll folders
+
  Don't watch _assets folder - Gulp not Jekyll to control
 
  jekyl drafts in production

@@ -203,5 +203,5 @@
 
 	// Push
 	gulp.task('push', function(callback) {
-		plugins.runSequence('inject', ['deploy'] ,callback);
+		plugins.runSequence('minify', ['deploy'] ,callback);
 	});
