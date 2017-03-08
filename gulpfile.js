@@ -88,12 +88,12 @@
       'config': 'default.yml',
       'reporterOutput': 'scssReport.json',
     }))
-    //.pipe(scsslint.failReporter()) // Fail on warnings & errors
+    .pipe(scsslint.failReporter()) // Fail on warnings & errors
     .pipe(scsslint.failReporter('E')) // Fail on set errors
-    // .on('error', function (err) {
-    //       console.log(err);
-    //       process.exit(1);
-    // })
+    .on('error', function (err) {
+          console.log(err);
+          process.exit(1);
+    })
   });
 
 
@@ -182,8 +182,7 @@
 
 	//  build dev
 	gulp.task('build-dev', function(callback) {
-		//plugins.runSequence('scss-lint', ['dev-css', 'image-optimise'], callback);
-		plugins.runSequence('clean-assests', 'clean', 'dev-css', 'image-optimise', callback);
+		plugins.runSequence('clean-assests', 'clean', 'scss-lint', 'dev-css', 'image-optimise', callback);
 	});
 
 	//  build live
