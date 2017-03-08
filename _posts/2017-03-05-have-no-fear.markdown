@@ -57,4 +57,4 @@ You can test anything from paper prototypes to rough wireframes or post-it note 
 
 ### In summary
 
-To create a usable service we should first plan to fail. Every failure or pice of negative feedback should be used as stepping stone to creating a more inclusive design. Although will never achieve perfection we can get closer to it through a series of failed attempts.
+To create a usable service we should first plan to fail. Every failure or piece of negative feedback should be used as stepping stone to creating a more inclusive design. Although will never achieve perfection we can get closer to it through a series of failed attempts.

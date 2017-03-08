@@ -32,4 +32,4 @@ collections:
     permalink: /portfolio/:title.html
 
 
-exclude: ["node_modules", "default.yml", "gulpfile.js", "LICENSE.txt", "package.json", "README.md", "scssReport.json", "stats", "tasks"]
+exclude: ["node_modules", "default.yml", "gulpfile.js", "LICENSE.txt", "package.json", "README.md", "scssReport.json", "stats", "tasks", _assets]

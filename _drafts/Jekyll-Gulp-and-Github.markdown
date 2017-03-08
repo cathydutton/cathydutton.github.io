@@ -10,6 +10,18 @@ I spend a ridiculous amount of time updating my personal website and blog....
 
  Jekyll, Gulp and Github
 
+ Minify production code
+ add cache bust
+ and critical css
+
+ Clean old cached files
+
+ Clean site folder on live build
+
+ Don't watch _assets folder - Gulp not Jekyll to control
+
+ jekyl drafts in production
+
 ## Heading ????
 
 Separating environments can be useful for may reasons personally I like to run a11y.css in my local environment. Having it switched on continuously encourages me to actually fix the errors and suggestions. I also need to see updates to CSS and markup in real time. To do this I compile a separate CSS file to the versioned file used in production.
@@ -55,14 +67,28 @@ Need to make the gulp file work for live and deployments
 
 
 ```
-
+gulp.task('jekyll-dev', () => {
+  var productionEnv = process.env;
+  productionEnv.JEKYLL_ENV = 'development';
+  const jekyll = child.spawn('jekyll', ['serve',
+    '--watch',
+    '--incremental',
+    '--drafts'
+  ]);
 ```
 
 
 
 
 ```
-
+gulp.task('jekyll-live', () => {
+  var liveEnv = process.env;
+  liveEnv.JEKYLL_ENV = 'live';
+  const jekyll = child.spawn('jekyll', ['serve',
+    // '--watch',
+    // '--incremental'
+    // '--drafts'
+  ]);
 ```
 
 

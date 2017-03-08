@@ -18,7 +18,7 @@
 		// Build paths
 		base: __dirname,
 		dist: plugins.path.join(__dirname, '_site'),
-		source: plugins.path.join(__dirname, ''),
+		assets: plugins.path.join(__dirname, 'assets'),
 		tasks: plugins.path.join(__dirname, '_tasks'),
 
 		// Src assets
@@ -51,8 +51,8 @@
 	gulp.task('critical-css', plugins.getModule('css/critical'));
 	gulp.task('main-css', plugins.getModule('css/main'));
 	gulp.task('dev-css', plugins.getModule('css/dev'));
-	gulp.task('scripts', plugins.getModule('javascript/scripts'));
 	gulp.task('inject', plugins.getModule('html/inject'));
+	gulp.task('minify', plugins.getModule('html/minify'));
 	gulp.task('image-optimise', plugins.getModule('images/optimise'));
 	gulp.task('watch', plugins.getModule('watch'));
 	gulp.task('browser-sync', plugins.getModule('browser-sync'));
@@ -62,12 +62,18 @@
 	Utility tasks
 	----------------------------------- */
 
-	// Clean Task
+	// Clean _site
 	var clean = require('gulp-clean');
 
 	gulp.task('clean', function() {
 		return gulp.src(plugins.path.join(paths.dist))
 	    .pipe(clean());
+	});
+
+	// Clean assets
+	gulp.task('clean-assests', function () {
+	return gulp.src(plugins.path.join(paths.assets))
+    .pipe(clean());
 	});
 
 
@@ -103,13 +109,15 @@
       .pipe(csslint.reporter());
   });
 
+
+
 	// JEKYLL DEV
 	const child = require('child_process');
 	const gutil = require('gulp-util');
 
 	gulp.task('jekyll-dev', () => {
-		var productionEnv = process.env;
-		productionEnv.JEKYLL_ENV = 'development';
+		var devEnv = process.env;
+		devEnv.JEKYLL_ENV = 'development';
 	  const jekyll = child.spawn('jekyll', ['serve',
 	    '--watch',
 	    '--incremental',
@@ -132,9 +140,7 @@
 		var liveEnv = process.env;
 		liveEnv.JEKYLL_ENV = 'live';
 	  const jekyll = child.spawn('jekyll', ['serve',
-	    // '--watch',
-	    // '--incremental'
-	    // '--drafts'
+		'--incremental',
 	  ]);
 
 	  const jekyllLogger = (buffer) => {
@@ -163,15 +169,12 @@
 	  });
 	});
 
-
 	// Deploy
 	var ghPages = require('gulp-gh-pages');
-
 	gulp.task('deploy', function() {
-	  return gulp.src('./_site/**/*')
-	    .pipe(ghPages());
+		return gulp.src('./_site/**/*')
+			.pipe(ghPages());
 	});
-
 
 /*
 	Main tasks
@@ -179,24 +182,26 @@
 
 	//  build dev
 	gulp.task('build-dev', function(callback) {
-		//plugins.runSequence('scss-lint', ['critical-css', 'main-css', 'scripts'], callback);
-		plugins.runSequence(['dev-css', 'scripts', 'image-optimise'], callback);
+		//plugins.runSequence('scss-lint', ['dev-css', 'image-optimise'], callback);
+		plugins.runSequence('clean-assests', 'clean', 'dev-css', 'image-optimise', callback);
 	});
 
 	//  build live
 	gulp.task('build-live', function(callback) {
-		//plugins.runSequence('scss-lint', ['critical-css', 'main-css', 'scripts'], callback);
-		plugins.runSequence(['critical-css', 'main-css', 'scripts', 'image-optimise'], callback);
+		plugins.runSequence('clean-assests', ['critical-css', 'main-css', 'image-optimise'], ['inject'], ['minify'], 'clean', callback);
 	});
-
 
 	// Development tasks
 	gulp.task('dev', function(callback) {
 		plugins.runSequence('build-dev', ['watch', 'jekyll-dev', 'serve'],  callback);
 	});
 
-
 	// Live tasks
 	gulp.task('live', function(callback) {
-		plugins.runSequence('build-live', ['jekyll-live' , 'serve', 'inject'], callback);
+		plugins.runSequence(['build-live'], ['jekyll-live'] ,callback);
+	});
+
+	// Push
+	gulp.task('push', function(callback) {
+		plugins.runSequence('inject', ['deploy'] ,callback);
 	});

@@ -16,36 +16,20 @@
 		return function() {
 
 			// Source paths
-			var pathCSS = plugins.path.join(paths.src.scss, '{,**/}*.scss'),
-				pathJS = plugins.path.join(paths.src.js, '{,**/}*.js'),
+			var pathCSS = plugins.path.join(paths.src.scss, '*.scss'),
 				pathImages = plugins.path.join(paths.src.images, '**');
 
 			// Watch for CSS changes
 			plugins.watch(pathCSS, function() {
-				plugins.runSequence('scss-lint', 'critical-css', 'main-css');
+				// plugins.runSequence('scss-lint', 'critical-css', 'main-css', 'dev-css');
+				plugins.runSequence('critical-css', 'main-css', 'dev-css');
 			});
-
-			// Watch for JS changes
-			plugins.watch(pathJS, function() {
-				gulp.start('scripts');
-			});
-
-
-
-
-			// Watch for JEKYLL changes
-			// plugins.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*', '_config.yml', '_config_dev.yml'], function() {
-			// 	gulp.start('jekyll-rebuild');
-			// });
-
-			// plugins.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_drafts/*', '_config.yml', '_config_dev.yml', 'assets'], function() {
-			// 	gulp.start('jekyll-dev');
-			// });
 
 			// Watch for IMAGE changes
-			// plugins.watch(pathImages, function() {
-			// 	gulp.start('jekyll-rebuild');
-			// });
+			plugins.watch(pathImages, function() {
+				gulp.start('image-optimise');
+			});
+
 
 		};
 	};

@@ -16,15 +16,14 @@
 		};
 
 		// Child modules
-		var htmlmin = require('gulp-html-minifier'),
-				replace = require('gulp-replace'),
+		var replace = require('gulp-replace'),
 				inject = require('gulp-inject');
 
 		// Return module
 		return function() {
 
-		  return gulp.src('_site/**/**.html')
-			//return gulp.src('_includes/head.html')
+		  //return gulp.src('_site/**/**.html')
+			return gulp.src('_includes/head.html')
 
 
 			// Inline CSS
@@ -37,8 +36,7 @@
 
 			// Cache Bust
 			.pipe(replace('@@cacheBust', getStamp()))
-			.pipe(htmlmin({collapseWhitespace: true}))
-			.pipe(gulp.dest(plugins.path.join(paths.dist)))
+			.pipe(gulp.dest(plugins.path.join(paths.base, '/_includes')))
 			.pipe(plugins.browserSync.reload({ stream: true }));
 		};
 	};

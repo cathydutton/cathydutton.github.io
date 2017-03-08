@@ -44,11 +44,9 @@
 					.pipe(plumber())
 					.pipe(plugins.sass({ style: 'expanded', }))
 					.pipe(postcss(processors))
-					.pipe(gulp.dest(plugins.path.join(paths.build.css)))
 					.pipe(minifycss())
 					.pipe(rename({ suffix: '-' + getStamp() + '.min'}))
 				  .pipe(gulp.dest(plugins.path.join(paths.build.css)))
-					.pipe(plugins.filter('**/*.css'))
 					.pipe(plugins.browserSync.reload({ stream: true }));
 				};
 

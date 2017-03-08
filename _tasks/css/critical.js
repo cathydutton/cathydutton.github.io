@@ -32,7 +32,6 @@
 					return gulp.src(plugins.path.join(paths.src.scss, '/critical.scss'))
 					.pipe(plumber())
 					.pipe(plugins.sass({ style: 'expanded', }))
-					.pipe(gulp.dest(plugins.path.join(paths.build.css)))
 					.pipe(postcss(processors))
 					.pipe(rename({ suffix: '.min' }))
 					.pipe(minifycss())

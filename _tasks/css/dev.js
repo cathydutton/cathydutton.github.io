@@ -17,11 +17,8 @@
 
 		// Child modules
 		var rename = require('gulp-rename'),
-			minifycss = require('gulp-minify-css'),
 			postcss = require('gulp-postcss'),
 			autoprefixer = require('autoprefixer-core'),
-			mqpacker = require('css-mqpacker'),
-			csswring = require('csswring'),
 			plumber = require('gulp-plumber');
 
 				// Process Sass
@@ -34,18 +31,13 @@
 						map: true,
 						remove: true
 					}),
-						mqpacker,
-						csswring ({
-							removeAllComments: true
-						}),
 					];
 
 					return gulp.src(plugins.path.join(paths.src.scss, '/main.scss'))
 					.pipe(plumber())
 					.pipe(plugins.sass({ style: 'expanded', }))
 					.pipe(postcss(processors))
-					.pipe(gulp.dest(plugins.path.join(paths.build.css)))
-					.pipe(rename({'dev'}))
+					.pipe(rename({ suffix: '-dev'}))
 				  .pipe(gulp.dest(plugins.path.join(paths.build.css)))
 					.pipe(plugins.filter('**/*.css'))
 					.pipe(plugins.browserSync.reload({ stream: true }));
