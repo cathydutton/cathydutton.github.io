@@ -36,29 +36,29 @@
     }
 
   } @else {
-      float: left;
-      width: (100% - (($unit - 1) * $grid-margin)) / $unit;
+    float: left;
+    width: (100% - (($unit - 1) * $grid-margin)) / $unit;
+
+    &:nth-child(n) {
+      margin-right: $grid-margin;
+    }
+
+    &:nth-child(#{$grid-total-coloumns}n) {
+      margin-right: 0;
+    }
+
+    @if $margin-overide == true {
 
       &:nth-child(n) {
-        margin-right: $grid-margin;
-      }
-
-      &:nth-child(#{$grid-total-coloumns}n) {
         margin-right: 0;
       }
 
-      @if $margin-overide == true {
-
-        &:nth-child(n) {
-          margin-right: 0;
-        }
-
-        &:nth-child(#{$grid-total-coloumns}n) {
-          margin-right: $grid-margin;
-        }
-
+      &:nth-child(#{$grid-total-coloumns}n) {
+        margin-right: $grid-margin;
       }
 
     }
 
   }
+  
+}

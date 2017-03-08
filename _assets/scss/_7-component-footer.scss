@@ -11,6 +11,11 @@
   margin: 1.5em auto;
   padding: 0;
   list-style: none;
+
+  &.active {
+    border-bottom: 4px solid map-get($colours, 'accent');
+  }
+
 }
 
 .footer-links__item {
@@ -21,8 +26,4 @@
 
 .footer-links__anchor {
   padding: .4em;
-}
-
-.footer-links__item .active {
-  border-bottom: 4px solid map-get($colours, 'accent');
 }

@@ -3,10 +3,10 @@ Navigation
 ----------------------------------- */
 
 .sidebar {
-  padding: .8em .4em;
-  background: map-get($colours, 'grey-dark');
-  border-bottom: solid 3px map-get($colours, 'accent');
   margin-bottom: 10px;
+  padding: .8em .4em;
+  border-bottom: solid 3px map-get($colours, 'accent');
+  background: map-get($colours, 'grey-dark');
 
   @include mq(break-tablet) {
     border-right: solid 3px map-get($colours, 'accent');
@@ -16,11 +16,9 @@ Navigation
 }
 
 .sidebar__list {
-  animation: fadeIn 2s forwards;
-  margin: 5px auto;
-  text-align: center;
   margin: .4em;
-
+  text-align: center;
+  animation: fadeIn 2s forwards;
 
   @include mq(break-tablet) {
     position: relative;
@@ -37,8 +35,8 @@ Navigation
   margin: .4em;
 
   @include mq(break-tablet) {
-    margin: 0;
     display: block;
+    margin: 0;
   }
 
 }
@@ -83,9 +81,9 @@ Navigation
 
     &:hover,
     &:focus {
+      border-bottom: solid 1px map-get($colours, 'grey-dark');
       color: map-get($colours, 'grey-dark');
       outline: none;
-        border-bottom: solid 1px map-get($colours, 'grey-dark');
     }
 
   }

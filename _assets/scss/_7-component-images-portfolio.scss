@@ -2,11 +2,6 @@
 Image gallery
 ----------------------------------- */
 
-
-.portfolio-list {
-
-}
-
 .portfolio-list__item {
   @include grid(break-mobile, 1, 2);
   @include grid(break-desktop, 1, 3);

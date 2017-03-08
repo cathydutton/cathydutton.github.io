@@ -21,8 +21,7 @@
 
 			// Watch for CSS changes
 			plugins.watch(pathCSS, function() {
-				// plugins.runSequence('scss-lint', 'critical-css', 'main-css', 'dev-css');
-				plugins.runSequence('critical-css', 'main-css', 'dev-css');
+				plugins.runSequence('scss-lint', 'critical-css', 'main-css', 'dev-css');
 			});
 
 			// Watch for IMAGE changes

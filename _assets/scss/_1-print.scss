@@ -3,9 +3,8 @@
   ----------------------------------- */
 
 @media print {
-
   .wrapper > *:not(main) {
-      display: none;
+    display: none;
   }
 
 }

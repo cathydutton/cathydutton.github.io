@@ -3,6 +3,7 @@
   ----------------------------------- */
 
 .wrapper {
+
   @include mq(break-tablet) {
     display: -ms-flexbox;
     display: -webkit-box;
@@ -16,6 +17,7 @@
     box-orient: horizontal;
     min-height: 100vh;
   }
+
 }
 
 .sidebar {
@@ -23,24 +25,24 @@
   @include mq(break-tablet) {
     width: 270px;
     -ms-flex: 0 100px;
-    -webkit-box-flex:  0;
-    -moz-box-flex:  0;
-    -ms-box-flex:  0;
-    box-flex:  0;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    -ms-box-flex: 0;
+    box-flex: 0;
   }
 
 }
 
 .content {
-  animation: fadeIn 2s forwards;
   padding: 2%;
+  animation: fadeIn 2s forwards;
 
   @include mq(break-tablet) {
-   -ms-flex: 1;
-   -webkit-box-flex: 1;
-   -moz-box-flex: 1;
-   -ms-box-flex: 1;
-   box-flex: 1;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex: 1;
   }
 
 }

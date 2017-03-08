@@ -4,12 +4,12 @@ Find me
 
 .find-me {
   @include clearfix;
-  animation: fadeIn 2s forwards;
   width: 100%;
+  margin: 20px 0 0;
   padding: 0;
   list-style: none;
   text-align: center;
-  margin: 20px 0 0;
+  animation: fadeIn 2s forwards;
 
   @include mq(break-tablet) {
     margin: 30px 0 0;
@@ -37,9 +37,9 @@ Find me
     color: map-get($colours, 'grey-dark');
     fill: map-get($colours, 'grey-dark');
     background: map-get($colours, 'accent');
+    outline: none;
     transform: scale(1.25);
     transition: background-color .5s, transform .5s ease-out;
-    outline: none;
   }
 
 }

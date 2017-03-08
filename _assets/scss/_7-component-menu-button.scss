@@ -18,6 +18,10 @@ Menu button
   background: map-get($colours, 'grey-dark');
   transition: all .3s ease-in-out;
 
+  @include mq(break-tablet) {
+    left: 267px;
+  }
+
   svg {
     width: 85%;
     height: 46%;
@@ -28,10 +32,6 @@ Menu button
     color: map-get($colours, 'white');
     fill: map-get($colours, 'white');
     background: map-get($colours, 'grey-dark');
-  }
-
-  @include mq(break-tablet) {
-    left: 267px;
   }
 
 }
