@@ -88,7 +88,7 @@
       'config': 'default.yml',
       'reporterOutput': 'scssReport.json',
     }))
-    .pipe(scsslint.failReporter()) // Fail on warnings & errors
+  //  .pipe(scsslint.failReporter()) // Fail on warnings & errors
     .pipe(scsslint.failReporter('E')) // Fail on set errors
     .on('error', function (err) {
           console.log(err);
