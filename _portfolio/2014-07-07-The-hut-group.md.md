@@ -1,5 +1,5 @@
 ---
-title: Development work;
+title: The Hut Group
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio

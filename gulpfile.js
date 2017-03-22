@@ -187,7 +187,7 @@
 
 	//  build live
 	gulp.task('build-live', function(callback) {
-		plugins.runSequence('clean-assests', ['critical-css', 'main-css', 'image-optimise'], ['inject'], ['minify'], 'clean', callback);
+		plugins.runSequence('clean-assests', ['critical-css', 'main-css', 'image-optimise'], ['inject'], 'clean', callback);
 	});
 
 	// Development tasks

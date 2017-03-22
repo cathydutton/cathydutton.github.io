@@ -1,11 +1,11 @@
 ---
-title: Service design;
+title: I want to fish service
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-company: Creare
+company: The Hut Group
 project: IWTF
-image: ../assets/img/thumbs/nintendo.jpg
+image: ../assets/img/thumbs/2020-home.jpg
 ---
 
 <section class="highlight-quote">

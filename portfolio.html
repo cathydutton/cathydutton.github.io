@@ -2,7 +2,8 @@
 layout: portfolio
 title: "UX, Interaction Design and Front End Development portfolio - Cathy Dutton"
 description: "A collection of my work from employers including Defra, Barclays, The Hut Group and AO.com"
-heading: "A collection of both design and development work"
+intro: "Portfolio"
+heading: "A collection design and development work"
 page: "Portfolio"
 active: "Portfolio"
 ---
@@ -10,12 +11,12 @@ active: "Portfolio"
 
 
 <div class="highlight-quote">
-	<p>Over the last 10 years I have worked on a wide range of digital projects, taking on many roles. After graduating with a degree in Product Design I started out as a Front End Developer before Specialising in UI/UX design.</p>
+	<p>Over the last 10 years I have worked on a wide range of digital projects, taking on many roles. After graduating with a degree in Product Design I started out as a Front End Developer before Specialising in Interaction/UX design.</p>
 	<p>Below are just a few examples of my design and development work...</p>
 </div>
 
 <ul class="portfolio-list">
-{% for portfolio in site.portfolio limit:20 %}
+{% for portfolio in site.portfolio reversed %}
 
 
 		<li class="portfolio-list__item">

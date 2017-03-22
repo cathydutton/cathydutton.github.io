@@ -1,12 +1,11 @@
 ---
-title: Product design;
+title: Getthelabel.com
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-company: Show user research drawing models etc
+company: Company/project name
 project: IWTF
-image: ../assets/img/thumbs/sketches-2.jpg
-
+image: ../assets/img/thumbs/gtl-4.jpg
 ---
 
 <section class="highlight-quote">
