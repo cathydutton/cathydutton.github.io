@@ -3,8 +3,7 @@ title: Mobile by sainsburys
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-company: Company/project nam
-project: IWTF
+tags: Interaction design, Prototyping, Magento
 image: ../assets/img/thumbs/gtl-4.jpg
 ---
 

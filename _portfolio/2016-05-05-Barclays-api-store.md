@@ -3,8 +3,7 @@ title: Barclays API store
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-company: Creare
-project: IWTF
+tags: Logo design, Persona development
 image: ../assets/img/thumbs/nintendo.jpg
 ---
 

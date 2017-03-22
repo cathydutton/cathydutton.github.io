@@ -3,8 +3,7 @@ title: The Hut Group
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-company: Company/project nam
-project: IWTF
+tags: Front End Development
 image: ../assets/img/thumbs/gtl-4.jpg
 ---
 

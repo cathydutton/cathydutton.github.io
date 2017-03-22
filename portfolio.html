@@ -27,14 +27,10 @@ active: "Portfolio"
 					</div>
 				</div>
 			  <dl>
-			  <dt>Size:</dt>
-			  <dd>{{ portfolio.company }}</dd>
-			  <dt>Company:</dt>
-			  <dd>{{ portfolio.date | date: '%B %d, %Y' }}</dd>
 			  <dt>Date:</dt>
-				<dd>{{ portfolio.project }}</dd>
-			  <dt>Project</dt>
-			  <dd>vfdvdfv</dd>
+			  <dd>{{ portfolio.date | date: '%B %d, %Y' }}</dd>
+			  <dt>Tags:</dt>
+				<dd>{{ portfolio.tags }}</dd>
 			  </dl>
 			<a href="{{portfolio.url}}"><span class="visually-hidden">{{ portfolio.title }}</span> Find out more</a>
 		</li>

@@ -3,8 +3,7 @@ title: Getthelabel.com
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-company: Company/project name
-project: IWTF
+tags: Graphic design
 image: ../assets/img/thumbs/gtl-4.jpg
 ---
 

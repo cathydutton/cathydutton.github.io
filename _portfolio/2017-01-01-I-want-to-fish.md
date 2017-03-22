@@ -3,8 +3,7 @@ title: I want to fish service
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-company: The Hut Group
-project: IWTF
+tags: Service design, Interaction design, data driven design, content design, Prototyping
 image: ../assets/img/thumbs/2020-home.jpg
 ---
 
