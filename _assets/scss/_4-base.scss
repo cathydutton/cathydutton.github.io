@@ -4,7 +4,7 @@
 
 // ANCHORS
 a {
-  padding: .2em;
+  padding: .2em 0;
   border-bottom: 1px solid currentColor;
   color: inherit;
   text-decoration: none;
@@ -29,10 +29,10 @@ a[target=_blank]::after {
   overflow: hidden;
   width: 0;
   height: 0;
-  margin-left: 6px;
+  // margin-left: 6px;
   white-space: nowrap;
   content: '(opens new window)';
-  text-indent: 1em;
+  // text-indent: 1em;
 }
 
 
