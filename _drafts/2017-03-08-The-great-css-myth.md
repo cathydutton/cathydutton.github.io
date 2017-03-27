@@ -1,41 +1,55 @@
 ---
-title: The great CSS myth
+title: Myths of CSS
 author: Cathy Dutton
 layout: post
 date:   2017-03-08
 ---
 
 
-# What is PostCSS?
+## Heading two
 
-First things first, what is PostCSS, and why would anyone want to write a plugin.
-
-
-
-## Getting started
-
-https://github.com/postcss/postcss-plugin-boilerplate
-
-https://github.com/postcss/postcss/blob/master/docs/guidelines/plugin.md
+I love CSS, and .....
 
 
-##
+## CSS is not broken
+
+CSS is not broken, it works exactly as intended, you just need to utalise it properly.....
 
 
+### CSS is easy
 
-### decl.remove();
+### Css is not scalable
+Think outside the pixel, plan for change, dont add heights etc
 
-
-
-### css.insertBefore
-
-
-### decl.parent.append
-
-Steps to writing a simple plugin
-Demo source code
+CSS is scalable when used correctly,
 
 
+### important! is bad
 
+This leads nicly on to the next myth, important! is not bad, dirty or wrong by default. its existance ass a genuine CSS property alone should confirm that. It is used to.....
 
-http://cathydutton.github.io/postcss-maze/
+### There is no progresive enancement (@supprts)
+
+You can use features to enhance the user experience in modern browsers and provide fallbacks for older versions from within CSS. @supports....
+
+### It's just for making things pretty
+
+Visualy hidden styles aid accesability and skip links, active and visited classes also.
+
+### Shorthansd is always better
+
+### GLOBL SCOPE IS BAD - The cascade in cascading style shhets is a bad thing
+
+You hear a lot of grunblings about CSS cascade and it's aparent negative inpacct on styesheets.  the glbal scope can be incerdibaly advantageous - new markup instantly looks and feels right, buttons links and headings are consistent. etc
+
+If ypu find ourself relying on numerous declerations of important! to overide globall styles then you have a much bigger probblem then rouge CSS selectors.
+
+"You should want “global” styles: colors and spacing should be consistent throughout your application. Similar components need to look similar. Your buttons should all be consistently sized and your box shadows or border radiuses should not be ad-hoc."
+
+### You need a framework
+
+### New features should always be used
+
+### Frameworks are bad
+
+### It cant be optimised for speed
