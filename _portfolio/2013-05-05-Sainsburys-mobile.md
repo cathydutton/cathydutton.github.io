@@ -4,7 +4,7 @@ author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
 tags: Interaction design, Prototyping, Magento
-image: ../assets/img/thumbs/gtl-4.jpg
+image: ../assets/img/portfolio/mobile-by-sainsburys-cover.jpg
 ---
 
 <section class="highlight-quote">

@@ -4,7 +4,7 @@ author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
 tags: Service design, Interaction design, data driven design, content design, Prototyping
-image: ../assets/img/thumbs/2020-home.jpg
+image: ../assets/img/portfolio/i-want-to-fish-cover.jpg
 ---
 
 <section class="highlight-quote">

@@ -16,18 +16,18 @@ Image gallery
   // @include grid(break-desktop, 1, 4);
   margin-bottom: 10px;
   padding: 5px;
-  border: solid 1px lighten(map-get($colours, 'grey-light'), 20%);
-  background: lighten(map-get($colours, 'grey-light'), 30%);
+  border: solid 1px lighten(map-get($colours, 'accent'), 20%);
+  background: lighten(map-get($colours, 'accent'), 30%);
 
-  &:hover,
-  &:focus {
-    border-color: map-get($colours, 'accent');
-    box-shadow: 3px;
-  }
+  // &:hover,
+  // &:focus {
+  //   border-color: map-get($colours, 'accent');
+  //   box-shadow: 3px;
+  // }
 
 }
 
 .image-wrapper--portfolio {
-  border: solid 1px lighten(map-get($colours, 'grey-light'), 30%);
+  border: solid 1px lighten(map-get($colours, 'accent'), 30%);
   animation: fadeIn 2s forwards;
 }

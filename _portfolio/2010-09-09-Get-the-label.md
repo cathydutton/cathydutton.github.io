@@ -4,7 +4,7 @@ author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
 tags: Graphic design
-image: ../assets/img/thumbs/gtl-4.jpg
+image: ../assets/img/portfolio/gtl-cover.jpg
 ---
 
 <section class="highlight-quote">

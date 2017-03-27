@@ -4,7 +4,7 @@ author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
 tags: Front End Development
-image: ../assets/img/thumbs/gtl-4.jpg
+image: ../assets/img/portfolio/the-hut-group-cover.jpg
 ---
 
 <section class="highlight-quote">
