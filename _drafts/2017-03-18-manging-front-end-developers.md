@@ -3,6 +3,7 @@ layout: post
 title: Managing Front End Developers
 description: "Desc"
 page-name: "post"
+date:   2017-03-18
 ---
 
 “CFO asks his CEO, “What happens if we invest in developing our people and then they leave the company?” CEO answers, ‘What happens if we don’t, and they stay?”

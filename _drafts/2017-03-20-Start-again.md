@@ -3,6 +3,7 @@ layout: post
 title: Start Again
 description: "Desc"
 page-name: "post"
+date:   2017-03-20
 ---
 
 Start again vs make it better - upfront conf talk on working with a dated code base if its making money! compare two ideas.

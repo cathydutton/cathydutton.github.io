@@ -3,18 +3,19 @@ title: Creating readable CSS partials with PostCSS
 author: Cathy Dutton
 layout: post
 category: post
+date:   2017-03-06
 ---
 
-In my opinion one of the most valuable features of PostCSS is the ability to both change and create CSS properties 
-and values. CSS preprocessors give developers the ability to extend the functionality of CSS, creating functions, 
-mixins and loops all with the intention of speeding up development time and helping large scale projects remain 
-both manageable and scaleable. 
+In my opinion one of the most valuable features of PostCSS is the ability to both change and create CSS properties
+and values. CSS preprocessors give developers the ability to extend the functionality of CSS, creating functions,
+mixins and loops all with the intention of speeding up development time and helping large scale projects remain
+both manageable and scaleable.
 
 The problem with this is the resulting Sass stylesheets are often full of selectors using complex functions and mixins
 that are unreadable to new users, or even to the same developers who wrote them a couple of months down the line. For example
-a couple of years ago I created numerous Sass functions to implement dynamic gradients and animations for a project at work. 
+a couple of years ago I created numerous Sass functions to implement dynamic gradients and animations for a project at work.
 These functions made perfect sense to me at the time and helped me to achieve the desired effect. Looking back the Sass is now
-unusable without first devoting a lot of time to understanding each property value. This in its self goes against one of 
+unusable without first devoting a lot of time to understanding each property value. This in its self goes against one of
 the key arguments for using a preprocessor.
 
 http://codepen.io/cathydutton/pen/vEeORQ
@@ -33,12 +34,12 @@ Code examples!!!!!!!
 ## Heading
 
 Things would be so much simpler if the property values we used were more user friendly and simple to understand even with no
-previous experience of the code base. PostCSS allows developers to create new CSS properties and to assign new values 
+previous experience of the code base. PostCSS allows developers to create new CSS properties and to assign new values
 to these properties creating clear and concise CSS that anybody can pick up and understand.
 
 ### Clearfix
 
-A quick example of this is the PostCSS clearfix plugin https://github.com/seaneking/postcss-clearfix the markup used is not a 
+A quick example of this is the PostCSS clearfix plugin https://github.com/seaneking/postcss-clearfix the markup used is not a
 native CSS value but is still instantly understandable to any developer who reads it.
 
 ```
@@ -129,19 +130,3 @@ The Sass version uses a mixin which is called for each selector
   col-span: desktop(1,6);
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

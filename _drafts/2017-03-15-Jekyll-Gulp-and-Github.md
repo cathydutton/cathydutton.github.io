@@ -2,8 +2,9 @@
 title: Jekyll, Gulp and Github
 author: Cathy Dutton
 layout: post
-date:   2017-05-05
+date:   2018-015-01
 category: post
+date:   2017-03-15
 ---
 
 I spend a ridiculous amount of time updating my personal website and blog....

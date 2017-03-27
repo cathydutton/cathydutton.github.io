@@ -3,6 +3,7 @@ layout: post
 title: full circle - Why I fell back in love with design
 description:
 page-name: "post"
+date:   2017-03-11
 ---
 
 Both - back in the web designer days - design and dev
@@ -26,7 +27,7 @@ I remember once being told I must include a jQuery slider on a small static webs
 
 It was around 2012 and the design consultancy I worked for had a fairly strict design guide with a one hat fits all approach to customer websites. I faced a similar issue much more recently when asked to come up with a design for a new company website. I was shown a selection of sites that the stakeholders liked and wanted to use, I was instructed to design this site and have the content ‘added’ later.
 
-Both of these situations made me fall out of love with design 
+Both of these situations made me fall out of love with design
 
 
 ## The web designer

@@ -2,6 +2,7 @@
 layout: post
 title: Improve development through UX
 Author: Cathy Dutton
+date:   2017-03-12
 ---
 
 The way web applications are designed has changed a lot in recent years, from the tools used to the processes and the people involved.
@@ -206,16 +207,3 @@ as a series of repeated patterns and stand alone components.
 Built by developers at the same time
 Fits in with the coding process – base, objects, modules
 Design approach now matches dev approach
-
-
-
-
-
-
-
-
-
-
-
-
-

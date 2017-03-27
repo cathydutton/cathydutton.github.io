@@ -2,10 +2,11 @@
 title: 8 reasons to start using PostCSS today
 author: Cathy Dutton
 layout: post
+date:   2017-03-24
 ---
 
 
-PostCSS Maze as demo 
+PostCSS Maze as demo
 
 
 Why you should separate layout and content,
@@ -17,4 +18,3 @@ Why you should separate layout and content,
 3)	Post css maze with one layout sheet as example.
 
 4)	Completely separate wireframe or structure partial
-

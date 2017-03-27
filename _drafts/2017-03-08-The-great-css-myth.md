@@ -1,7 +1,8 @@
 ---
-title: Creating a PostCSS plugin
+title: The great CSS myth
 author: Cathy Dutton
 layout: post
+date:   2017-03-08
 ---
 
 
@@ -38,4 +39,3 @@ Demo source code
 
 
 http://cathydutton.github.io/postcss-maze/
-

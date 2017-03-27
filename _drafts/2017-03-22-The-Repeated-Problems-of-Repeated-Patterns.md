@@ -3,6 +3,7 @@ layout: post
 title: The Repeated Problems of Repeated Patterns
 description: "Desc"
 page-name: "post"
+date:   2017-03-22
 ---
 
 fdsfgsgdfgf

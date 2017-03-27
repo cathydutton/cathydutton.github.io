@@ -3,6 +3,7 @@ title: Saying goodbye to Photoshop
 author: Cathy Dutton
 layout: post
 category: post
+date: 2017-03-07
 ---
 
 
