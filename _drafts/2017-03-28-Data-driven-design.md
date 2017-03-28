@@ -29,14 +29,33 @@ How to excude screens - reg ex etc
 
 
 
-##
+## User feedback / DATA COLLECTION
+  - User feedback forms
+  - User testing sessions
+  - Interviews
+  - Contact centre feedback
+  - CRM DATA
+
+## Analytics
+
+ - Goal completion
+ - Funnel flow
+ - Event tracking - date picker - reveal pattern
+ - Exit pages
+ - Time on pages
+ - Product tracking - 1-day 8-day, 12-months
+ - Heatmap - How to add this
+ - Outbound links
+ - Telesales
 
 
+### Design the data capture
 
-###
+You should no what data you will want to capture from Analytics before you start - design this as part of the design process.
+
+Design the questions from the feedback form.
 
 
-###
+### Look at the big picture
 
-
-###
+Don't design tests around small things like button clicks  - You may improve results for that section but have a negative impact on the main goal or user journey.
