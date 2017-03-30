@@ -1,19 +1,23 @@
 ---
-title: Myths of CSS
+title: CSS Myths
 author: Cathy Dutton
 layout: post
 date:   2017-03-08
 ---
 
 
-## Heading two
+CSS is often seen as the simplest of the front end technologies, if ever CSS goes wrong on a project or becomes a problem it is the fault of the language itself as apposed to the fault of the people who wrote it. How can something so simple have been written wrongly?
 
-I love CSS, and .....
+
+
+## CSS is not broken
+CSS is not broken despite numerous tweets and articles to the contrary
+
 
 
 ## CSS is not broken
 
-CSS is not broken, it works exactly as intended, you just need to utalise it properly.....
+CSS is not broken, it works exactly as intended, you just need to utilise it properly.....
 
 
 ### CSS is easy
