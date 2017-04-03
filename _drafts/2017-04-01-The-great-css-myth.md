@@ -2,11 +2,16 @@
 title: CSS Myths
 author: Cathy Dutton
 layout: post
-date:   2017-03-3
+date:   2017-04-01
 ---
 
 
-CSS get's a lot of stick, for being the easiest of the front end languages, for its global scope, inheritance and even for being broken. As a over of CSS the last one in particular hits a nerve, CSS is not broken purley because it does not behave in the same way as other programing languages.
+
+
+
+
+## CSS is not broken
+CSS is not broken despite numerous tweets and articles to the contrary
 
 
 
@@ -21,7 +26,7 @@ If CSS was simple, there wouldn't be half as may posts declaring that it's broke
 
 CSS is often seen as the simplest of the front end technologies, if ever CSS goes wrong on a project or becomes a problem it is the fault of the language itself as apposed to the fault of the people who wrote it. How can something so simple have been written wrongly?
 
-### CSS is not scalable
+### Css is not scalable
 Think outside the pixel, plan for change, don't add heights etc
 
 CSS is scalable when used correctly,
@@ -41,16 +46,6 @@ Visualy hidden styles aid accesability and skip links, active and visited classe
 
 ### Shorthansd is always better
 
-margin: 0 0 0 0
-maregin-bottom: 0
-
-You mat have to overide later
-
-### There is no scope
-
-CSS can be scoped using BEM, nested classes of double selector classes.
-
-
 ### GLOBL SCOPE IS BAD - The cascade in cascading style shhets is a bad thing
 
 You hear a lot of grunblings about CSS cascade and it's aparent negative inpacct on styesheets.  the glbal scope can be incerdibaly advantageous - new markup instantly looks and feels right, buttons links and headings are consistent. etc
@@ -61,10 +56,6 @@ If ypu find ourself relying on numerous declerations of important! to overide gl
 
 ### You need a framework
 
-There are loads of helpful frameworks to speed up CSS projects, Print.CSS defaults, resets a11y etc
-
-These are usefull and safe, but you should understand them before you use them.
-
 Ypou do not have to use a CSS framework, and there are a lot of them out there. This implies that to create good code without one is difficult or even imposible, it isn't.
 
 ### Frameworks are bad
@@ -73,7 +64,7 @@ Following on from the point above, frameworks are not essential but that doesn't
 
 You should have an understanding of the tools you use so that you can function without the framework when needed.
 
-### New features should always be awesome
+### New features should always be used
 Talk about targeting dom secific stuff
 
 
@@ -84,4 +75,4 @@ for speed
 
 ### In summary
 
-A bad workmen blames his tools, the feqtures of CSS are not secret, anyone can read up on and leqarn to write CSS in a structured and maintainable way. If you choose not to CSS will ruin your life.
+Blaming a language for the fialings of a project
