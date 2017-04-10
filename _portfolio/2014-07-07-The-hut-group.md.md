@@ -3,7 +3,7 @@ title: The Hut Group
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-tags: Front End Development
+tags: Front End Development, Performance
 image: ../assets/img/portfolio/the-hut-group-cover.jpg
 ---
 

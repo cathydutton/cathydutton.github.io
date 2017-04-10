@@ -3,7 +3,7 @@ title: I want to fish service
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-tags: Service design, Interaction design, Data driven design, Content design, Prototyping
+tags: Service design, Interaction design, Data driven design, Content design, Prototyping, User research
 image: ../assets/img/portfolio/i-want-to-fish-cover.jpg
 ---
 
