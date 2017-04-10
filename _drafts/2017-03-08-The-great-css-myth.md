@@ -50,6 +50,9 @@ You mat have to overide later
 
 CSS can be scoped using BEM, nested classes of double selector classes.
 
+## You cant use functions
+
+Calc() etc
 
 ### GLOBL SCOPE IS BAD - The cascade in cascading style shhets is a bad thing
 
