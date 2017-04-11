@@ -5,62 +5,69 @@ layout: post
 date:   2017-03-3
 ---
 
+CSS get's a lot of stick, which upsets me, a lot of the time the criticisms are unfair, untrue or both. CSS is not broken, it behaves in the intended manner and if utilised correctly is an amazing tool.
 
-CSS get's a lot of stick, for being the easiest of the front end languages, for its global scope, inheritance and even for being broken. As a over of CSS the last one in particular hits a nerve, CSS is not broken purley because it does not behave in the same way as other programing languages.
-
-
-
-## CSS is not broken
-
-CSS is not broken, it works exactly as intended, you just need to utilise it properly.....
+This post aims to highlight some of the common misconceptions around CSS.
 
 
 ### CSS is easy
+CSS is not easy, it may been seen as the simplest of the front end languages but creating a maintainable CSS code base at scale is a skill in it's self.
 
-If CSS was simple, there wouldn't be half as may posts declaring that it's broken.
+How can a simple thing go so badly wrong so often?
 
-CSS is often seen as the simplest of the front end technologies, if ever CSS goes wrong on a project or becomes a problem it is the fault of the language itself as apposed to the fault of the people who wrote it. How can something so simple have been written wrongly?
 
-### CSS is not scalable
-Think outside the pixel, plan for change, don't add heights etc
+### The cascade is a bad thing
 
-CSS is scalable when used correctly,
+You hear a lot of grunblings about CSS cascade and it's aparent negative inpacct on styesheets.  the global scope can be incerdibaly advantageous - new markup instantly looks and feels right, buttons links and headings are consistent. etc
+
+If ypu find ourself relying on numerous declerations of important! to overide globall styles then you have a much bigger probblem then rouge CSS selectors.
+
+"You should want “global” styles: colors and spacing should be consistent throughout your application. Similar components need to look similar. Your buttons should all be consistently sized and your box shadows or border radiuses should not be ad-hoc."
+
+### There is no scope
+
+Despite the inbuilt cascade, CSS can be scoped. Using BEM, nested classes of double selector classes CSS can target specific chunks of UI without effecting the app globally.
 
 
 ### important! is bad
 
-This leads nicly on to the next myth, important! is not bad, dirty or wrong by default. its existance ass a genuine CSS property alone should confirm that. It is used to.....
+This leads nicely on to the next myth, important! is not bad, dirty or wrong by default. its existence ass a genuine CSS property alone should confirm that. It is used to.....
 
-### There is no progresive enancement
+### There is no progressive enhancement
 
 You can use features to enhance the user experience in modern browsers and provide fallbacks for older versions from within CSS. @supports....
 
 ### It's just for making things pretty
 
-Visualy hidden styles aid accesability and skip links, active and visited classes also.
+CSS can do more then simply apply the aesthetics to an applications UI. It can also play a role in enhancing the accessibility of a project. 
 
-### Shorthansd is always better
+CSS can amongst other things also be used to...
+
+- Enhance the readability of content (Font-size, color, line-height)
+- Replace the default underline on links to avoid cutting through descenders (Example CSS)
+- Visually hidden styles aid accessibility
+- active and visited classes also
+- skip links
+
+
+
+### Shorthand is always better
 
 margin: 0 0 0 0
 maregin-bottom: 0
 
 You mat have to overide later
 
-### There is no scope
 
-CSS can be scoped using BEM, nested classes of double selector classes.
 
-## You cant use functions
+### You cant use functions
+
+CSS is defined as a mark up language not a programing or scripting language
 
 Calc() etc
 
-### GLOBL SCOPE IS BAD - The cascade in cascading style shhets is a bad thing
+https://www.w3schools.com/cssref/css_functions.asp
 
-You hear a lot of grunblings about CSS cascade and it's aparent negative inpacct on styesheets.  the glbal scope can be incerdibaly advantageous - new markup instantly looks and feels right, buttons links and headings are consistent. etc
-
-If ypu find ourself relying on numerous declerations of important! to overide globall styles then you have a much bigger probblem then rouge CSS selectors.
-
-"You should want “global” styles: colors and spacing should be consistent throughout your application. Similar components need to look similar. Your buttons should all be consistently sized and your box shadows or border radiuses should not be ad-hoc."
 
 ### You need a framework
 
@@ -87,4 +94,17 @@ for speed
 
 ### In summary
 
-A bad workmen blames his tools, the feqtures of CSS are not secret, anyone can read up on and leqarn to write CSS in a structured and maintainable way. If you choose not to CSS will ruin your life.
+A bad workmen blames his tools, the featured of CSS are not secret, anyone can read up on and learn to write CSS in a structured and maintainable way. If you choose not to CSS can be a nightmare.
+
+
+
+
+<!-- ### CSS is not scalable
+CSS is scalable when used correctly,
+
+Think outside the pixel, plan for change, don't add heights (magic numbers) etc
+
+"The real way to scale css, is to stop writing css." -->
+
+
+<!-- Avoid specificity by harnessing the cascade -->
