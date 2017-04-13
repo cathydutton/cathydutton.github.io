@@ -6,135 +6,89 @@ date:   2017-03-27
 category: post
 ---
 
-A well thought out service should flow naturally in the same way that a conversation would. Each new question put to the user should relate to the information they have already provided and progress in logical steps.
+<h1 class="heading">What comes first: the user or the service?</h1>
+			<p>A well-thought-out service should flow naturally in the same way that a conversation would. Each new question put to the user should relate to the information they've already provided and progress in logical steps. The user journey should also flow
+				from topic to topic, not jump sporadically from service choices to requests for user information. </p>
+			<p>In most cases a service can be split into two topics... </p>
+			<ol>
+				<li>The service - Options relating to the service the user requires, for example type or length of licence</li>
+				<li>The user - Information about the user required either by the organisation or to identify available products, for example date of birth or address</li>
+			</ol>
+			<p>So which should come first: the user or the service?
+				<h2 class="heading">Service first </h2>
+				<p>In user-centred design the users and their needs should always come first, therefore the service should aim to focus on the users' end goal. Any additional questions should come at the end of the journey.
+					<p>
+						<img src="img/service-first.jpg" alt="Service first service flow">
+						<p>There are many benefits to this approach, including:</p>
+						<ul>
+							<li>Addressing the needs of the user before that of the organisation</li>
+							<li>Opening the service with expected questions, making it quick and easy for experienced or return users to complete </li>
+							<li>Creating a simplified journey by asking only the questions required for the selected product</li>
+						</ul>
+						<p>However there are also some drawbacks to opening the service with product related questions:</p>
+						<ul>
+							<li>We lose the opportunity to provide guidance for new or inexperienced users</li>
+							<li>Users may be making ill-informed decisions</li>
+							<li>Users could be presented with options they are not eligible for</li>
+						</ul>
+						<section>
+							<blockquote>
+								"I don't know which licence is right for me"
+							</blockquote>
+						</section>
+						<h2 class="heading">User first</h2>
+						<p>Sometimes the services or products available are determined by the user. In these situations, we first need to collect information from the user in order to create the simplest journey for them.
+						</p>
+						<img src="img/user-first.jpg" alt="User first service flow">
+						<p>The benefits of determining who the user is first include:</P>
+						<ul>
+							<li>The ability to guide users, ensuring they get the best product for them</li>
+							<li>Displaying accurate price points if there are disabled or age-related discounts</li>
+							<li>Determining which products the user is eligible for before displaying them</li>
+							<li>Asking anticipated questions before surprising ones, for example starting with "What is your name?"</li>
+						</ul>
+						<p>This approach however also has some drawbacks, including:</p>
+						<ul>
+							<li>It could be unclear why all questions are are being asked</li>
+							<li>Some questions about the user could be product-specific. For example, in the 'buy a fishing licence' service, we only ask concession questions if the user selects a 12-month licence.</li>
+						</ul>
+						<section>
+							<blockquote>
+								"This site wants to know so much about me, but I know nothing about it."
+							</blockquote>
+						</section>
+						<h3 class="heading">So, how do you determine the right way for your service?</h3>
+						<p>There is no one right way; each service will have a different set of criteria to work with, resulting in pros and cons for each approach. For the 'buy a fishing licence' service, we prototyped multiple user flows and, most importantly, tested with
+							real users.</p>
+						<p>The first step in working out the best flow for a service is to write each individual screen on to a card or post-it note that can be moved around into as many orders as possible. Try to identify the key decision screens in the journey (where the
+							flow would branch). In our case, these were 'Licence length' and 'Date of birth'.</p>
+						<img src="img/card-sort.jpg" alt="Card sorting" width="600px;">
+						<p>Each of these screens play a huge role in determining the path the user will take, so to produce a more streamlined flow they need to appear as close to the beginning of the journey as possible.</p>
+						<p>Experiment by mapping out all the possible journeys using both of these key screens as a starting point. Use colour-coded post-it notes to highlight positive and negative aspects for each user journey. </p>
+						<section>
+							<img src="img/user-flows.jpg" alt="User flows" width="600px;">
+						</section>
+						<p>Things to look out for include:</p>
 
-The user journey should also flow from topic to topic, not jump sporadically from service choices to requests for user information. In most cases a service can be split into two topics...
+						<h4>Efficiency</h4>
+						<p>The service should be quick, intuitive and easy to follow. Get users to their end goal as quickly as possible with minimal disruption. Where possible this should be achieved for all users and all products, however you may have to optimise the flow
+							for the most popular journey (in this case a 12-month adult licence).</p>
+						<h4>Price</h4>
+						<p>The price of a product or service is one of the most influential decision drivers. Display the cost implications of a decision clearly, particularly if the user is inexperienced or new to the service. By adding prices to service options, users can
+							make quicker, more informed decisions and have more confidence in the choices they make. The service also becomes much more transparent with no surprises at the end of the journey.</p>
+						<p>If the price of a service can be affected by the user's details, for example with senior or junior discounts, then the user would need to be identified first to allow for accurate pricing. </p>
+						<!-- <img src="img/pricing.jpg" alt="Pricing demo" width="600px;"> -->
+						<section>
+							<img src="img/user-journey.jpg" alt="User flows" width="600px;">
+						</section>
+						<h4>Consistency &amp; familiarity</h4>
 
-1)	The service  - Options relating to the service the user requires for example type or length of licence.
+						<p>Once you're happy with a flow, it is useful to move from cards to a more permanent medium to enable direct comparisons between each user journey. The flow should remain consistent accross journeys to aid return or repeat visitors and to build a
+							sense of familiarity.</p>
+						<p>The experience of buying for the first time should not be alien to that of upgrading or renewing a product.</p>
 
-2)  The user - Information about the user required either by the organisation or to identify available products, for example Date of birth, or address.
-
-So which should come first the user or the service?
-
-
-## Service first
-
-In user centered design the user, and their needs should always come first, therefore the service should aim to focus on the users end goal. Any additional questions should come at the end of the journey.
-
-[Service first]: /images/service-first.jpg "Service first service flow"
-
-There are many benefits to this approach including...
-
-- Addressing the needs of the user before that of your own
-- Opening the service with expected questions, making it quick and easy for experienced or return users to complete
-- Creating a simplified journey by asking only the questions required for the selected product
-
-However there are some drawbacks for example, by opening the service with product related questions we loose the opportunity to provide guidance for new or inexperienced users. As a result of this users may be making ill-informed decisions. Users could also be presented with questions that do not apply to them.
-
-<blockquote>
-QUOTE ABOUT ISSUES WITH SERVICE FRST
-</blockquote>
-
-
-## User first
-Sometimes the services or products available are determined by the user. In these situations we need to collect the user's details first to enable us to create
-
-deliver the best possible service for them or to help guide them to the best product for their needs.
-
-[Service first]: /images/user-first.jpg "User first service flow"
-
-benefits of first determining who the user is...
-
-- Can add price points more easily if there are disabled or age related discounts
-- Show only the relevant screens if some screens are added for only certain products
-- Ask anticipated questions before surprising ones - IE start with name!
-- Don't make users think - Show the recommended licence type and costs based on their personal information.
-
-#### negative points
-- It could be unclear why all questions are being asked
-- Cant ask concession questions until we know the licence length
-
-<blockquote>
-This site wants to know so much about me, but I know nothing about it.
-</blockquote>
-
-
-### So which should come first?
-
-Each service will have it's own unique criteria with pros and cons for each aproach. When designing the 'get a fishing licence' we experimented with both theroes??? each and most importantly tested both with real users.
-
-### How to determine the right way for your service??????
-Firstly write each screen on to a card or post it note.
-
-Identify the key decision screens - in our case theese were Licence length, Date of birth and the third one.
-
-Also create cards for each journy and add markers to highlight which screnns are inluded in which journeys.
-
-Arange them into orders and then use color coded notes to highlight positive and negative aspects.
-
-Do this for numerous journy flows.
-
-Dob
-
-- Exit juniors and under 12's much quicker
-- Can show accurate prices once we reach the service questions
-- Concesion sceens will be outof flow with users details.
-
-
-
-Licence length
-
-- Concesion sceens will in the right place
-- No price can be shown
-- Juniors will be shown short term options that are not the best option for them
-
-
-
-
-Third ones
-- Can move concession screens to a more logical place if we know the product type.
-- Juniors exit quickly
-- Can show pricing information
-- Keeps the flow consistent for all future senrios and products
+						<h4>Future-proofing</h4>
+						<p>Building on the above point, the flow should look to encorporate possible future enhancements. It is helpful to have an idea of the full service roadmap to ensure you don't need to re-shuffle large sections of a journey to include a new feature.
+						</p>
 
 
-
-Create flow charts with post-it notes or cards, highlight key points in the journey where most logic is built around.
-
-Highlight cards that appear in all journeys
-
-Add sticky notes for key pages where price points could be added
-
-Add sticky notes for key pages where users have struggled
-
-- Price points may be defined by the users details
-
-### price
-
-Price can be a key factor in a users decision making process. If the price can be effected by  user details, for example senior or junior discounts then the user must be identifyed to allow for accurate pricicng.
-
-## Consistancy
-
-The flow should remain the same for all poriducts to aid return journeys, renew, uograde, change details etc.
-
-### Goal first
-
-The reason the user has come to the site. Users have visited the service for a reason, one we determine that reason we can create a tailored flow asking only the required questions.
-
-
-
-
-
-
-<blockquote>
-If you need to be selective about what questions you present to users, then build pages that reflect their earlier answers. - Forms that Work, Gerry Gaffney, Caroline Jarrett
-</blockquote>
-
-
-
-
-### In summary
-
-There is no one size fit's al solution, each service will have a different set of criteria to work with it is important to experiment with diferent flows to ensure you get the best results for your service.
-
-We are continuing to test the service with new and experienced Anglers with a view to launching new features like upgrades and price points in he near future.
