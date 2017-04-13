@@ -1,5 +1,5 @@
 ---
-title: What comes first the user??? or the service?????
+title: What comes first the user or the service?
 author: Cathy Dutton
 layout: post
 date:   2017-03-27
