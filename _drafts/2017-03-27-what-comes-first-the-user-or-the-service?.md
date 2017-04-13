@@ -17,7 +17,7 @@ category: post
 <h2 class="heading">Service first </h2>
 <p>In user-centred design the users and their needs should always come first, therefore the service should aim to focus on the users' end goal. Any additional questions should come at the end of the journey.
 <p>
-<img src="img/service-first.jpg" alt="Service first service flow">
+<img src="../assets/img/service-first.jpg" alt="Service first service flow">
 <p>There are many benefits to this approach, including:</p>
 <ul>
 <li>Addressing the needs of the user before that of the organisation</li>
@@ -36,7 +36,7 @@ category: post
 <h2 class="heading">User first</h2>
 <p>Sometimes the services or products available are determined by the user. In these situations, we first need to collect information from the user in order to create the simplest journey for them.
 </p>
-<img src="img/user-first.jpg" alt="User first service flow">
+<img src="../assets/img/user-first.jpg" alt="User first service flow">
 <p>The benefits of determining who the user is first include:</p>
 <ul>
 <li>The ability to guide users, ensuring they get the best product for them</li>
@@ -55,11 +55,11 @@ category: post
 <h3 class="heading">So, how do you determine the right way for your service?</h3>
 <p>There is no one right way; each service will have a different set of criteria to work with, resulting in pros and cons for each approach. For the 'buy a fishing licence' service, we prototyped multiple user flows and, most importantly, tested with real users.</p>
 <p>The first step in working out the best flow for a service is to write each individual screen on to a card or post-it note that can be moved around into as many orders as possible. Try to identify the key decision screens in the journey (where the flow would branch). In our case, these were 'Licence length' and 'Date of birth'.</p>
-<img src="img/card-sort.jpg" alt="Card sorting" width="600px;">
+<img src="../assets/img/card-sort.jpg" alt="Card sorting" width="600px;">
 <p>Each of these screens play a huge role in determining the path the user will take, so to produce a more streamlined flow they need to appear as close to the beginning of the journey as possible.</p>
 <p>Experiment by mapping out all the possible journeys using both of these key screens as a starting point. Use colour-coded post-it notes to highlight positive and negative aspects for each user journey. </p>
 <section>
-<img src="img/user-flows.jpg" alt="User flows" width="600px;">
+<img src="../assets/img/user-flows.jpg" alt="User flows" width="600px;">
 </section>
 <p>Things to look out for include:</p>
 
