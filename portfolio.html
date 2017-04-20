@@ -2,7 +2,8 @@
 layout: portfolio
 title: "UX, Interaction Design and Front End Development portfolio - Cathy Dutton"
 description: "A collection of my work from employers including Defra, Barclays, The Hut Group and AO.com"
-heading: "A collection of both design and development work"
+intro: "Portfolio"
+heading: "A collection design and development work"
 page: "Portfolio"
 active: "Portfolio"
 ---
@@ -10,36 +11,29 @@ active: "Portfolio"
 
 
 <div class="highlight-quote">
-	<p>Over the last 10 years I have worked on a wide range of digital projects, taking on many roles. After graduating with a degree in Product Design I started out as a Front End Developer before Specialising in UI/UX design.</p>
+	<p>Over the last 10 years I have worked on a wide range of digital projects, taking on many roles. After graduating with a degree in Product Design I started out as a Front End Developer before Specialising in Interaction/UX design.</p>
 	<p>Below are just a few examples of my design and development work...</p>
 </div>
 
+
 <ul class="portfolio-list">
-{% for portfolio in site.portfolio limit:20 %}
-
-
-		<li class="portfolio-list__item">
-			  <h3>{{ portfolio.title }}</h3>
-				<div class="portfolio-gallery--thumbnail">
-					<div class="image-wrapper image-wrapper--portfolio">
-						<img src="{{ portfolio.image }}" alt="{{ portfolio.title }}" class="image-wrapper__image">
-					</div>
+{% for portfolio in site.portfolio reversed %}
+	<li class="portfolio-list__item">
+		<div class="portfolio-list__item--content">
+			 <h3><a href="{{portfolio.url}}" title="{{ portfolio.title }}">{{ portfolio.title }}</a></h3>
+			<div class="portfolio-gallery--thumbnail">
+				<div class="image-wrapper image-wrapper--portfolio">
+					<a href="{{portfolio.url}}" title="{{ portfolio.title }}"><img src="{{ portfolio.image }}" alt="{{ portfolio.title }}" class="image-wrapper__image"></a>
 				</div>
-			  <dl>
-			  <dt>Size:</dt>
-			  <dd>{{ portfolio.company }}</dd>
-			  <dt>Company:</dt>
-			  <dd>{{ portfolio.date | date: '%B %d, %Y' }}</dd>
-			  <dt>Date:</dt>
-				<dd>{{ portfolio.project }}</dd>
-			  <dt>Project</dt>
-			  <dd>vfdvdfv</dd>
-			  </dl>
-			<a href="{{portfolio.url}}"><span class="visually-hidden">{{ portfolio.title }}</span> Find out more</a>
-		</li>
-
-
-
-
+			</div>
+			 <dl>
+				 <dt>Start date:</dt>
+				 <dd>{{ portfolio.date | date: '%B %Y' }}</dd>
+				 <dt>Tags:</dt>
+				<dd>{{ portfolio.tags | join: ' ' }}</dd>
+			 </dl>
+			<a href="{{portfolio.url}}" title="{{ portfolio.title }}" class="portfolio-list__anchor"><span class="visually-hidden">{{ portfolio.title }}</span> Find out more</a>
+		</div>
+	</li>
 {% endfor %}
 </ul>

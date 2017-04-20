@@ -1,11 +1,10 @@
 ---
-title: Service design;
+title: The Hut Group
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-company: Creare
-project: IWTF
-image: ../assets/img/thumbs/nintendo.jpg
+tags: Front End Development, Performance
+image: ../assets/img/portfolio/the-hut-group-cover.jpg
 ---
 
 <section class="highlight-quote">

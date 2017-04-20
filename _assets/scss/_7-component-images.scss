@@ -9,7 +9,7 @@ Images
   width: 100%;
   height: 0;
   padding-bottom: 63%;
-  background: url('/assets/img/placeholder.png') center center no-repeat lighten(map-get($colours, 'grey-light'), 20%);
+  background: url('/assets/img/placeholder.png') center center no-repeat lighten(map-get($colours, 'grey-light'), 10%);
 }
 
 .image-wrapper__image {

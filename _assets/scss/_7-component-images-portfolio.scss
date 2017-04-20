@@ -2,32 +2,61 @@
 Image gallery
 ----------------------------------- */
 
-.portfolio-list__item {
-  @include grid(break-mobile, 1, 2);
-  @include grid(break-desktop, 1, 3);
-  list-style: none;
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.portfolio-list__item {
+  list-style: none;
+  padding: 0 10px;
+  display: table-cell;
+  display: flex;
+  padding: 0.5em;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@media all and (min-width: 30em) {
+  .portfolio-list__item {
+    width: 50%;
+  }
+}
+@media all and (min-width: 70em) {
+  .portfolio-list__item {
+    width: 33.33%;
+  }
+}
 
 .portfolio-gallery--thumbnail {
-  // @include grid(break-mobile, 1, 1);
-  // @include grid(break-phablet, 1, 2);
-  // @include grid(break-tablet, 1, 3);
-  // @include grid(break-desktop, 1, 4);
   margin-bottom: 10px;
-  padding: 5px;
-  border: solid 1px lighten(map-get($colours, 'grey-light'), 20%);
-  background: lighten(map-get($colours, 'grey-light'), 30%);
 
-  &:hover,
-  &:focus {
-    border-color: map-get($colours, 'accent');
-    box-shadow: 3px;
+  img {
+    height: 100%;
+    padding: 5px;
   }
 
 }
 
 .image-wrapper--portfolio {
-  border: solid 1px lighten(map-get($colours, 'grey-light'), 30%);
-  animation: fadeIn 2s forwards;
+  border: solid 3px map-get($colours, 'grey-light');
+
+  &:hover,
+  &:focus {
+    border-color: map-get($colours, 'accent');
+  }
+
+}
+
+.portfolio-list__item--content {
+   display: flex;
+   flex-direction: column;
+   padding: 1em;
+   width: 100%;
+}
+
+.portfolio-list__anchor {
+  position: absolute;
+  bottom: 0;
 }

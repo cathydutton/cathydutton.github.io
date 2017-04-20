@@ -1,11 +1,10 @@
 ---
-title: User interaction;
+title: Barclays API store
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-company: The Hut Group
-project: IWTF
-image: ../assets/img/thumbs/2020-home.jpg
+tags: Logo design, Persona development
+image: ../assets/img/portfolio/barclays-api-store-cover.jpg
 ---
 
 <section class="highlight-quote">
