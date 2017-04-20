@@ -9,6 +9,16 @@ CSS get's a lot of stick, which upsets me given a lot of the time these criticis
 
 This post aims to highlight some of the common misconceptions or myths around CSS.
 
+### CSS is broken
+
+A popular topic of late and one I don't intend to write too much about in this post. That has been done brilliantly already in articles like theese...
+
+https://clearleft.com/posts/454
+
+http://keithjgrant.com/posts/2017/03/css-is-not-broken/
+
+In summary CSS is not broken, it just isnt a programing language and therfore should not be excpected to behave like one.
+
 
 ### CSS is easy
 CSS is not easy, it may been seen as the simplest of the front end languages but creating a maintainable CSS code base at scale is a difficult skill to master. Like no other front end language any changes made in CSS have the potential to affect the global landscape, meaning extra discipline and knowledge are required.
@@ -34,6 +44,8 @@ Source order"
 
 
 ### Global scope is a bad thing
+
+CSS is global by default, which is a good thing if you know how to harnece it.
 
 The cascade and inheritance together determine how an element will be styled. between them creating a global scope. This is not a bad thing!
 
@@ -82,10 +94,10 @@ The most common way to use user style sheets is to add the underline back to lin
 
 
 </blocquote>
-This leads nicely on to the next myth, important! is not always bad. its existence as a genuine CSS property alone should confirm that. Prviding it is used responsibly and for it's intended purposes it is fine to use. 
+This leads nicely on to the next myth, important! is not always bad. its existence as a genuine CSS property alone should confirm that. Prviding it is used responsibly and for it's intended purposes it is fine to use.
 
 ### There is no progressive enhancement
-Progressive enhancement is a strategy that promotes delivering the core content and functionality to all bowsers and devices as the primary concern. Then progressively adding extra 'nice to have's' for browsers/devices that allow. 
+Progressive enhancement is a strategy that promotes delivering the core content and functionality to all bowsers and devices as the primary concern. Then progressively adding extra 'nice to have's' for browsers/devices that allow.
 
 In CSS this approach can be adopted by using the @supports rule. This rule provides the ability to check if a CSS feature is supported before implementing.
 
@@ -99,7 +111,7 @@ CODE EXAMPLE
 
 ### It's just for making things pretty
 
-CSS can do more then simply apply the aesthetics to an applications UI. It can also play a role in enhancing the accessibility of a project. 
+CSS can do more then simply apply the aesthetics to an applications UI. It can also play a role in enhancing the accessibility of a project.
 
 CSS can amongst other things also be used to...
 
@@ -147,14 +159,14 @@ padding-left: 10px;
 #### Good use case if you want it everywhere
 
 '''
-margin: 0 
+margin: 0
 '''
 
 '''
-margin-top: 0 
-margin-right: 0 
-margin-bottom: 0 
-margin-left: 0 
+margin-top: 0
+margin-right: 0
+margin-bottom: 0
+margin-left: 0
 '''
 
 '''
@@ -185,19 +197,19 @@ margin-left:  auto;
 CSS is defined as a mark up language not a programing or scripting language, however it does come with some functions included.
 
  - Calc() etc
- - 
- - 
- - 
+ -
+ -
+ -
 
 https://www.w3schools.com/cssref/css_functions.asp
 
 
 ### You need a framework
 
-There are loads of helpful frameworks to speed up CSS projects and get the base promciples in place. 
+There are loads of helpful frameworks to speed up CSS projects and get the base promciples in place.
 
 - Normalize
-- Print.CSS 
+- Print.CSS
 - a11y
 - ITCSS
 - Smacss
@@ -232,6 +244,3 @@ For speed and loading it can be good
 ### In summary
 
 A bad workmen blames his tools, the featured of CSS are not secret, anyone can read up on and learn to write good CSS in a structured and maintainable way. If you choose not to CSS can become a nightmare.
-
-
-
