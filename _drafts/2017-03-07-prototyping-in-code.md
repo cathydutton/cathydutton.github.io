@@ -50,3 +50,7 @@ Problems - Can be time consuming - but only build after testing sketches - patte
 Takes investment upfront to build a design language in code, longrt term bennefitd make this woth while
 
 Do the hard work to make it simple - Need pattern library to keep things quick, longer start up period.
+
+
+
+SAVING CODE FROM THE BROWSER - WITH THAT PLUGIN THING :)
