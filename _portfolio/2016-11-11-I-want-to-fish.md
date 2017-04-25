@@ -35,10 +35,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 ![Alt text](../assets/img/buttons-one.png "Button example bad")
 
 
-User researh -
+User research -
 Flow -  re-do - blog post - junior - consession sceens
 Content design - licence type
 Decision drivers - price box
-Interaction design - contact screen
+Interaction design - contact screen - Multibuy - upgrades- renewals
 data driven design - helper text - time on pages
 Continous improvement - analytics - consession screens - done page - save - print - content - email and text option.
