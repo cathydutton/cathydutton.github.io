@@ -18,7 +18,7 @@ a popular topic of late and one I don't intend to write too much about in this p
 In summary CSS is not broken, it just isn't a programing language and therefore can not be expected to behave like one.
 
 
-### CSS is easy
+<!--### CSS is easy
 CSS is not easy, it may been seen as the simplest of the front end languages but creating a maintainable CSS code base at scale is a difficult skill to master. Like no other front end language any changes made in CSS have the potential to affect the global landscape, meaning extra discipline and knowledge are required.
 
 To work effectively a detailed understanding of key CSS features is essential, these features are frequently misunderstood leading to assumptions that CSS itself is broken.
@@ -65,7 +65,7 @@ For example: #nav .selected:hover > a::before will be 1, 2, 2."
 
 The box model is used to calculate the width and height of elements. It is a calculation step and not solely relied upon for determining the final layout and positioning of elements."
 
-box-sizing: border-box often allows elements to behave in amore expected way.
+box-sizing: border-box often allows elements to behave in amore expected way.-->
 
 
 
@@ -82,9 +82,9 @@ CSS is global by default, which is a good thing if you know how to harnece it.
 The cascade and inheritance together determine how an element will be styled. between them creating a global scope. This is not a bad thing!
 
 <blockquote>
-The CSS cascade assigns a weight to each style rule. When several rules apply, the one with the greatest weight takes precedence.
+<p>The CSS cascade assigns a weight to each style rule. When several rules apply, the one with the greatest weight takes precedence.</p>
 
-https://www.w3.org/TR/CSS2/cascade.html
+<p>https://www.w3.org/TR/CSS2/cascade.html</p>
 </blockquote>
 
 You hear a lot of grumblings about the CSS cascade and it's apparent negative impact on a project. It is often compared to the localised scoping features of JavaScript
@@ -111,7 +111,7 @@ Overides specificity and source order in the cascade.
 
 Used to overriding author stylesheets
 
-<blockquote>
+
 6.4.2 !important rules
 
 CSS attempts to create a balance of power between author and user style sheets. By default, rules in an author's style sheet override those in a user's style sheet (see cascade rule 3).
@@ -120,12 +120,12 @@ However, for balance, an "!important" declaration (the delimiter token "!" and k
 
 The most common way to use user style sheets is to add the underline back to links. You would do this by simply adding the following CSS property to your user style sheet:
 
-'''
+```
 :link, :visited { text-decoration: underline ! important; }
-'''
+```
 
 
-</blocquote>
+
 This leads nicely on to the next myth, important! is not always bad. its existence as a genuine CSS property alone should confirm that. Prviding it is used responsibly and for it's intended purposes it is fine to use.
 
 ### There is no progressive enhancement
@@ -160,62 +160,62 @@ Shorthand properties allow multiple values to be set for a group of CSS properti
 
 The feature is intended to allow for more concise and more readable style sheets, as well as saving time and being more performant.
 
-'''
+```
 font-style: italic;
 font-weight: bold;
 font-size: .8em;
 line-height: 1.2;
 font-family: Arial, sans-serif;
-'''
+```
 
-'''
+```
 font: italic bold .8em/1.2 Arial, sans-serif;
-'''
+```
 
 However a value which is not specified is automatically set to its initial value. Therefore the shorthand syntax is not always the most effective approach.
 
 
 #### Good use case
 
-'''
+```
 padding: 10px;
-'''
+```
 
-'''
+```
 padding-top: 10px;
 padding-right: 10px;
 padding-bottom: 10px;
 padding-left: 10px;
-'''
+```
 
 #### Good use case if you want it everywhere
 
-'''
+```
 margin: 0
-'''
+```
 
-'''
+```
 margin-top: 0
 margin-right: 0
 margin-bottom: 0
 margin-left: 0
-'''
+```
 
-'''
+```
 .foo {
   margin: 12px 17px 16px 10px;
 }
-'''
+```
 
 #### Bad use case
-'''
+```
 margin: 0 auto;
-'''
+```
 
-'''
+```
 margin-right: auto;
 margin-left:  auto;
-'''
+```
 
 
 

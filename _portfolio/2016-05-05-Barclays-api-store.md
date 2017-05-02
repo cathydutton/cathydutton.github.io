@@ -4,7 +4,7 @@ author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
 tags: Logo design, Persona development
-image: ../assets/img/portfolio/barclays-api-store-cover.jpg
+image: ../assets/img/portfolio/barclays.jpg
 ---
 
 <section class="highlight-quote">
