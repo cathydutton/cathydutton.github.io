@@ -5,28 +5,30 @@ layout: post
 date:   2017-03-3
 ---
 
-CSS get's a lot of stick, which upsets me given a lot of the time these criticisms are unfair, untrue or both. CSS is not broken, it behaves in the intended manner and if utilised correctly is an amazing tool.
+CSS get's a lot of stick, which is upsetting given a lot of the time the criticisms are unfair, untrue or both. CSS is not broken, it behaves exactly as intended and if utilised correctly is an amazing tool.
 
 This post aims to highlight some of the common misconceptions or myths around CSS.
 
 ### CSS is broken
 
-A popular topic of late and one I don't intend to write too much about in this post. That has been done brilliantly already in articles like theese...
+So first of all CSS is not broken. The internet is full of articles and blog posts discussing how to 'fix' CSS
 
-https://clearleft.com/posts/454
+a popular topic of late and one I don't intend to write too much about in this post. (That has been done brilliantly already in articles such as these https://clearleft.com/posts/454, http://keithjgrant.com/posts/2017/03/css-is-not-broken)
 
-http://keithjgrant.com/posts/2017/03/css-is-not-broken/
-
-In summary CSS is not broken, it just isnt a programing language and therfore should not be excpected to behave like one.
+In summary CSS is not broken, it just isn't a programing language and therefore can not be expected to behave like one.
 
 
 ### CSS is easy
 CSS is not easy, it may been seen as the simplest of the front end languages but creating a maintainable CSS code base at scale is a difficult skill to master. Like no other front end language any changes made in CSS have the potential to affect the global landscape, meaning extra discipline and knowledge are required.
 
-A detailed understanding of key CSS features is essential, these features are frequently misunderstood leading to assumptions that CSS itself is broken.
+To work effectively a detailed understanding of key CSS features is essential, these features are frequently misunderstood leading to assumptions that CSS itself is broken.
 
 #### Cascade
 CSS declarations cascade down to elements from many origins.
+
+"The cascade is probably one of the most misunderstood features of CSS. It refers to the process of combining different stylesheets and resolving conflicts between CSS selectors.
+
+The cascade looks at the importance, origin, specificity, and order of declarations to determine which style rules to use."
 
 "CSS is an acronym of Cascading Style Sheets, which indicates that the notion of the cascade is important. At its most basic level it indicates that the order of CSS rules matter, but it's more complex than that. What selectors win out in the cascade depends on three factors (these are listed in order of weight — earlier ones will overrule later ones):
 
@@ -37,8 +39,38 @@ Source order"
 #### Inheritance
 "is the means by which, in the absence of any specific declarations applied by the CSS cascade, a property value of an element is obtained from its parent element.""
 
+"Inheritance is the process where values that apply to an element can be passed on (or inherited) by its children."
+
+"Not all properties are inherited by default. Understanding inheritance is key to writing more deliberate and less verbose CSS. Forcing inheritance with the inherit keyword can be incredibly useful."
+
 #### Specificity
 "Specificity is a mechanism within the CSS cascade that aids conflict resolution. The concept of specificity states that when two or more declarations that apply to the same element, and set the same property, have the same importance and origin, the declaration with the most specific selector will take precedence.""
+
+"Specificity is a weighting given to selectors. It’s a common mistake to think of this as a single number. It’s actually 4 separate numbers or 4 categories of weighting.
+
+To calculate specificity, count the number of:
+
+IDs,
+
+classes, attributes and pseudo-classes,
+
+elements and pseudo-elements
+
+For example: #nav .selected:hover > a::before will be 1, 2, 2."
+
+
+#### The box model
+
+"Understanding the Box Model is essential and necessary for limiting frustration when working with layout and positioning. It is one of the most fundamental concepts in CSS.
+
+The box model is used to calculate the width and height of elements. It is a calculation step and not solely relied upon for determining the final layout and positioning of elements."
+
+box-sizing: border-box often allows elements to behave in amore expected way.
+
+
+
+
+
 
 
 
