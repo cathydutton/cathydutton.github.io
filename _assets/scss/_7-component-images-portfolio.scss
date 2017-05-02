@@ -40,7 +40,7 @@ Image gallery
 }
 
 .image-wrapper--portfolio {
-  border: solid 3px map-get($colours, 'grey-light');
+  border: solid 1px map-get($colours, 'grey-light');
 
   &:hover,
   &:focus {
