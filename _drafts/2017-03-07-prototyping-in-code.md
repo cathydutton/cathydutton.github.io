@@ -7,6 +7,9 @@ date: 2017-03-07
 ---
 
 
+6 months of prototyping in code and with paper :) 
+Talk about saving dev in code from inspector - can this be done?
+
 Wether it’s Sketch, Illustrator, Photoshop or Affinity the process of creating detailed screens as static images has always been slow, and has never been overly useful when describing how elements should react to varying screen sizes or changes in user input.
 
 Traditional design tools such as these are no longer a part of my working day which makes me very happy.
