@@ -5,51 +5,65 @@ layout: post
 date:   2017-03-19
 ---
 
-For the last 5-6 years at least it has been a given that any new digital project will be using some from of CSS pre-processors. The question is always 'which pre-processors shall we use?' not 'Do we need to use a pre-processors?'
+CSS pre=procesors have become a standard feature of front end applications. Features provided by the likes of Sass, Scss, Less, Stylus and Rework allow CSS to be managed in a way not previously possible. Variables allow for the re-use of properties, mixins help output DRY code and functions allow for calculations within CSS.
 
-Thats because of all the extended features provided by the likes of Sass, Scss, Less, Stylus and Rework. These pre-processors allow CSS to be managed in a way not previously possible. Variables allow for the re-use of properties, mixins help output DRY code and functions allow for calculations within CSS.
+The questions I have started to ask myself latley however are "Do I still need to use a CSS pre-processors?" and "What problems am I solving by using one"
 
-There was of course the inevitable backlash against theese tools:  
-
- * The code output was not always as clean as it could have been
- * Over nesting created a reliance on DOM structure
- * ??????
-  * ??????
-
-But overall the pro's outweighed the cons's and like most front end developers my personal sites are all built using Sass.
 
 ## Why I fell in love with Sass
+
+I started to experiment with Sass around 5 or 6 years ago, and absolutly loved it.
 
 ### Variables
 ### Mixins
 ### Functions
 ### Nesting
 
-## What did this solve?
+There was of course the inevitable backlash against preprocessrs:  
 
-Looking through projects it's clear what the most  Sass gains were: 
+ * The code output was not always as clean as it could have been
+ * Over nesting created a reliance on DOM structure
+ * Variables became un-managable
+ * Developers become reliant on a tool instead of the language
 
-### Layout
-### Re-usable properties
-### Mixins
-### Typography
+ Leading to artices like this "LINK" and "LINK2"
 
-### Can CSS now do these things alone?
+ Overall the pro's outweighed the cons's and like most front end developers my personal sites are all built using Sass.
+
+ If used harnessed correctly Sass still offered more advantages then disadvantages and allowed me to solve some common CSS problems.
 
 
-### Layout
-### Re-usable properties
-### Mixins
-### Typography
 
-Grid CS
-Custom properties
-Calc for font sizes and vertical rhythem
+
+
+## What did Sass solve?
+
+So I was happy that the features of Sass are pretty cool, but are they actually solving my problems with CSS?
+
+Looking through my projects I identified the main use cases: 
+
+### Layout - 
+### Re-usable properties - 
+### Media queries - 
+### Typography - 
+
+### Is this still the case?
+
+Some of the things I use Sass for can now be handled directly in CSS.
+
+### Layout - CSS grid
+### Re-usable properties - CSS custom properties
+### Media queries - 
+### Typography / Verticla rhythem 0- calc?
+
+### Legacy browsers
+
+This may be the case for modern browsers, but what if you need to support older versions, or use browser specific features?
 
 PostCSS can help with the transition
 
 
-But not for all browsers!!!!!!
+
 
 
 ### Become less reliant on Sass, write CSS and phase out PostCSS as and when CSS gets better
