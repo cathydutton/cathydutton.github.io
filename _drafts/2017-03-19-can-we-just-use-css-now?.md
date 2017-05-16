@@ -5,9 +5,16 @@ layout: post
 date:   2017-03-19
 ---
 
-CSS pre=procesors have become a standard feature of front end applications. Features provided by the likes of Sass, Scss, Less, Stylus and Rework allow CSS to be managed in a way not previously possible. Variables allow for the re-use of properties, mixins help output DRY code and functions allow for calculations within CSS.
+CSS preprocessors have become a standard feature of front end applications. Features provided by the likes of Sass, Scss, Less, Stylus and Rework allow CSS to be approached in a ways not previously possible. Variables allow for the re-use of properties, mixins help output DRY CSS and functions allow for calculations to be made.
 
-The questions I have started to ask myself latley however are "Do I still need to use a CSS pre-processors?" and "What problems am I solving by using one"
+The questions I have started to ask myself lately however are:
+
+ * What problems am I solving with Sass?
+
+ and:
+
+ * Do I still need to use a CSS preprocessor? 
+
 
 
 ## Why I fell in love with Sass
@@ -15,9 +22,22 @@ The questions I have started to ask myself latley however are "Do I still need t
 I started to experiment with Sass around 5 or 6 years ago, and absolutly loved it.
 
 ### Variables
+
+Variables allowed me to set property values in one place making branding and theme creation much simpler. 
+
 ### Mixins
+
+I used mixins to simplify the process of using patterns in my CSS. The ability to pass options to a mixin allows the code to remain flexible whilst removing the need to re-write lines of CSS.
+
 ### Functions
+
+Functions provided a way to use logic in CSS probably one of the most powerful features of Sass. By using functions to create flexible grid layouts the reliance on markup classes was removed, as well as the need for manual calculations.
+
 ### Nesting
+
+Nesting allowed for groups of classes to be grouped together forming a dependance tree and form of scoping. This is particularly useful for states such as anchors with active, hover and focus states.
+
+### Sass backlash
 
 There was of course the inevitable backlash against preprocessrs:  
 
