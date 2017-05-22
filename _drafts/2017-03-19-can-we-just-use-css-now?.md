@@ -5,7 +5,7 @@ layout: post
 date:   2017-03-19
 ---
 
-CSS preprocessors have become a standard feature of front end applications. Features provided by the likes of Sass, Scss, Less, Stylus and Rework allow CSS to be approached in a ways not previously possible. Variables allow for the re-use of properties, mixins help output DRY CSS and functions allow for calculations to be made.
+CSS preprocessors have become a standard feature of front end applications. Features provided by the likes of Sass, Scss, Less, Stylus and Rework allow CSS to be approached in ways not previously possible. Variables allow for the re-use of properties, mixins help output DRY CSS and functions allow for calculations to be made.
 
 The questions I have started to ask myself lately however are:
 
@@ -19,7 +19,7 @@ The questions I have started to ask myself lately however are:
 
 ## Why I fell in love with Sass
 
-I started to experiment with Sass around 5 or 6 years ago, and absolutly loved it.
+I started to experiment with Sass around 5 or 6 years ago, and absolutely loved it.
 
 ### Variables
 
@@ -39,14 +39,14 @@ Nesting allowed for groups of classes to be grouped together forming a dependanc
 
 ### Sass backlash
 
-There was of course the inevitable backlash against preprocessrs:  
+There was of course the inevitable backlash against preprocessors:  
 
  * The code output was not always as clean as it could have been
  * Over nesting created a reliance on DOM structure
- * Variables became un-managable
+ * Variables became unmanageable
  * Developers become reliant on a tool instead of the language
 
- Leading to artices like this "LINK" and "LINK2"
+ Leading to articles like this "LINK" and "LINK2"
 
  Overall the pro's outweighed the cons's and like most front end developers my personal sites are all built using Sass.
 
@@ -56,9 +56,9 @@ There was of course the inevitable backlash against preprocessrs:
 
 
 
-## So what problems was Sass solveing?
+## So what problems was I solving with Sass?
 
-I looked at how and more importantly why I was using Sass. The four main things that came you cross projects were... 
+<!-- I looked at how and more importantly why I was using Sass. The four main things that came you cross projects were...  -->
 
 
 
@@ -66,23 +66,21 @@ I looked at how and more importantly why I was using Sass. The four main things 
 ### 1) Re-usable properties 
 
 https://css-tricks.com/making-custom-properties-css-variables-dynamic/
-
-
 https://vgpena.github.io/winning-with-css-variables/
 
-Sass provides the extra functionality of colour functions, meaning we can reduce the number of colour variables. These are particularly useful when creating hover or active states. 
+Sass provides the extra functionality of color functions, meaning we can reduce the number of color variables. These are particularly useful when creating hover or active states. 
 
 Show example of hover state code
 
-Show example of this with extra colour values for CSS custom properties.
+Show example of this with extra color values for CSS custom properties.
 
-Layout has been a longstanding source of frustration with CSS. Moving from table layouts to floated elements and even flex box there has never been an acepted standard convention. Particullybfor fluid/ responsive layouts. A Hugge plus point of working with a pre processor was the ability to create mixing or functions to handle layout in a manageable way. 
+Layout has been a longstanding source of frustration with CSS. Moving from table layouts to floated elements and even flex box there has never been an accepted standard convention. particularly for fluid/ responsive layouts. A Huge plus point of working with a pre processor was the ability to create mixing or functions to handle layout in a manageable way. 
 
-Show exampe
+Show example
 
 Easy markup to calculate percentage widths
 
-One of the first partials I create is always the grid partial, I even created a framework as later a PostCSS plugin for my grid. But is this still nesacry?
+One of the first partials I create is always the grid partial, I even created a framework as later a PostCSS plugin for my grid. But is this still necessary?
 
 With the browser support already in place CSS grid can remove the need to rely on pre processors to perfect your layout CSS
 
@@ -90,7 +88,7 @@ Show example
 
 From custom properties...
 
-However this can be resolved using CSS colour functions, like hsl() - explaining more and other functions. These CSS functions require an extra variable not nesacary with Sass but avoid having to find values for colours and allow for easy iterations and consistency between colour changes.
+However this can be resolved using CSS colour functions, like hsl() - explaining more and other functions. These CSS functions require an extra variable not necessary with Sass but avoid having to find values for colours and allow for easy iterations and consistency between colour changes.
 
 https://drafts.csswg.org/css-color/. 
 
@@ -127,7 +125,7 @@ Again PostCSS can supply the fallback options removing reliance on pre processor
 
 This may be the case for modern browsers, but what if you need to support older versions, or use browser specific features?
 
-PostCSS can help with the transition without creatign a reliance on bolt on languages.
+PostCSS can help with the transition without creating a reliance on bolt on languages.
 
 
 
@@ -139,8 +137,8 @@ PostCSS can help with the transition without creatign a reliance on bolt on lang
 Use Gulp to post process - less tying - free to remove from just one fie once complete
 Autoprefixer
 
-Now as features become more widley supported onky the gulp file and the post processing needs to. The CSS remains the sdame, creating a more stable codebase.
+Now as features become more widley supported only the gulp file and the post processing needs to. The CSS remains the same, creating a more stable codebase.
 
 ### Summary
 
-This article is not about abandoming Sass because of the poorly output code or any of the other backlash articles. I still think Sass is an amazing tool, I also still think it is capable of producing CSS to solve real problems. My point is more that the original problems that Sass helped me to solve are no longer problems. CSS has moved on and can handle my needs by itself. I would still use Sass for any bespoke CSS needs or complex pieces, but in my day to day work it's inclusion is harder and harder to justify. 
+This article is not about abandoning Sass because of the poorly output code or any of the other backlash articles. I still think Sass is an amazing tool, I also still think it is capable of producing CSS to solve real problems. My point is more that the original problems that Sass helped me to solve are no longer problems. CSS has moved on and can handle my needs by itself. I would still use Sass for any bespoke CSS needs or complex pieces, but in my day to day work it's inclusion is harder and harder to justify. 
