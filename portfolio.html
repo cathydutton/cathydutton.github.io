@@ -33,14 +33,14 @@ active: "Portfolio"
 				</div>
 			</div>
 			 <dl>
-				 <dt>Start date:</dt>
+				 <dt>Date:</dt>
 				 <dd>{{ portfolio.date | date: '%B %Y' }}</dd>
 				 <dt>Tags:</dt>
 				<dd>{{ portfolio.tags | join: ' ' }}</dd>
 			 </dl>
-			<!--<a href="{{portfolio.url}}" title="{{ portfolio.title }}" class="portfolio-list__anchor">#}-->
-				<span class="visually-hidden">{{ portfolio.title }}</span> Find out more
-			<!--</a>#}-->
+			<!--<a href="{{portfolio.url}}" title="{{ portfolio.title }}" class="portfolio-list__anchor">
+				<span class="visually-hidden">{{ portfolio.title }}</span>Find out more
+			</a>-->
 		</div>
 	</li>
 {% endfor %}

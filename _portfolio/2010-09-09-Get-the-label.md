@@ -3,7 +3,7 @@ title: Getthelabel.com
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-tags: Graphic design
+tags: Graphic design, Website design
 image: ../assets/img/portfolio/gtl-cover.jpg
 ---
 

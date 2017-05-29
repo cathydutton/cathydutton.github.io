@@ -3,7 +3,7 @@ title: Fishing licence service
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-tags: Interaction design, Data driven design, Content design, Prototyping, User research
+tags: Interaction design, Prototyping, User research
 image: ../assets/img/portfolio/i-want-to-fish-cover.jpg
 ---
 
