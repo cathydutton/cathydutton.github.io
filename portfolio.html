@@ -20,10 +20,16 @@ active: "Portfolio"
 {% for portfolio in site.portfolio reversed %}
 	<li class="portfolio-list__item">
 		<div class="portfolio-list__item--content">
-			 <h3><a href="{{portfolio.url}}" title="{{ portfolio.title }}">{{ portfolio.title }}</a></h3>
+			 <h3>
+				 <!--<a href="{{portfolio.url}}" title="{{ portfolio.title }}"> -->
+					 {{ portfolio.title }}
+				<!--</a>-->
+			</h3>
 			<div class="portfolio-gallery--thumbnail">
 				<div class="image-wrapper image-wrapper--portfolio">
-					<a href="{{portfolio.url}}" title="{{ portfolio.title }}"><img src="{{ portfolio.image }}" alt="{{ portfolio.title }}" class="image-wrapper__image"></a>
+					<!-- <a href="{{portfolio.url}}" title="{{ portfolio.title }}">#}-->
+						<img src="{{ portfolio.image }}" alt="{{ portfolio.title }}" class="image-wrapper__image">
+					<!--</a>#}-->
 				</div>
 			</div>
 			 <dl>
@@ -32,7 +38,9 @@ active: "Portfolio"
 				 <dt>Tags:</dt>
 				<dd>{{ portfolio.tags | join: ' ' }}</dd>
 			 </dl>
-			<a href="{{portfolio.url}}" title="{{ portfolio.title }}" class="portfolio-list__anchor"><span class="visually-hidden">{{ portfolio.title }}</span> Find out more</a>
+			<!--<a href="{{portfolio.url}}" title="{{ portfolio.title }}" class="portfolio-list__anchor">#}-->
+				<span class="visually-hidden">{{ portfolio.title }}</span> Find out more
+			<!--</a>#}-->
 		</div>
 	</li>
 {% endfor %}

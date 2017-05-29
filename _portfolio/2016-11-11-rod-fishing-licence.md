@@ -1,5 +1,5 @@
 ---
-title: Geta rod fishing licence service
+title: Fishing licence service
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
