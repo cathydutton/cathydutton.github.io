@@ -5,6 +5,17 @@ layout: post
 date:   2017-03-19
 ---
 
+
+Why am I using Sass? I asked myself this question recently when doing some maintenance on my blog.
+
+I love Sass and all of the features it brings, but in my particular use case was its inclusion still necasary.
+
+Insert noce Sass stuff
+
+I started to look at why and how I was using it, more specificaly what ptoblems was it solving?
+
+
+
 CSS preprocessors have become a standard feature of front end applications. Features provided by the likes of Sass, Scss, Less, Stylus and Rework allow CSS to be approached in ways not previously possible. Variables allow for the re-use of properties, mixins help output DRY CSS and functions allow for calculations to be made.
 
 The questions I have started to ask myself lately however are:
