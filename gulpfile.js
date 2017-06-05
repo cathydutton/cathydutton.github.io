@@ -187,7 +187,7 @@
 
 	//  build live
 	gulp.task('build-live', function(callback) {
-		plugins.runSequence('clean-assests', ['critical-css', 'main-css', 'image-optimise'], ['inject'], 'clean', callback);
+		plugins.runSequence('clean-assests', ['critical-css', 'main-css', 'image-optimise'], 'clean', callback);
 	});
 
 	// Development tasks
@@ -202,5 +202,5 @@
 
 	// Push
 	gulp.task('push', function(callback) {
-		plugins.runSequence('minify', ['deploy'] ,callback);
+		plugins.runSequence('minify', 'inject', ['deploy'] ,callback);
 	});
