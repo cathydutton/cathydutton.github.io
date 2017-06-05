@@ -7,7 +7,7 @@ category: post
 date:   2017-03-15
 ---
 
-IF YOU REMOVE THE TIMESTAMP THE NEW PROCESS WORKS SO YOU CAN FINNISH THIS
+IF YOU REMOVE THE TIMESTAMP THE NEW PROCESS WORKS SO YOU CAN FINNISH THIS, make timestamp work in inject file!
 
 I spend a ridiculous amount of time updating my personal website and blog....
 
