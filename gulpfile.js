@@ -197,10 +197,10 @@
 
 	// Live tasks
 	gulp.task('live', function(callback) {
-		plugins.runSequence(['build-live'], ['jekyll-live'] ,callback);
+		plugins.runSequence(['build-live'], ['inject'], ['jekyll-live'] ,callback);
 	});
 
 	// Push
 	gulp.task('push', function(callback) {
-		plugins.runSequence('minify', 'inject', ['deploy'] ,callback);
+		plugins.runSequence('minify', ['deploy'] ,callback);
 	});
