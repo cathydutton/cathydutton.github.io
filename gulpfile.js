@@ -139,11 +139,11 @@
 	gulp.task('jekyll-live', () => {
 		var liveEnv = process.env;
 		liveEnv.JEKYLL_ENV = 'live';
+	  //return child.spawn('jekyll', ['build'], { stdio: 'inherit' }) // Adding incremental reduces build time.
 	  const jekyll = child.spawn('jekyll', ['serve',
-		'--incremental',
+	    '--incremental'
 	  ]);
-
-	  const jekyllLogger = (buffer) => {
+		const jekyllLogger = (buffer) => {
 	    buffer.toString()
 	      .split(/\n/)
 	      .forEach((message) => gutil.log('Jekyll: ' + message));
@@ -186,21 +186,22 @@
 	});
 
 	//  build live
-	gulp.task('build-live', function(callback) {
-		plugins.runSequence('clean-assests', ['critical-css', 'main-css', 'image-optimise'], 'clean', callback);
+	gulp.task('live', function(callback) {
+		plugins.runSequence('clean-assests','clean', ['critical-css', 'main-css', 'image-optimise'],  'jekyll-live', callback);
 	});
 
 	// Development tasks
 	gulp.task('dev', function(callback) {
-		plugins.runSequence('build-dev', ['watch', 'jekyll-dev', 'serve'],  callback);
+		plugins.runSequence('build-dev', ['watch', 'jekyll-dev'],  callback);
 	});
 
 	// Live tasks
-	gulp.task('live', function(callback) {
-		plugins.runSequence(['build-live'], ['inject'], ['jekyll-live'] ,callback);
+	gulp.task('inject-live', function(callback) {
+		plugins.runSequence(['inject'], ['minify'] ,callback);
 	});
+
 
 	// Push
 	gulp.task('push', function(callback) {
-		plugins.runSequence('minify', ['deploy'] ,callback);
+		plugins.runSequence('deploy' ,callback);
 	});

@@ -46,7 +46,7 @@
 					.pipe(postcss(processors))
 					.pipe(minifycss())
 					.pipe(rename({ suffix: '-' + getStamp() + '.min'}))
-				  .pipe(gulp.dest(plugins.path.join(paths.build.css)))
+				    .pipe(gulp.dest(plugins.path.join(paths.build.css)))
 					.pipe(plugins.browserSync.reload({ stream: true }));
 				};
 

@@ -22,8 +22,8 @@
 		// Return module
 		return function() {
 
-		  //return gulp.src('_site/**/**.html')
-			return gulp.src('_includes/head.html')
+		return gulp.src('_site/**/**.html')
+		//return gulp.src('_includes/head.html')
 
 
 			// Inline CSS
@@ -36,7 +36,7 @@
 
 			// Cache Bust
 			.pipe(replace('@@cacheBust', getStamp()))
-			.pipe(gulp.dest(plugins.path.join(paths.base, '/_includes')))
+			.pipe(gulp.dest(plugins.path.join(paths.dist)))
 			.pipe(plugins.browserSync.reload({ stream: true }));
 		};
 	};
