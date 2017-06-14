@@ -6,6 +6,20 @@ date:   2017-03-19
 ---
 
 
+
+
+It's not about wether pre processors can still serve a purpose, what problems am I solving by using it?
+
+Includes
+Grid
+variables
+Mixins
+Nesting
+media queries
+
+---------------------------------------------------------
+
+
 Why am I using Sass? I asked myself this question recently when doing some maintenance on my blog.
 
 I love Sass and all of the features it brings, but in my particular use case was its inclusion still necasary.
