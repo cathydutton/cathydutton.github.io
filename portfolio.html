@@ -21,15 +21,27 @@ active: "Portfolio"
 	<li class="portfolio-list__item">
 		<div class="portfolio-list__item--content">
 			 <h3>
-				 <!--<a href="{{portfolio.url}}" title="{{ portfolio.title }}"> -->
-					 {{ portfolio.title }}
-				<!--</a>-->
+
+			{% if portfolio.done == true %}
+				<a href="{{portfolio.url}}" title="{{ portfolio.title }}"> 
+					{{ portfolio.title }}
+				</a>
+			{% else %}
+				{{ portfolio.title }}
+			{% endif %}
+				
 			</h3>
 			<div class="portfolio-gallery--thumbnail">
 				<div class="image-wrapper image-wrapper--portfolio">
-					<!-- <a href="{{portfolio.url}}" title="{{ portfolio.title }}">#}-->
+
+					{% if portfolio.done == true %}
+						 <a href="{{portfolio.url}}" title="{{ portfolio.title }}">
+							<img src="{{ portfolio.image }}" alt="{{ portfolio.title }}" class="image-wrapper__image">
+						</a>
+					{% else %}
 						<img src="{{ portfolio.image }}" alt="{{ portfolio.title }}" class="image-wrapper__image">
-					<!--</a>#}-->
+					{% endif %}
+					
 				</div>
 			</div>
 			 <dl>
@@ -38,9 +50,13 @@ active: "Portfolio"
 				 <dt>Tags:</dt>
 				<dd>{{ portfolio.tags | join: ' ' }}</dd>
 			 </dl>
-			<!--<a href="{{portfolio.url}}" title="{{ portfolio.title }}" class="portfolio-list__anchor">
-				<span class="visually-hidden">{{ portfolio.title }}</span>Find out more
-			</a>-->
+
+			 {% if portfolio.done == true %}
+				<a href="{{portfolio.url}}" title="{{ portfolio.title }}" class="portfolio-list__anchor">
+					<span class="visually-hidden">{{ portfolio.title }}</span>Find out more
+				</a>	
+			{% endif %}
+			
 		</div>
 	</li>
 {% endfor %}

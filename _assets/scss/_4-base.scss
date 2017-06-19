@@ -53,7 +53,8 @@ svg {
 }
 
 // LISTS
-ul {
+ul,
+ol {
   @include clearfix;
   margin: 0 0 0 12px;
   padding: 0;

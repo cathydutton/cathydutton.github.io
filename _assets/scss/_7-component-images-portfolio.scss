@@ -45,7 +45,7 @@ Image gallery
 
   &:hover,
   &:focus {
-    border-color: map-get($colours, 'accent');
+    border: solid 1px map-get($colours, 'accent');
   }
 
 }
