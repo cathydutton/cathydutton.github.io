@@ -1,46 +1,45 @@
----
-disqus: true
-comments: true
-archive: false
----
+--- 
+disqus: true comments: true archive: false 
+--- 
 
-{% include head.html %}
-{% include sidebar.html %}
+
+{% include head.html %} {% include sidebar.html %}
 <div class="content">
-<main id="main">
-<header role="banner" class="header">
-  <h1 class="heading heading__intro">{{page.title}}</h1>
-  <p class="heading heading--primary">{{ page.date | date_to_string }}</p>
-</header>
+  <main id="main">
+    <header role="banner" class="header">
+      <h1 class="heading heading__intro">{{page.title}}</h1>
+      <p class="heading heading--primary">{{ page.date | date_to_string }}</p>
+    </header>
 
 
-  {{ content }}
+    {{ content }}
 
-<section>
-  {% include share-page.html %}
-</section>
+    <section>
+      {% include share-page.html %}
+    </section>
 
-<section>
-  {% include pagination.html %}
-</section>
+    <section>
+      {% include pagination.html %}
+    </section>
 
-<section>
-  <div id="disqus_thread"></div>
-</section>
-</main>
+    <section>
+      <div id="disqus_thread"></div>
+    </section>
+  </main>
 
-{% include footer.html %}
+  {% include footer.html %}
 </div>
 <!-- Script includes -->
 <!-- <script src="../assets/js/main-@@cacheBust.min.js"></script> -->
 
 <script>
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = '//cathyduttoncouk.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
+  (function () { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//cathyduttoncouk.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+
 </script>
 
 <!-- <script id="dsq-count-scr" src="//cathydutton.disqus.com/count.js" async></script> -->
@@ -56,4 +55,5 @@ s.setAttribute('data-timestamp', +new Date());
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script> -->
 </body>
+
 </html>
