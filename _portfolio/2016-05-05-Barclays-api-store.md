@@ -5,6 +5,7 @@ layout: portfolio-post
 category: portfolio
 tags: Logo design, Persona development
 image: ../assets/img/portfolio/barclays.jpg
+done: true
 ---
 
 <section class="highlight-quote">
