@@ -1,14 +1,50 @@
 ---
-title: You can do that in CSS
+title: Cut the relience
 author: Cathy Dutton
 layout: post
 date:   2017-03-19
 ---
 
+I am a  huge fan of Sass, and the posabilities it brings to CSS. Loops, functions and mixins are some of my faveoutite features, none of which are close to being available in CSS.
+
+https://codepen.io/cathydutton/pen/FDipu
+
+```
+@for $i from 1 through 120 {
+  
+  [data-left="#{$i}"]:before {
+    @include fade;
+    @include rotate (#{$i}deg);
+  }
+  [data-right="#{$i}"]:before {
+    @include fade;
+    @include rotate (#{$i}deg);
+  }
+
+}
+```
 
 
+https://codepen.io/cathydutton/pen/vEeORQ
 
-It's not about wether pre processors can still serve a purpose, what problems am I solving by using it?
+```
+@function text-color($list){
+   $text-list:();
+   @each $color, $percentage in $list {   
+    @if lightness($color) > 50% {
+     $text-list:append($text-list, $black $percentage, comma);    
+    } @else {
+        $text-list:append($text-list, $white $percentage, comma);
+     }        
+	}
+  @return $text-list;
+} 
+```
+
+Despite the obvious benefits and unique features of Sass I have found myself questioning why I seem to have become so dependant on it for all my front end projects.
+
+It's not about wether pre-processors still serve a purpose, but more what problems am I solving by using it for this project?
+
 
 Includes
 Grid
@@ -20,11 +56,8 @@ media queries
 ---------------------------------------------------------
 
 
-Why am I using Sass? I asked myself this question recently when doing some maintenance on my blog.
 
-I love Sass and all of the features it brings, but in my particular use case was its inclusion still necasary.
 
-Insert noce Sass stuff
 
 I started to look at why and how I was using it, more specificaly what ptoblems was it solving?
 
