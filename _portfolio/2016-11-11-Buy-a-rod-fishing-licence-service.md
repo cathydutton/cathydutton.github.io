@@ -1,5 +1,5 @@
 ---
-title: Fishing licence service
+title: Buy a rod fishing licence
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
@@ -8,12 +8,13 @@ image: ../assets/img/portfolio/i-want-to-fish-cover.jpg
 done: true
 ---
 
-<p class="highlight-quote">The ‘buy a rod fishing licence’ service is an digital transformation service delivered through GOV UK to enable anglers to purchase a fishing rod licence.</p>
-
 <p class="highlight-quote">
-Angling creates over 37,000 full time jobs and generates over £1 billion for the UK economy, but at its heart it’s a much loved outdoor sport connecting people with nature. We’ve listened to anglers’ concerns and improved the fishing licence to make the process of getting out and fishing legally simpler.</p>
+Angling generates over £1 billion for the UK economy, and is a much loved outdoor sport connecting people with nature. The ‘buy a rod fishing licence’ service is a digital transformation service to enable anglers to purchase a fishing rod licence.
+</p>
 
-My role was to …
+<h2 class="heading">My role</h2>
+
+My role was to create an engaging, accessible user interface to meet user needs. Working too the GDS digital standards to deliver iterative design components and user journeys to the development team.
 
 Research
 Iterate
@@ -23,12 +24,14 @@ Analytics
 CI
 
 
+<h2 class="heading">The service</h2>
 The service went live in January 2017 and took over £22million from 500,000 transactions in its first 2 months, with an estimated £40million and 1.2million transactions by the end of 2017. 
 
-The service won a corporate services recognition award for “Making it simple” in March 2017 and was nominated for a blah blah award in June 2017
+<h4 class="heading">Awards</h4>
+The service won a corporate services recognition award for “Making it simple” in March 2017 and was shortlisted at the DL100 awards for digital public service innovation in June 2017.
 
 
-
+<h4 class="heading">Feedback</h4>
 The positive feedback for the service is over 96% making it one of the highest in ????
 
 "Cant see how you could make this any easier"
@@ -56,8 +59,8 @@ MUCH MUCH MUCH better than the previous post office website.
 Hassle free service. Thank you.
 5/2/2017 15:04:00
 
+<h3 class="heading">Press</h3>
 
-Interview
 
 “Interview: GDS leader Kevin Cunnington on Whitehall 'self-help groups', spend controls and cold water swimming
 ”
@@ -67,6 +70,8 @@ Imagine CSW’s disappointment, then, when we ask the new director general of th
 Civil service world - http://www.civilserviceworld.com/articles/interview/interview-gds-leader-kevin-cunnington-whitehall-self-help-groups-spend-controls
 
 
+
+<h3 class="heading">Case studies</h3>
 Insert before and after feedback for each case study as well as multiple images of work.
 
 
@@ -83,18 +88,3 @@ Case studies 4) Concession text unify
 Case studies 5) Multibuy
 
 Case studies 6) CI - analytics - consession screens - done page - save - print - content - email and text option.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
