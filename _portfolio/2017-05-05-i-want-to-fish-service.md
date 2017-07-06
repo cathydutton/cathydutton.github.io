@@ -3,7 +3,7 @@ title: I want to fish service
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-tags: Service design
+tags: Service design, User mapping
 image: ../assets/img/portfolio/defra-cover.jpg
 done: true
 ---

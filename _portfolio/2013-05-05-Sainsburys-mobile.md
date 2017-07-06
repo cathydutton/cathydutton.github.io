@@ -5,18 +5,7 @@ layout: portfolio-post
 category: portfolio
 tags: Interaction design, Prototyping, Magento, Digital design
 image: ../assets/img/portfolio/mobile-by-sainsburys-cover.jpg
-done: true
 ---
 
-<section class="highlight-quote">
-nfejkgnegbr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore..
-</section>
+done: true
 
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-![Alt text](../assets/img/buttons-one.png "Button example bad")
-
-![Alt text](../assets/img/buttons-one.png "Button example bad")
-
-![Alt text](../assets/img/buttons-one.png "Button example bad")
