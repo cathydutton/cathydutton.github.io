@@ -26,6 +26,8 @@ I spend a ridiculous amount of time updating my personal website and blog....
  Don't watch _assets folder - Gulp not Jekyll to control
 
  jekyl drafts in production
+ 
+ add a11y css to dev build
 
 ## Heading ????
 
