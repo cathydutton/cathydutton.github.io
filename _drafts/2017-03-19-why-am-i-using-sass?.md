@@ -1,5 +1,5 @@
 ---
-title: Cut the relience
+title: Cut the cord
 author: Cathy Dutton
 layout: post
 date:   2017-03-19
@@ -198,5 +198,7 @@ Autoprefixer
 Now as features become more widley supported only the gulp file and the post processing needs to. The CSS remains the same, creating a more stable codebase.
 
 ### Summary
+
+Its about removing relience and building future proof code (PostCSS and webpack/gulp)
 
 This article is not about abandoning Sass because of the poorly output code or any of the other backlash articles. I still think Sass is an amazing tool, I also still think it is capable of producing CSS to solve real problems. My point is more that the original problems that Sass helped me to solve are no longer problems. CSS has moved on and can handle my needs by itself. I would still use Sass for any bespoke CSS needs or complex pieces, but in my day to day work it's inclusion is harder and harder to justify. 
