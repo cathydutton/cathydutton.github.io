@@ -8,18 +8,16 @@ image: ../assets/img/portfolio/gtl-cover.jpg
 done: true
 ---
 
-<p class="highlight-quote">nfejkgnegbr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore. </p>
-
-
-
+<p class="highlight-quote">Getthelabel.com offer discounted designer clothing with up to 75% off RRP, the company was launched in 2009 as a subsidiary of JD Sports Fashion plc and by 2012 had received over 420,000 orders.</p>
 
 <h2 class="heading">My role</h2>
-nfejkgnegbr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore. 
+ Working within the marketing department my role was to help build the GetTheLabel.com brand, working on both the designs for the website and the weekly email marketing campaigns. I was responsible for creating the site content and for measuring the success of each champagne using a mixture of Google Analytics and heat mapping software. 
+ I also worked on expanding the communication channels and marketing opportunities, designing and developing the companies first in house blog.
 
 
-<h2 class="heading">?????</h2>
+<h2 class="heading">Email marketing campaigns</h2>
+Closely working alongside buyers and merchandisers I put together the weekly marketing emails and home page re-designs. The success of each campaign was measured to improve conversion and gain a greater understanding of the site's customer base. 
 
-nfejkgnegbr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore. 
 
 
 
@@ -36,10 +34,6 @@ nfejkgnegbr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu
 </div>
 </section>
 
-
-<h3 class="heading">????</h3>
-
-nfejkgnegbr Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore..  
 
 <section class="portfolio-images">
     <div class="portfolio-piece-wrapper">
