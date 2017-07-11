@@ -31,56 +31,58 @@ The service went live in January 2017 and took over £22million from 500,000 tra
 
 The service won a corporate services recognition award for “Making it simple” in March 2017 and was shortlisted at the <a href="http://www.digileaders100.com/" title="DL100 awards" targe="_blank">DL100</a> awards for digital public service innovation in June 2017.
 
+GDS Director Kevin Cunnington referenced the service in an interview with Civil service world in March 2017:
 
-“Interview: GDS leader Kevin Cunnington on Whitehall 'self-help groups', spend controls and cold water swimming
-”
+<blockquote>
+Whenever Kevin Cunnington talks about the digital services the government will have built by 2020, he starts by enthusing about applying for a fishing licence online.
 
-“Whenever Kevin Cunnington talks about the digital services the government will have built by 2020, he starts by enthusing about applying for a fishing licence online.
-Imagine CSW’s disappointment, then, when we ask the new director general of the Government Digital Service whether this focus on the gentle riverside pursuit is driven by a personal interest – and he responds with a quizzical look and a laugh. “No...” he says, pausing to check it isn’t a trick question. “It’s just a great application. I’m not a fisherman.” 
-Civil service world - http://www.civilserviceworld.com/articles/interview/interview-gds-leader-kevin-cunnington-whitehall-self-help-groups-spend-controls
+Imagine CSW’s disappointment, then, when we ask the new director general of the Government Digital Service whether this focus on the gentle riverside pursuit is driven by a personal interest – and he responds with a quizzical look and a laugh. “No...” he says, pausing to check it isn’t a trick question. “It’s just a great application. I’m not a fisherman.
+</blockquote>
+
+Read the full <a href="http://www.civilserviceworld.com/articles/interview/interview-gds-leader-kevin-cunnington-whitehall-self-help-groups-spend-controls" title="Interview: GDS leader Kevin Cunnington - Civil service world" target="_blank">Civil service world interview</a>
+
 
 <h3 class="heading">Feedback</h3>
 
-The service has over 96% positive user feedback:
+The service has over 96% positive user feedback from 0000 responses to the onsite feedback form, it also has ?????? call centre and ????? conversion rate in Google Analytics. A few examples of the feedback are listed below:
 
-<blockquote>
-Probably the easiest website I have ever used to make a purchase. Well done
-</blockquote>
-
-</br>
-<blockquote>
-Excellent service and really appreciate change to validity from date of purchase 
-</blockquote>
-</br>
-<blockquote>
-The whole process was very easy. The boxes and questions were intuitive. -  - Good effort, hard to see how it can be improved.
+<blockquote class="margin-bottom">
+"Probably the easiest website I have ever used to make a purchase. Well done"
 </blockquote>
 
 
-</br>
-<blockquote>
-Cant see how you could make this any easier
+<blockquote class="margin-bottom">
+"Excellent service and really appreciate change to validity from date of purchase"
 </blockquote>
 
-</br>
-<blockquote>
-I am a 71 year old pensioner and I Found the site very user friendly and easy to use!  --   Top Marks! 
+<blockquote class="margin-bottom">
+"The whole process was very easy. The boxes and questions were intuitive. -  - Good effort, hard to see how it can be improved."
 </blockquote>
 
-</br>
-<blockquote>
-Very easy to navigate, and delighted junior licence is now free!
+
+<blockquote class="margin-bottom">
+"Cant see how you could make this any easier"
 </blockquote>
 
-</br>
-<blockquote>
-MUCH MUCH MUCH better than the previous post office website.
+
+<blockquote class="margin-bottom">
+"I am a 71 year old pensioner and I Found the site very user friendly and easy to use!  --   Top Marks!"
 </blockquote>
 
-</br>
-<blockquote>
-A lot easier , god its for 12 months with optional start date. - Well done, environment agency.
+
+<blockquote class="margin-bottom">
+"Very easy to navigate, and delighted junior licence is now free!"
 </blockquote>
+
+
+<!--<blockquote class="margin-bottom">
+"MUCH MUCH MUCH better than the previous post office website."
+</blockquote>-->
+
+
+<!--<blockquote class="margin-bottom">
+"A lot easier , god its for 12 months with optional start date. - Well done, environment agency."
+</blockquote>-->
 
 
 
@@ -90,19 +92,49 @@ A lot easier , god its for 12 months with optional start date. - Well done, envi
 Insert before and after feedback for each case study as well as multiple images of work.
 
 
-Case studies 1) Contact screen & opt in from done screen
+<h3 class="heading">Case studies 1) Contact screen & opt in from done screen</h3>
 
-Case studies 2) Flow -  skip confession - price (decision driver) - future proof - junior journey
+<blockquote class="margin-bottom">
+"Feedback about lack of notify emails"
+</blockquote>
 
-Case studies 3) Date picker / progressive reveal - data driven design
+<section class="portfolio-images">
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/ao/iwtf-one.jpg" class="portfolio-piece__img"  alt="#">
+    </div>
+</div>
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/ao/iwtf-two.jpg" class="portfolio-piece__img"  alt="#">
+    </div>
+</div>
+</section>
 
-Case studies 4) Content on rods page
+<section class="portfolio-images">
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/ao/iwtf-three.jpg" class="portfolio-piece__img"  alt="#">
+    </div>
+</div>
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/ao/iwtf-four.jpg" class="portfolio-piece__img"  alt="#">
+    </div>
+</div>
+</section>
 
-Case studies 4) Concession text unify
+<h3 class="heading">Case studies 2) Flow -  skip confession - price (decision driver) - future proof - junior journey</h3>
 
-Case studies 5) Multibuy
+<h3 class="heading">Case studies 3) Date picker / progressive reveal - data driven design</h3>
 
-Case studies 6) CI - analytics - consession screens - done page - save - print - content - email and text option.
+<h3 class="heading">Case studies 4) Content on rods page and licence type page</h3>
+
+<!--<h3 class="heading">Case studies 4) Concession text unify</h3>-->
+
+<h3 class="heading">Case studies 5) Multibuy</h3>
+
+Case studies 6) CI - analytics - consession screens - done page - save - print - content - email and text option.</h3>
 
 
 
