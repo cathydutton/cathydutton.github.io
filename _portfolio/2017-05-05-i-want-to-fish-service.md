@@ -3,7 +3,7 @@ title: I want to fish service
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-tags: Service design, User mapping
+tags: Service design, User journey mapping, Service vision
 image: ../assets/img/portfolio/defra-cover.jpg
 done: true
 ---
