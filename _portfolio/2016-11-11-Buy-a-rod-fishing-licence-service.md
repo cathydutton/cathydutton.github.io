@@ -3,7 +3,7 @@ title: Buy a rod fishing licence
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-tags: Interaction design, Prototyping, User research
+tags: Interaction design, Prototyping, User research, Discovery
 image: ../assets/img/portfolio/i-want-to-fish-cover.jpg
 done: true
 ---
