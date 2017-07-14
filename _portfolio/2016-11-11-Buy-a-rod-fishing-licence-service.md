@@ -103,6 +103,7 @@ The licence confirmation screen is used to capture the users details in order to
 Intitail feedback on the service suggested some users were unclear on the purpose of this screen:
 
  * “It wasn't clear I would have to write the number down”
+ * "Explicit information is needed to say how i will receive it - not clear if it will arrive by post or can be downloaded"
  * “What do you send if I give my contact details?”
  * “If I enter both I would expect to receive an email and a text message.”
  * “I’m writing this down… But I’d like you to email and text this to me too.”
