@@ -28,7 +28,7 @@ During the project I was responsable for:
 
 <h2 class="heading">The service</h2>
 
-The service passed its public beta assesment and went live in January 2017 taking over £22million from 500,000 transactions in its first 2 months, with an estimated £40million and 1.2million transactions by the end of 2017. 
+The service passed its GDS public beta assesment and went live in January 2017 taking over £22million from 500,000 transactions in its first 2 months, with an estimated £40million and 1.2million transactions by the end of 2017. 
  
 <blockquote>
 "The panel were particualrly impressed by the way the team have used what theyv'e learned to iteratte and improve the service. In particualr how they had explored different ways of frming questions and different question sequences"
