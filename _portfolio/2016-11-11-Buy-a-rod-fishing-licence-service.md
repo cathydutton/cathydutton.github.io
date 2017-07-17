@@ -5,16 +5,14 @@ layout: portfolio-post
 category: portfolio
 tags: Interaction design, Prototyping, User research
 image: ../assets/img/portfolio/i-want-to-fish-cover.jpg
-
----
 done: true
+---
 
 <p class="highlight-quote">
 Angling generates over £1 billion for the UK economy, and is a much loved outdoor sport connecting people with nature. The ‘buy a rod fishing licence’ service is a digital transformation service to enable anglers to purchase a fishing rod licence.
 </p>
 
 <h2 class="heading">My role</h2>
-
 My role was to design, prototype and test a fully GDS compliant user journey and interface, working within an agile, multi-disciplinary team environment. I worked alongside a cross-section of business colleagues and key steakholders to ensure the service met both user and organisational needs.
 
 During the project I was responsable for:
@@ -28,7 +26,6 @@ During the project I was responsable for:
 
 
 <h2 class="heading">The service</h2>
-
 The service passed its GDS public beta assesment and went live in January 2017 taking over £22million from 500,000 transactions in its first 2 months, with an estimated £40million and 1.2million transactions by the end of 2017. 
  
 <blockquote>
@@ -52,39 +49,45 @@ Read the full <a href="http://www.civilserviceworld.com/articles/interview/inter
 
 The service has over 96% Satisfied or very satisfied user feedback from over 22,000 responses via the onsite feedback form, just a few examples of this feebback are listed below:
 
- - "Probably the easiest website I have ever used to make a purchase. Well done"
- - "Excellent service and really appreciate change to validity from date of purchase"
- - "The whole process was very easy. The boxes and questions were intuitive. -  - Good effort, hard to see how it can be improved."
- - "Cant see how you could make this any easier"
- - "I am a 71 year old pensioner and I Found the site very user friendly and easy to use!  --   Top Marks!"
- - "Very easy to navigate, and delighted junior licence is now free!"
- - "MUCH MUCH MUCH better than the previous post office website."
- - "A lot easier , god its for 12 months with optional start date. - Well done, environment agency."
+ - Probably the easiest website I have ever used to make a purchase. Well done
+ - Excellent service and really appreciate change to validity from date of purchase
+ - The whole process was very easy. The boxes and questions were intuitive. -  - Good effort, hard to see how it can be improved.
+ - Cant see how you could make this any easier
+ - I am a 71 year old pensioner and I Found the site very user friendly and easy to use!  --   Top Marks!
+ - Very easy to navigate, and delighted junior licence is now free!
+ - MUCH MUCH MUCH better than the previous post office website.
+ - A lot easier , god its for 12 months with optional start date. - Well done, environment agency.
 
- After the the launch of the public beta site we continued to moniter user feedback to enable us to itterate and firther imporve the user experience. The feedback was themed too highlight key areas for improvement.
-
+ 
 <h4 class="heading">Licence confirmation screen</h4>
 The licence confirmation screen is used to capture the users details in order to send out notifacations including the users licence number, allowing them to go fishing before the physical licence arives.
 
-Intitail feedback on the service suggested some users were unclear on the purpose of this screen:
+Intitail feedback on the service suggested some users were unclear on the purpose of this screen.
 
- * “It wasn't clear I would have to write the number down”
- * "Explicit information is needed to say how i will receive it - not clear if it will arrive by post or can be downloaded"
- * “What do you send if I give my contact details?”
- * “If I enter both I would expect to receive an email and a text message.”
- * “I’m writing this down… But I’d like you to email and text this to me too.”
+Feedback:
+
+ * It wasn't clear I would have to write the number down
+ * Explicit information is needed to say how i will receive it - not clear if it will arrive by post or can be downloaded
+ * What do you send if I give my contact details?
+ * If I enter both I would expect to receive an email and a text message.
+ * I’m writing this down… But I’d like you to email and text this to me too.
 
 !!!!Show images of new screen with copy to explain the benefits of providing information to the user.
 
 <section class="portfolio-images">
-<div class="portfolio-piece-wrapper">
+<div class="portfolio-piece-wrapper-three">
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/ao/iwtf-one.jpg" class="portfolio-piece__img"  alt="#">
+        <img src="../assets/img/portfolio/fishing-licence/confirmation-screen-one.jpg" class="portfolio-piece__img"  alt="#">
     </div>
 </div>
-<div class="portfolio-piece-wrapper">
+<div class="portfolio-piece-wrapper-three">
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/ao/iwtf-two.jpg" class="portfolio-piece__img"  alt="#">
+        <img src="../assets/img/portfolio/fishing-licence/confirmation-screen-two.jpg" class="portfolio-piece__img"  alt="#">
+    </div>
+</div>
+<div class="portfolio-piece-wrapper-three">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-licence/confirmation-screen-five.jpg" class="portfolio-piece__img"  alt="#">
     </div>
 </div>
 </section>
@@ -100,12 +103,12 @@ Intitail feedback on the service suggested some users were unclear on the purpos
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper">
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/ao/iwtf-three.jpg" class="portfolio-piece__img"  alt="#">
+        <img src="../assets/img/portfolio/fishing-licence/confirmation-screen-three.jpg" class="portfolio-piece__img"  alt="#">
     </div>
 </div>
 <div class="portfolio-piece-wrapper">
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/ao/iwtf-four.jpg" class="portfolio-piece__img"  alt="#">
+        <img src="../assets/img/portfolio/fishing-licence/confirmation-screen-four.jpg" class="portfolio-piece__img"  alt="#">
     </div>
 </div>
 </section>
@@ -116,15 +119,21 @@ We also made plans to amend the functionality of the service to allow for both a
 !!!SHOW IMAGES OF allowing users to opt in from the done screen
 
 
+
 <section class="portfolio-images">
-<div class="portfolio-piece-wrapper">
+<div class="portfolio-piece-wrapper-three">
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/ao/iwtf-three.jpg" class="portfolio-piece__img"  alt="#">
+        <img src="../assets/img/portfolio/fishing-licence/confirmation-screen-six.jpg" class="portfolio-piece__img"  alt="#">
     </div>
 </div>
-<div class="portfolio-piece-wrapper">
+<div class="portfolio-piece-wrapper-three">
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/ao/iwtf-four.jpg" class="portfolio-piece__img"  alt="#">
+        <img src="../assets/img/portfolio/fishing-licence/confirmation-screen-seven.jpg" class="portfolio-piece__img"  alt="#">
+    </div>
+</div>
+<div class="portfolio-piece-wrapper-three">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-licence/confirmation-screen-eight.jpg" class="portfolio-piece__img"  alt="#">
     </div>
 </div>
 </section>
@@ -166,17 +175,17 @@ Flow -  skip concession - price (decision driver) - future proof - junior journe
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper">
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/ao/rods-one.jpg" class="portfolio-piece__img"  alt="#">
+        <img src="../assets/img/portfolio/fishing-licence/rods-one.jpg" class="portfolio-piece__img"  alt="#">
     </div>
 </div>
 <div class="portfolio-piece-wrapper">
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/ao/rods-two.jpg" class="portfolio-piece__img"  alt="#">
+        <img src="../assets/img/portfolio/fishing-licence/rods-two.jpg" class="portfolio-piece__img"  alt="#">
     </div>
 </div>
 <div class="portfolio-piece-wrapper">
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/ao/rods-three.jpg" class="portfolio-piece__img"  alt="#">
+        <img src="../assets/img/portfolio/fishing-licence/rods-three.jpg" class="portfolio-piece__img"  alt="#">
     </div>
 </div>
 </section>
