@@ -5,9 +5,9 @@ layout: portfolio-post
 category: portfolio
 tags: Interaction design, Prototyping, User research, Discovery
 image: ../assets/img/portfolio/i-want-to-fish-cover.jpg
-done: true
----
 
+---
+done: true
 <p class="highlight-quote">
 Angling generates over £1 billion for the UK economy, and is a much loved outdoor sport connecting people with nature. The ‘buy a rod fishing licence’ service is a digital transformation service to enable anglers to purchase a fishing rod licence.
 </p>
