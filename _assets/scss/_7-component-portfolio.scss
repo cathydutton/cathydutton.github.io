@@ -7,6 +7,11 @@ Portfolio
   @include grid(break-tablet, 1, 2);
 }
 
+.portfolio-piece-wrapper-three {
+  @include grid(break-mobile, 1, 1);
+  @include grid(break-tablet, 1, 3);
+}
+
 .portfolio-piece__img {
   width: 100%;
   border: solid 1px #ccc7c3;
