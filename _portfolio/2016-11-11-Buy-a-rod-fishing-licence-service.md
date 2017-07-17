@@ -49,53 +49,18 @@ Read the full <a href="http://www.civilserviceworld.com/articles/interview/inter
 
 <h3 class="heading">Feedback</h3>
 
-The service has over 96% positive user feedback from 0000 responses to the onsite feedback form, it also has ?????? call centre and ????? conversion rate in Google Analytics. A few examples of the feedback are listed below:
+The service has over 96% Satisfied or very satisfied user feedback from over 22,000 responses via the onsite feedback form, just a few examples of this feebback are listed below:
 
-<blockquote class="margin-bottom">
-"Probably the easiest website I have ever used to make a purchase. Well done"
-</blockquote>
+ - "Probably the easiest website I have ever used to make a purchase. Well done"
+ - "Excellent service and really appreciate change to validity from date of purchase"
+ - "The whole process was very easy. The boxes and questions were intuitive. -  - Good effort, hard to see how it can be improved."
+ - "Cant see how you could make this any easier"
+ - "I am a 71 year old pensioner and I Found the site very user friendly and easy to use!  --   Top Marks!"
+ - "Very easy to navigate, and delighted junior licence is now free!"
+ - "MUCH MUCH MUCH better than the previous post office website."
+ - "A lot easier , god its for 12 months with optional start date. - Well done, environment agency."
 
-
-<blockquote class="margin-bottom">
-"Excellent service and really appreciate change to validity from date of purchase"
-</blockquote>
-
-<blockquote class="margin-bottom">
-"The whole process was very easy. The boxes and questions were intuitive. -  - Good effort, hard to see how it can be improved."
-</blockquote>
-
-
-<blockquote class="margin-bottom">
-"Cant see how you could make this any easier"
-</blockquote>
-
-
-<blockquote class="margin-bottom">
-"I am a 71 year old pensioner and I Found the site very user friendly and easy to use!  --   Top Marks!"
-</blockquote>
-
-
-<blockquote class="margin-bottom">
-"Very easy to navigate, and delighted junior licence is now free!"
-</blockquote>
-
-
-<!--<blockquote class="margin-bottom">
-"MUCH MUCH MUCH better than the previous post office website."
-</blockquote>-->
-
-
-<!--<blockquote class="margin-bottom">
-"A lot easier , god its for 12 months with optional start date. - Well done, environment agency."
-</blockquote>-->
-
-
-
-
-
-<h3 class="heading">Continous improvement</h3>
-
-After the the launch of the public beta site we continued to moniter user feedback to enable us to itterate and imporve the user experience. The feedback was themed too highlight key areas for improvement. 
+ After the the launch of the public beta site we continued to moniter user feedback to enable us to itterate and firther imporve the user experience. The feedback was themed too highlight key areas for improvement.
 
 <h4 class="heading">Licence confirmation screen</h4>
 The licence confirmation screen is used to capture the users details in order to send out notifacations including the users licence number, allowing them to go fishing before the physical licence arives.
@@ -108,7 +73,7 @@ Intitail feedback on the service suggested some users were unclear on the purpos
  * “If I enter both I would expect to receive an email and a text message.”
  * “I’m writing this down… But I’d like you to email and text this to me too.”
 
-Show images of new screen with copy to explain the benefits of providing information to the user.
+!!!!Show images of new screen with copy to explain the benefits of providing information to the user.
 
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper">
@@ -129,7 +94,7 @@ Show images of new screen with copy to explain the benefits of providing informa
 
 "We don’t send 1-day or 8-day licences in the post. Choose how you would like to receive your licence confirmation."
 
-SHOW IMAGES OF 3 AND 2 RADIO BUTTON OPTIONS
+!!!!SHOW IMAGES OF 3 AND 2 RADIO BUTTON OPTIONS
 
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper">
@@ -147,7 +112,7 @@ SHOW IMAGES OF 3 AND 2 RADIO BUTTON OPTIONS
 
 We also made plans to amend the functionality of the service to allow for both a text and an email to be sent if the user provides both
 
-SHOW IMAGES OF allowing users to opt in from the done screen
+!!!SHOW IMAGES OF allowing users to opt in from the done screen
 
 
 <section class="portfolio-images">
@@ -167,36 +132,78 @@ SHOW IMAGES OF allowing users to opt in from the done screen
 
 
 <h4 class="heading">User journey</h4>
+Based on a combanation of user feedback and comments made at the GDS assesment we also looked into alternative screen orders for the service.
 
 Feedback:
 
-* 
-*
-*
-*
+* Why do I have to give my blue badge number also, as I am 69 years old, therefore qualifying for a oap discount.?Surely this is unnecessary.I now have to go out to the car to find the Badge NUmber.Unnecessary info.
+* I qualify for a concessionery licence on two counts 1) Age, I am 75 years old and 2) I have a blue badge. I wanted a concessionery licence on account of my AGE as that is always going to apply. However, your web site has made me apply because of my disability and a Blue Badge is reviewable, therefore people may not always qualify under Blue Badge rules, or a Blue Badge could be reviewed/continue/or be withdrawn part way through the licencing year.  Apart from this your site suited me very well.
+* I can't understand why I have to input my blue badge number as well as my age. As you can see I am nearly 82 years old and I have renewed my licence over the internet before and I was never asked for my badge number. there was times that I was getting worried that I was on the right sight. As I am over 65 there should be no reason that you should request me to do so.
 
-Flow -  skip confession - price (decision driver) - future proof - junior journey
+* Would be good to see a price list before any transactions start
+* Would be good to see the price options at the beginning. - Easier than the previous method.
+* At the section for number of rods it would be useful to have the price for 2 and 3 rods actually listed
 
-SHOW ALL IMAGES FROM FLOW BLOGPOST
+
+
+Flow -  skip concession - price (decision driver) - future proof - junior journey
+
+!!!SHOW ALL IMAGES FROM FLOW BLOGPOST
+
+!!Add content from blog post
+
+
 
 
 <h3 class="heading">Case studies 4) Content on rods page and licence type page</h3>
-Insert before and after feedback for each case study as well as multiple images of work.
+
+- Front loaded information
+- The question about number of rods is very confusing. I have bought a Licence for two rods and hope this allows my wife to also fish but it is not clear. This is not good
+
+!!Show 3 images of ideas
+
+<section class="portfolio-images">
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/ao/rods-one.jpg" class="portfolio-piece__img"  alt="#">
+    </div>
+</div>
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/ao/rods-two.jpg" class="portfolio-piece__img"  alt="#">
+    </div>
+</div>
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/ao/rods-three.jpg" class="portfolio-piece__img"  alt="#">
+    </div>
+</div>
+</section>
+
 
 <h3 class="heading">Case studies 3) Date picker / progressive reveal - data driven design</h3>
-Insert before and after feedback for each case study as well as multiple images of work.
+
 
 Feedback:
 
  * “What’s the 12 for?”
 
-<!--<h3 class="heading">Case studies 4) Concession text unify</h3>-->
 
 <h3 class="heading">Case studies 5) Multibuy</h3>
-Insert before and after feedback for each case study as well as multiple images of work.
 
-Case studies 6) CI - analytics - consession screens - done page - save - print - content - email and text option.</h3>
-Insert before and after feedback for each case study as well as multiple images of work.
+Feedback:
+
+ * Need to put in details twice as I need two two rod licences
+ * It would be good especially why buying a 1 day licence to have the ability to add multiple to a basket and paying for them in one go
+ * I would prefer the option to buy more than one licence at a time and have only one payment.  My husband and I both fish but I need to apply and pay separately for his licence.  I'm sure there would be families who would prefer this as well.
+* 
+Need to be able to make multiple entries. I have to go through this 5 times to cover everyone that fishes in our house.
+
+broke down senarios:
+
+Buy multiple licences for the same person on different day's - product issue?
+Buy multiple licences for different people
+Buy multiple licences to allow for up to 3 or 4 rods - Product issue
 
 
 
