@@ -1,14 +1,50 @@
 ---
-title: You can do that in CSS
+title: Cut the cord
 author: Cathy Dutton
 layout: post
 date:   2017-03-19
 ---
 
+I am a  huge fan of Sass, and the posabilities it brings to CSS. Loops, functions and mixins are some of my faveoutite features, none of which are close to being available in CSS.
+
+https://codepen.io/cathydutton/pen/FDipu
+
+```
+@for $i from 1 through 120 {
+  
+  [data-left="#{$i}"]:before {
+    @include fade;
+    @include rotate (#{$i}deg);
+  }
+  [data-right="#{$i}"]:before {
+    @include fade;
+    @include rotate (#{$i}deg);
+  }
+
+}
+```
 
 
+https://codepen.io/cathydutton/pen/vEeORQ
 
-It's not about wether pre processors can still serve a purpose, what problems am I solving by using it?
+```
+@function text-color($list){
+   $text-list:();
+   @each $color, $percentage in $list {   
+    @if lightness($color) > 50% {
+     $text-list:append($text-list, $black $percentage, comma);    
+    } @else {
+        $text-list:append($text-list, $white $percentage, comma);
+     }        
+	}
+  @return $text-list;
+} 
+```
+
+Despite the obvious benefits and unique features of Sass I have found myself questioning why I seem to have become so dependant on it for all my front end projects.
+
+It's not about wether pre-processors still serve a purpose, but more what problems am I solving by using it for this project?
+
 
 Includes
 Grid
@@ -20,11 +56,8 @@ media queries
 ---------------------------------------------------------
 
 
-Why am I using Sass? I asked myself this question recently when doing some maintenance on my blog.
 
-I love Sass and all of the features it brings, but in my particular use case was its inclusion still necasary.
 
-Insert noce Sass stuff
 
 I started to look at why and how I was using it, more specificaly what ptoblems was it solving?
 
@@ -165,5 +198,7 @@ Autoprefixer
 Now as features become more widley supported only the gulp file and the post processing needs to. The CSS remains the same, creating a more stable codebase.
 
 ### Summary
+
+Its about removing relience and building future proof code (PostCSS and webpack/gulp)
 
 This article is not about abandoning Sass because of the poorly output code or any of the other backlash articles. I still think Sass is an amazing tool, I also still think it is capable of producing CSS to solve real problems. My point is more that the original problems that Sass helped me to solve are no longer problems. CSS has moved on and can handle my needs by itself. I would still use Sass for any bespoke CSS needs or complex pieces, but in my day to day work it's inclusion is harder and harder to justify. 

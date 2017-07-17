@@ -1,5 +1,5 @@
 ---
-title: Saying goodbye to Photoshop
+title: Saying goodbye to graphics tools
 author: Cathy Dutton
 layout: post
 category: post
@@ -27,7 +27,9 @@ All of these relied on flat images to convey how an app should be interacted wit
 
 
 
+## Acesability  - taking control of the arkup which is part of design
 
+Working alonmgside a front end dev to avoid the fencd throwing.
 
 
 Sketching
