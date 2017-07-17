@@ -17,3 +17,17 @@ I also worked on the build of brand new sites for brands including Nectar and El
 
 
 
+new sit build Elizabeth Arden
+
+Look fantastic
+
+Zavvi
+
+Coggles
+
+Sass best practice
+
+Search autocomplete 
+
+Exante diet bundle pages
+
