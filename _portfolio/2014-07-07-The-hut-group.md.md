@@ -12,22 +12,27 @@ done: true
 
 
 <h2 class="heading">My role</h2>
-As a front end developer I was mostly involved in the implemantation of new site fetures on the companies bespoke ecomerce platform. 
-I also worked on the build of brand new sites for brands including Nectar and Elizabeth Arden.
-
-
-
-new sit build Elizabeth Arden
-
-Look fantastic
-
-Zavvi
-
-Coggles
+As a front end developer I was mostly involved in the implemantation of new site fetures on the companies bespoke ecomerce platform. I also worked on the build of brand new sites for brands including Nectar and Elizabeth Arden.
 
 Sass best practice
+optimisation
 
-Search autocomplete 
+<h3 class="heading">New site builds</h3>
 
-Exante diet bundle pages
+Elizabelth arden
+My bag
+Zavvi
+
+
+<h3 class="heading">Features</h3>
+
+Reviews - My protein, ????, ????
+
+Search autocomplete - all sites
+
+bundle pages - exante diet
+
+voucher pages - My protein, ????
+
+Subscriptions - Look fantastic
 
