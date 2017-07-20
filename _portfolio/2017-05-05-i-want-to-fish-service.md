@@ -34,4 +34,14 @@ Work alongside the senior fisheries team etc to map out the future service visio
 
 Work with policy on 7 day service vision research project.
 
+Abolish juniors having to buy a licence
+
+Discovery into catch returns 
+
+Discovery into compliance
+
+effecting stratergey and delivery plans based on service deisgn
+
+
+
 
