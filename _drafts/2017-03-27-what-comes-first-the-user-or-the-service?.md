@@ -12,7 +12,7 @@ category: post
 
 <ol>
   <li>The service - Options relating to the service the user requires, for example type or length of licence</li>
-  <li>The user - Information about the user required either by the organisation or to identify available products, for example date of birth or address</li>
+  <li>The user - Information about the user required either by the organisation or to identify available products or permits or licences, for example date of birth or address</li>
 </ol>
 
 <p>So which should come first: the user or the service?</p>
@@ -104,8 +104,8 @@ category: post
 
 <p>Once you're happy with a flow, it is useful to move from cards to a more permanent medium to enable direct comparisons between each user journey. The flow should remain consistent across journeys to aid return or repeat visitors and to build a sense of familiarity.</p>
 
-<p>The experience of buying for the first time should not be alien to that of upgrading or renewing a product.</p>
+<p>The experience of buying for the first time should not be alien to that of upgrading or renewing a licence.</p>
 
 #### Future-proofing
 
-<p>Building on the above point, the flow should look to incorporate possible future enhancements. It is helpful to have an idea of the full service roadmap to ensure you don't need to re-shuffle large sections of a form to include a new product.</p>
+<p>Building on the above point, the flow should look to incorporate possible future enhancements. It is helpful to have an idea of the full service roadmap to ensure you don't need to re-shuffle large sections of a form to include a new product or premit.</p>
