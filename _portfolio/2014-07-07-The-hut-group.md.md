@@ -30,11 +30,13 @@ Using lean UX methodologies and techniques and working as part of a multidiscipl
 
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper">
+<h4>Zavi</h4>
     <div class="portfolio-piece">
         <img src="../assets/img/portfolio/hut/zavvi.jpg" class="portfolio-piece__img"  alt="Zavvi">
     </div>
 </div>
 <div class="portfolio-piece-wrapper">
+<h4>Elizabelth Arden</h4>
     <div class="portfolio-piece">
         <img src="../assets/img/portfolio/hut/elizabelth-arden.jpg" class="portfolio-piece__img"  alt="Elizabelth Arden">
     </div>
@@ -43,11 +45,13 @@ Using lean UX methodologies and techniques and working as part of a multidiscipl
 
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper">
+<h4>Mio</h4>
     <div class="portfolio-piece">
         <img src="../assets/img/portfolio/hut/mio.jpg" class="portfolio-piece__img"  alt="Mio">
     </div>
 </div>
 <div class="portfolio-piece-wrapper">
+<h4>Look fantastic</h4>
     <div class="portfolio-piece">
         <img src="../assets/img/portfolio/hut/look-fantastic.jpg" class="portfolio-piece__img"  alt="Look Fantastic">
     </div>
@@ -61,32 +65,31 @@ Using lean UX methodologies and techniques and working as part of a multidiscipl
 During my time at The Hut Group I worked on several new features for the ecommerce platform, focusing on adding value and increasing sales across a range of industries.
 
 <section class="portfolio-images">
-<div class="portfolio-piece-wrapper-three">
+<div class="portfolio-piece-wrapper">
+<h4>Product reviews</h4>
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/creare/reviews.jpg" class="portfolio-piece__img"  alt="My protein reviews">
+        <img src="../assets/img/portfolio/hut/reviews.jpg" class="portfolio-piece__img"  alt="My protein reviews">
     </div>
 </div>
-<div class="portfolio-piece-wrapper-three">
+<div class="portfolio-piece-wrapper">
+<h4>Product bundles</h4>
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/creare/search-autocomplete.jpg" class="portfolio-piece__img"  alt="Search autocomplete">
-    </div>
-</div>
-<div class="portfolio-piece-wrapper-three">
-    <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/creare/bundle-pages.jpg" class="portfolio-piece__img"  alt="Exante diet - bundle pages">
+        <img src="../assets/img/portfolio/hut/bundle-pages.jpg" class="portfolio-piece__img"  alt="Exante diet - bundle pages">
     </div>
 </div>
 </section>
 
 <section class="portfolio-images">
-<div class="portfolio-piece-wrapper-three">
+<div class="portfolio-piece-wrapper">
+<h4>Voucher pages</h4>
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/creare/voucher-pages.jpg" class="portfolio-piece__img"  alt="My protein voucher pages">
+        <img src="../assets/img/portfolio/hut/voucher-pages.jpg" class="portfolio-piece__img"  alt="Beauty expert voucher pages">
     </div>
 </div>
 <div class="portfolio-piece-wrapper">
+<h4>Subscriptions</h4>
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/creare/subscriptions.jpg" class="portfolio-piece__img"  alt="Look fantastic - Subscriptions">
+        <img src="../assets/img/portfolio/hut/subscriptions.jpg" class="portfolio-piece__img"  alt="Look fantastic - Subscriptions">
     </div>
 </div>
 </section>

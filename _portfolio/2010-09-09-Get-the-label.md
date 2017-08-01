@@ -42,7 +42,7 @@ Closely working alongside buyers and merchandisers I put together the weekly mar
 <section class="portfolio-images">
     <div class="portfolio-piece-wrapper">
         <div class="portfolio-piece">
-            <img src="../assets/img/portfolio/get-the-label/gtl-three.jpg" class="portfolio-piece__img"  alt="mail marketing Adidas">
+            <img src="../assets/img/portfolio/get-the-label/gtl-three.jpg" class="portfolio-piece__img"  alt="Email marketing Adidas">
         </div>
     </div>
 </section>

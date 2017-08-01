@@ -35,7 +35,7 @@ Design concepts for the entry page to the e commerce site, featuring top selling
 </div>
 <div class="portfolio-piece-wrapper">
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/tropic/tropic-two.jpg" class="portfolio-piece__img"  alt="Tropic skincare home page concept">
+        <img src="../assets/img/portfolio/tropic/tropic-two.jpg" class="portfolio-piece__img"  alt="Tropic skincare alternative home page concept">
     </div>
 </div>
 </section>
@@ -47,17 +47,17 @@ Design concepts for promotional banners to display on the website and send in em
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper-three">
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/tropic/tropic-banner-one.jpg" class="portfolio-piece__img"  alt="Tropic skincare banne concept">
+        <img src="../assets/img/portfolio/tropic/tropic-banner-one.jpg" class="portfolio-piece__img"  alt="Tropic skincare banne concept one">
     </div>
 </div>
 <div class="portfolio-piece-wrapper-three">
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/tropic/tropic-banner-two.jpg" class="portfolio-piece__img"  alt="Tropic skincare banne concept">
+        <img src="../assets/img/portfolio/tropic/tropic-banner-two.jpg" class="portfolio-piece__img"  alt="Tropic skincare banne concept two">
     </div>
 </div>
 <div class="portfolio-piece-wrapper-three">
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/tropic/tropic-banner-three.jpg" class="portfolio-piece__img"  alt="Tropic skincare banne concept">
+        <img src="../assets/img/portfolio/tropic/tropic-banner-three.jpg" class="portfolio-piece__img"  alt="Tropic skincare banne concept three">
     </div>
 </div>
 </section>
