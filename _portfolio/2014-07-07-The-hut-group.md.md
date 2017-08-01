@@ -29,19 +29,27 @@ Main responsibilities:
 Using lean UX methodologies and techniques and working as part of a multidisciplinary team I was able to deliver site builds to agreed deadlines and time scales.
 
 <section class="portfolio-images">
-<div class="portfolio-piece-wrapper-three">
+<div class="portfolio-piece-wrapper">
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/creare/zavvi.jpg" class="portfolio-piece__img"  alt="Zavvi">
+        <img src="../assets/img/portfolio/hut/zavvi.jpg" class="portfolio-piece__img"  alt="Zavvi">
     </div>
 </div>
-<div class="portfolio-piece-wrapper-three">
+<div class="portfolio-piece-wrapper">
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/creare/elizabelth-arden.jpg" class="portfolio-piece__img"  alt="Elizabelth Arden">
+        <img src="../assets/img/portfolio/hut/elizabelth-arden.jpg" class="portfolio-piece__img"  alt="Elizabelth Arden">
     </div>
 </div>
-<div class="portfolio-piece-wrapper-three">
+</section>
+
+<section class="portfolio-images">
+<div class="portfolio-piece-wrapper">
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/creare/my-bag.jpg" class="portfolio-piece__img"  alt="My bag">
+        <img src="../assets/img/portfolio/hut/mio.jpg" class="portfolio-piece__img"  alt="Mio">
+    </div>
+</div>
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/hut/look-fantastic.jpg" class="portfolio-piece__img"  alt="Look Fantastic">
     </div>
 </div>
 </section>
