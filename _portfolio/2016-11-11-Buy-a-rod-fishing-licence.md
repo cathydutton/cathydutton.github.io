@@ -47,7 +47,7 @@ Read the full <a href="http://www.civilserviceworld.com/articles/interview/inter
 
 <h3 class="heading">Feedback</h3>
 
-The service has over 96% Satisfied or very satisfied user feedback from over 22,000 responses via the onsite feedback form, just a few examples of this feebback are listed below:
+The service has over 94.5% Satisfied or very satisfied user feedback from over 22,000 responses via the onsite feedback form, just a few examples of this feebback are listed below:
 
  - Probably the easiest website I have ever used to make a purchase. Well done
  - Excellent service and really appreciate change to validity from date of purchase
