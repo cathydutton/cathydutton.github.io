@@ -10,7 +10,7 @@ image: ../assets/img/portfolio/i-want-to-fish-cover.jpg
 done: true
 
 
-ADD DATA CHARTS FROM GOOGLE DOCS
+ADD DATA CHARTS FROM GOOGLE DOCS - data driven / analysis
 
 
 <p class="highlight-quote">
