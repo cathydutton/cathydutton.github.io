@@ -7,6 +7,13 @@
           <a href="../index.html" class="footer-links__anchor" title="Back to the home page" >Home</a>
           {% endif %}
       </li>
+        <li class="footer-links__item">
+        {% if page.active == "Portfolio" %}
+        <a href="../portfolio.html" aria-describedby="current" title="View blog page" class="footer-links__anchor active"><span class="navagation-text">Portfolio</span></a>
+          {% else %}
+          <a href="../portfolio.html" title="View blog page" class="footer-links__anchor"><span class="navagation-text">Portfolio</span></a>
+          {% endif %}
+      </li> 
   		<li class="footer-links__item">
         {% if page.active == "Work history" %}
         <a href="../work-history.html" aria-describedby="current" class="footer-links__anchor active" title="View work history page" >Work history</a>
@@ -21,13 +28,6 @@
           <a href="../blog.html" class="footer-links__anchor" title="View blog page" >Blog</a>
           {% endif %}
       </li>
-      <li class="footer-links__item">
-        {% if page.active == "Portfolio" %}
-        <a href="../portfolio.html" aria-describedby="current" title="View blog page" class="footer-links__anchor active"><span class="navagation-text">Portfolio</span></a>
-          {% else %}
-          <a href="../portfolio.html" title="View blog page" class="footer-links__anchor"><span class="navagation-text">Portfolio</span></a>
-          {% endif %}
-      </li> 
       <li class="footer-links__item">
         {% if page.active == "PostCSS Maze" %}
         <a href="../maze.html" aria-describedby="current" class="footer-links__anchor active" title="Maze - PostCSS responsive grid">PostCSS Maze</a>

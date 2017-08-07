@@ -9,6 +9,8 @@ image: ../assets/img/portfolio/i-want-to-fish-cover.jpg
 
 done: true
 
+Ensure that all the information required for a user to make a decision is provided at the point that a decision is required of them."
+
 
 ADD DATA CHARTS FROM GOOGLE DOCS - data driven / analysis
 
