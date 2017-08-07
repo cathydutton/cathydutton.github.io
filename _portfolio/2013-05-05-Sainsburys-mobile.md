@@ -10,28 +10,33 @@ image: ../assets/img/portfolio/mobile-by-sainsburys-cover.jpg
 done: true
 
 <p class="highlight-quote">
-
-Phone shop by Sainsbury's offers a wide range of pay as you go mobile phones and accessories including the latest sim free devices from Samsung and others. Visit us today to find your next phone and a matching accessory and earn
-Nectar points at the same time.
-
-the new Mobile by Sainsbury's service was announced on 1 July 2013 in a partnership with Vodafone UK. The service launched on 24 July 2013.
-
-Mobile by Sainsbury's was a mobile virtual network operator (MVNO) in the UK, operated by Sainsbury's between July 2013 and January 2016, using the Vodafone UK network.[1]
-
-Sainsbury's original mobile virtual network was launched in 2001 but only lived until 2003. The new service, Mobile by Sainsbury's, launched in July 2013, following similar launches by supermarket rivals Tesco and Asda.[2] In October 2015, Sainsbury's announced that it would close the service on 15 January 2016.
-
+Phone shop by Sainsbury's is a mobile virtual network operator launched in July 2013 in partnership with Vodafone. The launch followed similar launches by supermarket rivals Tesco and Asda. The servicve offers a wide range of pay as you go mobile phones and accessories including the latest sim free devices from all of the leading brands. 
 </p>
 
 <h2 class="heading">My role</h2>
+I was part of the Magento development team responsible for delivering the first itteration of the online Phone shop by Sainsbury's store. Working with a range of technologies including Gulp, HTML, CSS and Javascript the teasm delivered a bespoke Magento soiuloution.
 
-<p></p>
-
+I was also part of the team tasked with delivering phase two of the project, developing the online presence further and producing a fully reponsive site.
 
 <p>Main responsibilities:</p>
 
 <ul>
-<li>-</li>
-<li>-</li>
-<li>-</li>
+    <li>Front end development and testing across multiple browsers, platforms, and devices</li>
+    <li>Working within the Sainsbury's brand guidelines to develop design concepts</li>
+    <li>Liase with external design teams to produce estimates and project roadmaps</li>
+    <li>Working as part of an agile delivery team to support content changes in line with Sainsbury's offers and marketing campaignes</li>
 </ul>
 
+
+<section class="portfolio-images">
+    <div class="portfolio-piece-wrapper">
+        <div class="portfolio-piece">
+            <img src="../assets/img/portfolio/sainsburys/home.jpg" class="portfolio-piece__img" alt="Phone shop by Sainsbury's home page">
+        </div>
+    </div>
+    <div class="portfolio-piece-wrapper">
+        <div class="portfolio-piece">
+            <img src="../assets/img/portfolio/sainsburys/category.jpg" class="portfolio-piece__img" alt="Phone shop by Sainsbury's category page">
+        </div>
+    </div>
+</section>
