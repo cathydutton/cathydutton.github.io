@@ -6,6 +6,8 @@ date:   2017-03-27
 category: post
 ---
 
+Transactions and forms - licenses - permits - digital conversations 
+
 <p>A well-thought-out form or service should flow naturally in the same way that a conversation would. Each new question put to the user should relate to the information they've already provided and progress in logical steps. The form should also flow from topic to topic, not jump sporadically from service choices to requests for user information.</p>
 
 <p>In most cases a form can be split into two topics:</p>
