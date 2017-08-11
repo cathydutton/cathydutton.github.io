@@ -3,7 +3,7 @@ title: I want to fish service
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-tags: Service design, User journey mapping, Data driven design
+tags: Service design, User journey mapping, Data driven design, Analytics, Google tag manager
 image: ../assets/img/portfolio/defra-cover.jpg
 
 ---
