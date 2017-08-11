@@ -30,6 +30,7 @@ During the project I was responsable for:
 * Delivering continous improvments to the live service based on user feedback gathered from online sales, call centres and analytics
 * Designing and implementing tests to improve the userbility of design features
 * Creating and sharing Google analytics reports
+* Working as part of a multidisciplinary Agile team
 
 
 <h2 class="heading">The service</h2>
