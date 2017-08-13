@@ -6,22 +6,36 @@ date:   2017-03-27
 category: post
 ---
 
-Transactions and forms - licenses - permits - digital conversations 
+Online transactions are now common place, providing opertunaties for organisations to re-design legacy paper based forms. As well as oprtunaty this can also come with pressure. Paper forms do have some advantages over there digital replacemcents. 
 
-<p>A well-thought-out form or service should flow naturally in the same way that a conversation would. Each new question put to the user should relate to the information they've already provided and progress in logical steps. The form should also flow from topic to topic, not jump sporadically from service choices to requests for user information.</p>
+ - They can be read from begining to end alowing users to uderstand exactly what isexcpected of them before begingin.
+
+  - They can be re-visited and or part completed alowing for users to gather information they may not have had to hand, without a complex save and return or pssword feature
+
+  - They can be edited and filled out in the order of the users choosing
+
+  
+  For all of these reaons and more the stucture and question sequence of online form is hugley important. Getting it right can create a trusting un obstructive user experience. Getting it wrong can have a damaging effect on the relationship with the user.
+
+
+
+### So, how should you structure the form?
+
+
+<p>A well-thought-out form should flow naturally in the same way that a conversation would. Each new question put to the user should relate to the information they've already provided and progress in logical steps. The form should also flow from topic to topic, not jump sporadically from service choices to requests for user information.</p>
 
 <p>In most cases a form can be split into two topics:</p>
 
 <ol>
-  <li>The service - Options relating to the service the user requires, for example type or length of licence</li>
-  <li>The user - Information about the user required either by the organisation or to identify available products or permits or licences, for example date of birth or address</li>
+  <li>The service - options relating to the service the user requires, for example length of licence or </li>
+  <li>The user - information about the user required either by the organisation or to identify available products, permits or licences, for example date of birth or address</li>
 </ol>
 
 <p>So which should come first: the user or the service?</p>
 
 ## Service first
 
-<p>In user-centred design the users and their needs should always come first, therefore the form should aim to focus on the users' end goal. Any additional questions should come at the end.</p>
+<p>In user-centred design the user and their needs should always come first, therefore the form should aim to focus on the users' end goal. Any additional questions should come at the end.</p>
 
 <img src="../assets/img/service-first.jpg" alt="Service first service flow">
 
@@ -53,7 +67,7 @@ Transactions and forms - licenses - permits - digital conversations
 
 <img src="../assets/img/user-first.jpg" alt="User first service flow">
 
-<p>The benefits of determining who the user is first include:</p>
+<p>The benefits of first determining who the user is include:</p>
 
 <ul>
   <li>The ability to guide users, ensuring they get the best product for them</li>
@@ -66,7 +80,7 @@ Transactions and forms - licenses - permits - digital conversations
 
 <ul>
   <li>It could be unclear why all questions are are being asked</li>
-  <li>Some questions about the user could be product-specific. For example, in the 'buy a fishing licence' service, concession questions are only asked if the user selects a 12-month licence.</li>
+  <li>Some questions about the user could be product-specific.</li>
 </ul>
 
 <section>
@@ -76,11 +90,11 @@ Transactions and forms - licenses - permits - digital conversations
 </section>
 
 
-### So, how do you determine the right way for your form?
+### So, how do you determine the best way?
 
 <p>There is no one right way; each form will have a different set of criteria to work with, resulting in pros and cons for each approach. The key is to prototype multiple question flows and, most importantly, test them with real users.</p>
 
-<p>The first step in working out the best question sequence for a form is to write each individual question onto a card or post-it note. These can be moved around quickly into as many different orders as possible. Try to identify the key decision questions in the journey (where the flow would branch). For example, 'Licence length' or 'Date of birth'.</p>
+<p>The first step in working out the best question sequence for a form is to write each individual question onto a card or post-it note. These can be moved around quickly into as many different orders as possible. Try to identify the key decision questions in the journey (where the flow would branch).</p>
 
 <img src="../assets/img/card-sort.jpg" alt="Card sorting" width="600px">
 
@@ -106,7 +120,7 @@ Transactions and forms - licenses - permits - digital conversations
 
 <p>Once you're happy with a flow, it is useful to move from cards to a more permanent medium to enable direct comparisons between each user journey. The flow should remain consistent across journeys to aid return or repeat visitors and to build a sense of familiarity.</p>
 
-<p>The experience of buying for the first time should not be alien to that of upgrading or renewing a licence.</p>
+<p>The experience of buying for the first time should not be alien to that of upgrading or renewing a product.</p>
 
 #### Future-proofing
 
