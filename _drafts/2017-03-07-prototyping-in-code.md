@@ -1,14 +1,24 @@
 ---
-title: Saying goodbye to graphics tools
+title: If you deign for the web you need to write code
 author: Cathy Dutton
 layout: post
 category: post
 date: 2017-03-07
 ---
 
+People who design engines know hown engines work
 
-6 months of prototyping in code and with paper :) 
-Talk about saving dev in code from inspector - can this be done?
+Do design forthe web you have to know how the web works!!!
+
+
+Be more apinionated on all points
+
+Show image from design museum
+
+Show examples from other fioelds of design.
+
+Show benefits - protrotyping in code the bits you already wrote.
+
 
 Wether it’s Sketch, Illustrator, Photoshop or Affinity the process of creating detailed screens as static images has always been slow, and has never been overly useful when describing how elements should react to varying screen sizes or changes in user input.
 
