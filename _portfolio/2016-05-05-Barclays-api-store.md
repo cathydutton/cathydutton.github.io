@@ -5,9 +5,10 @@ layout: portfolio-post
 category: portfolio
 tags: Logo design, Persona development, Front end development
 image: ../assets/img/portfolio/barclays.jpg
+done: true
 ---
 
-done: true
+
 
 <p class="highlight-quote">Barclays are the UK's largest bank, with offices in over 20 countries, they offer a range of financial services to individuals, businesses and intermediaries. Barclays API Store was set up in response to the 2016 CMA measures requiring banks to implement open banking by early 2018.
 </p>
@@ -31,13 +32,13 @@ Main responsibilities:
 <div class="portfolio-piece-wrapper">
 <h4>Logo concepts</h4>
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/barclays/logos.jpg" class="portfolio-piece__img"  alt="Barclays API store logo concepts">
+        <img src="../assets/img/portfolio/barclays/logo-concepts.jpg" class="portfolio-piece__img"  alt="Barclays API store logo concepts">
     </div>
 </div>
 <div class="portfolio-piece-wrapper">
-<h4>tshirt for internal hackathon</h4>
+<h4>Tshirt for internal hackathon</h4>
     <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/barclays/tshirt.jpg" class="portfolio-piece__img"  alt="Barclays API store hackathon tshirt">
+        <img src="../assets/img/portfolio/barclays/hackathon-tshirt.jpg" class="portfolio-piece__img"  alt="Barclays API store hackathon tshirt">
     </div>
 </div>
 </section>
