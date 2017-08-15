@@ -25,8 +25,6 @@ Main responsibilities:
 - Working as part of a multidisciplinary Agile team
 - Researching methodologies and technologies for the API portals front end stack 
 
-<h3 class="heading">Logo concepts</h3>
-
 
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper">

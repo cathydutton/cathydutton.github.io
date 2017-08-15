@@ -62,7 +62,9 @@ $techlogos:
 (illustrator, #df6e08)
 (handlebars, #f8931f)
 (bit-bucket, #1f5182)
-(slack, #38ba91);
+(slack, #38ba91)
+(analytics, #fff)
+(tag, #f6f5f6);
 
 
 @each $techlogo, $color in $techlogos {
