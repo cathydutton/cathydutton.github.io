@@ -22,7 +22,7 @@ Main responsibilities:
 - Liaising with a small team of developers based in Pune to coordinate sprints
 - Helping to create the Barclays API store brand
 - Creating concepts for the Barclays API store logo
-- Working as part of a multidisciplinary Agile team
+- Working as part of a multidisciplinary agile team
 - Researching methodologies and technologies for the API portals front end stack 
 
 
