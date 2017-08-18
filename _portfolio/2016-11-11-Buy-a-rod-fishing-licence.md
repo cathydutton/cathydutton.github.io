@@ -5,9 +5,10 @@ layout: portfolio-post
 category: portfolio
 tags: Interaction design, Data driven design, Prototyping, User research, Front end develoment
 image: ../assets/img/portfolio/i-want-to-fish-cover.jpg
+done: true
 ---
 
-done: true
+
 
 Ensure that all the information required for a user to make a decision is provided at the point that a decision is required of them."
 
@@ -30,17 +31,28 @@ During the project I was responsable for:
 * Delivering continous improvments to the live service based on user feedback gathered from online sales, call centres and analytics
 * Designing and implementing tests to improve the userbility of design features
 * Creating and sharing Google analytics reports
-* Working as part of a multidisciplinary Agile team
+* Working as part of a multidisciplinary agile team
+ * Implementing Google tag manager and creating reports based on the data in Google analytics
 
 
 <h2 class="heading">The service</h2>
 The service passed its GDS public beta assesment and went live in January 2017 taking over £22million from 500,000 transactions in its first 2 months, with an estimated £40million and 1.2million transactions by the end of 2017. 
  
+
+The service won a corporate services recognition award for “Making it simple” in March 2017 and was shortlisted at the <a href="http://www.digileaders100.com/" title="DL100 awards">DL100</a> awards for digital public service innovation in June 2017.
+
+
+
+
+
+
+<h3 class="heading">Feedback</h3>
+
+The service has over 94.5% Satisfied or very satisfied user feedback from over 22,000 responses via the onsite feedback form, just a few examples of this feebback are listed below:
+
 <blockquote>
 "The panel were particualrly impressed by the way the team have used what theyv'e learned to iteratte and improve the service. In particualr how they had explored different ways of frming questions and different question sequences"
 </blockquote> 
-
-The service won a corporate services recognition award for “Making it simple” in March 2017 and was shortlisted at the <a href="http://www.digileaders100.com/" title="DL100 awards" targe="_blank">DL100</a> awards for digital public service innovation in June 2017.
 
 GDS Director Kevin Cunnington referenced the service in an interview with Civil service world in March 2017:
 
@@ -50,12 +62,7 @@ Whenever Kevin Cunnington talks about the digital services the government will h
 Imagine CSW’s disappointment, then, when we ask the new director general of the Government Digital Service whether this focus on the gentle riverside pursuit is driven by a personal interest – and he responds with a quizzical look and a laugh. “No...” he says, pausing to check it isn’t a trick question. “It’s just a great application. I’m not a fisherman.
 </blockquote>
 
-Read the full <a href="http://www.civilserviceworld.com/articles/interview/interview-gds-leader-kevin-cunnington-whitehall-self-help-groups-spend-controls" title="Interview: GDS leader Kevin Cunnington - Civil service world" target="_blank">Civil service world interview</a>
-
-
-<h3 class="heading">Feedback</h3>
-
-The service has over 94.5% Satisfied or very satisfied user feedback from over 22,000 responses via the onsite feedback form, just a few examples of this feebback are listed below:
+Read the full <a href="http://www.civilserviceworld.com/articles/interview/interview-gds-leader-kevin-cunnington-whitehall-self-help-groups-spend-controls" title="Interview: GDS leader Kevin Cunnington - Civil service world">Civil service world interview</a>
 
  - Probably the easiest website I have ever used to make a purchase. Well done
  - Excellent service and really appreciate change to validity from date of purchase
@@ -106,7 +113,7 @@ Feedback:
 
 "We don’t send 1-day or 8-day licences in the post. Choose how you would like to receive your licence confirmation."
 
-!!!!SHOW IMAGES OF 3 AND 2 RADIO BUTTON OPTIONS
+!!!!SHOW NEW IMAGES WITH MY NEW CONTENT
 
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper">
@@ -146,6 +153,10 @@ We also made plans to amend the functionality of the service to allow for both a
 </div>
 </section>
 
+OUTCOMES
+* Allow to opt in after seeing licence
+* Make clear the inpackt of not giving information
+* Alignwith law changes aroud data protecion
 
 
 
@@ -170,7 +181,11 @@ Flow -  skip concession - price (decision driver) - future proof - junior journe
 
 !!Add content from blog post
 
-
+OUTCOMES
+* show price
+* skip concession
+* future proof
+* Streamline juniors
 
 
 <h3 class="heading">Case studies 4) Content on rods page and licence type page</h3>

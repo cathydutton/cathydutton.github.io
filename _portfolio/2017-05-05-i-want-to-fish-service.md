@@ -5,9 +5,23 @@ layout: portfolio-post
 category: portfolio
 tags: Service design, User journey mapping, Data driven design, Analytics, Google tag manager
 image: ../assets/img/portfolio/defra-cover.jpg
-
----
 done: true
+---
+<p class="highlight-quote">
+Each year the Environment Agency sells fishing licences to around a million customers generating £22 million of income that is re-invested back into the fisheries and the environment across England and Wales. 
+</p>
+
+<h2 class="heading">My role</h2>
+
+I was hired in 2016 as an interaction designer on the 'Buy a rod fishing licence' service. After the succeful launch of the service into private beta I began to look at the end to end service for Anglers, taking on the responsability of creating an as is service map to hihlight user needs, organisational needs and painpoints in the service.
+
+During the project I was responsable for:
+
+ * Creating a service map to show the current end to end service
+ * Working with the Fisheries department, Bailfs, marketing team and users to get a clearer understanding of the service gaols
+ * Creating an asumption map to be used in user research to prove or disprove ideas for improving the service
+ * Creating a dashboard to show sales accross all chanels
+
 
 Google tag manager - Dashboard of all sales
 
@@ -49,4 +63,6 @@ effecting stratergey and delivery plans based on service deisgn
 
 Remove the need to register for a free junior licence
 Work on bilaws content
-
+Mssion statement created with User researcher
+Future mapping
+personas
