@@ -43,7 +43,7 @@ Navigation
 
 .sidebar__anchor {
   display: inline;
-  color: map-get($colours, 'grey-light');
+  color: map-get($colours, 'white');
   // border-bottom: 1px solid map-get($colours, 'grey-light');
 
   &.active {
