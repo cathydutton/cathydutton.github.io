@@ -26,7 +26,7 @@ Sidebar profile
   padding: 10px 0;
   border-top: solid 1px lighten(map-get($colours, 'grey-dark'), 15%);
   border-bottom: solid 1px lighten(map-get($colours, 'grey-dark'), 15%);
-  color: map-get($colours, 'grey-light');
+  color: map-get($colours, 'white');
   text-align: center;
   animation: fadeIn 2s forwards;
 }
