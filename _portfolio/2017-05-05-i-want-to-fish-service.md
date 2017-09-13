@@ -11,6 +11,9 @@ done: true
 Each year the Environment Agency sells fishing licences to around a million customers generating £22 million of income that is re-invested back into the fisheries and the environment across England and Wales. 
 </p>
 
+
+Service methodology!!!!!!!
+
 <h2 class="heading">My role</h2>
 
 I was hired in 2016 as an interaction designer on the 'Buy a rod fishing licence' service. After the succeful launch of the service into private beta I began to look at the end to end service for Anglers, taking on the responsability of creating an as is service map to hihlight user needs, organisational needs and painpoints in the service.
