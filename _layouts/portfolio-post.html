@@ -1,24 +1,18 @@
----
-disqus: false
-comments: false
-archive: false
----
+{% include head.html %} {% include sidebar.html %}
 
-{% include head.html %}
-{% include sidebar.html %}
-
-  <div class="content">
-    <main id="main">
-      <header role="banner" class="header">
-        <h1 class="heading heading__intro">{{page.title}}</h1>
-          <p class="heading heading--primary">{{ page.date | date: '%Y' }}</p>
-      </header>
-        {{ content }}
-      <!--<section>
-      
-      </section>-->
-    </main>
+<div class="content">
+  <main id="main">
+    <header role="banner" class="header">
+      <h1 class="heading heading__intro">{{page.title}}</h1>
+      <p class="heading heading--primary">{{ page.date | date: '%Y' }}</p>
+    </header>
+    {{ content }}
+    <section>
+      {% include pagination-portfolio.html %}
+    </section>
+  </main>
   {% include footer.html %}
-  </div>
+</div>
 </body>
+
 </html>
