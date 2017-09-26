@@ -5,36 +5,29 @@ layout: portfolio-post
 category: portfolio
 tags: Service design, User journey mapping, Data driven design, Analytics, Google tag manager
 image: ../assets/img/portfolio/defra-cover.jpg
-
+done: true
 ---
 
-done: true
-
-
 <p class="highlight-quote">
-Each year the Environment Agency sells fishing licences to around a million customers generating £22 million of income that is re-invested back into the fisheries and the environment across England and Wales. 
+Angling generates over £1 billion for the UK economy, and is a much loved outdoor sport connecting people with nature. Each year the Environment Agency sells fishing licences to around a million customers generating £22 million of income that is re-invested back into the fisheries and the environment across England and Wales. 
 </p>
 
-<p class="highlight-quote">
-Angling generates over £1 billion for the UK economy, and is a much loved outdoor sport connecting people with nature. The ‘buy a rod fishing licence’ service is a digital transformation service to enable anglers to purchase a fishing rod licence.
-</p>
-
-
-Service methodology!!!!!!!
 
 <h2 class="heading">My role</h2>
 
-I was hired in 2016 as an interaction designer on the 'Buy a rod fishing licence' service. After the succeful launch of the service into private beta I began to look at the end to end service for Anglers, taking on the responsability of creating an as is service map to hihlight user needs, organisational needs and painpoints in the service.
+I was hired in 2016 as an interaction designer on the 'Buy a rod fishing licence' service. After the successful launch of the service into private beta I began to look at the end to end service for Anglers, taking on the responsibility of creating an as is service map to highlight user needs, organisational needs and pain points in the service.
 
-During the project I was responsable for:
+During the project I was responsible for:
 
  * Creating a service map to show the current end to end service
- * Working with the Fisheries department, Bailfs, marketing team and users to get a clearer understanding of the service gaols
- * Creating an asumption map to be used in user research to prove or disprove ideas for improving the service
- * Creating a dashboard to show sales accross all chanels
+ * Working with the Fisheries department, Bailiffs, marketing team and users to get a clearer understanding of the service gaols
+ <!-- * Creating an assumption map to be used in user research to prove or disprove ideas for improving the service -->
+ <!--* Creating a dashboard to show sales across all channels -->
+
+ Add images of both maps
 
 
-Google tag manager - Dashboard of all sales
+<!-- Google tag manager - Dashboard of all sales
 
 The ‘I want to fish’ service is ….
 
@@ -76,4 +69,4 @@ Remove the need to register for a free junior licence
 Work on bilaws content
 Mssion statement created with User researcher
 Future mapping
-personas
+personas -->
