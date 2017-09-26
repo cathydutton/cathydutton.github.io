@@ -5,8 +5,12 @@ layout: portfolio-post
 category: portfolio
 tags: Service design, User journey mapping, Data driven design, Analytics, Google tag manager
 image: ../assets/img/portfolio/defra-cover.jpg
-done: true
+
 ---
+
+done: true
+
+
 <p class="highlight-quote">
 Each year the Environment Agency sells fishing licences to around a million customers generating £22 million of income that is re-invested back into the fisheries and the environment across England and Wales. 
 </p>

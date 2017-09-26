@@ -5,10 +5,9 @@ layout: portfolio-post
 category: portfolio
 tags: Interaction design, Data driven design, Prototyping, User research, Front end develoment
 image: ../assets/img/portfolio/i-want-to-fish-cover.jpg
-done: true
 ---
 
-
+done: true
 <p class="highlight-quote">
 Each year the Environment Agency sells fishing licences to around a million customers generating £22 million of income that is re-invested back into the fisheries and the environment across England and Wales.
 </p>

@@ -19,6 +19,9 @@ done: true
 - Technical drawing
 - Graphic design
 
+<p>During my time at unaversity I was shortlisted for a <a href="http://www.pewterers.org.uk/pewter_live/pewterlive.html">Pewter live</a> design award with an adaptable <a href="http://www.pewterers.org.uk/pewter_live/Pewter_Live_2007_catalogue.pdf">candle holder concept</a>.</p>
+
+
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper">
 <h4>Sketch work</h4>
@@ -50,12 +53,6 @@ done: true
 </section>
 
 <section class="portfolio-images">
-    <div class="portfolio-piece-wrapper">
-    <h4>Graphic design</h4>
-        <div class="portfolio-piece">
-            <img src="../assets/img/portfolio/uni/graphic-design.jpg" class="portfolio-piece__img"  alt="Graphic design">
-        </div>
-    </div>
     <div class="portfolio-piece-wrapper">
 <h4>Computer modeling</h4>
     <div class="portfolio-piece">
