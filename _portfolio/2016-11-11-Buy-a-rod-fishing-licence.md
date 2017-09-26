@@ -9,15 +9,8 @@ done: true
 ---
 
 
-
-Ensure that all the information required for a user to make a decision is provided at the point that a decision is required of them."
-
-
-ADD DATA CHARTS FROM GOOGLE DOCS - data driven / analysis
-
-
 <p class="highlight-quote">
-Angling generates over £1 billion for the UK economy, and is a much loved outdoor sport connecting people with nature. The ‘buy a rod fishing licence’ service is a digital transformation service to enable anglers to purchase a fishing rod licence.
+Each year the Environment Agency sells fishing licences to around a million customers generating £22 million of income that is re-invested back into the fisheries and the environment across England and Wales.
 </p>
 
 <h2 class="heading">My role</h2>
@@ -32,18 +25,13 @@ During the project I was responsable for:
 * Designing and implementing tests to improve the userbility of design features
 * Creating and sharing Google analytics reports
 * Working as part of a multidisciplinary agile team
- * Implementing Google tag manager and creating reports based on the data in Google analytics
+* Implementing Google tag manager and creating reports based on the data in Google analytics
 
 
 <h2 class="heading">The service</h2>
 The service passed its GDS public beta assesment and went live in January 2017 taking over £22million from 500,000 transactions in its first 2 months, with an estimated £40million and 1.2million transactions by the end of 2017. 
  
-
 The service won a corporate services recognition award for “Making it simple” in March 2017 and was shortlisted at the <a href="http://www.digileaders100.com/" title="DL100 awards">DL100</a> awards for digital public service innovation in June 2017.
-
-
-
-
 
 
 <h3 class="heading">Feedback</h3>
@@ -239,6 +227,6 @@ Buy multiple licences for different people
 Buy multiple licences to allow for up to 3 or 4 rods - Product issue
 
 
-
+data driven - show charts
 
 
