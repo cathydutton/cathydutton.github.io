@@ -24,7 +24,7 @@ During the project I was responsible for:
  <!-- * Creating an assumption map to be used in user research to prove or disprove ideas for improving the service -->
  <!--* Creating a dashboard to show sales across all channels -->
 
- Add images of both maps
+ <!-- Add images of both maps -->
 
 
 <!-- Google tag manager - Dashboard of all sales
