@@ -11,6 +11,10 @@ done: true
 Each year the Environment Agency sells fishing licences to around a million customers generating £22 million of income that is re-invested back into the fisheries and the environment across England and Wales. 
 </p>
 
+<p class="highlight-quote">
+Angling generates over £1 billion for the UK economy, and is a much loved outdoor sport connecting people with nature. The ‘buy a rod fishing licence’ service is a digital transformation service to enable anglers to purchase a fishing rod licence.
+</p>
+
 
 Service methodology!!!!!!!
 
