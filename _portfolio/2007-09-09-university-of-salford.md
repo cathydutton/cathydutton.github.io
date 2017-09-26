@@ -8,24 +8,16 @@ image: ../assets/img/portfolio/uni-cover.jpg
 done: true
 ---
 
-<p class="highlight-quote"></p>
+<p class="highlight-quote">Product designers are responsible for giving form, function and meaning to a range of products that furnish our everyday lives. Their creative and practical input provides the essential link between the consumer and the manufacturer. </p>
 
-<h2 class="heading">??????</h2>
+<p>I completed a degree in product design and development at the University of Salford in 2007. The course was made up of several modules including:</p>
 
-
- Skills:
-
-- Research and personas
-- Sketching
-- Model making
-- Computer modeling
-- Autocad
+- User research and persona development
+- Sketch work
+- Foam and card model making
+- Computer modeling and animation
+- Technical drawing
 - Graphic design
-
-
-
-<h2 class="heading">Heading two</h2>
- 
 
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper">
@@ -35,7 +27,7 @@ done: true
     </div>
 </div>
 <div class="portfolio-piece-wrapper">
-<h4>Model making</h4>
+<h4>Foam model making</h4>
     <div class="portfolio-piece">
         <img src="../assets/img/portfolio/uni/models.jpg" class="portfolio-piece__img"  alt="Model making">
     </div>
