@@ -18,12 +18,13 @@ My role was to design, prototype and test a fully GDS compliant user journey and
 
 During the project I was responsible for:
 
+* Content design
+* Interaction design
 * Observing user research sessions and defining outcomes
 * Prototyping design concepts on paper, in code and with Balsamiq
 * Delivering continuous improvements to the live service based on user feedback gathered from online sales, call centers and analytics
 * Designing and implementing tests to improve the userbility of design features
 * Creating and sharing Google analytics reports
-
 
 
 <h2 class="heading">The service</h2>
@@ -65,7 +66,8 @@ User feedback:
  - "A lot easier , god its for 12 months with optional start date. - Well done, environment agency."
 
 
-<h4 class="heading">Case study - Licence confirmation screen</h4>
+<h4 class="heading">Case study - Interaction design</h4>
+
 The licence confirmation screen is used to capture the users details in order to send out notifacations including the users licence number and renewal reminders. Initial feedback on the service suggested some users were unclear on the purpose of this screen.
 
 Feedback:
@@ -107,6 +109,11 @@ Outcomes:
 
 
 
+<h4 class="heading">Case study - Content design</h4>
+
+<h4 class="heading">Case study - User journey</h4>
+
+<h4 class="heading">Case study - New features</h4>
 
 
 
