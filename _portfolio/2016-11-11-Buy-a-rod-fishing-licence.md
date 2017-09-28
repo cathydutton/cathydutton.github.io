@@ -18,13 +18,12 @@ My role was to design, prototype and test a fully GDS compliant user journey and
 
 During the project I was responsible for:
 
-* Content design
-* Interaction design
-* Observing user research sessions and defining outcomes
-* Prototyping design concepts on paper, in code and with Balsamiq
-* Delivering continuous improvements to the live service based on user feedback gathered from online sales, call centers and analytics
-* Designing and implementing tests to improve the userbility of design features
-* Creating and sharing Google analytics reports
+* <a href="interaction-design">Interaction design, prototyping design concepts on paper, in code and with Balsamiq</a>
+* <a href="user-journey" class="heading">Creating an optimised user journey</a>
+* <a href="data-driven-design" class="heading">Data driven design, designing and implementing tests to improve the userbility of design features</a>
+* <a href="new-features" class="heading">Researching, testing and designing new features</a>
+* <a href="content-design">Content design, delivering continuous improvements to the live service based on user feedback gathered from online sales, call centers and analytics</a>
+* <a href="#">Creating and sharing Google analytics reports</a>
 
 
 <h2 class="heading">The service</h2>
@@ -66,7 +65,7 @@ User feedback:
  - "A lot easier , god its for 12 months with optional start date. - Well done, environment agency."
 
 
-<h4 class="heading">Case study - Interaction design</h4>
+<h4 id ="interaction-design" class="heading">Case study - Interaction design</h4>
 
 The licence confirmation screen is used to capture the users details in order to send out notifacations including the users licence number and renewal reminders. Initial feedback on the service suggested some users were unclear on the purpose of this screen.
 
@@ -109,11 +108,15 @@ Outcomes:
 
 
 
-<h4 class="heading">Case study - Content design</h4>
 
-<h4 class="heading">Case study - User journey</h4>
 
-<h4 class="heading">Case study - New features</h4>
+<h4 id ="user-journey" class="heading">Case study - User journey</h4>
+
+<h4 id ="data-driven-design" class="heading">Case study - Data driven design</h4>
+
+<h4 id ="new-features" class="heading">Case study - New features</h4>
+
+<h4 id ="content-design" class="heading">Case study - Content design</h4>
 
 
 
