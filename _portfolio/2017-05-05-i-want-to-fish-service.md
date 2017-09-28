@@ -70,3 +70,9 @@ Work on bilaws content
 Mssion statement created with User researcher
 Future mapping
 personas -->
+
+
+BYELWAS
+CATCH RETURNS
+RESPONSIBLE ANGLING
+COMPLIANCE
