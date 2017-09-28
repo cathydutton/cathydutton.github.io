@@ -71,8 +71,8 @@ The licence confirmation screen is used to capture the users details in order to
 
 Feedback:
 
- * It wasn't clear I would have to write the number down
- * What do you send if I give my contact details?
+ * "It wasn't clear I would have to write the number down"
+ * "What do you send if I give my contact details?"
 
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper">
@@ -116,7 +116,64 @@ Outcomes:
 
 <h4 id ="new-features" class="heading">Case study - New features</h4>
 
+
+
+
+
+
+
 <h4 id ="content-design" class="heading">Case study - Content design</h4>
+
+Google analytics shows over half of users do not see the static pages which explain the different licence types and number of rod rules.
+Therefore we needed to introduce clearer content throughout the journey.
+
+Feedback:
+
+* "Which fishing licence do I need?"
+* "The question about number of rods is very confusing. I have bought a Licence for two rods and hope this allows my wife to also fish but it is not clear. This is not good"
+
+<section class="portfolio-images">
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-licence/rods-origional.jpg" class="portfolio-piece__img"  alt="Origional number of rods screen">
+    </div>
+</div>
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-licence/licence-origional.jpg" class="portfolio-piece__img"  alt="Origional licence type screen">
+    </div>
+</div>
+</section>
+
+
+Outcomes:
+
+* Each page displays the relevant information to aid in experienced users
+
+<section class="portfolio-images">
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-licence/rods-new.jpg" class="portfolio-piece__img"  alt="New number of rods screen">
+    </div>
+</div>
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-licence/licence-new.jpg" class="portfolio-piece__img"  alt="New licence type screen">
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -149,31 +206,7 @@ OUTCOMES
 * future proof
 * Streamline juniors -->
 
-<!-- 
-<h3 class="heading">Case studies - Content on rods page and licence type page</h3>
 
-- Front loaded information
-- The question about number of rods is very confusing. I have bought a Licence for two rods and hope this allows my wife to also fish but it is not clear. This is not good
-
-!!Show 3 images of ideas
-
-<section class="portfolio-images">
-<div class="portfolio-piece-wrapper">
-    <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/fishing-licence/rods-one.jpg" class="portfolio-piece__img"  alt="#">
-    </div>
-</div>
-<div class="portfolio-piece-wrapper">
-    <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/fishing-licence/rods-two.jpg" class="portfolio-piece__img"  alt="#">
-    </div>
-</div>
-<div class="portfolio-piece-wrapper">
-    <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/fishing-licence/rods-three.jpg" class="portfolio-piece__img"  alt="#">
-    </div>
-</div>
-</section> -->
 
 
 <!-- <h3 class="heading">Case studies 3) Date picker / progressive reveal - data driven design</h3>
