@@ -103,13 +103,6 @@ Outcomes:
 </div>
 </section>
 
-
-
-
-
-
-
-
 <h4 id ="user-journey" class="heading">Case study - User journey</h4>
 
 Based on a combanation of user feedback, call centre feedback and comments made at the GDS assesment we also looked at optermising the user journey.
@@ -123,8 +116,6 @@ Feedback:
 * "At the section for number of rods it would be useful to have the price for 2 and 3 rods actually listed"
 * "I can't understand why I have to input my blue badge number as well as my age. As you can see I am nearly 82 years old"
 
-
-
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper">
     <div class="portfolio-piece">
@@ -132,7 +123,6 @@ Feedback:
     </div>
 </div>
 </section>
-
 
 Outcomes:
 * Move licence length to the front - To future proof service and allow for new products
@@ -153,21 +143,6 @@ Outcomes:
     </div>
 </div>
 </section>
-
-
-
-
-
-
-!!!!!!!!!! <h4 id ="data-driven-design" class="heading">Case study - Data driven design</h4>
-
-!!!!!!!!!!  <h4 id ="new-features" class="heading">Case study - New features</h4>
-
-
-
-
-
-
 
 <h4 id ="content-design" class="heading">Case study - Content design</h4>
 
@@ -211,51 +186,73 @@ Outcomes:
 </section>
 
 
+<h4 id ="new-features" class="heading">Case study - New features</h4>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <h3 class="heading">Case studies 3) Date picker / progressive reveal - data driven design</h3>
-
+User feedback and lab sessions showed many anglers buy more then one fishing licence at a time. Going through Worldpay twice proved to be needlessly laborious, particularly with the telesales journey.
 
 Feedback:
 
- * “What’s the 12 for?” -->
+* "It would be a lot easier to just have had to pay once"
+* "we buy 2 licences at the same time would be good to have a shopping basket to buy two but pay once"
+* "Need to put in details twice as I need two two rod licences"
 
 
-<!-- <h3 class="heading">Case study - Multibuy</h3>
+<section class="portfolio-images">
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-licence/do-you-want-to-buy-another-licence.jpg" class="portfolio-piece__img"  alt="Do you want to buy another licence?">
+    </div>
+</div>
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-licence/multiple-licences.jpg" class="portfolio-piece__img"  alt="Multiple licences">
+    </div>
+</div>
+</section>
 
-Feedback:
-
- * Need to put in details twice as I need two two rod licences
- * It would be good especially why buying a 1 day licence to have the ability to add multiple to a basket and paying for them in one go
- * I would prefer the option to buy more than one licence at a time and have only one payment.  My husband and I both fish but I need to apply and pay separately for his licence.  I'm sure there would be families who would prefer this as well.
-* 
-Need to be able to make multiple entries. I have to go through this 5 times to cover everyone that fishes in our house.
-
-broke down senarios:
-
-Buy multiple licences for the same person on different day's - product issue?
-Buy multiple licences for different people
-Buy multiple licences to allow for up to 3 or 4 rods - Product issue
+<section class="portfolio-images">
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-licence/multiple-orders.jpg" class="portfolio-piece__img"  alt="Multiple orders">
+    </div>
+</div>
+</section>
 
 
-data driven - show charts -->
+Outcomes:
+
+* Users can buy multiple licences to fish for a weekend, extend the number of rods or for multiple users in one transaction
+
+
+<h4 id ="data-driven-design" class="heading">Case study - Data driven design</h4>
+
+After the service went into public beta I set up a series of tests to gather more information on the usage of some of the site's features.
+
+<section class="portfolio-images">
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-licence/calendar-icon.jpg" class="portfolio-piece__img"  alt="Date picker design pattern">
+    </div>
+</div>
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-licence/calendar-icon-chart.jpg" class="portfolio-piece__img"  alt="Chart showing percentage of link clicks">
+    </div>
+</div>
+</section>
+
+<section class="portfolio-images">
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-licence/calendar-icon-designs.jpg" class="portfolio-piece__img"  alt="Calendar icon designs">
+    </div>
+</div>
+</section>
+
+
+Outcomes:
+
+* Improved recognition of the calendar picker icon
+* Improved usage of the helper text reveals
 
 
