@@ -112,9 +112,56 @@ Outcomes:
 
 <h4 id ="user-journey" class="heading">Case study - User journey</h4>
 
-<h4 id ="data-driven-design" class="heading">Case study - Data driven design</h4>
+Based on a combanation of user feedback, call centre feedback and comments made at the GDS assesment we also looked at optermising the user journey.
 
-<h4 id ="new-features" class="heading">Case study - New features</h4>
+Feedback:
+
+* "seemed to take a long time compared with previous system"
+* "poorly designed, far too long"
+* "quick intuitive process/ would like to see one major improvement though/ PLS: include price for license"
+* "Would be good to see a prices"
+* "At the section for number of rods it would be useful to have the price for 2 and 3 rods actually listed"
+* "I can't understand why I have to input my blue badge number as well as my age. As you can see I am nearly 82 years old"
+
+
+
+<section class="portfolio-images">
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-licence/card-sort.jpg" class="portfolio-piece__img"  alt="Card sorting">
+    </div>
+</div>
+</section>
+
+
+Outcomes:
+* Move licence length to the front - To future proof service and allow for new products
+* Move address screen - To sit next to user information (Name and DOB screens)
+* Move concession screens - Allows us to add accurate pricing on licence type and number of rods screens
+* Seniors skip concession screens - These provide no added value for the users
+* Juniors skip concession screens - These provide no added value for the users & under 16’s have no NI number
+
+<section class="portfolio-images">
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-licence/price-box.jpg" class="portfolio-piece__img"  alt="Show pricing of available products">
+    </div>
+</div>
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-licence/junior-message.jpg" class="portfolio-piece__img"  alt="Clearly show the details of the junior product">
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+!!!!!!!!!! <h4 id ="data-driven-design" class="heading">Case study - Data driven design</h4>
+
+!!!!!!!!!!  <h4 id ="new-features" class="heading">Case study - New features</h4>
 
 
 
@@ -179,32 +226,7 @@ Outcomes:
 
 
 
-<!-- <h4 class="heading">Case study - User journey</h4>
-Based on a combanation of user feedback and comments made at the GDS assesment we also looked into alternative screen orders for the service.
 
-Feedback:
-
-* Why do I have to give my blue badge number also, as I am 69 years old, therefore qualifying for a oap discount.?Surely this is unnecessary.I now have to go out to the car to find the Badge NUmber.Unnecessary info.
-* I qualify for a concessionery licence on two counts 1) Age, I am 75 years old and 2) I have a blue badge. I wanted a concessionery licence on account of my AGE as that is always going to apply. However, your web site has made me apply because of my disability and a Blue Badge is reviewable, therefore people may not always qualify under Blue Badge rules, or a Blue Badge could be reviewed/continue/or be withdrawn part way through the licencing year.  Apart from this your site suited me very well.
-* I can't understand why I have to input my blue badge number as well as my age. As you can see I am nearly 82 years old and I have renewed my licence over the internet before and I was never asked for my badge number. there was times that I was getting worried that I was on the right sight. As I am over 65 there should be no reason that you should request me to do so.
-
-* Would be good to see a price list before any transactions start
-* Would be good to see the price options at the beginning. - Easier than the previous method.
-* At the section for number of rods it would be useful to have the price for 2 and 3 rods actually listed
-
-
-
-Flow -  skip concession - price (decision driver) - future proof - junior journey
-
-!!!SHOW ALL IMAGES FROM FLOW BLOGPOST
-
-!!Add content from blog post
-
-OUTCOMES
-* show price
-* skip concession
-* future proof
-* Streamline juniors -->
 
 
 
