@@ -18,12 +18,11 @@ My role was to design, prototype and test a fully GDS compliant user journey and
 
 During the project I was responsible for:
 
-* <a href="interaction-design">Interaction design, prototyping design concepts on paper, in code and with Balsamiq</a>
-* <a href="user-journey" class="heading">Creating an optimised user journey</a>
-* <a href="data-driven-design" class="heading">Data driven design, designing and implementing tests to improve the userbility of design features</a>
-* <a href="new-features" class="heading">Researching, testing and designing new features</a>
-* <a href="content-design">Content design, delivering continuous improvements to the live service based on user feedback gathered from online sales, call centers and analytics</a>
-* <a href="#">Creating and sharing Google analytics reports</a>
+* <a href="#interaction-design">Interaction design, prototyping design concepts on paper, in code and with Balsamiq</a>
+* <a href="#user-journey" class="heading">Creating an optimised user journey</a>
+* <a href="#content-design">Content design, delivering continuous improvements to the live service based on user feedback gathered from online sales, call centers and analytics</a>
+* <a href="#new-features" >Researching, testing and designing new features</a>
+* <a href="#data-driven-design" class="heading">Data driven design, designing and implementing tests to improve the userbility of design features</a>
 
 
 <h2 class="heading">The service</h2>
@@ -35,8 +34,6 @@ The service won a corporate service's recognition award for â€œMaking it simpleâ
 "The panel were particualrly impressed by the way the team have used what theyv'e learned to iteratte and improve the service. In particualr how they had explored different ways of frming questions and different question sequences"
 </blockquote> 
 <p class="quote-name">GDS assessment comments</p>
- 
-
 
 
 <h3 class="heading">Feedback</h3>
@@ -65,7 +62,7 @@ User feedback:
  - "A lot easier , god its for 12 months with optional start date. - Well done, environment agency."
 
 
-<h4 id ="interaction-design" class="heading">Case study - Interaction design</h4>
+<h4 id ="interaction-design" class="heading">1) Case study - Interaction design</h4>
 
 The licence confirmation screen is used to capture the users details in order to send out notifacations including the users licence number and renewal reminders. Initial feedback on the service suggested some users were unclear on the purpose of this screen.
 
@@ -103,7 +100,7 @@ Outcomes:
 </div>
 </section>
 
-<h4 id ="user-journey" class="heading">Case study - User journey</h4>
+<h4 id ="user-journey" class="heading">2) Case study - User journey</h4>
 
 Based on a combanation of user feedback, call centre feedback and comments made at the GDS assesment we also looked at optermising the user journey.
 
@@ -122,9 +119,15 @@ Feedback:
         <img src="../assets/img/portfolio/fishing-licence/card-sort.jpg" class="portfolio-piece__img"  alt="Card sorting">
     </div>
 </div>
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-licence/user-journey.jpg" class="portfolio-piece__img"  alt="User journey">
+    </div>
+</div>
 </section>
 
 Outcomes:
+
 * Move licence length to the front - To future proof service and allow for new products
 * Move address screen - To sit next to user information (Name and DOB screens)
 * Move concession screens - Allows us to add accurate pricing on licence type and number of rods screens
@@ -144,7 +147,7 @@ Outcomes:
 </div>
 </section>
 
-<h4 id ="content-design" class="heading">Case study - Content design</h4>
+<h4 id ="content-design" class="heading">3) Case study - Content design</h4>
 
 Google analytics shows over half of users do not see the static pages which explain the different licence types and number of rod rules.
 Therefore we needed to introduce clearer content throughout the journey.
@@ -170,7 +173,7 @@ Feedback:
 
 Outcomes:
 
-* Each page displays the relevant information to aid in experienced users
+* Each page displays the relevant information to aid users
 
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper">
@@ -186,7 +189,7 @@ Outcomes:
 </section>
 
 
-<h4 id ="new-features" class="heading">Case study - New features</h4>
+<h4 id ="new-features" class="heading">4) Case study - New features</h4>
 
 User feedback and lab sessions showed many anglers buy more then one fishing licence at a time. Going through Worldpay twice proved to be needlessly laborious, particularly with the telesales journey.
 
@@ -224,7 +227,7 @@ Outcomes:
 * Users can buy multiple licences to fish for a weekend, extend the number of rods or for multiple users in one transaction
 
 
-<h4 id ="data-driven-design" class="heading">Case study - Data driven design</h4>
+<h4 id ="data-driven-design" class="heading">5) Case study - Data driven design</h4>
 
 After the service went into public beta I set up a series of tests to gather more information on the usage of some of the site's features.
 
@@ -241,13 +244,13 @@ After the service went into public beta I set up a series of tests to gather mor
 </div>
 </section>
 
-<section class="portfolio-images">
+<!-- <section class="portfolio-images">
 <div class="portfolio-piece-wrapper">
     <div class="portfolio-piece">
         <img src="../assets/img/portfolio/fishing-licence/calendar-icon-designs.jpg" class="portfolio-piece__img"  alt="Calendar icon designs">
     </div>
 </div>
-</section>
+</section> -->
 
 
 Outcomes:
