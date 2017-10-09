@@ -21,7 +21,7 @@ During the project I was responsible for:
 
  * Working with the Fisheries department, Bailiffs, marketing team and anglers to get a clearer understanding of the service goals
  * Creating a service map to show the current end to end service, pain points and outcomes
- * Work towards a service methodology to help create 
+ * Work towards a service methodology to help create a service vision and mission statement
  * Creating an assumption map to be used in user research to prove or disprove ideas for improving the service
 
 
@@ -45,11 +45,18 @@ Outcomes:
 
  * Improve the complince and understanding of angling byelwas
  * Improve the complince and understanding of catch returns for Salmon and sea trout anglers
+ 
+
+ * Trust - Lack of understanding and visability around the EA, how licence money i spent and whats being done to improve Angling
+ * Transparency - Cleareer comunication around where licence money is spent, what the EA does and how to be a compliant angler
+ * Comunicaion - Mixed messages around compliance and particapation
+ * Visability - Lack of visability for enforcement, maintenance and enhancement of angling
+ * Complexity -  Complicated rules that vary on location, water and species
 
 
-<!-- Google tag manager - Dashboard of all sales
+<!-- 
 
-The ‘I want to fish’ service is ….
+
 
 Highlighting key drivers for angling “Sense of achievement”, “Health and well being”, “social” etc.
 
@@ -59,22 +66,12 @@ Highlight key organisational needs “We need to keep rivers clean”, “We nee
 
 Working on service mapping and end to end user journeys, working with policy, bailiffs call centre staff, fisheries officers, users and the communications team to highlight key pain points in the current user journey.
 
-- WORK WITH SERVICE MANAGER ON FRAMING THE SEVICE VISION TO MEET USER NEEDS AND TO FOCUS ON THE END TO END JOURNEY.
-
 Focus on the problem not the soloution
-Be adabtable to chang
-
-Digi fish to improve the efficiency and visability of enfourcement
-
 
 
 
 Work alongside the senior fisheries team etc to map out the future service vision, What we want to do, how we will get there, what will be different.
 
-
-Work with policy on 7 day service vision research project.
-
-Abolish juniors having to buy a licence
 
 Discovery into catch returns 
 
@@ -92,7 +89,4 @@ Future mapping
 personas -->
 
 
-<!-- BYELWAS
-CATCH RETURNS
-RESPONSIBLE ANGLING
-COMPLIANCE -->
+<!-- https://docs.google.com/presentation/d/1Lj55TJ7anvdeOX6Yf7N9i31DsTUIpDd1GlMIRl5HSfY/edit#slide=id.g1ff92f32f6_0_555 -->
