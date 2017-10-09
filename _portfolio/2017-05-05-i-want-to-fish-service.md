@@ -20,7 +20,7 @@ I was hired in 2016 as an interaction designer on the 'Buy a rod fishing licence
 During the project I was responsible for:
 
  * Creating a service map to show the current end to end service
- * Working with the Fisheries department, Bailiffs, marketing team and users to get a clearer understanding of the service gaols
+ * Working with the Fisheries department, Bailiffs, marketing team and users to get a clearer understanding of the service goals
  <!-- * Creating an assumption map to be used in user research to prove or disprove ideas for improving the service -->
  <!--* Creating a dashboard to show sales across all channels -->
 

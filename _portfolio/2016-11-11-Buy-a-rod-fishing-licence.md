@@ -59,7 +59,7 @@ User feedback:
  - "I am a 71 year old pensioner and I Found the site very user friendly and easy to use!  --   Top Marks!"
  - "Very easy to navigate, and delighted junior licence is now free!"
  - "MUCH MUCH MUCH better than the previous post office website."
- - "A lot easier , god its for 12 months with optional start date. - Well done, environment agency."
+ - "The easiest application I have ever filled in, absolutely first class and for a pensioner with limited IT skills could not of been better"
 
 
 <h4 id ="interaction-design" class="heading">1) Case study - Interaction design</h4>
@@ -174,6 +174,7 @@ Feedback:
 Outcomes:
 
 * Each page displays the relevant information to aid users
+* "very straight forward in process and well explained regarding which license allows which type of fishing"
 
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper">
