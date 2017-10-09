@@ -19,12 +19,32 @@ I was hired in 2016 as an interaction designer on the 'Buy a rod fishing licence
 
 During the project I was responsible for:
 
- * Creating a service map to show the current end to end service
- * Working with the Fisheries department, Bailiffs, marketing team and users to get a clearer understanding of the service goals
- <!-- * Creating an assumption map to be used in user research to prove or disprove ideas for improving the service -->
- <!--* Creating a dashboard to show sales across all channels -->
+ * Working with the Fisheries department, Bailiffs, marketing team and anglers to get a clearer understanding of the service goals
+ * Creating a service map to show the current end to end service, pain points and outcomes
+ * Work towards a service methodology to help create 
+ * Creating an assumption map to be used in user research to prove or disprove ideas for improving the service
 
- <!-- Add images of both maps -->
+
+<section class="portfolio-images">
+<div class="portfolio-piece-wrapper-full">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-service/service-map.jpg" class="portfolio-piece__img"  alt="Service map">
+    </div>
+</div>
+</section>
+
+<section class="portfolio-images">
+<div class="portfolio-piece-wrapper-full">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/fishing-service/digital-service-map.jpg" class="portfolio-piece__img"  alt="Digital service map">
+    </div>
+</div>
+</section>
+
+Outcomes:
+
+ * Improve the complince and understanding of angling byelwas
+ * Improve the complince and understanding of catch returns for Salmon and sea trout anglers
 
 
 <!-- Google tag manager - Dashboard of all sales
@@ -66,7 +86,7 @@ effecting stratergey and delivery plans based on service deisgn
 ## Outcomes
 
 Remove the need to register for a free junior licence
-Work on bilaws content
+
 Mssion statement created with User researcher
 Future mapping
 personas -->

@@ -12,6 +12,10 @@ Portfolio
   @include grid(break-tablet, 1, 3);
 }
 
+.portfolio-piece-wrapper-full {
+  @include grid(break-mobile, 1, 1);
+}
+
 .portfolio-piece__img {
   width: 100%;
   border: solid 1px #ccc7c3;
