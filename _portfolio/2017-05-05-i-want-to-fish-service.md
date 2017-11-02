@@ -22,8 +22,6 @@ During the project I was responsible for:
  * Working with the Fisheries department, Bailiffs, marketing team and anglers to get a clearer understanding of the service goals
  * Creating a service map to show the current end to end service, pain points and outcomes
  * Work towards a service methodology to help create a service vision and mission statement
- * Creating an assumption map to be used in user research to prove or disprove ideas for improving the service
-
 
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper-full">
@@ -41,28 +39,43 @@ During the project I was responsible for:
 </div>
 </section>
 
+Throughout the process key themes emerged accross the service
+
+User needs
+
+ * I want to enjoy nature
+ * I want to relax
+ * I want to get outdoors
+ * I want to fish
+
+Organisational objectives
+
+* To Keep rivers clean 
+* To maintain, improve and develop freshwater and migratory fisheries
+* To conserve freshwater and migratory fish stock
+* To report on fish stock levels
+* To increase angling participation
+
+
+Observations:
+
+  * Trust - Lack of understanding and visability around the EA, how licence money i spent and whats being done to improve Angling
+ * Transparency - Cleareer comunication around where licence money is spent, what the EA does and how to be a compliant angler
+ * Comunicaion - Mixed messages around compliance and particapation
+ * Visability - Lack of visability for enforcement, maintenance and enhancement of angling
+ * Complexity -  Complicated rules that vary on location, water and species, as well as complicated internal procese around enfourcment and licence checks. 
+
+
 Outcomes:
 
  * Improve the complince and understanding of angling byelwas
  * Improve the complince and understanding of catch returns for Salmon and sea trout anglers
- 
-
- * Trust - Lack of understanding and visability around the EA, how licence money i spent and whats being done to improve Angling
- * Transparency - Cleareer comunication around where licence money is spent, what the EA does and how to be a compliant angler
- * Comunicaion - Mixed messages around compliance and particapation
- * Visability - Lack of visability for enforcement, maintenance and enhancement of angling
- * Complexity -  Complicated rules that vary on location, water and species
-
-
-<!-- 
-
+ * Improve the bankside interaction for anglers, bailifs and fisheries staff
 
 
 Highlighting key drivers for angling “Sense of achievement”, “Health and well being”, “social” etc.
 
-Highlighting key user needs “I want to fish”, “I want to enjoy nature”, “I want to relax”
 
-Highlight key organisational needs “We need to keep rivers clean”, “We need to conserve freshwater and migratory fish stocks and report on this too???”, and “We need to increase participation in order to improve the environment”
 
 Working on service mapping and end to end user journeys, working with policy, bailiffs call centre staff, fisheries officers, users and the communications team to highlight key pain points in the current user journey.
 
@@ -73,20 +86,17 @@ Focus on the problem not the soloution
 Work alongside the senior fisheries team etc to map out the future service vision, What we want to do, how we will get there, what will be different.
 
 
-Discovery into catch returns 
-
-Discovery into compliance
-
-effecting stratergey and delivery plans based on service deisgn
 
 
 ## Outcomes
 
-Remove the need to register for a free junior licence
+"Focussing on the benefits encouraging personal responsibility for ‘sustainable angling’"
+
+"Moving from enforcement towards encouragement. Making it simpler to understand how to be a responsible angler"
 
 Mssion statement created with User researcher
 Future mapping
-personas -->
+personas 
 
 
 <!-- https://docs.google.com/presentation/d/1Lj55TJ7anvdeOX6Yf7N9i31DsTUIpDd1GlMIRl5HSfY/edit#slide=id.g1ff92f32f6_0_555 -->
