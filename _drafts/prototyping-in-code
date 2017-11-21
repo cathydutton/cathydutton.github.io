@@ -1,0 +1,69 @@
+
+## Understanding your medium
+
+Roughly 10 years ago I had the job title of web designer, my role included the design (often produced in photoshop) and build of small to medium sized company websites. It wasnt long though before me and most of my coleagues were asked to make a choice. As the web industry grew so did the requests for specialist designers and front end developers.
+
+Over the years I have had the privalige of being employed as both a front end developer and a designer, using various methodolagies and ways of working. If this has tought me anythinfg it is the importance of understanding the medium you are designing for.
+
+## Why designers should to understand code
+In all areas of design it is essentiasl to understand the medium you are working with, for example print designers have a detailed knowledge of the printing process.
+
+ - Reference image in design museum
+ - Use example from another form of design - graphic or cars????
+
+ - Take responsability for accesability HTML & CSS especially if FED is full stack and mostly focused on the back end
+  - Show examples from other fields of design.
+
+## Prototyping in code
+In my current position as an interaction designer prototypes are produced in code, not as flat visuals. There a re huge benefits to this aproach as well as time savings and greater user experience.
+
+
+ - Reference the design book which is all about code
+ - Benefits - proto in code, every device, easy to interact with , components can be used in production, control of accessibility
+ - Design tooling heading - https://www.figma.com/ invision etc zepla from Barclys tools change code and paper doesnt
+- Developers also need to understand UX - this aids working together on proto and prod
+ - HTML and CSS are not going to change - Sass and JS frameworks may come and go but the raw languages will remain constant
+ - 1 prototype for all screens
+ - speed of changes and tweaks
+ - url to share for test sessions
+ - Ux includes code!!!
+ - Accessibility  - taking control of the markup which is part of design tsting with users
+ - Working alongside a front end dev to avoid the fence throwing.
+ - More Lean Agile design sprint aligned
+ - Ability to produce usable solutions and test code for accessibility and performance - can't do this in prototypes
+
+ - Flexability - can update whilst in user testing sessions
+ - CAN SAVE CODE FROM BROWSER - TWITTER LINK - EXTRA NICE TO HAVE FROM DESIGNING IN CODE CAN EDIT WHILST TESTING
+
+
+ ### problems
+Despite all of the points discussed above there can be some shotfalls with prototyping in code, most notibaly, you need designers who are comfterble with this way of working.
+
+  - Problems - Can be time consuming - but only build after testing sketches - pattern library is essential - let go of clean code!!!!!????
+
+ - Takes investment upfront to build a design language in code, longer term benefits make this worthwhile
+
+ - Need pattern library to keep things quick, longer start up period.
+
+
+
+### In summary
+
+ - Greater control over the final output
+ - Greater coloboration between design and dev, no fence throwing designers and developers understand each others roles.
+
+s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
