@@ -112,6 +112,7 @@ Feedback:
 * "Would be good to see a prices"
 * "At the section for number of rods it would be useful to have the price for 2 and 3 rods actually listed"
 * "I can't understand why I have to input my blue badge number as well as my age. As you can see I am nearly 82 years old"
+* "At no stage,until the very last did I know the cost of the licence"
 
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper">
@@ -146,6 +147,12 @@ Outcomes:
     </div>
 </div>
 </section>
+
+Feedback:
+
+* "It was helpful to put in my dob to see I could get a free licence."
+* "This was for a Junior licence and I found it a very easy process. In time I will be applying for my own (Adult) licence and I'm hoping it will be as straightforward"
+* "1. The website was extremely easy to use. - 2. Though I didn't qualify for concessions, the way they are offered makes it very easy for those who do. - 3. Good job all round, well done."
 
 <h4 id ="content-design" class="heading">3) Case study - Content design</h4>
 
