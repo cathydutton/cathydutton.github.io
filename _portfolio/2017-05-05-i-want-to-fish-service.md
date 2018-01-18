@@ -3,7 +3,7 @@ title: I want to fish service
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-tags: Service design, User journey mapping, Data driven design, Analytics, Google tag manager
+tags: Service design, User research, User journey mapping
 image: ../assets/img/portfolio/defra-cover.jpg
 done: true
 ---
@@ -15,13 +15,15 @@ Angling generates over £1 billion for the UK economy, and is a much loved outdo
 
 <h2 class="heading">My role</h2>
 
-I was hired in 2016 as an interaction designer on the 'Buy a rod fishing licence' service. After the successful launch of the service into private beta I began to look at the end to end service for Anglers, taking on the responsibility of creating an as is service map to highlight user needs, organisational needs and pain points in the service.
+I was hired in 2016 as an interaction designer on the 'Buy a rod fishing licence' service, after the successful launch of the service into public beta I began to look at the end to end user journey for Anglers. As well as buying a rod licence Anglers are also required to comply with a set of complex bylaws and complete returns on any Salmon or Sea trout caught.
+
 
 During the project I was responsible for:
 
- * Working with the Fisheries department, Bailiffs, marketing team and anglers to get a clearer understanding of the service goals
- * Creating a service map to show the current end to end service, pain points and outcomes
- * Work towards a service methodology to help create a service vision and mission statement
+* Mapping out the end to end user journey,  highlighting touchpoints with the EA, other agences and some of the main pain points
+* Working with the fisheries department, bailiffs, marketing teams, call centre staff and anglers to get a clearer understanding of the as is service
+
+
 
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper-full">
@@ -31,6 +33,15 @@ During the project I was responsible for:
 </div>
 </section>
 
+
+Throughout the process key themes emerged across the service: 
+
+ * <em>Trust</em> - Lack of understanding and visibility around the EA, how licence money is spent and what's being done to improve Angling
+ * <em>Transparency </em>- Clearer communication around where licence money is spent, what the EA does and how to be a compliant angler
+ * <em>Communication</em> - Mixed messages around compliance and participation
+ * <em>Visibility</em> - Lack of visibility for enforcement, maintenance and enhancement of angling
+ * <em>Complexity</em> -  Complicated rules that vary on location, water and species, as well as complicated internal process around enforcement and licence checks. 
+
 <section class="portfolio-images">
 <div class="portfolio-piece-wrapper-full">
     <div class="portfolio-piece">
@@ -39,64 +50,13 @@ During the project I was responsible for:
 </div>
 </section>
 
-Throughout the process key themes emerged accross the service
+Based on these themes ideas for potential further research were developed including: 
 
-User needs
-
- * I want to enjoy nature
- * I want to relax
- * I want to get outdoors
- * I want to fish
-
-Organisational objectives
-
-* To Keep rivers clean 
-* To maintain, improve and develop freshwater and migratory fisheries
-* To conserve freshwater and migratory fish stock
-* To report on fish stock levels
-* To increase angling participation
-
-
-Observations:
-
-  * Trust - Lack of understanding and visability around the EA, how licence money i spent and whats being done to improve Angling
- * Transparency - Cleareer comunication around where licence money is spent, what the EA does and how to be a compliant angler
- * Comunicaion - Mixed messages around compliance and particapation
- * Visability - Lack of visability for enforcement, maintenance and enhancement of angling
- * Complexity -  Complicated rules that vary on location, water and species, as well as complicated internal procese around enfourcment and licence checks. 
-
-
-Outcomes:
-
- * Improve the complince and understanding of angling byelwas
- * Improve the complince and understanding of catch returns for Salmon and sea trout anglers
- * Improve the bankside interaction for anglers, bailifs and fisheries staff
-
-
-Highlighting key drivers for angling “Sense of achievement”, “Health and well being”, “social” etc.
-
-
-
-Working on service mapping and end to end user journeys, working with policy, bailiffs call centre staff, fisheries officers, users and the communications team to highlight key pain points in the current user journey.
-
-Focus on the problem not the soloution
-
-
-
-Work alongside the senior fisheries team etc to map out the future service vision, What we want to do, how we will get there, what will be different.
+ * How might we improve the compliance and understanding of angling byelaw's
+ * How might we improve the compliance and understanding of catch returns for Salmon and sea trout anglers
+ * How might we improve the bandied interaction for anglers, bailiffs and fisheries staff
 
 
 
 
-## Outcomes
 
-"Focussing on the benefits encouraging personal responsibility for ‘sustainable angling’"
-
-"Moving from enforcement towards encouragement. Making it simpler to understand how to be a responsible angler"
-
-Mssion statement created with User researcher
-Future mapping
-personas 
-
-
-<!-- https://docs.google.com/presentation/d/1Lj55TJ7anvdeOX6Yf7N9i31DsTUIpDd1GlMIRl5HSfY/edit#slide=id.g1ff92f32f6_0_555 -->
