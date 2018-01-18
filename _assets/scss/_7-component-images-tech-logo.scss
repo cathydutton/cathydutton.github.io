@@ -64,7 +64,8 @@ $techlogos:
 (bit-bucket, #1f5182)
 (slack, #38ba91)
 (analytics, #fff)
-(tag, #f6f5f6);
+(tag, #f6f5f6)
+(nunjucks, #1e5a1e);
 
 
 @each $techlogo, $color in $techlogos {
