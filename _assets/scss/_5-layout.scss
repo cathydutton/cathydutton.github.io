@@ -4,7 +4,7 @@
 
 .wrapper {
 
-  @include mq(break-tablet) {
+  @include mq(break-desktop) {
     display: -ms-flexbox;
     display: -webkit-box;
     display: -moz-box;
@@ -22,7 +22,7 @@
 
 .sidebar {
 
-  @include mq(break-tablet) {
+  @include mq(break-desktop) {
     width: 270px;
     -ms-flex: 0 100px;
     -webkit-box-flex: 0;
@@ -37,7 +37,7 @@
   padding: 2%;
   animation: fadeIn 2s forwards;
 
-  @include mq(break-tablet) {
+  @include mq(break-desktop) {
     -ms-flex: 1;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;

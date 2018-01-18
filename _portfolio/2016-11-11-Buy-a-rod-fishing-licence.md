@@ -24,12 +24,12 @@ During the project I was responsible for:
 * <a href="#new-features" >Researching, testing and designing new features</a>
 * <a href="#data-driven-design" class="heading">Data driven design, designing and implementing tests to improve the userbility of design features</a>
 
-<blockquote>
+<!-- <blockquote>
 Since the ‘Get a fishing licence’ service has gone to Beta Public, Cathy has helped improve the service and make it better for our users. One of the changes Cathy suggested and implemented – based on the feedback we received – was to change the order we asked questions. Doing this has reduced the time juniors and under 12s need to use the service as they get the information they need quicker. This has received a lot of positive feedback since release and it was Cathy that identified this opportunity.
 
 Cathy is great to work with. She takes a pragmatic approach and will give you an honest opinion about feedback, designs and business requests. It’s something I value immensely, and she’s been a big support for me since I became Product Owner of the ‘Get a fishing licence’ service. There’s a willingness to learn and take on board the complexities of an area like fish – and now waste – and really understand the business area which is crucial for building good products.
 </blockquote> 
-<p class="quote-name">Feedback from the service's product owner</p>
+<p class="quote-name">Feedback from the service's product owner</p> -->
 
 <h2 class="heading">The service</h2>
 The service passed its GDS public beta assessment and went live in January 2017 taking over £22million from 500,000 transactions in its first 2 months, with an estimated £40million and 1.2million transactions by the end of 2017. 

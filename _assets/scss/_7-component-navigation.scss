@@ -8,7 +8,7 @@ Navigation
   border-bottom: solid 3px map-get($colours, 'accent');
   background: map-get($colours, 'grey-dark');
 
-  @include mq(break-tablet) {
+  @include mq(break-desktop) {
     border-right: solid 3px map-get($colours, 'accent');
     border-bottom: 0;
   }
@@ -20,7 +20,7 @@ Navigation
   text-align: center;
   animation: fadeIn 2s forwards;
 
-  @include mq(break-tablet) {
+  @include mq(break-desktop) {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -34,7 +34,7 @@ Navigation
   display: inline-block;
   margin: .4em;
 
-  @include mq(break-tablet) {
+  @include mq(break-desktop) {
     display: block;
     margin: 0;
   }
@@ -55,7 +55,7 @@ Navigation
     color: map-get($colours, 'grey-dark');
   }
 
-  @include mq(break-tablet) {
+  @include mq(break-desktop) {
     display: block;
     margin-bottom: 5px;
     padding: 10px 0 10px 10px;

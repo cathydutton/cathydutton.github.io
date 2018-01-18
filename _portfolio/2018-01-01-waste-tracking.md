@@ -8,7 +8,7 @@ image: ../assets/img/portfolio/waste-cover.jpg
 ---
 done: true
 
-<p class="highlight-quote">
+<!-- <p class="highlight-quote">
  Any business or organisation that produces waste has to follow rules for moving it from place to place for disposal or recycling. The rules vary according to the type of waste, and where it is being moved to.
 </p>
 
@@ -39,4 +39,4 @@ Areas to improve on:
 
 I’d like to see Cathy be more vocal, although I am seeing this more as we progress through Discovery.  Cathy has the ability and the knowledge but sometimes lacks the confidence (in my opinion) to blow her own tru
 </blockquote> 
-<p class="quote-name">Feedback on service design role</p>
+<p class="quote-name">Feedback on service design role</p> -->
