@@ -3,7 +3,7 @@ layout: maze
 title: "Maze - PostCSS responsive grid"
 description: "A Simple mobile first responsive Grid built with PostCSS"
 intro: "Maze"
-heading: "A fully flexible mobile first grid to suit any design pattern."
+heading: " A fully flexible mobile first grid to suit any design pattern."
 group: "navigation"
 page: "PostCSS Maze"
 active: "PostCSS Maze"
