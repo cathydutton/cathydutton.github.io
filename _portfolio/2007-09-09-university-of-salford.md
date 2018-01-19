@@ -3,7 +3,7 @@ title: University of Salford
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
-tags: Product design. User research, Graphic design, Computer modeling, Model making, Autocad
+tags: Product design, User research, Graphic design, Computer modeling, Model making, Autocad
 image: ../assets/img/portfolio/uni-cover.jpg
 done: true
 ---
