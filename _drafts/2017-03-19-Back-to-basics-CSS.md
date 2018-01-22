@@ -10,7 +10,12 @@ Back to basics because the basics have moved on CSS is now more advanced. Grid v
 
 Paragraph on not wanting to tie fall backs in for grid put can post Css do that for me? 
 
-Freshen up, grid variables etc, SVG. Includes. So what am I using sass for. Mixinns, nesting, functions. How else can we do that, is it worth it, post CSS
+Freshen up, 
+grid 
+variables etc
+Nesting would be missed but you should only nest states of selectors (hover focus etc) and really we shouldnt need many of those if default styles are inherited.
+
+, SVG. Includes. So what am I using sass for. Mixinns, nesting, functions. How else can we do that, is it worth it, post CSS
 
 
 
