@@ -6,7 +6,7 @@ category: portfolio
 tags: Service design, User research, User journey mapping
 image: ../assets/img/portfolio/waste-cover.jpg
 ---
-done: true
+<!--done: true-->
 
 <!-- <p class="highlight-quote">
  Any business or organisation that produces waste has to follow rules for moving it from place to place for disposal or recycling. The rules vary according to the type of waste, and where it is being moved to.
@@ -21,19 +21,29 @@ A cross-government collaborative team recently started a discovery looking at ho
 
 <h2 class="heading">My role</h2>
 
-I waspart of the core team based in Wrrington working alongside steakholders
+I was part of the core project team based in Warrington, working as a service designer. As part of my role I was responsible for:
 
- * fd
- * ff
- * df
+ * Working alongside a user research to facilitate and observe interviews, site visits and workshops
+ * Working with the service owner and stakeholders to frame the problem we wanted to solve.
+ * 
+ 
+ * Sketch out service and pain points
+ * Answer why questions around challenge statement
+ * Hypothesis/ how might We’s
+ * Journey maps as a user would see it waste producer, waste industry
+ * User, org and policy insights - theming and visualising
+ * Service vision
+
 
  <h2 class="heading">Chalenge statement</h2>
+  symptoms of a larger problem etc -  wants and challenge statement with service owner and stakeholders
+
+ <h3 class="heading">User needs</h3>
 
 
- <h2 class="heading">User needs</h2>
-
-
- <h2 class="heading">Hypothesis / What If's</h2>
+ <h3 class="heading">Hypothesis / What If's</h3>
+ 
+ <h3 class="heading">User journeys</h3>
 
  <blockquote>
 Cathy is an Interaction Designer but is demonstrating the skills and capabilities of a Service Designer.  Cathy is able to think strategically and understands the context she is working in. We have been working in a different way with the Waste Tracking Discovery, a way that has at times been uncomfortable for the organisation and the partner organisations, but Cathy is showing great resilience and supporting the Service Owner through this.  Cathy is very much leading the service design aspect of the waste tracking discovery, and now she has finally received the tools, I think we will see some great output coming from Cathy.
