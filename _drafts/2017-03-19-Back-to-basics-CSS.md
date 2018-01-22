@@ -12,13 +12,19 @@ Paragraph on not wanting to tie fall backs in for grid put can post Css do that 
 
 Freshen up, 
 grid 
-variables etc
+variables
+Includes - Can this be done in CSS?
+etc
 Nesting would be missed but you should only nest states of selectors (hover focus etc) and really we shouldnt need many of those if default styles are inherited.
 
-, SVG. Includes. So what am I using sass for. Mixinns, nesting, functions. How else can we do that, is it worth it, post CSS
+Anamaition in Sass is still good, but you can achieve this in SVG aswell - give examples of both! In codepen
+
+. So what am I using sass for. Mixinns, nesting, functions. How else can we do that, is it worth it, post CSS
 
 
 
+
+When I first heard about Sass I was sceptical, CSS could already do what I needed.... But then I realised the benefits and posabilitiees available via mixing=ns, functions and incleds!!!
 
 
 I am a  huge fan of Sass, and the posabilities it brings to CSS. Loops, functions and mixins are some of my faveoutite features, none of which are close to being available in CSS.
