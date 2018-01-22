@@ -5,6 +5,17 @@ layout: post
 date:   2017-03-19
 ---
 
+
+Back to basics because the basics have moved on CSS is now more advanced. Grid variables etc. 
+
+Paragraph on not wanting to tie fall backs in for grid put can post Css do that for me? 
+
+
+
+
+
+
+
 I am a  huge fan of Sass, and the posabilities it brings to CSS. Loops, functions and mixins are some of my faveoutite features, none of which are close to being available in CSS.
 
 https://codepen.io/cathydutton/pen/FDipu
