@@ -24,7 +24,7 @@ A cross-government collaborative team recently started a discovery looking at ho
 I was part of the core project team based in Warrington, working as a service designer. As part of my role I was responsible for:
 
  * Working alongside a user research to facilitate and observe interviews, site visits and workshops
- * Working with the service owner and stakeholders to frame the problem we wanted to solve.
+ * Working with the service owner and stakeholders from Sepa, NIEA, DEFRA and NRW to frame the problem we wanted to solve.
  * 
  
  * Sketch out service and pain points
