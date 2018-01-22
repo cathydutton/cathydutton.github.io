@@ -136,11 +136,11 @@ There was of course the inevitable backlash against preprocessors:
 
 
 
-## So what problems was I solving with Sass?
+## So what problems am I solving with Sass?
 
 <!-- I looked at how and more importantly why I was using Sass. The four main things that came you cross projects were...  -->
 
-
+### 2) Includes - Sass Partials to break down CSS into managanble chunks - no more 2500 line CSS files to scroll through
 
 
 ### 1) Re-usable properties 
