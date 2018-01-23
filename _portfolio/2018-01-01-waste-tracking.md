@@ -17,7 +17,7 @@ uk waste management industry has a £9 billion annual turnover
 over 40 million tonnes of waste produced each year
 23 million paper doc notes each year
 
-A cross-government collaborative team recently started a discovery looking at how waste movements are tracked across the UK. The team is keen to hear from regulators and businesses, to find out more about their needs. In this post I’ll explain what the discovery is all about, and how to contact the team if you’re interested in taking part in the research.
+A cross-government collaborative team recently started a discovery looking at how waste movements are tracked across the UK. The team is keen to hear from regulators and businesses, to find out more about their needs. Sepa, NIEA, DEFRA and NRW.
 
 <h2 class="heading">My role</h2>
 
@@ -40,10 +40,11 @@ I was part of the core project team based in Warrington, working as a service de
 
  <h3 class="heading">User needs</h3>
 
-
  <h3 class="heading">Hypothesis / What If's</h3>
  
- <h3 class="heading">User journeys</h3>
+ <h3 class="heading">Waste journey image</h3>
+ 
+ <h3 class="heading">User journey maps</h3>
 
  <blockquote>
 Cathy is an Interaction Designer but is demonstrating the skills and capabilities of a Service Designer.  Cathy is able to think strategically and understands the context she is working in. We have been working in a different way with the Waste Tracking Discovery, a way that has at times been uncomfortable for the organisation and the partner organisations, but Cathy is showing great resilience and supporting the Service Owner through this.  Cathy is very much leading the service design aspect of the waste tracking discovery, and now she has finally received the tools, I think we will see some great output coming from Cathy.
