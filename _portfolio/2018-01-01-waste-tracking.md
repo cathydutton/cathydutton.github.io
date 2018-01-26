@@ -21,7 +21,7 @@ I was part of the core project team based in Warrington, working with subject ma
  * Understanding the existing service and it's touchpoints with other services
  * Working alongside a user researcher and buisness analyist to theme both user and organisational needs
  * Creating a selection of journey maps detailing the service through the eyes of the user
- * Writing a set of Hypothesis to test throughout discovery
+ * Writing a set of hypotheses to test throughout discovery
  * Producing 'how might We' statements for potential Alpha projects
 
 
