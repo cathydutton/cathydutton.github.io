@@ -20,7 +20,7 @@ I was hired in 2016 as an interaction designer on the 'Buy a rod fishing licence
 
 During the project I was responsible for:
 
-* Mapping out the end to end user journey,  highlighting touchpoints with the EA, other agences and some of the main pain points
+* Mapping out the end to end user journey,  highlighting touch points with the EA, other agencies and some of the main pain points
 * Working with the fisheries department, bailiffs, marketing teams, call centre staff and anglers to get a clearer understanding of the as is service
 
 
