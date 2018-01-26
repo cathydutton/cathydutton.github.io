@@ -5,54 +5,44 @@ layout: portfolio-post
 category: portfolio
 tags: Service design, User research, User journey mapping
 image: ../assets/img/portfolio/waste-cover.jpg
+done: true
 ---
-<!--done: true-->
 
-<!-- <p class="highlight-quote">
- Any business or organisation that produces waste has to follow rules for moving it from place to place for disposal or recycling. The rules vary according to the type of waste, and where it is being moved to.
+<p class="highlight-quote">
+ Each year the UK produces over 40 million tonnes of waste, all of this waste needs to be transported, treated and disposed of correctly. The UK waste management industry currently has over 70,000 employees and an annual turnover of around £9 billion with over 23 million waste movements each year.
 </p>
 
-uk waste management industry has a £9 billion annual turnover
-70000 people employed in waste management
-over 40 million tonnes of waste produced each year
-23 million paper doc notes each year
-
-A cross-government collaborative team recently started a discovery looking at how waste movements are tracked across the UK. The team is keen to hear from regulators and businesses, to find out more about their needs. Sepa, NIEA, DEFRA and NRW.
 
 <h2 class="heading">My role</h2>
+I was part of the core project team based in Warrington, working with subject matter experts and stakeholders from SEPA, NIEA, DEFRA and NRW. As a service designer on the project I was responsible for:
 
-I was part of the core project team based in Warrington, working as a service designer. As part of my role I was responsible for:
-
- * Working alongside a user research to facilitate and observe interviews, site visits and workshops
- * Working with the service owner and stakeholders from Sepa, NIEA, DEFRA and NRW to frame the problem we wanted to solve.
- * 
- 
- * Sketch out service and pain points
- * Answer why questions around challenge statement
- * Hypothesis/ how might We’s
- * Journey maps as a user would see it waste producer, waste industry
- * User, org and policy insights - theming and visualising
- * Service vision
+ * Working with a user researcher to facilitate and observe interviews, site visits and workshops
+ * Working with the service owner and stakeholders to frame the problem and produce a challenge statement
+ * Understanding the existing service and it's touchpoints with other services
+ * Working alongside a user researcher and buisness analyist to theme both user and organisational needs
+ * Creating a selection of journey maps detailing the service through the eyes of the user
+ * Writing a set of Hypothesis to test throughout discovery
+ * Producing 'how might We' statements for potential Alpha projects
 
 
- <h2 class="heading">Chalenge statement</h2>
+ <!-- <h3 class="heading">Chalenge statement</h3>
   symptoms of a larger problem etc -  wants and challenge statement with service owner and stakeholders
 
- <h3 class="heading">User needs</h3>
+  <h3 class="heading">Waste journey image Understanding the existing service</h3>
 
- <h3 class="heading">Hypothesis / What If's</h3>
- 
- <h3 class="heading">Waste journey image</h3>
- 
+ <h3 class="heading">User needs/ org needs/ policy</h3>
+
  <h3 class="heading">User journey maps</h3>
 
+ <h3 class="heading">Hypothesis / What If's</h3> -->
+ 
+ 
+ 
+
+<!-- 
  <blockquote>
-Cathy is an Interaction Designer but is demonstrating the skills and capabilities of a Service Designer.  Cathy is able to think strategically and understands the context she is working in. We have been working in a different way with the Waste Tracking Discovery, a way that has at times been uncomfortable for the organisation and the partner organisations, but Cathy is showing great resilience and supporting the Service Owner through this.  Cathy is very much leading the service design aspect of the waste tracking discovery, and now she has finally received the tools, I think we will see some great output coming from Cathy.
+Cathy Joined DEFRA as an Interaction Designer but is currently demonstrating the skills and capabilities of a Service Designer.  Cathy is able to think strategically and understands the context she is working in. Cathy is showing great resilience and supporting the Service Owner through discovery.  Cathy is very much leading the service design aspect of the waste tracking discovery, and now she has finally received the tools, I think we will see some great output coming from Cathy.
 
-Cathy is very user centred, creative and is a great advocate for agile and digital ways of working.  And is great at taking ideas and running with them (i.e. the HMRC Framing the Problem approach).
-
-Areas to improve on:
-
-I’d like to see Cathy be more vocal, although I am seeing this more as we progress through Discovery.  Cathy has the ability and the knowledge but sometimes lacks the confidence (in my opinion) to blow her own tru
+Cathy is very user centred, creative and is a great advocate for agile and digital ways of working.  Cathy is great at taking ideas and running with them.
 </blockquote> 
 <p class="quote-name">Feedback on service design role</p> -->
