@@ -14,7 +14,7 @@ done: true
 
 
 <h2 class="heading">My role</h2>
-I was part of the core project team based in Warrington, working with subject matter experts and stakeholders from SEPA, NIEA, DEFRA and NRW. As a service designer on the project I was responsible for:
+I was part of the core project team based in Warrington, working with subject matter experts and stakeholders from SEPA, NIEA, DEFRA and NRW. Working as a service designer on a 12 week discovery project I was responsible for:
 
  * Working with a user researcher to facilitate and observe interviews, site visits and workshops
  * Working with the service owner and stakeholders to frame the problem and produce a challenge statement
