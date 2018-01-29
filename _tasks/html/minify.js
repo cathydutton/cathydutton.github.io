@@ -14,7 +14,7 @@
 		// Return module
 		return function() {
 
-		  return gulp.src('docs/**/**.html')
+		  return gulp.src('_site/**/**.html')
 
 
 			.pipe(htmlmin({collapseWhitespace: true}))
