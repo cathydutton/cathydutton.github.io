@@ -25,18 +25,51 @@ I was part of the core project team based in Warrington, working with subject ma
  * Producing 'how might We' statements for potential Alpha projects
 
 
- <!-- <h3 class="heading">Chalenge statement</h3>
-  symptoms of a larger problem etc -  wants and challenge statement with service owner and stakeholders
 
-  <h3 class="heading">Waste journey image Understanding the existing service</h3>
+<h3 class="heading">Understanding the existing service</h3>
 
- <h3 class="heading">User needs/ org needs/ policy</h3>
+Paper sketches were used to capture conversations with subject matter experts around the current waste lifecycle. Images were used to highlight loopholes in policy, areas of lost data as well as duplicate reporting and paperwork.
+
+<section class="portfolio-images">
+<div class="portfolio-piece-wrapper-full">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/waste-tracking/service-sketch.jpg" class="portfolio-piece__img"  alt="Waste tracking existing service sketch">
+    </div>
+</div>
+</section>
+
+
+ 
+ <h3 class="heading">Framing the problem</h3>
+
+ After the initial broad research phase ss a team we began to narrow down the problems to be solved
+
+  "symptoms of a larger problem etc -  wants and challenge statement with service owner and stakeholders?
+
+ " What does the business want to achieve and why"
+
+  <section class="portfolio-images">
+<div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/waste-tracking/problem-statements.jpg" class="portfolio-piece__img"  alt="Waste tracking problem statements">
+    </div>
+</div>
+</section>
+
+At the end of the excersise we produced a Chalenge Statement for the remainder of the discovery project:
+
+ <blockquote>
+ Capture and make available in one place the most useful data on the movement &amp; transfer of ownership of waste 
+</blockquote>
+
+
+
+
+ <!-- <h3 class="heading">User needs/ org needs/ policy</h3>
 
  <h3 class="heading">User journey maps</h3>
 
  <h3 class="heading">Hypothesis / What If's</h3> -->
- 
- 
  
 
 <!-- 
