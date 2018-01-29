@@ -4,7 +4,7 @@ author: Cathy Dutton
 layout: post
 category: post
 ---
-When setting up a new web project getting things right from the beginning is hugely important. Using Sass, style sheets can now be split into more manageable chunks without adding extra http requests. The Bear boilerplate (created following <a href="http://www.cathydutton.co.uk/css/the-dreaded-front-end-framework" >this</a> earlier post) splits CSS into the following 5 sections&#8230;
+When setting up a new web project getting things right from the beginning is hugely important. Using Sass, style sheets can now be split into more manageable chunks without adding extra http requests. The Bear boilerplate (created following <a href="https://cathydutton.co.uk/css/the-dreaded-front-end-framework" >this</a> earlier post) splits CSS into the following 5 sections&#8230;
 
 <ul class="list">
   <li>
@@ -40,7 +40,7 @@ Below is the start up style.scss file used to pull in each sub file&#8230;
 /* ==========================================================================
 
   	Bear Scss Structure
- 	  Author: Cathy Dutton - http://www.cathydutton.co.uk
+ 	  Author: Cathy Dutton - https://cathydutton.co.uk
   	Version: 0.1.1
 
 

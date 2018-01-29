@@ -6,7 +6,7 @@ category: post
 ---
 Pop is a simple to use, responsive jQuery tooltip with css animations. The jQuery is written below and includes a click function as well a hover to support desktop and touch screen devices.
 
-<a href="http://www.cathydutton.co.uk/pop/" target="_blank" class="button">View demo</a>
+<a href="https://cathydutton.co.uk/pop/" target="_blank" class="button">View demo</a>
 
 ```
 $(document).ready(function () {
@@ -55,7 +55,7 @@ The HTML used in the example is also pasted below
 
 ```
 
-A <a href="http://www.cathydutton.co.uk/pop/" target="_blank">Demo</a> of the tooltip is available <a href="http://www.cathydutton.co.uk/pop/" target="_blank">here</a> and can be downloaded from <a href="https://github.com/cathydutton/Pop" target="_blank">GitHub</a> or viewed on <a href="http://codepen.io/cathydutton/pen/yctrI" target="_blank">CodPen</a>.
+A <a href="https://cathydutton.co.uk/pop/" target="_blank">Demo</a> of the tooltip is available <a href="https://cathydutton.co.uk/pop/" target="_blank">here</a> and can be downloaded from <a href="https://github.com/cathydutton/Pop" target="_blank">GitHub</a> or viewed on <a href="http://codepen.io/cathydutton/pen/yctrI" target="_blank">CodPen</a>.
 
 The sass used in the example is written below&#8230;
 

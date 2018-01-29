@@ -16,22 +16,22 @@ Below are some examples of recent designs utilising sidebars to create a clearer
   Beautiful Type
 </h3>
 
-<a href="http://beautifultype.net/" rel="nofollow"><img alt="Beautiful Type" src="http://www.cathydutton.co.uk/wp-content/uploads/2013/04/beautiful-type.jpg" /></a>
+<a href="http://beautifultype.net/" rel="nofollow"><img alt="Beautiful Type" src="https://cathydutton.co.uk/wp-content/uploads/2013/04/beautiful-type.jpg" /></a>
 
 <h3 class="heading">
   Pic Fresh
 </h3>
 
-<a href="http://www.picfresh.com.au/" rel="nofollow"><img alt="Pic Fresh" src="http://www.cathydutton.co.uk/wp-content/uploads/2013/04/pic-fresh.jpg" /></a>
+<a href="http://www.picfresh.com.au/" rel="nofollow"><img alt="Pic Fresh" src="https://cathydutton.co.uk/wp-content/uploads/2013/04/pic-fresh.jpg" /></a>
 
 <h3 class="heading">
   Astrel Creative
 </h3>
 
-<a href="http://www.astrelcreative.com/" rel="nofollow"><img alt="Astrel Creative" src="http://www.cathydutton.co.uk/wp-content/uploads/2013/04/astrel.jpg" /></a>
+<a href="http://www.astrelcreative.com/" rel="nofollow"><img alt="Astrel Creative" src="https://cathydutton.co.uk/wp-content/uploads/2013/04/astrel.jpg" /></a>
 
 <h3 class="heading">
   Carbonica
 </h3>
 
-<a href="http://www.carbonica.org/" rel="nofollow"><img alt="Carbonica" src="http://www.cathydutton.co.uk/wp-content/uploads/2013/04/carbonica.jpg" /></a>
+<a href="http://www.carbonica.org/" rel="nofollow"><img alt="Carbonica" src="https://cathydutton.co.uk/wp-content/uploads/2013/04/carbonica.jpg" /></a>

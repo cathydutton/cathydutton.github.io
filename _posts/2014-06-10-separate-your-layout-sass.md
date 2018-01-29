@@ -16,7 +16,7 @@ The layout file should be for structural styles only, building the wireframe of 
 
 <h2 class="heading">Example</h2>
 
-The example code below uses the Maze grid system to demonstrate. The example shows three layout blocks **.logo**, **.search** and **.social-share** within the row **.container**. Using the grid mixin each selector in the row is assigned a column span with all 3 adding up to 12. (More information on the grid set up can be found <a href="http://www.cathydutton.co.uk/css/maze-responsive-grid-framework" title="Maze - Sass grid system" target="_blank">here</a>).
+The example code below uses the Maze grid system to demonstrate. The example shows three layout blocks **.logo**, **.search** and **.social-share** within the row **.container**. Using the grid mixin each selector in the row is assigned a column span with all 3 adding up to 12. (More information on the grid set up can be found <a href="https://cathydutton.co.uk/css/maze-responsive-grid-framework" title="Maze - Sass grid system" target="_blank">here</a>).
 
 <header class="container">
 

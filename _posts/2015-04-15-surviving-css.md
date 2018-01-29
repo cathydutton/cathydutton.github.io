@@ -207,7 +207,7 @@ A much cleaner method is to separate the markup from the styling. Any grid width
 }
 ```
 
-The key benefit of this is keeping specificity low and the number of selectors down. More information on this approach to grid layouts can be found [here] (http://www.cathydutton.co.uk/maze-re-factored).
+The key benefit of this is keeping specificity low and the number of selectors down. More information on this approach to grid layouts can be found [here] (https://cathydutton.co.uk/maze-re-factored).
 
 <h3 class="heading">Use structural classes</h3>
 
