@@ -17,7 +17,7 @@
 
 		// Build paths
 		base: __dirname,
-		dist: plugins.path.join(__dirname, '_site'),
+		dist: plugins.path.join(__dirname, 'docs'),
 		assets: plugins.path.join(__dirname, 'assets'),
 		tasks: plugins.path.join(__dirname, '_tasks'),
 
@@ -62,7 +62,7 @@
 	Utility tasks
 	----------------------------------- */
 
-	// Clean _site
+	// Clean Docs
 	var clean = require('gulp-clean');
 
 	gulp.task('clean', function() {
@@ -157,7 +157,7 @@
 
 	// JEKYL SERVE
 	const browserSync = require('browser-sync').create();
-	const siteRoot = '_site';
+	const siteRoot = 'docs';
 
 	gulp.task('serve', () => {
 	  browserSync.init({
@@ -172,7 +172,7 @@
 	// Deploy
 	var ghPages = require('gulp-gh-pages');
 	gulp.task('deploy', function() {
-		return gulp.src('./_site/**/*')
+		return gulp.src('./docs/**/*')
 			.pipe(ghPages());
 	});
 
