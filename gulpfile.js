@@ -200,8 +200,8 @@
 		plugins.runSequence(['inject'], ['minify'] ,callback);
 	});
 
-	// git add dist && git commit -m "Initial dist subtree commit"
-	//git subtree push --prefix dist origin gh-pages
+	// git add _site && git commit -m "Initial dist subtree commit"
+	// git subtree push --prefix _site origin gh-pages
 
 	// Push
 	gulp.task('push', function(callback) {
