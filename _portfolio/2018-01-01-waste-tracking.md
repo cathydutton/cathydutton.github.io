@@ -25,7 +25,6 @@ I was part of the core project team based in Warrington, working with subject ma
  * Producing 'how might we' statements for potential Alpha projects
 
 
-
 <h3 class="heading">Understanding the existing service</h3>
 Paper sketches were used to capture conversations with subject matter experts around the current waste lifecycle. Images were used to highlight loopholes in policy, areas of lost data, duplicate reporting and excess paperwork.
 
@@ -38,13 +37,29 @@ Paper sketches were used to capture conversations with subject matter experts ar
 </section>
 
 
-<!--  <h3 class="heading">Framing the problem</h3>
+<h3 class="heading">Framing the problem</h3>
 
- After an initial phase of broad research as a team we began to list and sort through a series of problems
+After an initial phase of broad research as a team we began to list and sort through a series of problems
+
+
+problem statement - Determine what you are trying to accomplish (problem statement).
+
+
 
   "symptoms of a larger problem etc -  wants and challenge statement with service owner and stakeholders?
 
  " What does the business want to achieve and why"
+
+ Align their efforts toward a common goal
+Define what that goal is
+Care about about meeting the goal
+
+ <div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/waste-tracking/problem-statements.jpg" class="portfolio-piece__img"  alt="Waste industry problem statements">
+    </div>
+</div>
+</section>
 
 
 
@@ -52,7 +67,7 @@ At the end of the excersise we produced a Chalenge Statement for the remainder o
 
  <blockquote>
  Capture and make available in one place the most useful data on the movement &amp; transfer of ownership of waste 
-</blockquote> -->
+</blockquote> 
 
 
 
@@ -60,11 +75,28 @@ At the end of the excersise we produced a Chalenge Statement for the remainder o
 
  <h3 class="heading">User journey maps</h3>
 
+ * A way to visualize data in a simple and empathic way
+ * Journey maps make no attempt to represent the full complexity of a service
+ * a journey map shows one typical or particularly interesting instance of a service
+
+ <section class="portfolio-images">
+<div class="portfolio-piece-wrapper-full">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/waste-tracking/journey-map.jpg" class="portfolio-piece__img"  alt="Landfil user journey map">
+    </div>
+</div>
+</section>
+
+
  <h3 class="heading">Hypothesis / What If's</h3>  
+
+ When we want to test an assumption, we make it into a hypothesis. Building hypotheses will also help to expose gaps in your thinking.
+
+ <h3 class="heading">Outputs</h3>  
  
 
 
- <blockquote>
+<blockquote>
 Cathy Joined DEFRA as an Interaction Designer but is currently demonstrating the skills and capabilities of a Service Designer.  Cathy is able to think strategically and understands the context she is working in. Cathy is showing great resilience and supporting the Service Owner through discovery.  Cathy is very much leading the service design aspect of the waste tracking discovery, and now she has finally received the tools, I think we will see some great output coming from Cathy.
 
 Cathy is very user centred, creative and is a great advocate for agile and digital ways of working.  Cathy is great at taking ideas and running with them.
