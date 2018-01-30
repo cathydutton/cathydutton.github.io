@@ -71,7 +71,7 @@ Care about about meeting the goal
 
 
 
-<!--  <h3 class="heading">User needs/ org needs/ policy</h3>
+ <h3 class="heading">User needs/ org needs/ policy</h3>
 
  <h3 class="heading">User journey maps</h3>
 
