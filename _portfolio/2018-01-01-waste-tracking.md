@@ -37,7 +37,7 @@ Paper sketches were used to capture conversations with subject matter experts ar
 </section>
 
 
-<h3 class="heading">Framing the problem</h3>
+<!-- <h3 class="heading">Framing the problem</h3>
 
 After an initial phase of broad research as a team we began to list and sort through a series of problems
 
@@ -59,15 +59,15 @@ Care about about meeting the goal
         <img src="../assets/img/portfolio/waste-tracking/problem-statements.jpg" class="portfolio-piece__img"  alt="Waste industry problem statements">
     </div>
 </div>
-</section>
+</section> -->
 
 
 
-At the end of the excersise we produced a Chalenge Statement for the remainder of the discovery project:
+<!-- At the end of the excersise we produced a Chalenge Statement for the remainder of the discovery project:
 
  <blockquote>
  Capture and make available in one place the most useful data on the movement &amp; transfer of ownership of waste 
-</blockquote> 
+</blockquote>  -->
 
 
 
