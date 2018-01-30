@@ -18,6 +18,7 @@
                   '/index.html',
                   '/work-history.html',
                   '/offline.html',
+                  '/portfolio.html',
                   '/posts/css-myths.html',
                   '/posts/10-reasons-to-start-using-PostCSS-today.html',
                   '/posts/surviving-css.html',
