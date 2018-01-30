@@ -20,8 +20,8 @@ https://github.com/cathydutton
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>UpFront conference 2016</title>
-		<meta name="description" content="">
+		<title>It’s not Sass’s fault your CSS is sh*t</title>
+		<meta name="description" content="Desc">
 		<meta name="keywords" content="Front End Developer, UX, CSS, Sass, PostCSS, JavaScript">
 		<meta name="author" content="Cathy Dutton - https://cathydutton.co.uk" />
 		<link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
@@ -38,7 +38,7 @@ https://github.com/cathydutton
 
 		<!-- Prerender work page -->
 		<link rel="prerender" href="https://cathydutton.co.uk/portfolio.html">
-		<link rel="canonical" href="cathydutton.co.uk/posts/things-I-learned-at-Manchesters-UpFront-conference-20160.html">
+		<link rel="canonical" href="cathydutton.co.uk/posts/It-s-not-Sass-s-fault-your-CSS-is-sh-t.html">
 
 
 		
@@ -150,163 +150,370 @@ https://github.com/cathydutton
 <div class="content">
   <main id="main">
     <header role="banner" class="header">
-      <h1 class="heading heading__intro">UpFront conference 2016</h1>
-      <p class="heading heading--primary">03 Jun 2016</p>
+      <h1 class="heading heading__intro">It’s not Sass’s fault your CSS is sh*t</h1>
+      <p class="heading heading--primary">14 Mar 2017</p>
     </header>
 
 
-    <div class="highlight-quote"><p>On Friday the 27th of May I attended the front end developers conference UpFront in Manchester. There were 7 speakers along with 3 flash talks on a range of subjects including Accessibility, Design patterns, legacy JavaScript and component systems.</p>
+    <p>OVERLY COMPLEX MIXINS ARE WORSE THEN REPEATING SOMETHING 2 OR 3 TIMES - THERE HARDER TO MAINTAIN - SILLY VARIABLE NAMES</p>
 
-<p>Below are just a few of the key points I took away from these talks...</p></div>
+<p>Sass can be a great tool if used effectively, Variables, Mixins and Functions 
+create a great base for re-usable components and modular codeing. Sass can also speed up development times and make it easier to update a large code base.</p>
 
-<h2 id="accessibility-starts-with-design">Accessibility starts with design</h2>
+<p>Sass however is a tool not a language, if used incorrectly the end result will be bad CSS. As with all tools and frameworks you get out what you put in, this is why it is essentialy to have a strong CSS skill set before moving to Sass.</p>
 
-<p>Derek Featherstone spoke about web accessibility and techniques to create a better experiences for everyone. Much of this talk focused on the role design can play in creating inclusive user journeys.</p>
+<p>Sass doesn’t create bad CSS, bad developers do.</p>
 
-<h4 id="design-for-low-vision">Design for low vision</h4>
+<p>Sass backlash</p>
 
-<p>When designing interactive web components such as login areas or registration forms we should consider how the flow of the page could change for users with impaired vision as well as just for those with screen readers. By creating a flow that works at the default resolution as well as when zoomed can make the user journey more intuitive for everyone.</p>
+<p>Despite this Sass has received bad press for creating ridiculously long selectors…..</p>
 
-<h4 id="inclusive-call-to-actions">Inclusive call to actions</h4>
+<p>Nesting — nest pseudo elements and states not everything! use BEM, bad coders not sass. &amp; selector to help nest safely.</p>
 
-<p>We often produce designs that are intended to drive the desired response from a user. Accent colours for example can be used to make key buttons such as ‘Submit’ or ‘Continue’ stand out from less desired choices like ‘Cancel’ or ‘Go back’.</p>
+<p>Variables — Use a style guide to define all colours and fonts etc, a good site has max of 2 fonts and 6 colours. Creatins confusing partials, hard to edit with confidance</p>
 
-<p>An inclusive design should strive to create clearer distinctions between these calls to action. Using the same button example as above, layout, size or text could also be used to guide the user.</p>
+<p>too many variables become confusing and are never edited or re-used if people have no confidence in where they are being used.</p>
 
-<p><em>Good</em>
-<img src="../assets/img/buttons-two.png" alt="Button example good" title="Button example good" /></p>
+<p>body.editorial h1.tl-title {
+ margin-left: $doc-line-height<em>6;
+ margin-right: $doc-line-height</em>6;
+}</p>
 
-<p><em>Bad</em>
-<img src="../assets/img/buttons-one.png" alt="Button example bad" title="Button example bad" /></p>
+<p>A variable for every element?</p>
 
-<h4 id="tables">Tables</h4>
+<p>$infoText: #3a87ad !default;
+$infoBackground: #fff !default;
+$infoBorder: #bce8f1 !default;</p>
 
-<p>Complex data or information is often displayed in tables, these tables can become very difficult to read for users on smaller screens or who need to zoom in to read content. When laying out information tables designers should consider how to keep the information readable if the title cells are no longer on screen or all of the columns are not visible.</p>
+<p>$highlightText: #32bfed !default;
+$defaultText: #8f8f8f !default;
+$darkerText: #8B8B8B !default;
+$pageHeaderBg: #f9fafc !default;</p>
 
-<p>The most important message I took from this talk is that accessibility can not simply be added in at the development phase of a project. It has to be considered every step of the way and be a key part of the design process.</p>
+<p>For variations Sass colour functions could be used.</p>
 
-<h2 id="the-web-is-not-dead">The web is not dead</h2>
+<p>$blue-primary : #0060C1;
+$blue-secondary : #218afb;
+$blue-tertiary : #b7d9fe;
+$blue-quaternary : #004f93;</p>
 
-<p>Peter Gasston’s talk discussed the future of the Web amid threats from emerging technologies including native apps, closed platforms and messenger bots.</p>
+<p>Mixins — Overly specific short sighted solutions, cant grow with a site or company.</p>
 
-<h3 id="threats">Threats</h3>
+<p>Creates bloated code base</p>
 
-<p>The future of the web has come into question over recent years, a few of the reasons for this are listed below….</p>
+<p>@mixin gradient($from, $to) {
+ background: background: linear-gradient($from, $to);
+}</p>
 
-<ul>
-  <li>Centralised platforms such as Medium and Facebook.</li>
-  <li>App first design and development approaches.</li>
-  <li>Slow and poor performing websites.</li>
-</ul>
+<p>Args list, open ended future proof, re usable</p>
 
-<p>Despite these challenges the web is still hugely popular, Chrome’s mobile browser went from 4 million to 8 million downloads from November 2014 to November 2015. Both Flipkart and Myntra famously shut down there mobile sites and went with an App only approach only to later backtrack after suffering poor downloads and a loss of sales.</p>
+<p>@mixin linear-gradient($direction, $gradients…) {
+  background: linear-gradient($direction, $gradients…);
+}</p>
 
-<blockquote>
-  <p>“The best way to reach new customers is through the open web” - Jason Karaian.</p>
-</blockquote>
+<p>Firstly lets look at some key factors behind the Sass backlash…</p>
 
-<p>There are numerous emerging technologies and browser enhancements that can help to keep the web alive and thriving…</p>
+<p>Nesting* — Probably the most attacked of all the Sass features, over nesting can result in some pretty horrible selectors. In my experience nesting is one of the most commonly used features amongst developers new to Sass, perhaps because it’s easy to implement and can speed up development time.</p>
 
-<ul>
-  <li>
-    <p><em>Offline capabilities</em> - HTML5 introduced a number of features to make the offline web a reality including application cache, localStorage and web SQL &amp; indexed database.</p>
-  </li>
-  <li>
-    <p><em>Service Workers</em>  - A service worker is a script that is run by your browser in the background. The script creates opportunities to introduce new features including Push notifications, Geofencing and Background Sync.</p>
-  </li>
-  <li>
-    <p><em>Physical web</em> - The physical web enables quick and seamless interactions with physical objects and locations, bridging the gap between the digital and physical worlds.</p>
-  </li>
-  <li>
-    <p><em>WebAssembly</em> - WebAssembly is a binary format for the Web, allowing developers to write in a low-level programming language for Web browsers. WebAssembly provides low-level building blocks for developers so they can build without the restrictions that JavaScript imposes.</p>
-  </li>
-  <li>
-    <p><em>Web components</em> - Web Components are re-usable UI widgets. An existing Web Component can be used without writing code, simply by adding an import statement to an HTML page.</p>
-  </li>
-</ul>
+<p>LAZY DEVELOPERS NEST show old nav example with classes and show nested usage ( before etc)</p>
 
-<h4 id="progressive-web-apps">Progressive web apps</h4>
+<p>In the long run nesting can make a mess of your stylesheet, selectors become unnecessarily long and issues with specificity are created. Over nesting can also lead to increasing reliance on !important and complex partials that are difficult to edit.</p>
 
-<p>Progressive web apps are key to the survival of the web, they provide a viable alternative to native apps and have some key benefits. Progressive web apps look and behave exactly like native apps with all the features we have come to expect but without the need to deploy through an app store.</p>
+<p><strong>There are so many reasons why this is just plain wrong, from rendering performance to file-size performance. Just think about how many bytes this will add to your CSS. But, the odds are you may say:</strong></p>
 
-<p>Advantages of Progressive web apps include…</p>
+<p>But that’s not the only problem! Since your styles are so specific to the DOM, maintainability is now a problem.&lt;/strong&gt;</p>
 
-<ul>
-  <li>No installation required</li>
-  <li>Quicker/easier to deploy updates and fixes</li>
-  <li>No manual user updating</li>
-  <li>One code base across all devices and operating systems</li>
-  <li>Less space taken up on the users device</li>
-</ul>
+<p>nav {</p>
 
-<h2 id="pages-are-dead">Pages are dead</h2>
+<p>ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;</p>
 
-<p>So the web might not be dead just yet, but web pages, or the concept of them certainly should be. Charlotte Jackson discussed the transition from pages to patterns and the process of creating a pattern or asset library. Working in this way can have many benefits for a projects long term health.</p>
+<p>li { display: inline-block;</p>
 
-<p>To create a pattern library each section of a design is created alone without constraints. Working this way creates a series of flexible and reusable modules that can adapt to fit any space.</p>
+<p>a {
+ display: block;
+ padding: 6px 12px;
+ text-decoration: none;
+ }
+ }
+ }
+}</p>
 
-<p>For the pattern library to stand the test of time, each component needs a name that describes its function not its appearance.</p>
+<p>Output</p>
 
-<p><em>Good</em></p>
+<p>nav ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+nav ul li {
+ display: inline-block;
+}
+nav ul li a {
+ display: block;
+ padding: 6px 12px;
+ text-decoration: none;
+}</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="nc">.button-primary</span> <span class="p">{</span>
+<p><em>Mixins</em> — Mixins are a great time saver, which is perhaps the reason for there frequent use. A mixing is a handy way of re-using blocks of code without the hassle of re-writing everything. The issue however is that the CSS is output regardless of whether or not the Mixin is used. This makes the practice of creating mixn partials for every eventualty quite a dangerous one.</p>
 
-<span class="p">}</span>
-</code></pre>
-</div>
+<p>The Mixins code is also duplicated for each use adding bloat to the CS file.</p>
 
-<p><em>Bad</em></p>
+<p>@mixin error-message {
+ color: #f00;
+ border: 2px solid #fc0;
+}</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="nc">.button-blue</span> <span class="p">{</span>
+<p>.error-default {
+ @include error-message;
+}</p>
 
-<span class="p">}</span>
-</code></pre>
-</div>
+<p>.error-special {
+ @include error-message;
+ background-color: #fcc;
+}</p>
 
-<h4 id="benefits-of-working-with-pattern-libraries">Benefits of working with pattern libraries</h4>
+<p>output</p>
 
-<ul>
-  <li>Improved usability</li>
-  <li>Cleaner code base</li>
-  <li>Easier and faster to implement changes</li>
-  <li>Improved Consistency</li>
-  <li>Efficient training for new staff</li>
-  <li>Improved deployment processes</li>
-</ul>
+<p>.error-default {
+ color: #f00;
+ border: 2px solid #fc0;
+}</p>
 
-<h4 id="styleguides">Styleguides</h4>
-<p>This modular approach to design feeds directly into the development process of building re-usable component blocks. These components are stand alone blocks of code, that can be used in any location at any viewport.</p>
+<p>.error-special {
+ color: #f00;
+ border: 2px solid #fc0;
+ background-color: #fcc;
+}</p>
 
-<p>Creating a library of web modules in this way allows large scale organisations to improve consistency across multiple sites and platforms. This was discussed in more detail by Alice Bartlett along with techniques for implementing and maintaining these blocks of code.</p>
+<p><em>@extends</em> — The miss use of @extend can cause a lot of problems with selectors….</p>
 
-<h4 id="the-future">The future</h4>
+<p>As you may know, Sass is unable to extend an outer selector from within a media query. When doing so, the compiler simple crashes, telling you that you cannot do such a thing. Not great. Especially since media queries is almost all we do know.</p>
 
-<p>Emerging concepts such as Element Queries could further develop this approach, keeping all of the styling in one place and allowing the module to adapt its styling in a way that suits the content and not the page constraints or pre-set media queries.</p>
+<p>To make this real, let’s look at an actual CSS styling rule from the WordPress plugin WooCommerce:
+.product .single_add_to_cart_button, .cart .button, input.checkout-button.alt.button, .shipping-calculator-form .button, .multistep_step .button, #place_order.button, .single-product .single_add_to_cart_button.button.alt, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit, .woocommerce #content input.button, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button, .woocommerce-page #respond input#submit, .woocommerce-page #content input.button {
+ background-color: #605f5e;
+}</p>
 
-<h2 id="leave-it-better-than-you-found-it">Leave it better than you found it</h2>
+<p>.message {
+ border: 1px solid #ccc;
+ padding: 10px;
+ color: #333;
+}</p>
 
-<p>Rebecca Murphey’s talk centered around the common problem of working with legacy code and platforms. “Making it better without making it over” discussed different approaches when, for whatever reason starting again just isn’t an option.</p>
+<p>.success {
+ @extend .message;
+ border-color: green;
+}</p>
 
-<h4 id="guardrails">Guardrails</h4>
+<p>.error {
+ @extend .message;
+ border-color: red;
+}</p>
 
-<p>The first step when working with any code base, legacy or not should be to ensure all the necessary safety nets are in place to ensure nothing you commit can break the live app or website.</p>
+<p>.warning {
+ @extend .message;
+ border-color: yellow;
+}</p>
 
-<h4 id="plan-for-the-future">Plan for the future</h4>
+<p>output</p>
 
-<p>One the guardrails are in place you can work towards improving the quality of any new features or code. By adding a task runner for example, all future commits can be monitored and ran through any number of checks from code linting to standardising commit messages. Processes like this allow for the code base to be gradually improved upon without the need for wholesale changes.</p>
+<p>.message, .success, .error, .warning {
+ border: 1px solid #ccc;
+ padding: 10px;
+ color: #333;
+}</p>
 
-<p>Although heavily focused on Javascript the concepts discussed could also be applied to legacy CSS. By including visual regression testing in the build process we can check that CSS changes have not had any unwanted effects. Tools like Stylelint can then be used to ensure the new CSS meets a set level of standards. The linting process can be eventually rolled out to include all of the legacy code.</p>
+<p>.success {
+ border-color: green;
+}</p>
 
-<p>PostCSS can also be used to introduce modern CSS practices, without a full code rewrite. A key feature of PostCSS is its ability to be seamlessly integrated into existing projects. Working in this way opens up the possibility to introduce modern CSS practices such as Variables, Mixins, Functions and Element Queries without investing time in a full CSS re-write. By adding in these features the code base will become easier to work with and maintain moving forwards.</p>
+<p>.error {
+ border-color: red;
+}</p>
+
+<p>.warning {
+ border-color: yellow;
+}</p>
+
+<p>Nested extend</p>
+
+<p>a{
+ padding: 10px;
+ color: #333;
+}</p>
+
+<p>nav {</p>
+
+<p>ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;</p>
+
+<p>li { display: inline-block;</p>
+
+<p>a {
+ @extend a;
+ text-decoration: none;
+ }
+ }
+ }
+}</p>
+
+<p>Output</p>
+
+<p>a, nav ul li a {
+ padding: 10px;
+ color: #333;
+}</p>
+
+<p>Reasons to love Sass</p>
+
+<p>Functions</p>
+
+<p>Grids</p>
+
+<p>Speed</p>
+
+<p>A bad workman blames his tools</p>
+
+<p>Most of the issues mentioned above are not new, and were were not brought about solely by Sass. Issues with CSS bloat, bad selectors and repetitive code are commonly found in projects using vanilla CSS only.</p>
+
+<p>Examples of Bad CSS….</p>
+
+<p>Selectors such as First of Type equally dangerous if used incorrectly/ inaproprietly</p>
+
+<p>overly repetitive css — Redundancy</p>
+
+<p>Bad selectors — too specific etc — overspecificity</p>
+
+<p>Dangerous selectors header div etc</p>
+
+<p>Better html classes would prevent this</p>
+
+<p>A bad workman blames his tools</p>
+
+<p>You know your Sass is good when you spend most of the project writing CSS</p>
+
+<p>An even worse workman expects an out of the box open source system to fix all there problems.</p>
+
+<p>There is a tool for pretty much everything these days, from drag and drop web builders to automated task runners and pre processors. A lot of these tools are great time savers and can enhance a project or at the very least speed up/eliminate mundane processes.</p>
+
+<p>The problem with these tools is that developers can become reliant on them, or worst still not fully understand what the tool is doing.</p>
+
+<p>It is important to remember that each tool, framework or methodology have been developed to solve specific problems, sometime on specific projects. They may not therefore be the right solution for your project.</p>
+
+<p>Each project should have it’s own naming convention, grid system, methodology etc. That are tailored for that specific project and fulfil a very unique set of problems.</p>
+
+<p>Why we use open source — documentation, easy to hire new developers etc.</p>
+
+<p>How to fix — chose the closet mach for you and evolve/edit where nesacary.</p>
+
+<p>Your using Sass wrong</p>
+
+<p>Mixins</p>
+
+<p>Mixins are one of many Sass features to come under fire for outputting un savoury CSS. Thos isn’t always the case though. A good mixin is open ended and offers a wide coverage of use cases. A lot of mixins out there seem to do very specific things, with one or two arguments and code that could be written out just as quickly. A good mixin should be a time saver, outputting vendor prefixes for example, but that can be used in numerous instances not just once or twice within a project.</p>
+
+<p>@mixin gradient($direction, $list) { 
+ background: $orange;
+ background: -webkit-linear-gradient($direction, $list);
+ background: -moz-linear-gradient($direction, $list);
+ background: -o-linear-gradient($direction, $list);
+ background: -ms-linear-gradient($direction, $list);
+ background: linear-gradient($direction, $list);
+ 
+}</p>
+
+<p>@include gradient(left, $lista);</p>
+
+<h1 id="its-not-sasss-fault-your-code-sucks">It’s not Sass’s fault your code sucks!</h1>
+<p>#Dont blame Sass</p>
+
+<p>Sass usage</p>
+
+<p>The most commonly used Sass in day to day tasks are things like nesting, variables and extends, all the stuff that gets the bad press. If we eliminate those things most developers would probably find they tend to write very little Sass and a lot of original CSS.</p>
+
+<p>This does not mean Sass is not useful, more that it’s use is in the architecture of a project. The part where patterns and layouts are defined to be used throughout the remainder of a project with little or no fuss.</p>
+
+<p>Increased use of the term Vanilla CSS</p>
+
+<p>I’ve read a lot lately about the negative impact Sass can have on style sheets. There have been a lot of features discussed as things Front end developers should stay away from to keep their CSS clean.</p>
+
+<p>In part I agree with this view, Sass used badly can certainly have a destructive impact. However the benefits of properly integrating Sass into your workflow far out way the drawbacks.</p>
+
+<p>nav {</p>
+
+<p>ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;</p>
+
+<p>li { display: inline-block;</p>
+
+<p>a {
+ display: block;
+ padding: 6px 12px;
+ text-decoration: none;
+ }
+ }
+ }
+}</p>
+
+<p>nav ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+nav ul li {
+ display: inline-block;
+}
+nav ul li a {
+ display: block;
+ padding: 6px 12px;
+ text-decoration: none;
+}</p>
+
+<h3 id="sass-love">Sass love</h3>
+
+<p>Despite all of the issues discussed above, Sass is still a powerful and incredibly useful tool. The ability to calculate widths or text spacing from a set value allows wholesale changes to implemented with one variable change. Scaling a website built with Sass is much simpler and quicker to achieve.</p>
+
+<p>Percentages, ( wouldn’t want to manually calculate grids) maths (vertical rhythm) variables if used properly</p>
+
+<h3 id="benefits-of-sass">Benefits of Sass…</h3>
+
+<p>even Vanilla CSS can create issues in the wrong hands (last child, first child, first of type etc, ) not scalable!</p>
+
+<p>Aids scaleability</p>
+
+<p>variables</p>
+
+<p>functions</p>
+
+<p>maths</p>
+
+<p>Use case…</p>
+
+<p>Grid</p>
+
+<h3 id="summery">Summery</h3>
+
+<p>In summery Sass does not create bad code, bad developers do.</p>
+
+<p>It’s not only Sass that gets the blame for out of control CSS, people even on occasion blame css and it’s lack of scope.</p>
+
+<p>Cascade</p>
 
 
     <section>
       <div class="share-page">
     <h3>Share this post</h3>
     <p>Share this on this post on Twitter, Facebook or Google</p>
-    <a href="https://twitter.com/intent/tweet?text=UpFront conference 2016&url=cathydutton.co.uk/posts/things-I-learned-at-Manchesters-UpFront-conference-20160.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=cathydutton.co.uk/posts/things-I-learned-at-Manchesters-UpFront-conference-20160.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
-    <a href="https://plus.google.com/share?url=cathydutton.co.uk/posts/things-I-learned-at-Manchesters-UpFront-conference-20160.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
+    <a href="https://twitter.com/intent/tweet?text=It’s not Sass’s fault your CSS is sh*t&url=cathydutton.co.uk/posts/It-s-not-Sass-s-fault-your-CSS-is-sh-t.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=cathydutton.co.uk/posts/It-s-not-Sass-s-fault-your-CSS-is-sh-t.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
+    <a href="https://plus.google.com/share?url=cathydutton.co.uk/posts/It-s-not-Sass-s-fault-your-CSS-is-sh-t.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
 </div>
 
     </section>
@@ -315,7 +522,7 @@ https://github.com/cathydutton
       <ul class="page-navigation">
   
   <li class="button--page-navigation__prev">
-    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/an-introduction-to-postcss.html">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/going-back-to-design.html">
       <!-- <span class="visually-hidden">Go to the previous post</span> -->
       <svg class="button--page-navigation__svg" version="1.1" role="presentation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
@@ -326,7 +533,7 @@ https://github.com/cathydutton
   
   
   <li class="button--page-navigation__next">
-    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/have-no-fear.html">
+    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/Jekyll-Gulp-and-Github.html">
       <!-- <span class="visually-hidden">Go to the next post</span> -->
       <span class="page-navigation-title">Go to the next post</span>
       <svg class="button--page-navigation__svg" role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >

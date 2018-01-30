@@ -10,5 +10,5 @@ description: "The page you were trying to view does not exist"
 	</header>
 
 <section>
-		<p class="heading-two">Sorry, but the page you were trying to view does not exist. <a href="/" title="Take me to the home home">Go to the home page</a></p>
+		<p class="heading-two">Sorry, but the page you were trying to view does not exist. <a href="/" title="Take me to the home page">Go to the home page</a></p>
 	</section>
