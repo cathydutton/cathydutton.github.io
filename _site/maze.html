@@ -169,4 +169,10 @@ var d = document, s = d.createElement('script');
 s.src = '//get-maze.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
-})();</script></body></html>
+})();</script><script>if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/serviceWorker.js').then(function(registration) {
+        }).catch(function(err) {
+        });
+      });
+    }</script></body></html>

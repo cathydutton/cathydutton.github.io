@@ -145,7 +145,13 @@ Theme - Typography and colour schemes etc
     s.src = '//cathyduttoncouk.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
-  })();</script><!-- <script id="dsq-count-scr" src="//cathydutton.disqus.com/count.js" async></script> --><!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> --><!-- New blog --><!-- <ins class="adsbygoogle"
+  })();</script><script>if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+        }).catch(function(err) {
+        });
+      });
+    }</script><!-- <script id="dsq-count-scr" src="//cathydutton.disqus.com/count.js" async></script> --><!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> --><!-- New blog --><!-- <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-5080086399779144"
      data-ad-slot="8794319910"
