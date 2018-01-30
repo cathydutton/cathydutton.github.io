@@ -15,6 +15,7 @@
             .then(function (cache) {
                 return cache.addAll([
                   '/',
+                  '/index.html',
                   '/work-history.html',
                   '/offline.html',
                   '/posts/css-myths.html',
