@@ -5,6 +5,9 @@ layout: post
 date:   2017-03-19
 ---
 
+Started doing some upgradeds to my site, adding a service wroker and updating my portfolio etc, began to look at my CSS, the site is intended to be quite minimal, no fuss etc.what was I actualy using Sass for? 
+This is not an anti Sass post, more a review of wether it was adding any value to my site, or just an extra level of complexity.
+
 ASKED ABOUT THE USES OF POSTCSS, STRUGGLE TO GIVE GOOD ANSWERS OTHER THEN EASY TO BUID A PLUGIN AND CAN ADD THE FEATURES OF SASS. 
 It is however a good way to wean your self of processors and back to vanilla CSS providing fall backs in an easy to manage way.
 
