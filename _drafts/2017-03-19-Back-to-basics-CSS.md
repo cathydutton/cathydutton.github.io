@@ -5,6 +5,10 @@ layout: post
 date:   2017-03-19
 ---
 
+ASKED ABOUT THE USES OF POSTCSS, STRUGGLE TO GIVE GOOD ANSWERS OTHER THEN EASY TO BUID A PLUGIN AND CAN ADD THE FEATURES OF SASS. 
+It is however a good way to wean your self of processors and back to vanilla CSS providing fall backs in an easy to manage way.
+
+
 
 Back to basics because the basics have moved on CSS is now more advanced. Grid variables etc. 
 
