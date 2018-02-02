@@ -40,7 +40,7 @@ Paper sketches were used to capture conversations with subject matter experts ar
 
 <h3 class="heading">Framing the problem</h3>
 
-After an initial broad phase of user research we began to list and prioratise a series of problem statements in order align efforts and define a problem statement.
+After an initial broad phase of user research we began to list and prioratise a series of problem statements in order align efforts and define he scope of the service.
 
 Problem:
 
@@ -68,7 +68,13 @@ At the end of the excersise we produced a Chalenge Statement for the remainder o
 
 
 <!-- 
- <h3 class="heading">User needs/ org needs/ policy</h3> -->
+ <h3 class="heading">User needs/ org needs/ policy</h3> 
+
+Spot opertunatys
+Remove complexity
+
+
+-->
 
  <h3 class="heading">User journey maps</h3>
 
