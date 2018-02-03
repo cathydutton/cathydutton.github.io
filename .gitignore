@@ -1,7 +1,8 @@
 node_modules/
 .sass-cache
 .jekyll-metadata
-.publish/	
+.publish/
+.publish	
 _site/	
 _site	
 assets
