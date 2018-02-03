@@ -20,7 +20,7 @@ https://github.com/cathydutton
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Surviving CSS</title>
+		<title>Cut the cord</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="Front End Developer, UX, CSS, Sass, PostCSS, JavaScript">
 		<meta name="author" content="Cathy Dutton - https://cathydutton.co.uk" />
@@ -38,7 +38,7 @@ https://github.com/cathydutton
 
 		<!-- Prerender work page -->
 		<link rel="prerender" href="https://cathydutton.co.uk/portfolio.html">
-		<link rel="canonical" href="cathydutton.co.uk/posts/surviving-css.html">
+		<link rel="canonical" href="cathydutton.co.uk/posts/Back-to-basics-CSS.html">
 
 
 		
@@ -150,344 +150,221 @@ https://github.com/cathydutton
 <div class="content">
   <main id="main">
     <header role="banner" class="header">
-      <h1 class="heading heading__intro">Surviving CSS</h1>
-      <p class="heading heading--primary">15 Apr 2015</p>
+      <h1 class="heading heading__intro">Cut the cord</h1>
+      <p class="heading heading--primary">19 Mar 2017</p>
     </header>
 
 
-    <p><a href="https://medium.com/@cathy_dutton/surviving-css-be306ef3de6d#.k8czem45b">Article originally posted on medium.</a></p>
+    <p>Started doing some upgradeds to my site, adding a service wroker and updating my portfolio etc, began to look at my CSS, the site is intended to be quite minimal, no fuss etc.what was I actualy using Sass for? 
+This is not an anti Sass post, more a review of wether it was adding any value to my site, or just an extra level of complexity.</p>
 
-<h4 class="heading">A few simple techniques to keep your CSS in check...</h4>
+<p>ASKED ABOUT THE USES OF POSTCSS, STRUGGLE TO GIVE GOOD ANSWERS OTHER THEN EASY TO BUID A PLUGIN AND CAN ADD THE FEATURES OF SASS. 
+It is however a good way to wean your self of processors and back to vanilla CSS providing fall backs in an easy to manage way.</p>
 
-<p>The ultimate goal of any CSS is to style the intended element with selectors that do not introduce side effects to the rest of the code base. Seemingly a simple request, but on large projects that lack structure or guidelines this task can lead to some pretty ugly usage of CSS.</p>
+<p>Back to basics because the basics have moved on CSS is now more advanced. Grid variables etc.</p>
 
-<blockquote> <i>“…the single hardest problem in CSS: Getting your rules to match the elements you want, without them accidentally matching the elements you don’t.”</i>
+<p>Paragraph on not wanting to tie fall backs in for grid put can post Css do that for me?</p>
 
-Philip Walton, Engineer at Google </blockquote>
+<p>Freshen up, 
+grid 
+variables
+Includes - Can this be done in CSS?
+etc
+Nesting would be missed but you should only nest states of selectors (hover focus etc) and really we shouldnt need many of those if default styles are inherited.</p>
 
-<p>We have all at some point been forced to write the kind of CSS that would drive any good developer crazy.</p>
+<p>Anamaition in Sass is still good, but you can achieve this in SVG aswell - give examples of both! In codepen</p>
 
-<p>Specific CSS like this…</p>
+<p>. So what am I using sass for. Mixinns, nesting, functions. How else can we do that, is it worth it, post CSS</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>#mediaGalleryHolder #mediaGallery .mediaGalleryImage {               
-   border: 1px solid #e3e3e3;
-   width: 100%;
-}
-</code></pre>
-</div>
+<p>When I first heard about Sass I was sceptical, CSS could already do what I needed…. But then I realised the benefits and posabilitiees available via mixing=ns, functions and incleds!!!</p>
 
-<p>Contradictory CSS like this…</p>
+<p>I am a  huge fan of Sass, and the posabilities it brings to CSS. Loops, functions and mixins are some of my faveoutite features, none of which are close to being available in CSS.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.fl {
-   float: none;
-}
-</code></pre>
-</div>
+<p>https://codepen.io/cathydutton/pen/FDipu</p>
 
-<p>or unnecessary correctional CSS like this..</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.sidebar {
-   border: 0;
-   background: transparent;
-}
-</code></pre>
-</div>
-
-<p><i>Specific selectors</i></p>
-
-<p>Using long, specific selectors is sometimes viewed as way of safe guarding a code base. If the target selector is preceded by one or two parent selectors the risk of accidentally effecting existing code is reduced. Adding extra selectors however reduces the efficiency of the CSS and will cause problems with older browsers that have selector limits. They could also hinder future development, forcing equally specific selectors or !important to be used to override styles.</p>
-
-<p><i>Correctional CSS</i></p>
-
-<p>If you have to remove unwanted styles from an element the chances are there is a previously added selector which is too generic and therefor effecting additional elements unintentionally.</p>
-
-<p><i>Contradicting selectors and properties</i></p>
-
-<p>Although not necessarily adding to CSS bloat, having CSS properties which contradict the selectors they are applied to is not good practice. Contradicting styles can make a code base confusing or difficult to work with.</p>
-
-<p><i>Bade code creates bad code</i></p>
-
-<p>In most cases selectors like the above examples are not written out of choice, but because they are needed to overwrite poorly written existing CSS or markup. Because of this it is hugely important to plan each project thoroughly, defining coding patterns, naming conventions and style guides before the build begins.</p>
-
-<p>This article will look at a few tips to help keep your CSS in check and to avoid ever having to write such contradictory, correctional or overly specific selectors.</p>
-
-<h2 class="heading">Keep your markup opinion free</h2>
-
-<p>All style changes should be able to be carried out using only CSS. To achieve this the site markup needs to remain free of opinions or assumptions about the sites appearance.</p>
-
-<p>Keeping style related classes out of the markup will also help to keep the CSS readable and remove the need to use specific selectors to override styling. This is turn provides better performance and increases usability.</p>
-
-<p><i>HTML</i></p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;button class="button-primary"&gt;Checkout&lt;/button&gt;
-&lt;button class="button-secondary"&gt;More Information&lt;/button&gt;
-&lt;button class="button-primary"&gt;Log In&lt;/button&gt;
-</code></pre>
-</div>
-
-<p><i>CSS</i></p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.button-primary {
-   @extend %button-primary;
-}
-.button-secondary {
-   @extend %button-secondary;
-}
-</code></pre>
-</div>
-
-<p>In this example there are two button styles each with a different background colour. If, at a later date it is decided that the Log In Button should be the primary colour instead of the secondary colour, a new selector would need to be added that has more specificity than the button-primary selector.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.account-drop-down .button-primary {
-   @extend %button-secondary;
-}
-</code></pre>
-</div>
-
-<p>By using content classes for the markup and style selectors in the CSS, updates like this can be carried out in a more logical manor.</p>
-
-<p><i>HTML</i></p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;button class="button-checkout"&gt;Checkout&lt;/button&gt;
-&lt;button class="button-information"&gt;More Information&lt;/button&gt; &lt;button class="button-log-in"&gt;Log In&lt;/button&gt;
-</code></pre>
-</div>
-
-<p><i>CSS</i></p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.button-checkout {
-   @extend %button-primary;
-}
-.button-information {
-   @extend %button-secondary;
-}
-.button-log-in {
-   @extend %button-secondary;
-}
-</code></pre>
-</div>
-
-<h2 class="heading">Be wary of helper (Utility) classes</h2>
-
-<p>A utility class applies a single rule or a universal pattern to a web element. Utility classes are intended to be as reusable as possible, and should therefore be used throughout a sites markup. Below are a few examples of Utility Classes…</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.float-left,
-.align-center
-.font-large
-.list-unstyled
-.clearfix
-</code></pre>
-</div>
-
-<p>These classes can be useful when used with projects that have fresh independent markup. They provide a way for a site to quickly take on a structure without the need to write any new CSS. On larger projects however the markup often stays in tact and/or is used across multiple site views. In these cases utility classes become more of a hinderance then a help.</p>
-
-<p>For example a website that uses a common code base may be tied to certain markup. If utility classes have been used within this markup they can create issues as the site evolves. Layout or design changes may force us to override these utility classes in theme specific CSS, resulting in code like the examples below…</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.text-left {
-   text-align: center;
-}
-.float-left {
-   float: none;
-}
-</code></pre>
-</div>
-
-<h3 class="heading">3 Avoid grid related markup</h3>
-
-<p>Grid based markup should be avoided at all costs, a common pitfall of responsive development once implemented the markup can be very difficult to work with or to remove.</p>
-
-<p>Class names like .column-span-4 refer to the desktop version of a site, this often leads to some questionable CSS appearing within media queries…</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.column-span-4 {
-   width: 23%;
-   float: left;
-   margin-right: 2%;
-}
-@media (max-width: 767px) {
-   .column-span-4 {
-      width: 98%;
-   }
-}
-</code></pre>
-</div>
-
-<p>CSS like this does not just fail to make sense, it also groups numerous sections of content together and forces them to respond in the same manor. This can lead to the use of very specific selectors in order to allow different sections of content to respond differently.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.column-span-4 {
-   width: 23%;
-   float: left;
-   margin-right: 2%;
-}  
-@media (max-width: 767px) {
-.news-feed .column-span-4 {
-      width: 48%;
-   }
-
-   .latest-testimonials .column-span-4 {
-      width: 100%;
-   }
-}
-</code></pre>
-</div>
-
-<p>These extra selectors prevent code from being re-used and reduce efficiency. Some frameworks including Bootstrap attempt to resolve this issue by adding more classes to each element to determine it’s size at each breakpoint.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;div class="col-sm-4 col-md-4 col-lg-4"&gt;
-</code></pre>
-</div>
-
-<p>The above approach will improve the site’s CSS but leaves the HTML looking messy, particularly if you go on to add more classes for JavaScript use.</p>
-
-<p>A much cleaner method is to separate the markup from the styling. Any grid widths can then be applied using a mixin keeping each element unique allowing for individual styling and individual targeting via media queries.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.news-feed,
-.latest-testimonials {
-   @include grid(span-4);
-}
-@media (max-width: 767px) {
-
-   .news-feed {  
-      @include grid(span-6);
-   }
-   .latest-testimonials {
-      @include grid(span-12);
-   }
+<div class="highlighter-rouge"><pre class="highlight"><code>@for $i from 1 through 120 {
+  
+  [data-left="#{$i}"]:before {
+    @include fade;
+    @include rotate (#{$i}deg);
+  }
+  [data-right="#{$i}"]:before {
+    @include fade;
+    @include rotate (#{$i}deg);
+  }
 
 }
 </code></pre>
 </div>
 
-<p>The key benefit of this is keeping specificity low and the number of selectors down. More information on this approach to grid layouts can be found [here] (https://cathydutton.co.uk/maze-re-factored).</p>
+<p>https://codepen.io/cathydutton/pen/vEeORQ</p>
 
-<h3 class="heading">Use structural classes</h3>
-
-<p>Keeping your layout and theme selectors separate is good practice for many reasons. In CSS terms keeping structure separate ensures the layout and theme do not become intertwined, allowing structural changes to be applied in a much quicker and simpler manor.</p>
-
-<p>Keeping structural classes free of presentational properties such as borders, background, colours and padding also helps ensure that those classes can be re-used throughout a project.</p>
-
-<p><i>Example</i></p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.sidebar {
-   width: 23%;
-   float: left;
-   margin-right: 2%;
-   background: #f3f3f3;
-   border: #e3e3e3;
-   padding: 10px;
-}
+<div class="highlighter-rouge"><pre class="highlight"><code>@function text-color($list){
+   $text-list:();
+   @each $color, $percentage in $list {   
+    @if lightness($color) &gt; 50% {
+     $text-list:append($text-list, $black $percentage, comma);    
+    } @else {
+        $text-list:append($text-list, $white $percentage, comma);
+     }        
+	}
+  @return $text-list;
+} 
 </code></pre>
 </div>
 
-<p>By applying these presentational styles to the sidebar we restrict the design of future pages. Any additions to the project that wish to include a sidebar without a border or background would have to override the existing CSS.</p>
+<p>Despite the obvious benefits and unique features of Sass I have found myself questioning why I seem to have become so dependant on it for all my front end projects.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.account-section .sidebar {
-   background: transparent;
-   border: 0; padding: 0;
-}
-</code></pre>
-</div>
+<p>It’s not about wether pre-processors still serve a purpose, but more what problems am I solving by using it for this project?</p>
 
-<p>Creating page specific CSS like this is not maintainable, particularly on large projects. Any presentational properties should be applied to the elements inside the sidebar, creating modular blocks that can be included on any page.</p>
+<p>Includes
+Grid
+variables
+Mixins
+Nesting
+media queries</p>
 
-<h3 class="heading">Have, and stick to a naming convention</h3>
+<hr />
 
-<p>As mentioned earlier a key reason behind the use of long and specific selectors is the fear of introducing unwanted style changes.</p>
+<p>I started to look at why and how I was using it, more specificaly what ptoblems was it solving?</p>
 
-<p>When a team of developers are working on one project it can be difficult to have complete confidence that your selectors haven’t been used elsewhere. Having a naming convention can help remove this fear and enable elements to be targeted directly instead of through nesting.</p>
+<p>CSS preprocessors have become a standard feature of front end applications. Features provided by the likes of Sass, Scss, Less, Stylus and Rework allow CSS to be approached in ways not previously possible. Variables allow for the re-use of properties, mixins help output DRY CSS and functions allow for calculations to be made.</p>
 
-<p><i>Bad Example</i></p>
+<p>The questions I have started to ask myself lately however are:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>#mediaGalleryHolder #mediaGallery .mediaGalleryImageHolder img {           
-   border: 1px solid #e3e3e3;
-   width: 100%;
-}
-</code></pre>
-</div>
+<ul>
+  <li>What problems am I solving with Sass?</li>
+</ul>
 
-<p><i>Good Example</i></p>
+<p>and:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.media-gallery__image {
-   width: 100%;
-   border: 1px solid #e3e3e3;
-}
-</code></pre>
-</div>
+<ul>
+  <li>Do I still need to use a CSS preprocessor?</li>
+</ul>
 
-<p>Working in this way will help keep the CSS output modular and lightweight. By targeting elements individually the styling will also be applied correctly regardless of page positioning, body classes or parent selectors.</p>
+<h2 id="why-i-fell-in-love-with-sass">Why I fell in love with Sass</h2>
 
-<p><i>Nested navigation example</i></p>
+<p>I started to experiment with Sass around 5 or 6 years ago, and absolutely loved it.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.main-nav {
-   background: #0060C1;
-   li {
-      float: left
-      a {
-         padding: 10px;
-         display: block;
-         }
-   }
-}
-</code></pre>
-</div>
+<h3 id="variables">Variables</h3>
 
-<p><i>Individually targeted navigation</i></p>
+<p>Variables allowed me to set property values in one place making branding and theme creation much simpler.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.main-nav {
-   background: #0060C1;
-}
-.main-nav__list-item {
-   float: left
-}
-.main-nav__link {
-   padding: 10px;
-   display: block;
-}
-</code></pre>
-</div>
+<h3 id="mixins">Mixins</h3>
 
-<h4 class="heading">Avoid DOM specific styling</h4>
+<p>I used mixins to simplify the process of using patterns in my CSS. The ability to pass options to a mixin allows the code to remain flexible whilst removing the need to re-write lines of CSS.</p>
 
-<p>Any styling relating to an elements positioning is risky, particularly in responsive websites. A very basic example of this would be the use of a ‘last-column’ class. Classes like this are often used to solve margin issues in grid layouts.</p>
+<h3 id="functions">Functions</h3>
 
-<p><i>HTML</i></p>
+<p>Functions provided a way to use logic in CSS probably one of the most powerful features of Sass. By using functions to create flexible grid layouts the reliance on markup classes was removed, as well as the need for manual calculations.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;div class="content-wrapper"&gt;
-   &lt;div class="content-block"&gt;&lt;/div&gt;
-   &lt;div class="content-block"&gt;&lt;/div&gt;
-   &lt;div class="content-block"&gt;&lt;/div&gt;
-   &lt;div class="content-block last-column"&gt;&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-</div>
+<h3 id="nesting">Nesting</h3>
 
-<p><i>CSS</i></p>
+<p>Nesting allowed for groups of classes to be grouped together forming a dependance tree and form of scoping. This is particularly useful for states such as anchors with active, hover and focus states.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.content-block {
-   @include grid(span-3);
-}
-.last-column {
-   margin-right: 0;
-}
-@media (max-width: 767px) {
-   .content-block {
-      @include grid(span-6);
-   }
-}
-</code></pre>
-</div>
+<h3 id="sass-backlash">Sass backlash</h3>
 
-<p>This technique will create problems at the breakpoint as the content blocks stack into two rows of two. At this point the 4th block will behave differently to the 2nd block despite both being the last column in their respective rows.</p>
+<p>There was of course the inevitable backlash against preprocessors:</p>
 
-<p>CSS3 selectors like X &gt; Y, X ~ Y, X:nth-of-type(n) also rely on markup positioning and introduce unnecessary risk.</p>
+<ul>
+  <li>The code output was not always as clean as it could have been</li>
+  <li>Over nesting created a reliance on DOM structure</li>
+  <li>Variables became unmanageable</li>
+  <li>Developers become reliant on a tool instead of the language</li>
+</ul>
+
+<p>Leading to articles like this “LINK” and “LINK2”</p>
+
+<p>Overall the pro’s outweighed the cons’s and like most front end developers my personal sites are all built using Sass.</p>
+
+<p>If  harnessed correctly Sass still offered more advantages then disadvantages and allowed me to solve some common CSS problems.</p>
+
+<h2 id="so-what-problems-am-i-solving-with-sass">So what problems am I solving with Sass?</h2>
+
+<!-- I looked at how and more importantly why I was using Sass. The four main things that came you cross projects were...  -->
+
+<h3 id="includes---sass-partials-to-break-down-css-into-managanble-chunks---no-more-2500-line-css-files-to-scroll-through">2) Includes - Sass Partials to break down CSS into managanble chunks - no more 2500 line CSS files to scroll through</h3>
+
+<h3 id="re-usable-properties">1) Re-usable properties</h3>
+
+<p>https://css-tricks.com/making-custom-properties-css-variables-dynamic/
+https://vgpena.github.io/winning-with-css-variables/</p>
+
+<p>Sass provides the extra functionality of color functions, meaning we can reduce the number of color variables. These are particularly useful when creating hover or active states.</p>
+
+<p>Show example of hover state code</p>
+
+<p>Show example of this with extra color values for CSS custom properties.</p>
+
+<p>Layout has been a longstanding source of frustration with CSS. Moving from table layouts to floated elements and even flex box there has never been an accepted standard convention. particularly for fluid/ responsive layouts. A Huge plus point of working with a pre processor was the ability to create mixing or functions to handle layout in a manageable way.</p>
+
+<p>Show example</p>
+
+<p>Easy markup to calculate percentage widths</p>
+
+<p>One of the first partials I create is always the grid partial, I even created a framework as later a PostCSS plugin for my grid. But is this still necessary?</p>
+
+<p>With the browser support already in place CSS grid can remove the need to rely on pre processors to perfect your layout CSS</p>
+
+<p>Show example</p>
+
+<p>From custom properties…</p>
+
+<p>However this can be resolved using CSS colour functions, like hsl() - explaining more and other functions. These CSS functions require an extra variable not necessary with Sass but avoid having to find values for colours and allow for easy iterations and consistency between colour changes.</p>
+
+<p>https://drafts.csswg.org/css-color/.</p>
+
+<p>Colour mod function - not great at support</p>
+
+<p>rgba() colour function
+https://css-tricks.com/the-power-of-rgba/</p>
+
+<p>CSS4 color() provides color transformations usually only possible with a processor.</p>
+
+<p>https://cloudfour.com/thinks/building-themes-with-css4-color-features/</p>
+
+<p>Could actually be better then variables and color transformations in Sass.</p>
+
+<p>Again PostCSS can supply the fallback options removing reliance on pre processors.</p>
+
+<h4 id="layout--">2) Layout -</h4>
+
+<h4 id="media-queries--">3) Media queries -</h4>
+
+<h4 id="typography--">4) Typography -</h4>
+
+<h4 id="is-this-still-the-case">Is this still the case?</h4>
+
+<h3 id="legacy-browsers">Legacy browsers</h3>
+
+<p>This may be the case for modern browsers, but what if you need to support older versions, or use browser specific features?</p>
+
+<p>PostCSS can help with the transition without creating a reliance on bolt on languages.</p>
+
+<h3 id="become-less-reliant-on-sass-write-css-and-phase-out-postcss-as-and-when-css-gets-better">Become less reliant on Sass, write CSS and phase out PostCSS as and when CSS gets better</h3>
+
+<p>Use Gulp to post process - less tying - free to remove from just one fie once complete
+Autoprefixer</p>
+
+<p>Now as features become more widley supported only the gulp file and the post processing needs to. The CSS remains the same, creating a more stable codebase.</p>
+
+<h3 id="summary">Summary</h3>
+
+<p>Its about removing relience and building future proof code (PostCSS and webpack/gulp)</p>
+
+<p>This article is not about abandoning Sass because of the poorly output code or any of the other backlash articles. I still think Sass is an amazing tool, I also still think it is capable of producing CSS to solve real problems. My point is more that the original problems that Sass helped me to solve are no longer problems. CSS has moved on and can handle my needs by itself. I would still use Sass for any bespoke CSS needs or complex pieces, but in my day to day work it’s inclusion is harder and harder to justify.</p>
+
+<h3 id="using-postcss-as-a-polyfill">Using PostCSS as a polyfill</h3>
+
 
 
     <section>
       <div class="share-page">
     <h3>Share this post</h3>
     <p>Share this on this post on Twitter, Facebook or Google</p>
-    <a href="https://twitter.com/intent/tweet?text=Surviving CSS&url=cathydutton.co.uk/posts/surviving-css.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=cathydutton.co.uk/posts/surviving-css.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
-    <a href="https://plus.google.com/share?url=cathydutton.co.uk/posts/surviving-css.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
+    <a href="https://twitter.com/intent/tweet?text=Cut the cord&url=cathydutton.co.uk/posts/Back-to-basics-CSS.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=cathydutton.co.uk/posts/Back-to-basics-CSS.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
+    <a href="https://plus.google.com/share?url=cathydutton.co.uk/posts/Back-to-basics-CSS.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
 </div>
 
     </section>
@@ -496,7 +373,7 @@ Philip Walton, Engineer at Google </blockquote>
       <ul class="page-navigation">
   
   <li class="button--page-navigation__prev">
-    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/a-dynamic-gradient-text-function-in-sass.html">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/manging-front-end-developers.html">
       <!-- <span class="visually-hidden">Go to the previous post</span> -->
       <svg class="button--page-navigation__svg" version="1.1" role="presentation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
@@ -507,7 +384,7 @@ Philip Walton, Engineer at Google </blockquote>
   
   
   <li class="button--page-navigation__next">
-    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/css-layers.html">
+    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/2017-03-23-tips-for-developing-for-the-unexpected.html">
       <!-- <span class="visually-hidden">Go to the next post</span> -->
       <span class="page-navigation-title">Go to the next post</span>
       <svg class="button--page-navigation__svg" role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
