@@ -27,6 +27,7 @@ I was part of the core project team based in Warrington, working with subject ma
 
 
 <h3 class="heading">Understanding the existing service</h3>
+
 Paper sketches were used to capture conversations with subject matter experts around the current waste lifecycle. Images were used to highlight loopholes in policy, areas of lost data, duplicate reporting and excess paperwork.
 
 <section class="portfolio-images">
@@ -40,19 +41,20 @@ Paper sketches were used to capture conversations with subject matter experts ar
 
 <h3 class="heading">Framing the problem</h3>
 
-After an initial broad phase of user research we began to list and prioratise a series of problem statements in order align efforts and define he scope of the service.
+After an initial broad phase of user research we began to list and prioritise a series of problem statements in order align efforts and define the scope of the service.
 
-Problem:
+Problems:
 
- * 
- * Gaps in data
- * There is no level playing field for industry
+ * Gaps in data on waste produced, recycled, treated etc
  * Waste crime
- * Mis clasifacation of waste
- * We dont know how much waste is produced
- * Enforcement is difficult
- * Circular economy
+ * Mis classification of waste
+ * Shortage of officers &amp; data making enforcement difficult
+ * Lack of education &amp; knowledge of best practices
+ * Duplicate data entry
+ * Labour intensive &amp; paperwork heavy processes
+ * No level playing field for industry
 
+<section class="portfolio-images">
  <div class="portfolio-piece-wrapper">
     <div class="portfolio-piece">
         <img src="../assets/img/portfolio/waste-tracking/problem-statements.jpg" class="portfolio-piece__img"  alt="Waste industry problem statements">
@@ -60,27 +62,35 @@ Problem:
 </div>
 </section> 
 
-At the end of the excersise we produced a Chalenge Statement for the remainder of the discovery project:
+At the end of the exercise we produced a Challenge Statement for the remainder of the discovery project:
 
  <blockquote>
- Capture and make available in one place the most useful data on the movement &amp; transfer of ownership of waste 
+ Capture and make available in one place the most useful data on the movement &amp; transfer of ownership of waste. 
 </blockquote> 
 
-
 <!-- 
- <h3 class="heading">User needs/ org needs/ policy</h3> 
+<h3 class="heading">User needs - Organisational needs - Policy</h3> 
 
-Spot opertunatys
-Remove complexity
+Throughout discovery we captured the needs of the users as well as the needs of the organisation and Policy. To keep these needs fresh and in our minds we created a visual representation.
 
 
--->
+<section class="portfolio-images">
+ <div class="portfolio-piece-wrapper">
+    <div class="portfolio-piece">
+        <img src="../assets/img/portfolio/waste-tracking/user-needs.jpg" class="portfolio-piece__img"  alt="User and organisartional needs">
+    </div>
+</div>
+</section>  -->
+
+
+
 
  <h3 class="heading">User journey maps</h3>
 
- * A way to visualize data in a simple and empathic way
- * Journey maps make no attempt to represent the full complexity of a service
- * a journey map shows one typical or particularly interesting instance of a service
+A series of user journey maps were created to represent the full complexity of the service as the users see it. To begin with journey maps were created for a waste treatment plant, landfill site and waste producer.
+
+The maps were used to illustrate differences between real use cases and the organisations process or legislation diagrams. Users pain points, touch points with government departments and internal processes were used to spot opportunities to remove complexity.
+
 
  <section class="portfolio-images">
 <div class="portfolio-piece-wrapper-full">
@@ -90,18 +100,35 @@ Remove complexity
 </div>
 </section>
 
-<!-- 
- <h3 class="heading">Hypothesis / What If's</h3>  
 
- When we want to test an assumption, we make it into a hypothesis. Building hypotheses will also help to expose gaps in your thinking. -->
+<h3 class="heading">Hypotheses</h3>  
+
+In order to expose gaps in our research and to help test out asumptions we created a series of hypothesis:
+
+1) If we had data in one place we could generate more reliable reports and gain better insights
+Alpha: How might we collate all data on waste movements in one place?
+
+2) We are not collecting the correct data
+Alpha: How might we improve the quality of data we collect on waste movements?
+
+3) The Duty Of Care process is no longer fit for industry
+Alpha: How might we improve the duty of care process?
+
+4) A better digital system will give time back to EA officers, and increase the quality off data 
+Alpha: How might we improve the data we get from waste consignment notes and site returns?
+
+5) With better enforcement and training we will receive more accurate data and produce a level playing field for industry
+Alpha: How might we enforce best practices and increase compliance?
+
+
 
  <!-- <h3 class="heading">Outputs</h3>   -->
  
 
 
-<!-- <blockquote>
+<blockquote>
 Cathy Joined DEFRA as an Interaction Designer but is currently demonstrating the skills and capabilities of a Service Designer.  Cathy is able to think strategically and understands the context she is working in. Cathy is showing great resilience and supporting the Service Owner through discovery.  Cathy is very much leading the service design aspect of the waste tracking discovery, and now she has finally received the tools, I think we will see some great output coming from Cathy.
 
 Cathy is very user centred, creative and is a great advocate for agile and digital ways of working.  Cathy is great at taking ideas and running with them.
 </blockquote> 
-<p class="quote-name">Feedback on service design role</p>  -->
+<p class="quote-name">Feedback on service design role</p> 
