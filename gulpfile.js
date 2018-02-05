@@ -177,16 +177,6 @@
 	// });
 
 
-	var deploy = require('gulp-deploy-git');
-	gulp.task('deploy', function() {
-		return gulp.src('_site/**/*', { read: false })
-			.pipe(deploy({
-				repository: 'https://github.com/cathydutton/my-site/tree/gh-pages.git',
-				branches: ['master'],
-        remoteBranch: ['gh-pages']
-			}));
-	});
-
 /*
 	Main tasks
 	----------------------------------- */

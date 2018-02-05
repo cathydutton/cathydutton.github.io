@@ -9,18 +9,18 @@ done: true
 ---
 
 <p class="highlight-quote">
- Each year the UK produces over 40 million tonnes of waste, all of this waste needs to be transported, treated and disposed of correctly. The UK waste management industry currently has over 70,000 employees and an annual turnover of around £9 billion with over 23 million waste movements each year.
+ Each year the UK produces over 40 million tones of waste, all of this waste needs to be transported, treated and disposed of correctly. The UK waste management industry currently has over 70,000 employees and an annual turnover of around £9 billion with over 23 million waste movements each year.
 </p>
 
-DEFRA worked alongside SEPA, NIEA, Environment Agency and NRW on a Discovery project to scope out a UK waste tracking service, aimed to track the movement of all waste, to benefit both the environment and the economy. <a href="" title="Waste discovery project">Read moreg about this project</a>.
+DEFRA worked alongside SEPA, NIEA, Environment Agency and NRW on a Discovery project to scope out a UK waste tracking service, aimed to track the movement of all waste, to benefit both the environment and the economy. <a href="https://defradigital.blog.gov.uk/2018/01/15/a-new-discovery-for-tracking-waste/" title="Waste discovery project">Read more about this project</a>.
 
 <h2 class="heading">My role</h2>
 I was part of the core project team based in Warrington, working with subject matter experts and stakeholders from SEPA, NIEA, DEFRA and NRW. Working as a service designer on a 12 week discovery project I was responsible for:
 
  * Working with a user researcher to facilitate and observe interviews, site visits and workshops
  * Working with the service owner and stakeholders to frame the problem and produce a challenge statement
- * Understanding the existing service and it's touchpoints with other services
- * Working alongside a user researcher and buisness analyist to theme both user and organisational needs
+ * Understanding the existing service and it's touch points with other services
+ * Working alongside a user researcher and business analyst to theme both user and organisational needs
  * Creating a selection of journey maps detailing the service through the eyes of the user
  * Writing a set of hypotheses to test throughout discovery
  * Producing 'how might we' statements for potential Alpha projects
@@ -65,14 +65,12 @@ Problems:
 At the end of the exercise we produced a Challenge Statement for the remainder of the discovery project:
 
  <blockquote>
- Capture and make available in one place the most useful data on the movement &amp; transfer of ownership of waste. 
+ "Capture and make available in one place the most useful data on the movement &amp; transfer of ownership of waste."
 </blockquote> 
 
-<!-- 
-<h3 class="heading">User needs - Organisational needs - Policy</h3> 
+<!-- <h3 class="heading">User needs - Organisational needs - Policy</h3> 
 
 Throughout discovery we captured the needs of the users as well as the needs of the organisation and Policy. To keep these needs fresh and in our minds we created a visual representation.
-
 
 <section class="portfolio-images">
  <div class="portfolio-piece-wrapper">
@@ -83,52 +81,49 @@ Throughout discovery we captured the needs of the users as well as the needs of 
 </section>  -->
 
 
-
-
  <h3 class="heading">User journey maps</h3>
 
 A series of user journey maps were created to represent the full complexity of the service as the users see it. To begin with journey maps were created for a waste treatment plant, landfill site and waste producer.
 
 The maps were used to illustrate differences between real use cases and the organisations process or legislation diagrams. Users pain points, touch points with government departments and internal processes were used to spot opportunities to remove complexity.
 
-
- <section class="portfolio-images">
-<div class="portfolio-piece-wrapper-full">
-    <div class="portfolio-piece">
-        <img src="../assets/img/portfolio/waste-tracking/journey-map.jpg" class="portfolio-piece__img"  alt="Landfil user journey map">
+<section class="portfolio-images">
+    <div class="portfolio-piece-wrapper-full">
+        <div class="portfolio-piece">
+            <img src="../assets/img/portfolio/waste-tracking/journey-map.jpg" class="portfolio-piece__img"  alt="Landfil user journey map">
+        </div>
     </div>
-</div>
 </section>
 
 
 <h3 class="heading">Hypotheses</h3>  
 
-In order to expose gaps in our research and to help test out asumptions we created a series of hypothesis:
+In order to expose gaps in our research and to help test out assumptions we created a series of hypothesis:
 
-1) If we had data in one place we could generate more reliable reports and gain better insights
-Alpha: How might we collate all data on waste movements in one place?
+*  If we had data in one place we could generate more reliable reports and gain better insights
+* We are not collecting the correct data
+* The Duty Of Care process is no longer fit for industry
+* A better digital system will give time back to EA officers, and increase the quality off data 
+* With better enforcement and training we will receive more accurate data and produce a level playing field for industry
 
-2) We are not collecting the correct data
-Alpha: How might we improve the quality of data we collect on waste movements?
+These statements were then progressed to a series of 'How might we' statements for potential Alpha projects.
 
-3) The Duty Of Care process is no longer fit for industry
-Alpha: How might we improve the duty of care process?
-
-4) A better digital system will give time back to EA officers, and increase the quality off data 
-Alpha: How might we improve the data we get from waste consignment notes and site returns?
-
-5) With better enforcement and training we will receive more accurate data and produce a level playing field for industry
-Alpha: How might we enforce best practices and increase compliance?
-
+* How might we collate all data on waste movements in one place?
+* How might we improve the quality of data we collect on waste movements?
+* How might we improve the duty of care process?
+* How might we improve the data we get from waste consignment notes and site returns?
+* How might we enforce best practices and increase compliance?
 
 
- <!-- <h3 class="heading">Outputs</h3>   -->
- 
+<!-- <h3 class="heading">Outputs</h3>   -->
+<!--  
+<section class="portfolio-images">
+    <blockquote>
+        <p>Cathy Joined DEFRA as an Interaction Designer but is currently demonstrating all the skills and capabilities of a Service Designer.  Cathy is able to think strategically and understands the context she is working in. Cathy is showing great resilience and supporting the Service Owner through discovery. </p>
 
+        <p>Cathy is very much leading the service design aspect of the waste tracking discovery, and now she has finally received the tools, I think we will see some great output coming from Cathy.</p>
 
-<blockquote>
-Cathy Joined DEFRA as an Interaction Designer but is currently demonstrating the skills and capabilities of a Service Designer.  Cathy is able to think strategically and understands the context she is working in. Cathy is showing great resilience and supporting the Service Owner through discovery.  Cathy is very much leading the service design aspect of the waste tracking discovery, and now she has finally received the tools, I think we will see some great output coming from Cathy.
-
-Cathy is very user centred, creative and is a great advocate for agile and digital ways of working.  Cathy is great at taking ideas and running with them.
-</blockquote> 
-<p class="quote-name">Feedback on service design role</p> 
+        <p>Cathy is very user centered, creative and is a great advocate for agile and digital ways of working.  Cathy is great at taking ideas and running with them.</p>
+    </blockquote> 
+    <p class="quote-name">Feedback on service design role</p> 
+</section> -->
