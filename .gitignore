@@ -1,6 +1,4 @@
 node_modules/
 .sass-cache
-.jekyll-metadata
-.publish/
-.publish	
+.jekyll-metadata	
 *.log
