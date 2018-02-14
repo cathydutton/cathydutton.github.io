@@ -25,6 +25,7 @@ I was part of the core project team based in Warrington, working with subject ma
  * Writing a set of hypotheses to test throughout discovery
  * Producing 'how might we' statements for potential Alpha projects
 
+<!-- Add stats on number of survey responses and user interviews and site visits   -->
 
 <h3 class="heading">Understanding the existing service</h3>
 
@@ -116,6 +117,26 @@ These statements were then progressed to a series of 'How might we' statements f
 
 
 <!-- <h3 class="heading">Outputs</h3>   -->
+
+<!-- Add Buisness case elements
+
+1) Data - what do we have to collect - what do users use - Reporting needs - reg changes
+
+
+2) Flexibility - Dont impose a system on me
+
+
+3) Systems - API - data store - reporting - Invoicing
+
+   -->
+
+<!--
+
+Top 10 user needs
+top 10 org needs
+
+-->
+
 <!--  
 <section class="portfolio-images">
     <blockquote>
