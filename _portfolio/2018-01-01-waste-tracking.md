@@ -12,10 +12,10 @@ done: true
  Each year the UK produces over 40 million tones of waste, all of this waste needs to be transported, treated and disposed of correctly. The UK waste management industry currently has over 70,000 employees and an annual turnover of around £9 billion with over 23 million waste movements each year.
 </p>
 
-DEFRA worked alongside SEPA, NIEA, Environment Agency and NRW on a Discovery project to scope out a UK waste tracking service, aimed to track the movement of all waste, to benefit both the environment and the economy. <a href="https://defradigital.blog.gov.uk/2018/01/15/a-new-discovery-for-tracking-waste/" title="Waste discovery project">Read more about this project</a>.
+DEFRA worked alongside <strong>SEPA</strong>, <strong>NIEA</strong>, <strong>Environment Agency</strong> and <strong>NRW</strong> on a Discovery project to scope out a UK waste tracking service, aimed to track the movement of all waste, to benefit both the environment and the economy. <a href="https://defradigital.blog.gov.uk/2018/01/15/a-new-discovery-for-tracking-waste/" title="Waste discovery project">Read more about this project</a>.
 
 <h2 class="heading">My role</h2>
-I was part of the core project team based in Warrington, working with subject matter experts and stakeholders from SEPA, NIEA, DEFRA and NRW. Working as a service designer on a 12 week discovery project I was responsible for:
+I was part of the core project team based in Warrington working as a service designer on a 12 week discovery project. During the discovery I was responsible for:
 
  * Working with a user researcher to facilitate and observe interviews, site visits and workshops
  * Working with the service owner and stakeholders to frame the problem and produce a challenge statement
@@ -40,7 +40,7 @@ Paper sketches were used to capture conversations with subject matter experts ar
 
 <h3 class="heading">Framing the problem</h3>
 
-After an initial broad phase of user research we began to list and prioritise a series of problem statements in order align efforts and define the scope of the service.
+After an initial broad phase of user research we began to list and priorities a series of problem statements in order align efforts and define the scope of the service.
 
 Problems:
 
@@ -50,16 +50,16 @@ Problems:
  * Shortage of officers &amp; data making enforcement difficult
  * Lack of education &amp; knowledge of best practices
  * Duplicate data entry
- * Labour intensive &amp; paperwork heavy processes
+ * Labor intensive &amp; paperwork heavy processes
  * No level playing field for industry
 
-<section class="portfolio-images">
+<!-- <section class="portfolio-images">
  <div class="portfolio-piece-wrapper">
     <div class="portfolio-piece">
         <img src="../assets/img/portfolio/waste-tracking/problem-statements.jpg" class="portfolio-piece__img"  alt="Waste industry problem statements">
     </div>
 </div>
-</section> 
+</section>  -->
 
 At the end of the exercise we produced a Challenge Statement for the remainder of the discovery project:
 
@@ -70,38 +70,31 @@ At the end of the exercise we produced a Challenge Statement for the remainder o
 
 <h3 class="heading">User needs</h3> 
 
-Throughout discovery a number of research methods were used to gain insightis into the current service. As a team we carried out <b>17 site visits</b>, <b>6 workshops</b> and <b>21 interviews</b> as well sending out <b>3 surveys</b>. The team covered every sector of the waste industry from producers to waste treatment plants, landfil sites and internal teams including data analysis, waste crime prevention and enforcement.
+Throughout discovery a number of research methods were used to gain insights into the current service. As a team we carried out <strong>17 site visits</strong>, <strong>6 workshops</strong> and <strong>21 interviews</strong> as well sending out <strong>3 surveys</strong>. The team covered every sector of the waste industry from producers to waste treatment plants, landfill sites and internal teams including data analysis, waste crime prevention and enforcement.
 
-<section class="portfolio-images">
+<!-- <section class="portfolio-images">
  <div class="portfolio-piece-wrapper">
     <div class="portfolio-piece">
         <img src="../assets/img/portfolio/waste-tracking/user-needs.jpg" class="portfolio-piece__img"  alt="User and organisartional needs">
     </div>
 </div>
-</section> 
+</section>  -->
 
-During the analysis phase at the end of discovery a list of high level needs for users the organisation and policy were created:
+During the analysis phase at the end of discovery a list of high level needs for both users and the organisation were created:
 
 <h4 class="heading">User needs</h4>
-    <ul>
-        <li>To run a sucesfull buisness</li>
-        <li>To comply with legislation</li>
-        <li>To not loose time on admin and regulatory work</li>
-        <li>To have a level playing field with other buisneses who also comply</li>
-    </ul>
+* To run a successful business
+* To comply with legislation
+* To not loose time on admin and regulatory work
+* To have a level playing field with other businesses who also comply
+* To have consistent regulations across the UK
 
 <h4 class="heading">Organisational needs</h4>
-    <ul>
-        <li>Move towards a circular economy</li>
-        <li>Redusce waste crime</li>
-        <li>Increase recycling inline with EU targets</li>
-        <li>Educate the industry on best practices</li>
-    </ul>
+* Move towards a circular economy
+* Reduce waste crime
+* Increase recycling inline with EU targets
+* Educate the industry on best practices
 
-<h4 class="heading">Policy needs</h4>
-    <ul>
-        <li>To have UK wide regulations</li>
-    </ul>
 
 <h3 class="heading">Hypotheses</h3>  
 
