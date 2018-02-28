@@ -25,8 +25,6 @@ I was part of the core project team based in Warrington, working with subject ma
  * Writing a set of hypotheses to test throughout discovery
  * Producing 'how might we' statements for potential Alpha projects
 
-<!-- Add stats on number of survey responses and user interviews and site visits   -->
-
 <h3 class="heading">Understanding the existing service</h3>
 
 Paper sketches were used to capture conversations with subject matter experts around the current waste lifecycle. Images were used to highlight loopholes in policy, areas of lost data, duplicate reporting and excess paperwork.
@@ -69,9 +67,10 @@ At the end of the exercise we produced a Challenge Statement for the remainder o
  "Capture and make available in one place the most useful data on the movement &amp; transfer of ownership of waste."
 </blockquote> 
 
-<!-- <h3 class="heading">User needs - Organisational needs - Policy</h3> 
 
-Throughout discovery we captured the needs of the users as well as the needs of the organisation and Policy. To keep these needs fresh and in our minds we created a visual representation.
+<h3 class="heading">User needs</h3> 
+
+Throughout discovery a number of research methods were used to gain insightis into the current service. As a team we carried out <b>17 site visits</b>, <b>6 workshops</b> and <b>21 interviews</b> as well sending out <b>3 surveys</b>. The team covered every sector of the waste industry from producers to waste treatment plants, landfil sites and internal teams including data analysis, waste crime prevention and enforcement.
 
 <section class="portfolio-images">
  <div class="portfolio-piece-wrapper">
@@ -79,7 +78,40 @@ Throughout discovery we captured the needs of the users as well as the needs of 
         <img src="../assets/img/portfolio/waste-tracking/user-needs.jpg" class="portfolio-piece__img"  alt="User and organisartional needs">
     </div>
 </div>
-</section>  -->
+</section> 
+
+During the analysis phase at the end of discovery a list of high level needs for users the organisation and policy were created:
+
+<h4 class="heading">User needs</h4>
+    <ul>
+        <li>To run a sucesfull buisness</li>
+        <li>To comply with legislation</li>
+        <li>To not loose time on admin and regulatory work</li>
+        <li>To have a level playing field with other buisneses who also comply</li>
+    </ul>
+
+<h4 class="heading">Organisational needs</h4>
+    <ul>
+        <li>Move towards a circular economy</li>
+        <li>Redusce waste crime</li>
+        <li>Increase recycling inline with EU targets</li>
+        <li>Educate the industry on best practices</li>
+    </ul>
+
+<h4 class="heading">Policy needs</h4>
+    <ul>
+        <li>To have UK wide regulations</li>
+    </ul>
+
+<h3 class="heading">Hypotheses</h3>  
+
+In order to expose gaps in our research and to help test out assumptions we created a series of hypothesis to test:
+
+* If we had data in one place we could generate more reliable reports and gain better insights
+* We are not collecting the correct data
+* The Duty Of Care process is no longer fit for industry
+* A better digital system will give time back to EA officers, and increase the quality off data 
+* With better enforcement and training we will receive more accurate data and produce a level playing field for industry
 
 
  <h3 class="heading">User journey maps</h3>
@@ -97,45 +129,19 @@ The maps were used to illustrate differences between real use cases and the orga
 </section>
 
 
-<h3 class="heading">Hypotheses</h3>  
+<h3 class="heading">Discovery outputs</h3>  
 
-In order to expose gaps in our research and to help test out assumptions we created a series of hypothesis:
-
-*  If we had data in one place we could generate more reliable reports and gain better insights
-* We are not collecting the correct data
-* The Duty Of Care process is no longer fit for industry
-* A better digital system will give time back to EA officers, and increase the quality off data 
-* With better enforcement and training we will receive more accurate data and produce a level playing field for industry
-
-These statements were then progressed to a series of 'How might we' statements for potential Alpha projects.
+At the end of discovery we put together a series of 'How might we' statements for potential Alpha projects:
 
 * How might we collate all data on waste movements in one place?
 * How might we improve the quality of data we collect on waste movements?
 * How might we improve the duty of care process?
-* How might we improve the data we get from waste consignment notes and site returns?
 * How might we enforce best practices and increase compliance?
 
 
-<!-- <h3 class="heading">Outputs</h3>   -->
-
-<!-- Add Buisness case elements
-
-1) Data - what do we have to collect - what do users use - Reporting needs - reg changes
 
 
-2) Flexibility - Dont impose a system on me
 
-
-3) Systems - API - data store - reporting - Invoicing
-
-   -->
-
-<!--
-
-Top 10 user needs
-top 10 org needs
-
--->
 
 <!--  
 <section class="portfolio-images">
