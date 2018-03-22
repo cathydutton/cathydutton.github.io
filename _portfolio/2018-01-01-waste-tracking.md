@@ -9,7 +9,7 @@ done: true
 ---
 
 <p class="highlight-quote">
- Each year the UK produces over 40 million tones of waste, all of this waste needs to be transported, treated and disposed of correctly. The UK waste management industry currently has over 70,000 employees and an annual turnover of around £9 billion with over 23 million waste movements each year.
+ Each year the UK produces over 40 million tonnes of waste, all of this waste needs to be transported, treated and disposed of correctly. The UK waste management industry currently has over 70,000 employees and an annual turnover of around £9 billion with over 23 million waste movements each year.
 </p>
 
 DEFRA worked alongside <strong>SEPA</strong>, <strong>NIEA</strong>, <strong>Environment Agency</strong> and <strong>NRW</strong> on a Discovery project to scope out a UK waste tracking service, aimed to track the movement of all waste, to benefit both the environment and the economy. <a href="https://defradigital.blog.gov.uk/2018/01/15/a-new-discovery-for-tracking-waste/" title="Waste discovery project">Read more about this project</a>.
