@@ -11,32 +11,93 @@ CSS custom properties are the improved alternatives to the variables available i
 
 ### 1. Update colour theme
 
-
 Themed CSS became common practice with the arrival of Sass variables, by defining a set of colour variables at the top of a partial CSS could be reused quickly and easily. This practice does however introduce a lot of duplicate work and CSS bloat.
 
+Because pre processor variables are compiled before build, changes made in the browser have to be pre planned and written out in full. Files like the one below contain duplicate CSS nested under classes that are atached to the body with javaScript.
+
 ```
-$body-background-color: #eee;
-$body-text-color: #222;
-$link-colour:
-$link-hover-colour:
+$background-color: #eee;
+$text-color: #222;
+$link-colour: #3D9970;
+$link-colour-hover: #001F3F;
 
 body {
-  background-color: $body-background-color;
-  color: $body-text-color;
+  background-color: $background-color;
+  color: $text-color;
 }
 
 a {
  colour: $link-colour;
 } &:hover {
- Colour: $link-hover-colour;
+ Colour: $link-colour-hover;
 }
+
+@import 'theme-dark';
+@import 'theme-monochrome';
+
 ```
 
-With custom properties this duplication is removed. The property values do not need to be complied meaning they can be updated dynamically
+```
+$background-color: #111;
+$text-color: #FFF;
+$link-colour: #FFDC00;
+$link-colour-hover: #048386;
+
+.theme-dark {
+  background-color: $background-color;
+  color: $text-color;
+
+  a {
+    color: $link-colour;
+
+    &:hover {
+      color: $link-colour-hover;
+    }
+
+  }
+
+```
+
+With custom properties this duplication is removed. The property values do not need to be complied meaning they can be updated dynamically in the browser.
 
 The above Sass example can now be replaced with this…
 
-CODE EXAMPLE bad colours
+```
+:root {
+  --colour-black: #001429;
+  --colour-dark: #001F3F;
+  --colour-medium: #003D7A;
+  --colour-light: #E0F0FF;
+  --colour-white: #FFFFFF;
+  --colour-bright: #3D9970;
+  --colour-error: #A91919; 
+}
+
+.theme-dark {
+  --colour-black: #FFFFFF;
+  --colour-dark: #AAAAAA;
+  --colour-medium: #2ECC40;
+  --colour-light: #048386; 
+  --colour-white: #111111;
+  --colour-bright: #FFDC00; 
+  --colour-error: #FF851B;
+}
+
+.theme-monochrome {
+  --colour-black: #BD9562;
+  --colour-dark: #AB773F;
+  --colour-medium: #553C1C;
+  --colour-light: #3c240d;
+  --colour-white: #211505;
+  --colour-bright: #AF8857;
+  --colour-error: #A37A48; 
+}
+
+body {
+  color: var(--colour-black);
+  background: var(--colour-white);
+}
+```
 
 Naming variables in a meaningful way is difficult, naming variables that are used in multiple themes is even more difficult.
 
@@ -128,7 +189,30 @@ themeMonochrome.onclick = function(){
 
 This is great, until the user navigates to a new page or refreshes the browser. To solve this issue we can store the value of the custom property in local storage, and then check for a saved value on page load.
 
+```
+body.className = localStorage.getItem("currentTheme");
+```
 
+```
+themeDefault.onclick = function(){
+  body.className = "theme-default";
+  localStorage.setItem("currentTheme", 'theme-default');
+};
+
+themeDark.onclick = function(){
+  body.className = "theme-dark";
+  localStorage.setItem("currentTheme", 'theme-dark');
+};
+
+themeMonochrome.onclick = function(){
+  body.className = "theme-monochrome";
+  localStorage.setItem("currentTheme", 'theme-monochrome');
+};
+```
+#### Demo
+
+<p data-height="500" data-theme-id="8492" data-slug-hash="paBMBE" data-default-tab="css,result" data-user="cathydutton" data-embed-version="2" data-pen-title="Custom property colour themes" class="codepen">See the Pen <a href="https://codepen.io/cathydutton/pen/paBMBE/">Custom property colour themes</a> by Cathy Dutton (<a href="https://codepen.io/cathydutton">@cathydutton</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 
 
@@ -200,9 +284,9 @@ var fontFamily = getComputedStyle(body).getPropertyValue('--font-family');
 
 ```
 
-Demo
+#### Demo
 
-<p data-height="300" data-theme-id="8492" data-slug-hash="OQrGab" data-default-tab="html,result" data-user="cathydutton" data-embed-version="2" data-pen-title="Custom property font switcher" class="codepen">See the Pen <a href="https://codepen.io/cathydutton/pen/OQrGab/">Custom property font switcher</a> by Cathy Dutton (<a href="https://codepen.io/cathydutton">@cathydutton</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="500" data-theme-id="8492" data-slug-hash="OQrGab" data-default-tab="html,result" data-user="cathydutton" data-embed-version="2" data-pen-title="Custom property font switcher" class="codepen">See the Pen <a href="https://codepen.io/cathydutton/pen/OQrGab/">Custom property font switcher</a> by Cathy Dutton (<a href="https://codepen.io/cathydutton">@cathydutton</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 
@@ -243,8 +327,8 @@ decreaseFont.onclick = function(){
 
 When each button is clicked the current value of --font-size is taken and either increased or decreased. The parseFloat() function is used to first strip the unit from the property and then convert the value from a string to an integer.
 
-Demo
+#### Demo
 
-<p data-height="300" data-theme-id="8492" data-slug-hash="YedMRP" data-default-tab="html,result" data-user="cathydutton" data-embed-version="2" data-pen-title="Custom property text size" class="codepen">See the Pen <a href="https://codepen.io/cathydutton/pen/YedMRP/">Custom property text size</a> by Cathy Dutton (<a href="https://codepen.io/cathydutton">@cathydutton</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="500" data-theme-id="8492" data-slug-hash="YedMRP" data-default-tab="html,result" data-user="cathydutton" data-embed-version="2" data-pen-title="Custom property text size" class="codepen">See the Pen <a href="https://codepen.io/cathydutton/pen/YedMRP/">Custom property text size</a> by Cathy Dutton (<a href="https://codepen.io/cathydutton">@cathydutton</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
