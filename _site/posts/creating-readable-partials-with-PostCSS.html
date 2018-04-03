@@ -20,7 +20,7 @@ https://github.com/cathydutton
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Separate Your Layout and skin Sass files</title>
+		<title>Creating readable CSS partials with PostCSS</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="Front End Developer, UX, CSS, Sass, PostCSS, JavaScript">
 		<meta name="author" content="Cathy Dutton - https://cathydutton.co.uk" />
@@ -38,7 +38,7 @@ https://github.com/cathydutton
 
 		<!-- Prerender work page -->
 		<link rel="prerender" href="https://cathydutton.co.uk/portfolio.html">
-		<link rel="canonical" href="cathydutton.co.uk/posts/separate-your-layout-sass.html">
+		<link rel="canonical" href="cathydutton.co.uk/posts/creating-readable-partials-with-PostCSS.html">
 
 
 		
@@ -149,133 +149,119 @@ https://github.com/cathydutton
 <div class="content">
   <main id="main">
     <header role="banner" class="header">
-      <h1 class="heading heading__intro">Separate Your Layout and skin Sass files</h1>
-      <p class="heading heading--primary">10 Jun 2014</p>
+      <h1 class="heading heading__intro">Creating readable CSS partials with PostCSS</h1>
+      <p class="heading heading--primary">06 Mar 2017</p>
     </header>
 
 
-    <p>One of the greatest things about Sass is the ability it provides to separate large files in to more manageable chunks of code. When working on large or complex sites and future proofing code this becomes even more significant.</p>
+    <p>In my opinion one of the most valuable features of PostCSS is the ability to both change and create CSS properties
+and values. CSS preprocessors give developers the ability to extend the functionality of CSS, creating functions,
+mixins and loops all with the intention of speeding up development time and helping large scale projects remain
+both manageable and scaleable.</p>
 
-<p>Without adding any additional requests to the web site’s head or effecting site speed and load times, css can be split out in to easy to manage folders and files. Developers should never again be faced with an endless css file packed with all the theming, styles, colours, typography, structure and media queries of an entire website.</p>
+<p>The problem with this is the resulting Sass stylesheets are often full of selectors using complex functions and mixins
+that are unreadable to new users, or even to the same developers who wrote them a couple of months down the line. For example
+a couple of years ago I created numerous Sass functions to implement dynamic gradients and animations for a project at work.
+These functions made perfect sense to me at the time and helped me to achieve the desired effect. Looking back the Sass is now
+unusable without first devoting a lot of time to understanding each property value. This in its self goes against one of
+the key arguments for using a preprocessor.</p>
 
-<p>This provides the perfect opportunity to separate the layout and structural css from the style or ‘skin’ css. In doing this the code becomes much easier to maintain, and if necessary to change or update in the future.</p>
+<p>http://codepen.io/cathydutton/pen/vEeORQ</p>
 
-<h2 class="heading">Layout.scss </h2>
+<p>http://codepen.io/cathydutton/pen/FDipu</p>
 
-<p>The layout file should be for structural styles only, building the wireframe of a page without applying any of it’s look or feel. The layout.scss file will therefore remain small and easy to follow for any developer picking up the project and needing to make a quick edit to the page layout.</p>
+<p>http://codepen.io/cathydutton/pen/vEeORQ</p>
 
-<h2 class="heading">Example</h2>
+<p>http://codepen.io/cathydutton/pen/twAja</p>
 
-<p>The example code below uses the Maze grid system to demonstrate. The example shows three layout blocks <strong>.logo</strong>, <strong>.search</strong> and <strong>.social-share</strong> within the row <strong>.container</strong>. Using the grid mixin each selector in the row is assigned a column span with all 3 adding up to 12. (More information on the grid set up can be found <a href="https://cathydutton.co.uk/css/maze-responsive-grid-framework" title="Maze - Sass grid system" target="_blank">here</a>).</p>
+<p>https://www.sitepoint.com/dynamic-gradient-text-function-sass/</p>
 
-<header class="container">
+<p>Code examples!!!!!!!</p>
 
-<div class="demo-logoo">
-  Logo
-</div>
+<h2 id="heading">Heading</h2>
 
-<div class="demo-searchh">
-  Search
-</div>
+<p>Things would be so much simpler if the property values we used were more user friendly and simple to understand even with no
+previous experience of the code base. PostCSS allows developers to create new CSS properties and to assign new values
+to these properties creating clear and concise CSS that anybody can pick up and understand.</p>
 
-<div class="demo-social-share">
-  Social
-</div></header>
+<h3 id="clearfix">Clearfix</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&amp;lt;!-- Header --&amp;gt;
-&amp;lt;header class="container"&amp;gt;
-    &amp;lt;div class="logo"&amp;gt;Logo&amp;lt;/div&amp;gt;
-    &amp;lt;div class="search"&amp;gt;Search&amp;lt;/div&amp;gt;
-     &amp;lt;div class="social-share"&amp;gt;Social&amp;lt;/div&amp;gt;
-  &amp;lt;/header&amp;gt;
-&amp;lt;!--End  Header --&amp;gt;
+<p>A quick example of this is the PostCSS clearfix plugin https://github.com/seaneking/postcss-clearfix the markup used is not a
+native CSS value but is still instantly understandable to any developer who reads it.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>.foo {
+  clear: fix; /* IE8+ */
+}
+
+.bar {
+  clear: fix-legacy; /* IE6+ */
+}
+
 </code></pre>
 </div>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.container {
-	@include clearfix;
-	width: 100%;
-	margin: 10px 0;
-}
+<h3 id="comparing-">Comparing ?????</h3>
 
-.logo {
-   @include grid(3);
-}
+<p>To demonstrate this further I developed a PostCSS version of an existing Sass grid system I had previously worked on.</p>
 
-.search {
-   @include grid(6);
-}
+<h3 id="sass">Sass</h3>
 
-.social-share {
-   @include grid(3);
-}
+<p>The Sass version uses a mixin which is called for each selector</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>@include grid(3)            - Desktop spans 3 columns of $total-grid-columns
+@include break-point(tablet, 6);  - Tablet spans 6 columns of $total-grid-columns
+@include break-point(mobile, 12);   - Mobile spans 12 columns of $total-grid-columns
 </code></pre>
 </div>
 
-<p>The css above is easy to read as each selector has only the layout includes assigned to it. As pages get bigger and more elements are added keeping the grid includes clear and easy to find becomes essential. Making changes to the widths or even adding in a new column can be easily done by adjusting the values passed to the grid mixin.</p>
+<h3 id="postcss">PostCSS</h3>
 
-<h3 class="heading">Adding a new column&#8230; </h3>
-<header class="container">
-
-<div class="demo-logoo">
-  Logo
-</div>
-
-<div class="demo2-search">
-  Search
-</div>
-
-<div class="demo2-social-share">
-  Social
-</div>
-
-<div class="demo2-call-us">
-  Call Us
-</div></header>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.logo {
-   @include grid(3);
+<div class="highlighter-rouge"><pre class="highlight"><code>.wrapper {
+  grid-container: true;
 }
-.search {
-   @include grid(3);
-}
-.social-share {
-   @include grid(3);
-}
-.call-us {
-   @include grid(3);
-}
+
 </code></pre>
 </div>
 
-<h3 class="heading">Taking things a step further </h3>
+<p>``.wrapper {
+  max-width: 1030.2px;
+  min-width: 260px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}</p>
 
-<p>The break point mixin can also be added to the layout file helping to keep all the layout properties together. For responsive sites I also recommend creating a third style sheet to deal solely with the media queries.</p>
+<p>.wrapper::after {
+  content: “” ;
+  display: table;
+  clear: both;
+}`</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.logo {
-  @include grid(3);
-  @include breakpoint(tablet, 6);
+<div class="highlighter-rouge"><pre class="highlight"><code>
+
+</code></pre>
+</div>
+<p>.four-elements {
+  col-span: mobile(1,1);
+  col-span: phablet(1,2);
+  col-span: tablet(1,4);
 }
+```</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nc">.twelve-elements</span> <span class="p">{</span>
+  <span class="py">col-span</span><span class="p">:</span> <span class="n">mobile</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">1</span><span class="p">);</span>
+  <span class="py">col-span</span><span class="p">:</span> <span class="n">phablet</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">);</span>
+  <span class="py">col-span</span><span class="p">:</span> <span class="n">tablet</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">4</span><span class="p">);</span>
+  <span class="py">col-span</span><span class="p">:</span> <span class="n">desktop</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">6</span><span class="p">);</span>
+  <span class="py">col-span</span><span class="p">:</span> <span class="n">wide</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">12</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 </div>
 
-<p>The separate Sass files can be compiled using a base style.scss file. Below is an example of how that stylesheet would look using folders for the three separated sass files on each page.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>/* PRODUCT PAGE - Unique product page styles
-========================================================================== */
-
-	@import &amp;#039;product-page/_layout.scss&amp;#039;;
-	@import &amp;#039;product-page/_theme.scss&amp;#039;;
-	@import &amp;#039;product-page/_responsive.scss&amp;#039;;
-
-
-/* CATEGORY PAGE - Unique category page styles
-========================================================================== */
-
-	@import &amp;#039;category-page/_layout.scss&amp;#039;;
-	@import &amp;#039;category-page/_theme.scss&amp;#039;;
-	@import &amp;#039;category-page/_responsive.scss&amp;#039;;
-
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nc">.six-elements</span> <span class="p">{</span>
+  <span class="py">col-span</span><span class="p">:</span> <span class="n">mobile</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">);</span>
+  <span class="py">col-span</span><span class="p">:</span> <span class="n">tablet</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">3</span><span class="p">);</span>
+  <span class="py">col-span</span><span class="p">:</span> <span class="n">desktop</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">6</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 </div>
 
@@ -284,9 +270,9 @@ https://github.com/cathydutton
       <div class="share-page">
     <h3>Share this post</h3>
     <p>Share this on this post on Twitter, Facebook or Google</p>
-    <a href="https://twitter.com/intent/tweet?text=Separate Your Layout and skin Sass files&url=cathydutton.co.uk/posts/separate-your-layout-sass.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=cathydutton.co.uk/posts/separate-your-layout-sass.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
-    <a href="https://plus.google.com/share?url=cathydutton.co.uk/posts/separate-your-layout-sass.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
+    <a href="https://twitter.com/intent/tweet?text=Creating readable CSS partials with PostCSS&url=cathydutton.co.uk/posts/creating-readable-partials-with-PostCSS.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=cathydutton.co.uk/posts/creating-readable-partials-with-PostCSS.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
+    <a href="https://plus.google.com/share?url=cathydutton.co.uk/posts/creating-readable-partials-with-PostCSS.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
 </div>
 
     </section>
@@ -295,7 +281,7 @@ https://github.com/cathydutton
       <ul class="page-navigation">
   
   <li class="button--page-navigation__prev">
-    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/sass-dynamic-colour-change.html">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/have-no-fear.html">
       <!-- <span class="visually-hidden">Go to the previous post</span> -->
       <svg class="button--page-navigation__svg" version="1.1" role="presentation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
@@ -306,7 +292,7 @@ https://github.com/cathydutton
   
   
   <li class="button--page-navigation__next">
-    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/sass-structure-layout-and-theme-files.html">
+    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/going-back-to-design.html">
       <!-- <span class="visually-hidden">Go to the next post</span> -->
       <span class="page-navigation-title">Go to the next post</span>
       <svg class="button--page-navigation__svg" role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >

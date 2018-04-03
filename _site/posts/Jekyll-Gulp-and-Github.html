@@ -20,7 +20,7 @@ https://github.com/cathydutton
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Separate Your Layout and skin Sass files</title>
+		<title>Jekyll, Gulp and Github</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="Front End Developer, UX, CSS, Sass, PostCSS, JavaScript">
 		<meta name="author" content="Cathy Dutton - https://cathydutton.co.uk" />
@@ -38,7 +38,7 @@ https://github.com/cathydutton
 
 		<!-- Prerender work page -->
 		<link rel="prerender" href="https://cathydutton.co.uk/portfolio.html">
-		<link rel="canonical" href="cathydutton.co.uk/posts/separate-your-layout-sass.html">
+		<link rel="canonical" href="cathydutton.co.uk/posts/Jekyll-Gulp-and-Github.html">
 
 
 		
@@ -149,144 +149,104 @@ https://github.com/cathydutton
 <div class="content">
   <main id="main">
     <header role="banner" class="header">
-      <h1 class="heading heading__intro">Separate Your Layout and skin Sass files</h1>
-      <p class="heading heading--primary">10 Jun 2014</p>
+      <h1 class="heading heading__intro">Jekyll, Gulp and Github</h1>
+      <p class="heading heading--primary">15 Mar 2017</p>
     </header>
 
 
-    <p>One of the greatest things about Sass is the ability it provides to separate large files in to more manageable chunks of code. When working on large or complex sites and future proofing code this becomes even more significant.</p>
+    <p>IF YOU REMOVE THE TIMESTAMP THE NEW PROCESS WORKS SO YOU CAN FINNISH THIS, make timestamp work in inject file!</p>
 
-<p>Without adding any additional requests to the web site’s head or effecting site speed and load times, css can be split out in to easy to manage folders and files. Developers should never again be faced with an endless css file packed with all the theming, styles, colours, typography, structure and media queries of an entire website.</p>
+<p>I spend a ridiculous amount of time updating my personal website and blog….</p>
 
-<p>This provides the perfect opportunity to separate the layout and structural css from the style or ‘skin’ css. In doing this the code becomes much easier to maintain, and if necessary to change or update in the future.</p>
+<p>Jekyll, Gulp and Github</p>
 
-<h2 class="heading">Layout.scss </h2>
+<p>Minify production code
+ add cache bust
+ and critical css</p>
 
-<p>The layout file should be for structural styles only, building the wireframe of a page without applying any of it’s look or feel. The layout.scss file will therefore remain small and easy to follow for any developer picking up the project and needing to make a quick edit to the page layout.</p>
+<p>Clean old cached files</p>
 
-<h2 class="heading">Example</h2>
+<p>Clean site folder on live build</p>
 
-<p>The example code below uses the Maze grid system to demonstrate. The example shows three layout blocks <strong>.logo</strong>, <strong>.search</strong> and <strong>.social-share</strong> within the row <strong>.container</strong>. Using the grid mixin each selector in the row is assigned a column span with all 3 adding up to 12. (More information on the grid set up can be found <a href="https://cathydutton.co.uk/css/maze-responsive-grid-framework" title="Maze - Sass grid system" target="_blank">here</a>).</p>
+<p>Exclude jekyll folders</p>
 
-<header class="container">
+<p>Don’t watch _assets folder - Gulp not Jekyll to control</p>
 
-<div class="demo-logoo">
-  Logo
-</div>
+<p>jekyl drafts in production</p>
 
-<div class="demo-searchh">
-  Search
-</div>
+<p>add a11y css to dev build</p>
 
-<div class="demo-social-share">
-  Social
-</div></header>
+<h2 id="heading-">Heading ????</h2>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&amp;lt;!-- Header --&amp;gt;
-&amp;lt;header class="container"&amp;gt;
-    &amp;lt;div class="logo"&amp;gt;Logo&amp;lt;/div&amp;gt;
-    &amp;lt;div class="search"&amp;gt;Search&amp;lt;/div&amp;gt;
-     &amp;lt;div class="social-share"&amp;gt;Social&amp;lt;/div&amp;gt;
-  &amp;lt;/header&amp;gt;
-&amp;lt;!--End  Header --&amp;gt;
+<p>Separating environments can be useful for may reasons personally I like to run a11y.css in my local environment. Having it switched on continuously encourages me to actually fix the errors and suggestions. I also need to see updates to CSS and markup in real time. To do this I compile a separate CSS file to the versioned file used in production.</p>
+
+<h2 id="setting-up-the-environments">Setting up the environments</h2>
+
+<p>In Jekyll you can create multiple config files to manage different environments
+<!-- <a href="https://jekyllrb.com/docs/configuration/" title="Jekyll config file documentation" target="_blank"></a> --></p>
+
+<!-- #### _config_dev.yml &amp; _config.yml -->
+
+<div class="highlighter-rouge"><pre class="highlight"><code># Site settings
+environment: production
+title: Cheshire based Interaction Designer &amp;amp; Front End Developer - Cathy Dutton
+description: A UX/Interaction Designer and Front End Developer based in Warrington, Cheshire. Specialising in CSS, UX, Accessibility and inclusive design.
+email: info@cathydutton.co.uk
 </code></pre>
 </div>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.container {
-	@include clearfix;
-	width: 100%;
-	margin: 10px 0;
-}
-
-.logo {
-   @include grid(3);
-}
-
-.search {
-   @include grid(6);
-}
-
-.social-share {
-   @include grid(3);
-}
+<div class="highlighter-rouge"><pre class="highlight"><code># Site settings
+environment: live
+title: Cheshire based Interaction Designer &amp;amp; Front End Developer - Cathy Dutton
+description: A UX/Interaction Designer and Front End Developer based in Warrington, Cheshire. Specialising in CSS, UX, Accessibility and inclusive design.
+email: info@cathydutton.co.uk
 </code></pre>
 </div>
 
-<p>The css above is easy to read as each selector has only the layout includes assigned to it. As pages get bigger and more elements are added keeping the grid includes clear and easy to find becomes essential. Making changes to the widths or even adding in a new column can be easily done by adjusting the values passed to the grid mixin.</p>
+<h3 id="if-statement-in-jekyll-code">If statement in Jekyll code.</h3>
 
-<h3 class="heading">Adding a new column&#8230; </h3>
-<header class="container">
-
-<div class="demo-logoo">
-  Logo
-</div>
-
-<div class="demo2-search">
-  Search
-</div>
-
-<div class="demo2-social-share">
-  Social
-</div>
-
-<div class="demo2-call-us">
-  Call Us
-</div></header>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.logo {
-   @include grid(3);
-}
-.search {
-   @include grid(3);
-}
-.social-share {
-   @include grid(3);
-}
-.call-us {
-   @include grid(3);
-}
+<div class="highlighter-rouge"><pre class="highlight"><code>
+	   // Development code
+		
 </code></pre>
 </div>
 
-<h3 class="heading">Taking things a step further </h3>
+<h3 id="gulp-file">Gulp file</h3>
 
-<p>The break point mixin can also be added to the layout file helping to keep all the layout properties together. For responsive sites I also recommend creating a third style sheet to deal solely with the media queries.</p>
+<p>Need to make the gulp file work for live and deployments</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.logo {
-  @include grid(3);
-  @include breakpoint(tablet, 6);
-}
+<div class="highlighter-rouge"><pre class="highlight"><code>gulp.task('jekyll-dev', () =&gt; {
+  var productionEnv = process.env;
+  productionEnv.JEKYLL_ENV = 'development';
+  const jekyll = child.spawn('jekyll', ['serve',
+    '--watch',
+    '--incremental',
+    '--drafts'
+  ]);
 </code></pre>
 </div>
 
-<p>The separate Sass files can be compiled using a base style.scss file. Below is an example of how that stylesheet would look using folders for the three separated sass files on each page.</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>/* PRODUCT PAGE - Unique product page styles
-========================================================================== */
-
-	@import &amp;#039;product-page/_layout.scss&amp;#039;;
-	@import &amp;#039;product-page/_theme.scss&amp;#039;;
-	@import &amp;#039;product-page/_responsive.scss&amp;#039;;
-
-
-/* CATEGORY PAGE - Unique category page styles
-========================================================================== */
-
-	@import &amp;#039;category-page/_layout.scss&amp;#039;;
-	@import &amp;#039;category-page/_theme.scss&amp;#039;;
-	@import &amp;#039;category-page/_responsive.scss&amp;#039;;
-
+<div class="highlighter-rouge"><pre class="highlight"><code>gulp.task('jekyll-live', () =&gt; {
+  var liveEnv = process.env;
+  liveEnv.JEKYLL_ENV = 'live';
+  const jekyll = child.spawn('jekyll', ['serve',
+    // '--watch',
+    // '--incremental'
+    // '--drafts'
+  ]);
 </code></pre>
 </div>
+
+<h3 id="deploy-to-gh-pages-ob-github">Deploy to gh pages ob github</h3>
 
 
     <section>
       <div class="share-page">
     <h3>Share this post</h3>
     <p>Share this on this post on Twitter, Facebook or Google</p>
-    <a href="https://twitter.com/intent/tweet?text=Separate Your Layout and skin Sass files&url=cathydutton.co.uk/posts/separate-your-layout-sass.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=cathydutton.co.uk/posts/separate-your-layout-sass.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
-    <a href="https://plus.google.com/share?url=cathydutton.co.uk/posts/separate-your-layout-sass.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
+    <a href="https://twitter.com/intent/tweet?text=Jekyll, Gulp and Github&url=cathydutton.co.uk/posts/Jekyll-Gulp-and-Github.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=cathydutton.co.uk/posts/Jekyll-Gulp-and-Github.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
+    <a href="https://plus.google.com/share?url=cathydutton.co.uk/posts/Jekyll-Gulp-and-Github.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
 </div>
 
     </section>
@@ -295,7 +255,7 @@ https://github.com/cathydutton
       <ul class="page-navigation">
   
   <li class="button--page-navigation__prev">
-    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/sass-dynamic-colour-change.html">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/It-s-not-Sass-s-fault-your-CSS-is-sh-t.html">
       <!-- <span class="visually-hidden">Go to the previous post</span> -->
       <svg class="button--page-navigation__svg" version="1.1" role="presentation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
@@ -306,7 +266,7 @@ https://github.com/cathydutton
   
   
   <li class="button--page-navigation__next">
-    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/sass-structure-layout-and-theme-files.html">
+    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/Leaving-E-Commerce.html">
       <!-- <span class="visually-hidden">Go to the next post</span> -->
       <span class="page-navigation-title">Go to the next post</span>
       <svg class="button--page-navigation__svg" role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >

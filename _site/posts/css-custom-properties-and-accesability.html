@@ -20,7 +20,7 @@ https://github.com/cathydutton
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Separate Your Layout and skin Sass files</title>
+		<title>CSS custom properties and accesability</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="Front End Developer, UX, CSS, Sass, PostCSS, JavaScript">
 		<meta name="author" content="Cathy Dutton - https://cathydutton.co.uk" />
@@ -38,7 +38,7 @@ https://github.com/cathydutton
 
 		<!-- Prerender work page -->
 		<link rel="prerender" href="https://cathydutton.co.uk/portfolio.html">
-		<link rel="canonical" href="cathydutton.co.uk/posts/separate-your-layout-sass.html">
+		<link rel="canonical" href="cathydutton.co.uk/posts/css-custom-properties-and-accesability.html">
 
 
 		
@@ -149,144 +149,251 @@ https://github.com/cathydutton
 <div class="content">
   <main id="main">
     <header role="banner" class="header">
-      <h1 class="heading heading__intro">Separate Your Layout and skin Sass files</h1>
-      <p class="heading heading--primary">10 Jun 2014</p>
+      <h1 class="heading heading__intro">CSS custom properties and accesability</h1>
+      <p class="heading heading--primary">02 Apr 2018</p>
     </header>
 
 
-    <p>One of the greatest things about Sass is the ability it provides to separate large files in to more manageable chunks of code. When working on large or complex sites and future proofing code this becomes even more significant.</p>
+    <p>CSS custom properties are the improved alternatives to the variables available in pre processing languages like Sass and Less. Unlike compiled variables custom properties allow values to be updated dynamically, enabling users to make site wide changes to colour themes, fonts and text size amongst others.</p>
 
-<p>Without adding any additional requests to the web site’s head or effecting site speed and load times, css can be split out in to easy to manage folders and files. Developers should never again be faced with an endless css file packed with all the theming, styles, colours, typography, structure and media queries of an entire website.</p>
+<h3 id="update-colour-theme">1. Update colour theme</h3>
 
-<p>This provides the perfect opportunity to separate the layout and structural css from the style or ‘skin’ css. In doing this the code becomes much easier to maintain, and if necessary to change or update in the future.</p>
+<p>Themed CSS became common practice with the arrival of Sass variables, by defining a set of colour variables at the top of a partial CSS could be reused quickly and easily. This practice does however introduce a lot of duplicate work and CSS bloat.</p>
 
-<h2 class="heading">Layout.scss </h2>
+<div class="highlighter-rouge"><pre class="highlight"><code>$body-background-color: #eee;
+$body-text-color: #222;
+$link-colour:
+$link-hover-colour:
 
-<p>The layout file should be for structural styles only, building the wireframe of a page without applying any of it’s look or feel. The layout.scss file will therefore remain small and easy to follow for any developer picking up the project and needing to make a quick edit to the page layout.</p>
-
-<h2 class="heading">Example</h2>
-
-<p>The example code below uses the Maze grid system to demonstrate. The example shows three layout blocks <strong>.logo</strong>, <strong>.search</strong> and <strong>.social-share</strong> within the row <strong>.container</strong>. Using the grid mixin each selector in the row is assigned a column span with all 3 adding up to 12. (More information on the grid set up can be found <a href="https://cathydutton.co.uk/css/maze-responsive-grid-framework" title="Maze - Sass grid system" target="_blank">here</a>).</p>
-
-<header class="container">
-
-<div class="demo-logoo">
-  Logo
-</div>
-
-<div class="demo-searchh">
-  Search
-</div>
-
-<div class="demo-social-share">
-  Social
-</div></header>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>&amp;lt;!-- Header --&amp;gt;
-&amp;lt;header class="container"&amp;gt;
-    &amp;lt;div class="logo"&amp;gt;Logo&amp;lt;/div&amp;gt;
-    &amp;lt;div class="search"&amp;gt;Search&amp;lt;/div&amp;gt;
-     &amp;lt;div class="social-share"&amp;gt;Social&amp;lt;/div&amp;gt;
-  &amp;lt;/header&amp;gt;
-&amp;lt;!--End  Header --&amp;gt;
-</code></pre>
-</div>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.container {
-	@include clearfix;
-	width: 100%;
-	margin: 10px 0;
+body {
+  background-color: $body-background-color;
+  color: $body-text-color;
 }
 
-.logo {
-   @include grid(3);
-}
-
-.search {
-   @include grid(6);
-}
-
-.social-share {
-   @include grid(3);
+a {
+ colour: $link-colour;
+} &amp;:hover {
+ Colour: $link-hover-colour;
 }
 </code></pre>
 </div>
 
-<p>The css above is easy to read as each selector has only the layout includes assigned to it. As pages get bigger and more elements are added keeping the grid includes clear and easy to find becomes essential. Making changes to the widths or even adding in a new column can be easily done by adjusting the values passed to the grid mixin.</p>
+<p>With custom properties this duplication is removed. The property values do not need to be complied meaning they can be updated dynamically</p>
 
-<h3 class="heading">Adding a new column&#8230; </h3>
-<header class="container">
+<p>The above Sass example can now be replaced with this…</p>
 
-<div class="demo-logoo">
-  Logo
+<p>CODE EXAMPLE bad colours</p>
+
+<p>Naming variables in a meaningful way is difficult, naming variables that are used in multiple themes is even more difficult.</p>
+
+<p>Name things - in a way that makes sense - loads of examples and final choice.
+Color names become key, used everywhere but dont want too many</p>
+
+<p>No - border-colour
+Text-colour -three etc</p>
+
+<p>No colour names??????</p>
+
+<p>Yes too ……</p>
+
+<p>This can nbe helped by using inherit propertys</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$orange: #ffa600;
+$grey: #f3f3f3;
+$blue: #82d2e5;
+
+$color-primary: $orange;
+$color-secondary: $grey;
+$color-tertiary: $blue;
+
+$link-primary: $green;
+$link- secondary: $blue;
+$link- external: $grey;
+</code></pre>
 </div>
 
-<div class="demo2-search">
-  Search
-</div>
+<p>At least now it’s obvious what the variables are by looking at them. It’s also really easy to change your colors. The problem is the variables aren’t reusable. What happens when decide to use #292929 as the background color for your buttons? Do you rename $border-colorto $border-and-button-color? Do you add another variable and duplicate the value?</p>
 
-<div class="demo2-social-share">
-  Social
-</div>
+<p>Old way - but this won’t work need real names</p>
 
-<div class="demo2-call-us">
-  Call Us
-</div></header>
+<p>Talk about max number of colours for ideal pallette</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.logo {
-   @include grid(3);
+<p>More colour ideas - https://github.com/adamwathan/theming-tailwind-demo/blob/master/src/styles.css</p>
+
+<p>Try a JS theme generator.</p>
+
+<p>Its actually less confusing to call them by the colour and have it worn in contrast mode</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>:root {
+  --colour-black: #001429;
+  --colour-dark: #001F3F;
+  --colour-medium: #003D7A;
+  --colour-light: #E0F0FF;
+  --colour-white: #FFFFFF;
+  --colour-bright: #3D9970;
+  --colour-error: #A91919; 
 }
-.search {
-   @include grid(3);
+.theme-dark {
+  --colour-black: #FFFFFF;
+  --colour-dark: #AAAAAA;
+  --colour-medium: #2ECC40;
+  --colour-light: #048386; 
+  --colour-white: #111111;
+  --colour-bright: #FFDC00; 
+  --colour-error: #FF851B;
 }
-.social-share {
-   @include grid(3);
-}
-.call-us {
-   @include grid(3);
+
+.theme-monochrome {
+  --colour-black: #BD9562;
+  --colour-dark: #AB773F;
+  --colour-medium: #553C1C;
+  --colour-light: #3c240d;
+  --colour-white: #211505;
+  --colour-bright: #AF8857;
+  --colour-error: #A37A48; 
 }
 </code></pre>
 </div>
 
-<h3 class="heading">Taking things a step further </h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>themeDefault.onclick = function(){
+    body.className = "theme-default";
+  };
 
-<p>The break point mixin can also be added to the layout file helping to keep all the layout properties together. For responsive sites I also recommend creating a third style sheet to deal solely with the media queries.</p>
+ themeDark.onclick = function(){
+    body.className = "theme-dark";
+  };
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.logo {
-  @include grid(3);
-  @include breakpoint(tablet, 6);
+themeMonochrome.onclick = function(){
+  body.className = "theme-monochrome";
+  };
+</code></pre>
+</div>
+
+<p>This is great, until the user navigates to a new page or refreshes the browser. To solve this issue we can store the value of the custom property in local storage, and then check for a saved value on page load.</p>
+
+<h3 id="update-a-font">2. Update a font</h3>
+
+<p>—– INTRO</p>
+
+<p>Can also be done with a class,</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>const body = document.body;
+body.classList.add("comic-sans");
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+comic-sans {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 </code></pre>
 </div>
 
-<p>The separate Sass files can be compiled using a base style.scss file. Below is an example of how that stylesheet would look using folders for the three separated sass files on each page.</p>
+<p>There is nothing wrong with this approach in this instance, however if you are allowing users to update multiple properties for example text size you could end up with a lot of additional classes.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>/* PRODUCT PAGE - Unique product page styles
-========================================================================== */
+<p>An alternative approach is to declare the font just once in CSS using a custom property.</p>
 
-	@import &amp;#039;product-page/_layout.scss&amp;#039;;
-	@import &amp;#039;product-page/_theme.scss&amp;#039;;
-	@import &amp;#039;product-page/_responsive.scss&amp;#039;;
+<div class="highlighter-rouge"><pre class="highlight"><code>:root {
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
 
-
-/* CATEGORY PAGE - Unique category page styles
-========================================================================== */
-
-	@import &amp;#039;category-page/_layout.scss&amp;#039;;
-	@import &amp;#039;category-page/_theme.scss&amp;#039;;
-	@import &amp;#039;category-page/_responsive.scss&amp;#039;;
+body {
+  font-family: var(--font-family);
+}
 
 </code></pre>
 </div>
+
+<p>And allow users to update this value through javaScript</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>// Global
+const body = document.body;
+const root = document.querySelector(':root');
+const rootStyles = getComputedStyle(root);
+
+dyslexicFont.onclick = function(){
+  body.style.setProperty('--font-family', '"Comic Sans MS", "Comic Sans", cursive');
+  localStorage.setItem("fontFamily", '"Comic Sans MS", "Comic Sans", cursive');
+};
+
+defaultFont.onclick = function(){
+  body.style.setProperty('--font-family', rootStyles.getPropertyValue('--font-family'));
+  localStorage.setItem("fontFamily", rootStyles.getPropertyValue('--font-family'));
+};
+
+When either button is clicked the value of the custom property --font-family is updated across the page.
+
+This is great, until the user navigates to a new page or refreshes the browser. To solve this issue we can store the value of the custom property in local storage, and then check for a saved value on page load.
+
+// If no local storage value exists create one
+if (!fontFamily) {
+    body.style.setProperty("--font-family", localStorage.getItem("fontFamily"));
+}
+
+// Get current value
+var fontFamily = getComputedStyle(body).getPropertyValue('--font-family');
+
+</code></pre>
+</div>
+
+<p>Demo</p>
+
+<p data-height="300" data-theme-id="8492" data-slug-hash="OQrGab" data-default-tab="html,result" data-user="cathydutton" data-embed-version="2" data-pen-title="Custom property font switcher" class="codepen">See the Pen <a href="https://codepen.io/cathydutton/pen/OQrGab/">Custom property font switcher</a> by Cathy Dutton (<a href="https://codepen.io/cathydutton">@cathydutton</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async="" src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<h3 id="update-text-size">3. Update text size</h3>
+
+<p>Updating the text size for a site is slightly more complex, this is where simply adding a class to the body would not work, (unless you want a stylesheet full of classes for every available size).</p>
+
+<p>The concept here is the same, but instead of assigning a new value to the property we add to it.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>:root {
+  --font-size: 1.188em;
+}
+
+body {
+  font-size: var(--font-size)
+}
+
+// Increase text size
+increaseFont.onclick = function(){
+    var number = parseFloat(fontSize) 
+    number += 0.2
+    fontSize = number;
+    body.style.setProperty('--font-size', number + 'em');
+    localStorage.setItem("fontSize", number + 'em');
+};
+
+// Decrease text size
+decreaseFont.onclick = function(){
+    var number = parseFloat(fontSize) 
+    number -= 0.2
+    fontSize = number;   
+    body.style.setProperty('--font-size', number + 'em');
+    localStorage.setItem("fontSize", number + 'em');
+};
+
+</code></pre>
+</div>
+
+<p>When each button is clicked the current value of –font-size is taken and either increased or decreased. The parseFloat() function is used to first strip the unit from the property and then convert the value from a string to an integer.</p>
+
+<p>Demo</p>
+
+<p data-height="300" data-theme-id="8492" data-slug-hash="YedMRP" data-default-tab="html,result" data-user="cathydutton" data-embed-version="2" data-pen-title="Custom property text size" class="codepen">See the Pen <a href="https://codepen.io/cathydutton/pen/YedMRP/">Custom property text size</a> by Cathy Dutton (<a href="https://codepen.io/cathydutton">@cathydutton</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async="" src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 
 
     <section>
       <div class="share-page">
     <h3>Share this post</h3>
     <p>Share this on this post on Twitter, Facebook or Google</p>
-    <a href="https://twitter.com/intent/tweet?text=Separate Your Layout and skin Sass files&url=cathydutton.co.uk/posts/separate-your-layout-sass.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=cathydutton.co.uk/posts/separate-your-layout-sass.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
-    <a href="https://plus.google.com/share?url=cathydutton.co.uk/posts/separate-your-layout-sass.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
+    <a href="https://twitter.com/intent/tweet?text=CSS custom properties and accesability&url=cathydutton.co.uk/posts/css-custom-properties-and-accesability.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=cathydutton.co.uk/posts/css-custom-properties-and-accesability.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
+    <a href="https://plus.google.com/share?url=cathydutton.co.uk/posts/css-custom-properties-and-accesability.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
 </div>
 
     </section>
@@ -295,7 +402,7 @@ https://github.com/cathydutton
       <ul class="page-navigation">
   
   <li class="button--page-navigation__prev">
-    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/sass-dynamic-colour-change.html">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/continuous-improvement.html">
       <!-- <span class="visually-hidden">Go to the previous post</span> -->
       <svg class="button--page-navigation__svg" version="1.1" role="presentation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
@@ -304,16 +411,6 @@ https://github.com/cathydutton
     </a>
   </li>
   
-  
-  <li class="button--page-navigation__next">
-    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/sass-structure-layout-and-theme-files.html">
-      <!-- <span class="visually-hidden">Go to the next post</span> -->
-      <span class="page-navigation-title">Go to the next post</span>
-      <svg class="button--page-navigation__svg" role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-        <path d="M11.611,10.049l-4.76-4.873c-0.303-0.31-0.297-0.804,0.012-1.105c0.309-0.304,0.803-0.293,1.105,0.012l5.306,5.433c0.304,0.31,0.296,0.805-0.012,1.105L7.83,15.928c-0.152,0.148-0.35,0.223-0.547,0.223c-0.203,0-0.406-0.08-0.559-0.236c-0.303-0.309-0.295-0.803,0.012-1.104L11.611,10.049z"></path>
-      </svg>
-    </a>
-  </li>
   
 </ul>
 

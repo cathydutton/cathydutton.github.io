@@ -20,7 +20,7 @@ https://github.com/cathydutton
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Separate Your Layout and skin Sass files</title>
+		<title>Title</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="Front End Developer, UX, CSS, Sass, PostCSS, JavaScript">
 		<meta name="author" content="Cathy Dutton - https://cathydutton.co.uk" />
@@ -38,7 +38,7 @@ https://github.com/cathydutton
 
 		<!-- Prerender work page -->
 		<link rel="prerender" href="https://cathydutton.co.uk/portfolio.html">
-		<link rel="canonical" href="cathydutton.co.uk/posts/separate-your-layout-sass.html">
+		<link rel="canonical" href="cathydutton.co.uk/posts/what-comes-first-the-user-or-the-service.html">
 
 
 		
@@ -149,144 +149,140 @@ https://github.com/cathydutton
 <div class="content">
   <main id="main">
     <header role="banner" class="header">
-      <h1 class="heading heading__intro">Separate Your Layout and skin Sass files</h1>
-      <p class="heading heading--primary">10 Jun 2014</p>
+      <h1 class="heading heading__intro">Title</h1>
+      <p class="heading heading--primary">27 Mar 2017</p>
     </header>
 
 
-    <p>One of the greatest things about Sass is the ability it provides to separate large files in to more manageable chunks of code. When working on large or complex sites and future proofing code this becomes even more significant.</p>
+    <p>Online transactions are now common place, providing opertunaties for organisations to re-design legacy paper based forms. As well as oprtunaty this can also come with pressure. Paper forms do have some advantages over there digital replacemcents.</p>
 
-<p>Without adding any additional requests to the web site’s head or effecting site speed and load times, css can be split out in to easy to manage folders and files. Developers should never again be faced with an endless css file packed with all the theming, styles, colours, typography, structure and media queries of an entire website.</p>
+<ul>
+  <li>
+    <p>They can be read from begining to end alowing users to uderstand exactly what isexcpected of them before begingin.</p>
+  </li>
+  <li>
+    <p>They can be re-visited and or part completed alowing for users to gather information they may not have had to hand, without a complex save and return or pssword feature</p>
+  </li>
+  <li>
+    <p>They can be edited and filled out in the order of the users choosing</p>
+  </li>
+</ul>
 
-<p>This provides the perfect opportunity to separate the layout and structural css from the style or ‘skin’ css. In doing this the code becomes much easier to maintain, and if necessary to change or update in the future.</p>
+<p>For all of these reaons and more the stucture and question sequence of online form is hugley important. Getting it right can create a trusting un obstructive user experience. Getting it wrong can have a damaging effect on the relationship with the user.</p>
 
-<h2 class="heading">Layout.scss </h2>
+<h3 id="so-how-should-you-structure-the-form">So, how should you structure the form?</h3>
 
-<p>The layout file should be for structural styles only, building the wireframe of a page without applying any of it’s look or feel. The layout.scss file will therefore remain small and easy to follow for any developer picking up the project and needing to make a quick edit to the page layout.</p>
+<p>A well-thought-out form should flow naturally in the same way that a conversation would. Each new question put to the user should relate to the information they've already provided and progress in logical steps. The form should also flow from topic to topic, not jump sporadically from service choices to requests for user information.</p>
 
-<h2 class="heading">Example</h2>
+<p>In most cases a form can be split into two topics:</p>
 
-<p>The example code below uses the Maze grid system to demonstrate. The example shows three layout blocks <strong>.logo</strong>, <strong>.search</strong> and <strong>.social-share</strong> within the row <strong>.container</strong>. Using the grid mixin each selector in the row is assigned a column span with all 3 adding up to 12. (More information on the grid set up can be found <a href="https://cathydutton.co.uk/css/maze-responsive-grid-framework" title="Maze - Sass grid system" target="_blank">here</a>).</p>
+<ol>
+  <li>The service - options relating to the service the user requires, for example length of licence or </li>
+  <li>The user - information about the user required either by the organisation or to identify available products, permits or licences, for example date of birth or address</li>
+</ol>
 
-<header class="container">
+<p>So which should come first: the user or the service?</p>
 
-<div class="demo-logoo">
-  Logo
-</div>
+<h2 id="service-first">Service first</h2>
 
-<div class="demo-searchh">
-  Search
-</div>
+<p>In user-centred design the user and their needs should always come first, therefore the form should aim to focus on the users' end goal. Any additional questions should come at the end.</p>
 
-<div class="demo-social-share">
-  Social
-</div></header>
+<p><img src="../assets/img/service-first.jpg" alt="Service first service flow" /></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&amp;lt;!-- Header --&amp;gt;
-&amp;lt;header class="container"&amp;gt;
-    &amp;lt;div class="logo"&amp;gt;Logo&amp;lt;/div&amp;gt;
-    &amp;lt;div class="search"&amp;gt;Search&amp;lt;/div&amp;gt;
-     &amp;lt;div class="social-share"&amp;gt;Social&amp;lt;/div&amp;gt;
-  &amp;lt;/header&amp;gt;
-&amp;lt;!--End  Header --&amp;gt;
-</code></pre>
-</div>
+<p>There are many benefits to this approach, including:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.container {
-	@include clearfix;
-	width: 100%;
-	margin: 10px 0;
-}
+<ul>
+  <li>Addressing the needs of the user before that of the organisation</li>
+  <li>Opening the form with expected questions, making it quick and easy for experienced or return users to complete</li>
+  <li>Creating a simplified journey by asking only the questions required for the selected product</li>
+</ul>
 
-.logo {
-   @include grid(3);
-}
+<p>However there are also some drawbacks to opening the form with product related questions:</p>
 
-.search {
-   @include grid(6);
-}
+<ul>
+  <li>We lose the opportunity to provide guidance for new or inexperienced users</li>
+  <li>Users may be making ill-informed decisions</li>
+  <li>Users could be presented with options they are not eligible for</li>
+</ul>
 
-.social-share {
-   @include grid(3);
-}
-</code></pre>
-</div>
+<section>
+  <blockquote>
+  "I don't know which licence is right for me"
+  </blockquote>
+</section>
 
-<p>The css above is easy to read as each selector has only the layout includes assigned to it. As pages get bigger and more elements are added keeping the grid includes clear and easy to find becomes essential. Making changes to the widths or even adding in a new column can be easily done by adjusting the values passed to the grid mixin.</p>
+<h2 id="user-first">User first</h2>
 
-<h3 class="heading">Adding a new column&#8230; </h3>
-<header class="container">
+<p>Sometimes the services or products available are determined by the user. In these situations, we first need to collect information from the user in order to create the simplest journey for them.</p>
 
-<div class="demo-logoo">
-  Logo
-</div>
+<p><img src="../assets/img/user-first.jpg" alt="User first service flow" /></p>
 
-<div class="demo2-search">
-  Search
-</div>
+<p>The benefits of first determining who the user is include:</p>
 
-<div class="demo2-social-share">
-  Social
-</div>
+<ul>
+  <li>The ability to guide users, ensuring they get the best product for them</li>
+  <li>Displaying accurate price points if there are disabled or age-related discounts</li>
+  <li>Determining which products the user is eligible for before displaying them</li>
+  <li>Asking anticipated questions before surprising ones, for example starting with "What is your name?"</li>
+</ul>
 
-<div class="demo2-call-us">
-  Call Us
-</div></header>
+<p>This approach however also has some drawbacks, including:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.logo {
-   @include grid(3);
-}
-.search {
-   @include grid(3);
-}
-.social-share {
-   @include grid(3);
-}
-.call-us {
-   @include grid(3);
-}
-</code></pre>
-</div>
+<ul>
+  <li>It could be unclear why all questions are are being asked</li>
+  <li>Some questions about the user could be product-specific.</li>
+</ul>
 
-<h3 class="heading">Taking things a step further </h3>
+<section>
+  <blockquote>
+  "This form wants to know so much about me, but I know nothing about it."
+  </blockquote>
+</section>
 
-<p>The break point mixin can also be added to the layout file helping to keep all the layout properties together. For responsive sites I also recommend creating a third style sheet to deal solely with the media queries.</p>
+<h3 id="so-how-do-you-determine-the-best-way">So, how do you determine the best way?</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.logo {
-  @include grid(3);
-  @include breakpoint(tablet, 6);
-}
-</code></pre>
-</div>
+<p>There is no one right way; each form will have a different set of criteria to work with, resulting in pros and cons for each approach. The key is to prototype multiple question flows and, most importantly, test them with real users.</p>
 
-<p>The separate Sass files can be compiled using a base style.scss file. Below is an example of how that stylesheet would look using folders for the three separated sass files on each page.</p>
+<p>The first step in working out the best question sequence for a form is to write each individual question onto a card or post-it note. These can be moved around quickly into as many different orders as possible. Try to identify the key decision questions in the journey (where the flow would branch).</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>/* PRODUCT PAGE - Unique product page styles
-========================================================================== */
+<p><img src="../assets/img/card-sort.jpg" alt="Card sorting" width="600px" /></p>
 
-	@import &amp;#039;product-page/_layout.scss&amp;#039;;
-	@import &amp;#039;product-page/_theme.scss&amp;#039;;
-	@import &amp;#039;product-page/_responsive.scss&amp;#039;;
+<p>Experiment by mapping out all the possible user journeys using the key questions you identified as starting points. Use colour-coded post-it notes to highlight positive and negative aspects for each user journey in each sequence.</p>
 
+<p><img src="../assets/img/user-flows.jpg" alt="User flows" width="600px" /></p>
 
-/* CATEGORY PAGE - Unique category page styles
-========================================================================== */
+<p>Things to look out for include:</p>
 
-	@import &amp;#039;category-page/_layout.scss&amp;#039;;
-	@import &amp;#039;category-page/_theme.scss&amp;#039;;
-	@import &amp;#039;category-page/_responsive.scss&amp;#039;;
+<h4 id="efficiency">Efficiency</h4>
 
-</code></pre>
-</div>
+<p>The form should be quick, intuitive and easy to follow. Get users to their end goal as quickly as possible with minimal disruption. Where possible this should be achieved for all users and all products, however you may have to optimise the flow for the most popular journey.</p>
+
+<h4 id="price">Price</h4>
+
+<p>The price of a product or service is one of the most influential decision drivers. Display the cost implications of a decision clearly, particularly if the user is inexperienced or new to the service. By adding prices to service options, users can make quicker, more informed decisions and have more confidence in the choices they make. The service also becomes much more transparent with no surprises at the end of the form.</p>
+
+<p>If the price of a service can be affected by the user's details, for example with senior or junior discounts, then the user would need to be identified first to allow for accurate pricing.</p>
+
+<p><img src="img/user-journey.jpg" alt="User journey" width="600px" /></p>
+
+<h4 id="consistency--familiarity">Consistency &amp; familiarity</h4>
+
+<p>Once you're happy with a flow, it is useful to move from cards to a more permanent medium to enable direct comparisons between each user journey. The flow should remain consistent across journeys to aid return or repeat visitors and to build a sense of familiarity.</p>
+
+<p>The experience of buying for the first time should not be alien to that of upgrading or renewing a product.</p>
+
+<h4 id="future-proofing">Future-proofing</h4>
+
+<p>Building on the above point, the flow should look to incorporate possible future enhancements. It is helpful to have an idea of the full service roadmap to ensure you don't need to re-shuffle large sections of a form to include a new product or premit.</p>
 
 
     <section>
       <div class="share-page">
     <h3>Share this post</h3>
     <p>Share this on this post on Twitter, Facebook or Google</p>
-    <a href="https://twitter.com/intent/tweet?text=Separate Your Layout and skin Sass files&url=cathydutton.co.uk/posts/separate-your-layout-sass.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=cathydutton.co.uk/posts/separate-your-layout-sass.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
-    <a href="https://plus.google.com/share?url=cathydutton.co.uk/posts/separate-your-layout-sass.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
+    <a href="https://twitter.com/intent/tweet?text=Title&url=cathydutton.co.uk/posts/what-comes-first-the-user-or-the-service.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=cathydutton.co.uk/posts/what-comes-first-the-user-or-the-service.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
+    <a href="https://plus.google.com/share?url=cathydutton.co.uk/posts/what-comes-first-the-user-or-the-service.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
 </div>
 
     </section>
@@ -295,7 +291,7 @@ https://github.com/cathydutton
       <ul class="page-navigation">
   
   <li class="button--page-navigation__prev">
-    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/sass-dynamic-colour-change.html">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/Writing-a-simple-postCSS-plugin.html">
       <!-- <span class="visually-hidden">Go to the previous post</span> -->
       <svg class="button--page-navigation__svg" version="1.1" role="presentation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
@@ -306,7 +302,7 @@ https://github.com/cathydutton
   
   
   <li class="button--page-navigation__next">
-    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/sass-structure-layout-and-theme-files.html">
+    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/css-myths.html">
       <!-- <span class="visually-hidden">Go to the next post</span> -->
       <span class="page-navigation-title">Go to the next post</span>
       <svg class="button--page-navigation__svg" role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
