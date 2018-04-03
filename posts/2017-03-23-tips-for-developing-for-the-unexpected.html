@@ -20,8 +20,8 @@ https://github.com/cathydutton
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Separate Your Layout and skin Sass files</title>
-		<meta name="description" content="">
+		<title>CSS without assumption</title>
+		<meta name="description" content="CSS for the unexpected">
 		<meta name="keywords" content="Front End Developer, UX, CSS, Sass, PostCSS, JavaScript">
 		<meta name="author" content="Cathy Dutton - https://cathydutton.co.uk" />
 		<link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
@@ -38,7 +38,7 @@ https://github.com/cathydutton
 
 		<!-- Prerender work page -->
 		<link rel="prerender" href="https://cathydutton.co.uk/portfolio.html">
-		<link rel="canonical" href="cathydutton.co.uk/posts/separate-your-layout-sass.html">
+		<link rel="canonical" href="cathydutton.co.uk/posts/2017-03-23-tips-for-developing-for-the-unexpected.html">
 
 
 		
@@ -149,144 +149,115 @@ https://github.com/cathydutton
 <div class="content">
   <main id="main">
     <header role="banner" class="header">
-      <h1 class="heading heading__intro">Separate Your Layout and skin Sass files</h1>
-      <p class="heading heading--primary">10 Jun 2014</p>
+      <h1 class="heading heading__intro">CSS without assumption</h1>
+      <p class="heading heading--primary">23 Mar 2017</p>
     </header>
 
 
-    <p>One of the greatest things about Sass is the ability it provides to separate large files in to more manageable chunks of code. When working on large or complex sites and future proofing code this becomes even more significant.</p>
+    <p>“Build your website to work in situations you haven’t imagined, and on devices that don’t yet exist” — Jeffrey Zeldman</p>
 
-<p>Without adding any additional requests to the web site’s head or effecting site speed and load times, css can be split out in to easy to manage folders and files. Developers should never again be faced with an endless css file packed with all the theming, styles, colours, typography, structure and media queries of an entire website.</p>
+<p>Turn into 10 steps/ advice and tips for developing for the unexpected</p>
 
-<p>This provides the perfect opportunity to separate the layout and structural css from the style or ‘skin’ css. In doing this the code becomes much easier to maintain, and if necessary to change or update in the future.</p>
+<p>When prototyping for digital projects we often work with sample data which fits perfectly with the UI. Projects are also prone to changing goal posts or revised features not to mention changes in technology, languages or device sizes. Keeping a project simple and enjoyable to work with can be difficult</p>
 
-<h2 class="heading">Layout.scss </h2>
+<p>When starting work on a new digital project it is easy to be blinded by the visuals or prototypes that are right in front of
+you, creating a codebase that fits perfectly for the content provided. This approach however will almost always
+turn out to be a costly mistake.</p>
 
-<p>The layout file should be for structural styles only, building the wireframe of a page without applying any of it’s look or feel. The layout.scss file will therefore remain small and easy to follow for any developer picking up the project and needing to make a quick edit to the page layout.</p>
+<p>1)
+2)
+3)
+4)
+5)
+6)
+7)
+8)
+9)
+10) Resources - https://github.com/Heydon/forceFeed</p>
 
-<h2 class="heading">Example</h2>
+<p>Branding - Keep colors, fonts, spacing etc in a variables or settings partial that can be quicly and easily updated. CSS variables, Sass, Less.</p>
 
-<p>The example code below uses the Maze grid system to demonstrate. The example shows three layout blocks <strong>.logo</strong>, <strong>.search</strong> and <strong>.social-share</strong> within the row <strong>.container</strong>. Using the grid mixin each selector in the row is assigned a column span with all 3 adding up to 12. (More information on the grid set up can be found <a href="https://cathydutton.co.uk/css/maze-responsive-grid-framework" title="Maze - Sass grid system" target="_blank">here</a>).</p>
+<p>Buttons - Use transparent for the button without a background, not white. The white background may change</p>
 
-<header class="container">
+<p>Utalise the inherit property.</p>
 
-<div class="demo-logoo">
-  Logo
-</div>
+<p>Forget about Pixels</p>
 
-<div class="demo-searchh">
-  Search
-</div>
+<h3 id="develop-every-application-without-assumption">Develop every application without assumption</h3>
 
-<div class="demo-social-share">
-  Social
-</div></header>
+<h3 id="stop-thinking-in-pxs">Stop thinking in PX’s</h3>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&amp;lt;!-- Header --&amp;gt;
-&amp;lt;header class="container"&amp;gt;
-    &amp;lt;div class="logo"&amp;gt;Logo&amp;lt;/div&amp;gt;
-    &amp;lt;div class="search"&amp;gt;Search&amp;lt;/div&amp;gt;
-     &amp;lt;div class="social-share"&amp;gt;Social&amp;lt;/div&amp;gt;
-  &amp;lt;/header&amp;gt;
-&amp;lt;!--End  Header --&amp;gt;
-</code></pre>
-</div>
+<p>Working with a pixel perfect approach is a fairly old request  blah blah leads to rigid applications, which can break the minute the content
+is updated or an image changes size. Problems will also occur should the application be translated, a
+new device is released or the copy is updated.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.container {
-	@include clearfix;
-	width: 100%;
-	margin: 10px 0;
-}
+<p>Instead we should try to plan for the unknown from the outset, each new project should be approached from
+the most unlikely situation and worked backwards to create an UI that works in all situations. Working in
+this way may be more time consuming in the beginning, but will prevent the need for endless firefighting in
+the future.</p>
 
-.logo {
-   @include grid(3);
-}
+<h2 id="text-changes">Text changes</h2>
 
-.search {
-   @include grid(6);
-}
+<p>When building any website or application we should expect and plan for the copy to change. This can be
+the main body or content or even just the text on a button.</p>
 
-.social-share {
-   @include grid(3);
-}
-</code></pre>
-</div>
+<p>General cms changes to copy
+titles/ buttons vertical and horizontal centering - not line hight
+Don’t use line height to vertivally centre or horizontaly centre.</p>
 
-<p>The css above is easy to read as each selector has only the layout includes assigned to it. As pages get bigger and more elements are added keeping the grid includes clear and easy to find becomes essential. Making changes to the widths or even adding in a new column can be easily done by adjusting the values passed to the grid mixin.</p>
+<h2 id="language-changes">Language changes</h2>
 
-<h3 class="heading">Adding a new column&#8230; </h3>
-<header class="container">
+<p>Language changes can effect more then just a page layout, right to left languages can require a full layout
+re-think</p>
 
-<div class="demo-logoo">
-  Logo
-</div>
+<p>translations
+left to write speaking countries.
+If this hasnt been planned for you can use PostCSS to go back to edit it.
+large button with chinese symbol in it - remove foxxe width just have em padding left and right.</p>
 
-<div class="demo2-search">
-  Search
-</div>
+<h2 id="branding-changes">Branding changes</h2>
 
-<div class="demo2-social-share">
-  Social
-</div>
+<p>Color variables named properly
+primary color not blue etc
+CSS Custom properties introducing scope, planning for change - high contrast etc.
+Using inherit, current color etc</p>
 
-<div class="demo2-call-us">
-  Call Us
-</div></header>
+<h2 id="layout-changes">layout changes</h2>
+<p>Patterns not pages related stuff
+Modules not pages</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.logo {
-   @include grid(3);
-}
-.search {
-   @include grid(3);
-}
-.social-share {
-   @include grid(3);
-}
-.call-us {
-   @include grid(3);
-}
-</code></pre>
-</div>
+<h2 id="screen-size-changes">Screen size changes</h2>
+<p>Element queries
+content first etc
+Don’t think in PX’s??????
+Devices can change</p>
 
-<h3 class="heading">Taking things a step further </h3>
+<h2 id="user-behaviour">User behaviour</h2>
 
-<p>The break point mixin can also be added to the layout file helping to keep all the layout properties together. For responsive sites I also recommend creating a third style sheet to deal solely with the media queries.</p>
+<p>It should never be assumed that a users behaviour will mirror that of the developer or designer on a
+project.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>.logo {
-  @include grid(3);
-  @include breakpoint(tablet, 6);
-}
-</code></pre>
-</div>
+<p>Zooming and the different rounding of pixels in browsers —— Barclays</p>
 
-<p>The separate Sass files can be compiled using a base style.scss file. Below is an example of how that stylesheet would look using folders for the three separated sass files on each page.</p>
+<h2 id="summery---flexible-css">Summery - Flexible CSS</h2>
+<p>PostCSS - If all else fails you can go back and amend entire stylesheets wiTh PostCSS phrasing CSS
+Accessibility - site should be able to adapt quickly - high contrast - larger font sizing
+Layouts should not be defined by content
+Line height -1.5 to centre images!
+Font size — 1
+display table — Chris coyer vid
+flex box Chris coyer vid</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>/* PRODUCT PAGE - Unique product page styles
-========================================================================== */
-
-	@import &amp;#039;product-page/_layout.scss&amp;#039;;
-	@import &amp;#039;product-page/_theme.scss&amp;#039;;
-	@import &amp;#039;product-page/_responsive.scss&amp;#039;;
-
-
-/* CATEGORY PAGE - Unique category page styles
-========================================================================== */
-
-	@import &amp;#039;category-page/_layout.scss&amp;#039;;
-	@import &amp;#039;category-page/_theme.scss&amp;#039;;
-	@import &amp;#039;category-page/_responsive.scss&amp;#039;;
-
-</code></pre>
-</div>
+<p>Do not solve the problems that are right in front of you, solve the problems that are yet to exist.</p>
 
 
     <section>
       <div class="share-page">
     <h3>Share this post</h3>
     <p>Share this on this post on Twitter, Facebook or Google</p>
-    <a href="https://twitter.com/intent/tweet?text=Separate Your Layout and skin Sass files&url=cathydutton.co.uk/posts/separate-your-layout-sass.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=cathydutton.co.uk/posts/separate-your-layout-sass.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
-    <a href="https://plus.google.com/share?url=cathydutton.co.uk/posts/separate-your-layout-sass.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
+    <a href="https://twitter.com/intent/tweet?text=CSS without assumption&url=cathydutton.co.uk/posts/2017-03-23-tips-for-developing-for-the-unexpected.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=cathydutton.co.uk/posts/2017-03-23-tips-for-developing-for-the-unexpected.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
+    <a href="https://plus.google.com/share?url=cathydutton.co.uk/posts/2017-03-23-tips-for-developing-for-the-unexpected.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
 </div>
 
     </section>
@@ -295,7 +266,7 @@ https://github.com/cathydutton
       <ul class="page-navigation">
   
   <li class="button--page-navigation__prev">
-    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/sass-dynamic-colour-change.html">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/Back-to-basics-CSS.html">
       <!-- <span class="visually-hidden">Go to the previous post</span> -->
       <svg class="button--page-navigation__svg" version="1.1" role="presentation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
@@ -306,7 +277,7 @@ https://github.com/cathydutton
   
   
   <li class="button--page-navigation__next">
-    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/sass-structure-layout-and-theme-files.html">
+    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/Writing-a-simple-postCSS-plugin.html">
       <!-- <span class="visually-hidden">Go to the next post</span> -->
       <span class="page-navigation-title">Go to the next post</span>
       <svg class="button--page-navigation__svg" role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
