@@ -11,7 +11,7 @@
   "homepage": "https://github.com/cathydutton/my-site",
   "devDependencies": {
     "amd-optimize": "^0.4.4",
-    "assemble": "assemble/assemble#v0.6.0",
+    "assemble": "^v0.6.0",
     "autoprefixer-core": "^5.2.1",
     "browser-sync": "~2.7.13",
     "components-webfontloader": "~1.5.2",
