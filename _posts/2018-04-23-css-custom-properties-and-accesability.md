@@ -94,7 +94,7 @@ body {
 
 ## Naming things is difficult
 
-On a side note naming CSS variables in a meaningful and user friendly way is difficult, naming colour variables that are used in multiple themes is even more harder! Each variable name needs to make sense in each instance, without being overly case specific.
+On a side note naming CSS variables in a meaningful and user friendly way is difficult, naming colour variables that are used in multiple themes is even harder! Each variable name needs to make sense in each instance, without being overly case specific.
 
 #### Bad examples
 
@@ -297,7 +297,7 @@ defaultFont.onclick = function(){
 
 Updating the text size for a site is slightly more complex, in this example simply adding a class to the body would not work, (unless you want a stylesheet full of classes for every available size).
 
-The concept here is similar to updating the font, but instead of assigning a new value to the property we add to it.
+The concept here is similar to updating the font, but instead of assigning a new value to the property we amend it.
 
 ```
 :root {

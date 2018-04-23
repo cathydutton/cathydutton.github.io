@@ -102,7 +102,7 @@ body {
   color: var(--colour-black);
   background: var(--colour-white);
 }
-</code></pre></div></div><h2 id="naming-things-is-difficult">Naming things is difficult</h2><p>On a side note naming CSS variables in a meaningful and user friendly way is difficult, naming colour variables that are used in multiple themes is even more harder! Each variable name needs to make sense in each instance, without being overly case specific.</p><h4 id="bad-examples">Bad examples</h4><div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  --border-colour: #999999;
+</code></pre></div></div><h2 id="naming-things-is-difficult">Naming things is difficult</h2><p>On a side note naming CSS variables in a meaningful and user friendly way is difficult, naming colour variables that are used in multiple themes is even harder! Each variable name needs to make sense in each instance, without being overly case specific.</p><h4 id="bad-examples">Bad examples</h4><div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  --border-colour: #999999;
   --text-colour: #333333;
 
   --colour-one: #333333;
@@ -226,7 +226,7 @@ defaultFont.onclick = function(){
   localStorage.setItem("fontFamily", rootStyles.getPropertyValue('--font-family'));
 };
 
-</code></pre><h4 class="heading">Demo</h4><p data-height="500" data-theme-id="8492" data-slug-hash="OQrGab" data-default-tab="css,result" data-user="cathydutton" data-embed-version="2" data-pen-title="Custom property font switcher" class="codepen">See the Pen <a href="https://codepen.io/cathydutton/pen/OQrGab/">Custom property font switcher</a> by Cathy Dutton (<a href="https://codepen.io/cathydutton">@cathydutton</a>) on <a href="https://codepen.io">CodePen</a>.</p><script async="" src="https://static.codepen.io/assets/embed/ei.js"></script><h2 class="heading">Example 3 - update text size</h2><p>Updating the text size for a site is slightly more complex, in this example simply adding a class to the body would not work, (unless you want a stylesheet full of classes for every available size).</p><p>The concept here is similar to updating the font, but instead of assigning a new value to the property we add to it.</p><div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:root {
+</code></pre><h4 class="heading">Demo</h4><p data-height="500" data-theme-id="8492" data-slug-hash="OQrGab" data-default-tab="css,result" data-user="cathydutton" data-embed-version="2" data-pen-title="Custom property font switcher" class="codepen">See the Pen <a href="https://codepen.io/cathydutton/pen/OQrGab/">Custom property font switcher</a> by Cathy Dutton (<a href="https://codepen.io/cathydutton">@cathydutton</a>) on <a href="https://codepen.io">CodePen</a>.</p><script async="" src="https://static.codepen.io/assets/embed/ei.js"></script><h2 class="heading">Example 3 - update text size</h2><p>Updating the text size for a site is slightly more complex, in this example simply adding a class to the body would not work, (unless you want a stylesheet full of classes for every available size).</p><p>The concept here is similar to updating the font, but instead of assigning a new value to the property we amend it.</p><div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:root {
   --font-size: 1.188em;
 }
 
