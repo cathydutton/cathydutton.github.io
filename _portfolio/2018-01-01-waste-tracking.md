@@ -132,7 +132,13 @@ At the end of discovery we put together a series of 'How might we' statements fo
 * How might we enforce best practices and increase compliance?
 
 
+<h3 class="heading">Moving to Alpha</h3>
 
+At the end of discovery the waste tracking project but in a successful bid for GovTech Funding. 
+<blockquote> 
+"In shaping this challenge, Defra has worked closely with the Environment Agency and counterparts in Scotland, Wales and Northern Ireland on a waste tracking discovery project. The research conducted during this discovery project, including considerable user research will be used to support this challenge." 
+</blockquote> 
+<a href="https://ciwm-journal.co.uk/waste-tracking-announced-in-first-round-of-govtech-fund-challenges/" title="Waste tracking GovTech fund">Read more about this project</a>.
 
 
 

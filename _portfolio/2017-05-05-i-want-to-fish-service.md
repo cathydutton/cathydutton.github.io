@@ -22,7 +22,7 @@ During the project I was responsible for:
 
 * Mapping out the end to end user journey,  highlighting touch points with the EA, other agencies and some of the main pain points
 * Working with the fisheries department, bailiffs, marketing teams, call centre staff and anglers to get a clearer understanding of the as is service
-
+* Mapping out to be end to end service.
 
 
 <section class="portfolio-images">
@@ -38,7 +38,7 @@ Throughout the process key themes emerged across the service:
 
  * <em>Trust</em> - Lack of understanding and visibility around the EA, how licence money is spent and what's being done to improve Angling
  * <em>Transparency </em>- Clearer communication around where licence money is spent, what the EA does and how to be a compliant angler
- * <em>Communication</em> - Mixed messages around compliance and participation
+ * <em>Communication</em> - Mixed messages around compliance and participation, multiple messages in single interactions reducing clarity. (Marketing, compliance and education, notifacations)
  * <em>Visibility</em> - Lack of visibility for enforcement, maintenance and enhancement of angling
  * <em>Complexity</em> -  Complicated rules that vary on location, water and species, as well as complicated internal process around enforcement and licence checks. 
 
@@ -52,9 +52,9 @@ Throughout the process key themes emerged across the service:
 
 Based on these themes ideas for potential further research were developed including: 
 
- * How might we improve the compliance and understanding of angling byelaw's
- * How might we improve the compliance and understanding of catch returns for Salmon and sea trout anglers
- * How might we improve the bandied interaction for anglers, bailiffs and fisheries staff
+ * How might we improve the compliance and understanding of angling laws and legislation.
+ * How might we improve communication with anglers, clearly distinguishing between sales, education and notifications. 
+ * How might we improve the interaction with anglers when checking licences.
 
 
 
