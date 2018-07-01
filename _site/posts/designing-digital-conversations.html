@@ -20,7 +20,7 @@ https://github.com/cathydutton
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS custom properties and accessibility</title>
+		<title>Designing digital conversations</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="Front End Developer, UX, CSS, Sass, PostCSS, JavaScript">
 		<meta name="author" content="Cathy Dutton - https://cathydutton.co.uk" />
@@ -38,7 +38,7 @@ https://github.com/cathydutton
 
 		<!-- Prerender work page -->
 		<link rel="prerender" href="https://cathydutton.co.uk/portfolio.html">
-		<link rel="canonical" href="http://localhost:4000/posts/css-custom-properties-and-accesability.html">
+		<link rel="canonical" href="http://localhost:4000/posts/designing-digital-conversations.html">
 
 
 		
@@ -149,324 +149,214 @@ https://github.com/cathydutton
 <div class="content">
   <main id="main">
     <header role="banner" class="header">
-      <h1 class="heading heading__intro">CSS custom properties and accessibility</h1>
-      <p class="heading heading--primary">02 Apr 2018</p>
+      <h1 class="heading heading__intro">Designing digital conversations</h1>
+      <p class="heading heading--primary">22 Jun 2018</p>
     </header>
 
 
-    <p>Giving users the ability to control the way they see content improves the accessibility and usability of a site. This is traditionally achieved with a <a href="https://en.wikibooks.org/wiki/Cascading_Style_Sheets/User_Style_Sheets" title="User stylesheet information">user stylesheet </a>(although this is no longer supported in Chrome without the use of additional plugins).</p>
+    <p>Change to 2018-08-22  In both places</p>
 
-<p>In site features that allow a user to change the way content is displayed are nothing new, but with CSS custom properties are much easier to implement.</p>
+<p>Every day more and more users interact with businesses and organisations online, to register for a service, book an appointment, apply for a licence or to submit information. Often these digital services are direct replacements for legacy paper based forms.</p>
 
-<p>CSS custom properties are the improved alternatives to the variables available in pre processing languages like Sass and Less. Unlike compiled variables custom properties allow values to be updated dynamically.</p>
+<p>This digital transformation provides organisations with the perfect opportunity to redesign legacy forms making it quicker and simpler for users to achieve their goal. However, as well as opportunity, creating a digital experience can also introduce new problems, after all paper forms do have some advantages over their digital replacements.</p>
 
-<p>By utilising these real time updates custom properties can be used to allow users to take control of the content they see and customise the experience.</p>
+<p>Benefits of paper forms:</p>
+<ul>
+  <li>They can be read from beginning to end allowing users to understand exactly what's expected of them before they begin</li>
 
-<h2 class="heading">Example 1 - update colour theme </h2>
+  <li>They can be re-visited and/or part completed allowing users to gather information they may not have had to hand (without a complex save and return or password feature)</li>
 
-<p>Themed CSS became common practice with the arrival of Sass variables, by defining a set of colour variables at the top of a partial CSS can be reused quickly and easily. This practice however introduces a lot of duplicate code and CSS bloat.</p>
+ <li>They can be filled out in the order of the user's choosing</li>
 
-<p>Because pre processor variables are compiled before build, changes made in the browser have to be pre planned and written out in full. Files like the one below contain duplicate CSS nested under classes that are attached to the body with javaScript.</p>
+ <li>They can be edited/checked before submission</li>
+</ul>
 
-<h4 id="maincss">main.css</h4>
+<p>For all of these reasons and more the structure and question sequence of online forms is hugely important.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$background-color: #eee;
-$text-color: #222;
-$link-colour: #3D9970;
-$link-colour-hover: #001F3F;
+<h2 class="heading">How should you structure a digital form?</h2>
 
-body {
-  background-color: $background-color;
-  color: $text-color;
-}
+<p>A well-thought-out form should flow naturally in the same way that a conversation would. Each new question put to the user should relate to the information they’ve already provided and progress in logical steps. The form should also flow from topic to topic, not jump sporadically from service choices to requests for user information.
+In most cases a form can be split into two topics:</p>
 
-a {
- colour: $link-colour;
-} &amp;:hover {
- Colour: $link-colour-hover;
-}
+<p>1) The service - Options relating to the service the user requires.</p>
 
-@import 'theme-dark';
-@import 'theme-monochrome';
+<p>For example:</p>
+<ul>
+  <li>“When would you like your licence to start?”</li>
+  <li>“What’s the site name?”</li>
+  <li>“What type of cover would you like?”</li>
+</ul>
 
-</code></pre></div></div>
+<p>2) The user - Information about the user required either by the organisation or to identify available products.</p>
 
-<h4 id="theme-darkcss">theme-dark.css</h4>
+<p>For example:</p>
+<ul>
+  <li>“How can we send you your licence details?”</li>
+  <li>“What’s your date of birth?”</li>
+  <li>“Do you have Blue Badge?”</li>
+</ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$background-color: #111;
-$text-color: #FFF;
-$link-colour: #FFDC00;
-$link-colour-hover: #048386;
+<p>So, which should come first: the user or the service?</p>
 
-.theme-dark {
-  background-color: $background-color;
-  color: $text-color;
+<h4>1) Service first</h4>
 
-  a {
-    color: $link-colour;
+<p>In user-centred design the user and their needs should always come first, therefore the form should aim to focus on the user’s’ end goal. Any additional questions should come at the end.</p>
 
-    &amp;:hover {
-      color: $link-colour-hover;
-    }
+<section class="portfolio-images">
+    <div class="portfolio-piece-wrapper">
+        <div class="portfolio-piece">
+            <img src="../assets/img/service-first.jpg" class="portfolio-piece__img" alt="Service first graphic" />
+        </div>
+    </div>
+</section>
 
-  }
+<p>There are many benefits to this approach, including:</p>
+<ul>
+  <li>Addressing the needs of the user before that of the service</li>
 
-</code></pre></div></div>
+  <li>Opening the form with expected questions, making it quick and easy for experienced or return users to complete</li>
 
-<p>With custom properties this duplication is removed, the property values do not need to be complied meaning they can be updated in real time in the browser. The above Sass example can now be replaced with this…</p>
+  <li>Creating a simplified journey by asking only the user questions required for the selected product or service.</li>
+</ul>
+<p>However there are also some drawbacks to opening the form with product related questions:</p>
+<ul>
+  <li>We lose the opportunity to provide guidance for new or inexperienced users</li>
+  <li>Users may be making ill-informed decisions</li>
+  <li>Users could be presented with options they are not eligible for</li>
+</ul>
 
-<h4 id="maincss-1">main.css</h4>
+<blockquote>
+"Which option is right for me?"
+</blockquote>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:root {
-  --background-color: #111;
-  --text-color: #FFF;
-  --link-colour: #FFDC00;
-  --link-colour-hover: #048386;
-}
+<h4>Order tickets online:</h4>
 
-.theme-dark {
-  --background-color: #111;
-  --text-color: #FFF;
-  --link-colour: #FFDC00;
-  --link-colour-hover: #048386;
-}
+<p>Online booking forms are great examples of this service first approach with the user’s end goal of buying a ticket being addressed first. Although the organisation will still need to collect user details to complete the booking, these are only necessary if a suitable ticket is found, and so are placed at the end of the form.</p>
 
-body {
-  color: var(--colour-black);
-  background: var(--colour-white);
-}
-</code></pre></div></div>
+<section class="portfolio-images">
+    <div class="portfolio-piece-wrapper-full">
+        <div class="portfolio-piece">
+            <img src="../assets/img/booking-an-ticket.jpg" class="portfolio-piece__img" alt="Book a ticket" />
+        </div>
+    </div>
+</section>
 
-<h2 id="naming-things-is-difficult">Naming things is difficult</h2>
+<h4>2) User first</h4>
 
-<p>On a side note naming CSS variables in a meaningful and user friendly way is difficult, naming colour variables that are used in multiple themes is even harder! Each variable name needs to make sense in each instance, without being overly case specific.</p>
+<p>Sometimes the services or products available are determined by the user. In these situations, we first need to collect information from the user in order to create the simplest journey for them.</p>
 
-<h4 id="bad-examples">Bad examples</h4>
+<section class="portfolio-images">
+    <div class="portfolio-piece-wrapper">
+        <div class="portfolio-piece">
+            <img src="../assets/img/user-first.jpg" class="portfolio-piece__img" alt="User first graphic" />
+        </div>
+    </div>
+</section>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  --border-colour: #999999;
-  --text-colour: #333333;
+<p>The benefits of first determining who the user is include:</p>
+<ul>
+ <li>The ability to guide users, ensuring they get the best product or service for them </li>
 
-  --colour-one: #333333;
-  --colour-two: #333333;
-  --colour-three: #333333;
+ <li>Determining which products or services the user is eligible for before displaying them</li>
 
-  --orange: #FB820A;
-  --red: #ED0C0C;
-</code></pre></div></div>
+ <li>Displaying accurate price points if there are disabled or age-related discounts</li>
 
-<p>The problem with the names like –orange and –red is they aren’t reusable, when we switch themes red may no longer be red.</p>
-
-<p>By referencing each property like –border-colour and –text-colour we risk having an unmanageable number of variables to work with, and could end up with duplicate values.</p>
+ <li>Asking simple questions before questions that may require thought, for example starting with "What is your name?"</li>
 
-<p>Finally names with no context like  –colour-one and  –colour-two become difficult to work with on large scale projects.</p>
-
-<p>Colour variable names should be scalable and easy to manage, it also should be obvious what each variable represents in any theme just by looking at it’s name.</p>
+</ul>
+<p>This approach however also has some drawbacks, including:</p>
+<ul>
+ <li>It could be unclear why all questions are are being asked</li>
+ <li>Some questions about the user could be product-specific</li>
+</ul>
 
-<h4 id="good-examples">Good examples</h4>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  --colour-primary: #001F3F;
-  --colour-secondary: #E0F0FF;
-  --colour-tertiary: #3D9970;
+<blockquote>
+"This form wants to know so much about me, but I know nothing about it."
+</blockquote>
 
-  --colour-dark: #001F3F;
-  --colour-light: #E0F0FF;
-  --colour-bright: #3D9970;
+<h4>Buying a licence:</h4>
+<p>When buying a license or a permit online, a user my expect to be presented with questions relating to the product they wish to buy.</p>
 
-  --colour-error: #A91919;
-</code></pre></div></div>
+<section class="portfolio-images">
+    <div class="portfolio-piece-wrapper-full">
+        <div class="portfolio-piece">
+            <img src="../assets/img/buy-a-fishing-licence.jpg" class="portfolio-piece__img" alt="Buy a fishing licence" />
+        </div>
+    </div>
+</section>
 
-<h4 id="three-theme-example">Three theme example</h4>
+<p>By instead starting with requests for some basic user information, accurate product descriptions and pricing can be displayed. This creates a more open and honest experience for both new and experienced users.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:root {
-  --colour-black: #001429;
-  --colour-dark: #001F3F;
-  --colour-medium: #003D7A;
-  --colour-light: #E0F0FF;
-  --colour-white: #FFFFFF;
-  --colour-bright: #3D9970;
-  --colour-error: #A91919; 
-}
+<p>In the example below users are informed that they have qualified for a senior discount, and are clearly shown the cost of each licence.</p>
 
-.theme-dark {
-  --colour-black: #FFFFFF;
-  --colour-dark: #AAAAAA;
-  --colour-medium: #2ECC40;
-  --colour-light: #048386; 
-  --colour-white: #111111;
-  --colour-bright: #FFDC00; 
-  --colour-error: #FF851B;
-}
+<section class="portfolio-images">
+    <div class="portfolio-piece-wrapper-full">
+        <div class="portfolio-piece">
+            <img src="../assets/img/licence-costs.jpg" class="portfolio-piece__img" alt="Display licence costs" />
+        </div>
+    </div>
+</section>
 
-.theme-monochrome {
-  --colour-black: #BD9562;
-  --colour-dark: #AB773F;
-  --colour-medium: #553C1C;
-  --colour-light: #3c240d;
-  --colour-white: #211505;
-  --colour-bright: #AF8857;
-  --colour-error: #A37A48; 
-}
-</code></pre></div></div>
+<h2 class="heading">How do you determine the best way?</h2>
 
-<p>Once we have the variables properties assigned for each theme we can use JavaScript to add a class name to the body.</p>
+<p>There is no one right way; each interaction will have a different set of criteria to work with, resulting in pros and cons for each approach. The key is to prototype multiple question sequences and, most importantly, test them with real users.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>themeDefault.onclick = function(){
-    body.className = "theme-default";
-  };
+<blockquote>
+“This decision architecture cannot be predetermined using patterns.”
+</blockquote>
+<p>The problem with patterns</p>
 
- themeDark.onclick = function(){
-    body.className = "theme-dark";
-  };
+<p>A good first step in working out the best question sequence for an online form is to write each individual question onto a card or post-it note. These can be moved around quickly into as many different orders as possible. This is also a good time to reassess the need for each question in the form (every question put to users should be justifiable and have a clear benefit to the user).</p>
 
-themeMonochrome.onclick = function(){
-  body.className = "theme-monochrome";
-  };
-</code></pre></div></div>
+<p>Try to identify the key questions that would cause the journey too branch. For example on the Buy a fishing licence service these were ‘Licence length’ and ‘Date of birth’.</p>
 
-<p>This is great, until the user navigates to a new page or refreshes the browser. To solve this issue we can store the value of the custom property using local storage, and then check for a saved value on page load.</p>
+<p>Each of these screens play a huge role in determining the path a user will take, (12 month licences have additional features as well as senior and junior discounts), so to produce a more streamlined flow they need to appear as close to the beginning of the journey as possible.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>body.className = localStorage.getItem("currentTheme");
-</code></pre></div></div>
+<section class="portfolio-images">
+    <div class="portfolio-piece-wrapper-full">
+        <div class="portfolio-piece">
+            <img src="../assets/img/card-sort.jpg" class="portfolio-piece__img" alt="Card sorting exercise" />
+        </div>
+    </div>
+</section>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>themeDefault.onclick = function(){
-  body.className = "theme-default";
-  localStorage.setItem("currentTheme", 'theme-default');
-};
+<p>Experiment by mapping out possible user journeys using the key questions you identified as starting points. Use colour-coded post-it notes to highlight positive and negative aspects for each user journey in each sequence.</p>
 
-themeDark.onclick = function(){
-  body.className = "theme-dark";
-  localStorage.setItem("currentTheme", 'theme-dark');
-};
+<section class="portfolio-images">
+    <div class="portfolio-piece-wrapper-full">
+        <div class="portfolio-piece">
+            <img src="../assets/img/user-flows.jpg" class="portfolio-piece__img" alt="User journey mapping" />
+        </div>
+    </div>
+</section>
 
-themeMonochrome.onclick = function(){
-  body.className = "theme-monochrome";
-  localStorage.setItem("currentTheme", 'theme-monochrome');
-};
-</code></pre></div></div>
-<h4 class="heading">Demo</h4>
+<p>Things to look out for include:</p>
 
-<p data-height="500" data-theme-id="8492" data-slug-hash="paBMBE" data-default-tab="css,result" data-user="cathydutton" data-embed-version="2" data-pen-title="Custom property colour themes" class="codepen">See the Pen <a href="https://codepen.io/cathydutton/pen/paBMBE/">Custom property colour themes</a> by Cathy Dutton (<a href="https://codepen.io/cathydutton">@cathydutton</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async="" src="https://static.codepen.io/assets/embed/ei.js"></script>
+<h4>Efficiency</h4>
 
-<h2 class="heading"> Example 2 - update a font</h2>
+<p>The form should be quick, intuitive and easy to follow. Get users to their end goal as quickly as possible with minimal disruption. Where possible this should be achieved for all users and all products, however you may have to optimise the sequence for the most popular user journey.</p>
 
-<p>Updating a font type can also be achieved without custom properties using a body class…</p>
+<h4>Price</h4>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const body = document.body;
+<p>The price of a product or service is one of the most influential decision drivers. The cost implications of a decision should be clearly displayed, particularly if the user is inexperienced or new to the service. By adding prices to service options, users can make quicker, more informed decisions and have more confidence in the choices they make. The service also becomes much more transparent with no nasty surprises at the end.</p>
 
-body.classList.add("comic-sans");
+<h4>Consistency and familiarity</h4>
 
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+<p>The question sequence  should remain consistent across journeys to aid return or repeat visitors and to build a sense of familiarity. The experience of buying for the first time should not be alien to that of upgrading or renewing a product.</p>
 
-comic-sans {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-}
-</code></pre></div></div>
+<h4>Future-proofing</h4>
 
-<p>There is nothing wrong with this approach in this instance, but if you are allowing users to update multiple properties for example font type and colour theme you could end up with a lot of additional classes.</p>
+<p>Building on the above point, the sequence should look to incorporate possible future enhancements. It is helpful to have an idea of the full service roadmap to ensure you don’t need to re-shuffle large sections of a form to include a new product.</p>
 
-<p>An alternative approach is to declare the font just once in CSS using a custom property.</p>
+<h3 class="heading">In summary</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:root {
-  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
-}
+<p>Digital transformation has the potential to bring huge improvements to services, making them more inclusive, accessible, efficient and cost effective. However simply re-creating paper forms online is not good enough and will not automatically add value to the service.</p>
 
-body {
-  font-family: var(--font-family);
-}
+<p>“Making a paper form digital is not transformation”</p>
 
-</code></pre></div></div>
+<p>As previously discussed if you get a digital interaction wrong it can make a service more difficult for users to interact with, points of contact are lost, technology barriers are introduced and guidance can be difficult to find.</p>
 
-<p>And allow users to update this value through javaScript</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Global
-const body = document.body;
-const root = document.querySelector(':root');
-const rootStyles = getComputedStyle(root);
-
-dyslexicFont.onclick = function(){
-  body.style.setProperty('--font-family', '"Comic Sans MS", "Comic Sans", cursive');
-};
-
-defaultFont.onclick = function(){
-  body.style.setProperty('--font-family', rootStyles.getPropertyValue('--font-family'));
-};
-
-</code></pre></div></div>
-<p>When either button is clicked the value of the custom property –font-family is updated across the page, again we can store these values in local storage to save a users preferences…</p>
-
-<pre><code class="language-`">// If no local storage value exists create one
-if (!fontFamily) {
-    body.style.setProperty("--font-family", localStorage.getItem("fontFamily"));
-}
-
-// Get current value
-var fontFamily = getComputedStyle(body).getPropertyValue('--font-family');
-
-
-dyslexicFont.onclick = function(){
-  body.style.setProperty('--font-family', '"Comic Sans MS", "Comic Sans", cursive');
-  localStorage.setItem("fontFamily", '"Comic Sans MS", "Comic Sans", cursive');
-};
-
-defaultFont.onclick = function(){
-  body.style.setProperty('--font-family', rootStyles.getPropertyValue('--font-family'));
-  localStorage.setItem("fontFamily", rootStyles.getPropertyValue('--font-family'));
-};
-
-</code></pre>
-
-<h4 class="heading">Demo</h4>
-
-<p data-height="500" data-theme-id="8492" data-slug-hash="OQrGab" data-default-tab="css,result" data-user="cathydutton" data-embed-version="2" data-pen-title="Custom property font switcher" class="codepen">See the Pen <a href="https://codepen.io/cathydutton/pen/OQrGab/">Custom property font switcher</a> by Cathy Dutton (<a href="https://codepen.io/cathydutton">@cathydutton</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async="" src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-<h2 class="heading">Example 3 - update text size</h2>
-
-<p>Updating the text size for a site is slightly more complex, in this example simply adding a class to the body would not work, (unless you want a stylesheet full of classes for every available size).</p>
-
-<p>The concept here is similar to updating the font, but instead of assigning a new value to the property we amend it.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:root {
-  --font-size: 1.188em;
-}
-
-body {
-  font-size: var(--font-size)
-}
-</code></pre></div></div>
-
-<h4 id="increase-text-size">Increase text size</h4>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>increaseFont.onclick = function(){
-    var number = parseFloat(fontSize) 
-    number += 0.2
-    fontSize = number;
-    body.style.setProperty('--font-size', number + 'em');
-    localStorage.setItem("fontSize", number + 'em');
-};
-</code></pre></div></div>
-
-<h4 id="decrease-text-size">Decrease text size</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-decreaseFont.onclick = function(){
-    var number = parseFloat(fontSize) 
-    number -= 0.2
-    fontSize = number;   
-    body.style.setProperty('--font-size', number + 'em');
-    localStorage.setItem("fontSize", number + 'em');
-};
-
-</code></pre></div></div>
-
-<p>When each button is clicked the current value of –font-size is taken and either increased or decreased. The parseFloat() function is used to first strip the unit from the property and then convert the value from a string to an integer.</p>
-
-<h4 class="heading">Demo</h4>
-
-<p data-height="500" data-theme-id="8492" data-slug-hash="YedMRP" data-default-tab="css,result" data-user="cathydutton" data-embed-version="2" data-pen-title="Custom property text size" class="codepen">See the Pen <a href="https://codepen.io/cathydutton/pen/YedMRP/">Custom property text size</a> by Cathy Dutton (<a href="https://codepen.io/cathydutton">@cathydutton</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async="" src="https://static.codepen.io/assets/embed/ei.js"></script>
+<p>Because of this the way questions are asked, the flow of a conversations, the information present to guide users are essential in making digital conversations work.</p>
 
 
 
@@ -474,9 +364,9 @@ decreaseFont.onclick = function(){
       <div class="share-page">
     <h3>Share this post</h3>
     <p>Share this on this post on Twitter, Facebook or Google</p>
-    <a href="https://twitter.com/intent/tweet?text=CSS custom properties and accessibility&url=http://localhost:4000/posts/css-custom-properties-and-accesability.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
-    <a href="https://facebook.com/sharer.php?u=http://localhost:4000/posts/css-custom-properties-and-accesability.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
-    <a href="https://plus.google.com/share?url=http://localhost:4000/posts/css-custom-properties-and-accesability.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
+    <a href="https://twitter.com/intent/tweet?text=Designing digital conversations&url=http://localhost:4000/posts/designing-digital-conversations.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=http://localhost:4000/posts/designing-digital-conversations.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
+    <a href="https://plus.google.com/share?url=http://localhost:4000/posts/designing-digital-conversations.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
 </div>
 
     </section>
@@ -485,7 +375,7 @@ decreaseFont.onclick = function(){
       <ul class="page-navigation">
   
   <li class="button--page-navigation__prev">
-    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/continuous-improvement.html">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/the-problem-with-patterns.html">
       <!-- <span class="visually-hidden">Go to the previous post</span> -->
       <svg class="button--page-navigation__svg" version="1.1" role="presentation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
@@ -494,16 +384,6 @@ decreaseFont.onclick = function(){
     </a>
   </li>
   
-  
-  <li class="button--page-navigation__next">
-    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/the-problem-with-patterns.html">
-      <!-- <span class="visually-hidden">Go to the next post</span> -->
-      <span class="page-navigation-title">Go to the next post</span>
-      <svg class="button--page-navigation__svg" role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-        <path d="M11.611,10.049l-4.76-4.873c-0.303-0.31-0.297-0.804,0.012-1.105c0.309-0.304,0.803-0.293,1.105,0.012l5.306,5.433c0.304,0.31,0.296,0.805-0.012,1.105L7.83,15.928c-0.152,0.148-0.35,0.223-0.547,0.223c-0.203,0-0.406-0.08-0.559-0.236c-0.303-0.309-0.295-0.803,0.012-1.104L11.611,10.049z"></path>
-      </svg>
-    </a>
-  </li>
   
 </ul>
 
