@@ -3,8 +3,14 @@
   ----------------------------------- */
 
 @media print {
+  
   .wrapper > *:not(main) {
     display: none;
   }
 
+  main a:after {
+    content:" (" attr(href) ") ";font-size:0.8em;font-weight:normal;
+  }
+
 }
+
