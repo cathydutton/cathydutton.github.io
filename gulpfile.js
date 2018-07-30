@@ -51,6 +51,7 @@
 	gulp.task('critical-css', plugins.getModule('css/critical'));
 	gulp.task('main-css', plugins.getModule('css/main'));
 	gulp.task('dev-css', plugins.getModule('css/dev'));
+	gulp.task('scripts', plugins.getModule('javascript/scripts'));
 	gulp.task('inject', plugins.getModule('html/inject'));
 	gulp.task('minify', plugins.getModule('html/minify'));
 	gulp.task('image-optimise', plugins.getModule('images/optimise'));
@@ -183,12 +184,12 @@
 
 	//  build dev
 	gulp.task('build-dev', function(callback) {
-		plugins.runSequence('clean-assests', 'clean', 'scss-lint', 'dev-css', 'image-optimise', callback);
+		plugins.runSequence('clean-assests', 'clean', 'scss-lint', 'dev-css', 'scripts', 'image-optimise', callback);
 	});
 
 	//  build live
 	gulp.task('live', function(callback) {
-		plugins.runSequence('clean-assests','clean', ['critical-css', 'main-css', 'image-optimise'],  'jekyll-live', callback);
+		plugins.runSequence('clean-assests','clean', ['critical-css', 'main-css', 'scripts', 'image-optimise'],  'jekyll-live', callback);
 	});
 
 	// Development tasks

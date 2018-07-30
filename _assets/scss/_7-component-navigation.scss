@@ -41,6 +41,14 @@ Navigation
 
 }
 
+.sidebar__anchor:active {
+  width: 0; 
+  height: 0; 
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid pink;
+}
+
 .sidebar__anchor {
   display: inline;
   color: map-get($colours, 'white');

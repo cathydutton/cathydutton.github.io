@@ -143,6 +143,11 @@ https://github.com/cathydutton
            <a href="../maze.html" title="Maze - PostCSS responsive grid" class="sidebar__anchor"><span class="navagation-text">PostCSS Maze</span></a>
          </li>
           
+          
+            <li class="sidebar__item">
+            <a href="../cookie-policy.html" title="Cookie policy" class="sidebar__anchor"><span class="navagation-text">Cookie policy</span></a>
+          </li>
+          
       </ul>
   </aside>
 
@@ -304,6 +309,11 @@ s.setAttribute('data-timestamp', +new Date());
           <a href="../maze.html" class="footer-links__anchor" title="Maze - PostCSS responsive grid">PostCSS Maze</a>
           
       </li>
+      <li class="footer-links__item">
+        
+          <a href="../cookie-policy.html" class="footer-links__anchor" title="cookie policy">Cookie policy</a>
+          
+      </li>
   	</ul>
   	<ul class="find-me">
 	<li class="find-me__item">
@@ -354,8 +364,12 @@ s.setAttribute('data-timestamp', +new Date());
 
 </div>
 <!-- Script includes -->
-<!-- <script src="../assets/js/main-@@cacheBust.min.js"></script> -->
-
+<script src="../assets/js/main.min.js"></script>
+ <!-- Cookie banner JS -->
+  <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({})});
+  </script>
 
 <script>
     if ('serviceWorker' in navigator) {

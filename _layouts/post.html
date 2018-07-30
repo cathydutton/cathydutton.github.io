@@ -51,8 +51,12 @@ s.setAttribute('data-timestamp', +new Date());
   {% include footer.html %}
 </div>
 <!-- Script includes -->
-<!-- <script src="../assets/js/main-@@cacheBust.min.js"></script> -->
-
+<script src="../assets/js/main.min.js"></script>
+ <!-- Cookie banner JS -->
+  <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({})});
+  </script>
 
 <script>
     if ('serviceWorker' in navigator) {

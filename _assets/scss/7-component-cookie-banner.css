@@ -1,0 +1,23 @@
+/*
+  Cookie banner
+  ----------------------------------- */
+
+  .cookie-banner {
+    position: fixed;
+    overflow: hidden;
+    z-index: 9999;
+    bottom: 1em;
+    right: 1em;
+    padding: 2em;
+    max-width: 24em;
+    background: map-get($colours, 'black');
+    color: map-get($colours, 'white');
+  }
+
+  .button--cookie {
+    display: block;
+    padding: .4em .8em;
+    margin-top: 1em;
+    width: 100%;
+    background: map-get($colours, 'accent');
+  }

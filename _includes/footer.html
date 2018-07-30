@@ -35,6 +35,13 @@
           <a href="../maze.html" class="footer-links__anchor" title="Maze - PostCSS responsive grid">PostCSS Maze</a>
           {% endif %}
       </li>
+      <li class="footer-links__item">
+        {% if page.active == "PostCSS Maze" %}
+        <a href="../cookie-policy.html" aria-describedby="current" class="footer-links__anchor active" title="cookie policy">Cookie policy</a>
+          {% else %}
+          <a href="../cookie-policy.html" class="footer-links__anchor" title="cookie policy">Cookie policy</a>
+          {% endif %}
+      </li>
   	</ul>
   	{% include find-me.html %}
   	<p class="footer__copyright">Copyright 2018 Cathy Dutton - All Rights Reserved. <a href="https://github.com/cathydutton/postcss-maze" title="Maze - responsive grid">Powered by PostCSS Maze</a></p>

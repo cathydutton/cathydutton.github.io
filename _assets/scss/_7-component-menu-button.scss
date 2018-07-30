@@ -10,7 +10,7 @@ Menu button
   width: 40px;
   height: 55px;
   padding: 0;
-  border: solid 2px map-get($colours, 'accent');
+  border: solid 2px map-get($colours, 'grey-dark');
   border-radius: 0 20px 20px 0;
   border-left: 0;
   color: map-get($colours, 'accent');
