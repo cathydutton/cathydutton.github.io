@@ -1183,3 +1183,17 @@ Portfolio
   margin-top: 1em;
   width: 100%;
   background: #ffa600; }
+
+/*
+  A11y buttons
+  ----------------------------------- */
+.accessibility-tools fieldset {
+  margin-bottom: 1em;
+  padding: .4em; }
+
+.accessibility-tools legend {
+  padding: .4em; }
+
+.button--ally {
+  background: var(--colour-medium);
+  font-size: .65em; }

@@ -1,0 +1,17 @@
+/*
+  A11y buttons
+  ----------------------------------- */
+
+.accessibility-tools fieldset {
+  margin-bottom: 1em;
+  padding: .4em;
+}
+
+.accessibility-tools legend {
+  padding: .4em;
+}
+
+.button--ally {
+  background: map-get($colours, 'grey-dark')
+  font-size: .65em;
+}
