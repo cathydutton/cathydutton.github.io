@@ -70,6 +70,24 @@ https://github.com/cathydutton
 
 		<a href="#main">skip to main content</a>
 		
+		<div aria-label="Accessibility tools" class="accessibility-tools">
+			<fieldset class="accessibility-tools__text-size">
+				<legend>Control text size</legend>
+				<button id="increase-font" class="button button--ally" type="button">A+</button>
+				<button id="decrease-font" class="button button--ally" type="button">A-</button>
+			</fieldset>
+			<fieldset class="accessibility-tools__colour-theme">
+				<legend>Control colour theme</legend>
+				<button id="theme-default" class="button button--ally" type="button">Default</button>
+				<button id="theme-contrast" class="button button--ally" type="button">Contrast <span class="visually-hidden">theme</span></button>
+				<button id="theme-monochrome" class="button button--ally" type="button">Monochrome</button>
+			</fieldset>
+			<fieldset class="accessibility-tools__font-family">
+				<legend>Control font family</legend>
+				<button class="button button--ally "id="default-font" type="button"  aria-label="Change font to Helvetica">Default</button>
+				<button class="button button--ally "id="dyslexic-font" type="button" aria-label="Change font to Comic Sans">Comic Sans</button>
+			</fieldset>
+		</div>
    <aside class="sidebar">
     <div class="profile-image">
       <img src="../assets/img/profile-image.jpg" class="profile-image__img" width="160" height="160" alt="Profile picture - Cathy Dutton" />
@@ -501,7 +519,7 @@ decreaseFont.onclick = function(){
   
   
   <li class="button--page-navigation__next">
-    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/the-problem-with-patterns.html">
+    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/designing-digital-conversations.html">
       <!-- <span class="visually-hidden">Go to the next post</span> -->
       <span class="page-navigation-title">Go to the next post</span>
       <svg class="button--page-navigation__svg" role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
