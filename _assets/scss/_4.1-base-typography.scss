@@ -4,9 +4,11 @@
 
 html {
   font-weight: 300;
-  font-size: 100%;
-  font-family: map-get($font-stack, 'general');
-  line-height: $line-height;
+  font-size: var(--font-size);
+  //font-size: 100%;
+  font-family: var(--font-family);
+ // font-family: map-get($font-stack, 'general');
+  line-height: 1.5;
 }
 
 h1,

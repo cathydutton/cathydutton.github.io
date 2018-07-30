@@ -29,7 +29,9 @@ body {
   max-width: map-get($breakpoints, 'break-wide');
   margin: 0;
   padding: 0;
-  color: map-get($colours, 'black');
+  // color: map-get($colours, 'black');
+  color: var(--colour-black);
+  background: var(--colour-white);
 }
 
 blockquote {
