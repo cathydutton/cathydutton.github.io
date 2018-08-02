@@ -40,12 +40,37 @@ blockquote {
   font-size: 1em;
 }
 
-pre {
-  overflow: scroll;
-  padding: 10px 7px;
-  border: 1px solid darken(map-get($colours, 'off-white'), 20%);
-  background: map-get($colours, 'off-white');
-  font-size: 1em;
+// pre {
+//   overflow: scroll;
+//   padding: 10px 7px;
+//   border: 1px solid darken(map-get($colours, 'off-white'), 20%);
+//   background: map-get($colours, 'off-white');
+//   font-size: 1em;
+// }
+
+pre { 
+  padding: .5em .5em 0em .5em;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  background: map-get($colours, '-white')
+  background-image: linear-gradient( map-get($colours, 'off-white') 50%, transparent 0);
+  background-size: auto 3em;
+  background-origin: content-box; 
+  font-family: Consolas, Monaco, monospace;
+  tab-size: 4;
+  white-space: unset;
+}
+
+code { 
+  font: inherit 
+}
+
+pre code {
+  white-space: pre-wrap;       
+  white-space: -moz-pre-wrap;  
+  white-space: -pre-wrap;      
+  white-space: -o-pre-wrap;    
+  word-wrap: break-word; 
 }
 
 
