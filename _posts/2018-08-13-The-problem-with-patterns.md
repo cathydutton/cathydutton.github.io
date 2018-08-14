@@ -1,12 +1,12 @@
 ---
 title: The problem with patterns
 author: Cathy Dutton
-date:   2018-08-16   
+date:   2018-08-14  
 layout: post
 category: post
 ---
 
-Originally posted on [A List Apart June 14, 2018](https://alistapart.com/article/problem-with-patterns)
+Originally posted on [A List Apart](https://alistapart.com/article/problem-with-patterns)
   
 It started off as an honest problem with a brilliant solution. As the ways we use the web continue to grow and evolve, we, as its well-intentioned makers and stewards, needed something better than making simple collections of pages over and over again.
 

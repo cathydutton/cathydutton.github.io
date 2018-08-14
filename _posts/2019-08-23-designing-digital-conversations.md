@@ -2,7 +2,7 @@
 title: Designing digital conversations
 author: Cathy Dutton
 layout: post
-date:   2018-07-22  
+date:   2019-08-23
 category: post
 ---
 

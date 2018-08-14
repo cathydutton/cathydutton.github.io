@@ -30,6 +30,7 @@ body {
   margin: 0;
   padding: 0;
   color: map-get($colours, 'black');
+  background: map-get($colours, 'white');
 }
 
 blockquote {
@@ -52,7 +53,7 @@ pre {
   padding: .5em .5em 0em .5em;
   line-height: 1.5;
   margin-bottom: 1em;
-  background: map-get($colours, '-white')
+  background: map-get($colours, '-white');
   background-image: linear-gradient( map-get($colours, 'off-white') 50%, transparent 0);
   background-size: auto 3em;
   background-origin: content-box; 
