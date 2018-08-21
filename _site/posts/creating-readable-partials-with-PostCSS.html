@@ -20,7 +20,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Mobile by sainsburys</title>
+		<title>Creating readable CSS partials with PostCSS</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="Front End Developer, UX, CSS, Sass, PostCSS, JavaScript">
 		<meta name="author" content="Cathy Dutton - https://cathydutton.co.uk" />
@@ -38,7 +38,7 @@
 
 		<!-- Prerender work page -->
 		<link rel="prerender" href="https://cathydutton.co.uk/portfolio.html">
-		<link rel="canonical" href="http://localhost:4000/portfolio/Sainsburys-mobile.html">
+		<link rel="canonical" href="http://localhost:4000/posts/creating-readable-partials-with-PostCSS.html">
 
 
 		
@@ -147,72 +147,193 @@
       </ul>
   </aside>
 
-
 <div class="content">
   <main id="main">
     <header role="banner" class="header">
-      <h1 class="heading heading__intro">Mobile by sainsburys</h1>
-      <p class="heading heading--primary">2013</p>
+      <h1 class="heading heading__intro">Creating readable CSS partials with PostCSS</h1>
+      <p class="heading heading--primary">06 Mar 2017</p>
     </header>
-    <p class="highlight-quote">
-Phone shop by Sainsbury’s is a mobile virtual network operator launched in July 2013 in partnership with Vodafone. The launch followed similar launches by supermarket rivals Tesco and Asda. The service offers a wide range of pay as you go mobile phones and accessories including the latest sim free devices from all the leading brands. 
-</p>
 
-<h2 class="heading">My role</h2>
-<p>I was part of the Magento development team responsible for delivering the first iteration of the online Phone shop by Sainsbury’s store. Working with a range of technologies including Gulp, HTML, CSS and Javascript the team delivered a bespoke Magento solution.</p>
 
-<p>I was also part of the team tasked with delivering phase two of the project, developing the online presence further and producing a fully reponsive site.</p>
+    <p>In my opinion one of the most valuable features of PostCSS is the ability to both change and create CSS properties
+and values. CSS preprocessors give developers the ability to extend the functionality of CSS, creating functions,
+mixins and loops all with the intention of speeding up development time and helping large scale projects remain
+both manageable and scaleable.</p>
 
-<p>Main responsibilities:</p>
+<p>The problem with this is the resulting Sass stylesheets are often full of selectors using complex functions and mixins
+that are unreadable to new users, or even to the same developers who wrote them a couple of months down the line. For example
+a couple of years ago I created numerous Sass functions to implement dynamic gradients and animations for a project at work.
+These functions made perfect sense to me at the time and helped me to achieve the desired effect. Looking back the Sass is now
+unusable without first devoting a lot of time to understanding each property value. This in its self goes against one of
+the key arguments for using a preprocessor.</p>
 
-<ul>
-    <li>Front end development and testing across multiple browsers, platforms, and devices</li>
-    <li>Working within the Sainsbury's brand guidelines to develop design concepts</li>
-    <li>Liaising with external design teams to produce estimates and project road maps</li>
-    <li>Working as part of an agile delivery team to support content changes in line with Sainsbury's offers and marketing campaigns</li>
-</ul>
+<p>http://codepen.io/cathydutton/pen/vEeORQ</p>
 
-<section class="portfolio-images">
-    <div class="portfolio-piece-wrapper">
-        <div class="portfolio-piece">
-            <img src="../assets/img/portfolio/sainsburys/home.jpg" class="portfolio-piece__img" alt="Phone shop by Sainsbury's home page" />
-        </div>
-    </div>
-    <div class="portfolio-piece-wrapper">
-        <div class="portfolio-piece">
-            <img src="../assets/img/portfolio/sainsburys/category.jpg" class="portfolio-piece__img" alt="Phone shop by Sainsbury's category page" />
-        </div>
-    </div>
-</section>
+<p>http://codepen.io/cathydutton/pen/FDipu</p>
+
+<p>http://codepen.io/cathydutton/pen/vEeORQ</p>
+
+<p>http://codepen.io/cathydutton/pen/twAja</p>
+
+<p>https://www.sitepoint.com/dynamic-gradient-text-function-sass/</p>
+
+<p>Code examples!!!!!!!</p>
+
+<h2 id="heading">Heading</h2>
+
+<p>Things would be so much simpler if the property values we used were more user friendly and simple to understand even with no
+previous experience of the code base. PostCSS allows developers to create new CSS properties and to assign new values
+to these properties creating clear and concise CSS that anybody can pick up and understand.</p>
+
+<h3 id="clearfix">Clearfix</h3>
+
+<p>A quick example of this is the PostCSS clearfix plugin https://github.com/seaneking/postcss-clearfix the markup used is not a
+native CSS value but is still instantly understandable to any developer who reads it.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.foo {
+  clear: fix; /* IE8+ */
+}
+
+.bar {
+  clear: fix-legacy; /* IE6+ */
+}
+
+</code></pre></div></div>
+
+<h3 id="comparing-">Comparing ?????</h3>
+
+<p>To demonstrate this further I developed a PostCSS version of an existing Sass grid system I had previously worked on.</p>
+
+<h3 id="sass">Sass</h3>
+
+<p>The Sass version uses a mixin which is called for each selector</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@include grid(3)            - Desktop spans 3 columns of $total-grid-columns
+@include break-point(tablet, 6);  - Tablet spans 6 columns of $total-grid-columns
+@include break-point(mobile, 12);   - Mobile spans 12 columns of $total-grid-columns
+</code></pre></div></div>
+
+<h3 id="postcss">PostCSS</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.wrapper {
+  grid-container: true;
+}
+
+</code></pre></div></div>
+
+<p>``.wrapper {
+  max-width: 1030.2px;
+  min-width: 260px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}</p>
+
+<p>.wrapper::after {
+  content: “” ;
+  display: table;
+  clear: both;
+}`</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+</code></pre></div></div>
+<p>.four-elements {
+  col-span: mobile(1,1);
+  col-span: phablet(1,2);
+  col-span: tablet(1,4);
+}</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+
+
+
+
+
+
+
+
+```css
+.twelve-elements {
+  col-span: mobile(1,1);
+  col-span: phablet(1,2);
+  col-span: tablet(1,4);
+  col-span: desktop(1,6);
+  col-span: wide(1,12);
+}
+</code></pre></div></div>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.six-elements</span> <span class="p">{</span>
+  <span class="py">col-span</span><span class="p">:</span> <span class="n">mobile</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">);</span>
+  <span class="py">col-span</span><span class="p">:</span> <span class="n">tablet</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">3</span><span class="p">);</span>
+  <span class="py">col-span</span><span class="p">:</span> <span class="n">desktop</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">6</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+
+    <section>
+      <div class="share-page">
+    <h3>Share this post</h3>
+    <p>Share this on this post on Twitter, Facebook or Google</p>
+    <a href="https://twitter.com/intent/tweet?text=Creating readable CSS partials with PostCSS&url=http://localhost:4000/posts/creating-readable-partials-with-PostCSS.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=http://localhost:4000/posts/creating-readable-partials-with-PostCSS.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
+    <a href="https://plus.google.com/share?url=http://localhost:4000/posts/creating-readable-partials-with-PostCSS.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
+</div>
+
+    </section>
 
     <section>
       <ul class="page-navigation">
-    
-    <li class="button--page-navigation__prev">
-      <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/portfolio/20-20-mobile.html">
-        <!-- <span class="visually-hidden">Go to the previous post</span> -->
-        <svg class="button--page-navigation__svg" version="1.1" role="presentation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
-        </svg>
-        <span class="page-navigation-title">Go to the previous project</span>
-      </a>
-    </li>
-    
-    
-    <li class="button--page-navigation__next">
-      <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/portfolio/AO.html">
-        <!-- <span class="visually-hidden">Go to the next post</span> -->
-        <span class="page-navigation-title">Go to the next project</span>
-        <svg class="button--page-navigation__svg" role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-          <path d="M11.611,10.049l-4.76-4.873c-0.303-0.31-0.297-0.804,0.012-1.105c0.309-0.304,0.803-0.293,1.105,0.012l5.306,5.433c0.304,0.31,0.296,0.805-0.012,1.105L7.83,15.928c-0.152,0.148-0.35,0.223-0.547,0.223c-0.203,0-0.406-0.08-0.559-0.236c-0.303-0.309-0.295-0.803,0.012-1.104L11.611,10.049z"></path>
-        </svg>
-      </a>
-    </li>
-    
-  </ul>
   
+  <li class="button--page-navigation__prev">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/have-no-fear.html">
+      <!-- <span class="visually-hidden">Go to the previous post</span> -->
+      <svg class="button--page-navigation__svg" version="1.1" role="presentation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
+      </svg>
+      <span class="page-navigation-title">Go to the previous post</span>
+    </a>
+  </li>
+  
+  
+  <li class="button--page-navigation__next">
+    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/going-back-to-design.html">
+      <!-- <span class="visually-hidden">Go to the next post</span> -->
+      <span class="page-navigation-title">Go to the next post</span>
+      <svg class="button--page-navigation__svg" role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+        <path d="M11.611,10.049l-4.76-4.873c-0.303-0.31-0.297-0.804,0.012-1.105c0.309-0.304,0.803-0.293,1.105,0.012l5.306,5.433c0.304,0.31,0.296,0.805-0.012,1.105L7.83,15.928c-0.152,0.148-0.35,0.223-0.547,0.223c-0.203,0-0.406-0.08-0.559-0.236c-0.303-0.309-0.295-0.803,0.012-1.104L11.611,10.049z"></path>
+      </svg>
+    </a>
+  </li>
+  
+</ul>
+
+    </section>
+
+    <section>
+      <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = page.url
+this.page.identifier = page.title
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://cathydutton.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
     </section>
   </main>
+
   <footer class="footer">
   	<ul class="footer-links">
   		<li class="footer-links__item">
@@ -293,17 +414,40 @@ Phone shop by Sainsbury’s is a mobile virtual network operator launched in Jul
 <!-- End Wrapper -->
 </div>
 
-
+</div>
+<!-- Script includes -->
+<script src="../assets/js/main.min.js"></script>
+ <!-- Cookie banner JS -->
   <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/serviceWorker.js').then(function(registration) {
-          }).catch(function(err) {
-          });
-        });
-      }
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({})});
   </script>
 
-</div>
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/serviceWorker.js').then(function(registration) {
+        }).catch(function(err) {
+        });
+      });
+    }
+</script>
+
+<script id="dsq-count-scr" src="//cathydutton.disqus.com/count.js" async></script>
+
+
+<!-- <script id="dsq-count-scr" src="//cathydutton.disqus.com/count.js" async></script> -->
+
+<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+<!-- New blog -->
+<!-- <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5080086399779144"
+     data-ad-slot="8794319910"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> -->
 </body>
+
 </html>

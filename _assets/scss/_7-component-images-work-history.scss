@@ -3,9 +3,9 @@ Image gallery
 ----------------------------------- */
 
 .logo-gallery {
-  @include grid(break-mobile, 1, 1, $grid-margin: 0);
-  @include grid(break-phablet, 1, 2, $grid-margin: 0);
-  @include grid(break-tablet, 1, 3, $grid-margin: 0);
+  @include grid(break-mobile, 1, 3, $grid-margin: 0);
+  // @include grid(break-phablet, 1, 2, $grid-margin: 0);
+  // @include grid(break-tablet, 1, 3, $grid-margin: 0);
 }
 
 // LOOP

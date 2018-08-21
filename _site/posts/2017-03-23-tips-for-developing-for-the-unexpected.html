@@ -20,8 +20,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Mobile by sainsburys</title>
-		<meta name="description" content="">
+		<title>CSS without assumption</title>
+		<meta name="description" content="CSS for the unexpected">
 		<meta name="keywords" content="Front End Developer, UX, CSS, Sass, PostCSS, JavaScript">
 		<meta name="author" content="Cathy Dutton - https://cathydutton.co.uk" />
 		<link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
@@ -38,7 +38,7 @@
 
 		<!-- Prerender work page -->
 		<link rel="prerender" href="https://cathydutton.co.uk/portfolio.html">
-		<link rel="canonical" href="http://localhost:4000/portfolio/Sainsburys-mobile.html">
+		<link rel="canonical" href="http://localhost:4000/posts/2017-03-23-tips-for-developing-for-the-unexpected.html">
 
 
 		
@@ -147,72 +147,175 @@
       </ul>
   </aside>
 
-
 <div class="content">
   <main id="main">
     <header role="banner" class="header">
-      <h1 class="heading heading__intro">Mobile by sainsburys</h1>
-      <p class="heading heading--primary">2013</p>
+      <h1 class="heading heading__intro">CSS without assumption</h1>
+      <p class="heading heading--primary">23 Mar 2017</p>
     </header>
-    <p class="highlight-quote">
-Phone shop by Sainsbury’s is a mobile virtual network operator launched in July 2013 in partnership with Vodafone. The launch followed similar launches by supermarket rivals Tesco and Asda. The service offers a wide range of pay as you go mobile phones and accessories including the latest sim free devices from all the leading brands. 
-</p>
 
-<h2 class="heading">My role</h2>
-<p>I was part of the Magento development team responsible for delivering the first iteration of the online Phone shop by Sainsbury’s store. Working with a range of technologies including Gulp, HTML, CSS and Javascript the team delivered a bespoke Magento solution.</p>
 
-<p>I was also part of the team tasked with delivering phase two of the project, developing the online presence further and producing a fully reponsive site.</p>
+    <p>“Build your website to work in situations you haven’t imagined, and on devices that don’t yet exist” — Jeffrey Zeldman</p>
 
-<p>Main responsibilities:</p>
+<p>Turn into 10 steps/ advice and tips for developing for the unexpected</p>
 
-<ul>
-    <li>Front end development and testing across multiple browsers, platforms, and devices</li>
-    <li>Working within the Sainsbury's brand guidelines to develop design concepts</li>
-    <li>Liaising with external design teams to produce estimates and project road maps</li>
-    <li>Working as part of an agile delivery team to support content changes in line with Sainsbury's offers and marketing campaigns</li>
-</ul>
+<p>When prototyping for digital projects we often work with sample data which fits perfectly with the UI. Projects are also prone to changing goal posts or revised features not to mention changes in technology, languages or device sizes. Keeping a project simple and enjoyable to work with can be difficult</p>
 
-<section class="portfolio-images">
-    <div class="portfolio-piece-wrapper">
-        <div class="portfolio-piece">
-            <img src="../assets/img/portfolio/sainsburys/home.jpg" class="portfolio-piece__img" alt="Phone shop by Sainsbury's home page" />
-        </div>
-    </div>
-    <div class="portfolio-piece-wrapper">
-        <div class="portfolio-piece">
-            <img src="../assets/img/portfolio/sainsburys/category.jpg" class="portfolio-piece__img" alt="Phone shop by Sainsbury's category page" />
-        </div>
-    </div>
-</section>
+<p>When starting work on a new digital project it is easy to be blinded by the visuals or prototypes that are right in front of
+you, creating a codebase that fits perfectly for the content provided. This approach however will almost always
+turn out to be a costly mistake.</p>
+
+<p>1)
+2)
+3)
+4)
+5)
+6)
+7)
+8)
+9)
+10) Resources - https://github.com/Heydon/forceFeed</p>
+
+<p>Branding - Keep colors, fonts, spacing etc in a variables or settings partial that can be quicly and easily updated. CSS variables, Sass, Less.</p>
+
+<p>Buttons - Use transparent for the button without a background, not white. The white background may change</p>
+
+<p>Utalise the inherit property.</p>
+
+<p>Forget about Pixels</p>
+
+<h3 id="develop-every-application-without-assumption">Develop every application without assumption</h3>
+
+<h3 id="stop-thinking-in-pxs">Stop thinking in PX’s</h3>
+
+<p>Working with a pixel perfect approach is a fairly old request  blah blah leads to rigid applications, which can break the minute the content
+is updated or an image changes size. Problems will also occur should the application be translated, a
+new device is released or the copy is updated.</p>
+
+<p>Instead we should try to plan for the unknown from the outset, each new project should be approached from
+the most unlikely situation and worked backwards to create an UI that works in all situations. Working in
+this way may be more time consuming in the beginning, but will prevent the need for endless firefighting in
+the future.</p>
+
+<h2 id="text-changes">Text changes</h2>
+
+<p>When building any website or application we should expect and plan for the copy to change. This can be
+the main body or content or even just the text on a button.</p>
+
+<p>General cms changes to copy
+titles/ buttons vertical and horizontal centering - not line hight
+Don’t use line height to vertivally centre or horizontaly centre.</p>
+
+<h2 id="language-changes">Language changes</h2>
+
+<p>Language changes can effect more then just a page layout, right to left languages can require a full layout
+re-think</p>
+
+<p>translations
+left to write speaking countries.
+If this hasnt been planned for you can use PostCSS to go back to edit it.
+large button with chinese symbol in it - remove foxxe width just have em padding left and right.</p>
+
+<h2 id="branding-changes">Branding changes</h2>
+
+<p>Color variables named properly
+primary color not blue etc
+CSS Custom properties introducing scope, planning for change - high contrast etc.
+Using inherit, current color etc</p>
+
+<h2 id="layout-changes">layout changes</h2>
+<p>Patterns not pages related stuff
+Modules not pages</p>
+
+<h2 id="screen-size-changes">Screen size changes</h2>
+<p>Element queries
+content first etc
+Don’t think in PX’s??????
+Devices can change</p>
+
+<h2 id="user-behaviour">User behaviour</h2>
+
+<p>It should never be assumed that a users behaviour will mirror that of the developer or designer on a
+project.</p>
+
+<p>Zooming and the different rounding of pixels in browsers —— Barclays</p>
+
+<h2 id="summery---flexible-css">Summery - Flexible CSS</h2>
+<p>PostCSS - If all else fails you can go back and amend entire stylesheets wiTh PostCSS phrasing CSS
+Accessibility - site should be able to adapt quickly - high contrast - larger font sizing
+Layouts should not be defined by content
+Line height -1.5 to centre images!
+Font size — 1
+display table — Chris coyer vid
+flex box Chris coyer vid</p>
+
+<p>Do not solve the problems that are right in front of you, solve the problems that are yet to exist.</p>
+
+
+    <section>
+      <div class="share-page">
+    <h3>Share this post</h3>
+    <p>Share this on this post on Twitter, Facebook or Google</p>
+    <a href="https://twitter.com/intent/tweet?text=CSS without assumption&url=http://localhost:4000/posts/2017-03-23-tips-for-developing-for-the-unexpected.html&via=cathy_dutton&related=cathy_dutton" rel="external"  target="_blank" class="share-page__anchor share-page__twitter" title="Share on Twitter"><span class="visually-hidden">Share on </span>Twitter</a>
+    <a href="https://facebook.com/sharer.php?u=http://localhost:4000/posts/2017-03-23-tips-for-developing-for-the-unexpected.html" class="share-page__anchor share-page__facebook" rel="external" target="_blank" title="Share on Facebook"><span class="visually-hidden">Share on </span>Facebook</a>
+    <a href="https://plus.google.com/share?url=http://localhost:4000/posts/2017-03-23-tips-for-developing-for-the-unexpected.html" class="share-page__anchor share-page__google" rel="external" target="_blank" title="Share on Google+"><span class="visually-hidden">Share on </span>Google+</a>
+</div>
+
+    </section>
 
     <section>
       <ul class="page-navigation">
-    
-    <li class="button--page-navigation__prev">
-      <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/portfolio/20-20-mobile.html">
-        <!-- <span class="visually-hidden">Go to the previous post</span> -->
-        <svg class="button--page-navigation__svg" version="1.1" role="presentation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
-        </svg>
-        <span class="page-navigation-title">Go to the previous project</span>
-      </a>
-    </li>
-    
-    
-    <li class="button--page-navigation__next">
-      <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/portfolio/AO.html">
-        <!-- <span class="visually-hidden">Go to the next post</span> -->
-        <span class="page-navigation-title">Go to the next project</span>
-        <svg class="button--page-navigation__svg" role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-          <path d="M11.611,10.049l-4.76-4.873c-0.303-0.31-0.297-0.804,0.012-1.105c0.309-0.304,0.803-0.293,1.105,0.012l5.306,5.433c0.304,0.31,0.296,0.805-0.012,1.105L7.83,15.928c-0.152,0.148-0.35,0.223-0.547,0.223c-0.203,0-0.406-0.08-0.559-0.236c-0.303-0.309-0.295-0.803,0.012-1.104L11.611,10.049z"></path>
-        </svg>
-      </a>
-    </li>
-    
-  </ul>
   
+  <li class="button--page-navigation__prev">
+    <a class="button--page-navigation__anchor" title="Navigate to previous post" rel="prev" href="/posts/Back-to-basics-CSS.html">
+      <!-- <span class="visually-hidden">Go to the previous post</span> -->
+      <svg class="button--page-navigation__svg" version="1.1" role="presentation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
+      </svg>
+      <span class="page-navigation-title">Go to the previous post</span>
+    </a>
+  </li>
+  
+  
+  <li class="button--page-navigation__next">
+    <a class="button--page-navigation__anchor" title="Navigate to next post" rel="next" href="/posts/Writing-a-simple-postCSS-plugin.html">
+      <!-- <span class="visually-hidden">Go to the next post</span> -->
+      <span class="page-navigation-title">Go to the next post</span>
+      <svg class="button--page-navigation__svg" role="presentation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+        <path d="M11.611,10.049l-4.76-4.873c-0.303-0.31-0.297-0.804,0.012-1.105c0.309-0.304,0.803-0.293,1.105,0.012l5.306,5.433c0.304,0.31,0.296,0.805-0.012,1.105L7.83,15.928c-0.152,0.148-0.35,0.223-0.547,0.223c-0.203,0-0.406-0.08-0.559-0.236c-0.303-0.309-0.295-0.803,0.012-1.104L11.611,10.049z"></path>
+      </svg>
+    </a>
+  </li>
+  
+</ul>
+
+    </section>
+
+    <section>
+      <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = page.url
+this.page.identifier = page.title
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://cathydutton.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
     </section>
   </main>
+
   <footer class="footer">
   	<ul class="footer-links">
   		<li class="footer-links__item">
@@ -293,17 +396,40 @@ Phone shop by Sainsbury’s is a mobile virtual network operator launched in Jul
 <!-- End Wrapper -->
 </div>
 
-
+</div>
+<!-- Script includes -->
+<script src="../assets/js/main.min.js"></script>
+ <!-- Cookie banner JS -->
   <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/serviceWorker.js').then(function(registration) {
-          }).catch(function(err) {
-          });
-        });
-      }
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({})});
   </script>
 
-</div>
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/serviceWorker.js').then(function(registration) {
+        }).catch(function(err) {
+        });
+      });
+    }
+</script>
+
+<script id="dsq-count-scr" src="//cathydutton.disqus.com/count.js" async></script>
+
+
+<!-- <script id="dsq-count-scr" src="//cathydutton.disqus.com/count.js" async></script> -->
+
+<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+<!-- New blog -->
+<!-- <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5080086399779144"
+     data-ad-slot="8794319910"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> -->
 </body>
+
 </html>
