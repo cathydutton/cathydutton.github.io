@@ -1,5 +1,6 @@
 ---
 title: Designing digital forms
+description: Designing digital forms to create the simplest user journeys.
 author: Cathy Dutton
 layout: post
 date:   2018-08-15

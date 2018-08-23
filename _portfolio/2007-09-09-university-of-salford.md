@@ -1,5 +1,6 @@
 ---
 title: University of Salford
+description: Degree work from the University of Salford - Cathy Dutton
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio

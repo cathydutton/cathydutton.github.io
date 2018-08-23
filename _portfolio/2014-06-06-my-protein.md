@@ -1,5 +1,6 @@
 ---
 title: My Protein 
+description: My Protein front end development work - Cathy Dutton
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio

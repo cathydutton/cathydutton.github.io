@@ -1,5 +1,6 @@
 ---
 title: The problem with patterns
+description: A look at design patterns and the problems they can cause
 author: Cathy Dutton
 date:   2018-08-14  
 layout: post

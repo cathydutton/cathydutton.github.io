@@ -1,5 +1,6 @@
 ---
 title: Barclays API store
+description: Barclays API store - Cathy Dutton
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio

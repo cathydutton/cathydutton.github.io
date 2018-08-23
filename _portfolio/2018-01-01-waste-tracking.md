@@ -1,5 +1,6 @@
 ---
 title: Waste tracking discovery
+description: Waste tracking discovery service design work - Cathy Dutton
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio

@@ -1,5 +1,6 @@
 ---
 title: Getthelabel.com
+description: Graphic and we design work for GetTheLabel.com - Cathy Dutton
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio

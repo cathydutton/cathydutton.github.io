@@ -1,5 +1,6 @@
 ---
 title: Tropic skincare
+description: Tropic skincare site design and banner advert concepts - Cathy Dutton
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio

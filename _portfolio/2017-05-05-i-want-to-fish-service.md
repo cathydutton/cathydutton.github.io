@@ -1,5 +1,6 @@
 ---
 title: I want to fish service
+description: I want to fish service design work - Cathy Dutton
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio

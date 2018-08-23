@@ -1,5 +1,6 @@
 ---
 title: Buy a rod fishing licence
+description: Buy a rod fishing licence interaction design work - Cathy Dutton
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio

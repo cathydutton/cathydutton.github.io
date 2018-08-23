@@ -1,5 +1,6 @@
 ---
 title: The Hut Group
+description: The Hut Group front end development work - Cathy Dutton
 author: Cathy Dutton
 layout: portfolio-post
 category: portfolio
